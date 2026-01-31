@@ -2,12 +2,11 @@ name: Update Live TV Sources
 
 on:
   schedule:
-    # 每天凌晨2点自动运行（UTC时间）
     - cron: '0 18 * * *'
-  workflow_dispatch: # 支持手动触发
+  workflow_dispatch:
   push:
     branches: [ main ]
-    paths: [ 'sources.txt' ]  # 当源列表更新时触发
+    paths: [ 'sources.txt' ]
 
 jobs:
   collect-and-organize:
@@ -17,7 +16,8 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PAT_TOKEN }}  # 使用个人访问令牌
+        persist-credentials: true
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -26,18 +26,30 @@ jobs:
 
     - name: Install dependencies
       run: |
+        python -m pip install --upgrade pip
         pip install requests tqdm
 
     - name: Run collection script
       id: collect
       run: |
-        python scripts/collect_sources.py
+        cd scripts
+        python collect_sources.py
+        # 检查文件是否生成
+        if ls ../*.m3u 1> /dev/null 2>&1; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "CHANGED=true" >> $GITHUB_ENV
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "CHANGED=false" >> $GITHUB_ENV
+        fi
 
     - name: Commit and push if changed
-      if: steps.collect.outputs.changed == 'true'
+      if: env.CHANGED == 'true'
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
         git add -A
-        git commit -m "📺 Update live TV sources $(date '+%Y-%m-%d %H:%M')"
-        git push
+        git commit -m "📺 Update live TV sources $(date '+%Y-%m-%d %H:%M:%S')"
+        
+        # 使用PAT进行推送
+        git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git main
