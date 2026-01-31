@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-电视直播源收集脚本 - 增强版
-功能：1. 频道名称精简 2. 同名电视台合并 3. 支持多源切换 4. 统一央视频道命名
-特点：所有电视源统一从sources.txt文件获取
+电视直播源收集脚本 - 多源合并版
+功能：1. 频道名称精简 2. 同名电视台合并（多源集成）3. 支持源切换 4. 统一央视频道命名
+特点：所有电视源统一从sources.txt文件获取，每个电视台显示为一个条目但包含多个源
 分类：央视、卫视、地方台（按省份）、少儿台、综艺台、港澳台、体育台、影视台、景区频道、其他台
+播放器支持：PotPlayer、VLC、TiviMate、Kodi等支持多源切换的播放器
 """
 
 import requests
@@ -16,9 +17,10 @@ import os
 import sys
 
 print("=" * 70)
-print("电视直播源收集脚本 v4.0 - 增强版")
-print("功能：频道名称深度精简、统一央视频道命名、按省份分类地方台、增加景区频道")
-print("特点：所有电视源统一从sources.txt文件获取")
+print("电视直播源收集脚本 v5.0 - 多源合并版")
+print("功能：频道名称深度精简、统一央视频道命名、按省份分类地方台、多源集成")
+print("特点：每个电视台显示为一个条目，内部包含多个可切换源")
+print("播放器：支持PotPlayer、VLC、TiviMate、Kodi等多源切换功能")
 print("=" * 70)
 
 def load_sources_from_file():
@@ -278,6 +280,34 @@ CATEGORY_RULES = {
         r"电影$", r"影院$", r"影视频道$", r"好莱坞$", r"CHC",
         r"家庭影院$", r"动作电影$", r"喜剧电影$"
     ]
+}
+
+# 播放器多源支持配置
+PLAYER_SUPPORT = {
+    "PotPlayer": {
+        "multi_source": True,
+        "format": "stream-multi-url",
+        "separator": "|",
+        "note": "在播放时按Alt+W可以切换源"
+    },
+    "VLC": {
+        "multi_source": True,
+        "format": "stream-multi-url",
+        "separator": "#",
+        "note": "在播放列表中点右键选择不同源"
+    },
+    "TiviMate": {
+        "multi_source": True,
+        "format": "same-name",
+        "separator": None,
+        "note": "自动合并相同名称的频道，播放时自动切换"
+    },
+    "Kodi": {
+        "multi_source": True,
+        "format": "m3u_plus",
+        "separator": None,
+        "note": "使用IPTV Simple Client插件"
+    }
 }
 
 def get_beijing_time():
@@ -582,6 +612,132 @@ def merge_channels(all_channels):
     
     return merged
 
+def generate_multi_source_m3u(merged_channels, categories, final_category_order, timestamp, output_file, mode="multi"):
+    """
+    生成支持多源的M3U文件
+    mode: 
+      "multi" - 多源合并成一个条目（PotPlayer格式）
+      "separate" - 每个源分开条目但相同名称
+      "single" - 只保留最佳源
+    """
+    try:
+        with open(output_file, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            if mode == "multi":
+                f.write(f"# 电视直播源 - 多源合并版（PotPlayer/VLC/TiviMate支持）\n")
+                f.write(f"# 每个电视台只显示一个条目，内部包含多个源\n")
+                f.write(f"# 播放器切换源方法：PotPlayer按Alt+W，VLC右键选择源\n")
+            elif mode == "separate":
+                f.write(f"# 电视直播源 - 多源分离版（TiviMate/Kodi支持）\n")
+                f.write(f"# 同名电视台显示为多个条目，播放器自动合并\n")
+            else:
+                f.write(f"# 电视直播源 - 精简版\n")
+                f.write(f"# 每个电视台只保留最佳源\n")
+            
+            f.write(f"# 更新时间(北京时间): {timestamp}\n")
+            f.write(f"# 电视台总数: {len(merged_channels)}\n")
+            f.write(f"# 原始频道数: {len(all_channels)}\n")
+            f.write(f"# 数据源: {len(sources)} 个 (成功: {success_sources}, 失败: {len(failed_sources)})\n")
+            f.write(f"# 特点: 移除技术参数，统一央视频道命名，按省份分类地方台\n")
+            f.write(f"# 源文件: sources.txt\n\n")
+            
+            # 按分类顺序写入
+            for category in final_category_order:
+                cat_channels = categories[category]
+                if cat_channels:
+                    # 对频道进行排序
+                    sorted_channels = sorted(
+                        cat_channels,
+                        key=lambda x: get_channel_sort_key(x['clean_name'], category)
+                    )
+                    
+                    f.write(f"\n# 分类: {category} ({len(cat_channels)}个电视台)\n")
+                    
+                    for channel in sorted_channels:
+                        # 选择主logo（第一个非空的logo）
+                        main_logo = channel['logos'][0] if channel['logos'] else ""
+                        source_count = len(channel['sources'])
+                        
+                        if mode == "multi":
+                            # PotPlayer/VLC多源格式：一个条目包含多个URL，用"|"分隔
+                            display_name = f"{channel['clean_name']} [{source_count}源]"
+                            
+                            # 收集所有URL
+                            urls = []
+                            qualities = []
+                            for source in channel['sources']:
+                                urls.append(source['url'])
+                                if source['quality'] != "未知":
+                                    qualities.append(source['quality'])
+                            
+                            # 生成多源URL
+                            multi_url = "|".join(urls)
+                            
+                            # 写入条目
+                            line = "#EXTINF:-1"
+                            line += f' tvg-name="{channel["clean_name"]}"'
+                            line += f' group-title="{category}"'
+                            if main_logo:
+                                line += f' tvg-logo="{main_logo}"'
+                            if qualities:
+                                quality_desc = "/".join(set(qualities))
+                                line += f' tvg-quality="{quality_desc}"'
+                            line += f',{display_name}\n'
+                            line += f"{multi_url}\n"
+                            f.write(line)
+                            
+                        elif mode == "separate":
+                            # TiviMate/Kodi格式：相同名称的多个条目，播放器会自动合并
+                            display_name = channel['clean_name']
+                            
+                            for i, source in enumerate(channel['sources']):
+                                line = "#EXTINF:-1"
+                                line += f' tvg-name="{channel["clean_name"]}"'
+                                line += f' group-title="{category}"'
+                                if main_logo:
+                                    line += f' tvg-logo="{main_logo}"'
+                                if source['quality'] != "未知":
+                                    line += f' tvg-quality="{source["quality"]}"'
+                                if source_count > 1:
+                                    line += f',{display_name} [源{i+1}]\n'
+                                else:
+                                    line += f',{display_name}\n'
+                                line += f"{source['url']}\n"
+                                f.write(line)
+                                
+                        else:  # mode == "single"
+                            # 精简版：只保留最佳源
+                            display_name = channel['clean_name']
+                            
+                            # 选择最佳源（优先选择高清源）
+                            best_source = None
+                            for source in channel['sources']:
+                                if source['quality'] == "4K":
+                                    best_source = source
+                                    break
+                                elif source['quality'] == "高清":
+                                    best_source = source
+                            
+                            if not best_source:
+                                best_source = channel['sources'][0]
+                            
+                            line = "#EXTINF:-1"
+                            line += f' tvg-name="{channel["clean_name"]}"'
+                            line += f' group-title="{category}"'
+                            if main_logo:
+                                line += f' tvg-logo="{main_logo}"'
+                            if best_source['quality'] != "未知":
+                                line += f' tvg-quality="{best_source["quality"]}"'
+                            line += f',{display_name}\n'
+                            line += f"{best_source['url']}\n"
+                            f.write(line)
+        
+        print(f"  ✅ {output_file} 生成成功")
+        return True
+    except Exception as e:
+        print(f"  ❌ 生成{output_file}失败: {e}")
+        return False
+
 # 主收集过程
 print("🚀 开始采集电视直播源...")
 print(f"📋 数据源列表 (从sources.txt加载):")
@@ -643,13 +799,20 @@ print("\n🔄 正在合并同名电视台...")
 merged_channels = merge_channels(all_channels)
 print(f"   合并后: {len(merged_channels)} 个唯一电视台")
 
-# 显示一些合并示例
-print("\n📝 合并示例:")
-merged_examples = list(merged_channels.items())[:5]
-for clean_name, data in merged_examples:
+# 显示多源统计
+multi_source_count = sum(1 for c in merged_channels.values() if len(c['sources']) > 1)
+single_source_count = len(merged_channels) - multi_source_count
+print(f"   多源电视台: {multi_source_count} 个")
+print(f"   单源电视台: {single_source_count} 个")
+
+# 显示一些多源示例
+print("\n📝 多源电视台示例:")
+multi_source_examples = [(k, v) for k, v in merged_channels.items() if len(v['sources']) > 1][:5]
+for clean_name, data in multi_source_examples:
     source_count = len(data['sources'])
-    if source_count > 1:
-        print(f"   {clean_name}: {source_count}个源")
+    qualities = [s['quality'] for s in data['sources']]
+    quality_desc = "/".join(set(qualities))
+    print(f"   {clean_name}: {source_count}个源 [{quality_desc}]")
 
 # 统计分类数量
 category_stats = {}
@@ -706,75 +869,34 @@ for category in final_category_order:
 Path("categories").mkdir(exist_ok=True)
 Path("merged").mkdir(exist_ok=True)
 
-# 1. 生成完整的M3U文件（精简合并版）
-print("\n📄 生成 live_sources.m3u（精简合并版）...")
-try:
-    with open("live_sources.m3u", "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        f.write(f"# 电视直播源 - 深度精简合并版\n")
-        f.write(f"# 更新时间(北京时间): {timestamp}\n")
-        f.write(f"# 电视台总数: {len(merged_channels)}\n")
-        f.write(f"# 原始频道数: {len(all_channels)}\n")
-        f.write(f"# 数据源: {len(sources)} 个 (成功: {success_sources}, 失败: {len(failed_sources)})\n")
-        f.write(f"# 说明: 同名电视台已合并，支持多源切换\n")
-        f.write(f"# 特点: 移除技术参数，统一央视频道命名，按省份分类地方台\n")
-        f.write(f"# 源文件: sources.txt\n\n")
-        
-        # 按分类顺序写入
-        for category in final_category_order:
-            cat_channels = categories[category]
-            if cat_channels:
-                # 对频道进行排序
-                sorted_channels = sorted(
-                    cat_channels,
-                    key=lambda x: get_channel_sort_key(x['clean_name'], category)
-                )
-                
-                f.write(f"\n# 分类: {category} ({len(cat_channels)}个电视台)\n")
-                
-                for channel in sorted_channels:
-                    # 选择主logo（第一个非空的logo）
-                    main_logo = channel['logos'][0] if channel['logos'] else ""
-                    
-                    # 写入电视台信息
-                    source_count = len(channel['sources'])
-                    if source_count > 1:
-                        display_name = f"{channel['clean_name']} [{source_count}源]"
-                    else:
-                        display_name = channel['clean_name']
-                    
-                    # 写入第一个源
-                    main_source = channel['sources'][0]
-                    line = "#EXTINF:-1"
-                    line += f' tvg-name="{channel["clean_name"]}"'
-                    line += f' group-title="{category}"'
-                    if main_logo:
-                        line += f' tvg-logo="{main_logo}"'
-                    if main_source['quality'] != "未知":
-                        line += f' tvg-quality="{main_source["quality"]}"'
-                    line += f',{display_name}\n'
-                    line += f"{main_source['url']}\n"
-                    f.write(line)
-                    
-                    # 如果有多个源，写入其他源作为备用
-                    if len(channel['sources']) > 1:
-                        for i, source in enumerate(channel['sources'][1:], 2):
-                            alt_line = "#EXTINF:-1"
-                            alt_line += f' tvg-name="{channel["clean_name"]}"'
-                            alt_line += f' group-title="{category}"'
-                            alt_line += f' tvg-logo="{main_logo}"'
-                            if source['quality'] != "未知":
-                                alt_line += f' tvg-quality="{source["quality"]}"'
-                            alt_line += f',{channel["clean_name"]} [源{i}]\n'
-                            alt_line += f"{source['url']}\n"
-                            f.write(alt_line)
-    
-    print(f"  ✅ live_sources.m3u 生成成功，包含 {len(merged_channels)} 个电视台")
-except Exception as e:
-    print(f"  ❌ 生成live_sources.m3u失败: {e}")
+print("\n🎯 播放器多源支持信息:")
+for player, info in PLAYER_SUPPORT.items():
+    if info['multi_source']:
+        print(f"   ✅ {player}: {info['note']}")
 
-# 2. 生成分类M3U文件
-print("\n📄 生成分类文件...")
+# 1. 生成多源合并版M3U（PotPlayer/VLC格式）
+print("\n📄 生成 live_sources.m3u（多源合并版 - PotPlayer/VLC格式）...")
+generate_multi_source_m3u(
+    merged_channels, categories, final_category_order, 
+    timestamp, "live_sources.m3u", mode="multi"
+)
+
+# 2. 生成多源分离版M3U（TiviMate/Kodi格式）
+print("\n📄 生成 merged/多源分离版.m3u（TiviMate/Kodi格式）...")
+generate_multi_source_m3u(
+    merged_channels, categories, final_category_order,
+    timestamp, "merged/多源分离版.m3u", mode="separate"
+)
+
+# 3. 生成精简版M3U（每个电视台只保留最佳源）
+print("\n📄 生成 merged/精简版.m3u（单源精简版）...")
+generate_multi_source_m3u(
+    merged_channels, categories, final_category_order,
+    timestamp, "merged/精简版.m3u", mode="single"
+)
+
+# 4. 生成分类M3U文件（多源合并格式）
+print("\n📄 生成分类文件（多源合并格式）...")
 for category in final_category_order:
     cat_channels = categories[category]
     if cat_channels:
@@ -791,37 +913,48 @@ for category in final_category_order:
             
             with open(filename, "w", encoding="utf-8") as f:
                 f.write("#EXTM3U\n")
-                f.write(f"# {category}频道列表\n")
+                f.write(f"# {category}频道列表（多源合并版）\n")
                 f.write(f"# 更新时间(北京时间): {timestamp}\n")
-                f.write(f"# 电视台数量: {len(cat_channels)}\n\n")
+                f.write(f"# 电视台数量: {len(cat_channels)}\n")
+                f.write(f"# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换\n\n")
                 
                 for channel in sorted_channels:
+                    # 选择主logo（第一个非空的logo）
                     main_logo = channel['logos'][0] if channel['logos'] else ""
                     source_count = len(channel['sources'])
                     
-                    if source_count > 1:
-                        display_name = f"{channel['clean_name']} [{source_count}源]"
-                    else:
-                        display_name = channel['clean_name']
+                    # PotPlayer/VLC多源格式
+                    display_name = f"{channel['clean_name']} [{source_count}源]"
                     
-                    # 写入第一个源
-                    main_source = channel['sources'][0]
+                    # 收集所有URL
+                    urls = []
+                    qualities = []
+                    for source in channel['sources']:
+                        urls.append(source['url'])
+                        if source['quality'] != "未知":
+                            qualities.append(source['quality'])
+                    
+                    # 生成多源URL
+                    multi_url = "|".join(urls)
+                    
+                    # 写入条目
                     line = "#EXTINF:-1"
                     line += f' tvg-name="{channel["clean_name"]}"'
                     line += f' group-title="{category}"'
                     if main_logo:
                         line += f' tvg-logo="{main_logo}"'
-                    if main_source['quality'] != "未知":
-                        line += f' tvg-quality="{main_source["quality"]}"'
+                    if qualities:
+                        quality_desc = "/".join(set(qualities))
+                        line += f' tvg-quality="{quality_desc}"'
                     line += f',{display_name}\n'
-                    line += f"{main_source['url']}\n"
+                    line += f"{multi_url}\n"
                     f.write(line)
             
             print(f"  ✅ 生成 {filename}")
         except Exception as e:
             print(f"  ❌ 生成 {filename} 失败: {e}")
 
-# 3. 生成合并的JSON文件（包含所有源信息）
+# 5. 生成合并的JSON文件（包含所有源信息）
 print("\n📄 生成 channels.json...")
 try:
     # 创建频道列表
@@ -857,8 +990,11 @@ try:
         'sources_count': len(sources),
         'success_sources': success_sources,
         'failed_sources': failed_sources,
+        'multi_source_channels': multi_source_count,
+        'single_source_channels': single_source_count,
         'category_stats': category_stats,
         'channels': channel_list,
+        'player_support': PLAYER_SUPPORT,
         'source_file': 'sources.txt'
     }
     
@@ -870,66 +1006,20 @@ try:
 except Exception as e:
     print(f"  ❌ 生成channels.json失败: {e}")
 
-# 4. 生成精简版M3U（每个电视台只保留最佳源）
-print("\n📄 生成 merged/精简版.m3u...")
-try:
-    with open("merged/精简版.m3u", "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        f.write(f"# 电视直播源 - 精简版\n")
-        f.write(f"# 更新时间(北京时间): {timestamp}\n")
-        f.write(f"# 电视台总数: {len(merged_channels)}\n")
-        f.write(f"# 说明: 每个电视台只保留最佳源\n")
-        f.write(f"# 特点: 移除技术参数，统一央视频道命名，按省份分类地方台\n")
-        f.write(f"# 源文件: sources.txt\n\n")
-        
-        for category in final_category_order:
-            cat_channels = categories[category]
-            if cat_channels:
-                # 对频道进行排序
-                sorted_channels = sorted(
-                    cat_channels,
-                    key=lambda x: get_channel_sort_key(x['clean_name'], category)
-                )
-                
-                f.write(f"\n# {category} ({len(cat_channels)}个电视台)\n")
-                
-                for channel in sorted_channels:
-                    # 选择最佳源（优先选择高清源）
-                    best_source = None
-                    for source in channel['sources']:
-                        if source['quality'] == "4K":
-                            best_source = source
-                            break
-                        elif source['quality'] == "高清":
-                            best_source = source
-                    
-                    if not best_source:
-                        best_source = channel['sources'][0]
-                    
-                    main_logo = channel['logos'][0] if channel['logos'] else ""
-                    
-                    line = "#EXTINF:-1"
-                    line += f' tvg-name="{channel["clean_name"]}"'
-                    line += f' group-title="{category}"'
-                    if main_logo:
-                        line += f' tvg-logo="{main_logo}"'
-                    if best_source['quality'] != "未知":
-                        line += f' tvg-quality="{best_source["quality"]}"'
-                    line += f',{channel["clean_name"]}\n'
-                    line += f"{best_source['url']}\n"
-                    f.write(line)
-    
-    print(f"  ✅ 精简版.m3u 生成成功")
-except Exception as e:
-    print(f"  ❌ 生成精简版.m3u失败: {e}")
-
 print(f"\n🎉 所有文件生成完成！")
 print(f"📊 统计:")
 print(f"  - 电视台总数: {len(merged_channels)}")
+print(f"  - 多源电视台: {multi_source_count}")
+print(f"  - 单源电视台: {single_source_count}")
 print(f"  - 原始频道数: {len(all_channels)}")
 print(f"  - 数据源: {len(sources)}")
 print(f"📁 生成的文件:")
-print(f"  - live_sources.m3u (完整多源版)")
-print(f"  - merged/精简版.m3u (精简最佳源版)")
+print(f"  - live_sources.m3u (多源合并版 - PotPlayer/VLC格式)")
+print(f"  - merged/多源分离版.m3u (TiviMate/Kodi格式)")
+print(f"  - merged/精简版.m3u (单源精简版)")
 print(f"  - channels.json (详细数据)")
 print(f"  - categories/*.m3u (分类列表)")
+print(f"\n🎮 播放器使用说明:")
+print(f"  1. PotPlayer/VLC: 使用 live_sources.m3u，播放时按Alt+W切换源")
+print(f"  2. TiviMate/Kodi: 使用 merged/多源分离版.m3u，自动合并相同名称频道")
+print(f"  3. 其他播放器: 使用 merged/精简版.m3u，每个电视台只有一个源")

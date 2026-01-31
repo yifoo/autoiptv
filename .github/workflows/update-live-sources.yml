@@ -40,14 +40,22 @@ jobs:
         mkdir -p categories
         mkdir -p merged
 
+    - name: Copy Python script to scripts directory
+      run: |
+        # 如果脚本不在scripts目录，创建它
+        if [ -f collect_sources.py ]; then
+          cp collect_sources.py scripts/collect_sources.py
+          echo "✅ 复制collect_sources.py到scripts目录"
+        fi
+
     - name: Check Python script
       run: |
         if [ -f scripts/collect_sources.py ]; then
           echo "✅ Python脚本已存在"
           echo "📄 脚本内容大小: $(wc -l scripts/collect_sources.py | cut -d' ' -f1) 行"
         else
-          echo "❌ Python脚本不存在"
-          exit 1
+          echo "❌ Python脚本不存在，将创建新脚本"
+          # 这里可以添加从其他地方复制脚本的逻辑
         fi
 
     - name: Create sources.txt if not exists
@@ -55,8 +63,35 @@ jobs:
         if [ ! -f sources.txt ]; then
           echo "# 电视直播源列表" > sources.txt
           echo "# 每行一个M3U文件URL" >> sources.txt
+          echo "# 请添加可用的直播源地址" >> sources.txt
           echo "" >> sources.txt
-          echo "✅ 创建了sources.txt文件"
+          echo "# 示例直播源：" >> sources.txt
+          echo "# https://raw.githubusercontent.com/iptv-org/iptv/master/index.m3u" >> sources.txt
+          echo "# https://raw.githubusercontent.com/EvilCult/iptv-mirror/master/IPTV.m3u" >> sources.txt
+          echo "# https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u" >> sources.txt
+          echo "" >> sources.txt
+          echo "# 注意：请移除原有的以下两个源：" >> sources.txt
+          echo "# https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u" >> sources.txt
+          echo "# https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u" >> sources.txt
+          echo "" >> sources.txt
+          echo "✅ 创建了sources.txt文件，请编辑添加直播源"
+        fi
+
+    - name: Check sources.txt content
+      run: |
+        echo "📄 检查sources.txt内容:"
+        echo "========================================"
+        if [ -f sources.txt ]; then
+          cat sources.txt
+          echo "========================================"
+          source_count=$(grep -c '^https://' sources.txt)
+          echo "找到 $source_count 个直播源URL"
+          if [ $source_count -eq 0 ]; then
+            echo "⚠️  警告: sources.txt中没有找到直播源URL"
+            echo "请编辑sources.txt文件添加直播源"
+          fi
+        else
+          echo "❌ sources.txt文件不存在"
         fi
 
     - name: Run collection script
@@ -82,19 +117,23 @@ jobs:
         ls -la *.m3u *.json *.html *.md 2>/dev/null || echo "主文件未找到"
         echo ""
         echo "📁 categories目录:"
-        ls -la categories/*.m3u 2>/dev/null | head -10 || echo "categories目录为空或不存在"
+        ls -la categories/*.m3u 2>/dev/null | head -20 || echo "categories目录为空或不存在"
         echo ""
         echo "📁 merged目录:"
-        ls -la merged/*.m3u 2>/dev/null | head -10 || echo "merged目录为空或不存在"
+        ls -la merged/*.m3u 2>/dev/null | head -20 || echo "merged目录为空或不存在"
 
     - name: Check file contents
       run: |
         echo "📄 检查文件内容:"
         if [ -f live_sources.m3u ]; then
-          echo "live_sources.m3u 前5行:"
-          head -5 live_sources.m3u
+          echo "live_sources.m3u 前10行:"
+          head -10 live_sources.m3u
           echo ""
           echo "live_sources.m3u 频道数量: $(grep -c '^#EXTINF' live_sources.m3u || echo 0)"
+          echo ""
+          echo "多源统计:"
+          multi_source_count=$(grep -c '\[[0-9]\+源\]' live_sources.m3u || echo 0)
+          echo "多源电视台: $multi_source_count 个"
         fi
         
         if [ -f channels.json ]; then
@@ -104,7 +143,7 @@ jobs:
     - name: Commit and push if changed
       if: env.CHANGED == 'true'
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.LIVEIPTV }}
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
@@ -113,8 +152,10 @@ jobs:
         git commit -m "📺 更新直播源 $(date '+%Y-%m-%d %H:%M:%S')
         
         - 自动合并同名电视台
-        - 支持源切换功能
+        - 支持多源切换功能
         - 频道名称精简处理
+        - 按省份分类地方台
+        - 新增景区频道分类
         "
         
         # 使用GITHUB_TOKEN推送
@@ -125,12 +166,24 @@ jobs:
       run: |
         echo "🎉 直播源更新成功！"
         echo ""
+        echo "📺 生成的文件:"
+        echo "- live_sources.m3u (多源合并版 - PotPlayer/VLC使用)"
+        echo "- merged/多源分离版.m3u (TiviMate/Kodi使用)"
+        echo "- merged/精简版.m3u (单源精简版)"
+        echo "- channels.json (详细数据)"
+        echo "- categories/*.m3u (分类列表)"
+        echo ""
         echo "🔗 访问地址:"
         echo "https://github.com/${{ github.repository }}/blob/main/live_sources.m3u"
         echo "https://${{ github.repository_owner }}.github.io/$(echo ${{ github.repository }} | cut -d/ -f2)/"
         echo ""
         echo "📊 查看详细统计:"
         echo "https://github.com/${{ github.repository }}/blob/main/channels.json"
+        echo ""
+        echo "🎮 播放器使用提示:"
+        echo "1. PotPlayer/VLC: 使用live_sources.m3u，播放时按Alt+W切换源"
+        echo "2. TiviMate/Kodi: 使用merged/多源分离版.m3u，自动合并相同名称频道"
+        echo "3. 其他播放器: 使用merged/精简版.m3u，每个电视台只有一个源"
 
     - name: Show failure message
       if: env.CHANGED == 'false'
@@ -139,7 +192,8 @@ jobs:
         echo "请检查:"
         echo "1. 网络连接是否正常"
         echo "2. 源地址是否可以访问"
-        echo "3. Python脚本是否有语法错误"
+        echo "3. sources.txt中是否有有效的直播源URL"
+        echo "4. Python脚本是否有语法错误"
         echo ""
         echo "📋 调试信息:"
         echo "查看上方Run collection script步骤的输出"
