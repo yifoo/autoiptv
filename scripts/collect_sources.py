@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 电视直播源收集脚本 - 精简合并版
-功能：1. 频道名称精简 2. 同名电视台合并 3. 支持多源切换
+功能：1. 频道名称精简 2. 同名电视台合并 3. 支持多源切换 4. 统一央视频道命名
+特点：所有电视源统一从sources.txt文件获取
 分类：央视、卫视、地方台、少儿台、综艺台、港澳台、体育台、影视台、其他台
 """
 
@@ -15,63 +16,172 @@ import os
 import sys
 
 print("=" * 70)
-print("电视直播源收集脚本 v3.0 - 精简合并版")
-print("功能：频道名称精简、同名电视台合并、支持多源切换")
+print("电视直播源收集脚本 v3.1 - 深度精简合并版")
+print("功能：频道名称深度精简、统一央视频道命名、支持多源切换")
+print("特点：所有电视源统一从sources.txt文件获取")
 print("=" * 70)
 
-# 要采集的源列表
-sources = [
-    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
-    "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u"
-]
-
-# 从文件读取额外源
-if os.path.exists("sources.txt"):
+def load_sources_from_file():
+    """从sources.txt文件加载所有电视源"""
+    sources_file = "sources.txt"
+    sources = []
+    
+    if not os.path.exists(sources_file):
+        print(f"❌ 错误: {sources_file} 文件不存在")
+        print(f"📝 请创建 {sources_file} 文件，每行添加一个M3U文件URL")
+        return sources
+    
     try:
-        with open("sources.txt", "r", encoding="utf-8") as f:
+        with open(sources_file, "r", encoding="utf-8") as f:
+            line_number = 0
             for line in f:
+                line_number += 1
                 line = line.strip()
-                if line and not line.startswith("#"):
+                
+                # 跳过空行和注释行
+                if not line:
+                    continue
+                if line.startswith("#"):
+                    continue
+                
+                # 验证URL格式
+                if line.startswith("http://") or line.startswith("https://"):
                     sources.append(line)
+                else:
+                    print(f"⚠️  第{line_number}行格式错误，跳过: {line}")
+        
+        print(f"📡 从 {sources_file} 加载了 {len(sources)} 个数据源")
+        
+        if len(sources) == 0:
+            print(f"❌ 错误: {sources_file} 中没有找到有效的URL")
+            print(f"📝 请在 {sources_file} 中添加M3U文件URL，格式: https://example.com/live.m3u")
+        
     except Exception as e:
-        print(f"读取sources.txt失败: {e}")
+        print(f"❌ 读取 {sources_file} 失败: {e}")
+    
+    return sources
 
-print(f"📡 共找到 {len(sources)} 个数据源")
+# 从sources.txt文件加载所有源
+sources = load_sources_from_file()
 
-# 频道名称清理规则 - 移除冗余信息
+if len(sources) == 0:
+    print("❌ 没有可用的数据源，退出")
+    sys.exit(1)
+
+# 频道名称清理规则 - 深度精简
 CLEAN_RULES = [
+    # 移除技术参数标记
+    (r'50\s*FPS', ''),  # 移除50 FPS
+    (r'HEVC', ''),  # 移除HEVC
+    (r'H\.?264', ''),  # 移除H.264
+    (r'H\.?265', ''),  # 移除H.265
+    (r'AAC', ''),  # 移除AAC
+    (r'AC3', ''),  # 移除AC3
+    (r'[\[\(][^\]\)]*[\]\)]', ''),  # 移除所有括号内容
+    (r'【[^】]*】', ''),  # 移除所有中文括号内容
+    
     # 移除清晰度标记
-    (r'\[[^\]]*\]', ''),  # 移除方括号内容
-    (r'\([^\)]*\)', ''),  # 移除圆括号内容
-    (r'【[^】]*】', ''),  # 移除中文方括号内容
+    (r'[_\-\s]?4K[_\-\s]?', ' '),  # 移除4K标记
+    (r'[_\-\s]?高清[_\-\s]?', ' '),  # 移除高清标记
+    (r'[_\-\s]?HD[_\-\s]?', ' '),  # 移除HD标记
+    (r'[_\-\s]?超清[_\-\s]?', ' '),  # 移除超清标记
+    (r'[_\-\s]?标清[_\-\s]?', ' '),  # 移除标清标记
+    (r'[_\-\s]?流畅[_\-\s]?', ' '),  # 移除流畅标记
+    (r'[_\-\s]?1080[Pp]?[_\-\s]?', ' '),  # 移除1080P标记
+    (r'[_\-\s]?720[Pp]?[_\-\s]?', ' '),  # 移除720P标记
     
-    # 移除常见冗余词
-    (r'直播$', ''),
-    (r'频道$', ''),
-    (r'台$', ''),
-    (r'电视台$', ''),
-    (r'卫视台$', '卫视'),
+    # 移除协议标记
+    (r'[_\-\s]?IPV6[_\-\s]?', ' '),  # 移除IPV6标记
+    (r'[_\-\s]?IPV4[_\-\s]?', ' '),  # 移除IPV4标记
+    (r'[_\-\s]?HLS[_\-\s]?', ' '),  # 移除HLS标记
+    (r'[_\-\s]?RTMP[_\-\s]?', ' '),  # 移除RTMP标记
+    (r'[_\-\s]?RTSP[_\-\s]?', ' '),  # 移除RTSP标记
+    (r'[_\-\s]?FLV[_\-\s]?', ' '),  # 移除FLV标记
     
-    # 统一清晰度标记
-    (r'[_-]?4K$', ''),
-    (r'[_-]?高清$', ''),
-    (r'[_-]?HD$', ''),
-    (r'[_-]?超清$', ''),
-    (r'[_-]?标清$', ''),
-    (r'[_-]?流畅$', ''),
+    # 移除冗余词
+    (r'\s+直播$', ''),  # 移除"直播"后缀
+    (r'\s+频道$', ''),  # 移除"频道"后缀
+    (r'\s+台$', ''),  # 移除"台"后缀
+    (r'\s+电视台$', ''),  # 移除"电视台"后缀
+    (r'\s+卫视台$', '卫视'),  # 卫视台改为卫视
     
-    # 统一协议标记
-    (r'[_-]?IPV6$', ''),
-    (r'[_-]?IPV4$', ''),
-    (r'[_-]?HLS$', ''),
-    (r'[_-]?RTMP$', ''),
-    
-    # 移除多余空格和分隔符
-    (r'\s+', ' '),
-    (r'^\s+|\s+$', ''),
-    (r'[_-]{2,}', '-'),
-    (r'\s*[|]\s*', ' '),
+    # 统一符号
+    (r'\s+', ' '),  # 多个空格合并为一个
+    (r'^\s+|\s+$', ''),  # 去除首尾空格
+    (r'[_\-\|]+', ' '),  # 统一分隔符为空格
+    (r'\s*&\s*', ' '),  # &符号替换为空格
 ]
+
+# 央视频道标准化映射
+CCTV_MAPPING = {
+    # 标准CCTV数字频道
+    r'^CCTV[_\-\s]?1$': 'CCTV-1 综合',
+    r'^CCTV[_\-\s]?2$': 'CCTV-2 财经',
+    r'^CCTV[_\-\s]?3$': 'CCTV-3 综艺',
+    r'^CCTV[_\-\s]?4$': 'CCTV-4 中文国际',
+    r'^CCTV[_\-\s]?5$': 'CCTV-5 体育',
+    r'^CCTV[_\-\s]?5\+$': 'CCTV-5+ 体育赛事',
+    r'^CCTV[_\-\s]?6$': 'CCTV-6 电影',
+    r'^CCTV[_\-\s]?7$': 'CCTV-7 国防军事',
+    r'^CCTV[_\-\s]?8$': 'CCTV-8 电视剧',
+    r'^CCTV[_\-\s]?9$': 'CCTV-9 纪录',
+    r'^CCTV[_\-\s]?10$': 'CCTV-10 科教',
+    r'^CCTV[_\-\s]?11$': 'CCTV-11 戏曲',
+    r'^CCTV[_\-\s]?12$': 'CCTV-12 社会与法',
+    r'^CCTV[_\-\s]?13$': 'CCTV-13 新闻',
+    r'^CCTV[_\-\s]?14$': 'CCTV-14 少儿',
+    r'^CCTV[_\-\s]?15$': 'CCTV-15 音乐',
+    r'^CCTV[_\-\s]?16$': 'CCTV-16 奥林匹克',
+    r'^CCTV[_\-\s]?17$': 'CCTV-17 农业农村',
+    
+    # 央视中文数字频道
+    r'^CCTV[一二三四五六七八九十]$': 'CCTV-{num}',
+    r'^央视[一二三四五六七八九十]$': 'CCTV-{num}',
+    r'^中央电视台[一二三四五六七八九十]?$': 'CCTV-1 综合',
+    
+    # 央视高清/4K频道
+    r'^CCTV4K$': 'CCTV-4K 超高清',
+    r'^CCTV8K$': 'CCTV-8K 超高清',
+    r'^CCTV[_\-\s]?高清$': 'CCTV-高清',
+    
+    # 央视其他频道
+    r'^CCTV[_\-\s]?戏曲$': 'CCTV-11 戏曲',
+    r'^CCTV[_\-\s]?音乐$': 'CCTV-15 音乐',
+    r'^CCTV[_\-\s]?少儿$': 'CCTV-14 少儿',
+    r'^CCTV[_\-\s]?新闻$': 'CCTV-13 新闻',
+    r'^CCTV[_\-\s]?纪录$': 'CCTV-9 纪录',
+    r'^CCTV[_\-\s]?体育$': 'CCTV-5 体育',
+    r'^CCTV[_\-\s]?电影$': 'CCTV-6 电影',
+    r'^CCTV[_\-\s]?电视剧$': 'CCTV-8 电视剧',
+    r'^CCTV[_\-\s]?综艺$': 'CCTV-3 综艺',
+    r'^CCTV[_\-\s]?财经$': 'CCTV-2 财经',
+    
+    # 地方卫视统一命名
+    r'^北京卫视$': '北京卫视',
+    r'^湖南卫视$': '湖南卫视',
+    r'^浙江卫视$': '浙江卫视',
+    r'^江苏卫视$': '江苏卫视',
+    r'^东方卫视$': '东方卫视',
+    r'^天津卫视$': '天津卫视',
+    r'^安徽卫视$': '安徽卫视',
+    r'^山东卫视$': '山东卫视',
+    r'^广东卫视$': '广东卫视',
+    r'^深圳卫视$': '深圳卫视',
+    r'^黑龙江卫视$': '黑龙江卫视',
+    r'^辽宁卫视$': '辽宁卫视',
+    r'^湖北卫视$': '湖北卫视',
+    r'^河南卫视$': '河南卫视',
+    r'^四川卫视$': '四川卫视',
+    r'^重庆卫视$': '重庆卫视',
+}
+
+# 中文数字到阿拉伯数字映射
+CHINESE_NUMBERS = {
+    '一': '1', '二': '2', '三': '3', '四': '4', '五': '5',
+    '六': '6', '七': '7', '八': '8', '九': '9', '十': '10',
+    '十一': '11', '十二': '12', '十三': '13', '十四': '14', '十五': '15',
+    '十六': '16', '十七': '17'
+}
 
 # 分类规则 - 按优先级顺序匹配
 CATEGORY_RULES = {
@@ -80,70 +190,60 @@ CATEGORY_RULES = {
         r"^CCTV[-\s]?[\d一二三四五六七八九十]+",  # CCTV1, CCTV-1, CCTV一
         r"^央视[一二三四五六七八九十]+",  # 央视一, 央视二
         r"^中央电视台",  # 中央电视台
-        r"^CCTV1$", r"^CCTV2$", r"^CCTV3$", r"^CCTV4$", r"^CCTV5$",
-        r"^CCTV6$", r"^CCTV7$", r"^CCTV8$", r"^CCTV9$", r"^CCTV10$",
-        r"^CCTV11$", r"^CCTV12$", r"^CCTV13$", r"^CCTV14$", r"^CCTV15$",
-        r"^CCTV16$", r"^CCTV17$",
-        r"^CCTV4K$", r"^CCTV8K$", r"^CCTV5\+$"
+        r"^CCTV[-\s]?4K", r"^CCTV[-\s]?8K", r"^CCTV[-\s]?5\+",
+        r"^CCTV[-\s]?综合$", r"^CCTV[-\s]?财经$", r"^CCTV[-\s]?综艺$",
+        r"^CCTV[-\s]?体育$", r"^CCTV[-\s]?电影$", r"^CCTV[-\s]?电视剧$",
     ],
     
     # 卫视
     "卫视": [
         r"卫视$",  # 以"卫视"结尾
-        r"^湖南卫视$", r"^浙江卫视$", r"^江苏卫视$", r"^东方卫视$",
-        r"^北京卫视$", r"^天津卫视$", r"^安徽卫视$", r"^山东卫视$",
+        r"^北京卫视$", r"^湖南卫视$", r"^浙江卫视$", r"^江苏卫视$",
+        r"^东方卫视$", r"^天津卫视$", r"^安徽卫视$", r"^山东卫视$",
         r"^广东卫视$", r"^深圳卫视$", r"^黑龙江卫视$", r"^辽宁卫视$",
-        r"^湖北卫视$", r"^河南卫视$", r"^江西卫视$", r"^广西卫视$",
-        r"^东南卫视$", r"^贵州卫视$", r"^四川卫视$", r"^重庆卫视$",
+        r"^湖北卫视$", r"^河南卫视$", r"^四川卫视$", r"^重庆卫视$",
+        r"^江西卫视$", r"^广西卫视$", r"^东南卫视$", r"^贵州卫视$",
         r"^云南卫视$", r"^陕西卫视$", r"^山西卫视$", r"^河北卫视$",
-        r"^吉林卫视$", r"^甘肃卫视$", r"^宁夏卫视$", r"^青海卫视$",
-        r"^新疆卫视$", r"^西藏卫视$", r"^内蒙古卫视$", r"^海南卫视$"
     ],
     
     # 少儿台
     "少儿台": [
-        r"少儿", r"卡通", r"动漫", r"动画", r"金鹰卡通",
-        r"优漫卡通", r"嘉佳卡通", r"炫动卡通", r"卡酷少儿",
-        r"哈哈炫动", r"少儿频道", r"儿童频道", r"宝贝"
+        r"少儿$", r"卡通$", r"动漫$", r"动画$", r"金鹰卡通",
+        r"卡酷少儿", r"哈哈炫动", r"优漫卡通", r"嘉佳卡通",
+        r"炫动卡通", r"宝贝"
     ],
     
     # 综艺台
     "综艺台": [
-        r"综艺", r"文艺", r"娱乐", r"快乐垂钓", r"电竞",
-        r"生活", r"时尚", r"女性", r"购物", r"旅游", r"纪实",
-        r"科教", r"文化", r"戏曲", r"相声", r"小品"
+        r"综艺$", r"文艺$", r"娱乐$", r"音乐$", r"戏曲$",
+        r"相声$", r"小品$", r"文化$", r"艺术$"
     ],
     
     # 港澳台
     "港澳台": [
         r"凤凰", r"翡翠", r"明珠", r"TVB", r"ATV", r"澳视",
         r"澳门", r"香港", r"台湾", r"中天", r"东森", r"华视",
-        r"民视", r"三立", r"无线", r"翡翠台", r"明珠台",
-        r"本港台", r"国际台", r"星空卫视", r"华娱卫视",
-        r"澳亚卫视", r"莲花卫视"
+        r"民视", r"三立", r"无线"
     ],
     
     # 体育台
     "体育台": [
-        r"体育", r"足球", r"篮球", r"NBA", r"CBA", r"英超",
-        r"西甲", r"意甲", r"德甲", r"法甲", r"欧冠",
-        r"高尔夫", r"网球", r"乒羽", r"搏击", r"格斗",
-        r"赛车", r"F1", r"奥运", r"赛事", r"竞技"
+        r"体育$", r"足球$", r"篮球$", r"NBA", r"CBA", r"英超",
+        r"欧冠$", r"高尔夫$", r"网球$", r"乒羽$", r"搏击$",
+        r"赛车$", r"F1$", r"奥运$", r"赛事$"
     ],
     
     # 影视台
     "影视台": [
-        r"电影", r"影院", r"影视频道", r"好莱坞", r"CHC",
-        r"电影台", r"家庭影院", r"动作电影", r"喜剧电影",
-        r"爱情电影", r"科幻电影", r"恐怖电影", r"战争电影"
+        r"电影$", r"影院$", r"影视频道$", r"好莱坞$", r"CHC",
+        r"家庭影院$", r"动作电影$", r"喜剧电影$"
     ],
     
     # 地方台
     "地方台": [
-        r"地方", r"都市", r"民生", r"新闻", r"公共", r"经济",
-        r"法制", r"农业", r"交通", r"都市频道", r"新闻频道",
-        r"公共频道", r"经济频道", r"法制频道", r"农业频道",
-        r"交通频道", r"城市频道", r"省会频道"
+        r"新闻$", r"都市$", r"民生$", r"公共$", r"经济$",
+        r"法制$", r"农业$", r"交通$", r"城市$", r"省会$",
+        r"地方$"
     ]
 }
 
@@ -153,39 +253,126 @@ def get_beijing_time():
     beijing_time = utc_now.astimezone(timezone(timedelta(hours=8)))
     return beijing_time.strftime('%Y-%m-%d %H:%M:%S')
 
-def clean_channel_name(name):
-    """清理频道名称，移除冗余信息"""
+def chinese_to_arabic(chinese_num):
+    """中文数字转阿拉伯数字"""
+    if chinese_num in CHINESE_NUMBERS:
+        return CHINESE_NUMBERS[chinese_num]
+    return chinese_num
+
+def standardize_cctv_name(name):
+    """标准化CCTV频道名称"""
     original_name = name
+    
+    # 首先尝试匹配CCTV_MAPPING中的规则
+    for pattern, replacement in CCTV_MAPPING.items():
+        if re.match(pattern, name, re.IGNORECASE):
+            if '{num}' in replacement:
+                # 提取数字部分
+                match = re.search(r'[\d一二三四五六七八九十]+', name)
+                if match:
+                    num = chinese_to_arabic(match.group())
+                    return replacement.replace('{num}', num)
+            return replacement
+    
+    # 处理CCTV-数字格式
+    cctv_match = re.match(r'^CCTV[_\-\s]?([\d一二三四五六七八九十]+)(?:\s+(.+))?$', name, re.IGNORECASE)
+    if cctv_match:
+        num = chinese_to_arabic(cctv_match.group(1))
+        suffix = cctv_match.group(2) or ""
+        
+        # 根据数字确定频道名称
+        cctv_names = {
+            '1': '综合', '2': '财经', '3': '综艺', '4': '中文国际',
+            '5': '体育', '5+': '体育赛事', '6': '电影', '7': '国防军事',
+            '8': '电视剧', '9': '纪录', '10': '科教', '11': '戏曲',
+            '12': '社会与法', '13': '新闻', '14': '少儿', '15': '音乐',
+            '16': '奥林匹克', '17': '农业农村'
+        }
+        
+        if num in cctv_names:
+            channel_name = cctv_names[num]
+            return f"CCTV-{num} {channel_name}"
+        else:
+            if suffix:
+                return f"CCTV-{num} {suffix}"
+            else:
+                return f"CCTV-{num}"
+    
+    # 处理央视开头
+    if name.startswith('央视'):
+        match = re.match(r'^央视([一二三四五六七八九十]+)(?:\s+(.+))?$', name)
+        if match:
+            num = chinese_to_arabic(match.group(1))
+            suffix = match.group(2) or ""
+            return f"CCTV-{num} {suffix}"
+    
+    return original_name
+
+def clean_channel_name(name):
+    """深度清理频道名称，移除冗余信息"""
+    original_name = name
+    
+    # 深度清理：应用所有清理规则
     for pattern, replacement in CLEAN_RULES:
         name = re.sub(pattern, replacement, name, flags=re.IGNORECASE)
     
-    # 特殊情况处理
-    name = re.sub(r'^CCTV[_\s]', 'CCTV', name)  # CCTV_1 -> CCTV1
-    name = re.sub(r'^CCTV[一二三四五六七八九十]', lambda m: f'CTV{m.group(0)[4:]}', name)  # 中文数字转阿拉伯
+    # 额外清理：移除重复词
+    name = re.sub(r'\b(\w+)(?:\s+\1)+\b', r'\1', name)
+    
+    # 标准化CCTV名称
+    if re.match(r'^(CCTV|央视|中央电视台)', name, re.IGNORECASE):
+        name = standardize_cctv_name(name)
+    
+    # 统一卫视命名
+    if name.endswith('卫视') and len(name) > 2:
+        # 移除卫视前的多余空格
+        name = re.sub(r'\s+卫视$', '卫视', name)
     
     # 最终清理
+    name = re.sub(r'\s+', ' ', name)  # 合并多个空格
     name = name.strip()
     
     # 如果清理后为空，使用原始名称
-    if not name:
+    if not name or len(name) < 2:
         name = original_name
     
     return name
 
-def fetch_m3u(url):
-    """获取M3U文件"""
-    try:
-        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
-        response = requests.get(url, headers=headers, timeout=30)
-        response.encoding = 'utf-8'
-        if response.status_code == 200:
-            return response.text
-        else:
-            print(f"❌ 获取失败 {url}: HTTP {response.status_code}")
-            return None
-    except Exception as e:
-        print(f"❌ 请求错误 {url}: {e}")
-        return None
+def fetch_m3u(url, retry=2):
+    """获取M3U文件，支持重试"""
+    for attempt in range(retry + 1):
+        try:
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "Accept": "text/plain,application/x-mpegURL,*/*",
+                "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+                "Connection": "keep-alive",
+                "Cache-Control": "no-cache"
+            }
+            response = requests.get(url, headers=headers, timeout=15)
+            response.encoding = 'utf-8'
+            
+            if response.status_code == 200:
+                return response.text
+            else:
+                print(f"❌ 获取失败 {url}: HTTP {response.status_code} (尝试 {attempt + 1}/{retry + 1})")
+                if attempt < retry:
+                    time.sleep(2)
+                
+        except requests.exceptions.Timeout:
+            print(f"❌ 请求超时 {url} (尝试 {attempt + 1}/{retry + 1})")
+            if attempt < retry:
+                time.sleep(2)
+        except requests.exceptions.ConnectionError:
+            print(f"❌ 连接错误 {url} (尝试 {attempt + 1}/{retry + 1})")
+            if attempt < retry:
+                time.sleep(2)
+        except Exception as e:
+            print(f"❌ 请求错误 {url}: {e} (尝试 {attempt + 1}/{retry + 1})")
+            if attempt < retry:
+                time.sleep(2)
+    
+    return None
 
 def parse_channels(content, source_url):
     """解析M3U内容，返回频道列表"""
@@ -216,18 +403,20 @@ def parse_channels(content, source_url):
             
             # 提取清晰度信息
             quality = "未知"
-            if re.search(r'4K|超清|UHD', name, re.IGNORECASE):
-                quality = "4K超清"
-            elif re.search(r'高清|HD|1080', name, re.IGNORECASE):
+            if re.search(r'4K|超清|UHD|2160', name, re.IGNORECASE):
+                quality = "4K"
+            elif re.search(r'高清|HD|1080|FHD', name, re.IGNORECASE):
                 quality = "高清"
             elif re.search(r'标清|SD|720', name, re.IGNORECASE):
                 quality = "标清"
+            elif re.search(r'流畅|360|480', name, re.IGNORECASE):
+                quality = "流畅"
             
             # 获取URL
             if i + 1 < len(lines):
                 url = lines[i + 1].strip()
                 if url and not url.startswith('#'):
-                    # 清理频道名称
+                    # 深度清理频道名称
                     clean_name = clean_channel_name(name)
                     
                     channels.append({
@@ -295,13 +484,15 @@ def merge_channels(all_channels):
             # 添加到现有频道
             merged[key]['original_names'].append(channel['original_name'])
             
-            # 添加源
-            merged[key]['sources'].append({
-                'url': channel['url'],
-                'quality': channel['quality'],
-                'source': channel['source'],
-                'logo': channel['logo']
-            })
+            # 检查URL是否已存在，避免重复
+            urls = [s['url'] for s in merged[key]['sources']]
+            if channel['url'] not in urls:
+                merged[key]['sources'].append({
+                    'url': channel['url'],
+                    'quality': channel['quality'],
+                    'source': channel['source'],
+                    'logo': channel['logo']
+                })
             
             # 收集logo
             if channel['logo'] and channel['logo'] not in merged[key]['logos']:
@@ -328,30 +519,55 @@ def merge_channels(all_channels):
 
 # 主收集过程
 print("🚀 开始采集电视直播源...")
+print(f"📋 数据源列表 (从sources.txt加载):")
+for i, source in enumerate(sources, 1):
+    print(f"  {i:2d}. {source}")
 
 all_channels = []
-total_collected = 0
+success_sources = 0
+failed_sources = []
 
 for idx, source_url in enumerate(sources, 1):
     print(f"\n[{idx}/{len(sources)}] 处理: {source_url}")
     
     content = fetch_m3u(source_url)
     if not content:
-        print("   ⚠️  无法获取内容，跳过")
+        failed_sources.append(source_url)
+        print("   ❌ 无法获取内容，跳过")
         continue
     
     channels = parse_channels(content, source_url)
-    print(f"   解析到 {len(channels)} 个频道")
+    
+    # 统计频道名称变化
+    changed_count = 0
+    for channel in channels:
+        if channel['original_name'] != channel['clean_name']:
+            changed_count += 1
+    
+    print(f"   ✅ 解析到 {len(channels)} 个频道 ({changed_count}个已精简)")
+    
+    if changed_count > 0 and len(channels) <= 10:
+        for channel in channels[:5]:
+            if channel['original_name'] != channel['clean_name']:
+                print(f"      '{channel['original_name']}' -> '{channel['clean_name']}'")
     
     all_channels.extend(channels)
-    total_collected += len(channels)
+    success_sources += 1
     
     # 避免请求过快
     if idx < len(sources):
         time.sleep(1)
 
-print(f"\n✅ 采集完成！")
-print(f"   总计采集: {total_collected} 个原始频道")
+print(f"\n{'='*50}")
+print(f"✅ 采集完成统计:")
+print(f"   成功源数: {success_sources}/{len(sources)}")
+print(f"   失败源数: {len(failed_sources)}")
+print(f"   总计采集: {len(all_channels)} 个原始频道")
+
+if len(failed_sources) > 0:
+    print(f"\n⚠️  失败的源:")
+    for failed in failed_sources:
+        print(f"   - {failed}")
 
 if len(all_channels) == 0:
     print("\n❌ 没有采集到任何频道，退出")
@@ -361,6 +577,14 @@ if len(all_channels) == 0:
 print("\n🔄 正在合并同名电视台...")
 merged_channels = merge_channels(all_channels)
 print(f"   合并后: {len(merged_channels)} 个唯一电视台")
+
+# 显示一些合并示例
+print("\n📝 合并示例:")
+merged_examples = list(merged_channels.items())[:5]
+for clean_name, data in merged_examples:
+    source_count = len(data['sources'])
+    if source_count > 1:
+        print(f"   {clean_name}: {source_count}个源")
 
 # 统计分类数量
 category_stats = {
@@ -406,13 +630,14 @@ print("\n📄 生成 live_sources.m3u（精简合并版）...")
 try:
     with open("live_sources.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        f.write(f"# 电视直播源 - 精简合并版\n")
+        f.write(f"# 电视直播源 - 深度精简合并版\n")
         f.write(f"# 更新时间(北京时间): {timestamp}\n")
         f.write(f"# 电视台总数: {len(merged_channels)}\n")
-        f.write(f"# 原始频道数: {total_collected}\n")
-        f.write(f"# 数据源: {len(sources)}\n")
+        f.write(f"# 原始频道数: {len(all_channels)}\n")
+        f.write(f"# 数据源: {len(sources)} 个 (成功: {success_sources}, 失败: {len(failed_sources)})\n")
         f.write(f"# 说明: 同名电视台已合并，支持多源切换\n")
-        f.write(f"# 每个电视台显示为: 电视台名称 [源1/源2...]\n\n")
+        f.write(f"# 特点: 移除技术参数，统一央视频道命名\n")
+        f.write(f"# 源文件: sources.txt\n\n")
         
         # 按分类写入
         for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
@@ -426,7 +651,10 @@ try:
                     
                     # 写入电视台信息
                     source_count = len(channel['sources'])
-                    display_name = f"{channel['clean_name']} [{source_count}源]"
+                    if source_count > 1:
+                        display_name = f"{channel['clean_name']} [{source_count}源]"
+                    else:
+                        display_name = channel['clean_name']
                     
                     # 写入第一个源
                     main_source = channel['sources'][0]
@@ -435,6 +663,8 @@ try:
                     line += f' group-title="{category}"'
                     if main_logo:
                         line += f' tvg-logo="{main_logo}"'
+                    if main_source['quality'] != "未知":
+                        line += f' tvg-quality="{main_source["quality"]}"'
                     line += f',{display_name}\n'
                     line += f"{main_source['url']}\n"
                     f.write(line)
@@ -446,6 +676,8 @@ try:
                             alt_line += f' tvg-name="{channel["clean_name"]}"'
                             alt_line += f' group-title="{category}"'
                             alt_line += f' tvg-logo="{main_logo}"'
+                            if source['quality'] != "未知":
+                                alt_line += f' tvg-quality="{source["quality"]}"'
                             alt_line += f',{channel["clean_name"]} [源{i}]\n'
                             alt_line += f"{source['url']}\n"
                             f.write(alt_line)
@@ -453,8 +685,6 @@ try:
     print(f"  ✅ live_sources.m3u 生成成功，包含 {len(merged_channels)} 个电视台")
 except Exception as e:
     print(f"  ❌ 生成live_sources.m3u失败: {e}")
-    import traceback
-    traceback.print_exc()
 
 # 2. 生成分类M3U文件
 print("\n📄 生成分类文件...")
@@ -472,7 +702,11 @@ for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港
                 for channel in sorted(cat_channels, key=lambda x: x['clean_name']):
                     main_logo = channel['logos'][0] if channel['logos'] else ""
                     source_count = len(channel['sources'])
-                    display_name = f"{channel['clean_name']} [{source_count}源]"
+                    
+                    if source_count > 1:
+                        display_name = f"{channel['clean_name']} [{source_count}源]"
+                    else:
+                        display_name = channel['clean_name']
                     
                     # 写入第一个源
                     main_source = channel['sources'][0]
@@ -481,6 +715,8 @@ for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港
                     line += f' group-title="{category}"'
                     if main_logo:
                         line += f' tvg-logo="{main_logo}"'
+                    if main_source['quality'] != "未知":
+                        line += f' tvg-quality="{main_source["quality"]}"'
                     line += f',{display_name}\n'
                     line += f"{main_source['url']}\n"
                     f.write(line)
@@ -521,10 +757,13 @@ try:
     json_data = {
         'last_updated': timestamp,
         'total_channels': len(merged_channels),
-        'original_channel_count': total_collected,
+        'original_channel_count': len(all_channels),
         'sources_count': len(sources),
+        'success_sources': success_sources,
+        'failed_sources': failed_sources,
         'category_stats': category_stats,
-        'channels': channel_list
+        'channels': channel_list,
+        'source_file': 'sources.txt'
     }
     
     # 写入文件
@@ -534,10 +773,8 @@ try:
     print(f"  ✅ channels.json 生成成功，包含 {len(merged_channels)} 个电视台的详细信息")
 except Exception as e:
     print(f"  ❌ 生成channels.json失败: {e}")
-    import traceback
-    traceback.print_exc()
 
-# 4. 生成精简版M3U（每个电视台只保留一个源）
+# 4. 生成精简版M3U（每个电视台只保留最佳源）
 print("\n📄 生成 merged/精简版.m3u...")
 try:
     with open("merged/精简版.m3u", "w", encoding="utf-8") as f:
@@ -545,7 +782,9 @@ try:
         f.write(f"# 电视直播源 - 精简版\n")
         f.write(f"# 更新时间(北京时间): {timestamp}\n")
         f.write(f"# 电视台总数: {len(merged_channels)}\n")
-        f.write(f"# 说明: 每个电视台只保留最佳源\n\n")
+        f.write(f"# 说明: 每个电视台只保留最佳源\n")
+        f.write(f"# 特点: 移除技术参数，统一央视频道命名\n")
+        f.write(f"# 源文件: sources.txt\n\n")
         
         for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
             cat_channels = categories[category]
@@ -556,7 +795,7 @@ try:
                     # 选择最佳源（优先选择高清源）
                     best_source = None
                     for source in channel['sources']:
-                        if source['quality'] == "4K超清":
+                        if source['quality'] == "4K":
                             best_source = source
                             break
                         elif source['quality'] == "高清":
@@ -572,6 +811,8 @@ try:
                     line += f' group-title="{category}"'
                     if main_logo:
                         line += f' tvg-logo="{main_logo}"'
+                    if best_source['quality'] != "未知":
+                        line += f' tvg-quality="{best_source["quality"]}"'
                     line += f',{channel["clean_name"]}\n'
                     line += f"{best_source['url']}\n"
                     f.write(line)
@@ -583,12 +824,31 @@ except Exception as e:
 # 5. 生成HTML页面
 print("\n📄 生成 index.html...")
 try:
+    # 简化频道数据用于JavaScript
+    simplified_channels = []
+    for clean_name, channel_data in merged_channels.items():
+        simplified = {
+            'name': clean_name,
+            'category': channel_data['category'],
+            'sourceCount': len(channel_data['sources']),
+            'sources': []
+        }
+        
+        for source in channel_data['sources']:
+            simplified['sources'].append({
+                'url': source['url'],
+                'quality': source['quality'],
+                'logo': source['logo'] or ''
+            })
+        
+        simplified_channels.append(simplified)
+    
     html_content = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>电视直播源 - 精简合并版</title>
+    <title>电视直播源 - 深度精简合并版</title>
     <style>
         :root {{
             --primary-color: #2c3e50;
@@ -710,144 +970,30 @@ try:
             background: var(--warning-color);
         }}
         
-        .category-tabs {{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 30px 0;
+        .features-list {{
             background: white;
-            padding: 20px;
+            padding: 25px;
             border-radius: 10px;
+            margin: 20px 0;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }}
         
-        .tab-btn {{
-            padding: 10px 20px;
-            background: var(--light-bg);
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 500;
+        .features-list ul {{
+            list-style: none;
+            padding: 0;
         }}
         
-        .tab-btn:hover {{
-            background: var(--secondary-color);
-            color: white;
-        }}
-        
-        .tab-btn.active {{
-            background: var(--secondary-color);
-            color: white;
-        }}
-        
-        .channels-container {{
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-        }}
-        
-        .channel-card {{
-            padding: 20px;
-            border: 1px solid #e0e0e0;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            transition: all 0.3s ease;
-        }}
-        
-        .channel-card:hover {{
-            border-color: var(--secondary-color);
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.1);
-        }}
-        
-        .channel-header {{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-        }}
-        
-        .channel-name {{
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: var(--primary-color);
-        }}
-        
-        .source-badge {{
-            background: var(--success-color);
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }}
-        
-        .sources-container {{
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px solid #eee;
-        }}
-        
-        .source-item {{
-            padding: 12px;
-            background: #f8f9fa;
-            border-radius: 6px;
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }}
-        
-        .source-info {{
+        .features-list li {{
+            padding: 8px 0;
             display: flex;
             align-items: center;
-            gap: 15px;
         }}
         
-        .quality-badge {{
-            padding: 3px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }}
-        
-        .quality-4k {{ background: #9b59b6; color: white; }}
-        .quality-hd {{ background: #3498db; color: white; }}
-        .quality-sd {{ background: #95a5a6; color: white; }}
-        .quality-unknown {{ background: #7f8c8d; color: white; }}
-        
-        .source-actions {{
-            display: flex;
-            gap: 10px;
-        }}
-        
-        .play-btn {{
-            padding: 8px 16px;
-            background: var(--success-color);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }}
-        
-        .play-btn:hover {{
-            background: #219653;
-        }}
-        
-        .copy-btn {{
-            padding: 8px 16px;
-            background: var(--warning-color);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }}
-        
-        .copy-btn:hover {{
-            background: #e67e22;
+        .features-list li:before {{
+            content: "✓";
+            color: var(--success-color);
+            font-weight: bold;
+            margin-right: 10px;
         }}
         
         footer {{
@@ -858,6 +1004,7 @@ try:
             background: white;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-top: 30px;
         }}
         
         @media (max-width: 768px) {{
@@ -869,23 +1016,6 @@ try:
                 flex-direction: column;
             }}
             
-            .channel-header {{
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-            }}
-            
-            .source-info {{
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 5px;
-            }}
-            
-            .source-actions {{
-                width: 100%;
-                justify-content: space-between;
-            }}
-            
             h1 {{
                 font-size: 2rem;
             }}
@@ -895,10 +1025,11 @@ try:
 <body>
     <div class="container">
         <header>
-            <h1>📺 电视直播源 - 精简合并版</h1>
-            <p class="subtitle">同名电视台自动合并 | 支持多源切换 | 每日自动更新</p>
+            <h1>📺 电视直播源 - 深度精简合并版</h1>
+            <p class="subtitle">移除技术参数 | 统一央视频道命名 | 支持多源切换</p>
             <div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">
                 <p>更新时间(北京时间): {timestamp}</p>
+                <p>源文件: sources.txt</p>
             </div>
         </header>
         
@@ -908,7 +1039,7 @@ try:
                 <div>电视台总数</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" style="color: #e74c3c;">{total_collected}</div>
+                <div class="stat-number" style="color: #e74c3c;">{len(all_channels)}</div>
                 <div>原始频道数</div>
             </div>
             <div class="stat-card">
@@ -916,9 +1047,21 @@ try:
                 <div>数据源数</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" style="color: #9b59b6;">{sum(category_stats.values())}</div>
-                <div>分类总数</div>
+                <div class="stat-number" style="color: #9b59b6;">{success_sources}</div>
+                <div>成功源数</div>
             </div>
+        </div>
+        
+        <div class="features-list">
+            <h3 style="color: var(--primary-color); margin-bottom: 15px;">✨ 主要特点</h3>
+            <ul>
+                <li>移除技术参数: 50 FPS、HEVC、H.264等</li>
+                <li>统一央视频道命名: CCTV-1 综合、CCTV-2 财经等</li>
+                <li>深度清理冗余信息: 直播、频道、台等后缀</li>
+                <li>智能合并同名电视台: 自动识别和合并</li>
+                <li>支持多源切换: 每个电视台可能有多个播放源</li>
+                <li>智能分类: 自动分类到9大类别</li>
+            </ul>
         </div>
         
         <div class="download-section">
@@ -954,25 +1097,60 @@ try:
 """
     
     html_content += """            </div>
+            
+            <div style="margin-top: 25px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <p style="color: #666; margin: 0; font-size: 0.9rem;">
+                    <strong>💡 使用提示:</strong> 
+                    <br>• 完整版: 包含所有源，适合需要切换源的用户
+                    <br>• 精简版: 每个电视台只保留最佳源，适合普通用户
+                    <br>• JSON数据: 包含所有电视台的详细信息
+                </p>
+            </div>
         </div>
         
-        <h2 style="color: var(--primary-color); margin-bottom: 20px;">🎯 电视台浏览</h2>
-        <div class="category-tabs" id="categoryTabs">
-            <button class="tab-btn active" data-category="all">全部电视台</button>
+        <div class="features-list">
+            <h3 style="color: var(--primary-color); margin-bottom: 15px;">📋 分类统计</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
 """
     
-    # 添加分类标签
+    # 添加分类统计
     for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
         count = len(categories[category])
         if count > 0:
-            html_content += f'            <button class="tab-btn" data-category="{category}">{category} ({count})</button>\n'
+            html_content += f"""                <div style="text-align: center;">
+                    <div style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">{count}</div>
+                    <div style="font-size: 0.9rem; color: #666;">{category}</div>
+                </div>
+"""
     
-    html_content += """        </div>
+    html_content += f"""            </div>
+        </div>
         
-        <div class="channels-container" id="channelsList">
-            <!-- 频道列表将通过JavaScript动态加载 -->
-            <div style="text-align: center; padding: 40px; color: #7f8c8d;">
-                <p>正在加载电视台列表...</p>
+        <div style="margin: 30px 0; text-align: center;">
+            <h3 style="color: var(--primary-color); margin-bottom: 15px;">🎯 央视频道命名示例</h3>
+            <div style="display: inline-block; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; text-align: left;">
+                    <div>
+                        <div style="color: #666; font-size: 0.9rem;">原始名称</div>
+                        <div style="color: #e74c3c;">→</div>
+                        <div style="color: #666; font-size: 0.9rem;">精简后名称</div>
+                    </div>
+                    <div>
+                        <div>CCTV1 4K HEVC</div>
+                        <div style="color: #e74c3c; text-align: center;">→</div>
+                        <div>CCTV-1 综合</div>
+                    </div>
+                    <div>
+                        <div>央视二台 高清</div>
+                        <div style="color: #e74c3c; text-align: center;">→</div>
+                        <div>CCTV-2 财经</div>
+                    </div>
+                    <div>
+                        <div>CCTV5+ 体育 50FPS</div>
+                        <div style="color: #e74c3c; text-align: center;">→</div>
+                        <div>CCTV-5+ 体育赛事</div>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -980,231 +1158,27 @@ try:
             <p>🔄 本项目自动更新于 GitHub Actions | 最后更新(北京时间): {timestamp}</p>
             <p>🎮 支持播放器: VLC、PotPlayer、IINA、nPlayer、Kodi、TiviMate等</p>
             <p style="margin-top: 15px; font-size: 0.8rem; color: #bdc3c7;">
-                💡 提示: 每个电视台可能包含多个源，如果某个源无法播放，请尝试切换其他源
+                💡 提示: 如需修改数据源，请编辑 <code>sources.txt</code> 文件
             </p>
             <div id="currentTime" style="margin-top: 15px; font-size: 0.8rem; color: #95a5a6;"></div>
         </footer>
     </div>
     
     <script>
-        // 频道数据
-        const channelData = """
-    
-    # 添加简化的频道数据到JavaScript
-    simplified_channels = []
-    for clean_name, channel_data in merged_channels.items():
-        simplified = {
-            'name': clean_name,
-            'category': channel_data['category'],
-            'sourceCount': len(channel_data['sources']),
-            'sources': []
-        }
-        
-        for source in channel_data['sources']:
-            simplified['sources'].append({
-                'url': source['url'],
-                'quality': source['quality'],
-                'logo': source['logo'] or ''
-            })
-        
-        simplified_channels.append(simplified)
-    
-    html_content += json.dumps(simplified_channels, ensure_ascii=False)
-    
-    html_content += """;
-        
-        // 页面功能
-        document.addEventListener('DOMContentLoaded', function() {
-            // 初始化
-            renderChannels('all');
-            updateTime();
-            
-            // 标签切换
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
-                    renderChannels(this.dataset.category);
-                });
-            });
-            
-            // 每5秒更新一次时间
-            setInterval(updateTime, 5000);
-        });
-        
-        function renderChannels(category) {
-            const container = document.getElementById('channelsList');
-            const filteredChannels = category === 'all' 
-                ? channelData 
-                : channelData.filter(c => c.category === category);
-            
-            if (filteredChannels.length === 0) {
-                container.innerHTML = '<div style="text-align: center; padding: 40px; color: #7f8c8d;">该分类下没有电视台</div>';
-                return;
-            }
-            
-            // 按名称排序
-            filteredChannels.sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'));
-            
-            let html = '';
-            
-            filteredChannels.forEach(channel => {
-                html += `
-                <div class="channel-card">
-                    <div class="channel-header">
-                        <div class="channel-name">${channel.name}</div>
-                        <div class="source-badge">${channel.sourceCount} 个源</div>
-                    </div>
-                    
-                    <div class="sources-container">
-                        <p style="margin-bottom: 10px; color: #666; font-size: 0.9rem;">切换源:</p>
-                `;
-                
-                channel.sources.forEach((source, index) => {
-                    const qualityClass = getQualityClass(source.quality);
-                    html += `
-                    <div class="source-item">
-                        <div class="source-info">
-                            <span style="font-weight: 500;">源 ${index + 1}</span>
-                            <span class="quality-badge ${qualityClass}">${source.quality}</span>
-                            ${source.logo ? `<span style="font-size: 0.8rem; color: #7f8c8d;">有Logo</span>` : ''}
-                        </div>
-                        <div class="source-actions">
-                            <button class="copy-btn" onclick="copyToClipboard('${source.url.replace(/'/g, "\\'")}')">复制</button>
-                            <button class="play-btn" onclick="playChannel('${source.url.replace(/'/g, "\\'")}', '${channel.name}')">播放</button>
-                        </div>
-                    </div>
-                    `;
-                });
-                
-                html += `
-                    </div>
-                </div>
-                `;
-            });
-            
-            container.innerHTML = html;
-        }
-        
-        function getQualityClass(quality) {
-            if (quality.includes('4K')) return 'quality-4k';
-            if (quality.includes('高清')) return 'quality-hd';
-            if (quality.includes('标清')) return 'quality-sd';
-            return 'quality-unknown';
-        }
-        
-        function playChannel(url, name) {
-            if (confirm(`播放 ${name}？\\n\\nURL: ${url.substring(0, 100)}${url.length > 100 ? '...' : ''}`)) {
-                window.open(url, '_blank');
-            }
-        }
-        
-        function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                alert('URL已复制到剪贴板！');
-            }).catch(err => {
-                console.error('复制失败:', err);
-                alert('复制失败，请手动复制');
-            });
-        }
-        
-        function updateTime() {
+        // 显示当前北京时间
+        function updateTime() {{
             const now = new Date();
             const beijingTime = new Date(now.getTime() + 8 * 60 * 60 * 1000);
             const timeStr = beijingTime.toISOString().replace('T', ' ').substring(0, 19);
             const timeElement = document.getElementById('currentTime');
-            if (timeElement) {
-                timeElement.textContent = `当前北京时间: ${timeStr}`;
-            }
-        }
+            if (timeElement) {{
+                timeElement.textContent = `当前北京时间: \${timeStr}`;
+            }}
+        }}
         
-        // 搜索功能
-        function initSearch() {
-            const searchBox = document.createElement('div');
-            searchBox.innerHTML = `
-                <div style="margin-bottom: 20px;">
-                    <input type="text" id="searchInput" placeholder="搜索电视台名称..." 
-                           style="width: 100%; padding: 12px 20px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem;">
-                </div>
-            `;
-            document.querySelector('.category-tabs').parentNode.insertBefore(searchBox, document.querySelector('.category-tabs'));
-            
-            document.getElementById('searchInput').addEventListener('input', function(e) {
-                const searchTerm = e.target.value.toLowerCase();
-                if (searchTerm) {
-                    const filtered = channelData.filter(c => 
-                        c.name.toLowerCase().includes(searchTerm) || 
-                        c.category.toLowerCase().includes(searchTerm)
-                    );
-                    
-                    const container = document.getElementById('channelsList');
-                    if (filtered.length === 0) {
-                        container.innerHTML = '<div style="text-align: center; padding: 40px; color: #7f8c8d;">未找到匹配的电视台</div>';
-                    } else {
-                        // 临时渲染搜索结果
-                        const currentCategory = document.querySelector('.tab-btn.active').dataset.category;
-                        if (currentCategory !== 'all') {
-                            document.querySelector('.tab-btn[data-category="all"]').click();
-                        }
-                        renderSearchResults(filtered);
-                    }
-                } else {
-                    // 恢复当前分类
-                    const currentCategory = document.querySelector('.tab-btn.active').dataset.category;
-                    renderChannels(currentCategory);
-                }
-            });
-        }
-        
-        function renderSearchResults(channels) {
-            const container = document.getElementById('channelsList');
-            
-            let html = '<div style="margin-bottom: 20px; color: #666; font-size: 0.9rem;">搜索结果:</div>';
-            
-            channels.forEach(channel => {
-                html += `
-                <div class="channel-card">
-                    <div class="channel-header">
-                        <div class="channel-name">${channel.name}</div>
-                        <div style="display: flex; align-items: center; gap: 10px;">
-                            <span style="background: #95a5a6; color: white; padding: 3px 10px; border-radius: 4px; font-size: 0.8rem;">
-                                ${channel.category}
-                            </span>
-                            <div class="source-badge">${channel.sourceCount} 源</div>
-                        </div>
-                    </div>
-                    
-                    <div class="sources-container">
-                        <p style="margin-bottom: 10px; color: #666; font-size: 0.9rem;">切换源:</p>
-                `;
-                
-                channel.sources.forEach((source, index) => {
-                    const qualityClass = getQualityClass(source.quality);
-                    html += `
-                    <div class="source-item">
-                        <div class="source-info">
-                            <span style="font-weight: 500;">源 ${index + 1}</span>
-                            <span class="quality-badge ${qualityClass}">${source.quality}</span>
-                        </div>
-                        <div class="source-actions">
-                            <button class="copy-btn" onclick="copyToClipboard('${source.url.replace(/'/g, "\\'")}')">复制</button>
-                            <button class="play-btn" onclick="playChannel('${source.url.replace(/'/g, "\\'")}', '${channel.name}')">播放</button>
-                        </div>
-                    </div>
-                    `;
-                });
-                
-                html += `
-                    </div>
-                </div>
-                `;
-            });
-            
-            container.innerHTML = html;
-        }
-        
-        // 初始化搜索功能
-        initSearch();
+        // 每5秒更新一次时间
+        setInterval(updateTime, 5000);
+        updateTime();
     </script>
 </body>
 </html>"""
@@ -1212,32 +1186,48 @@ try:
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html_content)
     
-    print(f"  ✅ index.html 生成成功，包含 {len(merged_channels)} 个电视台的交互界面")
+    print(f"  ✅ index.html 生成成功")
 except Exception as e:
     print(f"  ❌ 生成index.html失败: {e}")
-    import traceback
-    traceback.print_exc()
 
 # 6. 生成README
 print("\n📄 生成 README.md...")
 try:
-    readme_content = f"""# 📺 电视直播源项目 - 精简合并版
+    readme_content = f"""# 📺 电视直播源项目 - 深度精简合并版
 
-自动收集整理的电视直播源，支持同名电视台合并和多源切换。
+自动收集整理的电视直播源，支持深度精简和统一命名。
 
 ## ✨ 主要特性
 
-1. **智能合并** - 自动合并同名电视台的不同源
-2. **多源切换** - 每个电视台支持多个播放源
-3. **名称精简** - 清理冗余信息，统一命名格式
-4. **自动分类** - 智能分类到9大类别
-5. **每日更新** - 自动获取最新直播源
+### 1. **深度名称精简**
+- 移除技术参数: `50 FPS`、`HEVC`、`H.264`、`AAC`等
+- 移除清晰度标记: `4K`、`高清`、`HD`、`标清`等
+- 移除协议标记: `IPV6`、`HLS`、`RTMP`等
+- 清理冗余后缀: `直播`、`频道`、`台`等
+
+### 2. **统一央视频道命名**
+- `CCTV1` → `CCTV-1 综合`
+- `央视二台` → `CCTV-2 财经`
+- `CCTV5+ 体育` → `CCTV-5+ 体育赛事`
+- `CCTV4K` → `CCTV-4K 超高清`
+
+### 3. **智能合并**
+- 自动识别和合并同名电视台
+- 保留所有源的播放地址
+- 支持多源切换功能
+
+### 4. **智能分类**
+- 9大分类: 央视、卫视、地方台、少儿台、综艺台、港澳台、体育台、影视台、其他台
+- 基于名称的智能分类
+- 支持手动调整分类规则
 
 ## 📊 统计信息
 - **更新时间(北京时间)**: {timestamp}
 - **电视台总数**: {len(merged_channels)} (合并后)
-- **原始频道数**: {total_collected}
+- **原始频道数**: {len(all_channels)}
 - **数据源**: {len(sources)} 个
+- **成功源数**: {success_sources}
+- **失败源数**: {len(failed_sources)}
 
 ## 🏷️ 分类统计
 
@@ -1274,7 +1264,8 @@ try:
 | [live_sources.m3u](live_sources.m3u) | 完整版播放列表 | 包含所有电视台和多个源，适合需要源切换的用户 |
 | [merged/精简版.m3u](merged/精简版.m3u) | 精简版播放列表 | 每个电视台只保留最佳源，适合普通用户 |
 | [channels.json](channels.json) | 详细数据文件 | 包含所有电视台的详细信息和多源数据 |
-| [index.html](index.html) | 网页播放界面 | 在线浏览和切换播放源 |
+| [index.html](index.html) | 网页统计界面 | 查看统计信息和下载文件 |
+| [sources.txt](sources.txt) | 数据源配置文件 | 编辑此文件可添加或修改数据源 |
 
 ### 分类文件
 进入 [categories/](categories/) 目录下载分类播放列表：
@@ -1286,7 +1277,7 @@ try:
         if count > 0:
             readme_content += f"- [{category}.m3u](categories/{category}.m3u) - {count} 个电视台\n"
     
-    readme_content += """
+    readme_content += f"""
 
 ## 🚀 使用方法
 
@@ -1300,32 +1291,27 @@ try:
 2. 在播放器中，同一个电视台会出现多次（代表不同源）
 3. 如果某个源无法播放，尝试播放该电视台的其他源
 
-### 在线使用
-1. 访问 [index.html](index.html)
-2. 浏览电视台列表
-3. 点击"播放"按钮直接播放，或点击"复制"获取URL
-4. 如果某个源无法播放，切换到该电视台的其他源
+### 央视频道示例
+- `CCTV-1 综合` - 中央电视台综合频道
+- `CCTV-2 财经` - 中央电视台财经频道
+- `CCTV-5 体育` - 中央电视台体育频道
+- `CCTV-6 电影` - 中央电视台电影频道
+- `CCTV-5+ 体育赛事` - 中央电视台体育赛事频道
+- `CCTV-4K 超高清` - 中央电视台4K超高清频道
 
 ## ⚙️ 自定义配置
 
 编辑 `sources.txt` 文件可以添加更多直播源URL，每行一个。
 
-## 🔧 技术特点
+### sources.txt 格式示例
+电视直播源列表
+每行一个M3U文件URL
+https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u
+https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u
 
-### 频道名称处理
-- 自动移除清晰度标记（4K、高清、标清等）
-- 统一命名格式（CCTV1、湖南卫视等）
-- 清理冗余信息（直播、频道、台等后缀）
+可添加更多源
+https://example.com/live.m3u
 
-### 智能合并
-- 自动识别同名电视台
-- 合并多个源的播放地址
-- 保留所有源的清晰度信息
-
-### 分类系统
-- 9大分类：央视、卫视、地方台、少儿台、综艺台、港澳台、体育台、影视台、其他台
-- 基于名称的智能分类
-- 支持手动调整分类规则
 
 ## ⏰ 自动更新
 
@@ -1352,12 +1338,12 @@ except Exception as e:
 print(f"\n🎉 所有文件生成完成！")
 print(f"📊 统计:")
 print(f"  - 电视台总数: {len(merged_channels)}")
-print(f"  - 原始频道数: {total_collected}")
+print(f"  - 原始频道数: {len(all_channels)}")
 print(f"  - 数据源: {len(sources)}")
 print(f"📁 生成的文件:")
 print(f"  - live_sources.m3u (完整多源版)")
 print(f"  - merged/精简版.m3u (精简最佳源版)")
 print(f"  - channels.json (详细数据)")
-print(f"  - index.html (交互网页)")
+print(f"  - index.html (统计网页)")
 print(f"  - README.md (说明文档)")
 print(f"  - categories/*.m3u (分类列表)")
