@@ -1,9 +1,9 @@
 #EXTM3U
 # 影视台频道列表
-# 更新时间(北京时间): 2026-01-31 12:16:19
+# 更新时间(北京时间): 2026-01-31 12:32:29
 # 电视台数量: 2
 
-#EXTINF:-1 tvg-name="湖南电影" group-title="影视台" tvg-logo="湖南电影.png",湖南电影 [8源]
+#EXTINF:-1 tvg-name="湖南电影" group-title="影视台" tvg-logo="湖南电影.png",湖南电影 [4源]
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=hndy
-#EXTINF:-1 tvg-name="陕西西部电影" group-title="影视台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151605390141_16.jpg",陕西西部电影 [2源]
+#EXTINF:-1 tvg-name="陕西西部电影" group-title="影视台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151605390141_16.jpg" tvg-quality="高清",陕西西部电影
 https://epg.pw/stream/318a64a14fc9f1b992a21c72c71cfd4a89394cc5c5223234aa15277077764e2b.m3u8

@@ -1,27 +1,21 @@
 #EXTM3U
 # 体育台频道列表
-# 更新时间(北京时间): 2026-01-31 12:16:19
-# 电视台数量: 11
+# 更新时间(北京时间): 2026-01-31 12:32:29
+# 电视台数量: 8
 
-#EXTINF:-1 tvg-name="CCTV-风云足球" group-title="体育台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/风云足球.png",CCTV-风云足球 [4源]
+#EXTINF:-1 tvg-name="CCTV 风云足球" group-title="体育台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/风云足球.png",CCTV 风云足球 [2源]
 http://www.lizhinas.top:1009/rtp/239.252.219.96:5140
-#EXTINF:-1 tvg-name="CCTV风云足球" group-title="体育台" tvg-logo="https://tb.zbds.top/logo/CCTV风云足球.png",CCTV风云足球 [2源]
+#EXTINF:-1 tvg-name="CCTV风云足球" group-title="体育台" tvg-logo="https://tb.zbds.top/logo/CCTV风云足球.png",CCTV风云足球
 http://27.41.245.32:801/hls/906/index.m3u8
-#EXTINF:-1 tvg-name="cctv风云足球" group-title="体育台" tvg-logo="https://epg.pw/media/images/channel/2022/05/10/large/20220510165533742367_97.jpg",cctv风云足球 [2源]
+#EXTINF:-1 tvg-name="cctv风云足球" group-title="体育台" tvg-logo="https://epg.pw/media/images/channel/2022/05/10/large/20220510165533742367_97.jpg",cctv风云足球
 https://stream1.freetv.fun/f29c24e198f9bf47ac2be43abf3d1a9eb21ebf26392c4959f9ec8d2077718450.m3u8
-#EXTINF:-1 tvg-name="北京体育休闲" group-title="体育台" tvg-logo="https://live.fanmingming.cn/tv/北京体育休闲.png",北京体育休闲 [2源]
-http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226438/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EeVAybrHg955d_IRT9e_uHQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNMLCKqkSfuGOusJwBMwlCbz%2CEND
-#EXTINF:-1 tvg-name="天津体育" group-title="体育台" tvg-logo="天津体育.png",天津体育 [2源]
+#EXTINF:-1 tvg-name="天津体育" group-title="体育台" tvg-logo="天津体育.png",天津体育
 http://yp.qqqtv.top/1/api.php?id=%E5%A4%A9%E6%B4%A5%E4%BD%93%E8%82%B2&auth=666858
-#EXTINF:-1 tvg-name="山东体育" group-title="体育台" tvg-logo="山东体育.png",山东体育 [20源]
+#EXTINF:-1 tvg-name="山东体育" group-title="体育台" tvg-logo="山东体育.png",山东体育 [10源]
 https://stream1.freetv.fun/shan-dong-ti-yu-8.m3u8
-#EXTINF:-1 tvg-name="广东体育" group-title="体育台" tvg-logo="https://epg.pw/media/images/channel/2024/01/14/large/20240114130318634112_23.png",广东体育 [28源]
+#EXTINF:-1 tvg-name="广东体育" group-title="体育台" tvg-logo="https://epg.pw/media/images/channel/2024/01/14/large/20240114130318634112_23.png",广东体育 [14源]
 https://stream1.freetv.fun/7b470f9fc5c305db0c8622117b7b25ca00eb35ba3e93e865cf0ff9df5c736681.m3u8
-#EXTINF:-1 tvg-name="江苏体育" group-title="体育台" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530230519981125_89.jpg",江苏体育 [10源]
+#EXTINF:-1 tvg-name="江苏体育" group-title="体育台" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530230519981125_89.jpg",江苏体育 [5源]
 https://stream1.freetv.fun/e9b0607a6ad54ba676d9bb046555ef959e983d1f66e584dd05e2c58424945b7e.ctv
-#EXTINF:-1 tvg-name="江苏体育休闲" group-title="体育台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu5.png",江苏体育休闲 [2源]
-https://stream1.freetv.fun/af1087a1c24fff7af556ac8e6c5c623303d52966f67a998cefb52c17811b09a2.ctv
-#EXTINF:-1 tvg-name="辽宁体育" group-title="体育台" tvg-logo="辽宁体育.png",辽宁体育 [6源]
+#EXTINF:-1 tvg-name="辽宁体育" group-title="体育台" tvg-logo="辽宁体育.png",辽宁体育 [3源]
 https://stream1.freetv.fun/liao-zhu-ti-yu-5.m3u8
-#EXTINF:-1 tvg-name="陕西体育休闲" group-title="体育台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151408095945_53.jpg",陕西体育休闲 [10源]
-https://epg.pw/stream/222ab91506e0310c79e009d1ca30d69ec87ef48007371488bf3e2fad0f13af21.m3u8

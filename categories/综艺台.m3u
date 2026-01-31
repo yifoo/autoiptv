@@ -1,87 +1,33 @@
 #EXTM3U
 # 综艺台频道列表
-# 更新时间(北京时间): 2026-01-31 12:16:19
-# 电视台数量: 41
+# 更新时间(北京时间): 2026-01-31 12:32:29
+# 电视台数量: 14
 
-#EXTINF:-1 tvg-name="CCTV-女性时尚" group-title="综艺台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/女性时尚.png",CCTV-女性时尚 [4源]
-http://www.lizhinas.top:1009/rtp/239.252.219.94:5140
-#EXTINF:-1 tvg-name="CCTV-文化精品" group-title="综艺台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/文化精品.png",CCTV-文化精品 [4源]
-http://www.lizhinas.top:1009/rtp/239.252.219.81:5140
-#EXTINF:-1 tvg-name="上海纪实" group-title="综艺台" tvg-logo="上海纪实.png",上海纪实 [14源]
-http://php.jdshipin.com/TVOD/hnyd.php?id=200000001898/460000089800010067
-#EXTINF:-1 tvg-name="东方购物" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/14/large/20220514170333461314_55.jpg",东方购物 [2源]
-https://epg.pw/stream/50d25ad30fe421e86133c128094a41aa4cf86bea632cf86021cfb2fe0987eb7f.m3u8
-#EXTINF:-1 tvg-name="云南娱乐" group-title="综艺台" tvg-logo="云南娱乐.png",云南娱乐 [2源]
+#EXTINF:-1 tvg-name="CCTV 风云音乐" group-title="综艺台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/风云音乐.png",CCTV 风云音乐 [2源]
+http://www.lizhinas.top:1009/rtp/239.252.219.87:5140
+#EXTINF:-1 tvg-name="cctv风云音乐" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/12/large/20220512145757792204_59.jpg",cctv风云音乐
+https://epg.pw/stream/c5cdf98a2ec7cc0b65f33cdf0f06ab09297ea13408e63416e671eb3e8ae1ae9f.m3u8
+#EXTINF:-1 tvg-name="云南娱乐" group-title="综艺台" tvg-logo="云南娱乐.png",云南娱乐
 http://yp.qqqtv.top/1/api.php?id=%E4%BA%91%E5%8D%97%E5%A8%B1%E4%B9%90&auth=666858
-#EXTINF:-1 tvg-name="内蒙古文体娱乐" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531161537672763_24.jpg",内蒙古文体娱乐 [2源]
+#EXTINF:-1 tvg-name="内蒙古文体娱乐" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531161537672763_24.jpg",内蒙古文体娱乐
 https://stream1.freetv.fun/58af65ec297d9e4282912f027461d95ce37387a2357639ee0b22dc135c5d54d4.m3u8
-#EXTINF:-1 tvg-name="内蒙古经济生活" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531224556038609_37.jpg",内蒙古经济生活 [2源]
-https://stream1.freetv.fun/812990976297843210fc44be0e0edee64a02f134c8f755a070807e6665a03e04.m3u8
-#EXTINF:-1 tvg-name="内蒙古蒙语文化" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531161101868480_69.jpg",内蒙古蒙语文化 [4源]
+#EXTINF:-1 tvg-name="内蒙古蒙语文化" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531161101868480_69.jpg",内蒙古蒙语文化 [2源]
 https://stream1.freetv.fun/259625f9cd412bc5d6d12bcbbe529129a32a8dd00caf955bd6479233d348d174.m3u8
-#EXTINF:-1 tvg-name="北京文艺" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513145810902661_38.jpg",北京文艺 [6源]
+#EXTINF:-1 tvg-name="北京文艺" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513145810902661_38.jpg",北京文艺 [3源]
 https://epg.pw/stream/f9426f635fe4e7f6fc12fdd2ab39f57196afec9428443e600a10c566d8212209.ctv
-#EXTINF:-1 tvg-name="北京生活" group-title="综艺台" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_ShengHuo.png",北京生活 [12源]
-rtp://239.3.1.117:8000
-#EXTINF:-1 tvg-name="北京科教" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513150157639632_97.jpg",北京科教 [4源]
-https://epg.pw/stream/d9607dea2f8e18d2582700bb5a7943c130bfc731c57ae9615971865692191e70.ctv
-#EXTINF:-1 tvg-name="北京纪实" group-title="综艺台",北京纪实 [2源]
-http://39.134.115.163:8080/PLTV/88888910/224/3221225675/index.m3u8
-#EXTINF:-1 tvg-name="北京纪实8k" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/08/23/large/20220823134948727667_49.png",北京纪实8k [2源]
-https://epg.pw/stream/544cc09b12f4a7e88dcf6d03ac6f42925ce17749273bdc3f324897c1593df622.m3u8
-#EXTINF:-1 tvg-name="北京纪实科教" group-title="综艺台" tvg-logo="https://live.fanmingming.cn/tv/北京纪实科教.png",北京纪实科教 [2源]
-http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226434/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Ejj3PtVjzl6ZzFdM-Vi1dmQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPJa61jREJv4ZfZigyrxX0U%2CEND
-#EXTINF:-1 tvg-name="北京纪实科教8K" group-title="综艺台" tvg-logo="https://tb.zbds.top/logo/北京纪实科教8K.png",北京纪实科教8K [4源]
-https://gdcucc.v1.mk/gdcucc/brtv8k.m3u8
-#EXTINF:-1 tvg-name="吉林生活" group-title="综艺台" tvg-logo="吉林生活.png",吉林生活 [2源]
-https://live.lalifeier.eu.org/jlntv/jlsh.m3u8?t=1745796321&key=8386cb03e732cd707a483bb89f1216af
-#EXTINF:-1 tvg-name="四川 Ⅰ 星空购物台" group-title="综艺台",四川 Ⅰ 星空购物台 [2源]
-http://scgctvshow.sctv.com/hdlive/sctv6/index.m3u8
-#EXTINF:-1 tvg-name="四川影视文艺" group-title="综艺台" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan4.png",四川影视文艺 [2源]
+#EXTINF:-1 tvg-name="四川影视文艺" group-title="综艺台" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan4.png",四川影视文艺
 http://wouu.net:9977/udp/239.93.0.166:5140
-#EXTINF:-1 tvg-name="四川文化旅游" group-title="综艺台" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan2.png",四川文化旅游 [2源]
-http://wouu.net:9977/udp/239.93.1.102:5140
-#EXTINF:-1 tvg-name="四川科教" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/28/large/20220528221105613593_11.jpg",四川科教 [12源]
-https://stream1.freetv.fun/dd26f57be074ce07e1fb0d357b9bff2846bd030575df792d54abb4299ba5ada0.m3u8
-#EXTINF:-1 tvg-name="山东居家购物" group-title="综艺台",山东居家购物 [2源]
-http://livealone302.iqilu.com/iqilu/gwpd.m3u8
-#EXTINF:-1 tvg-name="山东生活" group-title="综艺台" tvg-logo="山东生活.png",山东生活 [4源]
-http://ls.qingting.fm/live/60260.m3u8
-#EXTINF:-1 tvg-name="山东综艺" group-title="综艺台" tvg-logo="https://i.imgur.com/a2XK8N9.png",山东综艺 [2源]
+#EXTINF:-1 tvg-name="山东综艺" group-title="综艺台" tvg-logo="https://i.imgur.com/a2XK8N9.png",山东综艺
 http://livealone302.iqilu.com/iqilu/zypd.m3u8
-#EXTINF:-1 tvg-name="山西文体生活" group-title="综艺台" tvg-logo="山西文体生活.png",山西文体生活 [4源]
-https://live.lalifeier.eu.org/sxrtv/sxwtsh.m3u8?t=1745796321&key=5d07585f428e3bbbe66ef7a534c8db1e
-#EXTINF:-1 tvg-name="广东经济科教" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2024/01/11/large/20240111224501741507_16.png",广东经济科教 [4源]
-https://stream1.freetv.fun/885e2bf20b8c19a26f67ee11e97e55e42fe965745049a3cad48c47b099bae8e3.ctv
-#EXTINF:-1 tvg-name="广东综艺" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2023/07/19/large/20230719064646595865_81.jpg",广东综艺 [2源]
+#EXTINF:-1 tvg-name="广东综艺" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2023/07/19/large/20230719064646595865_81.jpg",广东综艺
 https://stream1.freetv.fun/897c24cef72f6e357ce1f6651c05c25083f859f8379cce5f6c2bce04932a2811.ctv
-#EXTINF:-1 tvg-name="江苏综艺" group-title="综艺台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu3.png",江苏综艺 [4源]
+#EXTINF:-1 tvg-name="江苏综艺" group-title="综艺台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu3.png",江苏综艺 [2源]
 https://stream1.freetv.fun/f8ef469943662bed2abc6609d9ef1720b9e93a8a0bd6f5789133461e36763f37.m3u8
-#EXTINF:-1 tvg-name="河南戏曲" group-title="综艺台" tvg-logo="https://live.fanmingming.cn/tv/河南戏曲.png",河南戏曲 [2源]
+#EXTINF:-1 tvg-name="河南戏曲" group-title="综艺台" tvg-logo="https://live.fanmingming.cn/tv/河南戏曲.png",河南戏曲
 http://www.cdnstv.com:6398/hls/1119/index.m3u8
-#EXTINF:-1 tvg-name="浙江生活" group-title="综艺台" tvg-logo="浙江生活.png",浙江生活 [18源]
-https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-1.ctv
-#EXTINF:-1 tvg-name="浙江经济生活" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530220929501840_43.jpg",浙江经济生活 [8源]
-https://epg.pw/stream/b32906254ffc9df42586a87cb76bb15a5e5339c638cbbc0370ccf139ce311cc7.m3u8
-#EXTINF:-1 tvg-name="湖北生活" group-title="综艺台" tvg-logo="湖北生活.png",湖北生活 [10源]
-http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638072c62e405/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUUAdKgLqNB5aOAUhcp5CeNKJPodw5BcDirSOw7egztI5bUvJjqPzSNAhrA37GrbRBIAjGQpzP0QmgsmuHnQyd2c
-#EXTINF:-1 tvg-name="湖南娱乐" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/26/large/20220526213508482612_20.jpg",湖南娱乐 [12源]
+#EXTINF:-1 tvg-name="湖南娱乐" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/26/large/20220526213508482612_20.jpg",湖南娱乐 [6源]
 https://stream1.freetv.fun/8479751897491e3088c10ef6efb4c09c16eff123a65b54b6507bcb0b204b51a5.m3u8
-#EXTINF:-1 tvg-name="湖南金鹰纪实" group-title="综艺台" tvg-logo="湖南金鹰纪实.png",湖南金鹰纪实 [6源]
-http://yc.myds.me:35455/itv/5000000011000031203.m3u8?cdn=bestzb
-#EXTINF:-1 tvg-name="甘肃文化影视" group-title="综艺台" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/gansu/Gansu3.png",甘肃文化影视 [2源]
-https://hls.gstv.com.cn/49048r/w1l6d5.m3u8
-#EXTINF:-1 tvg-name="福建旅游" group-title="综艺台" tvg-logo="福建旅游.png",福建旅游 [4源]
-https://stream1.freetv.fun/fu-jian-lu-you-6.m3u8
-#EXTINF:-1 tvg-name="蒙语文化" group-title="综艺台" tvg-logo="https://live.fanmingming.cn/tv/内蒙古蒙语文化.png",蒙语文化 [2源]
+#EXTINF:-1 tvg-name="蒙语文化" group-title="综艺台" tvg-logo="https://live.fanmingming.cn/tv/内蒙古蒙语文化.png",蒙语文化
 https://livestream-bt.nmtv.cn/nmtv/2321general.m3u8?txSecret=d9d0fd7a252ef56b515c46a2e21830f4&txTime=771E8800
-#EXTINF:-1 tvg-name="西藏影视文化" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530222246719342_54.jpg",西藏影视文化 [2源]
+#EXTINF:-1 tvg-name="西藏影视文化" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530222246719342_54.jpg",西藏影视文化
 https://stream1.freetv.fun/c81a555962f383888669f729afa0303c466520db6b41f649f3d7036a0a5a6065.ctv
-#EXTINF:-1 tvg-name="辽宁生活" group-title="综艺台" tvg-logo="辽宁生活.png",辽宁生活 [6源]
-https://stream1.freetv.fun/liao-zhu-sheng-huo-1.m3u8
-#EXTINF:-1 tvg-name="重庆时尚购物" group-title="综艺台" tvg-logo="重庆时尚购物.png",重庆时尚购物 [2源]
-http://183.220.107.138:4022/rtp/239.10.0.169:5140
-#EXTINF:-1 tvg-name="重庆科教" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2024/07/29/large/20240729020024729385_11.jpg",重庆科教 [2源]
-https://stream1.freetv.fun/f95fc2c361a5c575b9fa9663f9fc8cbe352ff641a3456eeb9c423e5785bbd247.ctv
-#EXTINF:-1 tvg-name="陕西生活" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151311106781_13.jpg",陕西生活 [4源]
-https://epg.pw/stream/edc138c00dc9308002a5dbb9505a80e1f5adac0b142f72f0ab7124c5c42939f7.m3u8
