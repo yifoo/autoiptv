@@ -1,12 +1,13 @@
 #EXTM3U
-# 重庆市频道列表（多源合并版）
-# 更新时间(北京时间): 2026-01-31 13:21:39
+# 重庆市频道列表（IPv6优先多源合并版，带黑名单过滤）
+# 更新时间(北京时间): 2026-01-31 14:03:54
 # 电视台数量: 3
-# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换
+# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 已过滤黑名单慢速源（响应时间 > 6秒）
 
-#EXTINF:-1 tvg-name="重庆时尚购物" group-title="重庆市" tvg-logo="重庆时尚购物.png",重庆时尚购物 [1源]
+#EXTINF:-1 tvg-name="重庆时尚购物" group-title="重庆市" tvg-logo="重庆时尚购物.png" tvg-ipv6="true",重庆时尚购物 [1IPv6]
 http://183.220.107.138:4022/rtp/239.10.0.169:5140
-#EXTINF:-1 tvg-name="重庆汽摩" group-title="重庆市" tvg-logo="重庆汽摩.png",重庆汽摩 [6源]
-http://183.230.184.51:65500/tntv1.m3u8|http://183.64.181.25:40023/rongchang01.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]|http://120.76.248.139/live/bfgd/4200000168.m3u8|http://123.146.162.24:8017/iTXwrGs/800/live.m3u8?zzhongqd|http://123.146.162.24:8017/c2F0hmi/1000/live.m3u8?zzhongqd|http://222.179.155.21:1935/ch1.m3u8?zzhongqd
-#EXTINF:-1 tvg-name="重庆科教" group-title="重庆市" tvg-logo="https://epg.pw/media/images/channel/2024/07/29/large/20240729020024729385_11.jpg" tvg-quality="高清",重庆科教 [1源]
+#EXTINF:-1 tvg-name="重庆汽摩" group-title="重庆市" tvg-logo="重庆汽摩.png",重庆汽摩 [5IPv4]
+http://183.64.181.25:40023/rongchang01.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]|http://120.76.248.139/live/bfgd/4200000168.m3u8|http://123.146.162.24:8017/iTXwrGs/800/live.m3u8?zzhongqd|http://123.146.162.24:8017/c2F0hmi/1000/live.m3u8?zzhongqd|http://222.179.155.21:1935/ch1.m3u8?zzhongqd
+#EXTINF:-1 tvg-name="重庆科教" group-title="重庆市" tvg-logo="https://epg.pw/media/images/channel/2024/07/29/large/20240729020024729385_11.jpg" tvg-quality="高清",重庆科教 [1IPv4]
 https://stream1.freetv.fun/f95fc2c361a5c575b9fa9663f9fc8cbe352ff641a3456eeb9c423e5785bbd247.ctv

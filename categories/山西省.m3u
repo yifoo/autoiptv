@@ -1,22 +1,11 @@
 #EXTM3U
-# 山西省频道列表（多源合并版）
-# 更新时间(北京时间): 2026-01-31 13:21:39
-# 电视台数量: 8
-# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换
+# 山西省频道列表（IPv6优先多源合并版，带黑名单过滤）
+# 更新时间(北京时间): 2026-01-31 14:03:54
+# 电视台数量: 2
+# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 已过滤黑名单慢速源（响应时间 > 6秒）
 
-#EXTINF:-1 tvg-name="山西影视" group-title="山西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/27/large/20220527162835442061_74.jpg" tvg-quality="高清",山西影视 [4源]
-https://epg.pw/stream/b493ddd1a113751d7924062be602f98313d60185dea9c5ffd516f727300f4a58.m3u8|http://220.194.178.58:8888/newlive/live/hls/53/live.m3u8|https://live.lalifeier.eu.org/sxrtv/sxys.m3u8?t=1745796321&key=0721c661fb4b291613b070d85d8af084|http://liveflash.sxrtv.com/live/sxfilm.m3u8?sub_m3u8=true&edge_slice=true
-#EXTINF:-1 tvg-name="山西文体" group-title="山西省",山西文体 [1源]
-http://220.194.178.58:8888/newlive/live/hls/55/live.m3u8
-#EXTINF:-1 tvg-name="山西文体生活" group-title="山西省" tvg-logo="山西文体生活.png",山西文体生活 [2源]
-https://live.lalifeier.eu.org/sxrtv/sxwtsh.m3u8?t=1745796321&key=5d07585f428e3bbbe66ef7a534c8db1e|http://liveflash.sxrtv.com/live/sxpublic.m3u8?sub_m3u8=true&edge_slice=true
-#EXTINF:-1 tvg-name="山西法治" group-title="山西省",山西法治 [1源]
-http://220.194.178.58:8888/newlive/live/hls/54/live.m3u8
-#EXTINF:-1 tvg-name="山西社会与法治" group-title="山西省" tvg-logo="山西社会与法治.png",山西社会与法治 [2源]
-https://live.lalifeier.eu.org/sxrtv/sxshfz.m3u8?t=1745796321&key=71bbd0d7dc1eb84139ebea659e164651|http://liveflash.sxrtv.com/live/sxedu.m3u8?sub_m3u8=true&edge_slice=true
-#EXTINF:-1 tvg-name="山西经济" group-title="山西省" tvg-logo="山西经济.png",山西经济 [2源]
-http://220.194.178.58:8888/newlive/live/hls/52/live.m3u8|https://live.lalifeier.eu.org/sxrtv/sxjj.m3u8?t=1745796321&key=f20ee9d210e6bb63a4a7d65e67bdec2b
-#EXTINF:-1 tvg-name="山西经济与科技" group-title="山西省" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/shanxi1/Shanxi_1.png",山西经济与科技 [1源]
-http://liveflash.sxrtv.com/live/sxfinance.m3u8?sub_m3u8=true&edge_slice=true
-#EXTINF:-1 tvg-name="湖南张家界天门山西线玻璃栈道" group-title="山西省" tvg-logo="https://tb.zbds.top/logo/湖南张家界天门山西线玻璃栈道.png",湖南张家界天门山西线玻璃栈道 [1源]
+#EXTINF:-1 tvg-name="山西影视" group-title="山西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/27/large/20220527162835442061_74.jpg" tvg-quality="高清",山西影视 [1IPv4]
+https://epg.pw/stream/b493ddd1a113751d7924062be602f98313d60185dea9c5ffd516f727300f4a58.m3u8
+#EXTINF:-1 tvg-name="湖南张家界天门山西线玻璃栈道" group-title="山西省" tvg-logo="https://tb.zbds.top/logo/湖南张家界天门山西线玻璃栈道.png",湖南张家界天门山西线玻璃栈道 [1IPv4]
 https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8

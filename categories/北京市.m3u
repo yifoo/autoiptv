@@ -1,34 +1,23 @@
 #EXTM3U
-# 北京市频道列表（多源合并版）
-# 更新时间(北京时间): 2026-01-31 13:21:39
-# 电视台数量: 14
-# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换
+# 北京市频道列表（IPv6优先多源合并版，带黑名单过滤）
+# 更新时间(北京时间): 2026-01-31 14:03:54
+# 电视台数量: 8
+# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 已过滤黑名单慢速源（响应时间 > 6秒）
 
-#EXTINF:-1 tvg-name="北京" group-title="北京市" tvg-logo="https://live.fanmingming.cn/tv/北京超清.png" tvg-quality="4K",北京 [1源]
-http://[2409:8087:1:20:20::26]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226550/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~e2qS8h6u-xp3gd50vNr1sw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPPFD3HVWEytEVyliOxehfe%2CEND
-#EXTINF:-1 tvg-name="北京体育休闲" group-title="北京市" tvg-logo="https://live.fanmingming.cn/tv/北京体育休闲.png",北京体育休闲 [1源]
-http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226438/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EeVAybrHg955d_IRT9e_uHQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNMLCKqkSfuGOusJwBMwlCbz%2CEND
-#EXTINF:-1 tvg-name="北京国际" group-title="北京市" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_International.png",北京国际 [1源]
-rtp://239.3.1.235:8000
-#EXTINF:-1 tvg-name="北京影视" group-title="北京市" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_YingShi.png",北京影视 [2源]
-rtp://239.3.1.158:8000|http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226433/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EygquRbh9L0wUPRY53fsZWw%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNO62IynDcU1yYDL1b4Xte8T%2CEND
-#EXTINF:-1 tvg-name="北京新闻" group-title="北京市" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513145911554540_68.jpg",北京新闻 [13源]
-https://epg.pw/stream/df5f291b3e91d85d43f12c1253c789da96a06b0263fd5ccd662fd90514379fda.ctv|rtp://239.3.1.159:8000|https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8|https://ls.qingting.fm/live/339/64k.m3u8|http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226437/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EncK5uEAdYwWMsf8WJWI1mQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNO_LSIQh_h2P54Cz-MqgJqC%2CEND|http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226437/1.m3u8|http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226512/1.m3u8|http://dsj.motem.top:8880/bptv/10000100000000050000000003870780.m3u8|http://iptv.huuc.edu.cn/hls/btv9hd.m3u8|http://nas.suntao.online:35455/bptv/10000100000000050000000003870780.m3u8|http://yc.myds.me:35455/bptv/10000100000000050000000003870780.m3u8|https://brtv-radiolive.rbc.cn/alive/fm945.m3u8|https://migu.188766.xyz/?migutoken=ba19412c1bcff9438e4aa4eaf7410e43&id=%E5%8C%97%E4%BA%AC%E6%96%B0%E9%97%BB&type=yy
-#EXTINF:-1 tvg-name="北京生活" group-title="北京市" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_ShengHuo.png",北京生活 [6源]
-rtp://239.3.1.117:8000|https://wstvcpudali.v.myalicdn.com/wstvcpud/udrmbtv7_1/index.m3u8?adapt=0&BR=audio|http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226514/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Es-PVNcPJsjr_oBdcXGT40g%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNMWvZ0r6eMXcXJOGrCpJiq1%2CEND|http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226514/1.m3u8|http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226561/1.m3u8|https://migu.188766.xyz/?migutoken=5352c66f3445e6f6a6674e780db1be96&id=%E5%8C%97%E4%BA%ACi%E7%94%9F%E6%B4%BB&type=yy
-#EXTINF:-1 tvg-name="北京科教" group-title="北京市" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513150157639632_97.jpg",北京科教 [2源]
+#EXTINF:-1 tvg-name="北京新闻" group-title="北京市" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513145911554540_68.jpg",北京新闻 [5IPv4]
+https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8|https://ls.qingting.fm/live/339/64k.m3u8|https://brtv-radiolive.rbc.cn/alive/fm945.m3u8|https://epg.pw/stream/df5f291b3e91d85d43f12c1253c789da96a06b0263fd5ccd662fd90514379fda.ctv|https://migu.188766.xyz/?migutoken=ba19412c1bcff9438e4aa4eaf7410e43&id=%E5%8C%97%E4%BA%AC%E6%96%B0%E9%97%BB&type=yy
+#EXTINF:-1 tvg-name="北京生活" group-title="北京市" tvg-logo="北京生活.png",北京生活 [2IPv4]
+https://wstvcpudali.v.myalicdn.com/wstvcpud/udrmbtv7_1/index.m3u8?adapt=0&BR=audio|https://migu.188766.xyz/?migutoken=5352c66f3445e6f6a6674e780db1be96&id=%E5%8C%97%E4%BA%ACi%E7%94%9F%E6%B4%BB&type=yy
+#EXTINF:-1 tvg-name="北京科教" group-title="北京市" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513150157639632_97.jpg",北京科教 [2IPv4]
 https://epg.pw/stream/d9607dea2f8e18d2582700bb5a7943c130bfc731c57ae9615971865692191e70.ctv|http://player.cntv.cn/standard/live_HLSDRM20180606.swf?ChannelID=btv3&P2PChannelID=pd://cctv_p2p_hdbtv3
-#EXTINF:-1 tvg-name="北京纪实" group-title="北京市" tvg-quality="高清",北京纪实 [1源]
-http://39.134.115.163:8080/PLTV/88888910/224/3221225675/index.m3u8
-#EXTINF:-1 tvg-name="北京纪实8k" group-title="北京市" tvg-logo="https://epg.pw/media/images/channel/2022/08/23/large/20220823134948727667_49.png",北京纪实8k [1源]
+#EXTINF:-1 tvg-name="北京纪实8k" group-title="北京市" tvg-logo="https://epg.pw/media/images/channel/2022/08/23/large/20220823134948727667_49.png",北京纪实8k [1IPv4]
 https://epg.pw/stream/544cc09b12f4a7e88dcf6d03ac6f42925ce17749273bdc3f324897c1593df622.m3u8
-#EXTINF:-1 tvg-name="北京纪实科教" group-title="北京市" tvg-logo="https://live.fanmingming.cn/tv/北京纪实科教.png",北京纪实科教 [1源]
-http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226434/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Ejj3PtVjzl6ZzFdM-Vi1dmQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPJa61jREJv4ZfZigyrxX0U%2CEND
-#EXTINF:-1 tvg-name="北京纪实科教8K" group-title="北京市" tvg-logo="https://tb.zbds.top/logo/北京纪实科教8K.png",北京纪实科教8K [2源]
-https://gdcucc.v1.mk/gdcucc/brtv8k.m3u8|http://101.35.240.114:88/brtv8k.php
-#EXTINF:-1 tvg-name="北京财*" group-title="北京市" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513150005487800_62.jpg",北京财* [1源]
+#EXTINF:-1 tvg-name="北京纪实科教8K" group-title="北京市" tvg-logo="https://tb.zbds.top/logo/北京纪实科教8K.png",北京纪实科教8K [1IPv4]
+https://gdcucc.v1.mk/gdcucc/brtv8k.m3u8
+#EXTINF:-1 tvg-name="北京财*" group-title="北京市" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513150005487800_62.jpg",北京财* [1IPv4]
 https://epg.pw/stream/79b9b9378d3493521b7e1536af07992696aeba2b686107112a2ad5aa32d2d875.ctv
-#EXTINF:-1 tvg-name="北京财经" group-title="北京市" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_CaiJing.png",北京财经 [6源]
-rtp://239.3.1.116:8000|http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226516/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Eh9_SEkmWeMdS1TMnIILZgg%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPIiicEW7OIvk1s-X-PXHqO%2CEND|http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226516/1.m3u8|http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226560/1.m3u8|https://migu.188766.xyz/?migutoken=debab7233813a268c34754a611c9f1fb&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy|http://ivi.bupt.edu.cn/hls/btv5.m3u8
-#EXTINF:-1 tvg-name="北京青年" group-title="北京市" tvg-logo="北京青年.png",北京青年 [2源]
-http://player.cntv.cn/standard/live_HLSDRM20180919.swf?v=180.171.5.8.9.6.3.9&ChannelID=btv8&videoTVChannel=btv8&P2PChannelID=pd://cctv_p2p_hdbtv8&tai=btv8&VideoName=btv8&channelID=btv8|http://ivi.bupt.edu.cn/hls/btv8.m3u8
+#EXTINF:-1 tvg-name="北京财经" group-title="北京市" tvg-logo="北京财经.png",北京财经 [1IPv4]
+https://migu.188766.xyz/?migutoken=debab7233813a268c34754a611c9f1fb&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy
+#EXTINF:-1 tvg-name="北京青年" group-title="北京市" tvg-logo="北京青年.png",北京青年 [1IPv4]
+http://player.cntv.cn/standard/live_HLSDRM20180919.swf?v=180.171.5.8.9.6.3.9&ChannelID=btv8&videoTVChannel=btv8&P2PChannelID=pd://cctv_p2p_hdbtv8&tai=btv8&VideoName=btv8&channelID=btv8

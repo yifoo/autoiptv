@@ -1,10 +1,11 @@
 #EXTM3U
-# 影视台频道列表（多源合并版）
-# 更新时间(北京时间): 2026-01-31 13:21:39
+# 影视台频道列表（IPv6优先多源合并版，带黑名单过滤）
+# 更新时间(北京时间): 2026-01-31 14:03:54
 # 电视台数量: 2
-# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换
+# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 已过滤黑名单慢速源（响应时间 > 6秒）
 
-#EXTINF:-1 tvg-name="湖南电影" group-title="影视台" tvg-logo="湖南电影.png",湖南电影 [4源]
-http://php.jdshipin.com:8880/TVOD/iptv.php?id=hndy|https://stream1.freetv.fun/hu-nan-dian-ying-2.ctv|http://tvbox6.icu/tv/mgtv.php?id=221|http://222.241.154.37:9901/tsfile/live/23025_1.m3u8
-#EXTINF:-1 tvg-name="陕西西部电影" group-title="影视台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151605390141_16.jpg" tvg-quality="高清",陕西西部电影 [1源]
+#EXTINF:-1 tvg-name="湖南电影" group-title="影视台" tvg-logo="湖南电影.png",湖南电影 [1IPv4]
+https://stream1.freetv.fun/hu-nan-dian-ying-2.ctv
+#EXTINF:-1 tvg-name="陕西西部电影" group-title="影视台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151605390141_16.jpg" tvg-quality="高清",陕西西部电影 [1IPv4]
 https://epg.pw/stream/318a64a14fc9f1b992a21c72c71cfd4a89394cc5c5223234aa15277077764e2b.m3u8

@@ -1,26 +1,23 @@
 #EXTM3U
-# 河北省频道列表（多源合并版）
-# 更新时间(北京时间): 2026-01-31 13:21:39
-# 电视台数量: 10
-# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换
+# 河北省频道列表（IPv6优先多源合并版，带黑名单过滤）
+# 更新时间(北京时间): 2026-01-31 14:03:54
+# 电视台数量: 8
+# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 已过滤黑名单慢速源（响应时间 > 6秒）
 
-#EXTINF:-1 tvg-name="河北" group-title="河北省" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/河北4K.png" tvg-quality="4K",河北 [2源]
-https://event.pull.hebtv.com:443/live/live101.m3u8|http://106.53.99.30/tv/api.php?id=hebtv4k
-#EXTINF:-1 tvg-name="河北公共" group-title="河北省" tvg-logo="https://live.fanmingming.cn/tv/河北公共.png",河北公共 [2源]
-http://121.19.134.246:808/hls/24/index.m3u8|http://1.94.31.214/php/hebei.php?id=hbgg
-#EXTINF:-1 tvg-name="河北农民" group-title="河北省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531145755560747_44.jpg" tvg-quality="高清/标清",河北农民 [12源]
-https://stream1.freetv.fun/9bbe61c3b5d654e981e8256c9d3524467065dc700aa117f2e973bfec74ccea0e.m3u8|https://epg.pw/stream/77d583a3ce92e660a3aae8d721e57456356ecb45396a4f4c979738dc2832bfd1.m3u8|http://121.19.134.246:808/hls/25/index.m3u8|https://jwplay.hebyun.com.cn/live/hbnmtv/1500k/tzwj_video.m3u8?zhebd#http://hbfc.chinashadt.com:2036/live/1003.stream/playlist.m3u8#http://tv.pull.hebtv.com/jishi/nongminpindao.m3u8?t=2510710360&k=75118c17760542fe4385e93cc4f03d38|https://ls.qingting.fm/live/1650/64k.m3u8|http://ls.qingting.fm/live/1650.m3u8|https://event.pull.hebtv.com/jishi/nongminpindao.m3u8|https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd|https://jwplay.hebyun.com.cn/zb/hbnmtv/1500k/tzwj_video.m3u8?zhebd|https://live.lalifeier.eu.org/hebtv/hbnm.m3u8?t=1745774515&key=fec9ea387b470ccb0dc8e6e0e5b36bec|http://1.94.31.214/php/hebei.php?id=nmpd|http://hbzx.chinashadt.com:2036/zhibo/stream:hbnm.stream/playlist.m3u8
-#EXTINF:-1 tvg-name="河北少儿科教" group-title="河北省" tvg-logo="河北少儿科教.png",河北少儿科教 [10源]
-https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-10.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-15.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-6.ctv|https://event.pull.hebtv.com/jishi/shaoerkejiao.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-2.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-12.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-7.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-9.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-8.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-17.ctv
-#EXTINF:-1 tvg-name="河北影视" group-title="河北省" tvg-logo="https://epg.pw/media/" tvg-quality="标清",河北影视 [3源]
-https://epg.pw/stream/f927788e08949e5333ad97affc4fb4b9649bef97948e0794f1ec0936054bd8c3.m3u8|http://121.19.134.246:808/hls/22/index.m3u8|http://1.94.31.214/php/hebei.php?id=hbys
-#EXTINF:-1 tvg-name="河北影视剧" group-title="河北省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531145932658052_56.jpg" tvg-quality="标清",河北影视剧 [1源]
+#EXTINF:-1 tvg-name="河北" group-title="河北省" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/河北4K.png" tvg-quality="4K",河北 [1IPv4]
+https://event.pull.hebtv.com:443/live/live101.m3u8
+#EXTINF:-1 tvg-name="河北公共" group-title="河北省" tvg-logo="https://live.fanmingming.cn/tv/河北公共.png",河北公共 [1IPv4]
+http://1.94.31.214/php/hebei.php?id=hbgg
+#EXTINF:-1 tvg-name="河北农民" group-title="河北省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531145755560747_44.jpg" tvg-quality="高清/标清",河北农民 [6IPv4]
+https://stream1.freetv.fun/9bbe61c3b5d654e981e8256c9d3524467065dc700aa117f2e973bfec74ccea0e.m3u8|https://epg.pw/stream/77d583a3ce92e660a3aae8d721e57456356ecb45396a4f4c979738dc2832bfd1.m3u8|https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd|https://ls.qingting.fm/live/1650/64k.m3u8|http://ls.qingting.fm/live/1650.m3u8|http://1.94.31.214/php/hebei.php?id=nmpd
+#EXTINF:-1 tvg-name="河北少儿科教" group-title="河北省" tvg-logo="河北少儿科教.png",河北少儿科教 [9IPv4]
+https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-2.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-12.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-10.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-15.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-6.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-7.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-9.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-8.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-17.ctv
+#EXTINF:-1 tvg-name="河北影视" group-title="河北省" tvg-logo="https://epg.pw/media/" tvg-quality="标清",河北影视 [2IPv4]
+https://epg.pw/stream/f927788e08949e5333ad97affc4fb4b9649bef97948e0794f1ec0936054bd8c3.m3u8|http://1.94.31.214/php/hebei.php?id=hbys
+#EXTINF:-1 tvg-name="河北影视剧" group-title="河北省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531145932658052_56.jpg" tvg-quality="标清",河北影视剧 [1IPv4]
 https://epg.pw/stream/c052b9f414bbbf9c00616f9184da6d11fa730d903171e2ae8d1ef1b80538f600.m3u8
-#EXTINF:-1 tvg-name="河北杂技" group-title="河北省" tvg-logo="https://live.fanmingming.cn/tv/河北杂技.png",河北杂技 [1源]
-http://vip.lqcc.xyz:15511/rtp/239.254.201.139:7203
-#EXTINF:-1 tvg-name="河北睛彩" group-title="河北省" tvg-logo="https://live.fanmingming.cn/tv/河北睛彩.png",河北睛彩 [1源]
-http://vip.lqcc.xyz:15511/rtp/239.254.200.27:6000
-#EXTINF:-1 tvg-name="河北经济" group-title="河北省" tvg-logo="https://live.fanmingming.cn/tv/河北经济.png",河北经济 [2源]
-http://121.19.134.246:808/hls/20/index.m3u8|http://1.94.31.214/php/hebei.php?id=jjsh
-#EXTINF:-1 tvg-name="河北都市" group-title="河北省" tvg-logo="河北都市.png",河北都市 [9源]
-http://121.19.134.246:808/hls/21/index.m3u8|https://radio.pull.hebtv.com/live/hebnczx.m3u8|https://jwplay.hebyun.com.cn/live/hbdstv/1500k/tzwj_video.m3u8#http://tv.pull.hebtv.com/jishi/dushipindao.m3u8?t=2510710360&k=4380da13735a230c080ce8ff404033af|http://jwplay.hebyun.com.cn/live/hbnmtv/1500k/tzwj_video.m3u8|https://event.pull.hebtv.com/jishi/dushipindao.m3u8|https://live.lalifeier.eu.org/hebtv/hbds.m3u8?t=1745774515&key=ce739e0d0528ad5a5e6434e48c963ced|https://stream1.freetv.fun/he-bei-du-shi-13.ctv|https://stream1.freetv.fun/he-bei-du-shi-16.ctv|http://1.94.31.214/php/hebei.php?id=hbds
+#EXTINF:-1 tvg-name="河北经济" group-title="河北省" tvg-logo="https://live.fanmingming.cn/tv/河北经济.png",河北经济 [1IPv4]
+http://1.94.31.214/php/hebei.php?id=jjsh
+#EXTINF:-1 tvg-name="河北都市" group-title="河北省" tvg-logo="河北都市.png",河北都市 [4IPv4]
+https://stream1.freetv.fun/he-bei-du-shi-13.ctv|http://1.94.31.214/php/hebei.php?id=hbds|https://stream1.freetv.fun/he-bei-du-shi-16.ctv|https://radio.pull.hebtv.com/live/hebnczx.m3u8

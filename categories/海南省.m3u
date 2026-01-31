@@ -1,14 +1,15 @@
 #EXTM3U
-# 海南省频道列表（多源合并版）
-# 更新时间(北京时间): 2026-01-31 13:21:39
+# 海南省频道列表（IPv6优先多源合并版，带黑名单过滤）
+# 更新时间(北京时间): 2026-01-31 14:03:54
 # 电视台数量: 4
-# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换
+# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 已过滤黑名单慢速源（响应时间 > 6秒）
 
-#EXTINF:-1 tvg-name="海南公共" group-title="海南省" tvg-logo="海南公共.png",海南公共 [5源]
-http://[2409:8087:5e00:24::1e]:6060/000000001000/460000100000000057/1.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-gong-gong-8.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-gong-gong-9.m3u8|https://migu.188766.xyz/?migutoken=21a39b5de0755728bca4a0201dd841f4&id=hn_ggpd&type=sz|http://nn.7x9d.cn/地方台8563/海南.php?id=ggpd
-#EXTINF:-1 tvg-name="海南文旅" group-title="海南省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530225011839622_70.jpg",海南文旅 [6源]
-https://stream1.freetv.fun/c2370b8a11519e11d24fe67dced2eddc7ea79a53c0dd318ffcb3c169da0a8f4f.ctv|http://[2409:8087:5e00:24::1e]:6060/000000001000/4600001000000000113/1.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-7.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-9.m3u8|https://migu.188766.xyz/?migutoken=32bbe614ebd2e507d6fac6140ef1b138&id=hn_wlpd&type=sz|http://nn.7x9d.cn/地方台8563/海南.php?id=wlpd
-#EXTINF:-1 tvg-name="海南新闻" group-title="海南省" tvg-logo="海南新闻.png",海南新闻 [5源]
-http://[2409:8087:5e00:24::1e]:6060/000000001000/4600001000000000111/1.m3u8|http://ls.qingting.fm/live/1861.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-xin-wen-6.m3u8|https://migu.188766.xyz/?migutoken=c695504b788326775b16d1b3e4eb4252&id=hn_xwpd&type=sz|http://nn.7x9d.cn/地方台8563/海南.php?id=xwpd
-#EXTINF:-1 tvg-name="海南自贸" group-title="海南省" tvg-logo="海南自贸.png",海南自贸 [3源]
-http://[2409:8087:5e00:24::1e]:6060/000000001000/4600001000000000116/1.m3u8|https://migu.188766.xyz/?migutoken=fa2f186303b43ba2fe89cff611b029fc&id=hn_jjpd&type=sz|http://nn.7x9d.cn/地方台8563/海南.php?id=jjpd
+#EXTINF:-1 tvg-name="海南公共" group-title="海南省" tvg-logo="海南公共.png" tvg-ipv6="true",海南公共 [2IPv6+2IPv4]
+https://stream1.freetv.fun/ipv6-hai-nan-gong-gong-8.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-gong-gong-9.m3u8|https://migu.188766.xyz/?migutoken=21a39b5de0755728bca4a0201dd841f4&id=hn_ggpd&type=sz|http://nn.7x9d.cn/地方台8563/海南.php?id=ggpd
+#EXTINF:-1 tvg-name="海南文旅" group-title="海南省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530225011839622_70.jpg" tvg-ipv6="true",海南文旅 [2IPv6+2IPv4]
+https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-7.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-9.m3u8|https://stream1.freetv.fun/c2370b8a11519e11d24fe67dced2eddc7ea79a53c0dd318ffcb3c169da0a8f4f.ctv|https://migu.188766.xyz/?migutoken=32bbe614ebd2e507d6fac6140ef1b138&id=hn_wlpd&type=sz
+#EXTINF:-1 tvg-name="海南新闻" group-title="海南省" tvg-logo="海南新闻.png" tvg-ipv6="true",海南新闻 [1IPv6+3IPv4]
+https://stream1.freetv.fun/ipv6-hai-nan-xin-wen-6.m3u8|https://migu.188766.xyz/?migutoken=c695504b788326775b16d1b3e4eb4252&id=hn_xwpd&type=sz|http://ls.qingting.fm/live/1861.m3u8|http://nn.7x9d.cn/地方台8563/海南.php?id=xwpd
+#EXTINF:-1 tvg-name="海南自贸" group-title="海南省" tvg-logo="海南自贸.png",海南自贸 [2IPv4]
+https://migu.188766.xyz/?migutoken=fa2f186303b43ba2fe89cff611b029fc&id=hn_jjpd&type=sz|http://nn.7x9d.cn/地方台8563/海南.php?id=jjpd
