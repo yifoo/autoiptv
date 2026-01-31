@@ -1,26 +1,6 @@
 #EXTM3U
-<<<<<<< HEAD
-# 北京市频道列表（IPv6优先多源合并版，智能测速过滤）
-# 更新时间(北京时间): 2026-01-31 17:43:39
-# 电视台数量: 6
-# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
-
-#EXTINF:-1 tvg-name="北京新闻" group-title="北京市" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513145911554540_68.jpg",北京新闻 [2IPv4]
-https://epg.pw/stream/df5f291b3e91d85d43f12c1253c789da96a06b0263fd5ccd662fd90514379fda.ctv|http://player.cntv.cn/standard/live_HLSDRM20180524.swf?ChannelID=btv9&videoTVChannel=btv9&P2PChannelID=pd://cctv_p2p_hdbtv9&tai=btv9&VideoName=btv9&channelID=btv9
-#EXTINF:-1 tvg-name="北京生活" group-title="北京市",北京生活 [1IPv4]
-http://player.cntv.cn/standard/live_HLSDRM20180524.swf?ChannelID=btv7&videoTVChannel=btv7&P2PChannelID=pd://cctv_p2p_hdbtv7&tai=btv7&VideoName=btv7&channelID=btv7
-#EXTINF:-1 tvg-name="北京科教" group-title="北京市" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513150157639632_97.jpg",北京科教 [2IPv4]
-https://epg.pw/stream/d9607dea2f8e18d2582700bb5a7943c130bfc731c57ae9615971865692191e70.ctv|http://player.cntv.cn/standard/live_HLSDRM20180606.swf?ChannelID=btv3&P2PChannelID=pd://cctv_p2p_hdbtv3
-#EXTINF:-1 tvg-name="北京财*" group-title="北京市" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513150005487800_62.jpg",北京财* [1IPv4]
-https://epg.pw/stream/79b9b9378d3493521b7e1536af07992696aeba2b686107112a2ad5aa32d2d875.ctv
-#EXTINF:-1 tvg-name="北京财经" group-title="北京市",北京财经 [1IPv4]
-http://player.cntv.cn/standard/live_HLSDRM20180524.swf?ChannelID=btv5&videoTVChannel=btv5&P2PChannelID=pd://cctv_p2p_hdbtv5&tai=btv5&VideoName=btv5&channelID=btv5
-#EXTINF:-1 tvg-name="北京青年" group-title="北京市" tvg-logo="北京青年.png",北京青年 [1IPv4]
-http://player.cntv.cn/standard/live_HLSDRM20180919.swf?v=180.171.5.8.9.6.3.9&ChannelID=btv8&videoTVChannel=btv8&P2PChannelID=pd://cctv_p2p_hdbtv8&tai=btv8&VideoName=btv8&channelID=btv8
-=======
 # 北京市频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-01-31 20:58:03
+# 更新时间(北京时间): 2026-01-31 22:55:07
 # 电视台数量: 19
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
@@ -65,4 +45,3 @@ https://epg.pw/stream/79b9b9378d3493521b7e1536af07992696aeba2b686107112a2ad5aa32
 http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226516/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Eh9_SEkmWeMdS1TMnIILZgg%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPIiicEW7OIvk1s-X-PXHqO%2CEND|http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226516/1.m3u8|http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226560/1.m3u8|http://114.252.238.87:8000/udp/239.3.1.116:8000|https://wstvcpudali.v.myalicdn.com/wstvcpud/udrmbtv5_1/index.m3u8?adapt=0&BR=audio|https://migu.188766.xyz/?migutoken=debab7233813a268c34754a611c9f1fb&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy|https://migu.188766.xyz/?migutoken=26681121206e53a23ae3097bf725e87b&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy|https://migu.188766.xyz/?migutoken=3b13c5c5e624f786cc66b1a394b73802&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy|https://migu.188766.xyz/?migutoken=4a29066f60f205a3d4d4fa00195af34b&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy|https://migu.188766.xyz/?migutoken=7e679653bf0bede43714ad99f810268c&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy|https://migu.188766.xyz/?migutoken=8947a231bc3f272a3b8b835345cb974f&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy|https://migu.188766.xyz/?migutoken=be646e9ac808c7495130d26b316a39fd&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy|https://migu.188766.xyz/?migutoken=c08ea955ec38f0a4d9526118b6474ec8&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy|https://migu.188766.xyz/?migutoken=c5cae7b7f4da574581dc3d8c0ad12625&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy|https://migu.188766.xyz/?migutoken=c8b534aec73742e548cb389e18d991a8&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy|https://migu.188766.xyz/?migutoken=cc53eb44d2b32d63d359c351275b9ae6&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy|https://migu.188766.xyz/?migutoken=f99c2ff2497251ed646e89257da9f6a0&id=%E5%8C%97%E4%BA%AC%E8%B4%A2%E7%BB%8F&type=yy|http://ivi.bupt.edu.cn/hls/btv5.m3u8|rtp://239.3.1.116:8000|http://kkk.jjjj.jiduo.me/api.php?n=tttt&id=0154&tk=a0c4f6cfaba3|http://player.cntv.cn/standard/live_HLSDRM20180524.swf?ChannelID=btv5&videoTVChannel=btv5&P2PChannelID=pd://cctv_p2p_hdbtv5&tai=btv5&VideoName=btv5&channelID=btv5
 #EXTINF:-1 tvg-name="北京青年" group-title="北京市" tvg-logo="北京青年.png" tvg-ipv6="true",北京青年 [1IPv6+2IPv4]
 http://114.252.238.87:8000/udp/239.3.1.118:8000|http://ivi.bupt.edu.cn/hls/btv8.m3u8|http://player.cntv.cn/standard/live_HLSDRM20180919.swf?v=180.171.5.8.9.6.3.9&ChannelID=btv8&videoTVChannel=btv8&P2PChannelID=pd://cctv_p2p_hdbtv8&tai=btv8&VideoName=btv8&channelID=btv8
->>>>>>> c686084 (支持配置黑名单)

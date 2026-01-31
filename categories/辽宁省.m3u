@@ -1,28 +1,6 @@
 #EXTM3U
-<<<<<<< HEAD
-# 辽宁省频道列表（IPv6优先多源合并版，智能测速过滤）
-# 更新时间(北京时间): 2026-01-31 17:43:39
-# 电视台数量: 7
-# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
-
-#EXTINF:-1 tvg-name="辽宁公共" group-title="辽宁省",辽宁公共 [2IPv4]
-https://stream1.freetv.fun/liao-zhu-gong-gong-2.m3u8|https://stream1.freetv.fun/liao-zhu-gong-gong-3.m3u8
-#EXTINF:-1 tvg-name="辽宁北方" group-title="辽宁省" tvg-logo="辽宁北方.png",辽宁北方 [1IPv4]
-https://stream1.freetv.fun/liao-zhu-bei-fang-3.m3u8
-#EXTINF:-1 tvg-name="辽宁影视剧" group-title="辽宁省" tvg-logo="辽宁影视剧.png",辽宁影视剧 [3IPv4]
-https://stream1.freetv.fun/liao-zhu-ying-shi-ju-1.m3u8|https://stream1.freetv.fun/liao-zhu-ying-shi-ju-2.m3u8|https://stream1.freetv.fun/liao-zhu-ying-shi-ju-3.m3u8
-#EXTINF:-1 tvg-name="辽宁教育青少" group-title="辽宁省" tvg-logo="辽宁教育青少.png",辽宁教育青少 [1IPv4]
-https://stream1.freetv.fun/liao-zhu-jiao-yu-qing-shao-1.m3u8
-#EXTINF:-1 tvg-name="辽宁生活" group-title="辽宁省" tvg-logo="辽宁生活.png",辽宁生活 [1IPv4]
-https://stream1.freetv.fun/liao-zhu-sheng-huo-1.m3u8
-#EXTINF:-1 tvg-name="辽宁经济" group-title="辽宁省" tvg-logo="辽宁经济.png",辽宁经济 [1IPv4]
-https://stream1.freetv.fun/liao-zhu-jing-ji-2.m3u8
-#EXTINF:-1 tvg-name="辽宁都市" group-title="辽宁省" tvg-logo="辽宁都市.png",辽宁都市 [2IPv4]
-https://stream1.freetv.fun/liao-zhu-du-shi-4.m3u8|https://stream1.freetv.fun/liao-zhu-du-shi-5.m3u8
-=======
 # 辽宁省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-01-31 20:58:03
+# 更新时间(北京时间): 2026-01-31 22:55:07
 # 电视台数量: 15
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
@@ -59,4 +37,3 @@ https://satellitepull.cnr.cn/live/wxlnjjtb/playlist.m3u8
 https://ls.qingting.fm/live/1099/64k.m3u8|https://stream1.freetv.fun/liao-zhu-du-shi-4.m3u8|https://stream1.freetv.fun/liao-zhu-du-shi-5.m3u8|http://120.76.248.139/live/bfgd/4200000068.m3u8|http://dassby.qqff.top:99/live/辽宁都市/index.m3u8|http://120.76.248.139/live/bfgd/4200000610.m3u8
 #EXTINF:-1 tvg-name="辽宁青少" group-title="辽宁省" tvg-logo="https://live.fanmingming.cn/tv/辽宁青少.png",辽宁青少 [1IPv4]
 http://dassby.qqff.top:99/live/辽宁教育青少/index.m3u8
->>>>>>> c686084 (支持配置黑名单)

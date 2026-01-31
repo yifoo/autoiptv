@@ -1,20 +1,6 @@
 #EXTM3U
-<<<<<<< HEAD
-# 海南省频道列表（IPv6优先多源合并版，智能测速过滤）
-# 更新时间(北京时间): 2026-01-31 17:43:39
-# 电视台数量: 3
-# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
-
-#EXTINF:-1 tvg-name="海南公共" group-title="海南省" tvg-logo="海南公共.png" tvg-ipv6="true",海南公共 [3IPv6]
-https://stream1.freetv.fun/ipv6-hai-nan-gong-gong-8.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-gong-gong-9.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-gong-gong-16.m3u8
-#EXTINF:-1 tvg-name="海南文旅" group-title="海南省" tvg-logo="海南文旅.png" tvg-ipv6="true",海南文旅 [2IPv6+1IPv4]
-https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-7.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-9.m3u8|http://vapi.91kds.cc/live1/hitv.m3u8?id=hiys&apiKey=2079b631b519ec17da0bc09844eb8419
-#EXTINF:-1 tvg-name="海南新闻" group-title="海南省" tvg-logo="海南新闻.png" tvg-ipv6="true",海南新闻 [2IPv6]
-https://stream1.freetv.fun/ipv6-hai-nan-xin-wen-6.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-xin-wen-10.m3u8
-=======
 # 海南省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-01-31 20:58:03
+# 更新时间(北京时间): 2026-01-31 22:55:07
 # 电视台数量: 5
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
@@ -31,4 +17,3 @@ https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-7.m3u8|https://stream1.freetv.fun
 https://stream1.freetv.fun/ipv6-hai-nan-xin-wen-6.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-xin-wen-10.m3u8|http://[2409:8087:5e00:24::1e]:6060/000000001000/4600001000000000111/1.m3u8|https://satellitepull.cnr.cn/live/wxhainxwgb/playlist.m3u8|https://migu.188766.xyz/?migutoken=c695504b788326775b16d1b3e4eb4252&id=hn_xwpd&type=sz|https://migu.188766.xyz/?migutoken=410e218b52bfcc506bef1f814d8d3b5f&id=hn_xwpd&type=sz|https://migu.188766.xyz/?migutoken=60909b2fa85c2414a8bb01ed5be39c59&id=hn_xwpd&type=sz|https://migu.188766.xyz/?migutoken=964b97d815e0f15de878a99d3908dd6e&id=hn_xwpd&type=sz|https://migu.188766.xyz/?migutoken=98fdcff69572bc92b5e7bcf3e90854a5&id=hn_xwpd&type=sz|https://migu.188766.xyz/?migutoken=c23ad3a3fe72f73df1247ebf954fdd87&id=hn_xwpd&type=sz|https://migu.188766.xyz/?migutoken=cbcc6f4915a3d5fd72f99084e5b3efd9&id=hn_xwpd&type=sz|https://migu.188766.xyz/?migutoken=d3e982ec2cd251cdbbf2a4463c229a56&id=hn_xwpd&type=sz|https://migu.188766.xyz/?migutoken=fceb1726ee943a82a3cd774026abb877&id=hn_xwpd&type=sz|http://ls.qingting.fm/live/1861.m3u8|http://153.0.171.163:9901/tsfile/live/1017_1.m3u8?key=txiptv&playlive=1&authid=0|http://satellitepull.cnr.cn/live/wxhainxwgb/playlist.m3u8|http://nn.7x9d.cn/地方台8563/海南.php?id=xwpd
 #EXTINF:-1 tvg-name="海南自贸" group-title="海南省" tvg-logo="海南自贸.png" tvg-ipv6="true",海南自贸 [2IPv6+12IPv4]
 http://[2409:8087:5e00:24::1e]:6060/000000001000/4600001000000000116/1.m3u8|http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/08984400000000060000000000000320/index.m3u8?fmmv6|https://migu.188766.xyz/?migutoken=fa2f186303b43ba2fe89cff611b029fc&id=hn_jjpd&type=sz|https://migu.188766.xyz/?migutoken=1d2bec3e12a18bf82d0a988bae5088a1&id=hn_jjpd&type=sz|https://migu.188766.xyz/?migutoken=2795391bf2380a7870585be391603d6a&id=hn_jjpd&type=sz|https://migu.188766.xyz/?migutoken=2aa086d57fcaab0b7c101e7b1794e085&id=hn_jjpd&type=sz|https://migu.188766.xyz/?migutoken=315ad4939096a91be5ce3462b2080323&id=hn_jjpd&type=sz|https://migu.188766.xyz/?migutoken=45ac9a110c797599551115731cf44df2&id=hn_jjpd&type=sz|https://migu.188766.xyz/?migutoken=4d8834d7ea1adc0f097aa6a031305918&id=hn_jjpd&type=sz|https://migu.188766.xyz/?migutoken=660a5548e95409c119145c54d487e47e&id=hn_jjpd&type=sz|https://migu.188766.xyz/?migutoken=a76a64fccf4619fe533b78bc86334f12&id=hn_jjpd&type=sz|https://migu.188766.xyz/?migutoken=ad3aefb7f7f74aa06e7c62c8483b522e&id=hn_jjpd&type=sz|https://migu.188766.xyz/?migutoken=bbf4f6df8c4606d900dee13c1d2cb786&id=hn_jjpd&type=sz|http://nn.7x9d.cn/地方台8563/海南.php?id=jjpd
->>>>>>> c686084 (支持配置黑名单)

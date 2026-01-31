@@ -1,22 +1,6 @@
 #EXTM3U
-<<<<<<< HEAD
-# 山东省频道列表（IPv6优先多源合并版，智能测速过滤）
-# 更新时间(北京时间): 2026-01-31 17:43:39
-# 电视台数量: 4
-# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
-
-#EXTINF:-1 tvg-name="山东农科" group-title="山东省",山东农科 [1IPv4]
-http://58.57.40.22:9901/tsfile/live/1022_1.m3u8
-#EXTINF:-1 tvg-name="山东文旅" group-title="山东省" tvg-logo="山东文旅.png",山东文旅 [1IPv4]
-http://58.57.40.22:9901/tsfile/live/1023_1.m3u8
-#EXTINF:-1 tvg-name="山东新闻" group-title="山东省" tvg-logo="山东新闻.png",山东新闻 [8IPv4]
-https://stream1.freetv.fun/shan-dong-xin-wen-8.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-1.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-4.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-6.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-2.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-7.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-3.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-10.m3u8
-#EXTINF:-1 tvg-name="山东生活" group-title="山东省",山东生活 [1IPv4]
-http://58.57.40.22:9901/tsfile/live/1018_1.m3u8
-=======
 # 山东省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-01-31 20:58:03
+# 更新时间(北京时间): 2026-01-31 22:55:07
 # 电视台数量: 12
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
@@ -47,4 +31,3 @@ https://satellitepull.cnr.cn/live/wxsdshxxgb/playlist.m3u8
 https://satellitepull.cnr.cn/live/wxsdjjgb/playlist.m3u8
 #EXTINF:-1 tvg-name="山东齐鲁" group-title="山东省" tvg-logo="https://i.imgur.com/U9wNMmm.png" tvg-quality="高清",山东齐鲁 [10IPv4]
 http://livealone302.iqilu.com/iqilu/qlpd.m3u8|http://61.156.228.12:8154/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0|http://61.156.228.12:8154/tsfile/live/1001_1.m3u8|http://123.132.233.194:352/tsfile/live/1019_1.m3u8|http://123.129.70.178:9901/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0|http://123.130.84.106:8154/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0|http://123.130.84.106:8154/tsfile/live/1001_1.m3u8|http://111.14.181.15:9901/tsfile/live/1000_1.m3u8|http://221.2.148.205:8154/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0|http://111.14.181.15:9901/tsfile/live/1000_1.m3u8?key=tvbox6_com&playlive=1&authid=0
->>>>>>> c686084 (支持配置黑名单)

@@ -1,38 +1,6 @@
 #EXTM3U
-<<<<<<< HEAD
-# 综艺台频道列表（IPv6优先多源合并版，智能测速过滤）
-# 更新时间(北京时间): 2026-01-31 17:43:39
-# 电视台数量: 12
-# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
-
-#EXTINF:-1 tvg-name="2021年最火伤感音乐" group-title="综艺台",2021年最火伤感音乐 [1IPv4]
-https://vdse.bdstatic.com//6d39df48360bdb12f73800397c4a6c02.mp4
-#EXTINF:-1 tvg-name="上虞文化" group-title="综艺台",上虞文化 [1IPv4]
-https://stream1.freetv.fun/shang-yu-wen-hua-1.m3u8
-#EXTINF:-1 tvg-name="中天娱乐" group-title="综艺台",中天娱乐 [2IPv4]
-https://smt.858.qzz.io/Smart.php?id=ctient|http://php.666230.xyz/smt.php?id=ctient
-#EXTINF:-1 tvg-name="余姚姚江文化" group-title="综艺台",余姚姚江文化 [1IPv4]
-http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8zzhed
-#EXTINF:-1 tvg-name="八大综艺" group-title="综艺台",八大综艺 [7IPv4]
-http://nmk.ioapk.com:5050/4gtv-4gtv039/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/li-4gtv-4gtv039/index.m3u8?proxy=true|http://220.135.64.124:5050/4gtv-4gtv039/index.m3u8?proxy=true|http://220.135.64.124:5050/li-4gtv-4gtv039/index.m3u8?proxy=true|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv039|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv039|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv039
-#EXTINF:-1 tvg-name="北京文艺" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513145810902661_38.jpg",北京文艺 [1IPv4]
-https://epg.pw/stream/f9426f635fe4e7f6fc12fdd2ab39f57196afec9428443e600a10c566d8212209.ctv
-#EXTINF:-1 tvg-name="山东综艺" group-title="综艺台",山东综艺 [1IPv4]
-http://58.57.40.22:9901/tsfile/live/1021_1.m3u8
-#EXTINF:-1 tvg-name="民视综艺" group-title="综艺台",民视综艺 [9IPv4]
-http://nmk.ioapk.com:5050/4gtv-4gtv004/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/li-4gtv-4gtv004/index.m3u8?proxy=true|http://220.135.64.124:5050/4gtv-4gtv004/index.m3u8?proxy=true|http://220.135.64.124:5050/li-4gtv-4gtv004/index.m3u8?proxy=true|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv004|https://stream1.freetv.fun/min-shi-zong-yi-1.ctv|https://stream1.freetv.fun/min-shi-zong-yi-2.ctv|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv004|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv004
-#EXTINF:-1 tvg-name="湖南娱乐" group-title="综艺台" tvg-logo="湖南娱乐.png",湖南娱乐 [20IPv4]
-https://stream1.freetv.fun/hu-nan-yu-le-3.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-13.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-14.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-4.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-1.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-9.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-2.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-15.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-8.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-7.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-gao-qing-3.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-12.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-6.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-5.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-gao-qing-1.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-16.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-10.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-11.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-9.ctv|http://php.jdshipin.com:8880/TVOD/iptv.php?id=hnyl
-#EXTINF:-1 tvg-name="湖州文化娱乐" group-title="综艺台",湖州文化娱乐 [3IPv4]
-http://hzcm-live.media.hugd.com/613c47f0ab0d4eaa98b21378d0db6ded/0051d31c9dd543a7825eea4e49675b2a.m3u8?auth_key=2277598059-0a5ebfa1c0dc4671b42a60810fc37039-0-fa625b7d1feab612062453c12e3c8887|http://hzcm-live.media.hugd.com/613c47f0ab0d4eaa98b21378d0db6ded/0051d31c9dd543a7825eea4e49675b2a.m3u8?auth_key=2277598059-0a5ebfa1c0dc4671b42a60810fc37039-0-fa625b7d1feab612062453c12e3c8887&fbl=|https://hzcm-live.media.hugd.com/613c47f0ab0d4eaa98b21378d0db6ded/0051d31c9dd543a7825eea4e49675b2a.m3u8?auth_key=2277598059-0a5ebfa1c0dc4671b42a60810fc37039-0-fa625b7d1feab612062453c12e3c8887
-#EXTINF:-1 tvg-name="石家庄娱乐" group-title="综艺台",石家庄娱乐 [10IPv4]
-https://stream1.freetv.fun/shi-jia-zhuang-yu-le-10.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-11.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-3.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-8.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-1.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-12.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-4.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-6.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-7.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-9.ctv
-#EXTINF:-1 tvg-name="绍兴文化" group-title="综艺台",绍兴文化 [1IPv4]
-https://stream1.freetv.fun/shao-xing-wen-hua-1.m3u8
-=======
 # 综艺台频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-01-31 20:58:03
+# 更新时间(北京时间): 2026-01-31 22:55:07
 # 电视台数量: 54
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
@@ -147,4 +115,3 @@ p3p://167.114.175.6:55331/621e16b0000ec4772884cc295a1614a8
 http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226953/index.m3u8
 #EXTINF:-1 tvg-name="龙游生活娱乐" group-title="综艺台",龙游生活娱乐 [3IPv4]
 https://l.cztvcloud.com/channels/lantian/SXlongyou2/720p.m3u8|http://l.cztvcloud.com/channels/lantian/SXlongyou2/720p.m3u8?zzhed|http://l.cztvcloud.com/channels/lantian/SXlongyou2/720p.m3u8
->>>>>>> c686084 (支持配置黑名单)

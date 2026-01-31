@@ -1,24 +1,6 @@
 #EXTM3U
-<<<<<<< HEAD
-# 黑龙江省频道列表（IPv6优先多源合并版，智能测速过滤）
-# 更新时间(北京时间): 2026-01-31 17:43:39
-# 电视台数量: 5
-# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
-
-#EXTINF:-1 tvg-name="黑龙江影视" group-title="黑龙江省" tvg-logo="黑龙江影视.png" tvg-ipv6="true",黑龙江影视 [7IPv6+4IPv4]
-https://stream1.freetv.fun/ipv6-hei-long-jiang-ying-shi-10.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-ying-shi-11.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-ying-shi-2.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-ying-shi-3.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-ying-shi-5.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-ying-shi-6.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-ying-shi-9.m3u8|https://stream1.freetv.fun/hei-long-jiang-ying-shi-1.m3u8|https://stream1.freetv.fun/hei-long-jiang-ying-shi-7.m3u8|https://stream1.freetv.fun/hei-long-jiang-ying-shi-8.m3u8|https://stream1.freetv.fun/hei-long-jiang-ying-shi-17.m3u8
-#EXTINF:-1 tvg-name="黑龙江文体" group-title="黑龙江省" tvg-logo="黑龙江文体.png" tvg-ipv6="true",黑龙江文体 [10IPv6+4IPv4]
-https://stream1.freetv.fun/ipv6-hei-long-jiang-wen-ti-1.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-wen-ti-10.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-wen-ti-11.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-wen-ti-12.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-wen-ti-14.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-wen-ti-17.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-wen-ti-4.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-wen-ti-5.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-wen-ti-15.ctv|https://stream1.freetv.fun/ipv6-hei-long-jiang-wen-ti-16.ctv|https://stream1.freetv.fun/hei-long-jiang-wen-ti-1.m3u8|https://stream1.freetv.fun/hei-long-jiang-wen-ti-9.m3u8|https://stream1.freetv.fun/hei-long-jiang-wen-ti-18.m3u8|https://stream1.freetv.fun/hei-long-jiang-wen-ti-7.m3u8
-#EXTINF:-1 tvg-name="黑龙江新闻" group-title="黑龙江省" tvg-logo="黑龙江新闻.png",黑龙江新闻 [1IPv4]
-https://stream1.freetv.fun/hei-long-jiang-xin-wen-9.m3u8
-#EXTINF:-1 tvg-name="黑龙江新闻法治" group-title="黑龙江省" tvg-logo="黑龙江新闻法治.png" tvg-ipv6="true",黑龙江新闻法治 [4IPv6+6IPv4]
-https://stream1.freetv.fun/ipv6-hei-long-jiang-xin-wen-fa-zhi-1.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-xin-wen-fa-zhi-10.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-xin-wen-fa-zhi-8.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-xin-wen-fa-zhi-9.m3u8|https://stream1.freetv.fun/hei-long-jiang-xin-wen-fa-zhi-4.m3u8|https://stream1.freetv.fun/hei-long-jiang-xin-wen-fa-zhi-5.m3u8|https://stream1.freetv.fun/hei-long-jiang-xin-wen-fa-zhi-6.m3u8|https://stream1.freetv.fun/hei-long-jiang-xin-wen-fa-zhi-7.m3u8|https://stream1.freetv.fun/hei-long-jiang-xin-wen-fa-zhi-11.m3u8|https://stream1.freetv.fun/hei-long-jiang-xin-wen-fa-zhi-13.m3u8
-#EXTINF:-1 tvg-name="黑龙江都市" group-title="黑龙江省" tvg-logo="黑龙江都市.png" tvg-ipv6="true",黑龙江都市 [14IPv6+4IPv4]
-https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-1.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-11.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-12.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-13.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-14.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-16.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-17.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-2.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-20.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-3.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-5.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-6.m3u8|https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-19.ctv|https://stream1.freetv.fun/ipv6-hei-long-jiang-du-shi-22.ctv|https://stream1.freetv.fun/hei-long-jiang-du-shi-1.m3u8|https://stream1.freetv.fun/hei-long-jiang-du-shi-7.m3u8|https://stream1.freetv.fun/hei-long-jiang-du-shi-8.m3u8|https://stream1.freetv.fun/hei-long-jiang-du-shi-12.m3u8
-=======
 # 黑龙江省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-01-31 20:58:03
+# 更新时间(北京时间): 2026-01-31 22:55:07
 # 电视台数量: 19
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
@@ -63,4 +45,3 @@ http://[2409:8087:1a01:df::4036]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/322
 http://[2409:8087:1a01:df::4025]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226242/1.m3u8|http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226242/1.m3u8?icpid=88888888&from=1&hms_devid=1012&vqe=3
 #EXTINF:-1 tvg-name="黑龙江｜都市" group-title="黑龙江省" tvg-ipv6="true",黑龙江｜都市 [2IPv6]
 http://[2409:8087:1a01:df::4025]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226301/1.m3u8|http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226301/1.m3u8?icpid=88888888&from=1&hms_devid=1012&vqe=3
->>>>>>> c686084 (支持配置黑名单)

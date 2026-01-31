@@ -1,26 +1,16 @@
 #EXTM3U
-<<<<<<< HEAD
-# 云南省频道列表（IPv6优先多源合并版，智能测速过滤）
-# 更新时间(北京时间): 2026-01-31 17:43:39
-# 电视台数量: 1
-# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
-=======
 # 云南省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-01-31 20:58:03
+# 更新时间(北京时间): 2026-01-31 22:55:07
 # 电视台数量: 20
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
 # 黑名单功能: 禁用
 # 测速功能: 禁用
->>>>>>> c686084 (支持配置黑名单)
 
 #EXTINF:-1 tvg-name="云南 Ⅰ 文山公共台" group-title="云南省" tvg-quality="高清",云南 Ⅰ 文山公共台 [1IPv4]
 http://tvdrs.wsrtv.com.cn:8100/channellive/ch2.flv
 #EXTINF:-1 tvg-name="云南 Ⅰ 文山综合台" group-title="云南省" tvg-quality="高清",云南 Ⅰ 文山综合台 [1IPv4]
 http://tvdrs.wsrtv.com.cn:8100/channellive/ch1.flv
-<<<<<<< HEAD
-=======
 #EXTINF:-1 tvg-name="云南丽江冰川" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南丽江冰川.png",云南丽江冰川 [1IPv4]
 https://gcalic.v.myalicdn.com/gc/hkylxs05_1/index.m3u8
 #EXTINF:-1 tvg-name="云南丽江印象实景" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南丽江印象实景.png",云南丽江印象实景 [1IPv4]
@@ -57,4 +47,3 @@ https://satellitepull.cnr.cn/live/wxynjjgb/playlist.m3u8
 http://39.130.202.81:6610/gitv_live/G_YNTV-2-HD/G_YNTV-2-HD.m3u8|http://yp.qqqtv.top/1/api.php?id=%E4%BA%91%E5%8D%97%E9%83%BD%E5%B8%82&auth=666858
 #EXTINF:-1 tvg-name="鬼吹灯之云南虫谷" group-title="云南省" tvg-logo="https://ghproxy.net/raw.githubusercontent.com/suxuang/myIPTV/main/img/云南虫谷.png",鬼吹灯之云南虫谷 [2IPv4]
 http://www.douzhicloud.site:35455/huya/11352898|http://1.94.31.214:35455/huya/11352898
->>>>>>> c686084 (支持配置黑名单)
