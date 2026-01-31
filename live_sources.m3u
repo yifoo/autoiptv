@@ -3,9 +3,9 @@
 # 每个电视台只显示一个条目，IPv6源优先排列
 # 播放器切换源方法：PotPlayer按Alt+W，VLC右键选择源
 # 排序规则：IPv6源 > 4K > 高清 > 标清 > 流畅
-# 已过滤黑名单慢速源（响应时间 > 6秒）
-# 更新时间(北京时间): 2026-01-31 14:03:54
-# 电视台总数: 293
+# 已过滤黑名单慢速源（响应时间 > 10秒）
+# 更新时间(北京时间): 2026-01-31 15:49:55
+# 电视台总数: 294
 # 原始频道数: 2765
 # 数据源: 5 个 (成功: 3, 失败: 2)
 # 特点: 移除技术参数，统一央视频道命名，按省份分类地方台，IPv6优先，黑名单过滤
@@ -14,22 +14,22 @@
 
 
 # 分类: 央视 (25个电视台)
-#EXTINF:-1 tvg-name="CCTV-1 综合" group-title="央视" tvg-logo="CCTV1.png",CCTV-1 综合 [6快速+6源]
-https://www.freetv.top/migu/608807420.m3u8?migutoken=5b04cf0d91179ab2d3d71703f0a8bc3d32dd02f7d8fb55ee70e05c216b8a9d1a73d911fbde798459fb66d94934157c996f8306c0dd37917775f2ed73dcc22cf84b25ca500bff5c636ff48d6344|https://stream1.freetv.fun/9c278a43d5bf7e515412f079507a71cfb8a263ff4938b30757880c9c7cd972b7.m3u8|https://stream1.freetv.fun/1e233c3fa02ad66a59876f9f9d5500a9b99b490836014ad39c51e69a17b3c563.ctv|http://58.57.40.22:9901/tsfile/live/0001_1.m3u8|http://play-hsbj.vzan.com/978354/446938712125478466/live.m3u8|http://112.27.235.94:8000/hls/1/index.m3u8
+#EXTINF:-1 tvg-name="CCTV-1 综合" group-title="央视" tvg-logo="https://tb.zbds.top/logo/CCTV1.png",CCTV-1 综合 [5快速+5源]
+https://stream1.freetv.fun/9c278a43d5bf7e515412f079507a71cfb8a263ff4938b30757880c9c7cd972b7.m3u8|https://stream1.freetv.fun/1e233c3fa02ad66a59876f9f9d5500a9b99b490836014ad39c51e69a17b3c563.ctv|http://58.57.40.22:9901/tsfile/live/0001_1.m3u8|http://play-hsbj.vzan.com/978354/446938712125478466/live.m3u8|http://112.27.235.94:8000/hls/1/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-2 财经" group-title="央视" tvg-logo="https://tb.zbds.top/logo/CCTV2.png" tvg-quality="高清",CCTV-2 财经 [4快速+4源]
 https://stream1.freetv.fun/409b4584ca2443a28b43c60a3d77ad50368d96bed0ca5a2d1f3a4b2e57c39204.m3u8|https://stream1.freetv.fun/c63e00b6f6e11db0e25eba94d5c4c63b4af30261838b8c91652553fb0f8e7b8a.m3u8|http://58.57.40.22:9901/tsfile/live/1001_1.m3u8|http://112.27.235.94:8000/hls/2/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-3 综艺" group-title="央视" tvg-logo="https://tb.zbds.top/logo/CCTV3.png",CCTV-3 综艺 [3快速+3源]
 https://stream1.freetv.fun/511fecba14f90da585c90ffce8cbcad4faaa1dc7f3cb9b70b74ac50451caaec0.ctv|http://58.57.40.22:9901/tsfile/live/1002_1.m3u8|http://112.27.235.94:8000/hls/3/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-4 中文国际" group-title="央视" tvg-logo="CCTV4.png" tvg-quality="高清",CCTV-4 中文国际 [7快速+7源]
 https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8|https://www.freetv.top/migu/631780421.m3u8?migutoken=fefc6a44400a0dd448699ae0ce3d6e2c5a0f49b8d48adb36e747c4fbab039337eb3244f9951acbddaf26b7bf51597a7d1b43c8845e67fd5914ece875dcad325bb388200bc0f12fdff727d03e2d|https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8|https://stream1.freetv.fun/1927200d910f3087e569a0050d84b50158d3c1e2d928ad116119bb9eafe8ac9f.m3u8|https://www.youtube.com/channel/UC4K_LI-Tn3-LshNgG0-YypQ/live|http://58.57.40.22:9901/tsfile/live/1003_1.m3u8|http://112.27.235.94:8000/hls/4/index.m3u8
-#EXTINF:-1 tvg-name="CCTV-5 体育" group-title="央视" tvg-logo="CCTV5.png",CCTV-5 体育 [7快速+8源]
-https://www.freetv.top/migu/641886683.m3u8?migutoken=3e5c01f93922de8d1c940fe15bb47349b27e8f7a2e624dde1a83dff3b2a80f58b7624151a3a4d00488edee34f202818557340903382fae02bb754084eb942bd50e59061df36fab62fb5b908903|https://stream1.freetv.fun/61df3be1490c927a746d671e52c9f9cb197fba5a08184c147a68eb80f84c4824.m3u8|https://stream1.freetv.fun/9e10502ceb683a8f5f354720cad6154b8bb0d8d590cb9859ea71203d9542c86f.m3u8|https://stream1.freetv.fun/46118cd0438ddbb2d6f349706132ced2104495cf4cf1019ef84d89465e048ca6.m3u8|https://stream1.freetv.fun/bec6c07801cdca35eaf31b3a21b1fe0dfd5018530eb96c08dc9baf557d5db3b4.ctv|http://58.57.40.22:9901/tsfile/live/1004_1.m3u8|http://112.27.235.94:8000/hls/5/index.m3u8|https://stream1.freetv.fun/a171c801b82d29b636aeef3cf0f2785c1d2d3e3cb80e51788990999a34ae51d0.ctv
+#EXTINF:-1 tvg-name="CCTV-5 体育" group-title="央视" tvg-logo="CCTV5.png",CCTV-5 体育 [6快速+8源]
+https://stream1.freetv.fun/61df3be1490c927a746d671e52c9f9cb197fba5a08184c147a68eb80f84c4824.m3u8|https://stream1.freetv.fun/9e10502ceb683a8f5f354720cad6154b8bb0d8d590cb9859ea71203d9542c86f.m3u8|https://stream1.freetv.fun/46118cd0438ddbb2d6f349706132ced2104495cf4cf1019ef84d89465e048ca6.m3u8|https://stream1.freetv.fun/bec6c07801cdca35eaf31b3a21b1fe0dfd5018530eb96c08dc9baf557d5db3b4.ctv|http://58.57.40.22:9901/tsfile/live/1004_1.m3u8|http://112.27.235.94:8000/hls/5/index.m3u8|https://www.freetv.top/migu/641886683.m3u8?migutoken=3e5c01f93922de8d1c940fe15bb47349b27e8f7a2e624dde1a83dff3b2a80f58b7624151a3a4d00488edee34f202818557340903382fae02bb754084eb942bd50e59061df36fab62fb5b908903|https://stream1.freetv.fun/a171c801b82d29b636aeef3cf0f2785c1d2d3e3cb80e51788990999a34ae51d0.ctv
 #EXTINF:-1 tvg-name="CCTV-5+ 体育赛事" group-title="央视" tvg-logo="CCTV5+.png",CCTV-5+ 体育赛事 [3快速+3源]
 https://www.freetv.top/migu/641886773.m3u8?migutoken=03a1b82e35e58cd89a95034ecb29e77e50493397000ec2b1e4d1ce59af01e6420d6dbc068c8230ec03be3a35a20eed8714e0959e3570a08713a7a2e8d86085eabf8f1aa85744c80c38343988b2|http://58.57.40.22:9901/tsfile/live/1005_1.m3u8|http://112.27.235.94:8000/hls/6/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-6 电影" group-title="央视" tvg-logo="https://tb.zbds.top/logo/CCTV6.png",CCTV-6 电影 [2快速+2源]
 http://58.57.40.22:9901/tsfile/live/1006_1.m3u8|http://112.27.235.94:8000/hls/7/index.m3u8
-#EXTINF:-1 tvg-name="CCTV-7 国防军事" group-title="央视" tvg-logo="https://tb.zbds.top/logo/CCTV7.png",CCTV-7 国防军事 [3快速+3源]
-https://stream1.freetv.fun/b455a784117753f80bc07ced769e86993b97dca8be5a6c9df9f323016b04973e.ctv|http://58.57.40.22:9901/tsfile/live/1007_1.m3u8|http://112.27.235.94:8000/hls/8/index.m3u8
+#EXTINF:-1 tvg-name="CCTV-7 国防军事" group-title="央视" tvg-logo="CCTV7.png",CCTV-7 国防军事 [4快速+4源]
+https://www.freetv.top/migu/673168121.m3u8?migutoken=44446ab398991313e6a822efdaec82f3b845a2e8f141c172aa857c477255724bbb28fc01d33f764c51106c446af1c57e8815b58822075b194f4cf55cde28fe55f54330d4586c92e75e8aa50a48|https://stream1.freetv.fun/b455a784117753f80bc07ced769e86993b97dca8be5a6c9df9f323016b04973e.ctv|http://58.57.40.22:9901/tsfile/live/1007_1.m3u8|http://112.27.235.94:8000/hls/8/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-8 电视剧" group-title="央视" tvg-logo="CCTV8.png" tvg-quality="高清",CCTV-8 电视剧 [5快速+5源]
 https://stream1.freetv.fun/d4e41340653ef3bc5e2b559cce1953ba68c56106f7afad9c4b9245f2c426d1fb.m3u8|https://www.freetv.top/migu/624878356.m3u8?migutoken=170b73b07e0cf0d307afea3545da5b9609d7c15461a2f4ac0f43634101df9baf391a446b91e5f84446b6a3b0934bb4730e2f3c4a32a565f904f22c8ff745a094d45dfd49c54f31b0b78156a080|https://stream1.freetv.fun/4bdb622b9323106fefcd68479b8ae140c393fc8a50e6fb82832591e9505f90f7.m3u8|http://58.57.40.22:9901/tsfile/live/1008_1.m3u8|http://112.27.235.94:8000/hls/9/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-9 纪录" group-title="央视" tvg-logo="CCTV9.png" tvg-quality="高清",CCTV-9 纪录 [5快速+5源]
@@ -42,7 +42,7 @@ https://stream1.freetv.fun/f67f890e2385fb32c86102a54aaff55cceca4dcf566e976e1d286
 https://www.freetv.top/migu/673168185.m3u8?migutoken=37acadb43b1d7932b0a1e8a4f2d01a06b42a10c31f3ccb417bae200ac3028f30a8110509f2cd6cd130aee4b21c85693aa49817f3381e4d28e140d8db1a20b6fecea22fec17a70ff1341efe6081|https://stream1.freetv.fun/6f4520a649957c1068efd36c848b994de2752266a929a4f9a50dba84b9baf9b7.m3u8|http://58.57.40.22:9901/tsfile/live/1012_1.m3u8|http://112.27.235.94:8000/hls/13/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-13 新闻" group-title="央视" tvg-logo="CCTV13.png" tvg-quality="高清",CCTV-13 新闻 [7快速+7源]
 https://stream1.freetv.fun/d6dfc8a6fe6500359a1505a589d61d16f4bcc311e2549442a88dd1aca1fa444e.ctv|https://ldncctvwbcdcnc.v.wscdns.com/ldncctvwbcd/cdrmldcctv13_1/index.m3u8|https://event.pull.hebtv.com/jishi/cp1.m3u8|https://www.freetv.top/migu/608807423.m3u8?migutoken=ac19a58805588401a8e818b6dd00df9b327912af3611ba95f89235e7020821668a2b6dc65ccc3904967da59d0a9742565c56ea582baf8915d068035054818ef0f369dab64705a6a7f7120529ec|http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8|http://58.57.40.22:9901/tsfile/live/1013_1.m3u8|http://112.27.235.94:8000/hls/14/index.m3u8
-#EXTINF:-1 tvg-name="CCTV-14 少儿" group-title="央视" tvg-logo="CCTV14.png" tvg-ipv6="true",CCTV-14 少儿 [1IPv6+4快速+4源]
+#EXTINF:-1 tvg-name="CCTV-14 少儿" group-title="央视" tvg-logo="CCTV14.png" tvg-ipv6="true",CCTV-14 少儿 [1IPv6+3快速+4源]
 https://event.pull.hebtv.com/jishi/cp2.m3u8#rtsp://103.251.96.71/PLTV/88888888/224/3221225783/10000100000000060000000000726027_0.smil?icpid=SSPID&amp;accounttype=1&amp;limitflux=-1&amp;limitdur=-1&amp;accountinfo=:20240213104135|https://www.freetv.top/migu/624878440.m3u8?migutoken=239edad94ac0bbff14f123c7f8996ed7639110bd6cf64ec8ba8cf85842224956d452ec8b683385cb27f8a7685224a03e3aa4d914b8fe33249da9df699351b105c795452d03f2be0a1f1e39adb0|http://58.57.40.22:9901/tsfile/live/1014_1.m3u8|http://112.27.235.94:8000/hls/15/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-15 音乐" group-title="央视" tvg-logo="CCTV15.png",CCTV-15 音乐 [4快速+4源]
 https://www.freetv.top/migu/673168223.m3u8?migutoken=4e8d5766579c6bef231494cabd07e5b49d965804790214280c9791e4c331fd90311cb62ea43d3a1899229bfa57be4afe5a567b32a6b78153fc9a9801e28a39435e078b48c211e71d6083519be4|https://stream1.freetv.fun/2c02ba7886ffaec4d28d5f9246f2bbf8dd89da8771f03f3bbbef49361b4cbb88.ctv|http://58.57.40.22:9901/tsfile/live/1015_1.m3u8|http://112.27.235.94:8000/hls/16/index.m3u8
@@ -58,9 +58,9 @@ https://epg.pw/stream/e9df8fe337dd6bacbf98516a34c0b0c94b3d2a02339529dea3de3769ad
 http://8.138.7.223/tv/1905.php?id=LIVE3YPYZ30E7V1R0
 #EXTINF:-1 tvg-name="CCTV 9纪录" group-title="央视" tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125013114796464_35.png" tvg-quality="标清",CCTV 9纪录 [1快速+1源]
 https://stream1.freetv.fun/bac2107c8204c290efc6c6224146418641af787e31995157d64d567afbc00279.m3u8
-#EXTINF:-1 tvg-name="CCTV-04" group-title="央视" tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125001917639668_91.png" tvg-quality="标清",CCTV-04 [1快速+1源]
+#EXTINF:-1 tvg-name="CCTV-04" group-title="央视" tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125001917639668_91.png" tvg-quality="标清",CCTV-04 [1源]
 https://stream1.freetv.fun/4f0f8bd49c9ff4728185558a407f36d95c8bb600b78e3f22a75762a4aeab381a.ctv
-#EXTINF:-1 tvg-name="CCTV-06" group-title="央视" tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125001735955364_69.png",CCTV-06 [1快速+1源]
+#EXTINF:-1 tvg-name="CCTV-06" group-title="央视" tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125001735955364_69.png",CCTV-06 [1源]
 https://stream1.freetv.fun/d2e211090c175c2b8defc212533a1d4a150d5b15c382dc5e4d58f738036588ab.ctv
 #EXTINF:-1 tvg-name="CCTV8k超" group-title="央视" tvg-logo="https://epg.pw/media/images/channel/2021/06/24/large/20210624004559407468_16.png" tvg-quality="高清",CCTV8k超 [1快速+1源]
 https://epg.pw/stream/12c4722b400606e9f17e446f03738627390aa03e60b7cea9a4fe15016cc6e079.m3u8
@@ -76,20 +76,20 @@ https://epg.pw/stream/ab652effca726310b82c8a321edfa861029f896ef612cbed788dd4c907
 https://stream1.freetv.fun/53800b472ac1869f0e75f5c2b17fdee144590e10b746f523425fd6ee5cc9b490.m3u8|https://epg.pw/stream/3d72ae947c8d574411b9d26bc49ef1b6e8c2c5bf3a55c97df0b37f0af5080a99.m3u8|http://58.57.40.22:9901/tsfile/live/1044_1.m3u8|http://120.76.248.139/live/bfgd/4200000108.m3u8|http://112.27.235.94:8000/hls/39/index.m3u8
 #EXTINF:-1 tvg-name="山西卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2023/08/04/large/20230804221555254122_47.jpg" tvg-quality="标清",山西卫视 [4快速+4源]
 https://epg.pw/stream/26bc11f19d981a15cde7badbe86ce9030af5cb1f8a4bf8c8e454c2b11e14f962.m3u8|https://stream1.freetv.fun/shan-xi-wei-shi-25.m3u8|https://stream1.freetv.fun/2f538e8c3c3dc60b99799fb3331f5f05b5a9c3c574544b4178a57a7de78f6884.ctv|http://112.27.235.94:8000/hls/45/index.m3u8
-#EXTINF:-1 tvg-name="辽宁卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2025/01/28/large/20250128060733782674_48.jpg",辽宁卫视 [4快速+4源]
-https://stream1.freetv.fun/79a34375894602e49d48f315b291ec306fd20425e213ee3a1977e364e8dbe84b.m3u8|https://epg.pw/stream/4fa75925fb00aa051c6819346628eb0cd8bafd14f8231c9166b8a5209111db07.m3u8|http://58.57.40.22:9901/tsfile/live/1035_1.m3u8|http://112.27.235.94:8000/hls/47/index.m3u8
-#EXTINF:-1 tvg-name="吉林卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2024/07/28/large/20240728163659540434_96.png",吉林卫视 [3快速+3源]
-https://epg.pw/stream/657b3cc8f2106d0e0b52d0bc7f0e15db544b37b3e86bf5f486f351b9db61fa2e.m3u8|https://stream1.freetv.fun/657b3cc8f2106d0e0b52d0bc7f0e15db544b37b3e86bf5f486f351b9db61fa2e.ctv|http://58.57.40.22:9901/tsfile/live/1050_1.m3u8
-#EXTINF:-1 tvg-name="黑龙江卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531154335673922_21.jpg",黑龙江卫视 [4快速+5源]
-https://epg.pw/stream/bba30e5caaeffff57cecd7e3145d77937bb135028de2be19ffe2f644858124ca.m3u8|https://stream1.freetv.fun/8db7fe87f56b1781603eca82aa8111cd9a6f7a52cb6648858a6a657a926d5ddf.ctv|http://58.57.40.22:9901/tsfile/live/1040_1.m3u8|http://112.27.235.94:8000/hls/48/index.m3u8|http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8
-#EXTINF:-1 tvg-name="江苏卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530225651709500_84.jpg" tvg-quality="高清/标清",江苏卫视 [5快速+5源]
-https://stream1.freetv.fun/201bc6a223bdc6a156faed559f05f3b9fa676c987f5f44cbdf62123f6977d5e9.m3u8|https://epg.pw/stream/3d2796c6d253a8ce33491f776f534920256a756f0201e24e9d25b4c404ec2daa.m3u8|https://stream1.freetv.fun/b484249faa35740c98c20dd599a41e18135fa7626edd0489fbe28a00ec2652b8.ctv|http://58.57.40.22:9901/tsfile/live/1031_1.m3u8|http://112.27.235.94:8000/hls/32/index.m3u8
-#EXTINF:-1 tvg-name="浙江卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2024/03/11/large/20240311112431672505_47.png",浙江卫视 [7快速+8源]
-https://epg.pw/stream/18109b1804a4d4c8acd2a83f3256b7495a047d7f5cf918ef92febd030933bfc2.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8|http://l.cztvcloud.com/channels/lantian/SXpinghu3/720p.m3u8|http://ali-vl.cztv.com/channels/lantian/channel001/360p.m3u8|http://58.57.40.22:9901/tsfile/live/1029_1.m3u8|http://112.27.235.94:8000/hls/29/index.m3u8|https://stream1.freetv.fun/cfe6c386aeda1787f606df629248faf407b2351852e3ea6994357836a1643f5c.ctv
+#EXTINF:-1 tvg-name="辽宁卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2025/01/28/large/20250128060733782674_48.jpg",辽宁卫视 [3快速+4源]
+https://stream1.freetv.fun/79a34375894602e49d48f315b291ec306fd20425e213ee3a1977e364e8dbe84b.m3u8|http://58.57.40.22:9901/tsfile/live/1035_1.m3u8|http://112.27.235.94:8000/hls/47/index.m3u8|https://epg.pw/stream/4fa75925fb00aa051c6819346628eb0cd8bafd14f8231c9166b8a5209111db07.m3u8
+#EXTINF:-1 tvg-name="吉林卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2024/07/28/large/20240728163659540434_96.png",吉林卫视 [2快速+3源]
+https://epg.pw/stream/657b3cc8f2106d0e0b52d0bc7f0e15db544b37b3e86bf5f486f351b9db61fa2e.m3u8|http://58.57.40.22:9901/tsfile/live/1050_1.m3u8|https://stream1.freetv.fun/657b3cc8f2106d0e0b52d0bc7f0e15db544b37b3e86bf5f486f351b9db61fa2e.ctv
+#EXTINF:-1 tvg-name="黑龙江卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531154335673922_21.jpg",黑龙江卫视 [5快速+5源]
+https://epg.pw/stream/bba30e5caaeffff57cecd7e3145d77937bb135028de2be19ffe2f644858124ca.m3u8|https://stream1.freetv.fun/8db7fe87f56b1781603eca82aa8111cd9a6f7a52cb6648858a6a657a926d5ddf.ctv|http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8|http://58.57.40.22:9901/tsfile/live/1040_1.m3u8|http://112.27.235.94:8000/hls/48/index.m3u8
+#EXTINF:-1 tvg-name="江苏卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530225651709500_84.jpg" tvg-quality="高清/标清",江苏卫视 [4快速+5源]
+https://stream1.freetv.fun/201bc6a223bdc6a156faed559f05f3b9fa676c987f5f44cbdf62123f6977d5e9.m3u8|https://epg.pw/stream/3d2796c6d253a8ce33491f776f534920256a756f0201e24e9d25b4c404ec2daa.m3u8|http://58.57.40.22:9901/tsfile/live/1031_1.m3u8|http://112.27.235.94:8000/hls/32/index.m3u8|https://stream1.freetv.fun/b484249faa35740c98c20dd599a41e18135fa7626edd0489fbe28a00ec2652b8.ctv
+#EXTINF:-1 tvg-name="浙江卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2024/03/11/large/20240311112431672505_47.png",浙江卫视 [6快速+8源]
+https://epg.pw/stream/18109b1804a4d4c8acd2a83f3256b7495a047d7f5cf918ef92febd030933bfc2.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8|http://ali-vl.cztv.com/channels/lantian/channel001/360p.m3u8|http://58.57.40.22:9901/tsfile/live/1029_1.m3u8|http://112.27.235.94:8000/hls/29/index.m3u8|https://stream1.freetv.fun/cfe6c386aeda1787f606df629248faf407b2351852e3ea6994357836a1643f5c.ctv|http://l.cztvcloud.com/channels/lantian/SXpinghu3/720p.m3u8
 #EXTINF:-1 tvg-name="安徽卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2023/07/19/large/20230719113027191823_22.jpg",安徽卫视 [4快速+4源]
 https://stream1.freetv.fun/aa9b31c1dbeffb511830532e0b8f1413b48dd2c61e59e843d19ba9fc3a073241.m3u8|https://epg.pw/stream/80d1988862ff0162fdab6745b126a3a69d563855cbc5df750cd96b6424ea16a1.m3u8|http://58.57.40.22:9901/tsfile/live/1033_1.m3u8|http://112.27.235.94:8000/hls/26/index.m3u8
-#EXTINF:-1 tvg-name="江西卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531144408646863_42.jpg",江西卫视 [3快速+4源]
-https://epg.pw/stream/712a9501771f77767d38d69d884e87056ee0cb44e57bb3f4e75f50d3d0ab05fb.m3u8|http://58.57.40.22:9901/tsfile/live/1043_1.m3u8|http://112.27.235.94:8000/hls/44/index.m3u8|https://stream1.freetv.fun/bc4d49bde015fc24aafb924423536d9ec2f09ad3d55313e4a482ba85ae48b175.ctv
+#EXTINF:-1 tvg-name="江西卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531144408646863_42.jpg",江西卫视 [5快速+5源]
+https://epg.pw/stream/712a9501771f77767d38d69d884e87056ee0cb44e57bb3f4e75f50d3d0ab05fb.m3u8|https://www.freetv.top/migu/783847495.m3u8?migutoken=fddcc05dc0245329d3208607a5b1f5a1980bc31a7ced510e345af6cc68f5b86d2d9178b45706a0b6a0ceddc82ce06e53375cfedbc96fd0b00c12195c7d77b6f23811a67970bcfeb47629aa5aa6|https://stream1.freetv.fun/bc4d49bde015fc24aafb924423536d9ec2f09ad3d55313e4a482ba85ae48b175.ctv|http://58.57.40.22:9901/tsfile/live/1043_1.m3u8|http://112.27.235.94:8000/hls/44/index.m3u8
 #EXTINF:-1 tvg-name="山东卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2023/07/19/large/20230719112946432101_81.jpg",山东卫视 [4快速+4源]
 https://epg.pw/stream/4a343c7c4de4157d46c357cae28382364d74d1884942cf09bd212bfce4beeb7b.m3u8|https://stream1.freetv.fun/3b97ca6daa3a8451a385b7db783b1c5622e979ec500532a2ff7145e99e78fab5.ctv|http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8|http://112.27.235.94:8000/hls/34/index.m3u8
 #EXTINF:-1 tvg-name="河南卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530233814283449_10.jpg",河南卫视 [5快速+5源]
@@ -102,35 +102,35 @@ http://171.83.103.119:9999/rtp/239.69.2.34:11358|http://171.83.103.119:9999/rtp/
 https://stream1.freetv.fun/6787e35b48df7529fb25c86cd92936335e75d68881015ff99c3e969f57177987.m3u8|https://epg.pw/stream/79202aa439fc4fb94a8304f8608737f7cff1626f2b42aa6d5552ecfc2bcacbaf.m3u8|http://58.57.40.22:9901/tsfile/live/1039_1.m3u8|http://112.27.235.94:8000/hls/30/index.m3u8
 #EXTINF:-1 tvg-name="广西卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2023/07/19/large/20230719121035248314_98.jpg" tvg-quality="标清",广西卫视 [5快速+5源]
 https://stream1.freetv.fun/3899ee96bfc51a8e53baa9d48c86b9b9a52907112fffcb33e94df2c05cc02d3c.m3u8|https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8|https://hlscdn.liangtv.cn/live/0c4ef3a44b934cacb8b47121dfada66c/d7e04258157b480dae53883cc6f8123b.m3u8|https://epg.pw/stream/3899ee96bfc51a8e53baa9d48c86b9b9a52907112fffcb33e94df2c05cc02d3c.m3u8|http://58.57.40.22:9901/tsfile/live/1049_1.m3u8
-#EXTINF:-1 tvg-name="海南卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2021/09/13/large/20210913004059839717_73.png" tvg-quality="标清",海南卫视 [5快速+5源]
+#EXTINF:-1 tvg-name="海南卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2021/09/13/large/20210913004059839717_73.png" tvg-quality="标清",海南卫视 [4快速+5源]
 https://stream1.freetv.fun/468b29e1bee51764e3cf09ee70bf730e44aaeead942f39c43e9010e9da7b7a4a.ctv|https://epg.pw/stream/13db356c0b392d00d91868541b8e5b62ef81bc91f1ab1f35444739650b5b1420.m3u8|http://58.57.40.22:9901/tsfile/live/1000_1.m3u8|http://120.76.248.139/live/bfgd/4200000473.m3u8|http://nn.7x9d.cn/地方台8563/海南.php?id=hnws
 #EXTINF:-1 tvg-name="四川卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/28/large/20220528220452110808_30.jpg" tvg-ipv6="true",四川卫视 [2IPv6+6快速+6源]
 http://171.83.103.119:9999/rtp/239.69.1.28:9808|http://171.83.103.119:9999/rtp/239.69.2.39:11388|https://stream1.freetv.fun/3c264c25b1f8debffea48cd474ef8b830ced737528778624f006949a84930657.ctv|https://epg.pw/stream/c1d7aa9fdbe369ae7c3242d0dade547b7987e1e37e7e2098a45e794c3296f862.ctv|http://58.57.40.22:9901/tsfile/live/1046_1.m3u8|http://112.27.235.94:8000/hls/35/index.m3u8
-#EXTINF:-1 tvg-name="贵州卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531144236171971_20.jpg",贵州卫视 [3快速+4源]
-https://epg.pw/stream/cc54b485fc3912265c9dbb24fe2b6d1ba2b65412d0ff45b904bc4d53ea02bf67.ctv|http://58.57.40.22:9901/tsfile/live/1042_1.m3u8|http://112.27.235.94:8000/hls/46/index.m3u8|https://stream1.freetv.fun/cc54b485fc3912265c9dbb24fe2b6d1ba2b65412d0ff45b904bc4d53ea02bf67.ctv
-#EXTINF:-1 tvg-name="云南卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531145024469645_82.jpg",云南卫视 [5快速+5源]
-https://stream1.freetv.fun/78d5fdfe5a6a02f95ba9abe9781d88980afafde30f29a80c5ce264ca7c1fe245.m3u8|https://epg.pw/stream/368e59cc43274d4c5380dfd940d1f40ee03a4b9cb5b1648b01c42b47f2516d8b.ctv|http://58.57.40.22:9901/tsfile/live/1047_1.m3u8|http://112.27.235.94:8000/hls/40/index.m3u8|http://nn.7x9d.cn/xzc2.php?ua=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTA2LjAuMC4wIFNhZmFyaS81MzcuMzY=&hls=aHR0cDovL3d3dy5kc2suY2MvcGhwL3N4Z2QucGhwP2lkPXlud3M=
+#EXTINF:-1 tvg-name="贵州卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531144236171971_20.jpg",贵州卫视 [2快速+4源]
+http://58.57.40.22:9901/tsfile/live/1042_1.m3u8|http://112.27.235.94:8000/hls/46/index.m3u8|https://stream1.freetv.fun/cc54b485fc3912265c9dbb24fe2b6d1ba2b65412d0ff45b904bc4d53ea02bf67.ctv|https://epg.pw/stream/cc54b485fc3912265c9dbb24fe2b6d1ba2b65412d0ff45b904bc4d53ea02bf67.ctv
+#EXTINF:-1 tvg-name="云南卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531145024469645_82.jpg",云南卫视 [4快速+5源]
+https://stream1.freetv.fun/78d5fdfe5a6a02f95ba9abe9781d88980afafde30f29a80c5ce264ca7c1fe245.m3u8|http://58.57.40.22:9901/tsfile/live/1047_1.m3u8|http://112.27.235.94:8000/hls/40/index.m3u8|http://nn.7x9d.cn/xzc2.php?ua=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTA2LjAuMC4wIFNhZmFyaS81MzcuMzY=&hls=aHR0cDovL3d3dy5kc2suY2MvcGhwL3N4Z2QucGhwP2lkPXlud3M=|https://epg.pw/stream/368e59cc43274d4c5380dfd940d1f40ee03a4b9cb5b1648b01c42b47f2516d8b.ctv
 #EXTINF:-1 tvg-name="陕西卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531150903888489_91.jpg" tvg-quality="标清",陕西卫视 [4快速+4源]
 https://stream1.freetv.fun/eb1d7157459fe4c37bbfad23252b85ab628f4e3d14d81aea7b4a014d2658ae41.m3u8|https://epg.pw/stream/eb1d7157459fe4c37bbfad23252b85ab628f4e3d14d81aea7b4a014d2658ae41.m3u8|https://www.freetv.top/migu/738910838.m3u8?migutoken=3899cd1daaa04f812c6d4b13126e3c00ad177635abc5559f1b596e814ff8eb3d745e7bd40b881206a2852a5ed041ca424112cf1d9b385c72ea9de42c8d86f45227af0f51a8b4f4c18a038a8e6d|http://112.27.235.94:8000/hls/43/index.m3u8
 #EXTINF:-1 tvg-name="甘肃卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531224357857126_28.jpg" tvg-quality="标清",甘肃卫视 [3快速+3源]
 https://epg.pw/stream/05ccbebe8d81cf91ecf4347845f6f0b42fed4bab4071195b0a4f735a80c386bd.m3u8|https://stream1.freetv.fun/62fc00b17e85a0f05bc7442ba4c507d0d9ed83d0e4c628543a0c8cc0f3c0e79e.m3u8|http://58.57.40.22:9901/tsfile/live/1056_1.m3u8
 #EXTINF:-1 tvg-name="青海卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531153842547224_70.jpg" tvg-quality="标清",青海卫视 [3快速+3源]
 https://stream1.freetv.fun/d07c5ec4397fbc7f5e7cc384b2ea73f4109d928e2b68474fc1ef6041cb976744.ctv|https://epg.pw/stream/baf5e50a17f574f86c96810d5d2eebbbc3570ca5f5a35d953837040845c89726.ctv|http://58.57.40.22:9901/tsfile/live/1057_1.m3u8
-#EXTINF:-1 tvg-name="宁夏卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531153504056322_25.jpg" tvg-quality="标清",宁夏卫视 [3快速+4源]
+#EXTINF:-1 tvg-name="宁夏卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531153504056322_25.jpg" tvg-quality="标清",宁夏卫视 [4快速+4源]
 https://epg.pw/stream/36d06a642456bafe7043aaed3e01dd7557dba0fb2072c40a91ae029700665b25.m3u8|https://stream1.freetv.fun/dac6bde8d0f89b3735cff3def0b505cb115db5d885ade8c0bfadd8712312dd5e.ctv|http://58.57.40.22:9901/tsfile/live/1054_1.m3u8|http://120.76.248.139/live/bfgd/4200000118.m3u8
 #EXTINF:-1 tvg-name="新疆卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531160954230977_59.jpg" tvg-quality="标清" tvg-ipv6="true",新疆卫视 [1IPv6+4快速+4源]
 http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:8001/hls/main/playlist.m3u8zxinjd|https://stream1.freetv.fun/345c53fbea8456cd1cc4c91283ea05745ba501069d006845745d9bf453f1ab53.m3u8|https://epg.pw/stream/ff921b905e5d0b1628a06f833e0de3632ce26572350b4c077f113e171d27bffe.m3u8|http://58.57.40.22:9901/tsfile/live/1055_1.m3u8
 #EXTINF:-1 tvg-name="内蒙古卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531160914023715_85.jpg",内蒙古卫视 [4快速+4源]
 https://stream1.freetv.fun/263e5a5eb28d709848af0b6e283422b92c4de866d01f1ccaebd57b2358f24c18.m3u8|https://epg.pw/stream/257b62e44b49294fba69f1d5689725632ae7d24594234533f23ee7cc1cc49c63.m3u8|http://120.76.248.139/live/bfgd/4200000110.m3u8|http://112.27.235.94:8000/hls/49/index.m3u8
-#EXTINF:-1 tvg-name="西藏卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531231110733151_44.jpg" tvg-quality="标清",西藏卫视 [3快速+3源]
-https://stream1.freetv.fun/0520182fdda930a14ef73fa2ed6221ba95c6ae2ddffa8c93f4b08562ea71c777.m3u8|https://epg.pw/stream/de379ca26bc8e110b63a57f9d4b17db2fdb54047b99679d4c5434d1330b3d0d9.m3u8|http://120.238.94.10:9901/tsfile/live/1077_1.m3u8
+#EXTINF:-1 tvg-name="西藏卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531231110733151_44.jpg" tvg-quality="标清",西藏卫视 [3快速+4源]
+https://stream1.freetv.fun/0520182fdda930a14ef73fa2ed6221ba95c6ae2ddffa8c93f4b08562ea71c777.m3u8|https://epg.pw/stream/de379ca26bc8e110b63a57f9d4b17db2fdb54047b99679d4c5434d1330b3d0d9.m3u8|http://120.238.94.10:9901/tsfile/live/1077_1.m3u8|http://php.jdshipin.com:8880/xztv.php?id=ws
 #EXTINF:-1 tvg-name="三沙卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/14/large/20220514162237808392_17.jpg" tvg-quality="标清",三沙卫视 [4快速+5源]
 https://stream1.freetv.fun/fc49c564c870b78b1a3655d913ca8a4fe4e31f58db2da34caedc0761a3e51256.m3u8|https://epg.pw/stream/fc49c564c870b78b1a3655d913ca8a4fe4e31f58db2da34caedc0761a3e51256.ctv|https://stream1.freetv.fun/2476872184d56573ae915237d8e3c990ded214446351f568b57889cbf63da2e8.m3u8|https://stream1.freetv.fun/8bd6b69c423ac31e71c2311ad33f4f291e1314c69005ffb7b3b7defc2944adb2.m3u8|http://nn.7x9d.cn/地方台8563/海南.php?id=ssws
 #EXTINF:-1 tvg-name="上海卫视" group-title="卫视" tvg-logo="https://live.fanmingming.cn/tv/上海卫视.png",上海卫视 [1快速+1源]
 http://112.27.235.94:8000/hls/28/index.m3u8
 #EXTINF:-1 tvg-name="东南卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530230913448467_39.jpg",东南卫视 [4快速+4源]
 https://epg.pw/stream/d3a633f9603e282ecb78c53b3220a5cc6d4ae302a789711407a0794bc0c79c00.m3u8|http://58.57.40.22:9901/tsfile/live/1037_1.m3u8|http://112.27.235.94:8000/hls/38/index.m3u8|http://8.138.7.223/tv/fjtv1.php?id=dnws
-#EXTINF:-1 tvg-name="东方卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2023/06/05/large/20230605010227137581_33.jpg" tvg-quality="4K",东方卫视 [5快速+5源]
+#EXTINF:-1 tvg-name="东方卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2023/06/05/large/20230605010227137581_33.jpg" tvg-quality="4K",东方卫视 [4快速+5源]
 http://bp-resource-dfl.bestv.cn/148/3/video.m3u8|https://www.freetv.top/migu/651632648.m3u8?migutoken=67b4219a3e6acdcf288118ed6bf84d3197052966f0bc854079b6038b3fca6437744ca78bb0ea1fad6f61b4c73d0df57bd8b539ec247fd28ce16d1375716bbf774ea19c99e4585bb828fa3851c0|https://epg.pw/stream/636d16f50c8d96b05c6c11994cc91e361e669419cee31b183d4568b76f288d08.ctv|http://58.57.40.22:9901/tsfile/live/1030_1.m3u8|http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
 #EXTINF:-1 tvg-name="东森美洲卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2023/07/18/large/20230718005646228477_42.jpg",东森美洲卫视 [1快速+1源]
 https://stream1.freetv.fun/3da8f447d893b0dd3ba066f7e4efe48227b7968504e6d5a9dcd8b87c7274dbe7.ctv
@@ -138,7 +138,7 @@ https://stream1.freetv.fun/3da8f447d893b0dd3ba066f7e4efe48227b7968504e6d5a9dcd8b
 https://stream1.freetv.fun/b559b0ce0ee5bd173b3231a94ab4999f02108732c0dfc23d468ed55b330857f6.m3u8|http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u
 #EXTINF:-1 tvg-name="兵团卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2025/01/28/large/20250128061107039210_54.png" tvg-quality="标清",兵团卫视 [3快速+3源]
 https://stream1.freetv.fun/11cd528da0063d7ef3db744cdc208904f48127c954b57c0ddec15afbe9f12dc4.m3u8|https://epg.pw/stream/4a8abda1e84955b569ee1083bd382f5246d6e746277e0dc61a6f9af14a0032f1.m3u8|http://183.11.239.36:808/hls/7/index.m3u8
-#EXTINF:-1 tvg-name="农林卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/01/15/large/20220115214129172948_47.png" tvg-quality="标清",农林卫视 [1快速+2源]
+#EXTINF:-1 tvg-name="农林卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/01/15/large/20220115214129172948_47.png" tvg-quality="标清",农林卫视 [2快速+2源]
 https://stream1.freetv.fun/4509b28aa6870b6723880c39a01a00ab539461605d227f22a85ba3d105592ad9.ctv|http://120.76.248.139/live/bfgd/4200000122.m3u8
 #EXTINF:-1 tvg-name="凤凰卫视" group-title="卫视" tvg-logo="凤凰卫视.png",凤凰卫视 [3快速+3源]
 http://cdn.132.us.kg/live/fhzw/stream.m3u8|https://stream1.freetv.fun/08e5440bb83a804440e341ae792cffc38d6844b04d5a2c7a4fc5ee04a6fe6bc6.m3u8|http://php.jdshipin.com:8880/smt.php?id=phoenixtv_hd
@@ -146,7 +146,7 @@ http://cdn.132.us.kg/live/fhzw/stream.m3u8|https://stream1.freetv.fun/08e5440bb8
 https://stream1.freetv.fun/674019f8e3250e3e5564c4e8a132f20ff484b0bc449e96bb36f6e8c4e8df58eb.ctv
 #EXTINF:-1 tvg-name="南方卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/06/22/large/20220622235040261062_55.jpg" tvg-quality="标清",南方卫视 [1快速+1源]
 https://epg.pw/stream/069c724c7c324d17825fcf8ee532b261de3aef322120d44ac80cdf96a891c8a9.m3u8
-#EXTINF:-1 tvg-name="厦门卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/04/27/large/20220427145557789544_92.jpg" tvg-quality="标清" tvg-ipv6="true",厦门卫视 [1IPv6+6快速+6源]
+#EXTINF:-1 tvg-name="厦门卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2022/04/27/large/20220427145557789544_92.jpg" tvg-quality="标清" tvg-ipv6="true",厦门卫视 [1IPv6+5快速+6源]
 http://e2.woc.iiiya.cn:28888/rtp/239.61.2.11:8060|https://epg.pw/stream/aa65dd411565991ace44f9e5934bd018fdd52122e052d471a363b6ee839e1079.m3u8|https://stream1.freetv.fun/a927444efa3d55d3d42d4d80fc9dd565caeae93fe0328d6e078367c2120df3d4.ctv|https://stream1.freetv.fun/cc2a1fdd054d0069e308a8c5358596fe1ba08562b102d8223a3b02e620082f96.m3u8|http://183.11.239.36:808/hls/17/index.m3u8|http://8.138.7.223/tv/fjtv1.php?id=xmws
 #EXTINF:-1 tvg-name="国兴卫视" group-title="卫视" tvg-logo="https://epg.pw/media/",国兴卫视 [1快速+1源]
 https://stream1.freetv.fun/f5979d32a66113d86b52b026faca1dd715c710dd421fb64501f6bf24267c1036.ctv
@@ -162,8 +162,8 @@ https://epg.pw/stream/8513d45e18cb11230fa6cf876c3420e6f9ab9a09ced9b0b849641eb890
 https://epg.pw/stream/ec4acebcc3eb66ea9f23a8f9024848115d27c6d85681b6142fe5b7359851b2bb.m3u8
 #EXTINF:-1 tvg-name="星空卫视" group-title="卫视" tvg-logo="星空卫视.png",星空卫视 [8快速+8源]
 https://cdn.iptv8k.top/dl/jrys.php?id=21&time=20240926215313&ip=111.229.253.40|https://stream1.freetv.fun/xing-kong-wei-shi-12.m3u8|https://stream1.freetv.fun/xing-kong-wei-shi-11.m3u8|https://stream1.freetv.fun/xing-kong-wei-shi-10.m3u8|https://stream1.freetv.fun/xing-kong-wei-shi-4.ctv|https://stream1.freetv.fun/xing-kong-wei-shi-6.ctv|https://stream1.freetv.fun/xing-kong-wei-shi-11.ctv|http://iot-mqqt.111yao.cn:8080/live/diyp_xingkong.m3u8
-#EXTINF:-1 tvg-name="海峡卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2025/01/28/large/20250128060839855238_81.jpg",海峡卫视 [2快速+2源]
-https://stream1.freetv.fun/ba0cb96ba000eebc5a91bd4ffcaed72334b786255d15f293d5f09f19c344cc0f.m3u8|http://8.138.7.223/tv/hxws.m3u8
+#EXTINF:-1 tvg-name="海峡卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2025/01/28/large/20250128060839855238_81.jpg",海峡卫视 [2快速+3源]
+https://stream1.freetv.fun/ba0cb96ba000eebc5a91bd4ffcaed72334b786255d15f293d5f09f19c344cc0f.m3u8|http://8.138.7.223/tv/hxws.m3u8|http://r.jdshipin.com/WtYt3
 #EXTINF:-1 tvg-name="深圳卫视" group-title="卫视" tvg-logo="https://epg.pw/media/images/channel/2024/03/11/large/20240311112310613998_63.png" tvg-quality="4K",深圳卫视 [5快速+5源]
 http://nn.7x9d.cn/深圳最新.php?id=szws4k|https://stream1.freetv.fun/e20e442b0ac0eb9ee3d6b90302a722223a0074e2f77b10d0d122cde370809c33.m3u8|https://epg.pw/stream/d379428ff38217ba5212dcd1949647ac1e4382f306b14a380bf60b7b056b4a2b.m3u8|http://58.57.40.22:9901/tsfile/live/1036_1.m3u8|http://112.27.235.94:8000/hls/33/index.m3u8
 #EXTINF:-1 tvg-name="澳亚卫视" group-title="卫视" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/gangaotai/Aoya.png",澳亚卫视 [1快速+1源]
@@ -188,13 +188,13 @@ https://stream1.freetv.fun/fu-jian-lu-you-6.m3u8|http://8.138.7.223/tv/fjtv1.php
 https://migu.188766.xyz/?migutoken=1023983db6b5249e61d4950c1654cd84&id=%E5%8C%97%E4%BA%AC%E5%8D%A1%E9%85%B7%E5%B0%91%E5%84%BF&type=yy
 #EXTINF:-1 tvg-name="山东少儿" group-title="少儿台" tvg-logo="山东少儿.png",山东少儿 [8快速+8源]
 https://stream1.freetv.fun/shan-dong-shao-er-6.m3u8|https://stream1.freetv.fun/shan-dong-shao-er-2.m3u8|https://stream1.freetv.fun/shan-dong-shao-er-9.m3u8|https://stream1.freetv.fun/shan-dong-shao-er-1.m3u8|https://stream1.freetv.fun/shan-dong-shao-er-4.m3u8|https://stream1.freetv.fun/shan-dong-shao-er-8.m3u8|https://stream1.freetv.fun/shan-dong-shao-er-5.m3u8|https://stream1.freetv.fun/shan-dong-shao-er-7.m3u8
-#EXTINF:-1 tvg-name="广东少儿" group-title="少儿台" tvg-logo="https://epg.pw/media/images/channel/2023/07/21/large/20230721133553685102_74.png",广东少儿 [1快速+1源]
-https://stream1.freetv.fun/0bb69b831d301b4c7225110444e4529021f8de492d7d1a6b6a809e67e993ca78.ctv
+#EXTINF:-1 tvg-name="广东少儿" group-title="少儿台" tvg-logo="https://epg.pw/media/images/channel/2023/07/21/large/20230721133553685102_74.png",广东少儿 [1快速+2源]
+https://stream1.freetv.fun/0bb69b831d301b4c7225110444e4529021f8de492d7d1a6b6a809e67e993ca78.ctv|http://gmxw.7766.org:808/hls/175/index.m3u8
 #EXTINF:-1 tvg-name="河北少儿" group-title="少儿台" tvg-logo="https://live.fanmingming.cn/tv/河北少儿.png",河北少儿 [1快速+1源]
 http://1.94.31.214/php/hebei.php?id=sekj
 #EXTINF:-1 tvg-name="浙江少儿" group-title="少儿台" tvg-logo="https://live.fanmingming.cn/tv/浙江少儿.png",浙江少儿 [11快速+11源]
 https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8|https://stream1.freetv.fun/50c4a249494de61824ce97ab733b7617ab321cbe8dcb427681e0a93701dbf02a.m3u8|https://stream1.freetv.fun/bde34e78a3fd2fdf325ef935021a1d37cb8f076bdeb6784923c4e8c64b7e594d.m3u8|https://epg.pw/stream/61763493836696939da31f5856221e08038a6e814dc1fe983cd0d335b284104e.m3u8|https://stream1.freetv.fun/zhe-jiang-shao-er-4.m3u8|https://stream1.freetv.fun/zhe-jiang-shao-er-4.ctv|https://stream1.freetv.fun/zhe-jiang-shao-er-6.ctv|https://stream1.freetv.fun/zhe-jiang-shao-er-9.ctv|https://stream1.freetv.fun/zhe-jiang-shao-er-1.ctv|http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8|http://ali-vl.cztv.com/channels/lantian/channel008/360p.m3u8
-#EXTINF:-1 tvg-name="海南少儿" group-title="少儿台" tvg-logo="海南少儿.png",海南少儿 [2快速+2源]
+#EXTINF:-1 tvg-name="海南少儿" group-title="少儿台" tvg-logo="海南少儿.png",海南少儿 [1快速+2源]
 https://migu.188766.xyz/?migutoken=cfe8916759de41e55d53adf74336019b&id=hn_sepd&type=sz|http://nn.7x9d.cn/地方台8563/海南.php?id=sepd
 #EXTINF:-1 tvg-name="福建少儿" group-title="少儿台" tvg-logo="福建少儿.png",福建少儿 [7快速+7源]
 https://stream1.freetv.fun/fu-jian-shao-er-1.m3u8|https://stream1.freetv.fun/fu-jian-shao-er-2.m3u8|https://stream1.freetv.fun/fu-jian-shao-er-3.m3u8|https://stream1.freetv.fun/fu-jian-shao-er-4.m3u8|https://stream1.freetv.fun/fu-jian-shao-er-6.m3u8|https://stream1.freetv.fun/fu-jian-shao-er-7.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjse
@@ -210,14 +210,14 @@ https://epg.pw/stream/c5cdf98a2ec7cc0b65f33cdf0f06ab09297ea13408e63416e671eb3e8a
 https://stream1.freetv.fun/58af65ec297d9e4282912f027461d95ce37387a2357639ee0b22dc135c5d54d4.m3u8
 #EXTINF:-1 tvg-name="内蒙古蒙语文化" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531161101868480_69.jpg",内蒙古蒙语文化 [1快速+1源]
 https://stream1.freetv.fun/259625f9cd412bc5d6d12bcbbe529129a32a8dd00caf955bd6479233d348d174.m3u8
-#EXTINF:-1 tvg-name="北京文艺" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513145810902661_38.jpg",北京文艺 [1源]
+#EXTINF:-1 tvg-name="北京文艺" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513145810902661_38.jpg",北京文艺 [1快速+1源]
 https://epg.pw/stream/f9426f635fe4e7f6fc12fdd2ab39f57196afec9428443e600a10c566d8212209.ctv
 #EXTINF:-1 tvg-name="广东综艺" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2023/07/19/large/20230719064646595865_81.jpg",广东综艺 [1快速+1源]
 https://stream1.freetv.fun/897c24cef72f6e357ce1f6651c05c25083f859f8379cce5f6c2bce04932a2811.ctv
 #EXTINF:-1 tvg-name="江苏综艺" group-title="综艺台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu3.png",江苏综艺 [1快速+1源]
 https://stream1.freetv.fun/f8ef469943662bed2abc6609d9ef1720b9e93a8a0bd6f5789133461e36763f37.m3u8
-#EXTINF:-1 tvg-name="湖南娱乐" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/26/large/20220526213508482612_20.jpg",湖南娱乐 [3快速+3源]
-https://stream1.freetv.fun/8479751897491e3088c10ef6efb4c09c16eff123a65b54b6507bcb0b204b51a5.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-3.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-9.ctv
+#EXTINF:-1 tvg-name="湖南娱乐" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/26/large/20220526213508482612_20.jpg",湖南娱乐 [3快速+4源]
+https://stream1.freetv.fun/8479751897491e3088c10ef6efb4c09c16eff123a65b54b6507bcb0b204b51a5.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-3.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-9.ctv|http://php.jdshipin.com:8880/TVOD/iptv.php?id=hnyl
 #EXTINF:-1 tvg-name="西藏影视文化" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530222246719342_54.jpg",西藏影视文化 [1源]
 https://stream1.freetv.fun/c81a555962f383888669f729afa0303c466520db6b41f649f3d7036a0a5a6065.ctv
 
@@ -244,14 +244,14 @@ https://stream1.freetv.fun/e9b0607a6ad54ba676d9bb046555ef959e983d1f66e584dd05e2c
 https://stream1.freetv.fun/liao-zhu-ti-yu-5.m3u8|https://stream1.freetv.fun/liao-zhu-ti-yu-3.m3u8|http://dassby.qqff.top:99/live/辽宁体育/index.m3u8
 
 # 分类: 影视台 (2个电视台)
-#EXTINF:-1 tvg-name="湖南电影" group-title="影视台" tvg-logo="湖南电影.png",湖南电影 [1快速+1源]
-https://stream1.freetv.fun/hu-nan-dian-ying-2.ctv
+#EXTINF:-1 tvg-name="湖南电影" group-title="影视台" tvg-logo="湖南电影.png",湖南电影 [2快速+2源]
+https://stream1.freetv.fun/hu-nan-dian-ying-2.ctv|http://php.jdshipin.com:8880/TVOD/iptv.php?id=hndy
 #EXTINF:-1 tvg-name="陕西西部电影" group-title="影视台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151605390141_16.jpg" tvg-quality="高清",陕西西部电影 [1快速+1源]
 https://epg.pw/stream/318a64a14fc9f1b992a21c72c71cfd4a89394cc5c5223234aa15277077764e2b.m3u8
 
 # 分类: 其他台 (27个电视台)
-#EXTINF:-1 tvg-name="CCTV" group-title="其他台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/CCTV4K.png" tvg-quality="4K" tvg-ipv6="true",CCTV [1IPv6+3快速+3源]
-http://www.tszhgjj.cn:7000/rtp/239.253.93.134:6631|https://stream1.freetv.fun/b9a2e767d016105572cd8746a02687121eff29c306eeb922ff2feab8b7286e4c.ctv|http://p.ytelc.com/169l/0/cctv.php?id=cctv4k
+#EXTINF:-1 tvg-name="CCTV" group-title="其他台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/CCTV4K.png" tvg-quality="4K" tvg-ipv6="true",CCTV [1IPv6+2快速+2源]
+http://www.tszhgjj.cn:7000/rtp/239.253.93.134:6631|https://stream1.freetv.fun/b9a2e767d016105572cd8746a02687121eff29c306eeb922ff2feab8b7286e4c.ctv
 #EXTINF:-1 tvg-name="CCTV 世界地理" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/世界地理.png",CCTV 世界地理 [1快速+1源]
 http://dassby.qqff.top:99/live/世界地理/index.m3u8
 #EXTINF:-1 tvg-name="CCTV 央视台球" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/央视台球.png",CCTV 央视台球 [1快速+1源]
@@ -272,11 +272,11 @@ http://dassby.qqff.top:99/live/风云剧场/index.m3u8
 https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="CCTV+ 2" group-title="其他台" tvg-logo="https://i.imgur.com/qSg862A.png",CCTV+ 2 [1快速+1源]
 https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="CCTV世界地理" group-title="其他台" tvg-logo="https://tb.zbds.top/logo/CCTV世界地理.png",CCTV世界地理 [1源]
+#EXTINF:-1 tvg-name="CCTV世界地理" group-title="其他台" tvg-logo="https://tb.zbds.top/logo/CCTV世界地理.png",CCTV世界地理 [1快速+1源]
 http://hmfs.f3322.net:3388/hls/28/index.m3u8
 #EXTINF:-1 tvg-name="CCTV怀旧剧场" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2022/05/09/large/20220509160609659886_36.jpg",CCTV怀旧剧场 [1快速+1源]
 https://epg.pw/stream/188c041c330736b956fe8f41af7bf90cac0dd06699f977752ac93f0359de4a23.m3u8
-#EXTINF:-1 tvg-name="CCTV第一剧场" group-title="其他台" tvg-logo="https://tb.zbds.top/logo/CCTV第一剧场.png" tvg-quality="标清",CCTV第一剧场 [2快速+3源]
+#EXTINF:-1 tvg-name="CCTV第一剧场" group-title="其他台" tvg-logo="https://tb.zbds.top/logo/CCTV第一剧场.png" tvg-quality="标清",CCTV第一剧场 [3快速+3源]
 https://stream1.freetv.fun/631e31539c1b0c0c745f6727dd2e9511ef40616c5732baa462609264fa22c757.m3u8|https://epg.pw/stream/ba55b8e8aea7622044ad6925d44966b26283edbe03be0646f351292a22e1027c.m3u8|http://hmfs.f3322.net:3388/hls/21/index.m3u8
 #EXTINF:-1 tvg-name="CGTN俄语" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/CGTN俄语.png",CGTN俄语 [1快速+1源]
 https://0472.org/hls/cgtne.m3u8
@@ -290,8 +290,8 @@ https://0472.org/hls/cgtnx.m3u8
 https://0472.org/hls/cgtnd.m3u8
 #EXTINF:-1 tvg-name="CGTN阿语" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/CGTN阿语.png",CGTN阿语 [1快速+1源]
 https://0472.org/hls/cgtna.m3u8
-#EXTINF:-1 tvg-name="东方影视" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2024/07/28/large/20240728224839286048_21.jpg" tvg-ipv6="true",东方影视 [2IPv6+6快速+6源]
-https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-8.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-9.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-12.m3u8|https://stream1.freetv.fun/7ff655a1171710b4358942d77af2df99ad25dcf18d97c82eec8045dfe25629ba.ctv|https://stream1.freetv.fun/dong-fang-ying-shi-6.ctv|https://stream1.freetv.fun/dong-fang-ying-shi-4.ctv
+#EXTINF:-1 tvg-name="东方影视" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2024/07/28/large/20240728224839286048_21.jpg" tvg-ipv6="true",东方影视 [2IPv6+7快速+7源]
+https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-8.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-9.m3u8|https://www.freetv.top/migu/617290047.m3u8?migutoken=86c02ad0875d5cc49d77bcc8bdb628f2c9d508ffc323b964a03c8f92dde4afafa0345cf5a8fefbdf915c748e3d11c6c18e27ae1e21a609cec31a45e6c437db26a7a243625f9cf35c271171a22c|https://stream1.freetv.fun/dong-fang-ying-shi-12.m3u8|https://stream1.freetv.fun/7ff655a1171710b4358942d77af2df99ad25dcf18d97c82eec8045dfe25629ba.ctv|https://stream1.freetv.fun/dong-fang-ying-shi-6.ctv|https://stream1.freetv.fun/dong-fang-ying-shi-4.ctv
 #EXTINF:-1 tvg-name="东方财经" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2023/06/05/large/20230605005855118868_86.jpg" tvg-quality="标清",东方财经 [1快速+1源]
 https://epg.pw/stream/76079aa6a26f481e2218b469cd5c6f2236223a0b4244bdad4a6d36cf985e637e.ctv
 #EXTINF:-1 tvg-name="东方购物" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2022/05/14/large/20220514170333461314_55.jpg",东方购物 [1快速+1源]
@@ -315,7 +315,7 @@ https://stream1.freetv.fun/ipv6-shang-hai-ji-shi-ren-wen-5.m3u8|https://stream1.
 #EXTINF:-1 tvg-name="上海都市" group-title="上海市" tvg-logo="https://epg.pw/media/images/channel/2024/07/28/large/20240728225114975519_45.png" tvg-ipv6="true",上海都市 [4IPv6+8快速+8源]
 https://stream1.freetv.fun/ipv6-shang-hai-du-shi-4.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-8.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-3.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-5.m3u8|https://stream1.freetv.fun/shang-hai-du-shi-1.m3u8|https://stream1.freetv.fun/shang-hai-du-shi-7.m3u8|https://stream1.freetv.fun/shang-hai-du-shi-10.m3u8|https://stream1.freetv.fun/739243957c92ecc3c5cc8e2d33bbc6ef1fd8529992bbf7ab1a9dcef5e17429d4.ctv
 
-# 分类: 云南省 (9个电视台)
+# 分类: 云南省 (10个电视台)
 #EXTINF:-1 tvg-name="云南 Ⅰ 文山综合台" group-title="云南省" tvg-quality="高清",云南 Ⅰ 文山综合台 [1快速+1源]
 http://tvdrs.wsrtv.com.cn:8100/channellive/ch1.flv
 #EXTINF:-1 tvg-name="云南丽江冰川" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南丽江冰川.png",云南丽江冰川 [1快速+1源]
@@ -334,6 +334,8 @@ https://gcalic.v.myalicdn.com/gc/dlst03_1/index.m3u8
 https://gcalic.v.myalicdn.com/gc/dlst01_1/index.m3u8
 #EXTINF:-1 tvg-name="云南白沙远眺玉龙雪山" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南白沙远眺玉龙雪山.png",云南白沙远眺玉龙雪山 [1快速+1源]
 https://gcalic.v.myalicdn.com/gc/hkylxs03_1/index.m3u8
+#EXTINF:-1 tvg-name="鬼吹灯之云南虫谷" group-title="云南省" tvg-logo="https://ghproxy.net/raw.githubusercontent.com/suxuang/myIPTV/main/img/云南虫谷.png",鬼吹灯之云南虫谷 [1源]
+http://www.douzhicloud.site:35455/huya/11352898
 
 # 分类: 内蒙古自治区 (2个电视台)
 #EXTINF:-1 tvg-name="内蒙古农牧" group-title="内蒙古自治区" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531161624183518_95.jpg",内蒙古农牧 [2快速+2源]
@@ -360,7 +362,7 @@ https://migu.188766.xyz/?migutoken=debab7233813a268c34754a611c9f1fb&id=%E5%8C%97
 http://player.cntv.cn/standard/live_HLSDRM20180919.swf?v=180.171.5.8.9.6.3.9&ChannelID=btv8&videoTVChannel=btv8&P2PChannelID=pd://cctv_p2p_hdbtv8&tai=btv8&VideoName=btv8&channelID=btv8
 
 # 分类: 吉林省 (4个电视台)
-#EXTINF:-1 tvg-name="吉林乡村" group-title="吉林省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530224659377626_27.jpg",吉林乡村 [1快速+2源]
+#EXTINF:-1 tvg-name="吉林乡村" group-title="吉林省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530224659377626_27.jpg",吉林乡村 [2快速+2源]
 https://epg.pw/stream/69c843e9479e054c8323b5a23b74f4f70e8fd3d87354bcbef12195bed8043aeb.m3u8|https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8
 #EXTINF:-1 tvg-name="吉林市新闻综合" group-title="吉林省",吉林市新闻综合 [1快速+1源]
 https://stream2.jlntv.cn/jilin1/sd/live.m3u8
@@ -370,7 +372,7 @@ https://epg.pw/stream/64c6da042a172abe0b223936e2b7d91d4109fa5c8e416b5bb7a265e36e
 https://stream1.freetv.fun/f229007f325ee603d39a4a6ef3046dd9140433eebfb43d2dfdbc410f22e6ad0a.m3u8|https://epg.pw/stream/04ac8c4edbe52123a87086c280432bedc30a94e45ba312eca7fc80f16bfee3c7.m3u8
 
 # 分类: 四川省 (7个电视台)
-#EXTINF:-1 tvg-name="四川 Ⅰ 巴中综合台" group-title="四川省" tvg-quality="高清",四川 Ⅰ 巴中综合台 [1源]
+#EXTINF:-1 tvg-name="四川 Ⅰ 巴中综合台" group-title="四川省" tvg-quality="高清",四川 Ⅰ 巴中综合台 [1快速+1源]
 http://30814.hlsplay.aodianyun.com/lms_30814/tv_channel_246.flv
 #EXTINF:-1 tvg-name="四川四姑娘山隆珠措" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川四姑娘山隆珠措.png",四川四姑娘山隆珠措 [1快速+1源]
 https://gcalic.v.myalicdn.com/gc/sgns02_1/index.m3u8
@@ -392,8 +394,8 @@ https://ls.qingting.fm/live/1841/64k.m3u8
 # 分类: 山东省 (4个电视台)
 #EXTINF:-1 tvg-name="山东教育" group-title="山东省" tvg-logo="https://epg.pw/media/images/channel/2023/07/19/large/20230719115915514158_88.jpg" tvg-quality="高清",山东教育 [3快速+3源]
 https://stream1.freetv.fun/497dbc858ac950752aedd19e6ab943e3752516e9a937601969741f3a51ed74b2.m3u8|https://epg.pw/stream/67911f1285034e2069916410b1758afbe35aa5930be8eb67a09c995cd5e1243e.m3u8|https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8
-#EXTINF:-1 tvg-name="山东文旅" group-title="山东省" tvg-logo="山东文旅.png",山东文旅 [1快速+1源]
-http://58.57.40.22:9901/tsfile/live/1023_1.m3u8
+#EXTINF:-1 tvg-name="山东文旅" group-title="山东省" tvg-logo="山东文旅.png",山东文旅 [1快速+2源]
+http://58.57.40.22:9901/tsfile/live/1023_1.m3u8|http://221.2.148.205:8154/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="山东新闻" group-title="山东省" tvg-logo="山东新闻.png",山东新闻 [7快速+7源]
 https://stream1.freetv.fun/shan-dong-xin-wen-8.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-1.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-4.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-6.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-2.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-7.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-3.m3u8
 #EXTINF:-1 tvg-name="山东生活" group-title="山东省" tvg-logo="山东生活.png",山东生活 [1快速+1源]
@@ -402,12 +404,10 @@ http://ls.qingting.fm/live/60260.m3u8
 # 分类: 山西省 (2个电视台)
 #EXTINF:-1 tvg-name="山西影视" group-title="山西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/27/large/20220527162835442061_74.jpg" tvg-quality="高清",山西影视 [1快速+1源]
 https://epg.pw/stream/b493ddd1a113751d7924062be602f98313d60185dea9c5ffd516f727300f4a58.m3u8
-#EXTINF:-1 tvg-name="湖南张家界天门山西线玻璃栈道" group-title="山西省" tvg-logo="https://tb.zbds.top/logo/湖南张家界天门山西线玻璃栈道.png",湖南张家界天门山西线玻璃栈道 [1源]
+#EXTINF:-1 tvg-name="湖南张家界天门山西线玻璃栈道" group-title="山西省" tvg-logo="https://tb.zbds.top/logo/湖南张家界天门山西线玻璃栈道.png",湖南张家界天门山西线玻璃栈道 [1快速+1源]
 https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8
 
-# 分类: 广东省 (7个电视台)
-#EXTINF:-1 tvg-name="广东 Ⅰ 韶关综合台" group-title="广东省" tvg-quality="标清",广东 Ⅰ 韶关综合台 [1源]
-https://www.sgmsw.cn/videos/tv/201805/1308/SB05RIYZOU8JR418AUQOF62CAJQ08D0E/hls/live.m3u8
+# 分类: 广东省 (6个电视台)
 #EXTINF:-1 tvg-name="广东影视" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2024/01/14/large/20240114130217262909_90.png",广东影视 [1快速+1源]
 https://stream1.freetv.fun/befb766cccc3f4aea99c123080b37aaadd09e409aaad63a496f1e970d7ecfcfd.m3u8
 #EXTINF:-1 tvg-name="广东新闻" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2024/01/14/large/20240114131740840005_79.png" tvg-quality="高清",广东新闻 [11快速+11源]
@@ -415,16 +415,16 @@ https://stream1.freetv.fun/468ecbac0873f6bf73428cfcffcc5c254b0c9b6ce5dc755b94a0b
 #EXTINF:-1 tvg-name="广东民生" group-title="广东省" tvg-logo="广东民生.png",广东民生 [11快速+11源]
 https://stream1.freetv.fun/yan-dong-min-sheng-9.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-18.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-21.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-24.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-3.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-35.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-30.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-34.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-36.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-16.ctv|http://183.11.239.36:808/hls/18/index.m3u8
 #EXTINF:-1 tvg-name="广东珠江" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2025/01/28/large/20250128060916282738_90.png",广东珠江 [12快速+13源]
-http://cdn2.163189.xyz/live/gdzj/stream.m3u8|https://stream1.freetv.fun/e7045f18df8fa6b98756f4bc5cbd94d0099dd73e9ff3cf359d15d326ee1a733b.m3u8|https://stream1.freetv.fun/6115aadb0da4010b3ff3c49d52f5100c48686ce70329ddef796f995ac136111d.m3u8|https://epg.pw/stream/81111a99c82a329aea72b8166dfdad9e63ffdd13b49485a2f1858dd45afcad03.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-18.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-4.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-29.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-8.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-16.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-12.ctv|http://120.238.94.10:9901/tsfile/live/1009_1.m3u8|http://r.jdshipin.com/sE5vO|https://stream1.freetv.fun/yan-dong-zhu-jiang-19.ctv
+http://cdn2.163189.xyz/live/gdzj/stream.m3u8|https://stream1.freetv.fun/e7045f18df8fa6b98756f4bc5cbd94d0099dd73e9ff3cf359d15d326ee1a733b.m3u8|https://stream1.freetv.fun/6115aadb0da4010b3ff3c49d52f5100c48686ce70329ddef796f995ac136111d.m3u8|https://epg.pw/stream/81111a99c82a329aea72b8166dfdad9e63ffdd13b49485a2f1858dd45afcad03.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-19.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-4.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-29.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-8.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-16.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-12.ctv|http://120.238.94.10:9901/tsfile/live/1009_1.m3u8|http://r.jdshipin.com/sE5vO|https://stream1.freetv.fun/yan-dong-zhu-jiang-18.ctv
 #EXTINF:-1 tvg-name="广东经济" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2024/01/11/large/20240111224412616123_60.png",广东经济 [1快速+1源]
 https://stream1.freetv.fun/b5c139a4b6350fe20d62a449d08dc02091e7bc80c0689e1fa16dfffcedcdcd5a.ctv
-#EXTINF:-1 tvg-name="广东经济科教" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2024/01/11/large/20240111224501741507_16.png",广东经济科教 [1快速+1源]
+#EXTINF:-1 tvg-name="广东经济科教" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2024/01/11/large/20240111224501741507_16.png",广东经济科教 [1源]
 https://stream1.freetv.fun/885e2bf20b8c19a26f67ee11e97e55e42fe965745049a3cad48c47b099bae8e3.ctv
 
 # 分类: 广西壮族自治区 (2个电视台)
 #EXTINF:-1 tvg-name="广西国际" group-title="广西壮族自治区" tvg-logo="https://epg.pw/media/images/channel/2022/05/27/large/20220527160856596479_90.jpg",广西国际 [3快速+3源]
 https://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79.m3u8|http://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79.m3u8?fbl=|https://stream1.freetv.fun/183f2221f66a05a31ae1c3da27be6554f43b414aba3e4215f15cf9f244e3f24d.m3u8
-#EXTINF:-1 tvg-name="广西玉林大容山莲花山顶" group-title="广西壮族自治区" tvg-logo="https://tb.zbds.top/logo/广西玉林大容山莲花山顶.png",广西玉林大容山莲花山顶 [1源]
+#EXTINF:-1 tvg-name="广西玉林大容山莲花山顶" group-title="广西壮族自治区" tvg-logo="https://tb.zbds.top/logo/广西玉林大容山莲花山顶.png",广西玉林大容山莲花山顶 [1快速+1源]
 https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8
 
 # 分类: 新疆维吾尔自治区 (1个电视台)
@@ -442,26 +442,26 @@ https://stream1.freetv.fun/bb951e9f6447bef33a3668993d23ba5db98cfc383688b1688bdbf
 https://mgtv.ottiptv.cc/migu/626064697.m3u8?migutoken=6508bc5fae9f621ed6ec72d39eb7f60ab52c4b412a5ee7f5b612640ecccbde1f9584f0a97aebc090cb58f73e9e079ced87b059526a6614b5a9ad5a23ff4863d36adcc1ed699583e058fac3330e|https://stream1.freetv.fun/ff51b87d5cd5bd439c8c794400e57cef00030333c15716915efdb774a013b129.ctv|https://stream1.freetv.fun/a89dd489fa013bc4f36bcc4afe388f1783e2251c276e2566a9359d68a61c6d91.ctv|https://migu.188766.xyz/?migutoken=91756b74eb13850e4c87b15c25817e42&id=%E6%B1%9F%E8%8B%8F%E5%BD%B1%E8%A7%86%E9%A2%91%E9%81%93&type=yy
 #EXTINF:-1 tvg-name="江苏徐州云龙湖风景区云龙山观景台西" group-title="江苏省" tvg-logo="https://tb.zbds.top/logo/江苏徐州云龙湖风景区云龙山观景台西.png",江苏徐州云龙湖风景区云龙山观景台西 [1快速+1源]
 https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8
-#EXTINF:-1 tvg-name="江苏教育" group-title="江苏省" tvg-logo="江苏教育.png",江苏教育 [3快速+3源]
-https://mgtv.ottiptv.cc/migu/628008321.m3u8?migutoken=2a14b3aabc488208548ee93104e880b74d4a395bfa44d7066aecd401da116ee25176f823087e3b4982d4720bd660d81bfff58ed9193c1df26c94a3e4f7a6c10952e5d975a5e4f6244fd9dcc62d|https://stream1.freetv.fun/7174b4fd66ddb2a7456b7040105dc27a1e57c166593870bb773cb5f6b4546c54.ctv|https://migu.188766.xyz/?migutoken=bfd96895aa8e3e9aa47561510518c058&id=%E6%B1%9F%E8%8B%8F%E6%95%99%E8%82%B2&type=yy
+#EXTINF:-1 tvg-name="江苏教育" group-title="江苏省" tvg-logo="江苏教育.png",江苏教育 [2快速+2源]
+https://stream1.freetv.fun/7174b4fd66ddb2a7456b7040105dc27a1e57c166593870bb773cb5f6b4546c54.ctv|https://migu.188766.xyz/?migutoken=bfd96895aa8e3e9aa47561510518c058&id=%E6%B1%9F%E8%8B%8F%E6%95%99%E8%82%B2&type=yy
 
 # 分类: 河北省 (8个电视台)
 #EXTINF:-1 tvg-name="河北" group-title="河北省" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/河北4K.png" tvg-quality="4K",河北 [1快速+1源]
 https://event.pull.hebtv.com:443/live/live101.m3u8
 #EXTINF:-1 tvg-name="河北公共" group-title="河北省" tvg-logo="https://live.fanmingming.cn/tv/河北公共.png",河北公共 [1快速+1源]
 http://1.94.31.214/php/hebei.php?id=hbgg
-#EXTINF:-1 tvg-name="河北农民" group-title="河北省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531145755560747_44.jpg" tvg-quality="高清/标清",河北农民 [5快速+6源]
+#EXTINF:-1 tvg-name="河北农民" group-title="河北省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531145755560747_44.jpg" tvg-quality="高清/标清",河北农民 [6快速+6源]
 https://stream1.freetv.fun/9bbe61c3b5d654e981e8256c9d3524467065dc700aa117f2e973bfec74ccea0e.m3u8|https://epg.pw/stream/77d583a3ce92e660a3aae8d721e57456356ecb45396a4f4c979738dc2832bfd1.m3u8|https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd|https://ls.qingting.fm/live/1650/64k.m3u8|http://ls.qingting.fm/live/1650.m3u8|http://1.94.31.214/php/hebei.php?id=nmpd
-#EXTINF:-1 tvg-name="河北少儿科教" group-title="河北省" tvg-logo="河北少儿科教.png",河北少儿科教 [9快速+9源]
-https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-2.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-12.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-10.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-15.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-6.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-7.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-9.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-8.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-17.ctv
+#EXTINF:-1 tvg-name="河北少儿科教" group-title="河北省" tvg-logo="河北少儿科教.png",河北少儿科教 [8快速+9源]
+https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-2.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-12.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-10.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-6.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-7.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-9.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-8.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-17.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-15.ctv
 #EXTINF:-1 tvg-name="河北影视" group-title="河北省" tvg-logo="https://epg.pw/media/" tvg-quality="标清",河北影视 [1快速+2源]
 https://epg.pw/stream/f927788e08949e5333ad97affc4fb4b9649bef97948e0794f1ec0936054bd8c3.m3u8|http://1.94.31.214/php/hebei.php?id=hbys
 #EXTINF:-1 tvg-name="河北影视剧" group-title="河北省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531145932658052_56.jpg" tvg-quality="标清",河北影视剧 [1快速+1源]
 https://epg.pw/stream/c052b9f414bbbf9c00616f9184da6d11fa730d903171e2ae8d1ef1b80538f600.m3u8
 #EXTINF:-1 tvg-name="河北经济" group-title="河北省" tvg-logo="https://live.fanmingming.cn/tv/河北经济.png",河北经济 [1快速+1源]
 http://1.94.31.214/php/hebei.php?id=jjsh
-#EXTINF:-1 tvg-name="河北都市" group-title="河北省" tvg-logo="河北都市.png",河北都市 [2快速+4源]
-https://stream1.freetv.fun/he-bei-du-shi-13.ctv|http://1.94.31.214/php/hebei.php?id=hbds|https://stream1.freetv.fun/he-bei-du-shi-16.ctv|https://radio.pull.hebtv.com/live/hebnczx.m3u8
+#EXTINF:-1 tvg-name="河北都市" group-title="河北省" tvg-logo="河北都市.png",河北都市 [4快速+4源]
+https://radio.pull.hebtv.com/live/hebnczx.m3u8|https://stream1.freetv.fun/he-bei-du-shi-13.ctv|https://stream1.freetv.fun/he-bei-du-shi-16.ctv|http://1.94.31.214/php/hebei.php?id=hbds
 
 # 分类: 河南省 (9个电视台)
 #EXTINF:-1 tvg-name="河南乡村" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南乡村.png",河南乡村 [1快速+1源]
@@ -476,7 +476,7 @@ http://1.94.31.214/php/hntv.php?id=hnxw
 http://1.94.31.214/php/hntv.php?id=hnly
 #EXTINF:-1 tvg-name="河南民生" group-title="河南省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531142947302154_59.jpg" tvg-ipv6="true",河南民生 [1IPv6+4快速+4源]
 http://www.lwfz.fun:8800/rtp/239.16.20.165:11650|https://stream1.freetv.fun/3dba1aa77b00ec70e21ad288b975e283cf64dbfa98374eae276ffad9be33b1cf.ctv|https://stream1.freetv.fun/he-nan-min-sheng-3.ctv|https://migu.188766.xyz/?migutoken=fc5939dcb32364c5c4004d2527d99d3b&id=%E6%B0%91%E7%94%9F%E9%A2%91%E9%81%93&type=yy
-#EXTINF:-1 tvg-name="河南法治" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南法治.png",河南法治 [1快速+1源]
+#EXTINF:-1 tvg-name="河南法治" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南法治.png",河南法治 [1源]
 http://1.94.31.214/php/hntv.php?id=hmfz
 #EXTINF:-1 tvg-name="河南电视剧" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南电视剧.png",河南电视剧 [1源]
 http://1.94.31.214/php/hntv.php?id=hndsj
@@ -506,8 +506,8 @@ https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8\r\n|http://ali-m
 https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8|https://stream1.freetv.fun/03d41c16ba390e8c132dda44c07c14d196b43567d8d030a6a69515bb2a1bb4c5.m3u8|https://stream1.freetv.fun/zhe-jiang-xin-wen-6.m3u8|https://stream1.freetv.fun/zhe-jiang-xin-wen-8.m3u8|https://stream1.freetv.fun/zhe-jiang-xin-wen-11.m3u8|https://stream1.freetv.fun/zhe-jiang-xin-wen-1.m3u8|https://stream1.freetv.fun/zhe-jiang-xin-wen-5.m3u8|https://stream1.freetv.fun/zhe-jiang-xin-wen-2.ctv|http://ali-vl.cztv.com/channels/lantian/channel007/360p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel07/720p.m3u8
 #EXTINF:-1 tvg-name="浙江民生" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江民生休闲.png",浙江民生 [7快速+7源]
 https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8|https://stream1.freetv.fun/fb69842d1d95aecc0df982e3e037dbb8899245c179aefc3d1dddcf003a28c143.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-9.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-2.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-5.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-10.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江民生休闲" group-title="浙江省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530221028154749_27.jpg",浙江民生休闲 [4快速+5源]
-https://epg.pw/stream/e557930ad2b9039ae136a9a13434e42dc05dbf6fd672cb0058a35d7f846b6ddc.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-3.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-8.m3u8|http://ali-vl.cztv.com/channels/lantian/channel006/360p.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-7.ctv
+#EXTINF:-1 tvg-name="浙江民生休闲" group-title="浙江省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530221028154749_27.jpg",浙江民生休闲 [5快速+5源]
+https://epg.pw/stream/e557930ad2b9039ae136a9a13434e42dc05dbf6fd672cb0058a35d7f846b6ddc.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-3.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-8.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-7.ctv|http://ali-vl.cztv.com/channels/lantian/channel006/360p.m3u8
 #EXTINF:-1 tvg-name="浙江生活" group-title="浙江省" tvg-logo="浙江生活.png",浙江生活 [7快速+8源]
 https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-1.ctv|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-4.ctv|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-8.ctv|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-7.ctv|http://ls.qingting.fm/live/1099.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel003/720p.m3u8|http://ali-vl.cztv.com/channels/lantian/channel003/360p.m3u8|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-3.ctv
 #EXTINF:-1 tvg-name="浙江留学" group-title="浙江省" tvg-logo="浙江留学.png",浙江留学 [2快速+2源]
@@ -528,11 +528,11 @@ http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8
 # 分类: 海南省 (4个电视台)
 #EXTINF:-1 tvg-name="海南公共" group-title="海南省" tvg-logo="海南公共.png" tvg-ipv6="true",海南公共 [2IPv6+3快速+4源]
 https://stream1.freetv.fun/ipv6-hai-nan-gong-gong-8.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-gong-gong-9.m3u8|https://migu.188766.xyz/?migutoken=21a39b5de0755728bca4a0201dd841f4&id=hn_ggpd&type=sz|http://nn.7x9d.cn/地方台8563/海南.php?id=ggpd
-#EXTINF:-1 tvg-name="海南文旅" group-title="海南省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530225011839622_70.jpg" tvg-ipv6="true",海南文旅 [2IPv6+4快速+4源]
-https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-7.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-9.m3u8|https://stream1.freetv.fun/c2370b8a11519e11d24fe67dced2eddc7ea79a53c0dd318ffcb3c169da0a8f4f.ctv|https://migu.188766.xyz/?migutoken=32bbe614ebd2e507d6fac6140ef1b138&id=hn_wlpd&type=sz
+#EXTINF:-1 tvg-name="海南文旅" group-title="海南省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530225011839622_70.jpg" tvg-ipv6="true",海南文旅 [2IPv6+4快速+5源]
+https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-7.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-9.m3u8|https://stream1.freetv.fun/c2370b8a11519e11d24fe67dced2eddc7ea79a53c0dd318ffcb3c169da0a8f4f.ctv|https://migu.188766.xyz/?migutoken=32bbe614ebd2e507d6fac6140ef1b138&id=hn_wlpd&type=sz|http://nn.7x9d.cn/地方台8563/海南.php?id=wlpd
 #EXTINF:-1 tvg-name="海南新闻" group-title="海南省" tvg-logo="海南新闻.png" tvg-ipv6="true",海南新闻 [1IPv6+3快速+4源]
 https://stream1.freetv.fun/ipv6-hai-nan-xin-wen-6.m3u8|https://migu.188766.xyz/?migutoken=c695504b788326775b16d1b3e4eb4252&id=hn_xwpd&type=sz|http://ls.qingting.fm/live/1861.m3u8|http://nn.7x9d.cn/地方台8563/海南.php?id=xwpd
-#EXTINF:-1 tvg-name="海南自贸" group-title="海南省" tvg-logo="海南自贸.png",海南自贸 [2快速+2源]
+#EXTINF:-1 tvg-name="海南自贸" group-title="海南省" tvg-logo="海南自贸.png",海南自贸 [1快速+2源]
 https://migu.188766.xyz/?migutoken=fa2f186303b43ba2fe89cff611b029fc&id=hn_jjpd&type=sz|http://nn.7x9d.cn/地方台8563/海南.php?id=jjpd
 
 # 分类: 湖北省 (7个电视台)
@@ -551,11 +551,11 @@ https://stream1.freetv.fun/hu-bei-jing-shi-24.m3u8|https://stream1.freetv.fun/hu
 #EXTINF:-1 tvg-name="湖北综合" group-title="湖北省" tvg-logo="湖北综合.png",湖北综合 [2快速+2源]
 https://stream1.freetv.fun/hu-bei-zong-he-4.ctv|https://stream1.freetv.fun/hu-bei-zong-he-6.ctv
 
-# 分类: 湖南省 (10个电视台)
+# 分类: 湖南省 (11个电视台)
 #EXTINF:-1 tvg-name="湖南公共" group-title="湖南省" tvg-logo="湖南公共.png",湖南公共 [4快速+4源]
 https://stream1.freetv.fun/hu-nan-gong-gong-7.m3u8|https://stream1.freetv.fun/hu-nan-gong-gong-5.ctv|https://stream1.freetv.fun/hu-nan-gong-gong-7.ctv|https://stream1.freetv.fun/hu-nan-gong-gong-2.ctv
-#EXTINF:-1 tvg-name="湖南国际" group-title="湖南省" tvg-logo="湖南国际.png",湖南国际 [2快速+2源]
-https://stream1.freetv.fun/hu-nan-guo-ji-4.ctv|https://stream1.freetv.fun/hu-nan-guo-ji-2.ctv
+#EXTINF:-1 tvg-name="湖南国际" group-title="湖南省" tvg-logo="湖南国际.png",湖南国际 [3快速+3源]
+https://stream1.freetv.fun/hu-nan-guo-ji-4.ctv|https://stream1.freetv.fun/hu-nan-guo-ji-2.ctv|http://php.jdshipin.com:8880/TVOD/iptv.php?id=hngj
 #EXTINF:-1 tvg-name="湖南张家界宝峰湖" group-title="湖南省" tvg-logo="https://tb.zbds.top/logo/湖南张家界宝峰湖.png",湖南张家界宝峰湖 [1快速+1源]
 https://gcalic.v.myalicdn.com/gc/zjjbfh_1/index.m3u8
 #EXTINF:-1 tvg-name="湖南张家界御笔峰" group-title="湖南省" tvg-logo="https://tb.zbds.top/logo/湖南张家界御笔峰.png",湖南张家界御笔峰 [1快速+1源]
@@ -564,10 +564,12 @@ https://gcalic.v.myalicdn.com/gc/zjjybf_1/index.m3u8
 https://gcalic.v.myalicdn.com/gc/zjjsrsm_1/index.m3u8
 #EXTINF:-1 tvg-name="湖南教育" group-title="湖南省" tvg-logo="湖南教育.png",湖南教育 [1快速+1源]
 https://stream1.freetv.fun/hu-nan-jiao-yu-6.ctv
-#EXTINF:-1 tvg-name="湖南电视剧" group-title="湖南省" tvg-logo="https://epg.pw/media/images/channel/2024/03/11/large/20240311111928211584_68.png",湖南电视剧 [9快速+9源]
-https://stream1.freetv.fun/1e6fee7b35c85b3a8cef363f1760680959dcd57d1807057df25d05bd6f010f97.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-3.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-2.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-7.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-1.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-12.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-8.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-14.ctv|https://stream1.freetv.fun/hu-nan-dian-shi-ju-10.ctv
-#EXTINF:-1 tvg-name="湖南经视" group-title="湖南省" tvg-logo="湖南经视.png",湖南经视 [9快速+9源]
-https://stream1.freetv.fun/hu-nan-jing-shi-4.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-2.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-9.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-1.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-3.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-6.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-5.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-10.ctv|https://stream1.freetv.fun/hu-nan-jing-shi-15.ctv
+#EXTINF:-1 tvg-name="湖南爱晚" group-title="湖南省" tvg-logo="湖南爱晚.png",湖南爱晚 [2快速+2源]
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=hngg|http://php.jdshipin.com:8880/iptv.php?id=hngg
+#EXTINF:-1 tvg-name="湖南电视剧" group-title="湖南省" tvg-logo="https://epg.pw/media/images/channel/2024/03/11/large/20240311111928211584_68.png",湖南电视剧 [11快速+11源]
+https://stream1.freetv.fun/1e6fee7b35c85b3a8cef363f1760680959dcd57d1807057df25d05bd6f010f97.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-3.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-2.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-7.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-1.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-12.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-8.m3u8|https://stream1.freetv.fun/hu-nan-dian-shi-ju-14.ctv|https://stream1.freetv.fun/hu-nan-dian-shi-ju-10.ctv|http://php.jdshipin.com:8880/TVOD/iptv.php?id=hndsj|http://php.jdshipin.com:8880/iptv.php?id=hndsj
+#EXTINF:-1 tvg-name="湖南经视" group-title="湖南省" tvg-logo="湖南经视.png",湖南经视 [10快速+10源]
+https://stream1.freetv.fun/hu-nan-jing-shi-4.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-2.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-9.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-1.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-3.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-6.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-5.m3u8|https://stream1.freetv.fun/hu-nan-jing-shi-10.ctv|https://stream1.freetv.fun/hu-nan-jing-shi-15.ctv|http://php.jdshipin.com:8880/TVOD/iptv.php?id=hnjs
 #EXTINF:-1 tvg-name="湖南都市" group-title="湖南省" tvg-logo="湖南都市.png",湖南都市 [9快速+9源]
 https://stream1.freetv.fun/hu-nan-du-shi-4.m3u8|https://stream1.freetv.fun/hu-nan-du-shi-13.m3u8|https://stream1.freetv.fun/hu-nan-du-shi-9.m3u8|https://stream1.freetv.fun/hu-nan-du-shi-8.m3u8|https://stream1.freetv.fun/hu-nan-du-shi-1.m3u8|https://stream1.freetv.fun/hu-nan-du-shi-6.ctv|https://stream1.freetv.fun/hu-nan-du-shi-12.ctv|http://php.jdshipin.com:8880/TVOD/iptv.php?id=hnds|http://php.jdshipin.com:8880/iptv.php
 #EXTINF:-1 tvg-name="湖南金鹰纪实" group-title="湖南省" tvg-logo="湖南金鹰纪实.png",湖南金鹰纪实 [1快速+1源]
@@ -576,7 +578,7 @@ https://stream1.freetv.fun/jin-ying-ji-shi-23.m3u8
 # 分类: 甘肃省 (3个电视台)
 #EXTINF:-1 tvg-name="甘肃公共" group-title="甘肃省" tvg-logo="https://epg.pw/media/img/logo/3_399.jpg" tvg-quality="标清",甘肃公共 [1快速+1源]
 https://epg.pw/stream/8dc185b262a055ffd5eca3ab59977debe7b5dbeb96c0988a0dc1632b9fabf520.m3u8
-#EXTINF:-1 tvg-name="甘肃经济" group-title="甘肃省" tvg-logo="https://tb.zbds.top/logo/甘肃经济.png",甘肃经济 [1源]
+#EXTINF:-1 tvg-name="甘肃经济" group-title="甘肃省" tvg-logo="https://tb.zbds.top/logo/甘肃经济.png",甘肃经济 [1快速+1源]
 https://satellitepull.cnr.cn/live/wxgshhzs/playlist.m3u8
 #EXTINF:-1 tvg-name="甘肃都市" group-title="甘肃省" tvg-logo="https://tb.zbds.top/logo/甘肃都市.png",甘肃都市 [1快速+1源]
 https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8
@@ -596,8 +598,8 @@ https://stream1.freetv.fun/fu-jian-xin-wen-1.m3u8|https://stream1.freetv.fun/fu-
 https://gcalic.v.myalicdn.com/gc/wysynf_1/index.m3u8
 #EXTINF:-1 tvg-name="福建电视剧" group-title="福建省" tvg-logo="福建电视剧.png",福建电视剧 [7快速+7源]
 https://stream1.freetv.fun/fu-jian-dian-shi-ju-1.m3u8|https://stream1.freetv.fun/fu-jian-dian-shi-ju-2.m3u8|https://stream1.freetv.fun/fu-jian-dian-shi-ju-3.m3u8|https://stream1.freetv.fun/fu-jian-dian-shi-ju-4.m3u8|https://stream1.freetv.fun/fu-jian-dian-shi-ju-5.m3u8|https://stream1.freetv.fun/fu-jian-dian-shi-ju-6.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjdsj
-#EXTINF:-1 tvg-name="福建经济" group-title="福建省" tvg-logo="福建经济.png",福建经济 [6快速+7源]
-https://stream1.freetv.fun/fu-jian-jing-ji-1.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-2.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-5.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-6.m3u8|http://satellitepull.cnr.cn/live/wx32fjdnjjgb/playlist.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjjj|https://stream1.freetv.fun/fu-jian-jing-ji-4.m3u8
+#EXTINF:-1 tvg-name="福建经济" group-title="福建省" tvg-logo="福建经济.png",福建经济 [7快速+7源]
+https://stream1.freetv.fun/fu-jian-jing-ji-1.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-2.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-4.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-5.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-6.m3u8|http://satellitepull.cnr.cn/live/wx32fjdnjjgb/playlist.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjjj
 #EXTINF:-1 tvg-name="福建综合" group-title="福建省" tvg-logo="福建综合.png",福建综合 [7快速+7源]
 https://stream1.freetv.fun/fu-jian-zong-he-1.m3u8|https://stream1.freetv.fun/fu-jian-zong-he-2.m3u8|https://stream1.freetv.fun/fu-jian-zong-he-3.m3u8|https://stream1.freetv.fun/fu-jian-zong-he-4.m3u8|https://stream1.freetv.fun/fu-jian-zong-he-5.m3u8|https://stream1.freetv.fun/fu-jian-zong-he-6.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjzh
 
@@ -642,8 +644,8 @@ http://ls.qingting.fm/live/1222.m3u8
 https://epg.pw/stream/2002749dd41e07964f7b751bcba54af9db4f6719bc378d0ba6ebb2679f19141b.m3u8
 #EXTINF:-1 tvg-name="陕西新闻咨询" group-title="陕西省" tvg-logo="https://tb.zbds.top/logo/陕西新闻咨询.png",陕西新闻咨询 [1快速+1源]
 http://112.46.105.20:8009/hls/18/index.m3u8
-#EXTINF:-1 tvg-name="陕西新闻资讯" group-title="陕西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151006730386_52.jpg",陕西新闻资讯 [3快速+3源]
-https://epg.pw/stream/fa7439d84d8a9e3a9eca9d6053e963a0306dfa3f593e2f978b228bb96b06ee29.m3u8|https://stream1.freetv.fun/bc29e85798a33bfb1b0e49cc9c8b14a379ee73626b52053b1a0f6c28a56d4d08.ctv|https://migu.188766.xyz/?migutoken=019306affa30e1a450089123c874da4c&id=%E9%99%95%E8%A5%BF%E6%96%B0%E9%97%BB%E8%B5%84%E8%AE%AF%E9%A2%91%E9%81%93&type=yy
+#EXTINF:-1 tvg-name="陕西新闻资讯" group-title="陕西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151006730386_52.jpg",陕西新闻资讯 [4快速+4源]
+https://epg.pw/stream/fa7439d84d8a9e3a9eca9d6053e963a0306dfa3f593e2f978b228bb96b06ee29.m3u8|https://mgtv.ottiptv.cc/migu/956909289.m3u8?migutoken=d4f3f5a8bf93821548ae70c6bd12860956574c27b3b1ef52c88c8e3d72259b1727a6dbf5d6a5de850afac4c7ffe2f2124bb3b558a89906cd32ccc8913f0f22dd74b7a84514b6015bff75903d9c|https://stream1.freetv.fun/bc29e85798a33bfb1b0e49cc9c8b14a379ee73626b52053b1a0f6c28a56d4d08.ctv|https://migu.188766.xyz/?migutoken=019306affa30e1a450089123c874da4c&id=%E9%99%95%E8%A5%BF%E6%96%B0%E9%97%BB%E8%B5%84%E8%AE%AF%E9%A2%91%E9%81%93&type=yy
 #EXTINF:-1 tvg-name="陕西洋县国宝朱鹮02" group-title="陕西省" tvg-logo="https://tb.zbds.top/logo/陕西洋县国宝朱鹮02.png",陕西洋县国宝朱鹮02 [1快速+1源]
 https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8
 #EXTINF:-1 tvg-name="陕西生活频道" group-title="陕西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151311106781_13.jpg" tvg-quality="高清",陕西生活频道 [1快速+1源]

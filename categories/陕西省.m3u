@@ -1,9 +1,9 @@
 #EXTM3U
 # 陕西省频道列表（IPv6优先多源合并版，带黑名单过滤）
-# 更新时间(北京时间): 2026-01-31 14:03:54
+# 更新时间(北京时间): 2026-01-31 15:49:55
 # 电视台数量: 10
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤黑名单慢速源（响应时间 > 6秒）
+# 已过滤黑名单慢速源（响应时间 > 10秒）
 
 #EXTINF:-1 tvg-name="陕西体育休闲" group-title="陕西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151408095945_53.jpg" tvg-quality="高清",陕西体育休闲 [2IPv4]
 https://epg.pw/stream/222ab91506e0310c79e009d1ca30d69ec87ef48007371488bf3e2fad0f13af21.m3u8|https://mgtv.ottiptv.cc/migu/956909356.m3u8?migutoken=2cd1b3120e6a6d3cec136ca61cb23c24512860d4956d391b8c7d8a1fce58c3fa549930217eede8887c05f73eb24ac9692be10bdd06557f58130ff6717e37e1b6ba38adfacf8e74298fe1d4f48c
@@ -13,8 +13,8 @@ http://ls.qingting.fm/live/1222.m3u8
 https://epg.pw/stream/2002749dd41e07964f7b751bcba54af9db4f6719bc378d0ba6ebb2679f19141b.m3u8
 #EXTINF:-1 tvg-name="陕西新闻咨询" group-title="陕西省" tvg-logo="https://tb.zbds.top/logo/陕西新闻咨询.png",陕西新闻咨询 [1IPv4]
 http://112.46.105.20:8009/hls/18/index.m3u8
-#EXTINF:-1 tvg-name="陕西新闻资讯" group-title="陕西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151006730386_52.jpg",陕西新闻资讯 [3IPv4]
-https://epg.pw/stream/fa7439d84d8a9e3a9eca9d6053e963a0306dfa3f593e2f978b228bb96b06ee29.m3u8|https://stream1.freetv.fun/bc29e85798a33bfb1b0e49cc9c8b14a379ee73626b52053b1a0f6c28a56d4d08.ctv|https://migu.188766.xyz/?migutoken=019306affa30e1a450089123c874da4c&id=%E9%99%95%E8%A5%BF%E6%96%B0%E9%97%BB%E8%B5%84%E8%AE%AF%E9%A2%91%E9%81%93&type=yy
+#EXTINF:-1 tvg-name="陕西新闻资讯" group-title="陕西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151006730386_52.jpg",陕西新闻资讯 [4IPv4]
+https://epg.pw/stream/fa7439d84d8a9e3a9eca9d6053e963a0306dfa3f593e2f978b228bb96b06ee29.m3u8|https://mgtv.ottiptv.cc/migu/956909289.m3u8?migutoken=d4f3f5a8bf93821548ae70c6bd12860956574c27b3b1ef52c88c8e3d72259b1727a6dbf5d6a5de850afac4c7ffe2f2124bb3b558a89906cd32ccc8913f0f22dd74b7a84514b6015bff75903d9c|https://stream1.freetv.fun/bc29e85798a33bfb1b0e49cc9c8b14a379ee73626b52053b1a0f6c28a56d4d08.ctv|https://migu.188766.xyz/?migutoken=019306affa30e1a450089123c874da4c&id=%E9%99%95%E8%A5%BF%E6%96%B0%E9%97%BB%E8%B5%84%E8%AE%AF%E9%A2%91%E9%81%93&type=yy
 #EXTINF:-1 tvg-name="陕西洋县国宝朱鹮02" group-title="陕西省" tvg-logo="https://tb.zbds.top/logo/陕西洋县国宝朱鹮02.png",陕西洋县国宝朱鹮02 [1IPv4]
 https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8
 #EXTINF:-1 tvg-name="陕西生活频道" group-title="陕西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151311106781_13.jpg" tvg-quality="高清",陕西生活频道 [1IPv4]

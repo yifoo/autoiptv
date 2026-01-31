@@ -1,9 +1,9 @@
 #EXTM3U
 # 上海市频道列表（IPv6优先多源合并版，带黑名单过滤）
-# 更新时间(北京时间): 2026-01-31 14:03:54
+# 更新时间(北京时间): 2026-01-31 15:49:55
 # 电视台数量: 4
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤黑名单慢速源（响应时间 > 6秒）
+# 已过滤黑名单慢速源（响应时间 > 10秒）
 
 #EXTINF:-1 tvg-name="上海新闻综合" group-title="上海市" tvg-logo="https://epg.pw/media/images/channel/2024/07/28/large/20240728175315523478_16.jpg",上海新闻综合 [4IPv4]
 https://mgtv.ottiptv.cc/migu/651632657.m3u8?migutoken=348c9164063c2b1df215dd2fa7cd92cb119d8a335ae0edfb5d615a6c714e71b669eee2f5ff1730afa92af7ca41d0aa96e3a280d7e5f2069eb8a3b852f3ebc270147489d7c8bfb08a7c4b9c4d80|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/ae1e5ba924f70d20ff760d1eb8f0ab71583a7fe6549edb506193b0c54387d9a0.ctv|https://migu.188766.xyz/?migutoken=2db2e2ddce3431f6bb0042dc4d843909&id=xwzh&type=sz

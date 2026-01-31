@@ -1,9 +1,9 @@
 #EXTM3U
 # 综艺台频道列表（IPv6优先多源合并版，带黑名单过滤）
-# 更新时间(北京时间): 2026-01-31 14:03:54
+# 更新时间(北京时间): 2026-01-31 15:49:55
 # 电视台数量: 9
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤黑名单慢速源（响应时间 > 6秒）
+# 已过滤黑名单慢速源（响应时间 > 10秒）
 
 #EXTINF:-1 tvg-name="CCTV 风云音乐" group-title="综艺台" tvg-logo="https://live.fanmingming.cn/tv/风云音乐.png",CCTV 风云音乐 [1IPv4]
 http://dassby.qqff.top:99/live/风云音乐/index.m3u8
@@ -19,7 +19,7 @@ https://epg.pw/stream/f9426f635fe4e7f6fc12fdd2ab39f57196afec9428443e600a10c566d8
 https://stream1.freetv.fun/897c24cef72f6e357ce1f6651c05c25083f859f8379cce5f6c2bce04932a2811.ctv
 #EXTINF:-1 tvg-name="江苏综艺" group-title="综艺台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu3.png",江苏综艺 [1IPv4]
 https://stream1.freetv.fun/f8ef469943662bed2abc6609d9ef1720b9e93a8a0bd6f5789133461e36763f37.m3u8
-#EXTINF:-1 tvg-name="湖南娱乐" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/26/large/20220526213508482612_20.jpg",湖南娱乐 [3IPv4]
-https://stream1.freetv.fun/8479751897491e3088c10ef6efb4c09c16eff123a65b54b6507bcb0b204b51a5.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-3.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-9.ctv
+#EXTINF:-1 tvg-name="湖南娱乐" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/26/large/20220526213508482612_20.jpg",湖南娱乐 [4IPv4]
+https://stream1.freetv.fun/8479751897491e3088c10ef6efb4c09c16eff123a65b54b6507bcb0b204b51a5.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-3.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-9.ctv|http://php.jdshipin.com:8880/TVOD/iptv.php?id=hnyl
 #EXTINF:-1 tvg-name="西藏影视文化" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530222246719342_54.jpg",西藏影视文化 [1IPv4]
 https://stream1.freetv.fun/c81a555962f383888669f729afa0303c466520db6b41f649f3d7036a0a5a6065.ctv

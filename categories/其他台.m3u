@@ -1,12 +1,12 @@
 #EXTM3U
 # 其他台频道列表（IPv6优先多源合并版，带黑名单过滤）
-# 更新时间(北京时间): 2026-01-31 14:03:54
+# 更新时间(北京时间): 2026-01-31 15:49:55
 # 电视台数量: 27
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤黑名单慢速源（响应时间 > 6秒）
+# 已过滤黑名单慢速源（响应时间 > 10秒）
 
-#EXTINF:-1 tvg-name="CCTV" group-title="其他台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/CCTV4K.png" tvg-quality="4K" tvg-ipv6="true",CCTV [1IPv6+2IPv4]
-http://www.tszhgjj.cn:7000/rtp/239.253.93.134:6631|https://stream1.freetv.fun/b9a2e767d016105572cd8746a02687121eff29c306eeb922ff2feab8b7286e4c.ctv|http://p.ytelc.com/169l/0/cctv.php?id=cctv4k
+#EXTINF:-1 tvg-name="CCTV" group-title="其他台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/CCTV4K.png" tvg-quality="4K" tvg-ipv6="true",CCTV [1IPv6+1IPv4]
+http://www.tszhgjj.cn:7000/rtp/239.253.93.134:6631|https://stream1.freetv.fun/b9a2e767d016105572cd8746a02687121eff29c306eeb922ff2feab8b7286e4c.ctv
 #EXTINF:-1 tvg-name="CCTV 世界地理" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/世界地理.png",CCTV 世界地理 [1IPv4]
 http://dassby.qqff.top:99/live/世界地理/index.m3u8
 #EXTINF:-1 tvg-name="CCTV 央视台球" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/央视台球.png",CCTV 央视台球 [1IPv4]
@@ -45,8 +45,8 @@ https://0472.org/hls/cgtnx.m3u8
 https://0472.org/hls/cgtnd.m3u8
 #EXTINF:-1 tvg-name="CGTN阿语" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/CGTN阿语.png",CGTN阿语 [1IPv4]
 https://0472.org/hls/cgtna.m3u8
-#EXTINF:-1 tvg-name="东方影视" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2024/07/28/large/20240728224839286048_21.jpg" tvg-ipv6="true",东方影视 [2IPv6+4IPv4]
-https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-8.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-9.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-12.m3u8|https://stream1.freetv.fun/7ff655a1171710b4358942d77af2df99ad25dcf18d97c82eec8045dfe25629ba.ctv|https://stream1.freetv.fun/dong-fang-ying-shi-6.ctv|https://stream1.freetv.fun/dong-fang-ying-shi-4.ctv
+#EXTINF:-1 tvg-name="东方影视" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2024/07/28/large/20240728224839286048_21.jpg" tvg-ipv6="true",东方影视 [2IPv6+5IPv4]
+https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-8.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-9.m3u8|https://www.freetv.top/migu/617290047.m3u8?migutoken=86c02ad0875d5cc49d77bcc8bdb628f2c9d508ffc323b964a03c8f92dde4afafa0345cf5a8fefbdf915c748e3d11c6c18e27ae1e21a609cec31a45e6c437db26a7a243625f9cf35c271171a22c|https://stream1.freetv.fun/dong-fang-ying-shi-12.m3u8|https://stream1.freetv.fun/7ff655a1171710b4358942d77af2df99ad25dcf18d97c82eec8045dfe25629ba.ctv|https://stream1.freetv.fun/dong-fang-ying-shi-6.ctv|https://stream1.freetv.fun/dong-fang-ying-shi-4.ctv
 #EXTINF:-1 tvg-name="东方财经" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2023/06/05/large/20230605005855118868_86.jpg" tvg-quality="标清",东方财经 [1IPv4]
 https://epg.pw/stream/76079aa6a26f481e2218b469cd5c6f2236223a0b4244bdad4a6d36cf985e637e.ctv
 #EXTINF:-1 tvg-name="东方购物" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2022/05/14/large/20220514170333461314_55.jpg",东方购物 [1IPv4]

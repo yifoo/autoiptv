@@ -1,9 +1,9 @@
 #EXTM3U
 # 浙江省频道列表（IPv6优先多源合并版，带黑名单过滤）
-# 更新时间(北京时间): 2026-01-31 14:03:54
+# 更新时间(北京时间): 2026-01-31 15:49:55
 # 电视台数量: 20
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤黑名单慢速源（响应时间 > 6秒）
+# 已过滤黑名单慢速源（响应时间 > 10秒）
 
 #EXTINF:-1 tvg-name="浙江 Ⅰ 绍兴影视" group-title="浙江省" tvg-quality="标清",浙江 Ⅰ 绍兴影视 [1IPv4]
 http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8
@@ -28,7 +28,7 @@ https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8|https://stream1.
 #EXTINF:-1 tvg-name="浙江民生" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江民生休闲.png",浙江民生 [7IPv4]
 https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8|https://stream1.freetv.fun/fb69842d1d95aecc0df982e3e037dbb8899245c179aefc3d1dddcf003a28c143.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-9.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-2.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-5.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-10.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江民生休闲" group-title="浙江省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530221028154749_27.jpg",浙江民生休闲 [5IPv4]
-https://epg.pw/stream/e557930ad2b9039ae136a9a13434e42dc05dbf6fd672cb0058a35d7f846b6ddc.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-3.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-8.m3u8|http://ali-vl.cztv.com/channels/lantian/channel006/360p.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-7.ctv
+https://epg.pw/stream/e557930ad2b9039ae136a9a13434e42dc05dbf6fd672cb0058a35d7f846b6ddc.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-3.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-8.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-7.ctv|http://ali-vl.cztv.com/channels/lantian/channel006/360p.m3u8
 #EXTINF:-1 tvg-name="浙江生活" group-title="浙江省" tvg-logo="浙江生活.png",浙江生活 [8IPv4]
 https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-1.ctv|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-4.ctv|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-8.ctv|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-7.ctv|http://ls.qingting.fm/live/1099.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel003/720p.m3u8|http://ali-vl.cztv.com/channels/lantian/channel003/360p.m3u8|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-3.ctv
 #EXTINF:-1 tvg-name="浙江留学" group-title="浙江省" tvg-logo="浙江留学.png",浙江留学 [2IPv4]
