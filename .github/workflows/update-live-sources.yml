@@ -9,6 +9,7 @@ on:
     paths: 
       - 'sources.txt'
       - '.github/workflows/update-live-sources.yml'
+      - 'scripts/collect_sources.py'
 
 jobs:
   collect-and-organize:
@@ -31,12 +32,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
 
-    - name: Create scripts directory
-      run: mkdir -p scripts
-
-    - name: Download collection script
+    - name: Create directories
       run: |
-        curl -o scripts/collect_sources.py https://raw.githubusercontent.com/yifoo/autoiptv/main/scripts/collect_sources.py
+        mkdir -p scripts
+        mkdir -p categories
+
+    - name: Create requirements file
+      run: echo "requests>=2.31.0" > scripts/requirements.txt
 
     - name: Run collection script
       id: collect
@@ -52,6 +54,12 @@ jobs:
           echo "CHANGED=false" >> $GITHUB_ENV
         fi
 
+    - name: Check generated files
+      run: |
+        echo "=== 检查生成的文件 ==="
+        ls -la *.m3u *.json *.html *.md 2>/dev/null || echo "未找到主文件"
+        ls -la categories/*.m3u 2>/dev/null | head -5 || echo "未找到分类文件"
+
     - name: Commit and push changes
       if: env.CHANGED == 'true'
       run: |
@@ -59,11 +67,22 @@ jobs:
         git config --global user.name "github-actions[bot]"
         
         git add -A
-        git commit -m "📺 Update live TV sources $(date '+%Y-%m-%d %H:%M:%S')"
-        git push https://x-access-token:${{ secrets.LIVEIPTV }}@github.com/${{ github.repository }}.git HEAD:main
+        git commit -m "📺 更新直播源 $(date '+%Y-%m-%d %H:%M:%S')" || echo "没有变更可提交"
+        
+        # 尝试推送
+        git push https://x-access-token:${{ secrets.LIVEIPTV }}@github.com/${{ github.repository }}.git main
 
     - name: Show success message
       if: env.CHANGED == 'true'
       run: |
-        echo "✅ 成功更新直播源！"
-        echo "📁 查看文件: https://github.com/${{ github.repository }}"
+        echo "✅ 直播源更新成功！"
+        echo ""
+        echo "🔗 访问地址:"
+        echo "https://github.com/${{ github.repository }}/blob/main/live_sources.m3u"
+        echo "https://${{ github.repository_owner }}.github.io/$(echo ${{ github.repository }} | cut -d/ -f2)/"
+
+    - name: Show failure message
+      if: env.CHANGED == 'false'
+      run: |
+        echo "❌ 直播源更新失败"
+        echo "请检查脚本执行日志"
