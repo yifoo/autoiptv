@@ -1,0 +1,38 @@
+#EXTM3U
+# General频道列表
+# 频道数量: 17
+
+#EXTINF:-1 group-title="General" tvg-logo="https://i.imgur.com/vsktAez.png",BRTV 北京卫视 [Not 24/7]
+http://ivi.bupt.edu.cn/hls/btv1.m3u8
+#EXTINF:-1 group-title="General" tvg-logo="https://i.imgur.com/TpA3cUl.png",CCTV-1 (2160p)
+http://123.175.209.52:9003/hls/1/index.m3u8
+#EXTINF:-1 group-title="General" tvg-logo="https://i.imgur.com/gBbLyqh.png",CCTV-4 America (1080p)
+https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
+#EXTINF:-1 group-title="General" tvg-logo="https://i.imgur.com/HGLFdfk.png",CCTV-4 Europe
+https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
+#EXTINF:-1 group-title="General" tvg-logo="https://i.imgur.com/WqM6xnF.png",东方卫视 (2160p)
+http://118.81.195.79:9003/hls/23/index.m3u8
+#EXTINF:-1 group-title="General" tvg-logo="https://www.tvchinese.net/uploads/tv/yunnantv.jpg",云南卫视 (1080p)
+https://hwapi.yunshicloud.com/8xughf/e0bx15.m3u8
+#EXTINF:-1 group-title="General" tvg-logo="https://www.tvchinese.net/uploads/tv/jilintv.jpg",吉林卫视 (2160p)
+http://118.81.195.79:9003/hls/34/index.m3u8
+#EXTINF:-1 group-title="General" tvg-logo="https://www.tvchinese.net/uploads/tv/shandongtv.jpg",山东卫视 (720p)
+http://125.210.152.18:9090/live/SDWSHD_H265.m3u8
+#EXTINF:-1 group-title="General" tvg-logo="https://i.imgur.com/dpre5Qs.png",广西卫视 (576p)
+http://118.81.195.79:9003/hls/27/index.m3u8
+#EXTINF:-1 group-title="General" tvg-logo="https://www.tvchinese.net/uploads/tv/jsgg.jpg",江苏公共 (576p)
+http://183.207.248.71/gitv/live1/G_JSGG/G_JSGG
+#EXTINF:-1 group-title="General" tvg-logo="https://www.tvchinese.net/uploads/tv/jscs.jpg",江苏城市 (576p)
+http://183.207.248.71/gitv/live1/G_JSCS/G_JSCS
+#EXTINF:-1 group-title="General" tvg-logo="https://i.imgur.com/Z5Ppzbi.png",河北卫视 (2160p)
+http://118.81.195.79:9003/hls/29/index.m3u8
+#EXTINF:-1 group-title="General" tvg-logo="https://www.tvchinese.net/uploads/tv/hnds.jpg",湖南都市 (576p)
+http://hnsd.chinashadt.com:2036/live/stream:hunandushi.stream/playlist.m3u8
+#EXTINF:-1 group-title="General" tvg-logo="https://i.imgur.com/dANSiug.png",甘肃卫视 (576p)
+http://118.81.195.79:9003/hls/25/index.m3u8
+#EXTINF:-1 group-title="General" tvg-logo="https://i.imgur.com/nkcKCdr.png",贵州卫视 (576p)
+http://183.207.248.71/gitv/live1/G_GUIZHOU/G_GUIZHOU
+#EXTINF:-1 group-title="General" tvg-logo="https://i.postimg.cc/Jz87vbVf/liaoningtv.png",辽宁卫视 (1080p)
+http://39.134.39.37/PLTV/88888888/224/3221226209/index.m3u8
+#EXTINF:-1 group-title="General" tvg-logo="https://i.imgur.com/9fj1uba.png",黑龙江 (1080p)
+http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221227492/index.m3u8

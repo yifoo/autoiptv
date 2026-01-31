@@ -1,0 +1,90 @@
+#EXTM3U
+# 地方频道频道列表
+# 频道数量: 43
+
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://live.fanmingming.cn/tv/上视新闻.png",上海新闻
+http://61.173.144.157:9901/tsfile/live/1000_1.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/上海第一财经.png",上海第一财经
+https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://live.fanmingming.cn/tv/上海都市.png",上海都市
+http://61.173.144.157:9901/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://live.fanmingming.cn/tv/东方影视.png",东方影视
+http://61.173.144.157:9901/tsfile/live/1013_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/内蒙古蒙语文化.png",内蒙古蒙语文化
+http://play1-qk.nmtv.cn/live/1686561065304370.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/吉林乡村.png",吉林乡村
+https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan7.png",四川科教
+http://wouu.net:9977/udp/239.93.42.44:5140
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/大湾区卫视.png",大湾区卫视
+http://222.128.55.152:9080/live/dwq.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/ningxia/Ningxia1.png",宁夏公共
+https://hls.ningxiahuangheyun.com/live/nxgg1M.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/ningxia/Ningxia4.png",宁夏文旅
+https://hls.ningxiahuangheyun.com/live/nxwl1M.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/ningxia/Ningxia2.png",宁夏经济
+https://hls.ningxiahuangheyun.com/live/nxjj1M.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/shanxi1/Shanxi_2.png",山西影视
+http://liveflash.sxrtv.com/live/sxfilm.m3u8?sub_m3u8=true&edge_slice=true
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/shanxi1/shanxi_5.png",山西文体生活
+http://liveflash.sxrtv.com/live/sxpublic.m3u8?sub_m3u8=true&edge_slice=true
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/shanxi1/Shanxi_3.png",山西社会与法治
+http://liveflash.sxrtv.com/live/sxedu.m3u8?sub_m3u8=true&edge_slice=true
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/shanxi1/Shanxi_1.png",山西经济与科技
+http://liveflash.sxrtv.com/live/sxfinance.m3u8?sub_m3u8=true&edge_slice=true
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/广东体育.png",广东体育
+http://120.238.94.10:9901/tsfile/live/1012_1.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/广东民生.png",广东民生
+http://183.11.239.36:808/hls/18/index.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/广东珠江.png",广东珠江
+http://120.238.94.10:9901/tsfile/live/1009_1.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/延边卫视.png",延边卫视
+http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8#
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/浙江数码时代.png",浙江数码时代
+http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/浙江民生.png",浙江民生
+http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/浙江经济.png",浙江经济
+http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://live.fanmingming.cn/tv/湖南国际.png",湖南国际
+http://phonehw.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy4zOS4yMjYuMTAwJnFpZD0mY2RuZXhfaWQ9aHdfcGhvbmUmcz0zYTExOGIwNDMyM2Y3Y2EyYjAyZDFjOTE3Yjc4YmU1YSZ1aWQ9JnV1aWQ9OGE4MjU5MWIyOWJkZGMzYWJiNDIxMzFjMmRhNTlkYjMtNjcyN2UyNjQmdj0yJmFzPTAmZXM9MTc0MDQwODkzNA,,/HNGJMPP360.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://live.fanmingming.cn/tv/湖南娱乐.png",湖南娱乐
+http://phonetx.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy4zOS4yMjYuMTAwJnFpZD0mY2RuZXhfaWQ9dHhfcGhvbmVfbGl2ZSZzPWFmOTYxMDcyYjExNmU3YzM1MTk5ZjNkOWE4ODRiOTdjJnVpZD0mdXVpZD0yODQzMTQ2MzE5ZDM0MGM3Mjg5MDE2ZjBmMTdlNmI4ZS02NzI3ZTI2NCZ2PTImYXM9MCZlcz0xNzQwMzk4MTgy/HNYLMPP360.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://live.fanmingming.cn/tv/湖南爱晚.png",湖南爱晚
+http://phonetx.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy4zOS4yMjYuMTAwJnFpZD0mY2RuZXhfaWQ9dHhfcGhvbmVfbGl2ZSZzPWIxMzI3MzlmZDZiMDEwZWZkMTQxNzE4YzI2ZTg5MDNhJnVpZD0mdXVpZD1iYjYxODBhZDMwNDljOWRiZDk4N2U4NThkODNhZmQ1ZS02NzI3ZTI2NCZ2PTImYXM9MCZlcz0xNzQwNDA4OTMw/HNGGMPP360.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://live.fanmingming.cn/tv/湖南电影.png",湖南电影
+http://222.241.154.37:9901/tsfile/live/23025_1.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://live.fanmingming.cn/tv/湖南经视.png",湖南经视
+http://phonetx.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy4zOS4yMjYuMTAwJnFpZD0mY2RuZXhfaWQ9dHhfcGhvbmVfbGl2ZSZzPTU1MzNkMjAwYTMxMWE2ZjAwMmNmODk4M2FmNGZmZmU2JnVpZD0mdXVpZD03ZTA2NmFiZGRlMzc5ZTY5NTczNWIxMzY4YTU2NzQ3NS02NzI3ZTI2NCZ2PTImYXM9MCZlcz0xNzQwMzgzNzQw/HNJSMPP360.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://live.fanmingming.cn/tv/湖南电视剧.png",湖南视剧
+http://phonehw.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy4zOS4yMjYuMTAwJnFpZD0mY2RuZXhfaWQ9aHdfcGhvbmUmcz0yODUxNGViMDMzMTQxNjdjYTNiMzYxNjlmNTRmOGYzMSZ1aWQ9JnV1aWQ9ZTRkODgyNGE1YzQ4ZjVkOGQ4MjRmMWRjYzdlOGRlMWUtNjcyN2UyNjQmdj0yJmFzPTAmZXM9MTc0MDQwMTU5Nw,,/HNDSJMPP360.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://live.fanmingming.cn/tv/湖南都市.png",湖南都市
+http://222.241.154.37:9901/tsfile/live/23021_1.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/gansu/Gansu3.png",甘肃文化影视
+https://hls.gstv.com.cn/49048r/w1l6d5.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/甘肃经济.png",甘肃经济
+https://satellitepull.cnr.cn/live/wxgshhzs/playlist.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/甘肃都市.png",甘肃都市
+https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/福建新闻.png",福建新闻
+http://satellitepull.cnr.cn/live/wx32fjxwgb/playlist.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/福建经济.png",福建经济
+http://satellitepull.cnr.cn/live/wx32fjdnjjgb/playlist.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/辽宁公共.png",辽宁公共
+http://120.76.248.139/live/bfgd/4200000077.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/辽宁北方.png",辽宁北方
+http://120.76.248.139/live/bfgd/4200000071.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/辽宁教育青少.png",辽宁教育青少
+http://120.76.248.139/live/bfgd/4200000075.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/辽宁生活.png",辽宁生活
+http://120.76.248.139/live/bfgd/4200000073.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/辽宁经济.png",辽宁经济
+http://120.76.248.139/live/bfgd/4200000076.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/辽宁都市.png",辽宁都市
+http://120.76.248.139/live/bfgd/4200000068.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/陕西新闻咨询.png",陕西新闻咨询
+http://112.46.105.20:8009/hls/18/index.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/陕西都市青春.png",陕西都市青春
+http://112.46.105.20:8009/hls/19/index.m3u8
+#EXTINF:-1 group-title="地方频道" tvg-logo="https://tb.zbds.top/logo/陕西银龄.png",陕西银龄
+http://112.46.105.20:8009/hls/20/index.m3u8

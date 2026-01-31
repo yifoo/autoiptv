@@ -1,0 +1,12 @@
+#EXTM3U
+# Kids频道列表
+# 频道数量: 4
+
+#EXTINF:-1 group-title="Kids" tvg-logo="https://i.imgur.com/c5SXW7i.png",CCTV-14 (2160p)
+http://123.175.209.52:9003/hls/15/index.m3u8
+#EXTINF:-1 group-title="Kids" tvg-logo="https://epg.pw/media/images/channel/2025/01/25/large/20250125013114796464_35.png",[SD]cctv-9纪录
+https://stream1.freetv.fun/bac2107c8204c290efc6c6224146418641af787e31995157d64d567afbc00279.m3u8
+#EXTINF:-1 group-title="Kids" tvg-logo="https://i.imgur.com/ph7YKNa.png",山东少儿 (406p)
+http://livealone302.iqilu.com/iqilu/sepd.m3u8
+#EXTINF:-1 group-title="Kids" tvg-logo="https://i.imgur.com/MbJUmZS.png",浙江少儿 (1080p)
+https://qiniup-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8

@@ -1,0 +1,10 @@
+#EXTM3U
+# Entertainment频道列表
+# 频道数量: 3
+
+#EXTINF:-1 group-title="Entertainment" tvg-logo="https://i.imgur.com/iFlkIuw.png",CCTV-3 (2160p)
+http://123.175.209.52:9003/hls/3/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-logo="https://i.imgur.com/nUQE4Ib.png",宁夏卫视 (576p) [Not 24/7]
+http://183.207.248.71/gitv/live1/G_NINGXIA/G_NINGXIA
+#EXTINF:-1 group-title="Entertainment" tvg-logo="https://www.tvchinese.net/uploads/tv/jszy.jpg",江苏综艺 (576p) [Not 24/7]
+http://183.207.248.71/gitv/live1/G_JSZY/G_JSZY

@@ -1,0 +1,14 @@
+#EXTM3U
+# 数字频道频道列表
+# 频道数量: 5
+
+#EXTINF:-1 group-title="数字频道" tvg-logo="https://live.fanmingming.cn/tv/CCTV6.png",CCTV-6电影
+http://8.138.7.223/tv/1905.php?id=LIVE3YPYZ30E7V1R0
+#EXTINF:-1 group-title="数字频道" tvg-logo="https://live.fanmingming.cn/tv/上视新闻.png",上海新闻
+http://bp-livetytv.bestv.cn/ch/bestvxwzh.m3u8
+#EXTINF:-1 group-title="数字频道" tvg-logo="https://live.fanmingming.cn/tv/上海都市.png",上海都市
+http://bp-livetytv.bestv.cn/ch/bestvdspd.m3u8
+#EXTINF:-1 group-title="数字频道" tvg-logo="https://tb.zbds.top/logo/北京纪实科教8K.png",北京纪实科教8K
+https://gdcucc.v1.mk/gdcucc/brtv8k.m3u8
+#EXTINF:-1 group-title="数字频道" tvg-logo="https://tb.zbds.top/logo/四川科教.png",四川科教
+http://182.150.115.21:8030/pcgacg/pcgacg_0.m3u8

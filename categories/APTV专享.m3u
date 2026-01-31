@@ -1,0 +1,10 @@
+#EXTM3U
+# APTV专享频道列表
+# 频道数量: 3
+
+#EXTINF:-1 group-title="APTV专享" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/CCTV13.png",CCTV-13
+http://106.53.99.30/tv/cctv13.php
+#EXTINF:-1 group-title="APTV专享" tvg-logo="https://gcore.jsdelivr.net/gh/taksssss/tv/icon/北京纪实科教.png",北京纪实科教8K
+http://101.35.240.114:88/brtv8k.php
+#EXTINF:-1 group-title="APTV专享" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/香港卫视.png",香港卫视
+http://101.35.240.114:88/live.php?id=香港卫视

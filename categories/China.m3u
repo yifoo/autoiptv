@@ -1,0 +1,26 @@
+#EXTM3U
+# China频道列表
+# 频道数量: 11
+
+#EXTINF:-1 group-title="China" tvg-logo="https://i.imgur.com/uHU6Vc0.png",CCTV-1 综合
+https://node1.olelive.com:6443/live/CCTV1HD/hls.m3u8
+#EXTINF:-1 group-title="China" tvg-logo="https://i.imgur.com/W8JNs1s.png",CCTV-10 科教
+https://node1.olelive.com:6443/live/CCTV10HD/hls.m3u8
+#EXTINF:-1 group-title="China" tvg-logo="https://i.imgur.com/pPO8uJN.png",CCTV-13 新闻
+https://node1.olelive.com:6443/live/CCTV13HD/hls.m3u8
+#EXTINF:-1 group-title="China" tvg-logo="https://i.imgur.com/XMsoHut.png",CCTV-17 农业农村
+https://node1.olelive.com:6443/live/CCTV17HD/hls.m3u8
+#EXTINF:-1 group-title="China" tvg-logo="https://i.imgur.com/6C9JEYt.png",CCTV-2 财经
+https://node1.olelive.com:6443/live/CCTV2HD/hls.m3u8
+#EXTINF:-1 group-title="China" tvg-logo="https://i.imgur.com/ovUSVEQ.png",CCTV-4 中文国际（亚） Ⓨ
+https://www.youtube.com/channel/UC4K_LI-Tn3-LshNgG0-YypQ/live
+#EXTINF:-1 group-title="China" tvg-logo="https://i.imgur.com/Mut2omN.png",CCTV-5 体育
+https://node1.olelive.com:6443/live/CCTV5HD/hls.m3u8
+#EXTINF:-1 group-title="China" tvg-logo="https://i.imgur.com/UNjmQVS.png",CCTV-5+ 体育赛事
+https://node1.olelive.com:6443/live/CCTV5PHD/hls.m3u8
+#EXTINF:-1 group-title="China" tvg-logo="https://i.imgur.com/GhXlUpM.png",CCTV-7 国防军事
+https://node1.olelive.com:6443/live/CCTV7HD/hls.m3u8
+#EXTINF:-1 group-title="China" tvg-logo="https://i.imgur.com/Qg1opg9.png",CCTV-8 电视剧
+https://node1.olelive.com:6443/live/CCTV8HD/hls.m3u8
+#EXTINF:-1 group-title="China" tvg-logo="https://i.imgur.com/Ruyzhu5.png",CCTV-9 纪录
+https://node1.olelive.com:6443/live/CCTV9HD/hls.m3u8

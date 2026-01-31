@@ -1,0 +1,8 @@
+#EXTM3U
+# Music频道列表
+# 频道数量: 2
+
+#EXTINF:-1 group-title="Music" tvg-logo="https://i.imgur.com/CjOWx7L.png",CCTV-11 (576p)
+http://123.175.209.52:9003/hls/12/index.m3u8
+#EXTINF:-1 group-title="Music" tvg-logo="https://i.imgur.com/CCV0eRG.png",CCTV-15 (576p)
+http://123.175.209.52:9003/hls/16/index.m3u8

@@ -1,0 +1,12 @@
+#EXTM3U
+# 动画频道频道列表
+# 频道数量: 4
+
+#EXTINF:-1 group-title="动画频道" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Neimeng5.png",内蒙古少儿
+https://livestream-bt.nmtv.cn/nmtv/2318general.m3u8?txSecret=ff5a1fd70ea228ee35b0d29895f37c56&txTime=771E8800
+#EXTINF:-1 group-title="动画频道" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/ningxia/Ningxia3.png",宁夏少儿
+https://hls.ningxiahuangheyun.com/live/nxse1M.m3u8
+#EXTINF:-1 group-title="动画频道" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Hebei4.png",河北少儿
+http://tv.pull.hebtv.com/jishi/shaoerkejiao.m3u8?t=2510710360&k=4ff4446adf3cce3de40dd013255b38b2
+#EXTINF:-1 group-title="动画频道" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/heilongjiang/Heilongjiang6.png",黑龙江少儿
+http://39.134.182.166/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221226304/index.m3u8

@@ -1,0 +1,24 @@
+#EXTM3U
+# 地方频道列表
+# 频道数量: 10
+
+#EXTINF:-1 group-title="地方" tvg-logo="https://live.fanmingming.com/tv/上海外语.png",上海ICS外语
+http://gslbserv.itv.cmvideo.cn/5000000010000030951/1.m3u8?channel-id=bestzb&Contentid=5000000010000030951&livemode=1&stbId=3
+#EXTINF:-1 group-title="地方" tvg-logo="https://live.fanmingming.com/tv/上海都市.png",上海都市
+http://gslbserv.itv.cmvideo.cn/5000000010000018926/1.m3u8?channel-id=bestzb&Contentid=5000000010000018926&livemode=1&stbId=3
+#EXTINF:-1 group-title="地方" tvg-logo="https://live.fanmingming.com/tv/东方影视.png",东方影视
+http://gslbserv.itv.cmvideo.cn/5000000010000032212/1.m3u8?channel-id=bestzb&Contentid=5000000010000032212&livemode=1&stbId=3
+#EXTINF:-1 group-title="地方" tvg-logo="https://live.fanmingming.com/tv/东方财经.png",东方财经
+http://gslbserv.itv.cmvideo.cn/5000000007000010003/1.m3u8?channel-id=bestzb&Contentid=5000000007000010003&livemode=1&stbId=3
+#EXTINF:-1 group-title="地方" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_International.png",北京国际
+rtp://239.3.1.235:8000
+#EXTINF:-1 group-title="地方" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_YingShi.png",北京影视
+rtp://239.3.1.158:8000
+#EXTINF:-1 group-title="地方" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_WenYi.png",北京文艺
+rtp://239.3.1.242:8000
+#EXTINF:-1 group-title="地方" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_XinWen.png",北京新闻
+rtp://239.3.1.159:8000
+#EXTINF:-1 group-title="地方" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_ShengHuo.png",北京生活
+rtp://239.3.1.117:8000
+#EXTINF:-1 group-title="地方" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_CaiJing.png",北京财经
+rtp://239.3.1.116:8000

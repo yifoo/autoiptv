@@ -1,0 +1,414 @@
+#EXTM3U
+# 卫视频道列表
+# 频道数量: 205
+
+#EXTINF:-1 group-title="卫视",BRTV北京卫视[超清HDR]
+http://192.168.123.1:23234/rtp/239.3.1.118:8001
+#EXTINF:-1 group-title="卫视",BRTV北京卫视[超清HDR]
+rtp://239.3.1.118:8001
+#EXTINF:-1 group-title="卫视",BRTV北京卫视[超清HDR]
+http://192.168.123.1:23234/rtp/228.1.1.235:8002
+#EXTINF:-1 group-title="卫视",BRTV北京卫视[超清HDR]
+rtp://228.1.1.235:8002
+#EXTINF:-1 group-title="卫视",三沙卫视
+http://192.168.123.1:23234/rtp/239.3.1.155:4120
+#EXTINF:-1 group-title="卫视",三沙卫视
+rtp://239.3.1.155:4120
+#EXTINF:-1 group-title="卫视",三沙卫视
+http://192.168.123.1:23234/rtp/228.1.1.186:4120
+#EXTINF:-1 group-title="卫视",三沙卫视
+rtp://228.1.1.186:4120
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/东南卫视.png",东南卫视
+http://gslbserv.itv.cmvideo.cn/5000000004000010584/1.m3u8?channel-id=bestzb&Contentid=5000000004000010584&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/DongNan.png",东南卫视
+rtp://239.3.1.156:8148
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/东南卫视.png",东南卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265033/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265033&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",东南卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.156:8148
+#EXTINF:-1 group-title="卫视",东南卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.185:8148
+#EXTINF:-1 group-title="卫视",东南卫视[高清]
+rtp://228.1.1.185:8148
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/东方卫视.png",东方卫视
+http://gslbserv.itv.cmvideo.cn/6000000001000003639/1.m3u8?channel-id=wasusyt&Contentid=6000000001000003639&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/DongFang.png",东方卫视
+rtp://239.3.1.119:3006
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/东方卫视.png",东方卫视 50 FPS
+http://gslbserv.itv.cmvideo.cn/5000000004000014098/1.m3u8?channel-id=bestzb&Contentid=5000000004000014098&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/东方卫视.png",东方卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265018/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265018&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",东方卫视[超清HDR]
+http://192.168.123.1:23234/rtp/239.3.1.119:3006
+#EXTINF:-1 group-title="卫视",东方卫视[超清HDR]
+http://192.168.123.1:23234/rtp/228.1.1.43:3006
+#EXTINF:-1 group-title="卫视",东方卫视[超清HDR]
+rtp://228.1.1.43:3006
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/云南卫视.png",云南卫视
+http://gslbserv.itv.cmvideo.cn/5000000011000031120/1.m3u8?channel-id=bestzb&Contentid=5000000011000031120&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",云南卫视
+http://192.168.123.1:23234/rtp/239.3.1.26:8108
+#EXTINF:-1 group-title="卫视",云南卫视
+rtp://239.3.1.26:8108
+#EXTINF:-1 group-title="卫视",云南卫视
+http://192.168.123.1:23234/rtp/228.1.1.44:8108
+#EXTINF:-1 group-title="卫视",云南卫视
+rtp://228.1.1.44:8108
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/BingTuan.png",兵团卫视
+rtp://239.3.1.168:8196
+#EXTINF:-1 group-title="卫视",兵团卫视 (540p) [Not 24/7]
+http://112.25.48.68/live/program/live/btws/1300000/mnf.m3u8
+#EXTINF:-1 group-title="卫视",兵团卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.168:8196
+#EXTINF:-1 group-title="卫视",兵团卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.243:8196
+#EXTINF:-1 group-title="卫视",兵团卫视[高清]
+rtp://228.1.1.243:8196
+#EXTINF:-1 group-title="卫视",内蒙古卫视
+http://192.168.123.1:23234/rtp/239.3.1.43:8176
+#EXTINF:-1 group-title="卫视",内蒙古卫视
+rtp://239.3.1.43:8176
+#EXTINF:-1 group-title="卫视",内蒙古卫视
+http://192.168.123.1:23234/rtp/228.1.1.59:8176
+#EXTINF:-1 group-title="卫视",内蒙古卫视
+rtp://228.1.1.59:8176
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/北京卫视.png",北京卫视
+http://gslbserv.itv.cmvideo.cn/6000000001000020451/1.m3u8?channel-id=wasusyt&Contentid=6000000001000020451&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/BeiJing.png",北京卫视
+rtp://239.3.1.22:8001
+#EXTINF:-1 group-title="卫视",北京卫视 (1080p)
+http://14.152.88.77/liveplay-kk.rtxapp.com/live/program/live/bjwshd/4000000/mnf.m3u8
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/北京卫视.png",北京卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265027/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265027&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",厦门卫视
+http://192.168.123.1:23234/rtp/239.3.1.143:4120
+#EXTINF:-1 group-title="卫视",厦门卫视
+rtp://239.3.1.143:4120
+#EXTINF:-1 group-title="卫视",厦门卫视
+http://192.168.123.1:23234/rtp/228.1.1.176:4120
+#EXTINF:-1 group-title="卫视",厦门卫视
+rtp://228.1.1.176:4120
+#EXTINF:-1 group-title="卫视",厦门卫视 (576p)
+http://223.110.245.159/ott.js.chinamobile.com/PLTV/3/224/3221226996/index.m3u8
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/吉林卫视.png",吉林卫视
+http://gslbserv.itv.cmvideo.cn/5000000011000031117/1.m3u8?channel-id=bestzb&Contentid=5000000011000031117&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/JiLin.png",吉林卫视
+rtp://239.3.1.240:8172
+#EXTINF:-1 group-title="卫视",吉林卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.240:8172
+#EXTINF:-1 group-title="卫视",吉林卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.214:8172
+#EXTINF:-1 group-title="卫视",吉林卫视[高清]
+rtp://228.1.1.214:8172
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/四川卫视.png",四川卫视
+http://gslbserv.itv.cmvideo.cn/5000000004000006119/1.m3u8?channel-id=bestzb&Contentid=5000000004000006119&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/SiChuan.png",四川卫视
+rtp://239.3.1.131:3001
+#EXTINF:-1 group-title="卫视",四川卫视[超清HDR]
+http://192.168.123.1:23234/rtp/239.3.1.131:3001
+#EXTINF:-1 group-title="卫视",四川卫视[超清HDR]
+http://192.168.123.1:23234/rtp/228.1.1.47:3000
+#EXTINF:-1 group-title="卫视",四川卫视[超清HDR]
+rtp://228.1.1.47:3000
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/天津卫视.png",天津卫视
+http://gslbserv.itv.cmvideo.cn/5000000004000006827/1.m3u8?channel-id=bestzb&Contentid=5000000004000006827&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/TianJin.png",天津卫视
+rtp://239.3.1.141:1234
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/天津卫视.png",天津卫视 50 FPS
+http://gslbserv.itv.cmvideo.cn/6000000001000009186/1.m3u8?channel-id=wasusyt&Contentid=6000000001000009186&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/天津卫视.png",天津卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265026/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265026&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",天津卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.141:1234
+#EXTINF:-1 group-title="卫视",天津卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.15:1234
+#EXTINF:-1 group-title="卫视",天津卫视[高清]
+rtp://228.1.1.15:1234
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/NingXia.png",宁夏卫视
+rtp://239.3.1.169:8212
+#EXTINF:-1 group-title="卫视",宁夏卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.169:8212
+#EXTINF:-1 group-title="卫视",宁夏卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.244:8212
+#EXTINF:-1 group-title="卫视",宁夏卫视[高清]
+rtp://228.1.1.244:8212
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/安徽卫视.png",安徽卫视
+http://gslbserv.itv.cmvideo.cn/1000000001000030159/1.m3u8?channel-id=ystenlive&Contentid=1000000001000030159&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/AnHui.png",安徽卫视
+rtp://239.3.1.211:8064
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/安徽卫视.png",安徽卫视 50 FPS
+http://gslbserv.itv.cmvideo.cn/6000000001000009954/1.m3u8?channel-id=wasusyt&Contentid=6000000001000009954&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/安徽卫视.png",安徽卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265025/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265025&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",安徽卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.211:8064
+#EXTINF:-1 group-title="卫视",安徽卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.21:8064
+#EXTINF:-1 group-title="卫视",安徽卫视[高清]
+rtp://228.1.1.21:8064
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/山东卫视.png",山东卫视
+http://gslbserv.itv.cmvideo.cn/1000000001000016568/1.m3u8?channel-id=ystenlive&Contentid=1000000001000016568&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/ShanDong.png",山东卫视
+rtp://239.3.1.144:3005
+#EXTINF:-1 group-title="卫视",山东卫视 (1080p)
+http://39.134.115.163:8080/PLTV/88888910/224/3221225697/index.m3u8
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/山东卫视.png",山东卫视 50 FPS
+http://gslbserv.itv.cmvideo.cn/6000000001000004134/1.m3u8?channel-id=wasusyt&Contentid=6000000001000004134&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/山东卫视.png",山东卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265019/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265019&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",山东卫视[超清HDR]
+http://192.168.123.1:23234/rtp/239.3.1.144:3005
+#EXTINF:-1 group-title="卫视",山东卫视[超清HDR]
+http://192.168.123.1:23234/rtp/228.1.1.46:3006
+#EXTINF:-1 group-title="卫视",山东卫视[超清HDR]
+rtp://228.1.1.46:3006
+#EXTINF:-1 group-title="卫视",山西卫视
+http://192.168.123.1:23234/rtp/239.3.1.42:8172
+#EXTINF:-1 group-title="卫视",山西卫视
+rtp://239.3.1.42:8172
+#EXTINF:-1 group-title="卫视",山西卫视
+http://192.168.123.1:23234/rtp/228.1.1.58:8172
+#EXTINF:-1 group-title="卫视",山西卫视
+rtp://228.1.1.58:8172
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png",广东卫视
+http://gslbserv.itv.cmvideo.cn/1000000001000014176/1.m3u8?channel-id=ystenlive&Contentid=1000000001000014176&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/GuangDong.png",广东卫视
+rtp://239.3.1.27:2000
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png",广东卫视 50 FPS
+http://gslbserv.itv.cmvideo.cn/6000000001000031076/1.m3u8?channel-id=wasusyt&Contentid=6000000001000031076&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png",广东卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265034/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265034&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",广东卫视[超清HDR]
+http://192.168.123.1:23234/rtp/239.3.1.27:2000
+#EXTINF:-1 group-title="卫视",广东卫视[超清HDR]
+http://192.168.123.1:23234/rtp/228.1.1.241:2000
+#EXTINF:-1 group-title="卫视",广东卫视[超清HDR]
+rtp://228.1.1.241:2000
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/广西卫视.png",广西卫视
+http://gslbserv.itv.cmvideo.cn/5000000011000031118/1.m3u8?channel-id=bestzb&Contentid=5000000011000031118&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",广西卫视
+http://192.168.123.1:23234/rtp/239.3.1.39:8300
+#EXTINF:-1 group-title="卫视",广西卫视
+rtp://239.3.1.39:8300
+#EXTINF:-1 group-title="卫视",广西卫视
+http://192.168.123.1:23234/rtp/228.1.1.80:8300
+#EXTINF:-1 group-title="卫视",广西卫视
+rtp://228.1.1.80:8300
+#EXTINF:-1 group-title="卫视",延边卫视 (576p)
+http://223.110.245.139/PLTV/4/224/3221227002/index.m3u8
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/XinJiang.png",新疆卫视
+rtp://239.3.1.167:8192
+#EXTINF:-1 group-title="卫视",新疆卫视 (576p)
+http://39.134.115.163:8080/PLTV/88888910/224/3221225725/index.m3u8
+#EXTINF:-1 group-title="卫视",新疆卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.167:8192
+#EXTINF:-1 group-title="卫视",新疆卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.246:8192
+#EXTINF:-1 group-title="卫视",新疆卫视[高清]
+rtp://228.1.1.246:8192
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/江苏卫视.png",江苏卫视
+http://gslbserv.itv.cmvideo.cn/1000000001000001828/1.m3u8?channel-id=ystenlive&Contentid=1000000001000001828&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/JiangSu.png",江苏卫视
+rtp://239.3.1.113:3003
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/江苏卫视.png",江苏卫视 50 FPS
+http://gslbserv.itv.cmvideo.cn/6000000001000014861/1.m3u8?channel-id=wasusyt&Contentid=6000000001000014861&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/江苏卫视.png",江苏卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265030/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265030&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",江苏卫视[超清HDR]
+http://192.168.123.1:23234/rtp/239.3.1.113:3003
+#EXTINF:-1 group-title="卫视",江苏卫视[超清HDR]
+http://192.168.123.1:23234/rtp/228.1.1.41:3002
+#EXTINF:-1 group-title="卫视",江苏卫视[超清HDR]
+rtp://228.1.1.41:3002
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/江西卫视.png",江西卫视
+http://gslbserv.itv.cmvideo.cn/1000000006000268001/1.m3u8?channel-id=ystenlive&Contentid=1000000006000268001&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/JiangXi.png",江西卫视
+rtp://239.3.1.123:8164
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/江西卫视.png",江西卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265032/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265032&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",江西卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.123:8164
+#EXTINF:-1 group-title="卫视",江西卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.211:8164
+#EXTINF:-1 group-title="卫视",江西卫视[高清]
+rtp://228.1.1.211:8164
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/河北卫视.png",河北卫视
+http://gslbserv.itv.cmvideo.cn/5000000006000040016/1.m3u8?channel-id=bestzb&Contentid=5000000006000040016&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/HeBei.png",河北卫视
+rtp://239.3.1.148:8072
+#EXTINF:-1 group-title="卫视",河北卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.148:8072
+#EXTINF:-1 group-title="卫视",河北卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.187:8072
+#EXTINF:-1 group-title="卫视",河北卫视[高清]
+rtp://228.1.1.187:8072
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/河南卫视.png",河南卫视
+http://gslbserv.itv.cmvideo.cn/5000000011000031119/1.m3u8?channel-id=bestzb&Contentid=5000000011000031119&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/HeNan.png",河南卫视
+rtp://239.3.1.50:8184
+#EXTINF:-1 group-title="卫视",河南卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.50:8184
+#EXTINF:-1 group-title="卫视",河南卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.236:8184
+#EXTINF:-1 group-title="卫视",河南卫视[高清]
+rtp://228.1.1.236:8184
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/浙江卫视.png",浙江卫视
+http://gslbserv.itv.cmvideo.cn/1000000001000014260/1.m3u8?channel-id=ystenlive&Contentid=1000000001000014260&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/ZheJiang.png",浙江卫视
+rtp://239.3.1.114:3004
+#EXTINF:-1 group-title="卫视",浙江卫视 (1080p)
+http://39.134.115.163:8080/PLTV/88888910/224/3221225703/index.m3u8
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/浙江卫视.png",浙江卫视 50 FPS
+http://gslbserv.itv.cmvideo.cn/5000000004000007275/1.m3u8?channel-id=bestzb&Contentid=5000000004000007275&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/浙江卫视.png",浙江卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265031/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265031&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",浙江卫视[超清HDR]
+http://192.168.123.1:23234/rtp/239.3.1.114:3004
+#EXTINF:-1 group-title="卫视",浙江卫视[超清HDR]
+http://192.168.123.1:23234/rtp/228.1.1.45:3004
+#EXTINF:-1 group-title="卫视",浙江卫视[超清HDR]
+rtp://228.1.1.45:3004
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/海南卫视.png",海南卫视
+http://gslbserv.itv.cmvideo.cn/5000000004000006211/1.m3u8?channel-id=bestzb&Contentid=5000000004000006211&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",海南卫视
+http://192.168.123.1:23234/rtp/239.3.1.45:8304
+#EXTINF:-1 group-title="卫视",海南卫视
+rtp://239.3.1.45:8304
+#EXTINF:-1 group-title="卫视",海南卫视
+http://192.168.123.1:23234/rtp/228.1.1.81:8304
+#EXTINF:-1 group-title="卫视",海南卫视
+rtp://228.1.1.81:8304
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/深圳卫视.png",深圳卫视
+http://gslbserv.itv.cmvideo.cn/5000000004000007410/1.m3u8?channel-id=bestzb&Contentid=5000000004000007410&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/ShenZhen.png",深圳卫视
+rtp://239.3.1.28:2000
+#EXTINF:-1 group-title="卫视",深圳卫视 (1080p) [Not 24/7]
+http://183.207.248.71/cntv/live1/HD-2500k-1080P-shenzhenstv/HD-2500k-1080P-shenzhenstv
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/深圳卫视.png",深圳卫视 50 FPS
+http://gslbserv.itv.cmvideo.cn/6000000001000002116/1.m3u8?channel-id=wasusyt&Contentid=6000000001000002116&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/深圳卫视.png",深圳卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265028/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265028&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",深圳卫视[超清HDR]
+http://192.168.123.1:23234/rtp/239.3.1.28:2000
+#EXTINF:-1 group-title="卫视",深圳卫视[超清HDR]
+http://192.168.123.1:23234/rtp/228.1.1.240:2000
+#EXTINF:-1 group-title="卫视",深圳卫视[超清HDR]
+rtp://228.1.1.240:2000
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/湖北卫视.png",湖北卫视
+http://gslbserv.itv.cmvideo.cn/1000000001000024621/1.m3u8?channel-id=ystenlive&Contentid=1000000001000024621&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/HuBei.png",湖北卫视
+rtp://239.3.1.138:8044
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/湖北卫视.png",湖北卫视 50 FPS
+http://gslbserv.itv.cmvideo.cn/6000000001000015436/1.m3u8?channel-id=wasusyt&Contentid=6000000001000015436&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/湖北卫视.png",湖北卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265023/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265023&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",湖北卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.138:8044
+#EXTINF:-1 group-title="卫视",湖北卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.16:8044
+#EXTINF:-1 group-title="卫视",湖北卫视[高清]
+rtp://228.1.1.16:8044
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/湖南卫视.png",湖南卫视
+http://gslbserv.itv.cmvideo.cn/5000000004000006692/1.m3u8?channel-id=bestzb&Contentid=5000000004000006692&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/HuNan.png",湖南卫视
+rtp://239.3.1.112:3002
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/湖南卫视.png",湖南卫视 50 FPS
+http://gslbserv.itv.cmvideo.cn/6000000001000018044/1.m3u8?channel-id=wasusyt&Contentid=6000000001000018044&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/湖南卫视.png",湖南卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265024/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265024&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",湖南卫视[超清HDR]
+http://192.168.123.1:23234/rtp/239.3.1.112:3002
+#EXTINF:-1 group-title="卫视",湖南卫视[超清HDR]
+http://192.168.123.1:23234/rtp/228.1.1.40:3002
+#EXTINF:-1 group-title="卫视",湖南卫视[超清HDR]
+rtp://228.1.1.40:3002
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/甘肃卫视.png",甘肃卫视
+http://gslbserv.itv.cmvideo.cn/5000000011000031121/1.m3u8?channel-id=bestzb&Contentid=5000000011000031121&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/GanSu.png",甘肃卫视
+rtp://239.3.1.201:8180
+#EXTINF:-1 group-title="卫视",甘肃卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.201:8180
+#EXTINF:-1 group-title="卫视",甘肃卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.242:8180
+#EXTINF:-1 group-title="卫视",甘肃卫视[高清]
+rtp://228.1.1.242:8180
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/XiZang.png",西藏卫视
+rtp://239.3.1.166:8188
+#EXTINF:-1 group-title="卫视",西藏卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.166:8188
+#EXTINF:-1 group-title="卫视",西藏卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.245:8188
+#EXTINF:-1 group-title="卫视",西藏卫视[高清]
+rtp://228.1.1.245:8188
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/贵州卫视.png",贵州卫视
+http://gslbserv.itv.cmvideo.cn/5000000004000025843/1.m3u8?channel-id=bestzb&Contentid=5000000004000025843&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/GuiZhou.png",贵州卫视
+rtp://239.3.1.149:8076
+#EXTINF:-1 group-title="卫视",贵州卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.149:8076
+#EXTINF:-1 group-title="卫视",贵州卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.188:8076
+#EXTINF:-1 group-title="卫视",贵州卫视[高清]
+rtp://228.1.1.188:8076
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/辽宁卫视.png",辽宁卫视
+http://gslbserv.itv.cmvideo.cn/5000000004000011671/1.m3u8?channel-id=bestzb&Contentid=5000000004000011671&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/LiaoNing.png",辽宁卫视
+rtp://239.3.1.210:8056
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/辽宁卫视.png",辽宁卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265022/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265022&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",辽宁卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.210:8056
+#EXTINF:-1 group-title="卫视",辽宁卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.19:8056
+#EXTINF:-1 group-title="卫视",辽宁卫视[高清]
+rtp://228.1.1.19:8056
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/重庆卫视.png",重庆卫视
+http://gslbserv.itv.cmvideo.cn/1000000001000001096/1.m3u8?channel-id=ystenlive&Contentid=1000000001000001096&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/ChongQing.png",重庆卫视
+rtp://239.3.1.122:8160
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/重庆卫视.png",重庆卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265017/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265017&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",重庆卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.122:8160
+#EXTINF:-1 group-title="卫视",重庆卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.210:8160
+#EXTINF:-1 group-title="卫视",重庆卫视[高清]
+rtp://228.1.1.210:8160
+#EXTINF:-1 group-title="卫视",陕西卫视
+http://192.168.123.1:23234/rtp/239.3.1.41:8140
+#EXTINF:-1 group-title="卫视",陕西卫视
+rtp://239.3.1.41:8140
+#EXTINF:-1 group-title="卫视",陕西卫视
+http://192.168.123.1:23234/rtp/228.1.1.53:8140
+#EXTINF:-1 group-title="卫视",陕西卫视
+rtp://228.1.1.53:8140
+#EXTINF:-1 group-title="卫视",陕西卫视 (576p)
+http://39.134.115.163:8080/PLTV/88888910/224/3221225729/index.m3u8
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/青海卫视.png",青海卫视
+http://gslbserv.itv.cmvideo.cn/1000000002000013359/1.m3u8?channel-id=ystenlive&Contentid=1000000002000013359&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",青海卫视
+http://192.168.123.1:23234/rtp/239.3.1.44:8184
+#EXTINF:-1 group-title="卫视",青海卫视
+rtp://239.3.1.44:8184
+#EXTINF:-1 group-title="卫视",青海卫视
+http://192.168.123.1:23234/rtp/228.1.1.60:8184
+#EXTINF:-1 group-title="卫视",青海卫视
+rtp://228.1.1.60:8184
+#EXTINF:-1 group-title="卫视",黑龙卫视 (1080p)
+http://223.110.243.169/PLTV/3/224/3221227252/index.m3u8
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/黑龙江卫视.png",黑龙江卫视
+http://gslbserv.itv.cmvideo.cn/1000000001000001925/1.m3u8?channel-id=ystenlive&Contentid=1000000001000001925&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/HeiLongJiang.png",黑龙江卫视
+rtp://239.3.1.133:8016
+#EXTINF:-1 group-title="卫视",黑龙江卫视 (2160p)
+http://118.81.195.79:9003/hls/31/index.m3u8
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/黑龙江卫视.png",黑龙江卫视 50 FPS
+http://gslbserv.itv.cmvideo.cn/6000000001000016510/1.m3u8?channel-id=wasusyt&Contentid=6000000001000016510&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视" tvg-logo="https://live.fanmingming.com/tv/黑龙江卫视.png",黑龙江卫视 HEVC
+http://gslbserv.itv.cmvideo.cn/1000000005000265029/1.m3u8?channel-id=ystenlive&Contentid=1000000005000265029&livemode=1&stbId=3
+#EXTINF:-1 group-title="卫视",黑龙江卫视[高清]
+http://192.168.123.1:23234/rtp/239.3.1.133:8016
+#EXTINF:-1 group-title="卫视",黑龙江卫视[高清]
+http://192.168.123.1:23234/rtp/228.1.1.35:8016
+#EXTINF:-1 group-title="卫视",黑龙江卫视[高清]
+rtp://228.1.1.35:8016

@@ -1,0 +1,12 @@
+#EXTM3U
+# News频道列表
+# 频道数量: 4
+
+#EXTINF:-1 group-title="News" tvg-logo="https://i.imgur.com/U8d4Is6.png",CCTV+ 1 (600p) [Not 24/7]
+https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
+#EXTINF:-1 group-title="News" tvg-logo="https://i.imgur.com/qSg862A.png",CCTV+ 2 (600p) [Not 24/7]
+https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8
+#EXTINF:-1 group-title="News" tvg-logo="https://i.imgur.com/6MTar6J.png",CCTV-13新闻 (2160p)
+http://123.175.209.52:9003/hls/14/index.m3u8
+#EXTINF:-1 group-title="News" tvg-logo="https://epg.pw/media/images/channel/2024/05/16/large/20240516043525045887_55.png",[BD]cctv1
+https://stream1.freetv.fun/1e233c3fa02ad66a59876f9f9d5500a9b99b490836014ad39c51e69a17b3c563.ctv
