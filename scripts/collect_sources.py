@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 电视直播源收集脚本 - 精简合并版
-功能：1. 频道名称精简 2. 同名电视台合并 3. 支持多源切换 4. 统一央视频道命名
+功能：1. 频道名称精简 2. 同名电视台合并 3. 支持多源切换 4. 统一央视频道命名 5. 频道排序
 特点：所有电视源统一从sources.txt文件获取
 分类：央视、卫视、地方台、少儿台、综艺台、港澳台、体育台、影视台、其他台
 """
@@ -16,8 +16,8 @@ import os
 import sys
 
 print("=" * 70)
-print("电视直播源收集脚本 v3.1 - 深度精简合并版")
-print("功能：频道名称深度精简、统一央视频道命名、支持多源切换")
+print("电视直播源收集脚本 v3.2 - 频道排序版")
+print("功能：频道名称深度精简、统一央视频道命名、支持多源切换、频道排序")
 print("特点：所有电视源统一从sources.txt文件获取")
 print("=" * 70)
 
@@ -155,24 +155,6 @@ CCTV_MAPPING = {
     r'^CCTV[_\-\s]?电视剧$': 'CCTV-8 电视剧',
     r'^CCTV[_\-\s]?综艺$': 'CCTV-3 综艺',
     r'^CCTV[_\-\s]?财经$': 'CCTV-2 财经',
-    
-    # 地方卫视统一命名
-    r'^北京卫视$': '北京卫视',
-    r'^湖南卫视$': '湖南卫视',
-    r'^浙江卫视$': '浙江卫视',
-    r'^江苏卫视$': '江苏卫视',
-    r'^东方卫视$': '东方卫视',
-    r'^天津卫视$': '天津卫视',
-    r'^安徽卫视$': '安徽卫视',
-    r'^山东卫视$': '山东卫视',
-    r'^广东卫视$': '广东卫视',
-    r'^深圳卫视$': '深圳卫视',
-    r'^黑龙江卫视$': '黑龙江卫视',
-    r'^辽宁卫视$': '辽宁卫视',
-    r'^湖北卫视$': '湖北卫视',
-    r'^河南卫视$': '河南卫视',
-    r'^四川卫视$': '四川卫视',
-    r'^重庆卫视$': '重庆卫视',
 }
 
 # 中文数字到阿拉伯数字映射
@@ -244,6 +226,204 @@ CATEGORY_RULES = {
         r"新闻$", r"都市$", r"民生$", r"公共$", r"经济$",
         r"法制$", r"农业$", r"交通$", r"城市$", r"省会$",
         r"地方$"
+    ]
+}
+
+# 频道排序规则 - 定义每个分类的排序优先级
+CHANNEL_SORT_RULES = {
+    # 央视排序：按CCTV数字从小到大，然后是其他央视频道
+    "央视": [
+        # 标准CCTV数字频道
+        (r'^CCTV-1\b', 100),
+        (r'^CCTV-2\b', 101),
+        (r'^CCTV-3\b', 102),
+        (r'^CCTV-4\b', 103),
+        (r'^CCTV-5\b', 104),
+        (r'^CCTV-5\+\b', 105),
+        (r'^CCTV-6\b', 106),
+        (r'^CCTV-7\b', 107),
+        (r'^CCTV-8\b', 108),
+        (r'^CCTV-9\b', 109),
+        (r'^CCTV-10\b', 110),
+        (r'^CCTV-11\b', 111),
+        (r'^CCTV-12\b', 112),
+        (r'^CCTV-13\b', 113),
+        (r'^CCTV-14\b', 114),
+        (r'^CCTV-15\b', 115),
+        (r'^CCTV-16\b', 116),
+        (r'^CCTV-17\b', 117),
+        
+        # 其他央视频道
+        (r'^CCTV-4K\b', 200),
+        (r'^CCTV-8K\b', 201),
+        (r'^CCTV-高清\b', 202),
+        (r'^CCTV\b', 300),  # 其他CCTV
+        (r'^央视\b', 400),
+        (r'^中央电视台\b', 500),
+    ],
+    
+    # 卫视排序：按地区拼音首字母顺序
+    "卫视": [
+        # 直辖市和热门卫视
+        (r'^北京卫视\b', 100),
+        (r'^上海卫视\b', 101),
+        (r'^东方卫视\b', 102),
+        (r'^天津卫视\b', 103),
+        (r'^重庆卫视\b', 104),
+        
+        # 华北地区
+        (r'^河北卫视\b', 200),
+        (r'^山西卫视\b', 201),
+        (r'^内蒙古卫视\b', 202),
+        
+        # 东北地区
+        (r'^辽宁卫视\b', 300),
+        (r'^吉林卫视\b', 301),
+        (r'^黑龙江卫视\b', 302),
+        
+        # 华东地区
+        (r'^江苏卫视\b', 400),
+        (r'^浙江卫视\b', 401),
+        (r'^安徽卫视\b', 402),
+        (r'^福建卫视\b', 403),
+        (r'^江西卫视\b', 404),
+        (r'^山东卫视\b', 405),
+        
+        # 华中地区
+        (r'^河南卫视\b', 500),
+        (r'^湖北卫视\b', 501),
+        (r'^湖南卫视\b', 502),
+        
+        # 华南地区
+        (r'^广东卫视\b', 600),
+        (r'^广西卫视\b', 601),
+        (r'^海南卫视\b', 602),
+        (r'^深圳卫视\b', 603),
+        
+        # 西南地区
+        (r'^四川卫视\b', 700),
+        (r'^贵州卫视\b', 701),
+        (r'^云南卫视\b', 702),
+        (r'^西藏卫视\b', 703),
+        
+        # 西北地区
+        (r'^陕西卫视\b', 800),
+        (r'^甘肃卫视\b', 801),
+        (r'^青海卫视\b', 802),
+        (r'^宁夏卫视\b', 803),
+        (r'^新疆卫视\b', 804),
+        
+        # 其他卫视
+        (r'卫视$', 900),
+    ],
+    
+    # 地方台排序
+    "地方台": [
+        # 新闻类
+        (r'新闻$', 100),
+        (r'新闻频道$', 101),
+        
+        # 都市类
+        (r'都市$', 200),
+        (r'都市频道$', 201),
+        
+        # 公共类
+        (r'公共$', 300),
+        (r'公共频道$', 301),
+        
+        # 经济类
+        (r'经济$', 400),
+        (r'经济频道$', 401),
+        
+        # 其他地方台
+        (r'.+', 500),
+    ],
+    
+    # 少儿台排序
+    "少儿台": [
+        (r'金鹰卡通', 100),
+        (r'卡酷少儿', 101),
+        (r'炫动卡通', 102),
+        (r'优漫卡通', 103),
+        (r'嘉佳卡通', 104),
+        (r'哈哈炫动', 105),
+        (r'少儿频道$', 200),
+        (r'儿童频道$', 201),
+        (r'少儿$', 300),
+        (r'卡通$', 301),
+        (r'动漫$', 302),
+        (r'动画$', 303),
+    ],
+    
+    # 综艺台排序
+    "综艺台": [
+        (r'综艺$', 100),
+        (r'文艺$', 101),
+        (r'娱乐$', 102),
+        (r'音乐$', 103),
+        (r'戏曲$', 104),
+        (r'文化$', 105),
+        (r'艺术$', 106),
+    ],
+    
+    # 港澳台排序
+    "港澳台": [
+        # 凤凰卫视系列
+        (r'凤凰', 100),
+        
+        # TVB系列
+        (r'TVB', 200),
+        (r'翡翠', 201),
+        (r'明珠', 202),
+        (r'无线', 203),
+        
+        # 香港其他
+        (r'香港', 300),
+        (r'本港', 301),
+        (r'国际', 302),
+        
+        # 澳门
+        (r'澳门', 400),
+        (r'澳视', 401),
+        (r'澳亚', 402),
+        
+        # 台湾
+        (r'台湾', 500),
+        (r'中天', 501),
+        (r'东森', 502),
+        (r'华视', 503),
+        (r'民视', 504),
+        (r'三立', 505),
+    ],
+    
+    # 体育台排序
+    "体育台": [
+        (r'CCTV-5', 100),
+        (r'CCTV-5\+', 101),
+        (r'体育$', 200),
+        (r'体育频道$', 201),
+        (r'足球$', 300),
+        (r'篮球$', 301),
+        (r'NBA', 302),
+        (r'CBA', 303),
+        (r'英超', 304),
+        (r'欧冠', 305),
+    ],
+    
+    # 影视台排序
+    "影视台": [
+        (r'CCTV-6', 100),
+        (r'CCTV-8', 101),
+        (r'CHC', 200),
+        (r'好莱坞', 201),
+        (r'电影$', 300),
+        (r'影视频道$', 301),
+        (r'家庭影院$', 302),
+    ],
+    
+    # 其他台排序（按名称拼音）
+    "其他台": [
+        (r'.+', 100),  # 默认排序
     ]
 }
 
@@ -337,6 +517,33 @@ def clean_channel_name(name):
         name = original_name
     
     return name
+
+def get_channel_sort_key(channel_name, category):
+    """获取频道的排序键值"""
+    # 默认排序值
+    sort_value = 9999
+    
+    # 获取该分类的排序规则
+    if category in CHANNEL_SORT_RULES:
+        for pattern, value in CHANNEL_SORT_RULES[category]:
+            if re.search(pattern, channel_name, re.IGNORECASE):
+                sort_value = value
+                break
+    
+    # 返回排序键：(排序值, 频道名称)
+    return (sort_value, channel_name)
+
+def sort_channels_by_category(channels, category):
+    """按分类规则排序频道"""
+    if category not in CHANNEL_SORT_RULES:
+        # 如果没有特定排序规则，按名称拼音排序
+        return sorted(channels, key=lambda x: x['clean_name'])
+    
+    # 使用自定义排序规则
+    def sort_key(channel):
+        return get_channel_sort_key(channel['clean_name'], category)
+    
+    return sorted(channels, key=sort_key)
 
 def fetch_m3u(url, retry=2):
     """获取M3U文件，支持重试"""
@@ -608,7 +815,7 @@ for category, count in category_stats.items():
 timestamp = get_beijing_time()
 print(f"\n📅 当前北京时间: {timestamp}")
 
-# 按分类组织频道
+# 按分类组织频道，并按规则排序
 categories = {}
 for channel in merged_channels.values():
     category = channel['category']
@@ -621,6 +828,13 @@ for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港
     if category not in categories:
         categories[category] = []
 
+# 对每个分类的频道进行排序
+print("\n🔄 正在对频道进行排序...")
+for category in categories:
+    if categories[category]:
+        categories[category] = sort_channels_by_category(categories[category], category)
+        print(f"   {category}: {len(categories[category])}个频道已排序")
+
 # 创建输出目录
 Path("categories").mkdir(exist_ok=True)
 Path("merged").mkdir(exist_ok=True)
@@ -630,22 +844,25 @@ print("\n📄 生成 live_sources.m3u（精简合并版）...")
 try:
     with open("live_sources.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        f.write(f"# 电视直播源 - 深度精简合并版\n")
+        f.write(f"# 电视直播源 - 深度精简合并版（排序版）\n")
         f.write(f"# 更新时间(北京时间): {timestamp}\n")
         f.write(f"# 电视台总数: {len(merged_channels)}\n")
         f.write(f"# 原始频道数: {len(all_channels)}\n")
         f.write(f"# 数据源: {len(sources)} 个 (成功: {success_sources}, 失败: {len(failed_sources)})\n")
         f.write(f"# 说明: 同名电视台已合并，支持多源切换\n")
-        f.write(f"# 特点: 移除技术参数，统一央视频道命名\n")
+        f.write(f"# 特点: 移除技术参数，统一央视频道命名，频道已排序\n")
+        f.write(f"# 排序规则: 央视→卫视→地方台→少儿台→综艺台→港澳台→体育台→影视台→其他台\n")
         f.write(f"# 源文件: sources.txt\n\n")
         
-        # 按分类写入
-        for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
+        # 按分类顺序写入
+        category_order = ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]
+        
+        for category in category_order:
             cat_channels = categories[category]
             if cat_channels:
                 f.write(f"\n# 分类: {category} ({len(cat_channels)}个电视台)\n")
                 
-                for channel in sorted(cat_channels, key=lambda x: x['clean_name']):
+                for channel in cat_channels:  # 已经排序
                     # 选择主logo（第一个非空的logo）
                     main_logo = channel['logos'][0] if channel['logos'] else ""
                     
@@ -682,12 +899,12 @@ try:
                             alt_line += f"{source['url']}\n"
                             f.write(alt_line)
     
-    print(f"  ✅ live_sources.m3u 生成成功，包含 {len(merged_channels)} 个电视台")
+    print(f"  ✅ live_sources.m3u 生成成功，包含 {len(merged_channels)} 个电视台（已排序）")
 except Exception as e:
     print(f"  ❌ 生成live_sources.m3u失败: {e}")
 
-# 2. 生成分类M3U文件
-print("\n📄 生成分类文件...")
+# 2. 生成分类M3U文件（已排序）
+print("\n📄 生成分类文件（已排序）...")
 for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
     cat_channels = categories[category]
     if cat_channels:
@@ -695,11 +912,11 @@ for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港
             filename = f"categories/{category}.m3u"
             with open(filename, "w", encoding="utf-8") as f:
                 f.write("#EXTM3U\n")
-                f.write(f"# {category}频道列表\n")
+                f.write(f"# {category}频道列表（已排序）\n")
                 f.write(f"# 更新时间(北京时间): {timestamp}\n")
                 f.write(f"# 电视台数量: {len(cat_channels)}\n\n")
                 
-                for channel in sorted(cat_channels, key=lambda x: x['clean_name']):
+                for channel in cat_channels:  # 已经排序
                     main_logo = channel['logos'][0] if channel['logos'] else ""
                     source_count = len(channel['sources'])
                     
@@ -721,37 +938,42 @@ for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港
                     line += f"{main_source['url']}\n"
                     f.write(line)
             
-            print(f"  ✅ 生成 {filename}")
+            print(f"  ✅ 生成 {filename}（已排序）")
         except Exception as e:
             print(f"  ❌ 生成 {filename} 失败: {e}")
 
-# 3. 生成合并的JSON文件（包含所有源信息）
-print("\n📄 生成 channels.json...")
+# 3. 生成合并的JSON文件（包含所有源信息，已排序）
+print("\n📄 生成 channels.json（已排序）...")
 try:
-    # 创建频道列表
+    # 创建频道列表（按分类和排序规则）
     channel_list = []
-    for clean_name, channel_data in sorted(merged_channels.items()):
-        # 准备源信息
-        sources_info = []
-        for i, source in enumerate(channel_data['sources'], 1):
-            sources_info.append({
-                'index': i,
-                'url': source['url'],
-                'quality': source['quality'],
-                'source': source['source'],
-                'logo': source['logo'] if source['logo'] else ""
-            })
-        
-        # 频道信息
-        channel_info = {
-            'clean_name': clean_name,
-            'original_names': list(set(channel_data['original_names'])),  # 去重
-            'category': channel_data['category'],
-            'source_count': len(channel_data['sources']),
-            'logos': channel_data['logos'],
-            'sources': sources_info
-        }
-        channel_list.append(channel_info)
+    category_order = ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]
+    
+    for category in category_order:
+        cat_channels = categories[category]
+        for channel in cat_channels:  # 已经排序
+            # 准备源信息
+            sources_info = []
+            for i, source in enumerate(channel['sources'], 1):
+                sources_info.append({
+                    'index': i,
+                    'url': source['url'],
+                    'quality': source['quality'],
+                    'source': source['source'],
+                    'logo': source['logo'] if source['logo'] else ""
+                })
+            
+            # 频道信息
+            channel_info = {
+                'clean_name': channel['clean_name'],
+                'original_names': list(set(channel['original_names'])),  # 去重
+                'category': category,
+                'source_count': len(channel['sources']),
+                'logos': channel['logos'],
+                'sources': sources_info,
+                'sort_key': get_channel_sort_key(channel['clean_name'], category)[0]
+            }
+            channel_list.append(channel_info)
     
     # 创建JSON数据
     json_data = {
@@ -762,6 +984,10 @@ try:
         'success_sources': success_sources,
         'failed_sources': failed_sources,
         'category_stats': category_stats,
+        'sorting_rules': {
+            'category_order': category_order,
+            'channel_order': '按分类规则排序'
+        },
         'channels': channel_list,
         'source_file': 'sources.txt'
     }
@@ -770,28 +996,31 @@ try:
     with open("channels.json", "w", encoding="utf-8") as f:
         json.dump(json_data, f, ensure_ascii=False, indent=2, default=str)
     
-    print(f"  ✅ channels.json 生成成功，包含 {len(merged_channels)} 个电视台的详细信息")
+    print(f"  ✅ channels.json 生成成功，包含 {len(merged_channels)} 个电视台的详细信息（已排序）")
 except Exception as e:
     print(f"  ❌ 生成channels.json失败: {e}")
 
-# 4. 生成精简版M3U（每个电视台只保留最佳源）
-print("\n📄 生成 merged/精简版.m3u...")
+# 4. 生成精简版M3U（每个电视台只保留最佳源，已排序）
+print("\n📄 生成 merged/精简版.m3u（已排序）...")
 try:
     with open("merged/精简版.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        f.write(f"# 电视直播源 - 精简版\n")
+        f.write(f"# 电视直播源 - 精简版（排序版）\n")
         f.write(f"# 更新时间(北京时间): {timestamp}\n")
         f.write(f"# 电视台总数: {len(merged_channels)}\n")
-        f.write(f"# 说明: 每个电视台只保留最佳源\n")
+        f.write(f"# 说明: 每个电视台只保留最佳源，已排序\n")
         f.write(f"# 特点: 移除技术参数，统一央视频道命名\n")
+        f.write(f"# 排序规则: 央视→卫视→地方台→少儿台→综艺台→港澳台→体育台→影视台→其他台\n")
         f.write(f"# 源文件: sources.txt\n\n")
         
-        for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
+        category_order = ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]
+        
+        for category in category_order:
             cat_channels = categories[category]
             if cat_channels:
                 f.write(f"\n# {category} ({len(cat_channels)}个电视台)\n")
                 
-                for channel in sorted(cat_channels, key=lambda x: x['clean_name']):
+                for channel in cat_channels:  # 已经排序
                     # 选择最佳源（优先选择高清源）
                     best_source = None
                     for source in channel['sources']:
@@ -817,38 +1046,41 @@ try:
                     line += f"{best_source['url']}\n"
                     f.write(line)
     
-    print(f"  ✅ 精简版.m3u 生成成功")
+    print(f"  ✅ 精简版.m3u 生成成功（已排序）")
 except Exception as e:
     print(f"  ❌ 生成精简版.m3u失败: {e}")
 
-# 5. 生成HTML页面
+# 5. 生成HTML页面（显示排序信息）
 print("\n📄 生成 index.html...")
 try:
-    # 简化频道数据用于JavaScript
+    # 简化频道数据用于显示
     simplified_channels = []
-    for clean_name, channel_data in merged_channels.items():
-        simplified = {
-            'name': clean_name,
-            'category': channel_data['category'],
-            'sourceCount': len(channel_data['sources']),
-            'sources': []
-        }
-        
-        for source in channel_data['sources']:
-            simplified['sources'].append({
-                'url': source['url'],
-                'quality': source['quality'],
-                'logo': source['logo'] or ''
-            })
-        
-        simplified_channels.append(simplified)
+    category_order = ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]
+    
+    for category in category_order:
+        cat_channels = categories[category]
+        for channel in cat_channels:  # 已经排序
+            simplified = {
+                'name': channel['clean_name'],
+                'category': category,
+                'sourceCount': len(channel['sources']),
+                'sortKey': get_channel_sort_key(channel['clean_name'], category)[0]
+            }
+            simplified_channels.append(simplified)
+    
+    # 按分类显示排序示例
+    sorting_examples = {}
+    for category in ["央视", "卫视", "少儿台"]:
+        if categories[category]:
+            examples = categories[category][:5]
+            sorting_examples[category] = [ch['clean_name'] for ch in examples]
     
     html_content = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>电视直播源 - 深度精简合并版</title>
+    <title>电视直播源 - 深度精简合并版（排序版）</title>
     <style>
         :root {{
             --primary-color: #2c3e50;
@@ -970,30 +1202,46 @@ try:
             background: var(--warning-color);
         }}
         
-        .features-list {{
+        .sorting-info {{
             background: white;
-            padding: 25px;
-            border-radius: 10px;
-            margin: 20px 0;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }}
         
-        .features-list ul {{
+        .sorting-examples {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }}
+        
+        .example-box {{
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--secondary-color);
+        }}
+        
+        .example-title {{
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }}
+        
+        .example-list {{
             list-style: none;
             padding: 0;
         }}
         
-        .features-list li {{
-            padding: 8px 0;
-            display: flex;
-            align-items: center;
+        .example-list li {{
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
         }}
         
-        .features-list li:before {{
-            content: "✓";
-            color: var(--success-color);
-            font-weight: bold;
-            margin-right: 10px;
+        .example-list li:last-child {{
+            border-bottom: none;
         }}
         
         footer {{
@@ -1016,6 +1264,10 @@ try:
                 flex-direction: column;
             }}
             
+            .sorting-examples {{
+                grid-template-columns: 1fr;
+            }}
+            
             h1 {{
                 font-size: 2rem;
             }}
@@ -1025,11 +1277,11 @@ try:
 <body>
     <div class="container">
         <header>
-            <h1>📺 电视直播源 - 深度精简合并版</h1>
-            <p class="subtitle">移除技术参数 | 统一央视频道命名 | 支持多源切换</p>
+            <h1>📺 电视直播源 - 深度精简合并版（排序版）</h1>
+            <p class="subtitle">移除技术参数 | 统一央视频道命名 | 支持多源切换 | 频道已排序</p>
             <div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">
                 <p>更新时间(北京时间): {timestamp}</p>
-                <p>源文件: sources.txt</p>
+                <p>源文件: sources.txt | 频道总数: {len(merged_channels)}</p>
             </div>
         </header>
         
@@ -1052,38 +1304,102 @@ try:
             </div>
         </div>
         
-        <div class="features-list">
-            <h3 style="color: var(--primary-color); margin-bottom: 15px;">✨ 主要特点</h3>
-            <ul>
-                <li>移除技术参数: 50 FPS、HEVC、H.264等</li>
-                <li>统一央视频道命名: CCTV-1 综合、CCTV-2 财经等</li>
-                <li>深度清理冗余信息: 直播、频道、台等后缀</li>
-                <li>智能合并同名电视台: 自动识别和合并</li>
-                <li>支持多源切换: 每个电视台可能有多个播放源</li>
-                <li>智能分类: 自动分类到9大类别</li>
-            </ul>
+        <div class="sorting-info">
+            <h2 style="color: var(--primary-color); margin-bottom: 20px;">🎯 频道排序规则</h2>
+            <p style="color: #666; margin-bottom: 20px;">所有频道已按以下规则排序，方便用户查找：</p>
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">📋 分类排序顺序</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+                    <div style="text-align: center; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <div style="font-weight: bold; color: #e74c3c;">1. 央视</div>
+                        <div style="font-size: 0.9rem; color: #666;">CCTV系列频道</div>
+                    </div>
+                    <div style="text-align: center; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <div style="font-weight: bold; color: #3498db;">2. 卫视</div>
+                        <div style="font-size: 0.9rem; color: #666;">各省市卫星电视台</div>
+                    </div>
+                    <div style="text-align: center; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <div style="font-weight: bold; color: #2ecc71;">3. 地方台</div>
+                        <div style="font-size: 0.9rem; color: #666;">地方新闻民生频道</div>
+                    </div>
+                    <div style="text-align: center; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <div style="font-weight: bold; color: #f39c12;">4. 少儿台</div>
+                        <div style="font-size: 0.9rem; color: #666;">少儿卡通动漫频道</div>
+                    </div>
+                    <div style="text-align: center; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <div style="font-weight: bold; color: #9b59b6;">5. 综艺台</div>
+                        <div style="font-size: 0.9rem; color: #666;">综艺娱乐文艺频道</div>
+                    </div>
+                    <div style="text-align: center; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <div style="font-weight: bold; color: #1abc9c;">6. 港澳台</div>
+                        <div style="font-size: 0.9rem; color: #666;">港澳台地区频道</div>
+                    </div>
+                    <div style="text-align: center; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <div style="font-weight: bold; color: #e67e22;">7. 体育台</div>
+                        <div style="font-size: 0.9rem; color: #666;">体育赛事频道</div>
+                    </div>
+                    <div style="text-align: center; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <div style="font-weight: bold; color: #34495e;">8. 影视台</div>
+                        <div style="font-size: 0.9rem; color: #666;">电影影视剧频道</div>
+                    </div>
+                    <div style="text-align: center; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <div style="font-weight: bold; color: #95a5a6;">9. 其他台</div>
+                        <div style="font-size: 0.9rem; color: #666;">未分类频道</div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 style="color: var(--primary-color); margin: 25px 0 15px 0;">📝 排序示例</h3>
+            <div class="sorting-examples">
+"""
+    
+    # 添加排序示例
+    for category, examples in sorting_examples.items():
+        if examples:
+            html_content += f"""                <div class="example-box">
+                    <div class="example-title">{category}频道排序示例</div>
+                    <ul class="example-list">
+"""
+            for example in examples:
+                html_content += f"""                        <li>{example}</li>
+"""
+            html_content += """                    </ul>
+                </div>
+"""
+    
+    html_content += f"""            </div>
+            
+            <div style="margin-top: 20px; padding: 15px; background: #e8f4f8; border-radius: 8px; border-left: 4px solid #3498db;">
+                <p style="color: #2c3e50; margin: 0; font-size: 0.9rem;">
+                    <strong>💡 排序说明:</strong> 
+                    <br>• 央视: 按CCTV数字从小到大排序 (CCTV-1 → CCTV-2 → ... → CCTV-17)
+                    <br>• 卫视: 按地区拼音首字母排序 (北京卫视 → 湖南卫视 → ... → 重庆卫视)
+                    <br>• 其他分类: 按内部规则排序，热门频道在前
+                </p>
+            </div>
         </div>
         
         <div class="download-section">
-            <h2 style="color: var(--primary-color); margin-bottom: 15px;">📥 下载播放列表</h2>
-            <p style="color: #666; margin-bottom: 20px;">选择需要的播放列表格式下载</p>
+            <h2 style="color: var(--primary-color); margin-bottom: 15px;">📥 下载播放列表（已排序）</h2>
+            <p style="color: #666; margin-bottom: 20px;">选择需要的播放列表格式下载，所有文件中的频道都已排序</p>
             
             <div class="download-buttons">
                 <a href="live_sources.m3u" class="btn">
                     <span style="margin-right: 10px;">📺</span>
-                    完整版 (含多源)
+                    完整版 (含多源，已排序)
                 </a>
                 <a href="merged/精简版.m3u" class="btn btn-success">
                     <span style="margin-right: 10px;">✨</span>
-                    精简版 (最佳源)
+                    精简版 (最佳源，已排序)
                 </a>
                 <a href="channels.json" class="btn btn-warning">
                     <span style="margin-right: 10px;">📊</span>
-                    JSON 数据
+                    JSON 数据（已排序）
                 </a>
             </div>
             
-            <h3 style="color: var(--primary-color); margin: 25px 0 15px 0;">📂 分类列表下载</h3>
+            <h3 style="color: var(--primary-color); margin: 25px 0 15px 0;">📂 分类列表下载（已排序）</h3>
             <div class="download-buttons">
 """
     
@@ -1097,61 +1413,6 @@ try:
 """
     
     html_content += """            </div>
-            
-            <div style="margin-top: 25px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
-                <p style="color: #666; margin: 0; font-size: 0.9rem;">
-                    <strong>💡 使用提示:</strong> 
-                    <br>• 完整版: 包含所有源，适合需要切换源的用户
-                    <br>• 精简版: 每个电视台只保留最佳源，适合普通用户
-                    <br>• JSON数据: 包含所有电视台的详细信息
-                </p>
-            </div>
-        </div>
-        
-        <div class="features-list">
-            <h3 style="color: var(--primary-color); margin-bottom: 15px;">📋 分类统计</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
-"""
-    
-    # 添加分类统计
-    for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
-        count = len(categories[category])
-        if count > 0:
-            html_content += f"""                <div style="text-align: center;">
-                    <div style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">{count}</div>
-                    <div style="font-size: 0.9rem; color: #666;">{category}</div>
-                </div>
-"""
-    
-    html_content += f"""            </div>
-        </div>
-        
-        <div style="margin: 30px 0; text-align: center;">
-            <h3 style="color: var(--primary-color); margin-bottom: 15px;">🎯 央视频道命名示例</h3>
-            <div style="display: inline-block; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; text-align: left;">
-                    <div>
-                        <div style="color: #666; font-size: 0.9rem;">原始名称</div>
-                        <div style="color: #e74c3c;">→</div>
-                        <div style="color: #666; font-size: 0.9rem;">精简后名称</div>
-                    </div>
-                    <div>
-                        <div>CCTV1 4K HEVC</div>
-                        <div style="color: #e74c3c; text-align: center;">→</div>
-                        <div>CCTV-1 综合</div>
-                    </div>
-                    <div>
-                        <div>央视二台 高清</div>
-                        <div style="color: #e74c3c; text-align: center;">→</div>
-                        <div>CCTV-2 财经</div>
-                    </div>
-                    <div>
-                        <div>CCTV5+ 体育 50FPS</div>
-                        <div style="color: #e74c3c; text-align: center;">→</div>
-                        <div>CCTV-5+ 体育赛事</div>
-                    </div>
-                </div>
-            </div>
         </div>
         
         <footer>
@@ -1186,24 +1447,24 @@ try:
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html_content)
     
-    print(f"  ✅ index.html 生成成功")
+    print(f"  ✅ index.html 生成成功，包含排序信息")
 except Exception as e:
     print(f"  ❌ 生成index.html失败: {e}")
 
-# 6. 生成README
+# 6. 生成README（包含排序信息）
 print("\n📄 生成 README.md...")
 try:
-    readme_content = f"""# 📺 电视直播源项目 - 深度精简合并版
+    readme_content = f"""# 📺 电视直播源项目 - 深度精简合并版（排序版）
 
-自动收集整理的电视直播源，支持深度精简和统一命名。
+自动收集整理的电视直播源，支持深度精简、统一命名和频道排序。
 
 ## ✨ 主要特性
 
 ### 1. **深度名称精简**
-- 移除技术参数: `50 FPS`、`HEVC`、`H.264`、`AAC`等
-- 移除清晰度标记: `4K`、`高清`、`HD`、`标清`等
-- 移除协议标记: `IPV6`、`HLS`、`RTMP`等
-- 清理冗余后缀: `直播`、`频道`、`台`等
+- 移除技术参数: `50 FPS`、`HEVC`、`H.264`、`AAC`、`AC3`等
+- 移除清晰度标记: `4K`、`高清`、`HD`、`超清`、`标清`、`流畅`等
+- 移除协议标记: `IPV6`、`HLS`、`RTMP`、`RTSP`、`FLV`等
+- 清理冗余后缀: `直播`、`频道`、`台`、`电视台`等
 
 ### 2. **统一央视频道命名**
 - `CCTV1` → `CCTV-1 综合`
@@ -1216,10 +1477,28 @@ try:
 - 保留所有源的播放地址
 - 支持多源切换功能
 
-### 4. **智能分类**
-- 9大分类: 央视、卫视、地方台、少儿台、综艺台、港澳台、体育台、影视台、其他台
-- 基于名称的智能分类
-- 支持手动调整分类规则
+### 4. **频道排序系统**
+所有频道已按以下规则排序：
+
+#### 📋 分类排序顺序
+1. **央视** - CCTV系列频道
+2. **卫视** - 各省市卫星电视台
+3. **地方台** - 地方新闻民生频道
+4. **少儿台** - 少儿卡通动漫频道
+5. **综艺台** - 综艺娱乐文艺频道
+6. **港澳台** - 港澳台地区频道
+7. **体育台** - 体育赛事频道
+8. **影视台** - 电影影视剧频道
+9. **其他台** - 未分类频道
+
+#### 🎯 各分类内部排序规则
+- **央视**: 按CCTV数字从小到大排序 (CCTV-1 → CCTV-2 → ... → CCTV-17)
+- **卫视**: 按地区拼音首字母顺序 (北京卫视 → 湖南卫视 → 浙江卫视 → ...)
+- **地方台**: 新闻类 → 都市类 → 公共类 → 经济类 → 其他
+- **少儿台**: 热门少儿频道在前，按名称排序
+- **港澳台**: 凤凰卫视 → TVB系列 → 香港其他 → 澳门 → 台湾
+- **体育台**: CCTV-5系列 → 体育频道 → 足球篮球 → 其他赛事
+- **影视台**: CCTV-6/8 → CHC → 好莱坞 → 其他电影频道
 
 ## 📊 统计信息
 - **更新时间(北京时间)**: {timestamp}
@@ -1231,17 +1510,19 @@ try:
 
 ## 🏷️ 分类统计
 
-| 分类 | 电视台数量 | 说明 |
-|------|----------|------|
+| 排序 | 分类 | 电视台数量 | 说明 |
+|------|------|----------|------|
 """
 
-    # 添加分类统计表格
-    for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
+    # 添加分类统计表格（带排序编号）
+    category_order = ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]
+    
+    for i, category in enumerate(category_order, 1):
         count = len(categories[category])
         if count > 0:
             description = {
-                "央视": "中央电视台及CCTV系列频道",
-                "卫视": "各省市卫星电视台",
+                "央视": "中央电视台及CCTV系列频道（按数字排序）",
+                "卫视": "各省市卫星电视台（按地区拼音排序）",
                 "地方台": "地方新闻、都市、民生频道",
                 "少儿台": "少儿、卡通、动漫频道",
                 "综艺台": "综艺、娱乐、文艺频道",
@@ -1251,99 +1532,18 @@ try:
                 "其他台": "未分类的电视台"
             }.get(category, "")
             
-            readme_content += f"| {category} | {count} | {description} |\n"
+            readme_content += f"| {i} | {category} | {count} | {description} |\n"
     
     readme_content += f"""
-| **总计** | **{len(merged_channels)}** | **所有电视台** |
+| **总计** | **-** | **{len(merged_channels)}** | **所有电视台** |
 
-## 📁 文件列表
+## 📁 文件列表（所有文件中的频道都已排序）
 
 ### 主要文件
 | 文件 | 描述 | 用途 |
 |------|------|------|
-| [live_sources.m3u](live_sources.m3u) | 完整版播放列表 | 包含所有电视台和多个源，适合需要源切换的用户 |
-| [merged/精简版.m3u](merged/精简版.m3u) | 精简版播放列表 | 每个电视台只保留最佳源，适合普通用户 |
-| [channels.json](channels.json) | 详细数据文件 | 包含所有电视台的详细信息和多源数据 |
-| [index.html](index.html) | 网页统计界面 | 查看统计信息和下载文件 |
-| [sources.txt](sources.txt) | 数据源配置文件 | 编辑此文件可添加或修改数据源 |
-
-### 分类文件
-进入 [categories/](categories/) 目录下载分类播放列表：
-
-"""
-
-    for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
-        count = len(categories[category])
-        if count > 0:
-            readme_content += f"- [{category}.m3u](categories/{category}.m3u) - {count} 个电视台\n"
-    
-    readme_content += f"""
-
-## 🚀 使用方法
-
-### 快速开始
-1. 下载 [merged/精简版.m3u](merged/精简版.m3u) 文件
-2. 用播放器打开 (支持VLC、PotPlayer、IINA等)
-3. 选择电视台观看
-
-### 多源切换使用
-1. 下载 [live_sources.m3u](live_sources.m3u) 文件
-2. 在播放器中，同一个电视台会出现多次（代表不同源）
-3. 如果某个源无法播放，尝试播放该电视台的其他源
-
-### 央视频道示例
-- `CCTV-1 综合` - 中央电视台综合频道
-- `CCTV-2 财经` - 中央电视台财经频道
-- `CCTV-5 体育` - 中央电视台体育频道
-- `CCTV-6 电影` - 中央电视台电影频道
-- `CCTV-5+ 体育赛事` - 中央电视台体育赛事频道
-- `CCTV-4K 超高清` - 中央电视台4K超高清频道
-
-## ⚙️ 自定义配置
-
-编辑 `sources.txt` 文件可以添加更多直播源URL，每行一个。
-
-### sources.txt 格式示例
-电视直播源列表
-每行一个M3U文件URL
-https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u
-https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u
-
-可添加更多源
-https://example.com/live.m3u
-
-
-## ⏰ 自动更新
-
-- **定时更新**: 每天UTC 18:00（北京时间凌晨2点）自动运行
-- **手动触发**: 在GitHub Actions页面手动运行工作流
-- **源更新触发**: 修改 `sources.txt` 后自动触发
-
-## ⚠️ 免责声明
-
-本项目的直播源来自公开网络，仅用于学习和测试。
-请遵守当地法律法规，尊重版权。
-
----
-*自动生成于 {timestamp}*
-"""
-    
-    with open("README.md", "w", encoding="utf-8") as f:
-        f.write(readme_content)
-    
-    print("  ✅ README.md 生成成功")
-except Exception as e:
-    print(f"  ❌ 生成README.md失败: {e}")
-
-print(f"\n🎉 所有文件生成完成！")
-print(f"📊 统计:")
-print(f"  - 电视台总数: {len(merged_channels)}")
-print(f"  - 原始频道数: {len(all_channels)}")
-print(f"  - 数据源: {len(sources)}")
-print(f"📁 生成的文件:")
-print(f"  - live_sources.m3u (完整多源版)")
-print(f"  - merged/精简版.m3u (精简最佳源版)")
-print(f"  - channels.json (详细数据)")
-print(f"  - index.html (统计网页)")
-print(f"  - README.md (说明文档)")
-print(f"  - categories/*.m3u (分类列表)")
+| [live_sources.m3u](live_sources.m3u) | 完整版播放列表 | 包含所有电视台和多个源，已排序，适合需要源切换的用户 |
+| [merged/精简版.m3u](merged/精简版.m3u) | 精简版播放列表 | 每个电视台只保留最佳源，已排序，适合普通用户 |
+| [channels.json](channels.json) | 详细数据文件 | 包含所有电视台的详细信息和多源数据，已排序 |
+| [index.html](index.html) | 网页统计界面 | 查看统计信息和排序规则说明 |
+| [sources.txt](sources.txt) | 数据源配置文件
