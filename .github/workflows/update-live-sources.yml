@@ -56,8 +56,6 @@ jobs:
           echo "# 电视直播源列表" > sources.txt
           echo "# 每行一个M3U文件URL" >> sources.txt
           echo "" >> sources.txt
-          echo "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u" >> sources.txt
-          echo "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u" >> sources.txt
           echo "✅ 创建了sources.txt文件"
         fi
 
