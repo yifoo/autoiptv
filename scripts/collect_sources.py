@@ -277,428 +277,218 @@ Path("categories").mkdir(exist_ok=True)
 
 # 2. 生成完整M3U文件
 print("\n📄 生成 live_sources.m3u...")
-with open("live_sources.m3u", "w", encoding="utf-8") as f:
-    f.write("#EXTM3U\n")
-    f.write(f"# 电视直播源 - 优化分类版\n")
-    f.write(f"# 更新时间(北京时间): {timestamp}\n")
-    f.write(f"# 频道总数: {len(all_channels)}\n")
-    f.write(f"# 数据源: {len(sources)}\n\n")
-    
-    # 按指定顺序写入分类
-    for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
-        cat_channels = categories[category]
-        if cat_channels:
-            f.write(f"# {category} ({len(cat_channels)}个频道)\n")
-            for channel in sorted(cat_channels, key=lambda x: x['name']):
-                line = f"#EXTINF:-1"
-                line += f' group-title="{channel["group"]}"'
-                if channel['logo']:
-                    line += f' tvg-logo="{channel["logo"]}"'
-                line += f',{channel["name"]}\n'
-                line += f"{channel['url']}\n"
-                f.write(line)
+try:
+    with open("live_sources.m3u", "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        f.write(f"# 电视直播源 - 优化分类版\n")
+        f.write(f"# 更新时间(北京时间): {timestamp}\n")
+        f.write(f"# 频道总数: {len(all_channels)}\n")
+        f.write(f"# 数据源: {len(sources)}\n\n")
+        
+        # 按指定顺序写入分类
+        for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
+            cat_channels = categories[category]
+            if cat_channels:
+                f.write(f"# {category} ({len(cat_channels)}个频道)\n")
+                for channel in sorted(cat_channels, key=lambda x: x['name']):
+                    line = f"#EXTINF:-1"
+                    line += f' group-title="{channel["group"]}"'
+                    if channel['logo']:
+                        line += f' tvg-logo="{channel["logo"]}"'
+                    line += f',{channel["name"]}\n'
+                    line += f"{channel['url']}\n"
+                    f.write(line)
+    print("  ✅ live_sources.m3u 生成成功")
+except Exception as e:
+    print(f"  ❌ 生成live_sources.m3u失败: {e}")
 
 # 3. 生成分类M3U文件
 print("📄 生成分类文件...")
 for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
     cat_channels = categories[category]
     if cat_channels:
-        filename = f"categories/{category}.m3u"
-        with open(filename, "w", encoding="utf-8") as f:
-            f.write("#EXTM3U\n")
-            f.write(f"# {category}频道列表\n")
-            f.write(f"# 更新时间(北京时间): {timestamp}\n")
-            f.write(f"# 频道数量: {len(cat_channels)}\n\n")
-            
-            for channel in sorted(cat_channels, key=lambda x: x['name']):
-                line = f"#EXTINF:-1"
-                line += f' group-title="{channel["group"]}"'
-                if channel['logo']:
-                    line += f' tvg-logo="{channel["logo"]}"'
-                line += f',{channel["name"]}\n'
-                line += f"{channel['url']}\n"
-                f.write(line)
-        print(f"  ✅ 生成 {filename}")
+        try:
+            filename = f"categories/{category}.m3u"
+            with open(filename, "w", encoding="utf-8") as f:
+                f.write("#EXTM3U\n")
+                f.write(f"# {category}频道列表\n")
+                f.write(f"# 更新时间(北京时间): {timestamp}\n")
+                f.write(f"# 频道数量: {len(cat_channels)}\n\n")
+                
+                for channel in sorted(cat_channels, key=lambda x: x['name']):
+                    line = f"#EXTINF:-1"
+                    line += f' group-title="{channel["group"]}"'
+                    if channel['logo']:
+                        line += f' tvg-logo="{channel["logo"]}"'
+                    line += f',{channel["name"]}\n'
+                    line += f"{channel['url']}\n"
+                    f.write(line)
+            print(f"  ✅ 生成 {filename}")
+        except Exception as e:
+            print(f"  ❌ 生成 {filename} 失败: {e}")
 
-# 4. 生成JSON文件
+# 4. 生成JSON文件 - 修复这里的问题
 print("📄 生成 channels.json...")
-channel_list = []
-for channel in sorted(all_channels, key=lambda x: x['name']):
-    channel_list.append({
-        'name': channel['name'],
-        'url': channel['url'],
-        'category': channel['group'],
-        'logo': channel['logo']
-    })
-
-with open("channels.json", "w", encoding="utf-8") as f:
-    json.dump({
-        'last_updated': timestamp,
-        'total_channels': len(all_channels),
-        'sources_count': len(sources),
-        'category_stats': category_stats,
+try:
+    # 创建可JSON序列化的频道列表
+    channel_list = []
+    for channel in sorted(all_channels, key=lambda x: x['name']):
+        # 确保所有字段都是可序列化的
+        channel_data = {
+            'name': str(channel['name']) if channel['name'] else "",
+            'url': str(channel['url']) if channel['url'] else "",
+            'category': str(channel['group']) if channel['group'] else "其他台",
+            'logo': str(channel['logo']) if channel['logo'] else ""
+        }
+        channel_list.append(channel_data)
+    
+    # 创建JSON数据
+    json_data = {
+        'last_updated': str(timestamp),
+        'total_channels': int(len(all_channels)),
+        'sources_count': int(len(sources)),
+        'category_stats': {str(k): int(v) for k, v in category_stats.items()},
         'channels': channel_list
-    }, f, ensure_ascii=False, indent=2)
+    }
+    
+    # 写入文件
+    with open("channels.json", "w", encoding="utf-8") as f:
+        json.dump(json_data, f, ensure_ascii=False, indent=2)
+    print("  ✅ channels.json 生成成功")
+except Exception as e:
+    print(f"  ❌ 生成channels.json失败: {e}")
+    import traceback
+    traceback.print_exc()
 
 # 5. 生成HTML文件
 print("📄 生成 index.html...")
-html_content = f"""<!DOCTYPE html>
+try:
+    # 构建HTML内容
+    html_content = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>电视直播源 - 优化分类版</title>
     <style>
-        :root {{
-            --cctv-color: #e60012;
-            --satellite-color: #0078d7;
-            --local-color: #107c10;
-            --kids-color: #ff8c00;
-            --variety-color: #9a0089;
-            --hongkong-color: #e3008c;
-            --sports-color: #0078d4;
-            --movie-color: #68217a;
-            --other-color: #666666;
-        }}
-        
         body {{
-            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: #f5f5f5;
-            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 20px;
             line-height: 1.6;
         }}
-        
-        .container {{
-            max-width: 1400px;
-            margin: 0 auto;
-        }}
-        
         header {{
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #4CAF50;
             color: white;
-            padding: 40px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }}
-        
-        h1 {{
-            margin: 0;
-            font-size: 2.8rem;
-            font-weight: 300;
-        }}
-        
-        .subtitle {{
-            margin: 15px 0 0 0;
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }}
-        
-        .stats-grid {{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }}
-        
-        .stat-card {{
-            background: white;
             padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-        }}
-        
-        .stat-card:hover {{
-            transform: translateY(-5px);
-        }}
-        
-        .stat-number {{
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }}
-        
-        .cctv-stat {{ color: var(--cctv-color); }}
-        .satellite-stat {{ color: var(--satellite-color); }}
-        .local-stat {{ color: var(--local-color); }}
-        .kids-stat {{ color: var(--kids-color); }}
-        .variety-stat {{ color: var(--variety-color); }}
-        .hongkong-stat {{ color: var(--hongkong-color); }}
-        .sports-stat {{ color: var(--sports-color); }}
-        .movie-stat {{ color: var(--movie-color); }}
-        .other-stat {{ color: var(--other-color); }}
-        
-        .category-grid {{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }}
-        
-        .category-card {{
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-        }}
-        
-        .category-card:hover {{
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
-        }}
-        
-        .category-header {{
-            padding: 20px;
-            color: white;
-            font-size: 1.3rem;
-            font-weight: 500;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }}
-        
-        .cctv-header {{ background: var(--cctv-color); }}
-        .satellite-header {{ background: var(--satellite-color); }}
-        .local-header {{ background: var(--local-color); }}
-        .kids-header {{ background: var(--kids-color); }}
-        .variety-header {{ background: var(--variety-color); }}
-        .hongkong-header {{ background: var(--hongkong-color); }}
-        .sports-header {{ background: var(--sports-color); }}
-        .movie-header {{ background: var(--movie-color); }}
-        .other-header {{ background: var(--other-color); }}
-        
-        .channel-count {{
-            background: rgba(255,255,255,0.2);
-            padding: 5px 12px;
-            border-radius: 15px;
-            font-size: 0.9rem;
-        }}
-        
-        .channel-list {{
-            max-height: 400px;
-            overflow-y: auto;
-            padding: 15px;
-        }}
-        
-        .channel-item {{
-            padding: 12px 15px;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background 0.2s ease;
-        }}
-        
-        .channel-item:hover {{
-            background: #f8f9fa;
-        }}
-        
-        .channel-item:last-child {{
-            border-bottom: none;
-        }}
-        
-        .channel-name {{
-            font-weight: 500;
-            flex-grow: 1;
-            margin-right: 15px;
-            word-break: break-word;
-        }}
-        
-        .play-btn {{
-            background: #48bb78;
-            color: white;
-            border: none;
-            padding: 6px 15px;
             border-radius: 5px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: background 0.3s ease;
-            white-space: nowrap;
+            margin-bottom: 20px;
         }}
-        
-        .play-btn:hover {{
-            background: #38a169;
+        .stats {{
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
         }}
-        
-        .download-section {{
+        .category {{
+            margin: 15px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }}
+        .channel {{
+            padding: 8px;
+            margin: 5px 0;
             background: white;
-            padding: 30px;
-            border-radius: 15px;
-            margin: 40px 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 4px solid #4CAF50;
         }}
-        
-        .download-buttons {{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-        }}
-        
         .btn {{
-            display: inline-flex;
-            align-items: center;
-            padding: 12px 25px;
-            background: #667eea;
+            display: inline-block;
+            background: #2196F3;
             color: white;
+            padding: 10px 15px;
             text-decoration: none;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: all 0.3s ease;
+            border-radius: 5px;
+            margin: 5px;
         }}
-        
         .btn:hover {{
-            background: #5a67d8;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            background: #1976D2;
         }}
-        
-        footer {{
-            margin-top: 50px;
-            padding: 30px;
-            background: white;
-            border-radius: 15px;
-            text-align: center;
-            color: #666;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }}
-        
-        @media (max-width: 768px) {{
-            .category-grid {{
-                grid-template-columns: 1fr;
-            }}
-            
-            .stats-grid {{
-                grid-template-columns: 1fr;
-            }}
-            
-            .download-buttons {{
-                flex-direction: column;
-            }}
-            
-            .btn {{
-                width: 100%;
-                justify-content: center;
-            }}
-            
-            h1 {{
-                font-size: 2rem;
-            }}
-        }}
+        .btn-cctv {{ background: #e60012; }}
+        .btn-satellite {{ background: #0078d7; }}
+        .btn-local {{ background: #107c10; }}
+        .btn-kids {{ background: #ff8c00; }}
+        .btn-variety {{ background: #9a0089; }}
+        .btn-hk {{ background: #e3008c; }}
+        .btn-sports {{ background: #0078d4; }}
+        .btn-movie {{ background: #68217a; }}
+        .btn-other {{ background: #666666; }}
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>📺 电视直播源</h1>
-            <p class="subtitle">优化分类版 | 自动收集整理 | 每日更新</p>
-            <div style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
-                <p>更新时间(北京时间): {timestamp}</p>
-            </div>
-        </header>
-        
-        <div class="stats-grid">
-"""
-
-# 生成统计卡片
-for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
-    count = len(categories[category])
-    if count > 0:
-        html_content += f"""            <div class="stat-card">
-                <div class="stat-number {category.lower()}-stat">{count}</div>
-                <div>{category}</div>
-            </div>
-"""
-
-html_content += f"""        </div>
-        
-        <div class="download-section">
-            <h2 style="color: #2c3e50; margin-bottom: 10px;">📥 下载播放列表</h2>
-            <p style="color: #666; margin-bottom: 20px;">选择需要的播放列表文件下载</p>
-            
-            <div class="download-buttons">
-                <a href="live_sources.m3u" class="btn">
-                    <span style="margin-right: 10px;">📺</span>
-                    完整列表 (所有{len(all_channels)}个频道)
-                </a>
-                <a href="channels.json" class="btn">
-                    <span style="margin-right: 10px;">📊</span>
-                    JSON 数据文件
-                </a>
-            </div>
-            
-            <h3 style="color: #2c3e50; margin: 30px 0 15px 0;">📂 分类列表下载</h3>
-            <div class="download-buttons">
-"""
-
-# 生成分类下载按钮
-for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
-    count = len(categories[category])
-    if count > 0:
-        html_content += f"""                <a href="categories/{category}.m3u" class="btn" style="background: var(--{category.lower()}-color);">
-                    <span style="margin-right: 8px;">📺</span>
-                    {category} ({count})
-                </a>
-"""
-
-html_content += """            </div>
-        </div>
-        
-        <h2 style="color: #2c3e50; margin-bottom: 20px;">🎯 频道分类浏览</h2>
-        <div class="category-grid">
-"""
-
-# 生成分类卡片
-for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
-    cat_channels = categories[category]
-    if cat_channels:
-        html_content += f"""            <div class="category-card">
-                <div class="category-header {category.lower()}-header">
-                    <span>{category}</span>
-                    <span class="channel-count">{len(cat_channels)} 个频道</span>
-                </div>
-                <div class="channel-list">
-"""
-        
-        for channel in sorted(cat_channels[:15], key=lambda x: x['name']):
-            html_content += f"""                    <div class="channel-item">
-                        <span class="channel-name">{channel['name']}</span>
-                        <button class="play-btn" onclick="playChannel('{channel['url']}')">播放</button>
-                    </div>
-"""
-        
-        if len(cat_channels) > 15:
-            html_content += f"""                    <div class="channel-item" style="justify-content: center; color: #666; font-style: italic;">
-                        还有 {len(cat_channels) - 15} 个频道...
-                    </div>
-"""
-        
-        html_content += """                </div>
-            </div>
-"""
-
-html_content += f"""        </div>
-        
-        <footer>
-            <p>🔄 本项目自动更新于 GitHub Actions</p>
-            <p>📅 最后更新时间(北京时间): {timestamp}</p>
-            <p>🎮 支持播放器: VLC、PotPlayer、IINA、nPlayer、Kodi 等</p>
-            <p style="margin-top: 20px; font-size: 0.9rem; color: #999;">
-                💡 提示: 点击"播放"按钮将在新窗口打开直播流，需要播放器支持流媒体协议
-            </p>
-            <div id="current-time" style="margin-top: 15px; font-size: 0.9rem; color: #888;"></div>
-        </footer>
+    <header>
+        <h1>📺 电视直播源 - 优化分类版</h1>
+        <p>自动收集整理的电视直播频道</p>
+        <p>更新时间(北京时间): {timestamp}</p>
+    </header>
+    
+    <div class="stats">
+        <p><strong>频道总数:</strong> {len(all_channels)}</p>
+        <p><strong>数据源:</strong> {len(sources)} 个</p>
     </div>
+    
+    <div>
+        <h3>📥 下载播放列表</h3>
+        <a href="live_sources.m3u" class="btn">完整列表 (所有频道)</a>
+        <a href="channels.json" class="btn">JSON 数据</a>
+    </div>
+    
+    <div>
+        <h3>📂 分类列表下载</h3>
+"""
+    
+    # 添加分类下载按钮
+    for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
+        count = len(categories[category])
+        if count > 0:
+            btn_class = f"btn-{category.lower().replace('台', '')}"
+            html_content += f'        <a href="categories/{category}.m3u" class="btn {btn_class}">{category} ({count})</a>\n'
+    
+    html_content += """    </div>
+    
+    <h3>📺 频道分类浏览</h3>
+"""
+    
+    # 添加分类内容
+    for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
+        cat_channels = categories[category]
+        if cat_channels:
+            html_content += f"""    <div class="category">
+        <h4>{category} ({len(cat_channels)}个频道)</h4>
+"""
+            
+            for channel in sorted(cat_channels[:10], key=lambda x: x['name']):
+                safe_url = channel['url'].replace("'", "\\'").replace('"', '\\"')
+                html_content += f"""        <div class="channel">
+            <strong>{channel['name']}</strong>
+            <button onclick="playChannel('{safe_url}')" style="margin-left: 10px; padding: 5px 10px; background: #4CAF50; color: white; border: none; border-radius: 3px; cursor: pointer;">播放</button>
+        </div>
+"""
+            
+            if len(cat_channels) > 10:
+                html_content += f"""        <p>... 还有 {len(cat_channels) - 10} 个频道</p>
+"""
+            
+            html_content += "    </div>\n"
+    
+    html_content += f"""
+    <footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;">
+        <p>自动更新于 GitHub Actions | 最后更新(北京时间): {timestamp}</p>
+        <p>使用 VLC、PotPlayer 等播放器打开 M3U 文件播放</p>
+    </footer>
     
     <script>
         function playChannel(url) {{
-            if (confirm('是否在播放器中打开此直播源？\\n\\nURL: ' + url)) {{
+            if (confirm('是否在播放器中打开此直播源？')) {{
                 window.open(url, '_blank');
             }}
         }}
@@ -706,54 +496,43 @@ html_content += f"""        </div>
         // 显示当前北京时间
         function updateBeijingTime() {{
             const now = new Date();
-            // 转换为北京时间 (UTC+8)
             const beijingTime = new Date(now.getTime() + 8 * 60 * 60 * 1000);
-            
-            // 格式化时间
             const year = beijingTime.getUTCFullYear();
             const month = String(beijingTime.getUTCMonth() + 1).padStart(2, '0');
             const day = String(beijingTime.getUTCDate()).padStart(2, '0');
             const hours = String(beijingTime.getUTCHours()).padStart(2, '0');
             const minutes = String(beijingTime.getUTCMinutes()).padStart(2, '0');
             const seconds = String(beijingTime.getUTCSeconds()).padStart(2, '0');
+            const timeString = `\{{year}}-\{{month}}-\{{day}} \{{hours}}:\{{minutes}}:\{{seconds}}`;
             
-            const timeString = `\${year}-\${month}-\${day} \${hours}:\${minutes}:\${seconds}`;
+            const timeElement = document.createElement('p');
+            timeElement.innerHTML = `当前北京时间: \${timeString}`;
+            timeElement.style.textAlign = 'center';
+            timeElement.style.color = '#666';
+            timeElement.style.marginTop = '10px';
             
-            const timeElement = document.getElementById('current-time');
-            if (timeElement) {{
-                timeElement.innerHTML = `🕐 当前北京时间: \${timeString}`;
+            const footer = document.querySelector('footer');
+            if (footer) {{
+                footer.appendChild(timeElement);
             }}
         }}
         
-        // 每秒更新一次时间
-        setInterval(updateBeijingTime, 1000);
-        updateBeijingTime();
-        
-        // 平滑滚动
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {{
-            anchor.addEventListener('click', function (e) {{
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {{
-                    targetElement.scrollIntoView({{
-                        behavior: 'smooth',
-                        block: 'start'
-                    }});
-                }}
-            }});
-        }});
+        // 页面加载完成后更新时间
+        document.addEventListener('DOMContentLoaded', updateBeijingTime);
     </script>
 </body>
 </html>"""
-
-with open("index.html", "w", encoding="utf-8") as f:
-    f.write(html_content)
+    
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(html_content)
+    print("  ✅ index.html 生成成功")
+except Exception as e:
+    print(f"  ❌ 生成index.html失败: {e}")
 
 # 6. 生成README
 print("📄 生成 README.md...")
-readme_content = f"""# 📺 电视直播源项目 - 优化分类版
+try:
+    readme_content = f"""# 📺 电视直播源项目 - 优化分类版
 
 自动收集整理的电视直播源，按9大分类整理。
 
@@ -767,105 +546,65 @@ readme_content = f"""# 📺 电视直播源项目 - 优化分类版
 | 分类 | 频道数量 | 说明 |
 |------|----------|------|
 """
-
-# 添加分类统计表格
-for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
-    count = len(categories[category])
-    if count > 0:
-        description = {
-            "央视": "中央电视台及CCTV系列频道",
-            "卫视": "各省市卫星电视台",
-            "地方台": "地方新闻、都市、民生频道",
-            "少儿台": "少儿、卡通、动漫频道",
-            "综艺台": "综艺、娱乐、文艺频道",
-            "港澳台": "香港、澳门、台湾地区频道",
-            "体育台": "体育赛事、足球、篮球等频道",
-            "影视台": "电影、影院、影视剧频道",
-            "其他台": "未分类的频道"
-        }.get(category, "")
-        
-        readme_content += f"| {category} | {count} | {description} |\n"
-
-readme_content += f"""
+    
+    # 添加分类统计表格
+    for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
+        count = len(categories[category])
+        if count > 0:
+            description = {
+                "央视": "中央电视台及CCTV系列频道",
+                "卫视": "各省市卫星电视台",
+                "地方台": "地方新闻、都市、民生频道",
+                "少儿台": "少儿、卡通、动漫频道",
+                "综艺台": "综艺、娱乐、文艺频道",
+                "港澳台": "香港、澳门、台湾地区频道",
+                "体育台": "体育赛事、足球、篮球等频道",
+                "影视台": "电影、影院、影视剧频道",
+                "其他台": "未分类的频道"
+            }.get(category, "")
+            
+            readme_content += f"| {category} | {count} | {description} |\n"
+    
+    readme_content += f"""
 | **总计** | **{len(all_channels)}** | **所有频道** |
 
 ## 📁 文件列表
 
-| 文件 | 描述 | 下载 |
-|------|------|------|
-| [live_sources.m3u](live_sources.m3u) | 完整的直播源文件 | [下载](live_sources.m3u) |
-| [channels.json](channels.json) | 频道数据(JSON格式) | [下载](channels.json) |
-| [index.html](index.html) | 网页播放界面 | [查看](index.html) |
-| [sources.txt](sources.txt) | 自定义源列表 | [编辑](sources.txt) |
-
-## 📂 分类文件
-
-进入 [categories/](categories/) 目录下载分类播放列表：
-
-"""
-
-for category in ["央视", "卫视", "地方台", "少儿台", "综艺台", "港澳台", "体育台", "影视台", "其他台"]:
-    count = len(categories[category])
-    if count > 0:
-        readme_content += f"- [{category}.m3u](categories/{category}.m3u) - {count} 个频道\n"
-
-readme_content += """
+| 文件 | 描述 |
+|------|------|
+| [live_sources.m3u](live_sources.m3u) | 完整的直播源文件 |
+| [channels.json](channels.json) | 频道数据(JSON格式) |
+| [index.html](index.html) | 网页播放界面 |
+| [sources.txt](sources.txt) | 自定义源列表 |
 
 ## 🚀 使用方法
 
-### 快速开始
-1. 下载 [live_sources.m3u](live_sources.m3u) 文件
-2. 用播放器打开 (支持VLC、PotPlayer、IINA等)
+1. 下载 `live_sources.m3u` 文件
+2. 使用支持M3U格式的播放器打开 (VLC、PotPlayer、IINA等)
 3. 选择频道观看
-
-### 按分类使用
-1. 进入 [categories/](categories/) 目录
-2. 下载需要的分类文件 (如`央视.m3u`)
-3. 用播放器打开
-
-### 在线查看
-访问 [index.html](index.html) 在线浏览所有频道
 
 ## ⚙️ 自定义配置
 
-编辑 `sources.txt` 文件可以添加更多直播源URL，每行一个。
+编辑 `sources.txt` 文件可以添加更多直播源URL。
 
 ## ⏰ 自动更新
 
-- **定时更新**: 每天UTC 18:00（北京时间凌晨2点）自动运行
-- **手动触发**: 在GitHub Actions页面手动运行工作流
-- **源更新触发**: 修改 `sources.txt` 后自动触发
-
-## 🔧 分类规则
-
-本项目使用智能分类规则，自动将频道分为9大类：
-1. **央视**: CCTV系列、中央电视台
-2. **卫视**: 各省市卫星电视台
-3. **地方台**: 地方新闻、都市频道
-4. **少儿台**: 少儿、卡通、动漫频道
-5. **综艺台**: 综艺、娱乐、文艺频道
-6. **港澳台**: 香港、澳门、台湾地区频道
-7. **体育台**: 体育赛事频道
-8. **影视台**: 电影、影视剧频道
-9. **其他台**: 未分类频道
-
-## ⚠️ 免责声明
-
-本项目的直播源来自公开网络，仅用于学习和测试。
-请遵守当地法律法规，尊重版权。
+每天自动更新一次。
 
 ---
 *自动生成于 {timestamp}*
 """
+    
+    with open("README.md", "w", encoding="utf-8") as f:
+        f.write(readme_content)
+    print("  ✅ README.md 生成成功")
+except Exception as e:
+    print(f"  ❌ 生成README.md失败: {e}")
 
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-print("\n✅ 所有文件生成完成！")
-print(f"📁 生成的文件:")
-print(f"  - live_sources.m3u (主播放列表)")
-print(f"  - channels.json (频道数据)")
-print(f"  - index.html (网页界面)")
-print(f"  - README.md (说明文档)")
-print(f"  - categories/ (分类播放列表)")
-print(f"\n✨ 脚本执行成功！")
+print(f"\n✅ 脚本执行完成！")
+print(f"📁 已生成的文件:")
+print(f"  - live_sources.m3u")
+print(f"  - channels.json")  
+print(f"  - index.html")
+print(f"  - README.md")
+print(f"  - categories/*.m3u")
