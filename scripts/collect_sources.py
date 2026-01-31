@@ -75,7 +75,7 @@ if len(sources) == 0:
 
 # 黑名单管理
 BLACKLIST_FILE = "blacklist.txt"
-SPEED_TEST_TIMEOUT = 6  # 6秒超时
+SPEED_TEST_TIMEOUT = 10  # 10秒超时
 MAX_WORKERS = 20  # 并发测试线程数
 
 # IPv6检测函数
