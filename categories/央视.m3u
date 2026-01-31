@@ -1,6 +1,6 @@
 #EXTM3U
 # 央视频道列表（IPv6优先多源合并版，带黑名单过滤）
-# 更新时间(北京时间): 2026-01-31 15:49:55
+# 更新时间(北京时间): 2026-01-31 15:53:52
 # 电视台数量: 25
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤黑名单慢速源（响应时间 > 10秒）
@@ -10,13 +10,13 @@ https://stream1.freetv.fun/9c278a43d5bf7e515412f079507a71cfb8a263ff4938b30757880
 #EXTINF:-1 tvg-name="CCTV-2 财经" group-title="央视" tvg-logo="https://tb.zbds.top/logo/CCTV2.png" tvg-quality="高清",CCTV-2 财经 [4IPv4]
 https://stream1.freetv.fun/409b4584ca2443a28b43c60a3d77ad50368d96bed0ca5a2d1f3a4b2e57c39204.m3u8|https://stream1.freetv.fun/c63e00b6f6e11db0e25eba94d5c4c63b4af30261838b8c91652553fb0f8e7b8a.m3u8|http://58.57.40.22:9901/tsfile/live/1001_1.m3u8|http://112.27.235.94:8000/hls/2/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-3 综艺" group-title="央视" tvg-logo="https://tb.zbds.top/logo/CCTV3.png",CCTV-3 综艺 [3IPv4]
-https://stream1.freetv.fun/511fecba14f90da585c90ffce8cbcad4faaa1dc7f3cb9b70b74ac50451caaec0.ctv|http://58.57.40.22:9901/tsfile/live/1002_1.m3u8|http://112.27.235.94:8000/hls/3/index.m3u8
+http://58.57.40.22:9901/tsfile/live/1002_1.m3u8|http://112.27.235.94:8000/hls/3/index.m3u8|https://stream1.freetv.fun/511fecba14f90da585c90ffce8cbcad4faaa1dc7f3cb9b70b74ac50451caaec0.ctv
 #EXTINF:-1 tvg-name="CCTV-4 中文国际" group-title="央视" tvg-logo="CCTV4.png" tvg-quality="高清",CCTV-4 中文国际 [7IPv4]
 https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8|https://www.freetv.top/migu/631780421.m3u8?migutoken=fefc6a44400a0dd448699ae0ce3d6e2c5a0f49b8d48adb36e747c4fbab039337eb3244f9951acbddaf26b7bf51597a7d1b43c8845e67fd5914ece875dcad325bb388200bc0f12fdff727d03e2d|https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8|https://stream1.freetv.fun/1927200d910f3087e569a0050d84b50158d3c1e2d928ad116119bb9eafe8ac9f.m3u8|https://www.youtube.com/channel/UC4K_LI-Tn3-LshNgG0-YypQ/live|http://58.57.40.22:9901/tsfile/live/1003_1.m3u8|http://112.27.235.94:8000/hls/4/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-5 体育" group-title="央视" tvg-logo="CCTV5.png",CCTV-5 体育 [8IPv4]
-https://stream1.freetv.fun/61df3be1490c927a746d671e52c9f9cb197fba5a08184c147a68eb80f84c4824.m3u8|https://stream1.freetv.fun/9e10502ceb683a8f5f354720cad6154b8bb0d8d590cb9859ea71203d9542c86f.m3u8|https://stream1.freetv.fun/46118cd0438ddbb2d6f349706132ced2104495cf4cf1019ef84d89465e048ca6.m3u8|https://stream1.freetv.fun/bec6c07801cdca35eaf31b3a21b1fe0dfd5018530eb96c08dc9baf557d5db3b4.ctv|http://58.57.40.22:9901/tsfile/live/1004_1.m3u8|http://112.27.235.94:8000/hls/5/index.m3u8|https://www.freetv.top/migu/641886683.m3u8?migutoken=3e5c01f93922de8d1c940fe15bb47349b27e8f7a2e624dde1a83dff3b2a80f58b7624151a3a4d00488edee34f202818557340903382fae02bb754084eb942bd50e59061df36fab62fb5b908903|https://stream1.freetv.fun/a171c801b82d29b636aeef3cf0f2785c1d2d3e3cb80e51788990999a34ae51d0.ctv
-#EXTINF:-1 tvg-name="CCTV-5+ 体育赛事" group-title="央视" tvg-logo="CCTV5+.png",CCTV-5+ 体育赛事 [3IPv4]
-https://www.freetv.top/migu/641886773.m3u8?migutoken=03a1b82e35e58cd89a95034ecb29e77e50493397000ec2b1e4d1ce59af01e6420d6dbc068c8230ec03be3a35a20eed8714e0959e3570a08713a7a2e8d86085eabf8f1aa85744c80c38343988b2|http://58.57.40.22:9901/tsfile/live/1005_1.m3u8|http://112.27.235.94:8000/hls/6/index.m3u8
+https://www.freetv.top/migu/641886683.m3u8?migutoken=3e5c01f93922de8d1c940fe15bb47349b27e8f7a2e624dde1a83dff3b2a80f58b7624151a3a4d00488edee34f202818557340903382fae02bb754084eb942bd50e59061df36fab62fb5b908903|https://stream1.freetv.fun/61df3be1490c927a746d671e52c9f9cb197fba5a08184c147a68eb80f84c4824.m3u8|https://stream1.freetv.fun/9e10502ceb683a8f5f354720cad6154b8bb0d8d590cb9859ea71203d9542c86f.m3u8|https://stream1.freetv.fun/46118cd0438ddbb2d6f349706132ced2104495cf4cf1019ef84d89465e048ca6.m3u8|https://stream1.freetv.fun/bec6c07801cdca35eaf31b3a21b1fe0dfd5018530eb96c08dc9baf557d5db3b4.ctv|http://112.27.235.94:8000/hls/5/index.m3u8|https://stream1.freetv.fun/a171c801b82d29b636aeef3cf0f2785c1d2d3e3cb80e51788990999a34ae51d0.ctv|http://58.57.40.22:9901/tsfile/live/1004_1.m3u8
+#EXTINF:-1 tvg-name="CCTV-5+ 体育赛事" group-title="央视" tvg-logo="https://tb.zbds.top/logo/CCTV5+.png",CCTV-5+ 体育赛事 [2IPv4]
+http://58.57.40.22:9901/tsfile/live/1005_1.m3u8|http://112.27.235.94:8000/hls/6/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-6 电影" group-title="央视" tvg-logo="https://tb.zbds.top/logo/CCTV6.png",CCTV-6 电影 [2IPv4]
 http://58.57.40.22:9901/tsfile/live/1006_1.m3u8|http://112.27.235.94:8000/hls/7/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-7 国防军事" group-title="央视" tvg-logo="CCTV7.png",CCTV-7 国防军事 [4IPv4]
@@ -33,8 +33,8 @@ https://stream1.freetv.fun/f67f890e2385fb32c86102a54aaff55cceca4dcf566e976e1d286
 https://www.freetv.top/migu/673168185.m3u8?migutoken=37acadb43b1d7932b0a1e8a4f2d01a06b42a10c31f3ccb417bae200ac3028f30a8110509f2cd6cd130aee4b21c85693aa49817f3381e4d28e140d8db1a20b6fecea22fec17a70ff1341efe6081|https://stream1.freetv.fun/6f4520a649957c1068efd36c848b994de2752266a929a4f9a50dba84b9baf9b7.m3u8|http://58.57.40.22:9901/tsfile/live/1012_1.m3u8|http://112.27.235.94:8000/hls/13/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-13 新闻" group-title="央视" tvg-logo="CCTV13.png" tvg-quality="高清",CCTV-13 新闻 [7IPv4]
 https://stream1.freetv.fun/d6dfc8a6fe6500359a1505a589d61d16f4bcc311e2549442a88dd1aca1fa444e.ctv|https://ldncctvwbcdcnc.v.wscdns.com/ldncctvwbcd/cdrmldcctv13_1/index.m3u8|https://event.pull.hebtv.com/jishi/cp1.m3u8|https://www.freetv.top/migu/608807423.m3u8?migutoken=ac19a58805588401a8e818b6dd00df9b327912af3611ba95f89235e7020821668a2b6dc65ccc3904967da59d0a9742565c56ea582baf8915d068035054818ef0f369dab64705a6a7f7120529ec|http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8|http://58.57.40.22:9901/tsfile/live/1013_1.m3u8|http://112.27.235.94:8000/hls/14/index.m3u8
-#EXTINF:-1 tvg-name="CCTV-14 少儿" group-title="央视" tvg-logo="CCTV14.png" tvg-ipv6="true",CCTV-14 少儿 [1IPv6+3IPv4]
-https://event.pull.hebtv.com/jishi/cp2.m3u8#rtsp://103.251.96.71/PLTV/88888888/224/3221225783/10000100000000060000000000726027_0.smil?icpid=SSPID&amp;accounttype=1&amp;limitflux=-1&amp;limitdur=-1&amp;accountinfo=:20240213104135|https://www.freetv.top/migu/624878440.m3u8?migutoken=239edad94ac0bbff14f123c7f8996ed7639110bd6cf64ec8ba8cf85842224956d452ec8b683385cb27f8a7685224a03e3aa4d914b8fe33249da9df699351b105c795452d03f2be0a1f1e39adb0|http://58.57.40.22:9901/tsfile/live/1014_1.m3u8|http://112.27.235.94:8000/hls/15/index.m3u8
+#EXTINF:-1 tvg-name="CCTV-14 少儿" group-title="央视" tvg-logo="CCTV14.png" tvg-ipv6="true",CCTV-14 少儿 [1IPv6+2IPv4]
+https://event.pull.hebtv.com/jishi/cp2.m3u8#rtsp://103.251.96.71/PLTV/88888888/224/3221225783/10000100000000060000000000726027_0.smil?icpid=SSPID&amp;accounttype=1&amp;limitflux=-1&amp;limitdur=-1&amp;accountinfo=:20240213104135|http://58.57.40.22:9901/tsfile/live/1014_1.m3u8|http://112.27.235.94:8000/hls/15/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-15 音乐" group-title="央视" tvg-logo="CCTV15.png",CCTV-15 音乐 [4IPv4]
 https://www.freetv.top/migu/673168223.m3u8?migutoken=4e8d5766579c6bef231494cabd07e5b49d965804790214280c9791e4c331fd90311cb62ea43d3a1899229bfa57be4afe5a567b32a6b78153fc9a9801e28a39435e078b48c211e71d6083519be4|https://stream1.freetv.fun/2c02ba7886ffaec4d28d5f9246f2bbf8dd89da8771f03f3bbbef49361b4cbb88.ctv|http://58.57.40.22:9901/tsfile/live/1015_1.m3u8|http://112.27.235.94:8000/hls/16/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-16 奥林匹克" group-title="央视" tvg-logo="https://tb.zbds.top/logo/CCTV16.png",CCTV-16 奥林匹克 [2IPv4]
