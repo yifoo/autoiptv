@@ -5,7 +5,7 @@
 
 # 黑名单管理
 BLACKLIST_FILE = "blacklist.txt"
-SPEED_TEST_TIMEOUT = 6  # 6秒超时
+SPEED_TEST_TIMEOUT = 10  # 6秒超时
 MAX_WORKERS = 20  # 并发测试线程数
 
 # 频道名称清理规则 - 深度精简
