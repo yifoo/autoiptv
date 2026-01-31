@@ -1,4 +1,5 @@
 #EXTM3U
+<<<<<<< HEAD
 # 辽宁省频道列表（IPv6优先多源合并版，智能测速过滤）
 # 更新时间(北京时间): 2026-01-31 17:43:39
 # 电视台数量: 7
@@ -19,3 +20,43 @@ https://stream1.freetv.fun/liao-zhu-sheng-huo-1.m3u8
 https://stream1.freetv.fun/liao-zhu-jing-ji-2.m3u8
 #EXTINF:-1 tvg-name="辽宁都市" group-title="辽宁省" tvg-logo="辽宁都市.png",辽宁都市 [2IPv4]
 https://stream1.freetv.fun/liao-zhu-du-shi-4.m3u8|https://stream1.freetv.fun/liao-zhu-du-shi-5.m3u8
+=======
+# 辽宁省频道列表（IPv6优先多源合并版）
+# 更新时间(北京时间): 2026-01-31 20:58:03
+# 电视台数量: 15
+# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 配置文件: config.txt
+# 黑名单功能: 禁用
+# 测速功能: 禁用
+
+#EXTINF:-1 tvg-name="辽宁之声" group-title="辽宁省" tvg-logo="https://live.fanmingming.com/radio/辽宁之声.png",辽宁之声 [1IPv4]
+https://satellitepull.cnr.cn/live/wxlnzhgb/playlist.m3u8
+#EXTINF:-1 tvg-name="辽宁乡村广播" group-title="辽宁省" tvg-logo="https://live.fanmingming.com/radio/辽宁乡村广播.png",辽宁乡村广播 [1IPv4]
+https://satellitepull.cnr.cn/live/wxlnxcgb/playlist.m3u8
+#EXTINF:-1 tvg-name="辽宁交通广播" group-title="辽宁省" tvg-logo="https://live.fanmingming.com/radio/辽宁交通广播.png",辽宁交通广播 [1IPv4]
+https://satellitepull.cnr.cn/live/wxlnjtgb/playlist.m3u8
+#EXTINF:-1 tvg-name="辽宁体育休闲" group-title="辽宁省",辽宁体育休闲 [1IPv4]
+http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/lntyxx/51/20251225/index.m3u8?msisdn=202601310402073bd6b996e948466c8409603b747de2b3&mdspid=&spid=600697&netType=0&sid=5910022329&pid=2028597139&timestamp=20260131040207&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=962067526&ParentNodeID=-99&assertID=5910022329&client_ip=218.28.233.106&SecurityKey=20260131040207&promotionId=&mvid=5900006790&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=4b52f16249a1defc254588c7e92f101f
+#EXTINF:-1 tvg-name="辽宁公共" group-title="辽宁省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531155932261297_92.jpg" tvg-quality="高清",辽宁公共 [7IPv4]
+https://stream1.freetv.fun/c847cb98e9c1a6e222395ceea5b23181ad7d7ac74bc5523ddb979b34c0dbd8ab.m3u8|https://stream1.freetv.fun/liao-zhu-gong-gong-2.m3u8|https://stream1.freetv.fun/liao-zhu-gong-gong-3.m3u8|http://120.76.248.139/live/bfgd/4200000077.m3u8|http://dassby.qqff.top:99/live/辽宁公共/index.m3u8|http://120.76.248.139/live/bfgd/4200000481.m3u8|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/lngg/51/20251225/index.m3u8?msisdn=20260131040212acea27e4ca7d43098976d3579ad6f82a&mdspid=&spid=600697&netType=0&sid=5910022323&pid=2028597139&timestamp=20260131040212&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=962045223&ParentNodeID=-99&assertID=5910022323&client_ip=218.28.233.106&SecurityKey=20260131040212&promotionId=&mvid=5900006791&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=ba979c0de4da4914e3a1b8e29ec06053
+#EXTINF:-1 tvg-name="辽宁北方" group-title="辽宁省" tvg-logo="辽宁北方.png",辽宁北方 [3IPv4]
+https://stream1.freetv.fun/liao-zhu-bei-fang-3.m3u8|http://120.76.248.139/live/bfgd/4200000071.m3u8|http://dassby.qqff.top:99/live/辽宁北方/index.m3u8
+#EXTINF:-1 tvg-name="辽宁影视" group-title="辽宁省" tvg-logo="https://live.fanmingming.cn/tv/辽宁影视.png",辽宁影视 [1IPv4]
+http://dassby.qqff.top:99/live/辽宁影视剧/index.m3u8
+#EXTINF:-1 tvg-name="辽宁影视剧" group-title="辽宁省" tvg-logo="辽宁影视剧.png",辽宁影视剧 [6IPv4]
+https://stream1.freetv.fun/liao-zhu-ying-shi-ju-1.m3u8|https://stream1.freetv.fun/liao-zhu-ying-shi-ju-2.m3u8|https://stream1.freetv.fun/liao-zhu-ying-shi-ju-3.m3u8|http://120.76.248.139/live/bfgd/4200000070.m3u8|http://dassby.qqff.top:99/live/辽宁影视剧/index.m3u8|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/lnysj/51/20251225/index.m3u8?msisdn=2026013104021324c8a3e94f924ac0a6023fca08153f14&mdspid=&spid=600697&netType=0&sid=5910022326&pid=2028597139&timestamp=20260131040213&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=962067517&ParentNodeID=-99&assertID=5910022326&client_ip=218.28.233.106&SecurityKey=20260131040213&promotionId=&mvid=5900006789&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=7ed470faeac9c9d3413611186db74739
+#EXTINF:-1 tvg-name="辽宁教育青少" group-title="辽宁省" tvg-logo="辽宁教育青少.png",辽宁教育青少 [3IPv4]
+https://stream1.freetv.fun/liao-zhu-jiao-yu-qing-shao-1.m3u8|http://120.76.248.139/live/bfgd/4200000075.m3u8|http://dassby.qqff.top:99/live/辽宁教育青少/index.m3u8
+#EXTINF:-1 tvg-name="辽宁生活" group-title="辽宁省" tvg-logo="辽宁生活.png",辽宁生活 [4IPv4]
+https://stream1.freetv.fun/liao-zhu-sheng-huo-1.m3u8|http://120.76.248.139/live/bfgd/4200000073.m3u8|http://dassby.qqff.top:99/live/辽宁生活/index.m3u8|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/lnsh/51/20251225/index.m3u8?msisdn=20260131040212c310ec4db0154ab4831112849c5631f4&mdspid=&spid=600697&netType=0&sid=5910022324&pid=2028597139&timestamp=20260131040212&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=962045226&ParentNodeID=-99&assertID=5910022324&client_ip=218.28.233.106&SecurityKey=20260131040212&promotionId=&mvid=5900006792&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=fbcffa6c452604f97f79d05662572b89
+#EXTINF:-1 tvg-name="辽宁经典广播" group-title="辽宁省" tvg-logo="https://live.fanmingming.com/radio/辽宁经典广播.png",辽宁经典广播 [1IPv4]
+https://satellitepull.cnr.cn/live/wxlnwygb/playlist.m3u8
+#EXTINF:-1 tvg-name="辽宁经济" group-title="辽宁省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531224301396432_61.jpg" tvg-quality="高清",辽宁经济 [6IPv4]
+https://stream1.freetv.fun/d028583b78595bb43aa892a541360c366b12245e8eb75148f347bd7ae2e3aeeb.m3u8|https://stream1.freetv.fun/liao-zhu-jing-ji-2.m3u8|http://120.76.248.139/live/bfgd/4200000076.m3u8|http://dassby.qqff.top:99/live/辽宁经济/index.m3u8|http://120.76.248.139/live/bfgd/4200000480.m3u8|http://ls.qingting.fm/live/23797.m3u8
+#EXTINF:-1 tvg-name="辽宁经济广播" group-title="辽宁省" tvg-logo="https://live.fanmingming.com/radio/辽宁经济广播.png",辽宁经济广播 [1IPv4]
+https://satellitepull.cnr.cn/live/wxlnjjtb/playlist.m3u8
+#EXTINF:-1 tvg-name="辽宁都市" group-title="辽宁省" tvg-logo="辽宁都市.png",辽宁都市 [6IPv4]
+https://ls.qingting.fm/live/1099/64k.m3u8|https://stream1.freetv.fun/liao-zhu-du-shi-4.m3u8|https://stream1.freetv.fun/liao-zhu-du-shi-5.m3u8|http://120.76.248.139/live/bfgd/4200000068.m3u8|http://dassby.qqff.top:99/live/辽宁都市/index.m3u8|http://120.76.248.139/live/bfgd/4200000610.m3u8
+#EXTINF:-1 tvg-name="辽宁青少" group-title="辽宁省" tvg-logo="https://live.fanmingming.cn/tv/辽宁青少.png",辽宁青少 [1IPv4]
+http://dassby.qqff.top:99/live/辽宁教育青少/index.m3u8
+>>>>>>> c686084 (支持配置黑名单)

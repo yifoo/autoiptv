@@ -1,0 +1,22 @@
+# 电视直播源收集脚本配置文件
+# 配置说明：
+# ENABLE_BLACKLIST: 是否启用黑名单功能 (true/false)
+# ENABLE_SPEED_TEST: 是否启用测速功能 (true/false)
+# CONNECT_TIMEOUT: 连接超时时间(秒)
+# STREAM_TIMEOUT: 流媒体测试超时时间(秒)
+# MIN_SPEED_SCORE: 最低速度评分(0-1)
+# MAX_WORKERS: 并发测试线程数
+
+# 功能开关
+ENABLE_BLACKLIST=false
+ENABLE_SPEED_TEST=false
+
+# 超时设置
+CONNECT_TIMEOUT=5
+STREAM_TIMEOUT=10
+
+# 评分阈值
+MIN_SPEED_SCORE=0.5
+
+# 并发设置
+MAX_WORKERS=20

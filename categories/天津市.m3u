@@ -1,0 +1,17 @@
+#EXTM3U
+# 天津市频道列表（IPv6优先多源合并版）
+# 更新时间(北京时间): 2026-01-31 20:58:03
+# 电视台数量: 4
+# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 配置文件: config.txt
+# 黑名单功能: 禁用
+# 测速功能: 禁用
+
+#EXTINF:-1 tvg-name="天津" group-title="天津市",天津 [1IPv4]
+https://newcntv.qcloudcdn.com/asp/hls/main/0303000a/3/default/5f03d9f1684241f696b25a19ffc44145/main.m3u8
+#EXTINF:-1 tvg-name="天津新闻" group-title="天津市" tvg-ipv6="true",天津新闻 [1IPv6+1IPv4]
+http://nas.hssvm.com:8888/udp/225.1.1.130:5002|http://111.160.17.2:59901/tsfile/live/0001_22.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="天津都市" group-title="天津市" tvg-ipv6="true",天津都市 [1IPv6]
+http://nas.hssvm.com:8888/udp/225.1.1.128:5002
+#EXTINF:-1 tvg-name="天津静海区广播•交通广播网" group-title="天津市" tvg-logo="https://pic.qingting.fm/2020/0701/20200701052348.png",天津静海区广播•交通广播网 [1IPv4]
+http://starfish.bj.aliyun.001.qingting.fm:8000/jingdianFM1008

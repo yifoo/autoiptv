@@ -2,7 +2,7 @@
 """
 电视直播源收集脚本 - 带黑名单的IPv6优先多源合并版
 功能：1. 频道名称精简 2. 同名电视台合并（IPv6优先）3. 支持源切换 4. 统一央视频道命名 5. 智能速度测试和黑名单过滤
-特点：改进测速算法，更精准识别可用直播源，减少误判
+特点：支持配置黑名单是否启用、电视线路是否测速，改进测速算法，更精准识别可用直播源
 分类：央视、卫视、地方台（按省份）、少儿台、综艺台、港澳台、体育台、影视台、景区频道、其他台
 播放器支持：PotPlayer、VLC、TiviMate、Kodi等支持多源切换的播放器
 """
@@ -18,13 +18,92 @@ import sys
 import ipaddress
 import concurrent.futures
 import threading
+from urllib.parse import urlparse
 
 print("=" * 70)
-print("电视直播源收集脚本 v7.1 - 智能测速版")
-print("功能：频道名称深度精简、统一央视频道命名、按省份分类地方台、IPv6优先排序、智能测速黑名单过滤")
-print("特点：改进测速算法，更精准识别可用直播源，减少误判")
+print("电视直播源收集脚本 v8.0 - 配置化智能测速版")
+print("功能：支持配置黑名单/测速开关，IPv6优先，智能测速过滤")
+print("特点：可通过配置文件控制黑名单和测速功能，减少误判")
 print("播放器：支持PotPlayer、VLC、TiviMate、Kodi等多源切换功能")
 print("=" * 70)
+
+# 配置文件路径
+CONFIG_FILE = "config.txt"
+
+def load_config():
+    """加载配置文件"""
+    config = {
+        'ENABLE_BLACKLIST': True,      # 是否启用黑名单
+        'ENABLE_SPEED_TEST': True,     # 是否启用测速
+        'CONNECT_TIMEOUT': 3,          # 连接超时时间
+        'STREAM_TIMEOUT': 10,          # 流媒体测试超时时间
+        'MIN_SPEED_SCORE': 0.5,        # 最低速度评分
+        'MAX_WORKERS': 20,             # 并发测试线程数
+    }
+    
+    if not os.path.exists(CONFIG_FILE):
+        print(f"📝 配置文件 {CONFIG_FILE} 不存在，使用默认配置")
+        print(f"   黑名单功能: {'启用' if config['ENABLE_BLACKLIST'] else '禁用'}")
+        print(f"   测速功能: {'启用' if config['ENABLE_SPEED_TEST'] else '禁用'}")
+        return config
+    
+    try:
+        with open(CONFIG_FILE, "r", encoding="utf-8") as f:
+            for line_num, line in enumerate(f, 1):
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                
+                if "=" in line:
+                    key, value = line.split("=", 1)
+                    key = key.strip()
+                    value = value.strip()
+                    
+                    # 布尔值处理
+                    if key in ['ENABLE_BLACKLIST', 'ENABLE_SPEED_TEST']:
+                        if value.lower() in ['true', 'yes', '1', 'on']:
+                            config[key] = True
+                        elif value.lower() in ['false', 'no', '0', 'off']:
+                            config[key] = False
+                        else:
+                            print(f"⚠️  配置第{line_num}行: {key} 值 '{value}' 无效，使用默认值 {config[key]}")
+                    
+                    # 整数处理
+                    elif key in ['CONNECT_TIMEOUT', 'STREAM_TIMEOUT', 'MAX_WORKERS']:
+                        try:
+                            config[key] = int(value)
+                        except ValueError:
+                            print(f"⚠️  配置第{line_num}行: {key} 值 '{value}' 不是有效整数，使用默认值 {config[key]}")
+                    
+                    # 浮点数处理
+                    elif key == 'MIN_SPEED_SCORE':
+                        try:
+                            val = float(value)
+                            if 0 <= val <= 1:
+                                config[key] = val
+                            else:
+                                print(f"⚠️  配置第{line_num}行: {key} 值 '{value}' 超出范围(0-1)，使用默认值 {config[key]}")
+                        except ValueError:
+                            print(f"⚠️  配置第{line_num}行: {key} 值 '{value}' 不是有效浮点数，使用默认值 {config[key]}")
+                    
+                    else:
+                        print(f"⚠️  配置第{line_num}行: 未知配置项 '{key}'，跳过")
+        
+        print(f"✅ 从 {CONFIG_FILE} 加载配置:")
+        print(f"   黑名单功能: {'启用' if config['ENABLE_BLACKLIST'] else '禁用'}")
+        print(f"   测速功能: {'启用' if config['ENABLE_SPEED_TEST'] else '禁用'}")
+        print(f"   连接超时: {config['CONNECT_TIMEOUT']}秒")
+        print(f"   流测试超时: {config['STREAM_TIMEOUT']}秒")
+        print(f"   最低评分: {config['MIN_SPEED_SCORE']}")
+        print(f"   并发线程: {config['MAX_WORKERS']}")
+        
+    except Exception as e:
+        print(f"❌ 读取配置文件失败: {e}，使用默认配置")
+    
+    return config
+
+# 加载配置
+config = load_config()
 
 def load_sources_from_file():
     """从sources.txt文件加载所有电视源"""
@@ -75,9 +154,6 @@ if len(sources) == 0:
 
 # 黑名单管理
 BLACKLIST_FILE = "blacklist.txt"
-CONNECT_TIMEOUT = 3  # 连接超时时间
-STREAM_TIMEOUT = 10  # 流媒体测试超时时间
-MAX_WORKERS = 20  # 并发测试线程数
 
 # 智能测速配置
 class SpeedTestConfig:
@@ -92,10 +168,6 @@ class SpeedTestConfig:
     CONNECTION_WEIGHT = 0.3  # 连接速度权重
     STABILITY_WEIGHT = 0.4   # 稳定性权重
     RESPONSE_WEIGHT = 0.3    # 响应权重
-    
-    # 黑名单阈值
-    MIN_SPEED_SCORE = 0.5  # 最低速度评分
-    MAX_CONNECT_TIME = 8.0  # 最大连接时间(秒)
     
     # IPv6宽容度
     IPV6_BONUS = 0.2  # IPv6源加分
@@ -139,10 +211,13 @@ def get_smart_timeout(url):
     """获取智能超时时间"""
     if is_ipv6_url(url):
         return SpeedTestConfig.IPV6_CONNECT_TIMEOUT
-    return CONNECT_TIMEOUT
+    return config['CONNECT_TIMEOUT']
 
-def test_m3u8_stream(url, timeout=STREAM_TIMEOUT):
+def test_m3u8_stream(url, timeout=None):
     """智能测试M3U8流媒体源"""
+    if timeout is None:
+        timeout = config['STREAM_TIMEOUT']
+    
     test_results = {
         'connect_time': None,
         'response_time': None,
@@ -238,7 +313,7 @@ def calculate_speed_score(test_results, url):
     
     # 1. 连接速度评分（30%）
     if test_results['connect_time'] is not None:
-        connect_score = 1.0 - min(test_results['connect_time'] / SpeedTestConfig.MAX_CONNECT_TIME, 1.0)
+        connect_score = 1.0 - min(test_results['connect_time'] / (config['CONNECT_TIMEOUT'] * 2), 1.0)
         score += connect_score * SpeedTestConfig.CONNECTION_WEIGHT
     
     # 2. 响应速度评分（30%）
@@ -356,8 +431,8 @@ def get_source_priority(source_info):
     if source_info.get('is_ipv6', False):
         priority += 100
     
-    # 速度评分优先级
-    if 'speed_score' in source_info:
+    # 速度评分优先级（如果测速功能启用）
+    if config['ENABLE_SPEED_TEST'] and 'speed_score' in source_info:
         score = source_info['speed_score']
         if score >= 0.9:
             priority += 50
@@ -630,6 +705,10 @@ PLAYER_SUPPORT = {
 # 黑名单管理函数
 def load_blacklist():
     """加载黑名单"""
+    if not config['ENABLE_BLACKLIST']:
+        print("📋 黑名单功能已禁用，跳过加载")
+        return set()
+    
     blacklist = set()
     if os.path.exists(BLACKLIST_FILE):
         try:
@@ -642,12 +721,12 @@ def load_blacklist():
         except Exception as e:
             print(f"⚠️  读取黑名单失败: {e}")
     else:
-        print(f"📝 {BLACKLIST_FILE} 文件不存在，将创建新文件")
+        print(f"📝 {BLACKLIST_FILE} 文件不存在")
     return blacklist
 
 def save_to_blacklist(slow_urls, reason="响应时间超过阈值"):
     """保存慢速URL到黑名单"""
-    if not slow_urls:
+    if not config['ENABLE_BLACKLIST'] or not slow_urls:
         return
     
     # 加载现有黑名单
@@ -662,10 +741,11 @@ def save_to_blacklist(slow_urls, reason="响应时间超过阈值"):
             f.write("# 该文件包含测试失败的直播源\n")
             f.write("# 每行一个URL，下次更新时会跳过这些源\n")
             f.write("# 生成时间: " + get_beijing_time() + "\n")
-            f.write(f"# 过滤原因: {reason}\n\n")
+            f.write(f"# 过滤原因: {reason}\n")
+            f.write(f"# 配置文件: {CONFIG_FILE}\n")
+            f.write(f"# 黑名单功能: {'启用' if config['ENABLE_BLACKLIST'] else '禁用'}\n\n")
             
             # 按域名分组排序
-            from urllib.parse import urlparse
             url_groups = {}
             for url in existing_blacklist:
                 try:
@@ -695,16 +775,23 @@ def save_to_blacklist(slow_urls, reason="响应时间超过阈值"):
 
 def test_urls_with_progress(urls, blacklist):
     """并发测试URL速度，显示进度"""
+    if not config['ENABLE_SPEED_TEST']:
+        print("⚡ 测速功能已禁用，跳过速度测试")
+        return {}, set(), {}
+    
     results = {}
     slow_urls = set()
     detailed_results = {}
     
     print(f"⚡ 开始智能速度测试")
-    print(f"📊 配置: 连接超时={CONNECT_TIMEOUT}s, 流测试超时={STREAM_TIMEOUT}s")
+    print(f"📊 配置: 连接超时={config['CONNECT_TIMEOUT']}s, 流测试超时={config['STREAM_TIMEOUT']}s")
     print(f"📊 需要测试 {len(urls)} 个URL")
     
-    # 过滤掉已经在黑名单中的URL
-    urls_to_test = [url for url in urls if url not in blacklist]
+    # 过滤掉已经在黑名单中的URL（如果黑名单启用）
+    if config['ENABLE_BLACKLIST']:
+        urls_to_test = [url for url in urls if url not in blacklist]
+    else:
+        urls_to_test = urls
     
     if not urls_to_test:
         print("✅ 所有URL都在黑名单中，跳过速度测试")
@@ -729,7 +816,7 @@ def test_urls_with_progress(urls, blacklist):
     test_order = m3u8_urls + other_urls
     
     # 使用线程池并发测试
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=config['MAX_WORKERS']) as executor:
         # 提交所有测试任务
         future_to_url = {executor.submit(test_url_speed, url): url for url in test_order}
         
@@ -751,7 +838,7 @@ def test_urls_with_progress(urls, blacklist):
                     results[url] = score
                     
                     # 判断是否为慢速源
-                    if score < SpeedTestConfig.MIN_SPEED_SCORE:
+                    if score < config['MIN_SPEED_SCORE']:
                         slow_urls.add(url)
                         speed_desc = f"评分低({score:.2f})"
                     else:
@@ -783,8 +870,8 @@ def test_urls_with_progress(urls, blacklist):
     # 统计结果
     fast_urls = len(results)
     print(f"\n✅ 速度测试完成")
-    print(f"  快速源: {fast_urls} 个 (评分≥{SpeedTestConfig.MIN_SPEED_SCORE})")
-    print(f"  慢速源: {len(slow_urls)} 个 (评分<{SpeedTestConfig.MIN_SPEED_SCORE}或失败)")
+    print(f"  快速源: {fast_urls} 个 (评分≥{config['MIN_SPEED_SCORE']})")
+    print(f"  慢速源: {len(slow_urls)} 个 (评分<{config['MIN_SPEED_SCORE']}或失败)")
     
     # 显示评分分布
     if results:
@@ -881,7 +968,7 @@ def clean_channel_name(name):
     original_name = name
     
     # 深度清理：应用所有清理规则
-    for pattern, replacement in CLEAN_RULES:  # 改为直接遍历列表
+    for pattern, replacement in CLEAN_RULES:  # 修复：直接遍历列表
         name = re.sub(pattern, replacement, name, flags=re.IGNORECASE)
     
     # 额外清理：移除重复词
@@ -909,6 +996,7 @@ def clean_channel_name(name):
         name = original_name
     
     return name
+
 def get_channel_sort_key(channel_name, category):
     """获取频道排序键值"""
     if category in CHANNEL_ORDER_RULES:
@@ -1138,26 +1226,32 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
         with open(output_file, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             if mode == "multi":
-                f.write(f"# 电视直播源 - IPv6优先多源合并版（智能测速过滤）\n")
+                f.write(f"# 电视直播源 - IPv6优先多源合并版\n")
                 f.write(f"# 每个电视台只显示一个条目，IPv6源优先排列\n")
                 f.write(f"# 播放器切换源方法：PotPlayer按Alt+W，VLC右键选择源\n")
                 f.write(f"# 排序规则：IPv6源 > 4K > 高清 > 标清 > 流畅\n")
-                f.write(f"# 已过滤低质量源（评分 < {SpeedTestConfig.MIN_SPEED_SCORE}）\n")
             elif mode == "separate":
-                f.write(f"# 电视直播源 - IPv6优先多源分离版（智能测速过滤）\n")
+                f.write(f"# 电视直播源 - IPv6优先多源分离版\n")
                 f.write(f"# 同名电视台显示为多个条目，IPv6源优先，播放器自动合并\n")
-                f.write(f"# 已过滤低质量源（评分 < {SpeedTestConfig.MIN_SPEED_SCORE}）\n")
             else:
-                f.write(f"# 电视直播源 - IPv6优先精简版（智能测速过滤）\n")
+                f.write(f"# 电视直播源 - IPv6优先精简版\n")
                 f.write(f"# 每个电视台只保留最佳源（IPv6优先）\n")
-                f.write(f"# 已过滤低质量源（评分 < {SpeedTestConfig.MIN_SPEED_SCORE}）\n")
             
             f.write(f"# 更新时间(北京时间): {timestamp}\n")
             f.write(f"# 电视台总数: {len(merged_channels)}\n")
             f.write(f"# 数据源: {len(sources)} 个 (成功: {success_sources}, 失败: {len(failed_sources)})\n")
-            f.write(f"# 特点: 移除技术参数，统一央视频道命名，按省份分类地方台，IPv6优先，智能测速过滤\n")
+            f.write(f"# 特点: 移除技术参数，统一央视频道命名，按省份分类地方台，IPv6优先\n")
+            f.write(f"# 配置文件: {CONFIG_FILE}\n")
+            f.write(f"# 黑名单功能: {'启用' if config['ENABLE_BLACKLIST'] else '禁用'}\n")
+            f.write(f"# 测速功能: {'启用' if config['ENABLE_SPEED_TEST'] else '禁用'}\n")
+            
+            if config['ENABLE_SPEED_TEST']:
+                f.write(f"# 已过滤低质量源（评分 < {config['MIN_SPEED_SCORE']}）\n")
+            
             f.write(f"# 源文件: sources.txt\n")
-            f.write(f"# 黑名单: {BLACKLIST_FILE}\n\n")
+            if config['ENABLE_BLACKLIST']:
+                f.write(f"# 黑名单: {BLACKLIST_FILE}\n")
+            f.write("\n")
             
             # 按分类顺序写入
             for category in final_category_order:
@@ -1188,7 +1282,7 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                             source_desc = []
                             if ipv6_count > 0:
                                 source_desc.append(f"{ipv6_count}IPv6")
-                            if high_quality_count > 0:
+                            if high_quality_count > 0 and config['ENABLE_SPEED_TEST']:
                                 source_desc.append(f"{high_quality_count}高速")
                             if source_count > ipv6_count:
                                 source_desc.append(f"{source_count}源")
@@ -1255,7 +1349,7 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                             for i, source in enumerate(sorted_sources, 1):
                                 source_type = "IPv6" if source.get('is_ipv6', False) else "IPv4"
                                 speed_info = ""
-                                if source.get('speed_score'):
+                                if source.get('speed_score') and config['ENABLE_SPEED_TEST']:
                                     speed_info = f" ({source['speed_score']:.2f})"
                                 
                                 line = "#EXTINF:-1"
@@ -1281,36 +1375,39 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                             # 选择最佳源（优先选择IPv6快速源）
                             best_source = None
                             
-                            # 首先找IPv6高速源（评分≥0.7）
-                            for source in channel['sources']:
-                                if source.get('is_ipv6', False) and source.get('speed_score', 0) >= 0.7:
-                                    best_source = source
-                                    break
+                            # 如果测速功能启用，优先选择高速源
+                            if config['ENABLE_SPEED_TEST']:
+                                # 首先找IPv6高速源（评分≥0.7）
+                                for source in channel['sources']:
+                                    if source.get('is_ipv6', False) and source.get('speed_score', 0) >= 0.7:
+                                        best_source = source
+                                        break
+                                
+                                # 然后找IPv4高速源
+                                if not best_source:
+                                    for source in channel['sources']:
+                                        if not source.get('is_ipv6', False) and source.get('speed_score', 0) >= 0.7:
+                                            best_source = source
+                                            break
                             
-                            # 然后找IPv6高清源
+                            # 如果没找到高速源或测速禁用，按默认规则选择
                             if not best_source:
+                                # 首先找IPv6高清源
                                 for source in channel['sources']:
                                     if source.get('is_ipv6', False) and source['quality'] == "高清":
                                         best_source = source
                                         break
-                            
-                            # 然后找IPv4高速源
-                            if not best_source:
-                                for source in channel['sources']:
-                                    if not source.get('is_ipv6', False) and source.get('speed_score', 0) >= 0.7:
-                                        best_source = source
-                                        break
-                            
-                            # 然后找IPv4高清源
-                            if not best_source:
-                                for source in channel['sources']:
-                                    if not source.get('is_ipv6', False) and source['quality'] == "高清":
-                                        best_source = source
-                                        break
-                            
-                            # 最后选第一个源
-                            if not best_source:
-                                best_source = channel['sources'][0]
+                                
+                                # 然后找IPv4高清源
+                                if not best_source:
+                                    for source in channel['sources']:
+                                        if not source.get('is_ipv6', False) and source['quality'] == "高清":
+                                            best_source = source
+                                            break
+                                
+                                # 最后选第一个源
+                                if not best_source:
+                                    best_source = channel['sources'][0]
                             
                             line = "#EXTINF:-1"
                             line += f' tvg-name="{channel["clean_name"]}"'
@@ -1322,7 +1419,7 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                             if best_source.get('is_ipv6', False):
                                 line += f' tvg-ipv6="true"'
                                 display_name = f"{display_name} [IPv6]"
-                            if best_source.get('speed_score'):
+                            if best_source.get('speed_score') and config['ENABLE_SPEED_TEST']:
                                 line += f' tvg-score="{best_source["speed_score"]:.2f}"'
                                 display_name = f"{display_name} ({best_source['speed_score']:.2f})"
                             line += f',{display_name}\n'
@@ -1407,11 +1504,11 @@ for channel in all_channels:
 print(f"   发现 {len(all_urls)} 个唯一URL")
 
 # 4. 进行智能速度测试
-print("\n⚡ 开始智能速度测试（过滤黑名单中的URL）...")
+print("\n⚡ 开始智能速度测试...")
 speed_test_results, slow_urls, detailed_results = test_urls_with_progress(all_urls, blacklist)
 
 # 5. 保存失败和低质量URL到黑名单
-if slow_urls:
+if slow_urls and config['ENABLE_BLACKLIST'] and config['ENABLE_SPEED_TEST']:
     # 分析失败原因
     error_types = {}
     for url in slow_urls:
@@ -1430,16 +1527,16 @@ if slow_urls:
     
     print(f"\n📝 发现 {len(slow_urls)} 个低质量源，保存到黑名单...")
     save_to_blacklist(slow_urls, reason)
-else:
-    print("\n✅ 没有发现低质量源")
+elif slow_urls:
+    print(f"\n⚠️  发现 {len(slow_urls)} 个低质量源，但黑名单或测速功能已禁用，不保存")
 
-# 6. 过滤掉黑名单中的频道（包括之前黑名单和本次发现的慢速源）
+# 6. 过滤掉黑名单中的频道（如果黑名单启用）
 print("\n🚫 过滤黑名单中的频道...")
 filtered_channels = []
 blacklisted_count = 0
 
 for channel in all_channels:
-    if channel['url'] in blacklist or channel['url'] in slow_urls:
+    if config['ENABLE_BLACKLIST'] and (channel['url'] in blacklist or channel['url'] in slow_urls):
         blacklisted_count += 1
     else:
         filtered_channels.append(channel)
@@ -1466,7 +1563,8 @@ high_quality_channel_count = sum(1 for c in merged_channels.values() if any(s.ge
 print(f"   多源电视台: {multi_source_count} 个")
 print(f"   单源电视台: {single_source_count} 个")
 print(f"   含IPv6源电视台: {ipv6_channel_count} 个")
-print(f"   含高质量源电视台: {high_quality_channel_count} 个")
+if config['ENABLE_SPEED_TEST']:
+    print(f"   含高质量源电视台: {high_quality_channel_count} 个")
 
 # 显示一些多源示例
 print("\n📝 IPv6多源电视台示例:")
@@ -1478,7 +1576,8 @@ for clean_name, data in ipv6_multi_examples:
     high_quality_count = sum(1 for s in data['sources'] if s.get('speed_score', 0) >= 0.7)
     qualities = [s['quality'] for s in data['sources']]
     quality_desc = "/".join(set(qualities))
-    print(f"   {clean_name}: {ipv6_count}IPv6+{source_count-ipv6_count}IPv4 [{quality_desc}] 高质量源:{high_quality_count}")
+    quality_info = f" 高质量源:{high_quality_count}" if config['ENABLE_SPEED_TEST'] else ""
+    print(f"   {clean_name}: {ipv6_count}IPv6+{source_count-ipv6_count}IPv4 [{quality_desc}]{quality_info}")
 
 # 9. 统计分类数量
 category_stats = {}
@@ -1579,11 +1678,15 @@ for category in final_category_order:
             
             with open(filename, "w", encoding="utf-8") as f:
                 f.write("#EXTM3U\n")
-                f.write(f"# {category}频道列表（IPv6优先多源合并版，智能测速过滤）\n")
+                f.write(f"# {category}频道列表（IPv6优先多源合并版）\n")
                 f.write(f"# 更新时间(北京时间): {timestamp}\n")
                 f.write(f"# 电视台数量: {len(cat_channels)}\n")
                 f.write(f"# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换\n")
-                f.write(f"# 已过滤低质量源（评分 < {SpeedTestConfig.MIN_SPEED_SCORE}）\n\n")
+                if config['ENABLE_SPEED_TEST']:
+                    f.write(f"# 已过滤低质量源（评分 < {config['MIN_SPEED_SCORE']}）\n")
+                f.write(f"# 配置文件: {CONFIG_FILE}\n")
+                f.write(f"# 黑名单功能: {'启用' if config['ENABLE_BLACKLIST'] else '禁用'}\n")
+                f.write(f"# 测速功能: {'启用' if config['ENABLE_SPEED_TEST'] else '禁用'}\n\n")
                 
                 for channel in sorted_channels:
                     # 选择主logo（第一个非空的logo）
@@ -1697,6 +1800,14 @@ try:
     # 创建JSON数据
     json_data = {
         'last_updated': timestamp,
+        'config': {
+            'enable_blacklist': config['ENABLE_BLACKLIST'],
+            'enable_speed_test': config['ENABLE_SPEED_TEST'],
+            'connect_timeout': config['CONNECT_TIMEOUT'],
+            'stream_timeout': config['STREAM_TIMEOUT'],
+            'min_speed_score': config['MIN_SPEED_SCORE'],
+            'max_workers': config['MAX_WORKERS']
+        },
         'total_channels': len(merged_channels),
         'original_channel_count': len(all_channels),
         'filtered_channel_count': len(filtered_channels),
@@ -1709,12 +1820,6 @@ try:
         'ipv6_channels': ipv6_channel_count,
         'high_quality_channels': high_quality_channel_count,
         'blacklist_stats': blacklist_stats,
-        'speed_test_config': {
-            'min_speed_score': SpeedTestConfig.MIN_SPEED_SCORE,
-            'connect_timeout': CONNECT_TIMEOUT,
-            'stream_timeout': STREAM_TIMEOUT,
-            'ipv6_bonus': SpeedTestConfig.IPV6_BONUS
-        },
         'category_stats': category_stats,
         'sorting_rules': {
             'ipv6_priority': 100,
@@ -1726,7 +1831,8 @@ try:
         'channels': channel_list,
         'player_support': PLAYER_SUPPORT,
         'source_file': 'sources.txt',
-        'blacklist_file': BLACKLIST_FILE
+        'blacklist_file': BLACKLIST_FILE,
+        'config_file': CONFIG_FILE
     }
     
     # 写入文件
@@ -1743,23 +1849,38 @@ print(f"  - 电视台总数: {len(merged_channels)}")
 print(f"  - 多源电视台: {multi_source_count}")
 print(f"  - 单源电视台: {single_source_count}")
 print(f"  - 含IPv6源电视台: {ipv6_channel_count}")
-print(f"  - 含高质量源电视台: {high_quality_channel_count}")
+if config['ENABLE_SPEED_TEST']:
+    print(f"  - 含高质量源电视台: {high_quality_channel_count}")
 print(f"  - 原始频道数: {len(all_channels)}")
 print(f"  - 过滤后频道数: {len(filtered_channels)}")
 print(f"  - 黑名单过滤数: {blacklisted_count}")
 print(f"  - 数据源: {len(sources)}")
-print(f"  - 黑名单条目: {len(blacklist) + len(slow_urls)}")
+if config['ENABLE_BLACKLIST']:
+    print(f"  - 黑名单条目: {len(blacklist) + len(slow_urls)}")
 print(f"📁 生成的文件:")
 print(f"  - live_sources.m3u (IPv6优先多源合并版 - PotPlayer/VLC格式)")
 print(f"  - merged/多源分离版.m3u (IPv6优先多源分离版 - TiviMate/Kodi格式)")
 print(f"  - merged/精简版.m3u (IPv6优先单源精简版)")
 print(f"  - channels.json (详细数据)")
 print(f"  - categories/*.m3u (分类列表)")
-print(f"  - {BLACKLIST_FILE} (低质量源黑名单)")
+if config['ENABLE_BLACKLIST']:
+    print(f"  - {BLACKLIST_FILE} (低质量源黑名单)")
 print(f"\n🎮 播放器使用说明:")
 print(f"  1. PotPlayer/VLC: 使用 live_sources.m3u，播放时按Alt+W切换源")
 print(f"  2. TiviMate/Kodi: 使用 merged/多源分离版.m3u，自动合并相同名称频道")
 print(f"  3. 其他播放器: 使用 merged/精简版.m3u，每个电视台IPv6源优先")
-print(f"\n🔢 排序优先级: IPv6源 > 高速源(评分≥0.7) > 4K源 > 高清源 > 标清源 > 流畅源")
-print(f"⚡ 质量要求: 评分 ≥ {SpeedTestConfig.MIN_SPEED_SCORE}，低质量源已加入黑名单")
-print(f"📈 IPv6宽容度: IPv6源有{int(SpeedTestConfig.IPV6_BONUS*100)}%的评分加成")
+print(f"\n⚙️  当前配置:")
+print(f"  - 黑名单功能: {'✅启用' if config['ENABLE_BLACKLIST'] else '❌禁用'}")
+print(f"  - 测速功能: {'✅启用' if config['ENABLE_SPEED_TEST'] else '❌禁用'}")
+if config['ENABLE_SPEED_TEST']:
+    print(f"  - 最低评分要求: {config['MIN_SPEED_SCORE']}")
+    print(f"  - 超时设置: {config['CONNECT_TIMEOUT']}s连接, {config['STREAM_TIMEOUT']}s流测试")
+print(f"\n📝 配置文件说明:")
+print(f"  修改 {CONFIG_FILE} 文件可以调整配置，如果文件不存在会使用默认值")
+print(f"  示例配置:")
+print(f"    ENABLE_BLACKLIST=true")
+print(f"    ENABLE_SPEED_TEST=true")
+print(f"    CONNECT_TIMEOUT=3")
+print(f"    STREAM_TIMEOUT=10")
+print(f"    MIN_SPEED_SCORE=0.5")
+print(f"    MAX_WORKERS=20")

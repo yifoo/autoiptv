@@ -1,10 +1,19 @@
 #EXTM3U
-# 青海省频道列表（多源合并版）
-# 更新时间(北京时间): 2026-01-31 13:21:39
-# 电视台数量: 2
-# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换
+# 青海省频道列表（IPv6优先多源合并版）
+# 更新时间(北京时间): 2026-01-31 20:58:03
+# 电视台数量: 5
+# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 配置文件: config.txt
+# 黑名单功能: 禁用
+# 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="青海综合" group-title="青海省" tvg-logo="青海综合.png",青海综合 [1源]
+#EXTINF:-1 tvg-name="青海交通广播" group-title="青海省" tvg-logo="https://live.fanmingming.com/radio/青海交通广播.png",青海交通广播 [1IPv4]
+https://satellitepull.cnr.cn/live/wx32qhjtyygb/playlist.m3u8
+#EXTINF:-1 tvg-name="青海新闻广播" group-title="青海省" tvg-logo="https://live.fanmingming.com/radio/青海新闻广播.png",青海新闻广播 [1IPv4]
+https://satellitepull.cnr.cn/live/wx32qhwxzhgb/playlist.m3u8
+#EXTINF:-1 tvg-name="青海经济广播" group-title="青海省" tvg-logo="https://live.fanmingming.com/radio/青海经济广播.png",青海经济广播 [1IPv4]
+https://satellitepull.cnr.cn/live/wx32qhjjgb/playlist.m3u8
+#EXTINF:-1 tvg-name="青海综合" group-title="青海省" tvg-logo="青海综合.png",青海综合 [1IPv4]
 http://lmt.scqstv.com/live1/live1.m3u8
-#EXTINF:-1 tvg-name="青海都市" group-title="青海省" tvg-logo="青海都市.png",青海都市 [2源]
+#EXTINF:-1 tvg-name="青海都市" group-title="青海省" tvg-logo="青海都市.png" tvg-ipv6="true",青海都市 [2IPv6]
 http://[2409:8087:1e01:20::3]/PLTV/11/224/3221225749/index.m3u8|http://[2409:8087:1e01:20::3]:80/PLTV/11/224/3221225749/index.m3u8
