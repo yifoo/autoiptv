@@ -14,10 +14,7 @@ from urllib.parse import urlparse
 import json
 
 # 要采集的源列表
-SOURCES = [
-    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
-    "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u"
-]
+SOURCES = []
 
 # 可以添加更多源
 ADDITIONAL_SOURCES_FILE = "sources.txt"
