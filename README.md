@@ -1,24 +1,32 @@
 # 📺 电视直播源自动收集项目
 
-此项目自动从多个源收集电视直播源，并归类整理为M3U格式。
+此项目会自动从多个源收集电视直播频道，并整理归类。
 
-## 🚀 快速开始
+## 🚀 快速部署
 
-1. **Fork** 此仓库到你的GitHub账户
-2. 在仓库设置中添加个人访问令牌 (PAT_TOKEN)
-3. 工作流将自动开始收集直播源
+1. **Fork** 此仓库
+2. **添加 Secret**: 在仓库 Settings → Secrets and variables → Actions 中添加：
+   - 名称: `LIVEIPTV`
+   - 值: 你的GitHub个人访问令牌(PAT)
+3. **运行工作流**: 在 Actions 页面手动触发
 
 ## 📁 生成的文件
 
+工作流运行后会生成:
 - `live_sources.m3u` - 完整的直播源文件
-- `categories/` - 按分类分开的直播源
-- `channels.json` - 频道信息JSON数据
+- `channels.json` - 频道数据(JSON格式)
 - `index.html` - 网页播放界面
+- `categories/` - 分类播放列表
+- `README.md` - 项目文档(自动更新)
 
-## ⚙️ 配置
+## ⚙️ 自定义配置
 
-编辑 `sources.txt` 文件可以添加更多直播源。
+编辑 `sources.txt` 文件可以添加更多直播源URL。
 
 ## 📅 自动更新
 
-每天自动更新直播源，也可以通过 GitHub Actions 手动触发。
+每天自动运行一次，保持直播源更新。
+
+---
+
+*项目初始化模板 - 首次运行后会更新此文档*
