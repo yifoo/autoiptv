@@ -1,0 +1,21 @@
+#EXTM3U
+# 山西省频道列表
+# 更新时间(北京时间): 2026-01-31 13:04:56
+# 电视台数量: 8
+
+#EXTINF:-1 tvg-name="山西影视" group-title="山西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/27/large/20220527162835442061_74.jpg" tvg-quality="高清",山西影视 [4源]
+https://epg.pw/stream/b493ddd1a113751d7924062be602f98313d60185dea9c5ffd516f727300f4a58.m3u8
+#EXTINF:-1 tvg-name="山西文体" group-title="山西省",山西文体
+http://220.194.178.58:8888/newlive/live/hls/55/live.m3u8
+#EXTINF:-1 tvg-name="山西文体生活" group-title="山西省" tvg-logo="山西文体生活.png",山西文体生活 [2源]
+https://live.lalifeier.eu.org/sxrtv/sxwtsh.m3u8?t=1745796321&key=5d07585f428e3bbbe66ef7a534c8db1e
+#EXTINF:-1 tvg-name="山西法治" group-title="山西省",山西法治
+http://220.194.178.58:8888/newlive/live/hls/54/live.m3u8
+#EXTINF:-1 tvg-name="山西社会与法治" group-title="山西省" tvg-logo="山西社会与法治.png",山西社会与法治 [2源]
+https://live.lalifeier.eu.org/sxrtv/sxshfz.m3u8?t=1745796321&key=71bbd0d7dc1eb84139ebea659e164651
+#EXTINF:-1 tvg-name="山西经济" group-title="山西省" tvg-logo="山西经济.png",山西经济 [2源]
+http://220.194.178.58:8888/newlive/live/hls/52/live.m3u8
+#EXTINF:-1 tvg-name="山西经济与科技" group-title="山西省" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/shanxi1/Shanxi_1.png",山西经济与科技
+http://liveflash.sxrtv.com/live/sxfinance.m3u8?sub_m3u8=true&edge_slice=true
+#EXTINF:-1 tvg-name="湖南张家界天门山西线玻璃栈道" group-title="山西省" tvg-logo="https://tb.zbds.top/logo/湖南张家界天门山西线玻璃栈道.png",湖南张家界天门山西线玻璃栈道
+https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8

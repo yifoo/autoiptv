@@ -1,0 +1,23 @@
+#EXTM3U
+# 河南省频道列表
+# 更新时间(北京时间): 2026-01-31 13:04:56
+# 电视台数量: 9
+
+#EXTINF:-1 tvg-name="河南乡村" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南乡村.png",河南乡村 [2源]
+http://www.cdnstv.com:6398/hls/1116/index.m3u8
+#EXTINF:-1 tvg-name="河南公共" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南公共.png",河南公共
+http://1.94.31.214/php/hntv.php?id=hngg
+#EXTINF:-1 tvg-name="河南国际" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南国际.png",河南国际
+http://1.94.31.214/php/hntv.php?id=hngj
+#EXTINF:-1 tvg-name="河南新闻" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南新闻.png",河南新闻 [2源]
+http://www.cdnstv.com:6398/hls/1114/index.m3u8
+#EXTINF:-1 tvg-name="河南梨园" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南梨园.png",河南梨园
+http://1.94.31.214/php/hntv.php?id=hnly
+#EXTINF:-1 tvg-name="河南民生" group-title="河南省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531142947302154_59.jpg",河南民生 [6源]
+https://stream1.freetv.fun/3dba1aa77b00ec70e21ad288b975e283cf64dbfa98374eae276ffad9be33b1cf.ctv
+#EXTINF:-1 tvg-name="河南法治" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南法治.png",河南法治 [2源]
+http://www.cdnstv.com:6398/hls/1112/index.m3u8
+#EXTINF:-1 tvg-name="河南电视剧" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南电视剧.png",河南电视剧 [2源]
+http://www.cdnstv.com:6398/hls/1113/index.m3u8
+#EXTINF:-1 tvg-name="河南都市" group-title="河南省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531143451177556_90.jpg",河南都市 [7源]
+https://stream1.freetv.fun/159787fa1c85725d343a5097adb51da069502ad220ca826ada667b010aeabf5b.ctv

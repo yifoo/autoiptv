@@ -1,0 +1,11 @@
+#EXTM3U
+# 宁夏回族自治区频道列表
+# 更新时间(北京时间): 2026-01-31 13:04:56
+# 电视台数量: 3
+
+#EXTINF:-1 tvg-name="宁夏公共" group-title="宁夏回族自治区" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/ningxia/Ningxia1.png",宁夏公共
+https://hls.ningxiahuangheyun.com/live/nxgg1M.m3u8
+#EXTINF:-1 tvg-name="宁夏文旅" group-title="宁夏回族自治区" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/ningxia/Ningxia4.png",宁夏文旅
+https://hls.ningxiahuangheyun.com/live/nxwl1M.m3u8
+#EXTINF:-1 tvg-name="宁夏经济" group-title="宁夏回族自治区" tvg-logo="宁夏经济.png",宁夏经济 [2源]
+https://ls.qingting.fm/live/1841/64k.m3u8

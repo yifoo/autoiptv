@@ -1,14 +1,14 @@
 #EXTM3U
 # 体育台频道列表
-# 更新时间(北京时间): 2026-01-31 12:34:09
+# 更新时间(北京时间): 2026-01-31 13:04:56
 # 电视台数量: 8
 
 #EXTINF:-1 tvg-name="CCTV 风云足球" group-title="体育台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/风云足球.png",CCTV 风云足球 [2源]
 http://www.lizhinas.top:1009/rtp/239.252.219.96:5140
-#EXTINF:-1 tvg-name="CCTV风云足球" group-title="体育台" tvg-logo="https://tb.zbds.top/logo/CCTV风云足球.png",CCTV风云足球
+#EXTINF:-1 tvg-name="CCTV风云足球" group-title="体育台" tvg-logo="https://tb.zbds.top/logo/CCTV风云足球.png",CCTV风云足球 [2源]
 http://27.41.245.32:801/hls/906/index.m3u8
-#EXTINF:-1 tvg-name="cctv风云足球" group-title="体育台" tvg-logo="https://epg.pw/media/images/channel/2022/05/10/large/20220510165533742367_97.jpg",cctv风云足球
-https://stream1.freetv.fun/f29c24e198f9bf47ac2be43abf3d1a9eb21ebf26392c4959f9ec8d2077718450.m3u8
+#EXTINF:-1 tvg-name="「B站」热门赛事" group-title="体育台" tvg-logo="https://epg-1.iill.top/logo/哔哩哔哩.png",「B站」热门赛事
+http://dns.yiandrive.com:15907/bilibili/10
 #EXTINF:-1 tvg-name="天津体育" group-title="体育台" tvg-logo="天津体育.png",天津体育
 http://yp.qqqtv.top/1/api.php?id=%E5%A4%A9%E6%B4%A5%E4%BD%93%E8%82%B2&auth=666858
 #EXTINF:-1 tvg-name="山东体育" group-title="体育台" tvg-logo="山东体育.png",山东体育 [10源]

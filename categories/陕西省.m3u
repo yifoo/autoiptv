@@ -1,0 +1,29 @@
+#EXTM3U
+# 陕西省频道列表
+# 更新时间(北京时间): 2026-01-31 13:04:56
+# 电视台数量: 12
+
+#EXTINF:-1 tvg-name="陕西体育休闲" group-title="陕西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151408095945_53.jpg" tvg-quality="高清",陕西体育休闲 [5源]
+https://epg.pw/stream/222ab91506e0310c79e009d1ca30d69ec87ef48007371488bf3e2fad0f13af21.m3u8
+#EXTINF:-1 tvg-name="陕西公共" group-title="陕西省" tvg-logo="陕西公共.png",陕西公共 [2源]
+http://ls.qingting.fm/live/1222.m3u8
+#EXTINF:-1 tvg-name="陕西公共频道" group-title="陕西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151119002040_17.jpg" tvg-quality="高清",陕西公共频道
+https://epg.pw/stream/2002749dd41e07964f7b751bcba54af9db4f6719bc378d0ba6ebb2679f19141b.m3u8
+#EXTINF:-1 tvg-name="陕西影视" group-title="陕西省" tvg-logo="陕西影视.png",陕西影视 [2源]
+http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226360/index.m3u8
+#EXTINF:-1 tvg-name="陕西新闻咨询" group-title="陕西省" tvg-logo="https://tb.zbds.top/logo/陕西新闻咨询.png",陕西新闻咨询
+http://112.46.105.20:8009/hls/18/index.m3u8
+#EXTINF:-1 tvg-name="陕西新闻资讯" group-title="陕西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151006730386_52.jpg",陕西新闻资讯 [7源]
+https://stream1.freetv.fun/bc29e85798a33bfb1b0e49cc9c8b14a379ee73626b52053b1a0f6c28a56d4d08.ctv
+#EXTINF:-1 tvg-name="陕西洋县国宝朱鹮02" group-title="陕西省" tvg-logo="https://tb.zbds.top/logo/陕西洋县国宝朱鹮02.png",陕西洋县国宝朱鹮02
+https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8
+#EXTINF:-1 tvg-name="陕西生活" group-title="陕西省" tvg-logo="陕西生活.png",陕西生活
+http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226359/index.m3u8
+#EXTINF:-1 tvg-name="陕西生活频道" group-title="陕西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151311106781_13.jpg" tvg-quality="高清",陕西生活频道
+https://epg.pw/stream/edc138c00dc9308002a5dbb9505a80e1f5adac0b142f72f0ab7124c5c42939f7.m3u8
+#EXTINF:-1 tvg-name="陕西秦腔" group-title="陕西省" tvg-logo="https://live.fanmingming.cn/tv/陕西秦腔.png",陕西秦腔
+http://112.46.105.20:8009/hls/22/index.m3u8
+#EXTINF:-1 tvg-name="陕西都市青春" group-title="陕西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151504287238_45.jpg",陕西都市青春 [8源]
+https://epg.pw/stream/4b5ab67e1e16244226143cde3847c6e7c8e1402906611e48a1f3562b3f709bbf.m3u8
+#EXTINF:-1 tvg-name="陕西银龄" group-title="陕西省" tvg-logo="https://tb.zbds.top/logo/陕西银龄.png",陕西银龄
+http://112.46.105.20:8009/hls/20/index.m3u8

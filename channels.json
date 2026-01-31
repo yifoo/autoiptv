@@ -1,20 +1,50 @@
 {
-  "last_updated": "2026-01-31 12:34:09",
-  "total_channels": 420,
-  "original_channel_count": 2636,
-  "sources_count": 2,
-  "success_sources": 2,
-  "failed_sources": [],
+  "last_updated": "2026-01-31 13:04:56",
+  "total_channels": 543,
+  "original_channel_count": 2765,
+  "sources_count": 5,
+  "success_sources": 3,
+  "failed_sources": [
+    "https://raw.githubusercontent.com/iptv-org/iptv/master/index.m3u",
+    "https://raw.githubusercontent.com/EvilCult/iptv-mirror/master/IPTV.m3u"
+  ],
   "category_stats": {
-    "央视": 46,
+    "央视": 43,
     "卫视": 61,
-    "地方台": 58,
+    "其他台": 179,
+    "浙江省": 22,
     "少儿台": 12,
     "综艺台": 14,
-    "港澳台": 3,
     "体育台": 8,
+    "上海市": 9,
+    "内蒙古自治区": 3,
+    "港澳台": 3,
+    "北京市": 14,
+    "四川省": 17,
+    "广东省": 9,
+    "广西壮族自治区": 2,
+    "江苏省": 10,
+    "河南省": 9,
+    "海南省": 4,
+    "重庆市": 3,
+    "陕西省": 12,
+    "山东省": 8,
+    "山西省": 8,
+    "河北省": 10,
+    "辽宁省": 9,
     "影视台": 2,
-    "其他台": 216
+    "吉林省": 6,
+    "甘肃省": 5,
+    "福建省": 9,
+    "湖南省": 12,
+    "黑龙江省": 10,
+    "云南省": 12,
+    "景区频道": 3,
+    "宁夏回族自治区": 3,
+    "新疆维吾尔自治区": 1,
+    "湖北省": 8,
+    "贵州省": 1,
+    "青海省": 2
   },
   "channels": [
     {
@@ -79,16 +109,18 @@
     {
       "clean_name": "CCTV",
       "original_names": [
+        "[BD]cctv-4k",
         "CCTV4K",
         "CCTV-4K",
         "CCTV 4K"
       ],
       "category": "其他台",
-      "source_count": 4,
+      "source_count": 5,
       "logos": [
         "https://live.zbds.top/logo/CCTV4K.png",
         "https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/CCTV/CCTV-4K.png",
-        "https://gitee.com/suxuang/logo/raw/master/mylogo/CCTV4K.png"
+        "https://gitee.com/suxuang/logo/raw/master/mylogo/CCTV4K.png",
+        "https://epg.pw/media/images/channel/2025/01/25/large/20250125055421788601_18.png"
       ],
       "sources": [
         {
@@ -118,6 +150,13 @@
           "quality": "4K",
           "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
           "logo": "https://gitee.com/suxuang/logo/raw/master/mylogo/CCTV4K.png"
+        },
+        {
+          "index": 5,
+          "url": "https://stream1.freetv.fun/b9a2e767d016105572cd8746a02687121eff29c306eeb922ff2feab8b7286e4c.ctv",
+          "quality": "4K",
+          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
+          "logo": "https://epg.pw/media/images/channel/2025/01/25/large/20250125055421788601_18.png"
         }
       ]
     },
@@ -184,8 +223,8 @@
     {
       "clean_name": "CCTV 13新闻",
       "original_names": [
-        "CCTV-13新闻 (2160p)",
-        "CCTV-13新闻"
+        "CCTV-13新闻",
+        "CCTV-13新闻 (2160p)"
       ],
       "category": "央视",
       "source_count": 2,
@@ -213,12 +252,14 @@
     {
       "clean_name": "CCTV 14少儿",
       "original_names": [
+        "[SD]cctv-14少儿",
         "CCTV-14少儿"
       ],
       "category": "央视",
-      "source_count": 1,
+      "source_count": 2,
       "logos": [
-        "https://live.fanmingming.cn/tv/CCTV14.png"
+        "https://live.fanmingming.cn/tv/CCTV14.png",
+        "https://epg.pw/media/images/channel/2025/01/25/large/20250125001539178535_27.png"
       ],
       "sources": [
         {
@@ -227,6 +268,13 @@
           "quality": "未知",
           "source": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
           "logo": "https://live.fanmingming.cn/tv/CCTV14.png"
+        },
+        {
+          "index": 2,
+          "url": "https://stream1.freetv.fun/16b39a17c3bc3f5982d0796055c25699d7ffc0948274e5f69da181d74d680bc8.m3u8",
+          "quality": "标清",
+          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
+          "logo": "https://epg.pw/media/images/channel/2025/01/25/large/20250125001539178535_27.png"
         }
       ]
     },
@@ -353,12 +401,15 @@
     {
       "clean_name": "CCTV 4中文国际",
       "original_names": [
+        "[SD]cctv-4中文国际",
         "CCTV-4中文国际"
       ],
       "category": "央视",
-      "source_count": 1,
+      "source_count": 3,
       "logos": [
-        "https://live.fanmingming.cn/tv/CCTV4.png"
+        "https://live.fanmingming.cn/tv/CCTV4.png",
+        "https://epg.pw/media/images/channel/2022/05/20/large/20220520003116532960_83.jpg",
+        "https://epg.pw/media/images/channel/2022/05/20/large/20220520002852256993_13.jpg"
       ],
       "sources": [
         {
@@ -367,14 +418,28 @@
           "quality": "未知",
           "source": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
           "logo": "https://live.fanmingming.cn/tv/CCTV4.png"
+        },
+        {
+          "index": 2,
+          "url": "https://epg.pw/stream/e9df8fe337dd6bacbf98516a34c0b0c94b3d2a02339529dea3de3769add35fc9.m3u8",
+          "quality": "标清",
+          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
+          "logo": "https://epg.pw/media/images/channel/2022/05/20/large/20220520003116532960_83.jpg"
+        },
+        {
+          "index": 3,
+          "url": "https://epg.pw/stream/c3b4c0fa59357628b823a008e742caa5e3ea18df81216adbc62f3aa7afe556f0.m3u8",
+          "quality": "标清",
+          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
+          "logo": "https://epg.pw/media/images/channel/2022/05/20/large/20220520002852256993_13.jpg"
         }
       ]
     },
     {
       "clean_name": "CCTV 5+ 体育赛事",
       "original_names": [
-        "CCTV-5+ 体育赛事[高清]",
-        "CCTV-5+ 体育赛事"
+        "CCTV-5+ 体育赛事",
+        "CCTV-5+ 体育赛事[高清]"
       ],
       "category": "央视",
       "source_count": 8,
@@ -573,12 +638,14 @@
     {
       "clean_name": "CCTV 9纪录",
       "original_names": [
-        "CCTV-9纪录"
+        "CCTV-9纪录",
+        "[SD]cctv-9纪录"
       ],
       "category": "央视",
-      "source_count": 1,
+      "source_count": 2,
       "logos": [
-        "https://live.fanmingming.cn/tv/CCTV9.png"
+        "https://live.fanmingming.cn/tv/CCTV9.png",
+        "https://epg.pw/media/images/channel/2025/01/25/large/20250125013114796464_35.png"
       ],
       "sources": [
         {
@@ -587,6 +654,13 @@
           "quality": "未知",
           "source": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
           "logo": "https://live.fanmingming.cn/tv/CCTV9.png"
+        },
+        {
+          "index": 2,
+          "url": "https://stream1.freetv.fun/bac2107c8204c290efc6c6224146418641af787e31995157d64d567afbc00279.m3u8",
+          "quality": "标清",
+          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
+          "logo": "https://epg.pw/media/images/channel/2025/01/25/large/20250125013114796464_35.png"
         }
       ]
     },
@@ -885,8 +959,8 @@
     {
       "clean_name": "CCTV 超",
       "original_names": [
-        "CCTV-4K 超高清",
-        "CCTV-4K 超高清[超清HDR]"
+        "CCTV-4K 超高清[超清HDR]",
+        "CCTV-4K 超高清"
       ],
       "category": "其他台",
       "source_count": 4,
@@ -1091,15 +1165,15 @@
     {
       "clean_name": "CCTV-1 综合",
       "original_names": [
+        "CCTV 1 50 FPS",
+        "CCTV-1 (2160p)",
         "CCTV1",
-        "[BD]cctv1",
+        "CCTV-1 综合",
         "CCTV-1 综合[高清]",
         "CCTV-1",
-        "CCTV 1 HEVC",
-        "CCTV-1 (2160p)",
         "CCTV 1",
-        "CCTV 1 50 FPS",
-        "CCTV-1 综合"
+        "[BD]cctv1",
+        "CCTV 1 HEVC"
       ],
       "category": "央视",
       "source_count": 31,
@@ -1338,15 +1412,15 @@
     {
       "clean_name": "CCTV-10 科教",
       "original_names": [
-        "CCTV 10 50 FPS",
-        "CCTV 10 HEVC",
-        "CCTV-10 科教[高清]",
         "[BD]cctv10",
+        "CCTV 10 HEVC",
         "CCTV-10 (2160p)",
-        "CCTV-10 科教",
         "CCTV 10",
+        "CCTV-10",
+        "CCTV-10 科教",
+        "CCTV-10 科教[高清]",
         "CCTV10",
-        "CCTV-10"
+        "CCTV 10 50 FPS"
       ],
       "category": "央视",
       "source_count": 31,
@@ -1584,14 +1658,14 @@
     {
       "clean_name": "CCTV-11 戏曲",
       "original_names": [
-        "CCTV-11",
         "CCTV-11 (576p)",
+        "CCTV-11",
+        "CCTV 11 50 FPS",
         "CCTV-11 戏曲",
-        "CCTV-11 戏曲[高清]",
-        "[BD]cctv11",
         "CCTV11",
         "CCTV 11 HEVC",
-        "CCTV 11 50 FPS"
+        "[BD]cctv11",
+        "CCTV-11 戏曲[高清]"
       ],
       "category": "央视",
       "source_count": 29,
@@ -1815,14 +1889,14 @@
       "clean_name": "CCTV-12 社会与法",
       "original_names": [
         "CCTV-12 (2160p)",
-        "CCTV 12",
-        "CCTV-12",
         "CCTV-12 社会与法",
-        "CCTV 12 HEVC",
+        "CCTV12",
+        "CCTV-12",
+        "[BD]cctv12",
         "CCTV 12 50 FPS",
         "CCTV-12 社会与法[高清]",
-        "CCTV12",
-        "[BD]cctv12"
+        "CCTV 12 HEVC",
+        "CCTV 12"
       ],
       "category": "央视",
       "source_count": 30,
@@ -2054,10 +2128,10 @@
       "original_names": [
         "CCTV13",
         "[BD]cctv-13 1080p",
-        "CCTV-13 新闻",
         "CCTV 13 50 FPS",
-        "CCTV-13 新闻[高清]",
-        "CCTV-13"
+        "CCTV-13 新闻",
+        "CCTV-13",
+        "CCTV-13 新闻[高清]"
       ],
       "category": "央视",
       "source_count": 29,
@@ -2280,14 +2354,14 @@
     {
       "clean_name": "CCTV-14 少儿",
       "original_names": [
-        "CCTV-14 少儿[高清]",
-        "CCTV 14 HEVC",
-        "CCTV14",
-        "CCTV-14",
         "CCTV 14",
-        "CCTV-14 (2160p)",
+        "CCTV 14 HEVC",
         "CCTV-14 少儿",
-        "CCTV 14 50 FPS"
+        "CCTV14",
+        "CCTV 14 50 FPS",
+        "CCTV-14",
+        "CCTV-14 (2160p)",
+        "CCTV-14 少儿[高清]"
       ],
       "category": "央视",
       "source_count": 28,
@@ -2502,14 +2576,14 @@
     {
       "clean_name": "CCTV-15 音乐",
       "original_names": [
+        "CCTV 15 50 FPS",
         "CCTV-15 (576p)",
         "CCTV15",
-        "[BD]cctv15",
         "CCTV-15 音乐[高清]",
-        "CCTV-15",
+        "[BD]cctv15",
+        "CCTV-15 音乐",
         "CCTV 15 HEVC",
-        "CCTV 15 50 FPS",
-        "CCTV-15 音乐"
+        "CCTV-15"
       ],
       "category": "央视",
       "source_count": 29,
@@ -2732,13 +2806,13 @@
     {
       "clean_name": "CCTV-16 奥林匹克",
       "original_names": [
-        "CCTV-16 奥林匹克[高清]",
-        "CCTV-16 (2160p)",
-        "CCTV 16",
-        "[BD]cctv16",
-        "CCTV-16 奥林匹克",
-        "CCTV-16",
         "CCTV16",
+        "CCTV-16 奥林匹克",
+        "[BD]cctv16",
+        "CCTV-16 (2160p)",
+        "CCTV-16",
+        "CCTV-16 奥林匹克[高清]",
+        "CCTV 16",
         "CCTV 16 4K HEVC"
       ],
       "category": "央视",
@@ -2949,13 +3023,13 @@
       "clean_name": "CCTV-17 农业农村",
       "original_names": [
         "CCTV17",
-        "CCTV-17 农业农村",
-        "CCTV-17",
-        "CCTV 17 HEVC",
-        "CCTV 17",
         "[BD]cctv17",
+        "CCTV 17 HEVC",
+        "CCTV-17",
         "CCTV-17 (2160p)",
-        "CCTV-17 农业农村[高清]"
+        "CCTV-17 农业农村[高清]",
+        "CCTV-17 农业农村",
+        "CCTV 17"
       ],
       "category": "央视",
       "source_count": 27,
@@ -3165,15 +3239,15 @@
     {
       "clean_name": "CCTV-2 财经",
       "original_names": [
-        "[BD]cctv-2高清",
-        "CCTV 2 50 FPS",
-        "CCTV-2 财经[高清]",
-        "[BD]cctv2",
-        "CCTV2",
-        "CCTV-2",
         "CCTV-2 财经",
+        "CCTV-2 (2160p)",
+        "CCTV-2 财经[高清]",
+        "[BD]cctv-2高清",
+        "[BD]cctv2",
         "CCTV 2",
-        "CCTV-2 (2160p)"
+        "CCTV-2",
+        "CCTV2",
+        "CCTV 2 50 FPS"
       ],
       "category": "央视",
       "source_count": 31,
@@ -3412,13 +3486,13 @@
     {
       "clean_name": "CCTV-3 综艺",
       "original_names": [
-        "CCTV 3",
-        "CCTV-3 综艺",
-        "CCTV 3 HEVC",
-        "CCTV-3",
         "CCTV-3 (2160p)",
         "[BD]cctv3",
+        "CCTV 3 HEVC",
         "CCTV3",
+        "CCTV 3",
+        "CCTV-3 综艺",
+        "CCTV-3",
         "CCTV-3 综艺[高清]"
       ],
       "category": "央视",
@@ -3642,21 +3716,21 @@
     {
       "clean_name": "CCTV-4 中文国际",
       "original_names": [
-        "CCTV-4 中文国际 美洲[高清]",
-        "CCTV 4 HEVC",
-        "CCTV-4 Europe",
-        "CCTV 4 50 FPS",
         "CCTV-4 中文国际美洲",
-        "CCTV-4 (2160p)",
-        "CCTV-4 中文国际欧洲",
-        "[BD]cctv4",
         "CCTV-4 中文国际[高清]",
-        "CCTV-4 中文国际",
         "CCTV-4 中文国际 欧洲[高清]",
-        "CCTV-4 America (1080p)",
-        "CCTV-4",
+        "CCTV-4 Europe",
+        "CCTV-4 中文国际",
         "CCTV4",
-        "CCTV-4 中文国际（亚） Ⓨ"
+        "CCTV-4 (2160p)",
+        "CCTV 4 HEVC",
+        "[BD]cctv4",
+        "CCTV-4",
+        "CCTV-4 中文国际欧洲",
+        "CCTV-4 中文国际 美洲[高清]",
+        "CCTV 4 50 FPS",
+        "CCTV-4 中文国际（亚） Ⓨ",
+        "CCTV-4 America (1080p)"
       ],
       "category": "央视",
       "source_count": 40,
@@ -3960,17 +4034,17 @@
     {
       "clean_name": "CCTV-5 体育",
       "original_names": [
-        "CCTV-5 (2160p)",
-        "CCTV-5 体育",
-        "[BD]cctv5",
-        "CCTV5",
-        "CCTV-5 体育[高清]",
-        "[BD]cctv5 plus",
-        "CCTV 5 HEVC",
         "[BD]cctv5 plus *c",
+        "[BD]cctv5 plus",
+        "CCTV-5 (2160p)",
+        "[BD]cctv5",
+        "CCTV-5 体育",
+        "CCTV-5 体育[高清]",
+        "CCTV5",
         "CCTV 5",
-        "CCTV-5",
-        "[BD]cctv5-体育"
+        "CCTV 5 HEVC",
+        "[BD]cctv5-体育",
+        "CCTV-5"
       ],
       "category": "央视",
       "source_count": 34,
@@ -4233,11 +4307,11 @@
     {
       "clean_name": "CCTV-5+ 体育赛事",
       "original_names": [
-        "CCTV-5+",
-        "CCTV 5+",
         "CCTV5+",
+        "CCTV-5+",
+        "CCTV-5+ (2160p)",
         "CCTV 5+ HEVC",
-        "CCTV-5+ (2160p)"
+        "CCTV 5+"
       ],
       "category": "央视",
       "source_count": 16,
@@ -4367,14 +4441,14 @@
     {
       "clean_name": "CCTV-6 电影",
       "original_names": [
+        "CCTV6",
+        "CCTV 6",
+        "CCTV-6",
+        "CCTV-6 (2160p)",
         "CCTV-6 电影",
         "CCTV 6 50 FPS",
-        "CCTV-6 (2160p)",
-        "CCTV 6 HEVC",
-        "CCTV-6",
-        "CCTV 6",
-        "CCTV6",
-        "CCTV-6 电影[高清]"
+        "CCTV-6 电影[高清]",
+        "CCTV 6 HEVC"
       ],
       "category": "央视",
       "source_count": 29,
@@ -4596,15 +4670,15 @@
     {
       "clean_name": "CCTV-7 国防军事",
       "original_names": [
-        "CCTV-7 国防军事[高清]",
-        "CCTV 7 HEVC",
-        "CCTV-7",
         "CCTV 7 50 FPS",
         "CCTV-7 (2160p)",
-        "CCTV 7",
+        "CCTV7",
         "CCTV-7 国防军事",
         "[BD]cctv7",
-        "CCTV7"
+        "CCTV 7 HEVC",
+        "CCTV-7",
+        "CCTV-7 国防军事[高清]",
+        "CCTV 7"
       ],
       "category": "央视",
       "source_count": 30,
@@ -4835,15 +4909,15 @@
     {
       "clean_name": "CCTV-8 电视剧",
       "original_names": [
-        "CCTV 8 HEVC",
+        "CCTV-8 电视剧[高清]",
+        "[BD]cctv8",
+        "CCTV-8 (2160p)",
+        "CCTV-8",
+        "[BD]cctv-8高清",
         "CCTV-8 电视剧",
         "CCTV8",
-        "CCTV-8 (2160p)",
-        "[BD]cctv8",
         "CCTV 8",
-        "[BD]cctv-8高清",
-        "CCTV-8 电视剧[高清]",
-        "CCTV-8"
+        "CCTV 8 HEVC"
       ],
       "category": "央视",
       "source_count": 31,
@@ -5082,14 +5156,14 @@
     {
       "clean_name": "CCTV-9 纪录",
       "original_names": [
-        "CCTV-9 (2160p)",
-        "CCTV-9 纪录",
-        "CCTV-9 纪录[高清]",
-        "[BD]cctv-9高清",
         "CCTV 9",
-        "CCTV-9",
+        "CCTV-9 纪录[高清]",
         "CCTV 9 HEVC",
+        "CCTV-9 (2160p)",
+        "[BD]cctv-9高清",
         "CCTV 9 50 FPS",
+        "CCTV-9 纪录",
+        "CCTV-9",
         "CCTV9"
       ],
       "category": "央视",
@@ -5366,6 +5440,26 @@
       ]
     },
     {
+      "clean_name": "CCTV8k超",
+      "original_names": [
+        "[BD]cctv8k超高清[ipv6]"
+      ],
+      "category": "央视",
+      "source_count": 1,
+      "logos": [
+        "https://epg.pw/media/images/channel/2021/06/24/large/20210624004559407468_16.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://epg.pw/stream/12c4722b400606e9f17e446f03738627390aa03e60b7cea9a4fe15016cc6e079.m3u8",
+          "quality": "高清",
+          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
+          "logo": "https://epg.pw/media/images/channel/2021/06/24/large/20210624004559407468_16.png"
+        }
+      ]
+    },
+    {
       "clean_name": "CCTV世界地理",
       "original_names": [
         "CCTV世界地理"
@@ -5426,14 +5520,37 @@
       ]
     },
     {
-      "clean_name": "CCTV第一剧场",
+      "clean_name": "CCTV怀旧剧场",
       "original_names": [
-        "CCTV第一剧场"
+        "[BD]cctv怀旧剧场[ipv6]"
       ],
       "category": "其他台",
       "source_count": 1,
       "logos": [
-        "https://tb.zbds.top/logo/CCTV第一剧场.png"
+        "https://epg.pw/media/images/channel/2022/05/09/large/20220509160609659886_36.jpg"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://epg.pw/stream/188c041c330736b956fe8f41af7bf90cac0dd06699f977752ac93f0359de4a23.m3u8",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
+          "logo": "https://epg.pw/media/images/channel/2022/05/09/large/20220509160609659886_36.jpg"
+        }
+      ]
+    },
+    {
+      "clean_name": "CCTV第一剧场",
+      "original_names": [
+        "[SD]cctv第一剧场",
+        "CCTV第一剧场",
+        "[BD]cctv第一剧场[ipv6]"
+      ],
+      "category": "其他台",
+      "source_count": 3,
+      "logos": [
+        "https://tb.zbds.top/logo/CCTV第一剧场.png",
+        "https://epg.pw/media/images/channel/2022/09/07/large/20220907150153591598_13.jpg"
       ],
       "sources": [
         {
@@ -5442,6 +5559,20 @@
           "quality": "未知",
           "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
           "logo": "https://tb.zbds.top/logo/CCTV第一剧场.png"
+        },
+        {
+          "index": 2,
+          "url": "https://epg.pw/stream/ba55b8e8aea7622044ad6925d44966b26283edbe03be0646f351292a22e1027c.m3u8",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
+          "logo": "https://epg.pw/media/images/channel/2022/09/07/large/20220907150153591598_13.jpg"
+        },
+        {
+          "index": 3,
+          "url": "https://stream1.freetv.fun/631e31539c1b0c0c745f6727dd2e9511ef40616c5732baa462609264fa22c757.m3u8",
+          "quality": "标清",
+          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
+          "logo": "https://epg.pw/media/images/channel/2022/09/07/large/20220907150153591598_13.jpg"
         }
       ]
     },
@@ -5468,12 +5599,14 @@
     {
       "clean_name": "CCTV风云足球",
       "original_names": [
-        "CCTV风云足球"
+        "CCTV风云足球",
+        "[BD]cctv风云足球"
       ],
       "category": "体育台",
-      "source_count": 1,
+      "source_count": 2,
       "logos": [
-        "https://tb.zbds.top/logo/CCTV风云足球.png"
+        "https://tb.zbds.top/logo/CCTV风云足球.png",
+        "https://epg.pw/media/images/channel/2022/05/10/large/20220510165533742367_97.jpg"
       ],
       "sources": [
         {
@@ -5482,6 +5615,33 @@
           "quality": "未知",
           "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
           "logo": "https://tb.zbds.top/logo/CCTV风云足球.png"
+        },
+        {
+          "index": 2,
+          "url": "https://stream1.freetv.fun/f29c24e198f9bf47ac2be43abf3d1a9eb21ebf26392c4959f9ec8d2077718450.m3u8",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
+          "logo": "https://epg.pw/media/images/channel/2022/05/10/large/20220510165533742367_97.jpg"
+        }
+      ]
+    },
+    {
+      "clean_name": "CCTV风云音乐",
+      "original_names": [
+        "[BD]cctv风云音乐[ipv6]"
+      ],
+      "category": "综艺台",
+      "source_count": 1,
+      "logos": [
+        "https://epg.pw/media/images/channel/2022/05/12/large/20220512145757792204_59.jpg"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://epg.pw/stream/c5cdf98a2ec7cc0b65f33cdf0f06ab09297ea13408e63416e671eb3e8ae1ae9f.m3u8",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
+          "logo": "https://epg.pw/media/images/channel/2022/05/12/large/20220512145757792204_59.jpg"
         }
       ]
     },
@@ -5646,206 +5806,1130 @@
       ]
     },
     {
-      "clean_name": "cctv",
+      "clean_name": "「B站」CS 2",
       "original_names": [
-        "[BD]cctv-4k"
+        "「B站」CS 2"
       ],
       "category": "其他台",
       "source_count": 1,
       "logos": [
-        "https://epg.pw/media/images/channel/2025/01/25/large/20250125055421788601_18.png"
+        "https://epg-1.iill.top/logo/哔哩哔哩.png"
       ],
       "sources": [
         {
           "index": 1,
-          "url": "https://stream1.freetv.fun/b9a2e767d016105572cd8746a02687121eff29c306eeb922ff2feab8b7286e4c.ctv",
-          "quality": "4K",
-          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
-          "logo": "https://epg.pw/media/images/channel/2025/01/25/large/20250125055421788601_18.png"
-        }
-      ]
-    },
-    {
-      "clean_name": "cctv 14少儿",
-      "original_names": [
-        "[SD]cctv-14少儿"
-      ],
-      "category": "央视",
-      "source_count": 1,
-      "logos": [
-        "https://epg.pw/media/images/channel/2025/01/25/large/20250125001539178535_27.png"
-      ],
-      "sources": [
-        {
-          "index": 1,
-          "url": "https://stream1.freetv.fun/16b39a17c3bc3f5982d0796055c25699d7ffc0948274e5f69da181d74d680bc8.m3u8",
-          "quality": "标清",
-          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
-          "logo": "https://epg.pw/media/images/channel/2025/01/25/large/20250125001539178535_27.png"
-        }
-      ]
-    },
-    {
-      "clean_name": "cctv 4中文国际",
-      "original_names": [
-        "[SD]cctv-4中文国际"
-      ],
-      "category": "央视",
-      "source_count": 2,
-      "logos": [
-        "https://epg.pw/media/images/channel/2022/05/20/large/20220520003116532960_83.jpg",
-        "https://epg.pw/media/images/channel/2022/05/20/large/20220520002852256993_13.jpg"
-      ],
-      "sources": [
-        {
-          "index": 1,
-          "url": "https://epg.pw/stream/e9df8fe337dd6bacbf98516a34c0b0c94b3d2a02339529dea3de3769add35fc9.m3u8",
-          "quality": "标清",
-          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
-          "logo": "https://epg.pw/media/images/channel/2022/05/20/large/20220520003116532960_83.jpg"
-        },
-        {
-          "index": 2,
-          "url": "https://epg.pw/stream/c3b4c0fa59357628b823a008e742caa5e3ea18df81216adbc62f3aa7afe556f0.m3u8",
-          "quality": "标清",
-          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
-          "logo": "https://epg.pw/media/images/channel/2022/05/20/large/20220520002852256993_13.jpg"
-        }
-      ]
-    },
-    {
-      "clean_name": "cctv 9纪录",
-      "original_names": [
-        "[SD]cctv-9纪录"
-      ],
-      "category": "央视",
-      "source_count": 1,
-      "logos": [
-        "https://epg.pw/media/images/channel/2025/01/25/large/20250125013114796464_35.png"
-      ],
-      "sources": [
-        {
-          "index": 1,
-          "url": "https://stream1.freetv.fun/bac2107c8204c290efc6c6224146418641af787e31995157d64d567afbc00279.m3u8",
-          "quality": "标清",
-          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
-          "logo": "https://epg.pw/media/images/channel/2025/01/25/large/20250125013114796464_35.png"
-        }
-      ]
-    },
-    {
-      "clean_name": "cctv8k超",
-      "original_names": [
-        "[BD]cctv8k超高清[ipv6]"
-      ],
-      "category": "央视",
-      "source_count": 1,
-      "logos": [
-        "https://epg.pw/media/images/channel/2021/06/24/large/20210624004559407468_16.png"
-      ],
-      "sources": [
-        {
-          "index": 1,
-          "url": "https://epg.pw/stream/12c4722b400606e9f17e446f03738627390aa03e60b7cea9a4fe15016cc6e079.m3u8",
-          "quality": "高清",
-          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
-          "logo": "https://epg.pw/media/images/channel/2021/06/24/large/20210624004559407468_16.png"
-        }
-      ]
-    },
-    {
-      "clean_name": "cctv怀旧剧场",
-      "original_names": [
-        "[BD]cctv怀旧剧场[ipv6]"
-      ],
-      "category": "其他台",
-      "source_count": 1,
-      "logos": [
-        "https://epg.pw/media/images/channel/2022/05/09/large/20220509160609659886_36.jpg"
-      ],
-      "sources": [
-        {
-          "index": 1,
-          "url": "https://epg.pw/stream/188c041c330736b956fe8f41af7bf90cac0dd06699f977752ac93f0359de4a23.m3u8",
+          "url": "https://live.iill.top/bilibili/21622811",
           "quality": "未知",
-          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
-          "logo": "https://epg.pw/media/images/channel/2022/05/09/large/20220509160609659886_36.jpg"
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/哔哩哔哩.png"
         }
       ]
     },
     {
-      "clean_name": "cctv第一剧场",
+      "clean_name": "「B站」JJ斗地主",
       "original_names": [
-        "[BD]cctv第一剧场[ipv6]",
-        "[SD]cctv第一剧场"
+        "「B站」JJ斗地主"
       ],
       "category": "其他台",
-      "source_count": 2,
+      "source_count": 1,
       "logos": [
-        "https://epg.pw/media/images/channel/2022/09/07/large/20220907150153591598_13.jpg"
+        "https://epg-1.iill.top/logo/哔哩哔哩.png"
       ],
       "sources": [
         {
           "index": 1,
-          "url": "https://epg.pw/stream/ba55b8e8aea7622044ad6925d44966b26283edbe03be0646f351292a22e1027c.m3u8",
+          "url": "https://live.iill.top/bilibili/22021983",
           "quality": "未知",
-          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
-          "logo": "https://epg.pw/media/images/channel/2022/09/07/large/20220907150153591598_13.jpg"
-        },
-        {
-          "index": 2,
-          "url": "https://stream1.freetv.fun/631e31539c1b0c0c745f6727dd2e9511ef40616c5732baa462609264fa22c757.m3u8",
-          "quality": "标清",
-          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
-          "logo": "https://epg.pw/media/images/channel/2022/09/07/large/20220907150153591598_13.jpg"
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/哔哩哔哩.png"
         }
       ]
     },
     {
-      "clean_name": "cctv风云足球",
+      "clean_name": "「B站」QQ飞车•手游",
       "original_names": [
-        "[BD]cctv风云足球"
+        "「B站」QQ飞车•手游"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/哔哩哔哩.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/bilibili/21743919",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/哔哩哔哩.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「B站」使命召唤•手游",
+      "original_names": [
+        "「B站」使命召唤•手游"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/哔哩哔哩.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/bilibili/22741849",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/哔哩哔哩.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「B站」无畏契约",
+      "original_names": [
+        "「B站」无畏契约"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/哔哩哔哩.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/bilibili/22908869",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/哔哩哔哩.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「B站」热门赛事",
+      "original_names": [
+        "「B站」热门赛事"
       ],
       "category": "体育台",
       "source_count": 1,
       "logos": [
-        "https://epg.pw/media/images/channel/2022/05/10/large/20220510165533742367_97.jpg"
+        "https://epg-1.iill.top/logo/哔哩哔哩.png"
       ],
       "sources": [
         {
           "index": 1,
-          "url": "https://stream1.freetv.fun/f29c24e198f9bf47ac2be43abf3d1a9eb21ebf26392c4959f9ec8d2077718450.m3u8",
+          "url": "http://dns.yiandrive.com:15907/bilibili/10",
           "quality": "未知",
-          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
-          "logo": "https://epg.pw/media/images/channel/2022/05/10/large/20220510165533742367_97.jpg"
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/哔哩哔哩.png"
         }
       ]
     },
     {
-      "clean_name": "cctv风云音乐",
+      "clean_name": "「B站」王者荣耀 𝟙",
       "original_names": [
-        "[BD]cctv风云音乐[ipv6]"
+        "「B站」王者荣耀 𝟙"
       ],
-      "category": "综艺台",
+      "category": "其他台",
       "source_count": 1,
       "logos": [
-        "https://epg.pw/media/images/channel/2022/05/12/large/20220512145757792204_59.jpg"
+        "https://epg-1.iill.top/logo/哔哩哔哩.png"
       ],
       "sources": [
         {
           "index": 1,
-          "url": "https://epg.pw/stream/c5cdf98a2ec7cc0b65f33cdf0f06ab09297ea13408e63416e671eb3e8ae1ae9f.m3u8",
+          "url": "https://live.iill.top/bilibili/55",
           "quality": "未知",
-          "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
-          "logo": "https://epg.pw/media/images/channel/2022/05/12/large/20220512145757792204_59.jpg"
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/哔哩哔哩.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「B站」王者荣耀 𝟚",
+      "original_names": [
+        "「B站」王者荣耀 𝟚"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/哔哩哔哩.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/bilibili/21654762",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/哔哩哔哩.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「B站」第五人格",
+      "original_names": [
+        "「B站」第五人格"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/哔哩哔哩.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/bilibili/5555",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/哔哩哔哩.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「B站」绝地求生",
+      "original_names": [
+        "「B站」绝地求生"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/哔哩哔哩.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/bilibili/98",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/哔哩哔哩.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「B站」英雄联盟",
+      "original_names": [
+        "「B站」英雄联盟"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/哔哩哔哩.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/bilibili/6",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/哔哩哔哩.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「B站」英雄联盟•手游",
+      "original_names": [
+        "「B站」英雄联盟•手游"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/哔哩哔哩.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/bilibili/23138275",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/哔哩哔哩.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」DOTA2",
+      "original_names": [
+        "「斗鱼」DOTA2"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/3811559",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」FIFA",
+      "original_names": [
+        "「斗鱼」FIFA"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/7692166",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」JJ斗地主",
+      "original_names": [
+        "「斗鱼」JJ斗地主"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/488743",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」QQ飞车•手游",
+      "original_names": [
+        "「斗鱼」QQ飞车•手游"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/5040227",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」云顶之弈",
+      "original_names": [
+        "「斗鱼」云顶之弈"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/522423",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」使命召唤•手游",
+      "original_names": [
+        "「斗鱼」使命召唤•手游"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/9223245",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」原神",
+      "original_names": [
+        "「斗鱼」原神"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/10853239",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」和平精英",
+      "original_names": [
+        "「斗鱼」和平精英"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/999",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」我的世界",
+      "original_names": [
+        "「斗鱼」我的世界"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/738878",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」无畏契约",
+      "original_names": [
+        "「斗鱼」无畏契约"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/4585645",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」梦幻西游·手游",
+      "original_names": [
+        "「斗鱼」梦幻西游·手游"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/9163712",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」永劫无间",
+      "original_names": [
+        "「斗鱼」永劫无间"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/9662891",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」火影忍者",
+      "original_names": [
+        "「斗鱼」火影忍者"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/1997723",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」王者荣耀 𝟙",
+      "original_names": [
+        "「斗鱼」王者荣耀 𝟙"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/1863767",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」王者荣耀 𝟚",
+      "original_names": [
+        "「斗鱼」王者荣耀 𝟚"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/1984839",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」穿越火线 𝟙",
+      "original_names": [
+        "「斗鱼」穿越火线 𝟙"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/605964",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」穿越火线 𝟚",
+      "original_names": [
+        "「斗鱼」穿越火线 𝟚"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/5388537",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」第五人格",
+      "original_names": [
+        "「斗鱼」第五人格"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/3226194",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」绝地求生",
+      "original_names": [
+        "「斗鱼」绝地求生"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/100",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」英雄联盟 𝟙",
+      "original_names": [
+        "「斗鱼」英雄联盟 𝟙"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/288016",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」英雄联盟 𝟚",
+      "original_names": [
+        "「斗鱼」英雄联盟 𝟚"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/424559",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」街霸",
+      "original_names": [
+        "「斗鱼」街霸"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/11437",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」跑跑卡丁车",
+      "original_names": [
+        "「斗鱼」跑跑卡丁车"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/7722576",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」跑跑卡丁车•手游",
+      "original_names": [
+        "「斗鱼」跑跑卡丁车•手游"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/6672862",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「斗鱼」金铲铲之战",
+      "original_names": [
+        "「斗鱼」金铲铲之战"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/斗鱼.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/douyu/9715241",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/斗鱼.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」CS 2",
+      "original_names": [
+        "「虎牙」CS 2"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/483917",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」DOTA2",
+      "original_names": [
+        "「虎牙」DOTA2"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/660118",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」使命召唤•手游",
+      "original_names": [
+        "「虎牙」使命召唤•手游"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/11718629",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」和平精英",
+      "original_names": [
+        "「虎牙」和平精英"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/660006",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」无畏契约",
+      "original_names": [
+        "「虎牙」无畏契约"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/660679",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」永劫无间",
+      "original_names": [
+        "「虎牙」永劫无间"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/660115",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」王者荣耀 𝟙",
+      "original_names": [
+        "「虎牙」王者荣耀 𝟙"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/660002",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」王者荣耀 𝟚",
+      "original_names": [
+        "「虎牙」王者荣耀 𝟚"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/660164",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」穿越火线",
+      "original_names": [
+        "「虎牙」穿越火线"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/660101",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」穿越火线•手游",
+      "original_names": [
+        "「虎牙」穿越火线•手游"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/660102",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」第五人格",
+      "original_names": [
+        "「虎牙」第五人格"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/idvesports",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」绝地求生 𝟙",
+      "original_names": [
+        "「虎牙」绝地求生 𝟙"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/660004",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」绝地求生 𝟚",
+      "original_names": [
+        "「虎牙」绝地求生 𝟚"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/660005",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」英雄联盟 𝟙",
+      "original_names": [
+        "「虎牙」英雄联盟 𝟙"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/660000",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」英雄联盟 𝟚",
+      "original_names": [
+        "「虎牙」英雄联盟 𝟚"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/660001",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」逆战",
+      "original_names": [
+        "「虎牙」逆战"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/nsl2021",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "「虎牙」金铲铲之战",
+      "original_names": [
+        "「虎牙」金铲铲之战"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/660579",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "七龙珠「动漫」",
+      "original_names": [
+        "七龙珠「动漫」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/11601966",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "七龙珠「解说」",
+      "original_names": [
+        "七龙珠「解说」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/25650806",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
         }
       ]
     },
     {
       "clean_name": "三沙卫视",
       "original_names": [
-        "[SD]三沙卫视",
-        "三沙卫视"
+        "三沙卫视",
+        "[SD]三沙卫视"
       ],
       "category": "卫视",
       "source_count": 19,
@@ -5997,7 +7081,7 @@
       "original_names": [
         "上海ICS外语"
       ],
-      "category": "其他台",
+      "category": "上海市",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.com/tv/上海外语.png"
@@ -6052,7 +7136,7 @@
       "original_names": [
         "上海外语"
       ],
-      "category": "其他台",
+      "category": "上海市",
       "source_count": 5,
       "logos": [
         "上海外语.png",
@@ -6102,7 +7186,7 @@
       "original_names": [
         "上海教育"
       ],
-      "category": "其他台",
+      "category": "上海市",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/上海教育.png"
@@ -6122,7 +7206,7 @@
       "original_names": [
         "上海新闻"
       ],
-      "category": "地方台",
+      "category": "上海市",
       "source_count": 2,
       "logos": [
         "https://live.fanmingming.cn/tv/上视新闻.png"
@@ -6147,10 +7231,10 @@
     {
       "clean_name": "上海新闻综合",
       "original_names": [
-        "上海新闻综合",
-        "[BD]上海新闻综合"
+        "[BD]上海新闻综合",
+        "上海新闻综合"
       ],
-      "category": "其他台",
+      "category": "上海市",
       "source_count": 8,
       "logos": [
         "https://epg.pw/media/images/channel/2024/07/28/large/20240728175315523478_16.jpg",
@@ -6221,7 +7305,7 @@
       "original_names": [
         "上海滩"
       ],
-      "category": "其他台",
+      "category": "上海市",
       "source_count": 2,
       "logos": [
         "上海滩.png"
@@ -6246,10 +7330,10 @@
     {
       "clean_name": "上海第一财经",
       "original_names": [
-        "上海第一财经",
-        "[BD]上海第一财经"
+        "[BD]上海第一财经",
+        "上海第一财经"
       ],
-      "category": "其他台",
+      "category": "上海市",
       "source_count": 7,
       "logos": [
         "https://epg.pw/media/images/channel/2024/07/28/large/20240728160727801389_11.png",
@@ -6314,7 +7398,7 @@
       "original_names": [
         "上海纪实"
       ],
-      "category": "其他台",
+      "category": "上海市",
       "source_count": 7,
       "logos": [
         "上海纪实.png"
@@ -6377,7 +7461,7 @@
         "[BD]上海都市",
         "上海都市"
       ],
-      "category": "地方台",
+      "category": "上海市",
       "source_count": 14,
       "logos": [
         "https://epg.pw/media/images/channel/2024/07/28/large/20240728225114975519_45.png",
@@ -6490,11 +7574,11 @@
     {
       "clean_name": "东南卫视",
       "original_names": [
-        "东南卫视",
-        "东南卫视[高清]",
-        "[BD]东南卫视",
         "东南卫视 (Southeast Television fka Fujian Television) (2160p)",
-        "东南卫视 HEVC"
+        "东南卫视 HEVC",
+        "[BD]东南卫视",
+        "东南卫视[高清]",
+        "东南卫视"
       ],
       "category": "卫视",
       "source_count": 30,
@@ -6724,13 +7808,13 @@
     {
       "clean_name": "东方卫视",
       "original_names": [
-        "[BD]东方卫视",
         "东方卫视 (2160p)",
-        "东方卫视 HEVC",
-        "东方卫视4K",
-        "东方卫视[超清HDR]",
         "东方卫视",
-        "东方卫视 50 FPS"
+        "[BD]东方卫视",
+        "东方卫视4K",
+        "东方卫视 HEVC",
+        "东方卫视 50 FPS",
+        "东方卫视[超清HDR]"
       ],
       "category": "卫视",
       "source_count": 28,
@@ -6947,8 +8031,8 @@
     {
       "clean_name": "东方影视",
       "original_names": [
-        "东方影视",
-        "[BD]东方影视"
+        "[BD]东方影视",
+        "东方影视"
       ],
       "category": "其他台",
       "source_count": 15,
@@ -7070,8 +8154,8 @@
     {
       "clean_name": "东方财经",
       "original_names": [
-        "[SD]东方财经",
-        "东方财经"
+        "东方财经",
+        "[SD]东方财经"
       ],
       "category": "其他台",
       "source_count": 6,
@@ -7164,6 +8248,26 @@
           "quality": "未知",
           "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
           "logo": "https://epg.pw/media/images/channel/2023/07/18/large/20230718005646228477_42.jpg"
+        }
+      ]
+    },
+    {
+      "clean_name": "中华小当家「动漫」",
+      "original_names": [
+        "中华小当家「动漫」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/11342413",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
         }
       ]
     },
@@ -7272,7 +8376,7 @@
       "original_names": [
         "乌兰察布新闻"
       ],
-      "category": "地方台",
+      "category": "其他台",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/乌兰察布.png"
@@ -7292,7 +8396,7 @@
       "original_names": [
         "云南 Ⅰ 文山公共台 (1080p)"
       ],
-      "category": "其他台",
+      "category": "云南省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -7310,7 +8414,7 @@
       "original_names": [
         "云南 Ⅰ 文山综合台 (1080p) [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "云南省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -7328,7 +8432,7 @@
       "original_names": [
         "云南丽江冰川"
       ],
-      "category": "其他台",
+      "category": "云南省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/云南丽江冰川.png"
@@ -7348,7 +8452,7 @@
       "original_names": [
         "云南丽江印象实景"
       ],
-      "category": "其他台",
+      "category": "云南省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/云南丽江印象实景.png"
@@ -7368,7 +8472,7 @@
       "original_names": [
         "云南丽江玉龙雪山"
       ],
-      "category": "其他台",
+      "category": "云南省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/云南丽江玉龙雪山.png"
@@ -7388,7 +8492,7 @@
       "original_names": [
         "云南丽江玉龙雪山草甸"
       ],
-      "category": "其他台",
+      "category": "云南省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/云南丽江玉龙雪山草甸.png"
@@ -7408,7 +8512,7 @@
       "original_names": [
         "云南丽江蓝月谷"
       ],
-      "category": "其他台",
+      "category": "云南省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/云南丽江蓝月谷.png"
@@ -7426,9 +8530,9 @@
     {
       "clean_name": "云南卫视",
       "original_names": [
+        "[BD]云南卫视",
         "云南卫视 (1080p)",
-        "云南卫视",
-        "[BD]云南卫视"
+        "云南卫视"
       ],
       "category": "卫视",
       "source_count": 29,
@@ -7652,7 +8756,7 @@
       "original_names": [
         "云南大理崇圣寺三塔中景"
       ],
-      "category": "其他台",
+      "category": "云南省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/云南大理崇圣寺三塔中景.png"
@@ -7672,7 +8776,7 @@
       "original_names": [
         "云南大理崇圣寺三塔远景"
       ],
-      "category": "其他台",
+      "category": "云南省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/云南大理崇圣寺三塔远景.png"
@@ -7712,7 +8816,7 @@
       "original_names": [
         "云南白沙远眺玉龙雪山"
       ],
-      "category": "其他台",
+      "category": "云南省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/云南白沙远眺玉龙雪山.png"
@@ -7733,7 +8837,7 @@
         "云南都市 (1080p)",
         "云南都市"
       ],
-      "category": "地方台",
+      "category": "云南省",
       "source_count": 2,
       "logos": [
         "云南都市.png"
@@ -7752,6 +8856,26 @@
           "quality": "高清",
           "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
           "logo": ""
+        }
+      ]
+    },
+    {
+      "clean_name": "互扇巴掌大赛「其他」",
+      "original_names": [
+        "互扇巴掌大赛「其他」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/20072873",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
         }
       ]
     },
@@ -7785,12 +8909,52 @@
       ]
     },
     {
+      "clean_name": "免费订阅：请勿贩卖...",
+      "original_names": [
+        "免费订阅：请勿贩卖..."
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/温馨提示.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://epg-1.iill.top/v/302.mp4",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/温馨提示.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "公告说明： 暂无",
+      "original_names": [
+        "公告说明：IPV6 暂无"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/温馨提示.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://epg-1.iill.top/v/301.mp4",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/温馨提示.png"
+        }
+      ]
+    },
+    {
       "clean_name": "兵团卫视",
       "original_names": [
-        "兵团卫视",
-        "[SD]兵团卫视",
         "兵团卫视 (540p) [Not 24/7]",
-        "兵团卫视[高清]"
+        "兵团卫视[高清]",
+        "兵团卫视",
+        "[SD]兵团卫视"
       ],
       "category": "卫视",
       "source_count": 12,
@@ -7915,7 +9079,7 @@
       "original_names": [
         "内蒙古 (576p)"
       ],
-      "category": "其他台",
+      "category": "内蒙古自治区",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -7933,7 +9097,7 @@
       "original_names": [
         "[BD]内蒙古农牧"
       ],
-      "category": "其他台",
+      "category": "内蒙古自治区",
       "source_count": 2,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/31/large/20220531161624183518_95.jpg"
@@ -7958,9 +9122,9 @@
     {
       "clean_name": "内蒙古卫视",
       "original_names": [
+        "内蒙古卫视",
         "[BD]内蒙古卫视",
-        "内蒙古卫视 (576p)",
-        "内蒙古卫视"
+        "内蒙古卫视 (576p)"
       ],
       "category": "卫视",
       "source_count": 26,
@@ -8202,7 +9366,7 @@
       "original_names": [
         "[BD]内蒙古经济生活"
       ],
-      "category": "其他台",
+      "category": "内蒙古自治区",
       "source_count": 1,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/31/large/20220531224556038609_37.jpg"
@@ -8240,8 +9404,8 @@
     {
       "clean_name": "内蒙古蒙语文化",
       "original_names": [
-        "[BD]内蒙古蒙语文化",
-        "内蒙古蒙语文化"
+        "内蒙古蒙语文化",
+        "[BD]内蒙古蒙语文化"
       ],
       "category": "综艺台",
       "source_count": 2,
@@ -8311,7 +9475,7 @@
       "original_names": [
         "内蒙新闻"
       ],
-      "category": "地方台",
+      "category": "其他台",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/内蒙古新闻综合.png"
@@ -8331,7 +9495,7 @@
       "original_names": [
         "内蒙经济"
       ],
-      "category": "地方台",
+      "category": "其他台",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/内蒙古经济生活.png"
@@ -8349,8 +9513,8 @@
     {
       "clean_name": "农林卫视",
       "original_names": [
-        "[SD]农林卫视",
-        "农林卫视"
+        "农林卫视",
+        "[SD]农林卫视"
       ],
       "category": "卫视",
       "source_count": 3,
@@ -8479,6 +9643,26 @@
       ]
     },
     {
+      "clean_name": "动漫•1「解说」",
+      "original_names": [
+        "动漫•1「解说」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/19757963",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
       "clean_name": "包头新闻综合",
       "original_names": [
         "包头新闻综合"
@@ -8503,7 +9687,7 @@
       "original_names": [
         "北京4K超清"
       ],
-      "category": "其他台",
+      "category": "北京市",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/北京超清.png"
@@ -8523,7 +9707,7 @@
       "original_names": [
         "北京体育休闲"
       ],
-      "category": "其他台",
+      "category": "北京市",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/北京体育休闲.png"
@@ -8582,12 +9766,12 @@
     {
       "clean_name": "北京卫视",
       "original_names": [
-        "[BD]北京卫视[ipv6]",
-        "[BD]北京卫视",
         "北京卫视4K",
         "北京卫视 (1080p)",
+        "北京卫视 HEVC",
         "北京卫视",
-        "北京卫视 HEVC"
+        "[BD]北京卫视",
+        "[BD]北京卫视[ipv6]"
       ],
       "category": "卫视",
       "source_count": 28,
@@ -8806,7 +9990,7 @@
       "original_names": [
         "北京国际"
       ],
-      "category": "其他台",
+      "category": "北京市",
       "source_count": 1,
       "logos": [
         "https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_International.png"
@@ -8826,7 +10010,7 @@
       "original_names": [
         "北京影视"
       ],
-      "category": "其他台",
+      "category": "北京市",
       "source_count": 2,
       "logos": [
         "https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_YingShi.png",
@@ -8852,8 +10036,8 @@
     {
       "clean_name": "北京文艺",
       "original_names": [
-        "[BD]北京文艺",
-        "北京文艺"
+        "北京文艺",
+        "[BD]北京文艺"
       ],
       "category": "综艺台",
       "source_count": 3,
@@ -8892,7 +10076,7 @@
         "北京新闻",
         "[BD]北京新闻"
       ],
-      "category": "地方台",
+      "category": "北京市",
       "source_count": 13,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/13/large/20220513145911554540_68.jpg",
@@ -8998,7 +10182,7 @@
       "original_names": [
         "北京生活"
       ],
-      "category": "其他台",
+      "category": "北京市",
       "source_count": 6,
       "logos": [
         "https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_ShengHuo.png",
@@ -9055,7 +10239,7 @@
         "[BD]北京科教",
         "北京科教"
       ],
-      "category": "其他台",
+      "category": "北京市",
       "source_count": 2,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/13/large/20220513150157639632_97.jpg",
@@ -9083,7 +10267,7 @@
       "original_names": [
         "北京纪实 (1080p)"
       ],
-      "category": "其他台",
+      "category": "北京市",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -9101,7 +10285,7 @@
       "original_names": [
         "[BD]北京纪实8k"
       ],
-      "category": "其他台",
+      "category": "北京市",
       "source_count": 1,
       "logos": [
         "https://epg.pw/media/images/channel/2022/08/23/large/20220823134948727667_49.png"
@@ -9121,7 +10305,7 @@
       "original_names": [
         "北京纪实科教"
       ],
-      "category": "其他台",
+      "category": "北京市",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/北京纪实科教.png"
@@ -9141,7 +10325,7 @@
       "original_names": [
         "北京纪实科教8K"
       ],
-      "category": "其他台",
+      "category": "北京市",
       "source_count": 2,
       "logos": [
         "https://tb.zbds.top/logo/北京纪实科教8K.png",
@@ -9169,7 +10353,7 @@
       "original_names": [
         "[BD]北京财*"
       ],
-      "category": "其他台",
+      "category": "北京市",
       "source_count": 1,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/13/large/20220513150005487800_62.jpg"
@@ -9187,10 +10371,10 @@
     {
       "clean_name": "北京财经",
       "original_names": [
-        "北京财经 [Not 24/7]",
-        "北京财经"
+        "北京财经",
+        "北京财经 [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "北京市",
       "source_count": 6,
       "logos": [
         "https://ghfast.top/https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/BRTV/BRTV_CaiJing.png",
@@ -9247,7 +10431,7 @@
         "北京青年 [Not 24/7]",
         "北京青年"
       ],
-      "category": "其他台",
+      "category": "北京市",
       "source_count": 2,
       "logos": [
         "北京青年.png"
@@ -9312,10 +10496,10 @@
     {
       "clean_name": "厦门卫视",
       "original_names": [
-        "厦门卫视 (540p) [Not 24/7]",
         "厦门卫视 (576p)",
-        "[SD]厦门卫视",
-        "厦门卫视"
+        "厦门卫视",
+        "厦门卫视 (540p) [Not 24/7]",
+        "[SD]厦门卫视"
       ],
       "category": "卫视",
       "source_count": 22,
@@ -9486,10 +10670,10 @@
     {
       "clean_name": "吉林乡村",
       "original_names": [
-        "吉林乡村",
-        "[VGA]吉林乡村 (900p) [not 24/7]"
+        "[VGA]吉林乡村 (900p) [not 24/7]",
+        "吉林乡村"
       ],
-      "category": "其他台",
+      "category": "吉林省",
       "source_count": 3,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/30/large/20220530224659377626_27.jpg",
@@ -9525,9 +10709,9 @@
       "original_names": [
         "吉林卫视[高清]",
         "吉林卫视",
-        "吉林卫视 (2160p)",
+        "[BD]吉林卫视[ipv6]",
         "[BD]吉林卫视",
-        "[BD]吉林卫视[ipv6]"
+        "吉林卫视 (2160p)"
       ],
       "category": "卫视",
       "source_count": 28,
@@ -9746,7 +10930,7 @@
       "original_names": [
         "吉林市新闻综合"
       ],
-      "category": "其他台",
+      "category": "吉林省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -9764,7 +10948,7 @@
       "original_names": [
         "[VGA]吉林影视"
       ],
-      "category": "其他台",
+      "category": "吉林省",
       "source_count": 1,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/30/large/20220530224557427041_25.jpg"
@@ -9785,7 +10969,7 @@
         "[SD]吉林新闻综合",
         "[VGA]吉林新闻综合"
       ],
-      "category": "其他台",
+      "category": "吉林省",
       "source_count": 2,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/27/large/20220527162205528949_87.jpg"
@@ -9812,7 +10996,7 @@
       "original_names": [
         "吉林生活"
       ],
-      "category": "其他台",
+      "category": "吉林省",
       "source_count": 1,
       "logos": [
         "吉林生活.png"
@@ -9832,7 +11016,7 @@
       "original_names": [
         "吉林都市"
       ],
-      "category": "地方台",
+      "category": "吉林省",
       "source_count": 1,
       "logos": [
         "吉林都市.png"
@@ -9868,11 +11052,831 @@
       ]
     },
     {
+      "clean_name": "咪咕直播 𝟙「移动」",
+      "original_names": [
+        "咪咕直播 𝟙「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000001000005308/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000005308&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟙𝟘「移动」",
+      "original_names": [
+        "咪咕直播 𝟙𝟘「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000001000031494/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000031494&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟙𝟙「移动」",
+      "original_names": [
+        "咪咕直播 𝟙𝟙「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000000097/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000000097&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟙𝟚「移动」",
+      "original_names": [
+        "咪咕直播 𝟙𝟚「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000002019/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000002019&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟙𝟛「移动」",
+      "original_names": [
+        "咪咕直播 𝟙𝟛「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000002809/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000002809&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟙𝟜「移动」",
+      "original_names": [
+        "咪咕直播 𝟙𝟜「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000003915/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000003915&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟙𝟝「移动」",
+      "original_names": [
+        "咪咕直播 𝟙𝟝「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000004193/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000004193&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟙𝟞「移动」",
+      "original_names": [
+        "咪咕直播 𝟙𝟞「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000005837/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000005837&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟙𝟟「移动」",
+      "original_names": [
+        "咪咕直播 𝟙𝟟「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000006077/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000006077&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟙𝟠「移动」",
+      "original_names": [
+        "咪咕直播 𝟙𝟠「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000006658/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000006658&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟙𝟡「移动」",
+      "original_names": [
+        "咪咕直播 𝟙𝟡「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000009788/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000009788&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟚「移动」",
+      "original_names": [
+        "咪咕直播 𝟚「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000001000005969/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000005969&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟚𝟘「移动」",
+      "original_names": [
+        "咪咕直播 𝟚𝟘「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000010833/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000010833&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟚𝟙「移动」",
+      "original_names": [
+        "咪咕直播 𝟚𝟙「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000011297/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000011297&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟚𝟚「移动」",
+      "original_names": [
+        "咪咕直播 𝟚𝟚「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000011518/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000011518&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟚𝟛「移动」",
+      "original_names": [
+        "咪咕直播 𝟚𝟛「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000012558/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000012558&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟚𝟜「移动」",
+      "original_names": [
+        "咪咕直播 𝟚𝟜「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000012616/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000012616&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟚𝟝「移动」",
+      "original_names": [
+        "咪咕直播 𝟚𝟝「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000015470/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000015470&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟚𝟞「移动」",
+      "original_names": [
+        "咪咕直播 𝟚𝟞「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000015560/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000015560&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟚𝟟「移动」",
+      "original_names": [
+        "咪咕直播 𝟚𝟟「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000017678/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000017678&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟚𝟠「移动」",
+      "original_names": [
+        "咪咕直播 𝟚𝟠「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000019839/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000019839&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟚𝟡「移动」",
+      "original_names": [
+        "咪咕直播 𝟚𝟡「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000021904/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000021904&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟛「移动」",
+      "original_names": [
+        "咪咕直播 𝟛「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000001000007218/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000007218&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟛𝟘「移动」",
+      "original_names": [
+        "咪咕直播 𝟛𝟘「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000023434/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000023434&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟛𝟙「移动」",
+      "original_names": [
+        "咪咕直播 𝟛𝟙「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000025380/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000025380&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟛𝟚「移动」",
+      "original_names": [
+        "咪咕直播 𝟛𝟚「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000027691/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000027691&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟛𝟛「移动」",
+      "original_names": [
+        "咪咕直播 𝟛𝟛「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000031669/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000031669&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟛𝟜「移动」",
+      "original_names": [
+        "咪咕直播 𝟛𝟜「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000020000011518/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011518&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟛𝟝「移动」",
+      "original_names": [
+        "咪咕直播 𝟛𝟝「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000020000011519/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011519&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟛𝟞「移动」",
+      "original_names": [
+        "咪咕直播 𝟛𝟞「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000020000011520/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011520&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟛𝟟「移动」",
+      "original_names": [
+        "咪咕直播 𝟛𝟟「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000020000011521/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011521&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟛𝟠「移动」",
+      "original_names": [
+        "咪咕直播 𝟛𝟠「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000020000011522/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011522&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟜「移动」",
+      "original_names": [
+        "咪咕直播 𝟜「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000001000008001/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000008001&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟜𝕂 𝟙「移动」",
+      "original_names": [
+        "咪咕直播 𝟜𝕂-𝟙「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000005180/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000005180&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟜𝕂 𝟚「移动」",
+      "original_names": [
+        "咪咕直播 𝟜𝕂-𝟚「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000010000015686/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000015686&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟝「移动」",
+      "original_names": [
+        "咪咕直播 𝟝「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000001000008176/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000008176&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟞「移动」",
+      "original_names": [
+        "咪咕直播 𝟞「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000001000008379/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000008379&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟟「移动」",
+      "original_names": [
+        "咪咕直播 𝟟「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000001000010129/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000010129&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟠「移动」",
+      "original_names": [
+        "咪咕直播 𝟠「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000001000010948/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000010948&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "咪咕直播 𝟡「移动」",
+      "original_names": [
+        "咪咕直播 𝟡「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000001000028638/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000028638&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "哆啦A梦「动漫」",
+      "original_names": [
+        "哆啦A梦「动漫」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/11601963",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
       "clean_name": "四川 Ⅰ 四川影视台",
       "original_names": [
         "四川 Ⅰ 四川影视台 (720p) [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -9890,7 +11894,7 @@
       "original_names": [
         "四川 Ⅰ 四川新闻台 (720p) [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -9908,7 +11912,7 @@
       "original_names": [
         "四川 Ⅰ 巴中综合台 (1080p) [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -9926,7 +11930,7 @@
       "original_names": [
         "四川 Ⅰ 星空购物台 (720p) [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -9944,7 +11948,7 @@
       "original_names": [
         "四川 Ⅰ 达州公共台 (720p) [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -9962,7 +11966,7 @@
       "original_names": [
         "四川 Ⅰ 达州综合台 (720p) [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -9980,7 +11984,7 @@
       "original_names": [
         "四川公共 (720p)"
       ],
-      "category": "地方台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -9998,7 +12002,7 @@
       "original_names": [
         "四川公共乡村"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [
         "https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan6.png"
@@ -10016,11 +12020,11 @@
     {
       "clean_name": "四川卫视",
       "original_names": [
-        "四川卫视 (576p)",
-        "四川卫视",
-        "[BD]四川卫视",
         "四川卫视4K",
-        "四川卫视[超清HDR]"
+        "四川卫视 (576p)",
+        "四川卫视[超清HDR]",
+        "四川卫视",
+        "[BD]四川卫视"
       ],
       "category": "卫视",
       "source_count": 31,
@@ -10260,7 +12264,7 @@
       "original_names": [
         "四川四姑娘山隆珠措"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/四川四姑娘山隆珠措.png"
@@ -10278,10 +12282,10 @@
     {
       "clean_name": "四川妇女儿童",
       "original_names": [
-        "四川妇女儿童 (720p) [Not 24/7]",
-        "四川妇女儿童"
+        "四川妇女儿童",
+        "四川妇女儿童 (720p) [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 2,
       "logos": [
         "https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan5.png",
@@ -10309,7 +12313,7 @@
       "original_names": [
         "四川峨眉山云海日出"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/四川峨眉山云海日出.png"
@@ -10329,7 +12333,7 @@
       "original_names": [
         "四川峨眉山普贤菩萨铜像"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/四川峨眉山普贤菩萨铜像.png"
@@ -10349,7 +12353,7 @@
       "original_names": [
         "四川峨眉山远眺万佛顶"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/四川峨眉山远眺万佛顶.png"
@@ -10369,7 +12373,7 @@
       "original_names": [
         "四川峨眉山远眺贡嘎雪山"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/四川峨眉山远眺贡嘎雪山.png"
@@ -10409,7 +12413,7 @@
       "original_names": [
         "四川文化旅游"
       ],
-      "category": "其他台",
+      "category": "景区频道",
       "source_count": 1,
       "logos": [
         "https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan2.png"
@@ -10429,7 +12433,7 @@
       "original_names": [
         "四川新闻"
       ],
-      "category": "地方台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [
         "https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan3.png"
@@ -10450,7 +12454,7 @@
         "四川科教",
         "[BD]四川科教"
       ],
-      "category": "其他台",
+      "category": "四川省",
       "source_count": 6,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/28/large/20220528221105613593_11.jpg",
@@ -10508,7 +12512,7 @@
       "original_names": [
         "四川经济"
       ],
-      "category": "地方台",
+      "category": "四川省",
       "source_count": 1,
       "logos": [
         "https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan1.png"
@@ -10546,9 +12550,9 @@
     {
       "clean_name": "大湾区卫视",
       "original_names": [
-        "[BD]大湾区卫视",
+        "大湾区卫视",
         "[SD]大湾区卫视",
-        "大湾区卫视"
+        "[BD]大湾区卫视"
       ],
       "category": "卫视",
       "source_count": 16,
@@ -10697,12 +12701,12 @@
     {
       "clean_name": "天津卫视",
       "original_names": [
-        "[BD]天津卫视",
         "天津卫视 (1080p)",
         "天津卫视",
+        "天津卫视[高清]",
+        "[BD]天津卫视",
         "天津卫视 HEVC",
-        "天津卫视 50 FPS",
-        "天津卫视[高清]"
+        "天津卫视 50 FPS"
       ],
       "category": "卫视",
       "source_count": 30,
@@ -10975,7 +12979,7 @@
       "original_names": [
         "宁夏公共"
       ],
-      "category": "地方台",
+      "category": "宁夏回族自治区",
       "source_count": 1,
       "logos": [
         "https://gitee.com/suxuang/epglogo/raw/master/ningxia/Ningxia1.png"
@@ -10993,10 +12997,10 @@
     {
       "clean_name": "宁夏卫视",
       "original_names": [
+        "[SD]宁夏卫视",
         "宁夏卫视 (576p) [Not 24/7]",
-        "宁夏卫视[高清]",
         "宁夏卫视",
-        "[SD]宁夏卫视"
+        "宁夏卫视[高清]"
       ],
       "category": "卫视",
       "source_count": 24,
@@ -11206,7 +13210,7 @@
       "original_names": [
         "宁夏文旅"
       ],
-      "category": "其他台",
+      "category": "宁夏回族自治区",
       "source_count": 1,
       "logos": [
         "https://gitee.com/suxuang/epglogo/raw/master/ningxia/Ningxia4.png"
@@ -11226,7 +13230,7 @@
       "original_names": [
         "宁夏经济"
       ],
-      "category": "地方台",
+      "category": "宁夏回族自治区",
       "source_count": 2,
       "logos": [
         "宁夏经济.png",
@@ -11252,9 +13256,9 @@
     {
       "clean_name": "安多卫视",
       "original_names": [
+        "[SD]安多卫视[ipv6]",
         "安多卫视",
-        "[BD]安多卫视",
-        "[SD]安多卫视[ipv6]"
+        "[BD]安多卫视"
       ],
       "category": "卫视",
       "source_count": 11,
@@ -11346,13 +13350,13 @@
     {
       "clean_name": "安徽卫视",
       "original_names": [
-        "安徽卫视 50 FPS",
-        "安徽卫视 HEVC",
         "[BD]安徽卫视",
-        "[BD]安徽卫视[ipv6]",
+        "安徽卫视[高清]",
+        "安徽卫视 HEVC",
         "安徽卫视",
-        "安徽卫视 (2160p)",
-        "安徽卫视[高清]"
+        "[BD]安徽卫视[ipv6]",
+        "安徽卫视 50 FPS",
+        "安徽卫视 (2160p)"
       ],
       "category": "卫视",
       "source_count": 30,
@@ -11669,7 +13673,7 @@
       "original_names": [
         "山东农科 (406p)"
       ],
-      "category": "其他台",
+      "category": "山东省",
       "source_count": 1,
       "logos": [
         "https://i.imgur.com/EY2zH06.png"
@@ -11687,14 +13691,14 @@
     {
       "clean_name": "山东卫视",
       "original_names": [
-        "山东卫视 (720p)",
-        "山东卫视",
-        "山东卫视4K",
-        "山东卫视 50 FPS",
-        "山东卫视 HEVC",
         "山东卫视 (1080p)",
+        "山东卫视",
+        "山东卫视 50 FPS",
+        "山东卫视[超清HDR]",
         "[BD]山东卫视",
-        "山东卫视[超清HDR]"
+        "山东卫视 (720p)",
+        "山东卫视4K",
+        "山东卫视 HEVC"
       ],
       "category": "卫视",
       "source_count": 33,
@@ -11946,8 +13950,8 @@
     {
       "clean_name": "山东少儿",
       "original_names": [
-        "山东少儿 (406p)",
-        "山东少儿"
+        "山东少儿",
+        "山东少儿 (406p)"
       ],
       "category": "少儿台",
       "source_count": 9,
@@ -12026,7 +14030,7 @@
       "original_names": [
         "山东居家购物 (360p)"
       ],
-      "category": "其他台",
+      "category": "山东省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -12044,7 +14048,7 @@
       "original_names": [
         "山东影视 (406p)"
       ],
-      "category": "其他台",
+      "category": "山东省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -12060,11 +14064,11 @@
     {
       "clean_name": "山东教育",
       "original_names": [
-        "山东教育",
         "[HD]山东教育[ipv6]",
-        "[HD]山东教育"
+        "[HD]山东教育",
+        "山东教育"
       ],
-      "category": "其他台",
+      "category": "山东省",
       "source_count": 13,
       "logos": [
         "https://epg.pw/media/images/channel/2023/07/19/large/20230719115915514158_88.jpg",
@@ -12191,7 +14195,7 @@
       "original_names": [
         "山东文旅"
       ],
-      "category": "其他台",
+      "category": "山东省",
       "source_count": 2,
       "logos": [
         "山东文旅.png"
@@ -12219,7 +14223,7 @@
         "山东新闻 (1080p)",
         "山东新闻"
       ],
-      "category": "地方台",
+      "category": "山东省",
       "source_count": 9,
       "logos": [
         "山东新闻.png"
@@ -12296,7 +14300,7 @@
         "山东生活",
         "山东生活 (1080p)"
       ],
-      "category": "其他台",
+      "category": "山东省",
       "source_count": 2,
       "logos": [
         "山东生活.png",
@@ -12344,7 +14348,7 @@
       "original_names": [
         "山东齐鲁 (1080p)"
       ],
-      "category": "其他台",
+      "category": "山东省",
       "source_count": 1,
       "logos": [
         "https://i.imgur.com/U9wNMmm.png"
@@ -12363,9 +14367,9 @@
       "clean_name": "山西卫视",
       "original_names": [
         "[SD]山西卫视",
-        "山西卫视 (2160p)",
         "山西卫视",
-        "[BD]山西卫视"
+        "[BD]山西卫视",
+        "山西卫视 (2160p)"
       ],
       "category": "卫视",
       "source_count": 22,
@@ -12536,10 +14540,10 @@
     {
       "clean_name": "山西影视",
       "original_names": [
-        "山西影视",
-        "[HD]山西影视"
+        "[HD]山西影视",
+        "山西影视"
       ],
-      "category": "其他台",
+      "category": "山西省",
       "source_count": 4,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/27/large/20220527162835442061_74.jpg",
@@ -12582,7 +14586,7 @@
       "original_names": [
         "山西文体"
       ],
-      "category": "其他台",
+      "category": "山西省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -12600,7 +14604,7 @@
       "original_names": [
         "山西文体生活"
       ],
-      "category": "其他台",
+      "category": "山西省",
       "source_count": 2,
       "logos": [
         "山西文体生活.png",
@@ -12628,7 +14632,7 @@
       "original_names": [
         "山西法治"
       ],
-      "category": "其他台",
+      "category": "山西省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -12646,7 +14650,7 @@
       "original_names": [
         "山西社会与法治"
       ],
-      "category": "其他台",
+      "category": "山西省",
       "source_count": 2,
       "logos": [
         "山西社会与法治.png",
@@ -12674,7 +14678,7 @@
       "original_names": [
         "山西经济"
       ],
-      "category": "地方台",
+      "category": "山西省",
       "source_count": 2,
       "logos": [
         "山西经济.png"
@@ -12701,7 +14705,7 @@
       "original_names": [
         "山西经济与科技"
       ],
-      "category": "其他台",
+      "category": "山西省",
       "source_count": 1,
       "logos": [
         "https://gitee.com/suxuang/epglogo/raw/master/shanxi1/Shanxi_1.png"
@@ -12721,7 +14725,7 @@
       "original_names": [
         "巴彦淖尔新闻"
       ],
-      "category": "地方台",
+      "category": "其他台",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/巴彦淖尔新闻综合.png"
@@ -12741,7 +14745,7 @@
       "original_names": [
         "广东 Ⅰ 韶关公共台 (720p) [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "广东省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -12759,7 +14763,7 @@
       "original_names": [
         "广东 Ⅰ 韶关综合台 (720p) [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "广东省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -12775,8 +14779,8 @@
     {
       "clean_name": "广东体育",
       "original_names": [
-        "广东体育",
-        "[BD]广东体育"
+        "[BD]广东体育",
+        "广东体育"
       ],
       "category": "体育台",
       "source_count": 14,
@@ -12893,7 +14897,7 @@
       "original_names": [
         "广东公共"
       ],
-      "category": "地方台",
+      "category": "广东省",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/广东公共.png"
@@ -12912,12 +14916,12 @@
       "clean_name": "广东卫视",
       "original_names": [
         "广东卫视4K",
-        "广东卫视[超清HDR]",
-        "[BD]广东卫视[ipv6]",
-        "广东卫视 (2160p)",
-        "广东卫视 50 FPS",
-        "[BD]广东卫视",
         "广东卫视",
+        "广东卫视[超清HDR]",
+        "广东卫视 (2160p)",
+        "[BD]广东卫视",
+        "[BD]广东卫视[ipv6]",
+        "广东卫视 50 FPS",
         "广东卫视 HEVC"
       ],
       "category": "卫视",
@@ -13203,7 +15207,7 @@
         "[BD]广东影视",
         "广东影视"
       ],
-      "category": "其他台",
+      "category": "广东省",
       "source_count": 2,
       "logos": [
         "https://epg.pw/media/images/channel/2024/01/14/large/20240114130217262909_90.png",
@@ -13229,10 +15233,10 @@
     {
       "clean_name": "广东新闻",
       "original_names": [
-        "[HD]广东新闻",
-        "广东新闻"
+        "广东新闻",
+        "[HD]广东新闻"
       ],
-      "category": "地方台",
+      "category": "广东省",
       "source_count": 12,
       "logos": [
         "https://epg.pw/media/images/channel/2024/01/14/large/20240114131740840005_79.png",
@@ -13332,7 +15336,7 @@
         "广东民生",
         "[BD]广东民生"
       ],
-      "category": "地方台",
+      "category": "广东省",
       "source_count": 13,
       "logos": [
         "https://epg.pw/media/images/channel/2024/01/14/large/20240114130544678105_94.png",
@@ -13437,11 +15441,11 @@
     {
       "clean_name": "广东珠江",
       "original_names": [
+        "[BD]广东珠江",
         "广东珠江",
-        "[VGA]广东珠江",
-        "[BD]广东珠江"
+        "[VGA]广东珠江"
       ],
-      "category": "其他台",
+      "category": "广东省",
       "source_count": 15,
       "logos": [
         "https://epg.pw/media/images/channel/2025/01/28/large/20250128060916282738_90.png",
@@ -13564,7 +15568,7 @@
       "original_names": [
         "[BD]广东经济"
       ],
-      "category": "地方台",
+      "category": "广东省",
       "source_count": 1,
       "logos": [
         "https://epg.pw/media/images/channel/2024/01/11/large/20240111224412616123_60.png"
@@ -13582,10 +15586,10 @@
     {
       "clean_name": "广东经济科教",
       "original_names": [
-        "[BD]广东经济科教",
-        "广东经济科教"
+        "广东经济科教",
+        "[BD]广东经济科教"
       ],
-      "category": "其他台",
+      "category": "广东省",
       "source_count": 2,
       "logos": [
         "https://epg.pw/media/images/channel/2024/01/11/large/20240111224501741507_16.png",
@@ -13631,10 +15635,10 @@
     {
       "clean_name": "广西卫视",
       "original_names": [
-        "[BD]广西卫视",
-        "[SD]广西卫视",
         "广西卫视",
-        "广西卫视 (576p)"
+        "广西卫视 (576p)",
+        "[BD]广西卫视",
+        "[SD]广西卫视"
       ],
       "category": "卫视",
       "source_count": 27,
@@ -13843,10 +15847,10 @@
     {
       "clean_name": "广西国际",
       "original_names": [
-        "[BD]广西国际",
-        "广西国际"
+        "广西国际",
+        "[BD]广西国际"
       ],
-      "category": "其他台",
+      "category": "广西壮族自治区",
       "source_count": 3,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/27/large/20220527160856596479_90.jpg",
@@ -13881,7 +15885,7 @@
       "original_names": [
         "广西桂林漓江景区"
       ],
-      "category": "其他台",
+      "category": "景区频道",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/广西桂林漓江景区.png"
@@ -13901,7 +15905,7 @@
       "original_names": [
         "广西玉林大容山莲花山顶"
       ],
-      "category": "其他台",
+      "category": "广西壮族自治区",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/广西玉林大容山莲花山顶.png"
@@ -13919,9 +15923,9 @@
     {
       "clean_name": "康巴卫视",
       "original_names": [
-        "[SD]康巴卫视",
+        "康巴卫视 (720p) [Not 24/7]",
         "康巴卫视",
-        "康巴卫视 (720p) [Not 24/7]"
+        "[SD]康巴卫视"
       ],
       "category": "卫视",
       "source_count": 14,
@@ -14035,10 +16039,10 @@
     {
       "clean_name": "延边卫视",
       "original_names": [
-        "[BD]延边卫视",
-        "[SD]延边卫视",
         "延边卫视",
-        "延边卫视 (576p)"
+        "[BD]延边卫视",
+        "延边卫视 (576p)",
+        "[SD]延边卫视"
       ],
       "category": "卫视",
       "source_count": 16,
@@ -14165,14 +16169,74 @@
       ]
     },
     {
+      "clean_name": "恐怖电影「解说」",
+      "original_names": [
+        "恐怖电影「解说」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/23419131",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "挨饿德•1「其他」",
+      "original_names": [
+        "挨饿德•1「其他」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/20985858",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "挨饿德•2「其他」",
+      "original_names": [
+        "挨饿德•2「其他」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/17693860",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
       "clean_name": "新疆卫视",
       "original_names": [
-        "[BD]新疆卫视[ipv6]",
-        "新疆卫视",
-        "新疆卫视 (576p)",
         "[SD]新疆卫视",
+        "新疆卫视[高清]",
         "新疆卫视 (540p)",
-        "新疆卫视[高清]"
+        "新疆卫视",
+        "[BD]新疆卫视[ipv6]",
+        "新疆卫视 (576p)"
       ],
       "category": "卫视",
       "source_count": 27,
@@ -14382,7 +16446,7 @@
       "original_names": [
         "新疆天山"
       ],
-      "category": "其他台",
+      "category": "新疆维吾尔自治区",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/新疆天山.png"
@@ -14420,8 +16484,8 @@
     {
       "clean_name": "星空卫视",
       "original_names": [
-        "星空卫视 (576p)",
-        "星空卫视"
+        "星空卫视",
+        "星空卫视 (576p)"
       ],
       "category": "卫视",
       "source_count": 10,
@@ -14503,11 +16567,111 @@
       ]
     },
     {
+      "clean_name": "晴彩少年「移动」",
+      "original_names": [
+        "晴彩少年「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000020000011525/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011525&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "晴彩广场舞「移动」",
+      "original_names": [
+        "晴彩广场舞「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000020000011523/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011523&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "晴彩竞技「移动」",
+      "original_names": [
+        "晴彩竞技「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000020000011528/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011528&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "晴彩篮球「移动」",
+      "original_names": [
+        "晴彩篮球「移动」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/咪咕.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "http://gslbserv.itv.cmvideo.cn:80/3000000020000011529/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011529&livemode=1&stbId=YanG-1989",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/咪咕.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "止戈电影「解说」",
+      "original_names": [
+        "止戈电影「解说」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/19863777",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
       "clean_name": "江苏 Ⅰ 连云港公共",
       "original_names": [
         "江苏 Ⅰ 连云港公共 (480p) [Not 24/7]"
       ],
-      "category": "地方台",
+      "category": "江苏省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -14525,7 +16689,7 @@
       "original_names": [
         "江苏 Ⅰ 连云港综合 (480p) [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "江苏省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -14542,8 +16706,8 @@
       "clean_name": "江苏体育",
       "original_names": [
         "江苏体育",
-        "[BD]江苏体育",
-        "江苏体育 (576p)"
+        "江苏体育 (576p)",
+        "[BD]江苏体育"
       ],
       "category": "体育台",
       "source_count": 5,
@@ -14595,7 +16759,7 @@
       "original_names": [
         "江苏体育休闲"
       ],
-      "category": "其他台",
+      "category": "江苏省",
       "source_count": 1,
       "logos": [
         "https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu5.png"
@@ -14616,7 +16780,7 @@
         "江苏公共",
         "江苏公共 (576p)"
       ],
-      "category": "地方台",
+      "category": "江苏省",
       "source_count": 2,
       "logos": [
         "江苏公共.png",
@@ -14644,7 +16808,7 @@
       "original_names": [
         "江苏南京牛首山"
       ],
-      "category": "其他台",
+      "category": "江苏省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/江苏南京牛首山.png"
@@ -14662,15 +16826,15 @@
     {
       "clean_name": "江苏卫视",
       "original_names": [
-        "江苏卫视[超清HDR]",
-        "江苏卫视4K",
-        "[SD]江苏卫视[ipv6]",
-        "[BD]江苏卫视高清",
-        "江苏卫视 50 FPS",
-        "江苏卫视 (1080p) [Not 24/7]",
         "江苏卫视",
+        "江苏卫视 50 FPS",
+        "江苏卫视[超清HDR]",
+        "江苏卫视 HEVC",
+        "江苏卫视4K",
+        "江苏卫视 (1080p) [Not 24/7]",
+        "[BD]江苏卫视高清",
         "[BD]江苏卫视",
-        "江苏卫视 HEVC"
+        "[SD]江苏卫视[ipv6]"
       ],
       "category": "卫视",
       "source_count": 33,
@@ -14922,11 +17086,11 @@
     {
       "clean_name": "江苏城市",
       "original_names": [
-        "[BD]江苏城市",
+        "江苏城市 (576p)",
         "江苏城市",
-        "江苏城市 (576p)"
+        "[BD]江苏城市"
       ],
-      "category": "地方台",
+      "category": "江苏省",
       "source_count": 8,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/30/large/20220530230012040614_78.jpg",
@@ -14995,11 +17159,11 @@
     {
       "clean_name": "江苏影视",
       "original_names": [
-        "[BD]江苏影视",
         "江苏影视",
-        "江苏影视 (576p) [Not 24/7]"
+        "江苏影视 (576p) [Not 24/7]",
+        "[BD]江苏影视"
       ],
-      "category": "其他台",
+      "category": "江苏省",
       "source_count": 8,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/30/large/20220530230645676753_16.jpg",
@@ -15070,7 +17234,7 @@
       "original_names": [
         "江苏徐州云龙湖风景区云龙山观景台西"
       ],
-      "category": "其他台",
+      "category": "江苏省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/江苏徐州云龙湖风景区云龙山观景台西.png"
@@ -15091,7 +17255,7 @@
         "江苏教育",
         "江苏教育 (576p) [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "江苏省",
       "source_count": 8,
       "logos": [
         "江苏教育.png",
@@ -15161,7 +17325,7 @@
       "original_names": [
         "江苏新闻"
       ],
-      "category": "地方台",
+      "category": "江苏省",
       "source_count": 1,
       "logos": [
         "https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu1.png"
@@ -15179,8 +17343,8 @@
     {
       "clean_name": "江苏综艺",
       "original_names": [
-        "江苏综艺",
-        "江苏综艺 (576p) [Not 24/7]"
+        "江苏综艺 (576p) [Not 24/7]",
+        "江苏综艺"
       ],
       "category": "综艺台",
       "source_count": 2,
@@ -15208,11 +17372,11 @@
     {
       "clean_name": "江西卫视",
       "original_names": [
+        "江西卫视[高清]",
+        "江西卫视 (1080p)",
         "[BD]江西卫视",
         "[BD]江西卫视[ipv6]",
-        "江西卫视[高清]",
         "江西卫视",
-        "江西卫视 (1080p)",
         "江西卫视 HEVC"
       ],
       "category": "卫视",
@@ -15445,7 +17609,7 @@
       "original_names": [
         "河北4K"
       ],
-      "category": "其他台",
+      "category": "河北省",
       "source_count": 2,
       "logos": [
         "https://gitee.com/suxuang/logo/raw/master/mylogo/河北4K.png"
@@ -15472,7 +17636,7 @@
       "original_names": [
         "河北公共"
       ],
-      "category": "地方台",
+      "category": "河北省",
       "source_count": 2,
       "logos": [
         "https://live.fanmingming.cn/tv/河北公共.png"
@@ -15498,11 +17662,11 @@
       "clean_name": "河北农民",
       "original_names": [
         "河北农民 (576p)",
-        "[HD]河北农民",
         "河北农民",
+        "[HD]河北农民",
         "[SD]河北农民"
       ],
-      "category": "其他台",
+      "category": "河北省",
       "source_count": 12,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/31/large/20220531145755560747_44.jpg",
@@ -15599,10 +17763,10 @@
     {
       "clean_name": "河北卫视",
       "original_names": [
+        "河北卫视[高清]",
         "[BD]河北卫视",
-        "河北卫视",
         "河北卫视 (2160p)",
-        "河北卫视[高清]"
+        "河北卫视"
       ],
       "category": "卫视",
       "source_count": 28,
@@ -15848,7 +18012,7 @@
       "original_names": [
         "河北少儿科教"
       ],
-      "category": "其他台",
+      "category": "河北省",
       "source_count": 10,
       "logos": [
         "河北少儿科教.png"
@@ -15932,7 +18096,7 @@
         "河北影视",
         "[SD]河北影视"
       ],
-      "category": "其他台",
+      "category": "河北省",
       "source_count": 3,
       "logos": [
         "https://epg.pw/media/",
@@ -15967,7 +18131,7 @@
       "original_names": [
         "[SD]河北影视剧"
       ],
-      "category": "其他台",
+      "category": "河北省",
       "source_count": 1,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/31/large/20220531145932658052_56.jpg"
@@ -15987,7 +18151,7 @@
       "original_names": [
         "河北杂技"
       ],
-      "category": "其他台",
+      "category": "河北省",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/河北杂技.png"
@@ -16007,7 +18171,7 @@
       "original_names": [
         "河北睛彩"
       ],
-      "category": "其他台",
+      "category": "河北省",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/河北睛彩.png"
@@ -16027,7 +18191,7 @@
       "original_names": [
         "河北经济"
       ],
-      "category": "地方台",
+      "category": "河北省",
       "source_count": 2,
       "logos": [
         "https://live.fanmingming.cn/tv/河北经济.png"
@@ -16054,7 +18218,7 @@
       "original_names": [
         "河北都市"
       ],
-      "category": "地方台",
+      "category": "河北省",
       "source_count": 9,
       "logos": [
         "河北都市.png",
@@ -16131,7 +18295,7 @@
       "original_names": [
         "河南乡村"
       ],
-      "category": "其他台",
+      "category": "河南省",
       "source_count": 2,
       "logos": [
         "https://live.fanmingming.cn/tv/河南乡村.png"
@@ -16158,7 +18322,7 @@
       "original_names": [
         "河南公共"
       ],
-      "category": "地方台",
+      "category": "河南省",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/河南公共.png"
@@ -16176,11 +18340,11 @@
     {
       "clean_name": "河南卫视",
       "original_names": [
-        "[BD]河南卫视[ipv6]",
-        "河南卫视[高清]",
+        "河南卫视 (2160p)",
         "河南卫视",
+        "[BD]河南卫视[ipv6]",
         "[BD]河南卫视",
-        "河南卫视 (2160p)"
+        "河南卫视[高清]"
       ],
       "category": "卫视",
       "source_count": 27,
@@ -16391,7 +18555,7 @@
       "original_names": [
         "河南国际"
       ],
-      "category": "其他台",
+      "category": "河南省",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/河南国际.png"
@@ -16431,7 +18595,7 @@
       "original_names": [
         "河南新闻"
       ],
-      "category": "地方台",
+      "category": "河南省",
       "source_count": 2,
       "logos": [
         "https://live.fanmingming.cn/tv/河南新闻.png"
@@ -16458,7 +18622,7 @@
       "original_names": [
         "河南梨园"
       ],
-      "category": "其他台",
+      "category": "河南省",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/河南梨园.png"
@@ -16479,7 +18643,7 @@
         "[BD]河南民生",
         "河南民生"
       ],
-      "category": "地方台",
+      "category": "河南省",
       "source_count": 6,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/31/large/20220531142947302154_59.jpg",
@@ -16536,7 +18700,7 @@
       "original_names": [
         "河南法治"
       ],
-      "category": "其他台",
+      "category": "河南省",
       "source_count": 2,
       "logos": [
         "https://live.fanmingming.cn/tv/河南法治.png"
@@ -16563,7 +18727,7 @@
       "original_names": [
         "河南电视剧"
       ],
-      "category": "其他台",
+      "category": "河南省",
       "source_count": 2,
       "logos": [
         "https://live.fanmingming.cn/tv/河南电视剧.png"
@@ -16588,10 +18752,10 @@
     {
       "clean_name": "河南都市",
       "original_names": [
-        "河南都市",
-        "[BD]河南都市"
+        "[BD]河南都市",
+        "河南都市"
       ],
-      "category": "地方台",
+      "category": "河南省",
       "source_count": 7,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/31/large/20220531143451177556_90.jpg",
@@ -16651,11 +18815,31 @@
       ]
     },
     {
+      "clean_name": "治愈•放松「音乐」",
+      "original_names": [
+        "治愈•放松「音乐」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/21241811",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
       "clean_name": "浙江 Ⅰ 绍兴影视",
       "original_names": [
         "浙江 Ⅰ 绍兴影视 (720p)"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -16673,7 +18857,7 @@
       "original_names": [
         "浙江 Ⅰ 绍兴综合 (576p)"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -16691,7 +18875,7 @@
       "original_names": [
         "浙江休闲台"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 1,
       "logos": [
         "浙江休闲台.png"
@@ -16711,7 +18895,7 @@
       "original_names": [
         "浙江公共 (1080p) [Not 24/7]"
       ],
-      "category": "地方台",
+      "category": "浙江省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -16727,10 +18911,10 @@
     {
       "clean_name": "浙江公共新闻",
       "original_names": [
-        "浙江公共新闻",
-        "[BD]浙江公共新闻"
+        "[BD]浙江公共新闻",
+        "浙江公共新闻"
       ],
-      "category": "地方台",
+      "category": "浙江省",
       "source_count": 6,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/30/large/20220530230145240280_53.jpg",
@@ -16784,14 +18968,14 @@
     {
       "clean_name": "浙江卫视",
       "original_names": [
-        "[BD]浙江卫视[ipv6]",
         "[BD]浙江卫视",
-        "浙江卫视[超清HDR]",
-        "浙江卫视 (1080p)",
+        "浙江卫视",
         "浙江卫视 HEVC",
-        "浙江卫视 50 FPS",
+        "浙江卫视[超清HDR]",
         "浙江卫视4K",
-        "浙江卫视"
+        "浙江卫视 (1080p)",
+        "[BD]浙江卫视[ipv6]",
+        "浙江卫视 50 FPS"
       ],
       "category": "卫视",
       "source_count": 31,
@@ -17029,12 +19213,12 @@
     {
       "clean_name": "浙江国际",
       "original_names": [
-        "[VGA]浙江国际",
         "浙江国际",
+        "[BD]浙江国际",
         "浙江国际 (1080p)",
-        "[BD]浙江国际"
+        "[VGA]浙江国际"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 12,
       "logos": [
         "https://live.fanmingming.cn/tv/浙江国际.png",
@@ -17131,9 +19315,9 @@
     {
       "clean_name": "浙江少儿",
       "original_names": [
-        "浙江少儿 (1080p)",
+        "[BD]浙江少儿",
         "浙江少儿",
-        "[BD]浙江少儿"
+        "浙江少儿 (1080p)"
       ],
       "category": "少儿台",
       "source_count": 13,
@@ -17243,7 +19427,7 @@
       "original_names": [
         "浙江影视 (720p)"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -17261,7 +19445,7 @@
       "original_names": [
         "浙江教科"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 3,
       "logos": [
         "https://live.fanmingming.cn/tv/浙江教科影视.png",
@@ -17296,7 +19480,7 @@
       "original_names": [
         "浙江教科影视"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 2,
       "logos": [
         "浙江教科影视.png"
@@ -17321,10 +19505,10 @@
     {
       "clean_name": "浙江教育",
       "original_names": [
-        "[BD]浙江教育",
-        "浙江教育"
+        "浙江教育",
+        "[BD]浙江教育"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 3,
       "logos": [
         "https://epg.pw/media/img/logo/1_20.jpg",
@@ -17359,7 +19543,7 @@
       "original_names": [
         "浙江数码时代"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 2,
       "logos": [
         "浙江数码时代.png",
@@ -17388,7 +19572,7 @@
         "[VGA]浙江新闻",
         "浙江新闻"
       ],
-      "category": "地方台",
+      "category": "浙江省",
       "source_count": 12,
       "logos": [
         "https://live.fanmingming.cn/tv/浙江新闻.png",
@@ -17488,7 +19672,7 @@
         "[BD]浙江民生",
         "浙江民生"
       ],
-      "category": "地方台",
+      "category": "浙江省",
       "source_count": 7,
       "logos": [
         "https://live.fanmingming.cn/tv/浙江民生休闲.png",
@@ -17554,7 +19738,7 @@
         "[BD]浙江民生休闲",
         "浙江民生休闲"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 6,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/30/large/20220530221028154749_27.jpg",
@@ -17610,7 +19794,7 @@
       "original_names": [
         "浙江生活"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 9,
       "logos": [
         "浙江生活.png"
@@ -17686,7 +19870,7 @@
       "original_names": [
         "浙江留学"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 2,
       "logos": [
         "浙江留学.png"
@@ -17711,10 +19895,10 @@
     {
       "clean_name": "浙江经济",
       "original_names": [
-        "浙江经济",
-        "[BD]浙江经济"
+        "[BD]浙江经济",
+        "浙江经济"
       ],
-      "category": "地方台",
+      "category": "浙江省",
       "source_count": 3,
       "logos": [
         "https://live.fanmingming.cn/tv/浙江经济生活.png",
@@ -17751,7 +19935,7 @@
         "浙江经济生活",
         "[BD]浙江经济生活"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 4,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/30/large/20220530220929501840_43.jpg",
@@ -17793,7 +19977,7 @@
       "original_names": [
         "浙江舟山东极岛"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/浙江舟山东极岛.png"
@@ -17813,7 +19997,7 @@
       "original_names": [
         "浙江遂昌"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 1,
       "logos": [
         "浙江遂昌.png"
@@ -17834,7 +20018,7 @@
         "[BD]浙江钱江",
         "浙江钱江"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 10,
       "logos": [
         "https://live.fanmingming.cn/tv/钱江都市.png",
@@ -17919,7 +20103,7 @@
       "original_names": [
         "浙江青田"
       ],
-      "category": "其他台",
+      "category": "浙江省",
       "source_count": 1,
       "logos": [
         "浙江青田.png"
@@ -17939,7 +20123,7 @@
       "original_names": [
         "海南公共"
       ],
-      "category": "地方台",
+      "category": "海南省",
       "source_count": 5,
       "logos": [
         "海南公共.png",
@@ -17987,9 +20171,9 @@
       "clean_name": "海南卫视",
       "original_names": [
         "海南卫视 (576p)",
-        "[SD]海南卫视",
         "[BD]海南卫视[ipv6]",
-        "海南卫视"
+        "海南卫视",
+        "[SD]海南卫视"
       ],
       "category": "卫视",
       "source_count": 30,
@@ -18253,10 +20437,10 @@
     {
       "clean_name": "海南文旅",
       "original_names": [
-        "海南文旅",
-        "[BD]海南文旅"
+        "[BD]海南文旅",
+        "海南文旅"
       ],
-      "category": "其他台",
+      "category": "海南省",
       "source_count": 6,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/30/large/20220530225011839622_70.jpg",
@@ -18313,7 +20497,7 @@
       "original_names": [
         "海南新闻"
       ],
-      "category": "地方台",
+      "category": "海南省",
       "source_count": 5,
       "logos": [
         "海南新闻.png",
@@ -18362,7 +20546,7 @@
       "original_names": [
         "海南自贸"
       ],
-      "category": "其他台",
+      "category": "海南省",
       "source_count": 3,
       "logos": [
         "海南自贸.png",
@@ -18395,8 +20579,8 @@
     {
       "clean_name": "海峡卫视",
       "original_names": [
-        "海峡卫视",
-        "[BD]海峡卫视"
+        "[BD]海峡卫视",
+        "海峡卫视"
       ],
       "category": "卫视",
       "source_count": 4,
@@ -18439,13 +20623,13 @@
     {
       "clean_name": "深圳卫视",
       "original_names": [
-        "深圳卫视 (1080p) [Not 24/7]",
-        "深圳卫视",
+        "深圳卫视[超清HDR]",
         "深圳卫视 HEVC",
+        "深圳卫视 (1080p) [Not 24/7]",
         "深圳卫视4K",
+        "深圳卫视",
         "[BD]深圳卫视",
-        "深圳卫视 50 FPS",
-        "深圳卫视[超清HDR]"
+        "深圳卫视 50 FPS"
       ],
       "category": "卫视",
       "source_count": 31,
@@ -18705,7 +20889,7 @@
       "original_names": [
         "[BD]深圳都市"
       ],
-      "category": "地方台",
+      "category": "其他台",
       "source_count": 1,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/19/large/20220519234446820820_32.jpg"
@@ -18725,7 +20909,7 @@
       "original_names": [
         "湖北公共"
       ],
-      "category": "地方台",
+      "category": "湖北省",
       "source_count": 2,
       "logos": [
         "湖北公共.png"
@@ -18752,7 +20936,7 @@
       "original_names": [
         "湖北公共新闻"
       ],
-      "category": "地方台",
+      "category": "湖北省",
       "source_count": 1,
       "logos": [
         "https://gitee.com/suxuang/epglogo/raw/master/hubei/Hubei5.png"
@@ -18770,12 +20954,12 @@
     {
       "clean_name": "湖北卫视",
       "original_names": [
-        "湖北卫视 (1080p)",
-        "湖北卫视 50 FPS",
-        "湖北卫视[高清]",
         "湖北卫视 HEVC",
         "湖北卫视",
-        "[BD]湖北卫视"
+        "湖北卫视[高清]",
+        "湖北卫视 50 FPS",
+        "[BD]湖北卫视",
+        "湖北卫视 (1080p)"
       ],
       "category": "卫视",
       "source_count": 32,
@@ -19021,7 +21205,7 @@
       "original_names": [
         "湖北垄上"
       ],
-      "category": "其他台",
+      "category": "湖北省",
       "source_count": 4,
       "logos": [
         "湖北垄上.png"
@@ -19062,7 +21246,7 @@
       "original_names": [
         "湖北影视"
       ],
-      "category": "其他台",
+      "category": "湖北省",
       "source_count": 5,
       "logos": [
         "湖北影视.png",
@@ -19111,7 +21295,7 @@
       "original_names": [
         "湖北教育"
       ],
-      "category": "其他台",
+      "category": "湖北省",
       "source_count": 3,
       "logos": [
         "湖北教育.png"
@@ -19145,7 +21329,7 @@
       "original_names": [
         "湖北生活"
       ],
-      "category": "其他台",
+      "category": "湖北省",
       "source_count": 5,
       "logos": [
         "湖北生活.png"
@@ -19193,7 +21377,7 @@
       "original_names": [
         "湖北经视"
       ],
-      "category": "其他台",
+      "category": "湖北省",
       "source_count": 4,
       "logos": [
         "湖北经视.png",
@@ -19235,7 +21419,7 @@
       "original_names": [
         "湖北综合"
       ],
-      "category": "其他台",
+      "category": "湖北省",
       "source_count": 3,
       "logos": [
         "湖北综合.png"
@@ -19269,7 +21453,7 @@
       "original_names": [
         "湖南公共"
       ],
-      "category": "地方台",
+      "category": "湖南省",
       "source_count": 4,
       "logos": [
         "湖南公共.png"
@@ -19308,13 +21492,13 @@
     {
       "clean_name": "湖南卫视",
       "original_names": [
-        "湖南卫视",
         "湖南卫视[超清HDR]",
-        "湖南卫视 HEVC",
-        "[BD]湖南卫视[ipv6]",
-        "湖南卫视 50 FPS",
         "湖南卫视4K",
-        "[BD]湖南卫视"
+        "[BD]湖南卫视[ipv6]",
+        "湖南卫视",
+        "[BD]湖南卫视",
+        "湖南卫视 50 FPS",
+        "湖南卫视 HEVC"
       ],
       "category": "卫视",
       "source_count": 35,
@@ -19582,7 +21766,7 @@
       "original_names": [
         "湖南国际"
       ],
-      "category": "其他台",
+      "category": "湖南省",
       "source_count": 5,
       "logos": [
         "湖南国际.png",
@@ -19689,7 +21873,7 @@
       "original_names": [
         "湖南张家界天门山西线玻璃栈道"
       ],
-      "category": "其他台",
+      "category": "山西省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/湖南张家界天门山西线玻璃栈道.png"
@@ -19709,7 +21893,7 @@
       "original_names": [
         "湖南张家界宝峰湖"
       ],
-      "category": "其他台",
+      "category": "湖南省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/湖南张家界宝峰湖.png"
@@ -19729,7 +21913,7 @@
       "original_names": [
         "湖南张家界御笔峰"
       ],
-      "category": "其他台",
+      "category": "湖南省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/湖南张家界御笔峰.png"
@@ -19749,7 +21933,7 @@
       "original_names": [
         "湖南张家界水绕四门"
       ],
-      "category": "其他台",
+      "category": "湖南省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/湖南张家界水绕四门.png"
@@ -19769,7 +21953,7 @@
       "original_names": [
         "湖南教育"
       ],
-      "category": "其他台",
+      "category": "湖南省",
       "source_count": 2,
       "logos": [
         "湖南教育.png",
@@ -19797,7 +21981,7 @@
       "original_names": [
         "湖南爱晚"
       ],
-      "category": "其他台",
+      "category": "湖南省",
       "source_count": 5,
       "logos": [
         "湖南爱晚.png",
@@ -19886,10 +22070,10 @@
     {
       "clean_name": "湖南电视剧",
       "original_names": [
-        "湖南电视剧",
-        "[VGA]湖南电视剧"
+        "[VGA]湖南电视剧",
+        "湖南电视剧"
       ],
-      "category": "其他台",
+      "category": "湖南省",
       "source_count": 11,
       "logos": [
         "https://epg.pw/media/images/channel/2024/03/11/large/20240311111928211584_68.png",
@@ -19981,7 +22165,7 @@
         "[VGA]湖南经视",
         "湖南经视"
       ],
-      "category": "其他台",
+      "category": "湖南省",
       "source_count": 13,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/26/large/20220526142556787828_84.jpg",
@@ -20087,7 +22271,7 @@
       "original_names": [
         "湖南视剧"
       ],
-      "category": "其他台",
+      "category": "湖南省",
       "source_count": 2,
       "logos": [
         "https://live.fanmingming.cn/tv/湖南电视剧.png"
@@ -20112,10 +22296,10 @@
     {
       "clean_name": "湖南都市",
       "original_names": [
-        "湖南都市",
-        "湖南都市 (576p)"
+        "湖南都市 (576p)",
+        "湖南都市"
       ],
-      "category": "地方台",
+      "category": "湖南省",
       "source_count": 12,
       "logos": [
         "湖南都市.png",
@@ -20214,7 +22398,7 @@
       "original_names": [
         "湖南金鹰纪实"
       ],
-      "category": "其他台",
+      "category": "湖南省",
       "source_count": 3,
       "logos": [
         "湖南金鹰纪实.png"
@@ -20240,6 +22424,26 @@
           "quality": "未知",
           "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
           "logo": "湖南金鹰纪实.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "漫威「解说」",
+      "original_names": [
+        "漫威「解说」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/17089779",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
         }
       ]
     },
@@ -20291,6 +22495,26 @@
       ]
     },
     {
+      "clean_name": "猫和老鼠「动漫」",
+      "original_names": [
+        "猫和老鼠「动漫」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/11352879",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
       "clean_name": "珠江卫视",
       "original_names": [
         "珠江卫视"
@@ -20332,7 +22556,7 @@
         "[SD]甘肃公共",
         "甘肃公共 (540p) [Not 24/7]"
       ],
-      "category": "地方台",
+      "category": "甘肃省",
       "source_count": 2,
       "logos": [
         "https://epg.pw/media/img/logo/3_399.jpg"
@@ -20357,11 +22581,11 @@
     {
       "clean_name": "甘肃卫视",
       "original_names": [
-        "[BD]甘肃卫视",
-        "甘肃卫视 (576p)",
-        "甘肃卫视[高清]",
         "甘肃卫视",
-        "[SD]甘肃卫视[ipv6]"
+        "[BD]甘肃卫视",
+        "甘肃卫视[高清]",
+        "[SD]甘肃卫视[ipv6]",
+        "甘肃卫视 (576p)"
       ],
       "category": "卫视",
       "source_count": 27,
@@ -20592,7 +22816,7 @@
       "original_names": [
         "甘肃文化影视"
       ],
-      "category": "其他台",
+      "category": "甘肃省",
       "source_count": 1,
       "logos": [
         "https://gitee.com/suxuang/epglogo/raw/master/gansu/Gansu3.png"
@@ -20612,7 +22836,7 @@
       "original_names": [
         "甘肃移动 (540p) [Not 24/7]"
       ],
-      "category": "其他台",
+      "category": "甘肃省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -20630,7 +22854,7 @@
       "original_names": [
         "甘肃经济"
       ],
-      "category": "地方台",
+      "category": "甘肃省",
       "source_count": 2,
       "logos": [
         "甘肃经济.png",
@@ -20658,7 +22882,7 @@
       "original_names": [
         "甘肃都市"
       ],
-      "category": "地方台",
+      "category": "甘肃省",
       "source_count": 2,
       "logos": [
         "甘肃都市.png",
@@ -20682,11 +22906,111 @@
       ]
     },
     {
+      "clean_name": "电影•1「解说」",
+      "original_names": [
+        "电影•1「解说」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/20289754",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "电影•2「解说」",
+      "original_names": [
+        "电影•2「解说」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/24983280",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "电影•3「解说」",
+      "original_names": [
+        "电影•3「解说」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/24396428",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "电视剧•1「解说」",
+      "original_names": [
+        "电视剧•1「解说」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/21277391",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "电视剧•2「解说」",
+      "original_names": [
+        "电视剧•2「解说」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/25018873",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
       "clean_name": "福建 漳浦综合",
       "original_names": [
         "[SD]福建|漳浦综合"
       ],
-      "category": "其他台",
+      "category": "福建省",
       "source_count": 1,
       "logos": [
         "https://epg.pw/media/uploads/tmp_logo/2018/02/07/20180207115253152468_36.jpg"
@@ -20706,7 +23030,7 @@
       "original_names": [
         "福建乡村振兴公共"
       ],
-      "category": "地方台",
+      "category": "福建省",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/福建乡村振兴公共.png"
@@ -20726,7 +23050,7 @@
       "original_names": [
         "福建公共"
       ],
-      "category": "地方台",
+      "category": "福建省",
       "source_count": 1,
       "logos": [
         "福建公共.png"
@@ -20809,7 +23133,7 @@
       "original_names": [
         "福建文体"
       ],
-      "category": "其他台",
+      "category": "福建省",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/福建文体.png"
@@ -20829,7 +23153,7 @@
       "original_names": [
         "福建新闻"
       ],
-      "category": "地方台",
+      "category": "福建省",
       "source_count": 9,
       "logos": [
         "福建新闻.png",
@@ -20907,7 +23231,7 @@
       "original_names": [
         "福建旅游"
       ],
-      "category": "其他台",
+      "category": "景区频道",
       "source_count": 2,
       "logos": [
         "福建旅游.png",
@@ -20935,7 +23259,7 @@
       "original_names": [
         "福建武夷山玉女峰"
       ],
-      "category": "其他台",
+      "category": "福建省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/福建武夷山玉女峰.png"
@@ -20975,7 +23299,7 @@
       "original_names": [
         "福建电视剧"
       ],
-      "category": "其他台",
+      "category": "福建省",
       "source_count": 7,
       "logos": [
         "福建电视剧.png",
@@ -21038,7 +23362,7 @@
       "original_names": [
         "福建经济"
       ],
-      "category": "地方台",
+      "category": "福建省",
       "source_count": 7,
       "logos": [
         "福建经济.png",
@@ -21102,7 +23426,7 @@
       "original_names": [
         "福建综合"
       ],
-      "category": "其他台",
+      "category": "福建省",
       "source_count": 7,
       "logos": [
         "福建综合.png",
@@ -21157,6 +23481,126 @@
           "quality": "未知",
           "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
           "logo": "https://live.fanmingming.cn/tv/福建综合.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "维护内容：维护 Gather「删除 • 源」",
+      "original_names": [
+        "维护内容：维护 Gather「删除 •IPV6 源」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/温馨提示.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://epg-1.iill.top/v/302.mp4",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/温馨提示.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "维护时间：2025 1 15#佛系维护...",
+      "original_names": [
+        "维护时间：2025-1-15#佛系维护..."
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/温馨提示.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://epg-1.iill.top/v/301.mp4",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/温馨提示.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "美剧「解说」",
+      "original_names": [
+        "美剧「解说」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/20488841",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "航海王「动漫」",
+      "original_names": [
+        "航海王「动漫」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/16913382",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "茶啊二中「动画」",
+      "original_names": [
+        "茶啊二中「动画」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/11213191",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "荒野求生「其他」",
+      "original_names": [
+        "荒野求生「其他」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/593667",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
         }
       ]
     },
@@ -21230,10 +23674,10 @@
     {
       "clean_name": "西藏卫视",
       "original_names": [
-        "西藏卫视[高清]",
-        "西藏卫视",
         "[SD]西藏卫视",
-        "西藏卫视 (576p)"
+        "西藏卫视",
+        "西藏卫视 (576p)",
+        "西藏卫视[高清]"
       ],
       "category": "卫视",
       "source_count": 22,
@@ -21425,10 +23869,10 @@
     {
       "clean_name": "贵州卫视",
       "original_names": [
-        "[BD]贵州卫视",
         "贵州卫视[高清]",
         "贵州卫视 (576p)",
-        "贵州卫视"
+        "贵州卫视",
+        "[BD]贵州卫视"
       ],
       "category": "卫视",
       "source_count": 30,
@@ -21660,7 +24104,7 @@
       "original_names": [
         "贵州省兴义市万峰林"
       ],
-      "category": "其他台",
+      "category": "贵州省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/贵州省兴义市万峰林.png"
@@ -21692,6 +24136,26 @@
           "quality": "未知",
           "source": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
           "logo": "https://live.fanmingming.cn/tv/赤峰新闻综合.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "跳舞「其他」",
+      "original_names": [
+        "跳舞「其他」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/24634408",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
         }
       ]
     },
@@ -21733,10 +24197,10 @@
     {
       "clean_name": "辽宁公共",
       "original_names": [
-        "[HD]辽宁公共",
-        "辽宁公共"
+        "辽宁公共",
+        "[HD]辽宁公共"
       ],
-      "category": "地方台",
+      "category": "辽宁省",
       "source_count": 4,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/31/large/20220531155932261297_92.jpg",
@@ -21779,7 +24243,7 @@
       "original_names": [
         "辽宁北方"
       ],
-      "category": "其他台",
+      "category": "辽宁省",
       "source_count": 3,
       "logos": [
         "辽宁北方.png",
@@ -21813,11 +24277,11 @@
     {
       "clean_name": "辽宁卫视",
       "original_names": [
-        "[BD]辽宁卫视",
         "辽宁卫视 (1080p)",
         "[VGA]辽宁卫视",
         "辽宁卫视",
         "辽宁卫视[高清]",
+        "[BD]辽宁卫视",
         "辽宁卫视 HEVC"
       ],
       "category": "卫视",
@@ -22051,7 +24515,7 @@
       "original_names": [
         "辽宁影视"
       ],
-      "category": "其他台",
+      "category": "辽宁省",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/辽宁影视.png"
@@ -22071,7 +24535,7 @@
       "original_names": [
         "辽宁影视剧"
       ],
-      "category": "其他台",
+      "category": "辽宁省",
       "source_count": 4,
       "logos": [
         "辽宁影视剧.png",
@@ -22113,7 +24577,7 @@
       "original_names": [
         "辽宁教育青少"
       ],
-      "category": "其他台",
+      "category": "辽宁省",
       "source_count": 2,
       "logos": [
         "辽宁教育青少.png",
@@ -22141,7 +24605,7 @@
       "original_names": [
         "辽宁生活"
       ],
-      "category": "其他台",
+      "category": "辽宁省",
       "source_count": 3,
       "logos": [
         "辽宁生活.png",
@@ -22178,7 +24642,7 @@
         "[HD]辽宁经济",
         "辽宁经济"
       ],
-      "category": "地方台",
+      "category": "辽宁省",
       "source_count": 5,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/31/large/20220531224301396432_61.jpg",
@@ -22230,7 +24694,7 @@
       "original_names": [
         "辽宁都市"
       ],
-      "category": "地方台",
+      "category": "辽宁省",
       "source_count": 6,
       "logos": [
         "辽宁都市.png",
@@ -22287,7 +24751,7 @@
       "original_names": [
         "辽宁青少"
       ],
-      "category": "其他台",
+      "category": "辽宁省",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/辽宁青少.png"
@@ -22307,7 +24771,7 @@
       "original_names": [
         "鄂尔多斯新闻"
       ],
-      "category": "地方台",
+      "category": "其他台",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/鄂尔多斯新闻综合.png"
@@ -22325,11 +24789,11 @@
     {
       "clean_name": "重庆卫视",
       "original_names": [
-        "重庆卫视 (1080p)",
-        "重庆卫视 HEVC",
         "重庆卫视",
-        "[BD]重庆卫视[ipv6]",
+        "重庆卫视 HEVC",
+        "重庆卫视 (1080p)",
         "重庆卫视[高清]",
+        "[BD]重庆卫视[ipv6]",
         "[BD]重庆卫视"
       ],
       "category": "卫视",
@@ -22556,7 +25020,7 @@
       "original_names": [
         "重庆时尚购物"
       ],
-      "category": "其他台",
+      "category": "重庆市",
       "source_count": 1,
       "logos": [
         "重庆时尚购物.png"
@@ -22576,7 +25040,7 @@
       "original_names": [
         "重庆汽摩"
       ],
-      "category": "其他台",
+      "category": "重庆市",
       "source_count": 6,
       "logos": [
         "重庆汽摩.png"
@@ -22631,7 +25095,7 @@
       "original_names": [
         "[BD]重庆科教高清"
       ],
-      "category": "其他台",
+      "category": "重庆市",
       "source_count": 1,
       "logos": [
         "https://epg.pw/media/images/channel/2024/07/29/large/20240729020024729385_11.jpg"
@@ -22647,12 +25111,52 @@
       ]
     },
     {
-      "clean_name": "陕西体育休闲",
+      "clean_name": "野行者「其他」",
       "original_names": [
-        "[HD]陕西体育休闲[ipv6]",
-        "陕西体育休闲"
+        "野行者「其他」"
       ],
       "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/20072663",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "阅读•学习「音乐」",
+      "original_names": [
+        "阅读•学习「音乐」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/21241813",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "陕西体育休闲",
+      "original_names": [
+        "陕西体育休闲",
+        "[HD]陕西体育休闲[ipv6]"
+      ],
+      "category": "陕西省",
       "source_count": 5,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/31/large/20220531151408095945_53.jpg",
@@ -22701,7 +25205,7 @@
       "original_names": [
         "陕西公共"
       ],
-      "category": "地方台",
+      "category": "陕西省",
       "source_count": 2,
       "logos": [
         "陕西公共.png"
@@ -22728,7 +25232,7 @@
       "original_names": [
         "[HD]陕西公共频道[ipv6]"
       ],
-      "category": "其他台",
+      "category": "陕西省",
       "source_count": 1,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/31/large/20220531151119002040_17.jpg"
@@ -22746,10 +25250,10 @@
     {
       "clean_name": "陕西卫视",
       "original_names": [
-        "陕西卫视 (576p)",
-        "[SD]陕西卫视",
         "陕西卫视 (540p)",
         "[BD]陕西卫视[ipv6]",
+        "[SD]陕西卫视",
+        "陕西卫视 (576p)",
         "陕西卫视"
       ],
       "category": "卫视",
@@ -22951,7 +25455,7 @@
       "original_names": [
         "陕西影视"
       ],
-      "category": "其他台",
+      "category": "陕西省",
       "source_count": 2,
       "logos": [
         "陕西影视.png"
@@ -22978,7 +25482,7 @@
       "original_names": [
         "陕西新闻咨询"
       ],
-      "category": "其他台",
+      "category": "陕西省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/陕西新闻咨询.png"
@@ -22996,11 +25500,11 @@
     {
       "clean_name": "陕西新闻资讯",
       "original_names": [
-        "陕西新闻资讯",
         "[BD]陕西新闻资讯[ipv6]",
+        "陕西新闻资讯",
         "[BD]陕西新闻资讯"
       ],
-      "category": "其他台",
+      "category": "陕西省",
       "source_count": 7,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/31/large/20220531151006730386_52.jpg",
@@ -23063,7 +25567,7 @@
       "original_names": [
         "陕西洋县国宝朱鹮02"
       ],
-      "category": "其他台",
+      "category": "陕西省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/陕西洋县国宝朱鹮02.png"
@@ -23083,7 +25587,7 @@
       "original_names": [
         "陕西生活"
       ],
-      "category": "其他台",
+      "category": "陕西省",
       "source_count": 1,
       "logos": [
         "陕西生活.png"
@@ -23103,7 +25607,7 @@
       "original_names": [
         "[HD]陕西生活频道[ipv6]"
       ],
-      "category": "其他台",
+      "category": "陕西省",
       "source_count": 1,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/31/large/20220531151311106781_13.jpg"
@@ -23123,7 +25627,7 @@
       "original_names": [
         "陕西秦腔"
       ],
-      "category": "其他台",
+      "category": "陕西省",
       "source_count": 1,
       "logos": [
         "https://live.fanmingming.cn/tv/陕西秦腔.png"
@@ -23165,7 +25669,7 @@
         "[SD]陕西都市青春",
         "陕西都市青春"
       ],
-      "category": "其他台",
+      "category": "陕西省",
       "source_count": 8,
       "logos": [
         "https://epg.pw/media/images/channel/2022/05/31/large/20220531151504287238_45.jpg",
@@ -23236,7 +25740,7 @@
       "original_names": [
         "陕西银龄"
       ],
-      "category": "其他台",
+      "category": "陕西省",
       "source_count": 1,
       "logos": [
         "https://tb.zbds.top/logo/陕西银龄.png"
@@ -23254,10 +25758,10 @@
     {
       "clean_name": "青海卫视",
       "original_names": [
+        "青海卫视",
         "青海卫视 (1080p)",
-        "[BD]青海卫视",
         "[SD]青海卫视",
-        "青海卫视"
+        "[BD]青海卫视"
       ],
       "category": "卫视",
       "source_count": 27,
@@ -23467,7 +25971,7 @@
       "original_names": [
         "青海综合"
       ],
-      "category": "其他台",
+      "category": "青海省",
       "source_count": 1,
       "logos": [
         "青海综合.png"
@@ -23487,7 +25991,7 @@
       "original_names": [
         "青海都市"
       ],
-      "category": "地方台",
+      "category": "青海省",
       "source_count": 2,
       "logos": [
         "青海都市.png"
@@ -23506,6 +26010,46 @@
           "quality": "未知",
           "source": "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u",
           "logo": "青海都市.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "音乐石榴「音乐」",
+      "original_names": [
+        "音乐石榴「音乐」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/17091681",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
+        }
+      ]
+    },
+    {
+      "clean_name": "音乐速递「音乐」",
+      "original_names": [
+        "音乐速递「音乐」"
+      ],
+      "category": "其他台",
+      "source_count": 1,
+      "logos": [
+        "https://epg-1.iill.top/logo/虎牙.png"
+      ],
+      "sources": [
+        {
+          "index": 1,
+          "url": "https://live.iill.top/huya/19439762",
+          "quality": "未知",
+          "source": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+          "logo": "https://epg-1.iill.top/logo/虎牙.png"
         }
       ]
     },
@@ -23612,7 +26156,7 @@
       "original_names": [
         "鬼吹灯之云南虫谷"
       ],
-      "category": "其他台",
+      "category": "云南省",
       "source_count": 2,
       "logos": [
         "https://ghproxy.net/raw.githubusercontent.com/suxuang/myIPTV/main/img/云南虫谷.png",
@@ -23638,8 +26182,8 @@
     {
       "clean_name": "黑龙卫视",
       "original_names": [
-        "黑龙卫视 (720p)",
-        "黑龙卫视 (1080p)"
+        "黑龙卫视 (1080p)",
+        "黑龙卫视 (720p)"
       ],
       "category": "卫视",
       "source_count": 2,
@@ -23666,7 +26210,7 @@
       "original_names": [
         "黑龙江 (1080p)"
       ],
-      "category": "其他台",
+      "category": "黑龙江省",
       "source_count": 1,
       "logos": [
         "https://i.imgur.com/9fj1uba.png"
@@ -23686,7 +26230,7 @@
       "original_names": [
         "黑龙江公共农村"
       ],
-      "category": "其他台",
+      "category": "黑龙江省",
       "source_count": 1,
       "logos": [
         "https://gitee.com/suxuang/TVlogo/raw/main/img/Heilongjiang5.png"
@@ -23706,7 +26250,7 @@
       "original_names": [
         "黑龙江卫 (1080p)"
       ],
-      "category": "其他台",
+      "category": "黑龙江省",
       "source_count": 1,
       "logos": [],
       "sources": [
@@ -23722,12 +26266,12 @@
     {
       "clean_name": "黑龙江卫视",
       "original_names": [
-        "黑龙江卫视[高清]",
-        "[BD]黑龙江卫视",
         "黑龙江卫视 50 FPS",
         "黑龙江卫视 (2160p)",
+        "黑龙江卫视[高清]",
         "黑龙江卫视 HEVC",
-        "黑龙江卫视"
+        "黑龙江卫视",
+        "[BD]黑龙江卫视"
       ],
       "category": "卫视",
       "source_count": 29,
@@ -23951,7 +26495,7 @@
       "original_names": [
         "[VGA]黑龙江哈尔滨都市资讯"
       ],
-      "category": "其他台",
+      "category": "黑龙江省",
       "source_count": 1,
       "logos": [
         "https://epg.pw/media/images/channel/2022/10/24/large/20221024220307974062_61.jpg"
@@ -24055,7 +26599,7 @@
       "original_names": [
         "黑龙江影视"
       ],
-      "category": "其他台",
+      "category": "黑龙江省",
       "source_count": 9,
       "logos": [
         "黑龙江影视.png"
@@ -24131,7 +26675,7 @@
       "original_names": [
         "黑龙江文体"
       ],
-      "category": "其他台",
+      "category": "黑龙江省",
       "source_count": 10,
       "logos": [
         "黑龙江文体.png"
@@ -24214,7 +26758,7 @@
       "original_names": [
         "黑龙江新闻"
       ],
-      "category": "地方台",
+      "category": "黑龙江省",
       "source_count": 2,
       "logos": [
         "黑龙江新闻.png"
@@ -24241,7 +26785,7 @@
       "original_names": [
         "黑龙江新闻法治"
       ],
-      "category": "其他台",
+      "category": "黑龙江省",
       "source_count": 9,
       "logos": [
         "黑龙江新闻法治.png"
@@ -24317,7 +26861,7 @@
       "original_names": [
         "黑龙江视"
       ],
-      "category": "其他台",
+      "category": "黑龙江省",
       "source_count": 1,
       "logos": [
         "https://gitee.com/suxuang/logo/raw/master/mylogo/黑龙江视.png"
@@ -24337,7 +26881,7 @@
       "original_names": [
         "黑龙江都市"
       ],
-      "category": "地方台",
+      "category": "黑龙江省",
       "source_count": 10,
       "logos": [
         "黑龙江都市.png"

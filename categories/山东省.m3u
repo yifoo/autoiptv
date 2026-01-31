@@ -1,0 +1,21 @@
+#EXTM3U
+# 山东省频道列表
+# 更新时间(北京时间): 2026-01-31 13:04:56
+# 电视台数量: 8
+
+#EXTINF:-1 tvg-name="山东农科" group-title="山东省" tvg-logo="https://i.imgur.com/EY2zH06.png",山东农科
+http://livealone302.iqilu.com/iqilu/nkpd.m3u8
+#EXTINF:-1 tvg-name="山东居家购物" group-title="山东省" tvg-quality="流畅",山东居家购物
+http://livealone302.iqilu.com/iqilu/gwpd.m3u8
+#EXTINF:-1 tvg-name="山东影视" group-title="山东省",山东影视
+http://livealone302.iqilu.com/iqilu/yspd.m3u8
+#EXTINF:-1 tvg-name="山东教育" group-title="山东省" tvg-logo="https://epg.pw/media/images/channel/2023/07/19/large/20230719115915514158_88.jpg" tvg-quality="高清",山东教育 [13源]
+https://stream1.freetv.fun/497dbc858ac950752aedd19e6ab943e3752516e9a937601969741f3a51ed74b2.m3u8
+#EXTINF:-1 tvg-name="山东文旅" group-title="山东省" tvg-logo="山东文旅.png",山东文旅 [2源]
+http://221.2.148.205:8154/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="山东新闻" group-title="山东省" tvg-logo="山东新闻.png",山东新闻 [9源]
+https://stream1.freetv.fun/shan-dong-xin-wen-8.m3u8
+#EXTINF:-1 tvg-name="山东生活" group-title="山东省" tvg-logo="山东生活.png",山东生活 [2源]
+http://ls.qingting.fm/live/60260.m3u8
+#EXTINF:-1 tvg-name="山东齐鲁" group-title="山东省" tvg-logo="https://i.imgur.com/U9wNMmm.png" tvg-quality="高清",山东齐鲁
+http://livealone302.iqilu.com/iqilu/qlpd.m3u8

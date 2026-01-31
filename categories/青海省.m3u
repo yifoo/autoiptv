@@ -1,0 +1,9 @@
+#EXTM3U
+# 青海省频道列表
+# 更新时间(北京时间): 2026-01-31 13:04:56
+# 电视台数量: 2
+
+#EXTINF:-1 tvg-name="青海综合" group-title="青海省" tvg-logo="青海综合.png",青海综合
+http://lmt.scqstv.com/live1/live1.m3u8
+#EXTINF:-1 tvg-name="青海都市" group-title="青海省" tvg-logo="青海都市.png",青海都市 [2源]
+http://[2409:8087:1e01:20::3]/PLTV/11/224/3221225749/index.m3u8

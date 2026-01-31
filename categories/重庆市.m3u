@@ -1,0 +1,11 @@
+#EXTM3U
+# 重庆市频道列表
+# 更新时间(北京时间): 2026-01-31 13:04:56
+# 电视台数量: 3
+
+#EXTINF:-1 tvg-name="重庆时尚购物" group-title="重庆市" tvg-logo="重庆时尚购物.png",重庆时尚购物
+http://183.220.107.138:4022/rtp/239.10.0.169:5140
+#EXTINF:-1 tvg-name="重庆汽摩" group-title="重庆市" tvg-logo="重庆汽摩.png",重庆汽摩 [6源]
+http://183.230.184.51:65500/tntv1.m3u8
+#EXTINF:-1 tvg-name="重庆科教" group-title="重庆市" tvg-logo="https://epg.pw/media/images/channel/2024/07/29/large/20240729020024729385_11.jpg" tvg-quality="高清",重庆科教
+https://stream1.freetv.fun/f95fc2c361a5c575b9fa9663f9fc8cbe352ff641a3456eeb9c423e5785bbd247.ctv
