@@ -2,14 +2,17 @@ name: Update Live TV Sources
 
 on:
   schedule:
-    - cron: '0 18 * * *'
-  workflow_dispatch:
+    - cron: '0 18 * * *'  # 每天UTC 18:00运行
+  workflow_dispatch:       # 支持手动触发
   push:
     branches: [ main ]
-    paths: 
+    paths:
       - 'sources.txt'
       - '.github/workflows/update-live-sources.yml'
       - 'scripts/collect_sources.py'
+
+permissions:
+  contents: write
 
 jobs:
   collect-and-organize:
@@ -19,7 +22,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.LIVEIPTV }}
         fetch-depth: 0
 
     - name: Set up Python
@@ -32,57 +34,69 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
 
-    - name: Create directories
+    - name: Create necessary directories
       run: |
         mkdir -p scripts
         mkdir -p categories
 
-    - name: Create requirements file
-      run: echo "requests>=2.31.0" > scripts/requirements.txt
+    - name: Check if Python script exists
+      run: |
+        if [ -f scripts/collect_sources.py ]; then
+          echo "✅ Python脚本已存在"
+        else
+          echo "❌ Python脚本不存在，请确保scripts/collect_sources.py已提交"
+          exit 1
+        fi
+
+    - name: Create sources.txt if not exists
+      run: |
+        if [ ! -f sources.txt ]; then
+          echo "# 电视直播源列表" > sources.txt
+          echo "# 每行一个M3U文件URL" >> sources.txt
+          echo "" >> sources.txt
+          echo "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u" >> sources.txt
+          echo "https://raw.githubusercontent.com/chao921125/source/refs/heads/main/iptv/index.m3u" >> sources.txt
+          echo "✅ 创建了sources.txt文件"
+        fi
 
     - name: Run collection script
       id: collect
       run: |
-        cd scripts
-        python collect_sources.py
+        echo "🚀 开始运行采集脚本..."
+        python scripts/collect_sources.py
         
-        if [ -f ../live_sources.m3u ]; then
+        # 检查是否生成了文件
+        if [ -f live_sources.m3u ]; then
+          echo "✅ 检测到生成了live_sources.m3u文件"
           echo "changed=true" >> $GITHUB_OUTPUT
           echo "CHANGED=true" >> $GITHUB_ENV
         else
+          echo "❌ 未生成live_sources.m3u文件"
           echo "changed=false" >> $GITHUB_OUTPUT
           echo "CHANGED=false" >> $GITHUB_ENV
         fi
 
-    - name: Check generated files
+    - name: List generated files
       run: |
-        echo "=== 检查生成的文件 ==="
-        ls -la *.m3u *.json *.html *.md 2>/dev/null || echo "未找到主文件"
-        ls -la categories/*.m3u 2>/dev/null | head -5 || echo "未找到分类文件"
+        echo "📁 当前目录文件列表:"
+        ls -la
+        echo ""
+        echo "📁 categories目录:"
+        ls -la categories/ 2>/dev/null || echo "categories目录不存在"
+        echo ""
+        echo "📁 scripts目录:"
+        ls -la scripts/
 
-    - name: Commit and push changes
+    - name: Commit and push if changed
       if: env.CHANGED == 'true'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "github-actions[bot]"
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
         
         git add -A
-        git commit -m "📺 更新直播源 $(date '+%Y-%m-%d %H:%M:%S')" || echo "没有变更可提交"
+        git commit -m "📺 更新直播源 $(date '+%Y-%m-%d %H:%M:%S')"
         
-        # 尝试推送
-        git push https://x-access-token:${{ secrets.LIVEIPTV }}@github.com/${{ github.repository }}.git main
-
-    - name: Show success message
-      if: env.CHANGED == 'true'
-      run: |
-        echo "✅ 直播源更新成功！"
-        echo ""
-        echo "🔗 访问地址:"
-        echo "https://github.com/${{ github.repository }}/blob/main/live_sources.m3u"
-        echo "https://${{ github.repository_owner }}.github.io/$(echo ${{ github.repository }} | cut -d/ -f2)/"
-
-    - name: Show failure message
-      if: env.CHANGED == 'false'
-      run: |
-        echo "❌ 直播源更新失败"
-        echo "请检查脚本执行日志"
+        # 使用GITHUB_TOKEN推送
+        git push
