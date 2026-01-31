@@ -1,0 +1,93 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+*.log.*
+
+# Output files (可选择性忽略)
+# output/
+# test-output/
+temp/
+
+# Local config
+local_config.py
+config.local.py
+*.local
+
+# TV Collector specific
+personal_sources.txt
+test_*.m3u
+tmp_*.m3u
+
+# Backup files
+*.bak
+*.backup
+
+# GitHub Pages
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# 临时文件
+*.tmp
+*.temp
+
+# 系统文件
+.directory
+*.lock
+
+# 测试文件
+test_*.py
+*_test.py
+
+# 个人配置
+private/
+secret/
+keys/
+*.key
+*.pem
