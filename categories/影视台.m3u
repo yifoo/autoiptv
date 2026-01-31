@@ -1,15 +1,9 @@
 #EXTM3U
 # 影视台频道列表
-# 更新时间(北京时间): 2026-01-31 11:33:10
-# 频道数量: 5
+# 更新时间(北京时间): 2026-01-31 12:16:19
+# 电视台数量: 2
 
-#EXTINF:-1 group-title="影视台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151605390141_16.jpg",[HD]陕西西部电影[ipv6]
-https://epg.pw/stream/318a64a14fc9f1b992a21c72c71cfd4a89394cc5c5223234aa15277077764e2b.m3u8
-#EXTINF:-1 group-title="影视台" tvg-logo="湖南电影.png",湖南电影
+#EXTINF:-1 tvg-name="湖南电影" group-title="影视台" tvg-logo="湖南电影.png",湖南电影 [8源]
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=hndy
-#EXTINF:-1 group-title="影视台" tvg-logo="湖南电影.png",湖南电影
-https://stream1.freetv.fun/hu-nan-dian-ying-2.ctv
-#EXTINF:-1 group-title="影视台" tvg-logo="https://live.fanmingming.cn/tv/湖南电影.png",湖南电影
-http://tvbox6.icu/tv/mgtv.php?id=221
-#EXTINF:-1 group-title="影视台" tvg-logo="https://live.fanmingming.cn/tv/湖南电影.png",湖南电影
-http://222.241.154.37:9901/tsfile/live/23025_1.m3u8
+#EXTINF:-1 tvg-name="陕西西部电影" group-title="影视台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151605390141_16.jpg",陕西西部电影 [2源]
+https://epg.pw/stream/318a64a14fc9f1b992a21c72c71cfd4a89394cc5c5223234aa15277077764e2b.m3u8
