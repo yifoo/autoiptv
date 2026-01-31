@@ -39,3 +39,11 @@ Thumbs.db
 
 # 测试文件
 test*
+*.log
+
+# 临时文件
+temp/
+tmp/
+
+# 个人配置
+*.local

@@ -2,7 +2,7 @@ name: Update Live TV Sources
 
 on:
   schedule:
-    - cron: '0 18 * * *'  # 每天UTC 18:00运行
+    - cron: '0 18 * * *'  # 每天UTC 18:00运行（北京时间凌晨2点）
   workflow_dispatch:       # 支持手动触发
   push:
     branches: [ main ]
@@ -27,7 +27,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'
+        python-version: '3.11'
 
     - name: Install dependencies
       run: |
@@ -38,13 +38,15 @@ jobs:
       run: |
         mkdir -p scripts
         mkdir -p categories
+        mkdir -p merged
 
-    - name: Check if Python script exists
+    - name: Check Python script
       run: |
         if [ -f scripts/collect_sources.py ]; then
           echo "✅ Python脚本已存在"
+          echo "📄 脚本内容大小: $(wc -l scripts/collect_sources.py | cut -d' ' -f1) 行"
         else
-          echo "❌ Python脚本不存在，请确保scripts/collect_sources.py已提交"
+          echo "❌ Python脚本不存在"
           exit 1
         fi
 
@@ -76,16 +78,30 @@ jobs:
           echo "CHANGED=false" >> $GITHUB_ENV
         fi
 
-    - name: List generated files
+    - name: Show generated files
       run: |
-        echo "📁 当前目录文件列表:"
-        ls -la
+        echo "📁 生成的文件列表:"
+        ls -la *.m3u *.json *.html *.md 2>/dev/null || echo "主文件未找到"
         echo ""
         echo "📁 categories目录:"
-        ls -la categories/ 2>/dev/null || echo "categories目录不存在"
+        ls -la categories/*.m3u 2>/dev/null | head -10 || echo "categories目录为空或不存在"
         echo ""
-        echo "📁 scripts目录:"
-        ls -la scripts/
+        echo "📁 merged目录:"
+        ls -la merged/*.m3u 2>/dev/null | head -10 || echo "merged目录为空或不存在"
+
+    - name: Check file contents
+      run: |
+        echo "📄 检查文件内容:"
+        if [ -f live_sources.m3u ]; then
+          echo "live_sources.m3u 前5行:"
+          head -5 live_sources.m3u
+          echo ""
+          echo "live_sources.m3u 频道数量: $(grep -c '^#EXTINF' live_sources.m3u || echo 0)"
+        fi
+        
+        if [ -f channels.json ]; then
+          echo "channels.json 文件大小: $(wc -c channels.json | cut -d' ' -f1) bytes"
+        fi
 
     - name: Commit and push if changed
       if: env.CHANGED == 'true'
@@ -96,7 +112,36 @@ jobs:
         git config --local user.name "GitHub Action"
         
         git add -A
-        git commit -m "📺 更新直播源 $(date '+%Y-%m-%d %H:%M:%S')"
+        git commit -m "📺 更新直播源 $(date '+%Y-%m-%d %H:%M:%S')
+        
+        - 自动合并同名电视台
+        - 支持源切换功能
+        - 频道名称精简处理
+        "
         
         # 使用GITHUB_TOKEN推送
         git push
+
+    - name: Show success message
+      if: env.CHANGED == 'true'
+      run: |
+        echo "🎉 直播源更新成功！"
+        echo ""
+        echo "🔗 访问地址:"
+        echo "https://github.com/${{ github.repository }}/blob/main/live_sources.m3u"
+        echo "https://${{ github.repository_owner }}.github.io/$(echo ${{ github.repository }} | cut -d/ -f2)/"
+        echo ""
+        echo "📊 查看详细统计:"
+        echo "https://github.com/${{ github.repository }}/blob/main/channels.json"
+
+    - name: Show failure message
+      if: env.CHANGED == 'false'
+      run: |
+        echo "❌ 直播源更新失败"
+        echo "请检查:"
+        echo "1. 网络连接是否正常"
+        echo "2. 源地址是否可以访问"
+        echo "3. Python脚本是否有语法错误"
+        echo ""
+        echo "📋 调试信息:"
+        echo "查看上方Run collection script步骤的输出"
