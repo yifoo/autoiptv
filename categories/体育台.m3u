@@ -1,19 +1,17 @@
 #EXTM3U
 # 体育台频道列表（IPv6优先多源合并版，带黑名单过滤）
-# 更新时间(北京时间): 2026-01-31 15:53:52
-# 电视台数量: 6
+# 更新时间(北京时间): 2026-01-31 16:32:17
+# 电视台数量: 5
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤黑名单慢速源（响应时间 > 10秒）
 
 #EXTINF:-1 tvg-name="CCTV 风云足球" group-title="体育台" tvg-logo="https://live.fanmingming.cn/tv/风云足球.png",CCTV 风云足球 [1IPv4]
 http://dassby.qqff.top:99/live/风云足球/index.m3u8
 #EXTINF:-1 tvg-name="CCTV风云足球" group-title="体育台" tvg-logo="https://tb.zbds.top/logo/CCTV风云足球.png",CCTV风云足球 [2IPv4]
-https://stream1.freetv.fun/f29c24e198f9bf47ac2be43abf3d1a9eb21ebf26392c4959f9ec8d2077718450.m3u8|http://27.41.245.32:801/hls/906/index.m3u8
-#EXTINF:-1 tvg-name="山东体育" group-title="体育台" tvg-logo="山东体育.png",山东体育 [9IPv4]
-https://stream1.freetv.fun/shan-dong-ti-yu-8.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-19.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-4.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-7.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-6.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-3.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-9.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-5.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-2.m3u8
-#EXTINF:-1 tvg-name="广东体育" group-title="体育台" tvg-logo="https://epg.pw/media/images/channel/2024/01/14/large/20240114130318634112_23.png",广东体育 [14IPv4]
-http://cdn2.163189.xyz/live/gdty/stream.m3u8|https://stream1.freetv.fun/7b470f9fc5c305db0c8622117b7b25ca00eb35ba3e93e865cf0ff9df5c736681.m3u8|https://epg.pw/stream/7b470f9fc5c305db0c8622117b7b25ca00eb35ba3e93e865cf0ff9df5c736681.m3u8|https://stream1.freetv.fun/yan-dong-ti-yu-16.m3u8|https://stream1.freetv.fun/d8de197cafccb00d5ef0b74b6d51099156cdda3dfa9f12a2400ffbbd3c837f9e.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-10.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-11.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-14.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-17.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-18.ctv|http://120.238.94.10:9901/tsfile/live/1012_1.m3u8|http://php.jdshipin.com/PLTV/iptv.php?id=gdty|http://php.jdshipin.com/TVOD/iptv.php?id=gdty|http://r.jdshipin.com/LiYdg
-#EXTINF:-1 tvg-name="江苏体育" group-title="体育台" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530230519981125_89.jpg",江苏体育 [4IPv4]
-https://stream1.freetv.fun/e9b0607a6ad54ba676d9bb046555ef959e983d1f66e584dd05e2c58424945b7e.ctv|https://migu.188766.xyz/?migutoken=90d4e3f3f8a5288cc5aac4a92021e341&id=%E4%BD%93%E8%82%B2%E4%BC%91%E9%97%B2%E9%A2%91%E9%81%93&type=yy|https://stream1.freetv.fun/jiang-su-ti-yu-1.ctv|https://stream1.freetv.fun/jiang-su-ti-yu-4.ctv
+http://27.41.245.32:801/hls/906/index.m3u8|https://stream1.freetv.fun/f29c24e198f9bf47ac2be43abf3d1a9eb21ebf26392c4959f9ec8d2077718450.m3u8
+#EXTINF:-1 tvg-name="山东体育" group-title="体育台" tvg-logo="山东体育.png",山东体育 [8IPv4]
+https://stream1.freetv.fun/shan-dong-ti-yu-6.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-8.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-19.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-4.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-7.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-3.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-9.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-2.m3u8
+#EXTINF:-1 tvg-name="广东体育" group-title="体育台" tvg-logo="https://epg.pw/media/images/channel/2024/01/14/large/20240114130318634112_23.png",广东体育 [12IPv4]
+https://stream1.freetv.fun/yan-dong-ti-yu-14.ctv|http://120.238.94.10:9901/tsfile/live/1012_1.m3u8|https://stream1.freetv.fun/7b470f9fc5c305db0c8622117b7b25ca00eb35ba3e93e865cf0ff9df5c736681.m3u8|https://stream1.freetv.fun/yan-dong-ti-yu-10.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-17.ctv|http://cdn2.163189.xyz/live/gdty/stream.m3u8|https://epg.pw/stream/7b470f9fc5c305db0c8622117b7b25ca00eb35ba3e93e865cf0ff9df5c736681.m3u8|https://stream1.freetv.fun/d8de197cafccb00d5ef0b74b6d51099156cdda3dfa9f12a2400ffbbd3c837f9e.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-11.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-18.ctv|http://php.jdshipin.com/PLTV/iptv.php?id=gdty|http://php.jdshipin.com/TVOD/iptv.php?id=gdty
 #EXTINF:-1 tvg-name="辽宁体育" group-title="体育台" tvg-logo="辽宁体育.png",辽宁体育 [3IPv4]
-https://stream1.freetv.fun/liao-zhu-ti-yu-5.m3u8|https://stream1.freetv.fun/liao-zhu-ti-yu-3.m3u8|http://dassby.qqff.top:99/live/辽宁体育/index.m3u8
+http://dassby.qqff.top:99/live/辽宁体育/index.m3u8|https://stream1.freetv.fun/liao-zhu-ti-yu-5.m3u8|https://stream1.freetv.fun/liao-zhu-ti-yu-3.m3u8

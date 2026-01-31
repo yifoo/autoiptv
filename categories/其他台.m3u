@@ -1,7 +1,7 @@
 #EXTM3U
 # 其他台频道列表（IPv6优先多源合并版，带黑名单过滤）
-# 更新时间(北京时间): 2026-01-31 15:53:52
-# 电视台数量: 27
+# 更新时间(北京时间): 2026-01-31 16:32:17
+# 电视台数量: 114
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤黑名单慢速源（响应时间 > 10秒）
 
@@ -32,7 +32,7 @@ http://hmfs.f3322.net:3388/hls/28/index.m3u8
 #EXTINF:-1 tvg-name="CCTV怀旧剧场" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2022/05/09/large/20220509160609659886_36.jpg",CCTV怀旧剧场 [1IPv4]
 https://epg.pw/stream/188c041c330736b956fe8f41af7bf90cac0dd06699f977752ac93f0359de4a23.m3u8
 #EXTINF:-1 tvg-name="CCTV第一剧场" group-title="其他台" tvg-logo="https://tb.zbds.top/logo/CCTV第一剧场.png" tvg-quality="标清",CCTV第一剧场 [3IPv4]
-https://stream1.freetv.fun/631e31539c1b0c0c745f6727dd2e9511ef40616c5732baa462609264fa22c757.m3u8|https://epg.pw/stream/ba55b8e8aea7622044ad6925d44966b26283edbe03be0646f351292a22e1027c.m3u8|http://hmfs.f3322.net:3388/hls/21/index.m3u8
+https://stream1.freetv.fun/631e31539c1b0c0c745f6727dd2e9511ef40616c5732baa462609264fa22c757.m3u8|http://hmfs.f3322.net:3388/hls/21/index.m3u8|https://epg.pw/stream/ba55b8e8aea7622044ad6925d44966b26283edbe03be0646f351292a22e1027c.m3u8
 #EXTINF:-1 tvg-name="CGTN俄语" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/CGTN俄语.png",CGTN俄语 [1IPv4]
 https://0472.org/hls/cgtne.m3u8
 #EXTINF:-1 tvg-name="CGTN法语" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/CGTN法语.png",CGTN法语 [1IPv4]
@@ -45,17 +45,191 @@ https://0472.org/hls/cgtnx.m3u8
 https://0472.org/hls/cgtnd.m3u8
 #EXTINF:-1 tvg-name="CGTN阿语" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/CGTN阿语.png",CGTN阿语 [1IPv4]
 https://0472.org/hls/cgtna.m3u8
-#EXTINF:-1 tvg-name="东方影视" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2024/07/28/large/20240728224839286048_21.jpg" tvg-ipv6="true",东方影视 [2IPv6+5IPv4]
-https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-8.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-9.m3u8|https://www.freetv.top/migu/617290047.m3u8?migutoken=86c02ad0875d5cc49d77bcc8bdb628f2c9d508ffc323b964a03c8f92dde4afafa0345cf5a8fefbdf915c748e3d11c6c18e27ae1e21a609cec31a45e6c437db26a7a243625f9cf35c271171a22c|https://stream1.freetv.fun/dong-fang-ying-shi-12.m3u8|https://stream1.freetv.fun/7ff655a1171710b4358942d77af2df99ad25dcf18d97c82eec8045dfe25629ba.ctv|https://stream1.freetv.fun/dong-fang-ying-shi-6.ctv|https://stream1.freetv.fun/dong-fang-ying-shi-4.ctv
-#EXTINF:-1 tvg-name="东方财经" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2023/06/05/large/20230605005855118868_86.jpg" tvg-quality="标清",东方财经 [1IPv4]
-https://epg.pw/stream/76079aa6a26f481e2218b469cd5c6f2236223a0b4244bdad4a6d36cf985e637e.ctv
+#EXTINF:-1 tvg-name="「斗鱼」DOTA2" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」DOTA2 [1IPv4]
+https://live.iill.top/douyu/3811559
+#EXTINF:-1 tvg-name="「斗鱼」FIFA" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」FIFA [1IPv4]
+https://live.iill.top/douyu/7692166
+#EXTINF:-1 tvg-name="「斗鱼」JJ斗地主" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」JJ斗地主 [1IPv4]
+https://live.iill.top/douyu/488743
+#EXTINF:-1 tvg-name="「斗鱼」QQ飞车•手游" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」QQ飞车•手游 [1IPv4]
+https://live.iill.top/douyu/5040227
+#EXTINF:-1 tvg-name="「斗鱼」云顶之弈" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」云顶之弈 [1IPv4]
+https://live.iill.top/douyu/522423
+#EXTINF:-1 tvg-name="「斗鱼」和平精英" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」和平精英 [1IPv4]
+https://live.iill.top/douyu/999
+#EXTINF:-1 tvg-name="「斗鱼」我的世界" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」我的世界 [1IPv4]
+https://live.iill.top/douyu/738878
+#EXTINF:-1 tvg-name="「斗鱼」无畏契约" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」无畏契约 [1IPv4]
+https://live.iill.top/douyu/4585645
+#EXTINF:-1 tvg-name="「斗鱼」梦幻西游·手游" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」梦幻西游·手游 [1IPv4]
+https://live.iill.top/huya/9163712
+#EXTINF:-1 tvg-name="「斗鱼」火影忍者" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」火影忍者 [1IPv4]
+https://live.iill.top/douyu/1997723
+#EXTINF:-1 tvg-name="「斗鱼」王者荣耀 𝟙" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」王者荣耀 𝟙 [1IPv4]
+https://live.iill.top/douyu/1863767
+#EXTINF:-1 tvg-name="「斗鱼」穿越火线 𝟙" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」穿越火线 𝟙 [1IPv4]
+https://live.iill.top/douyu/605964
+#EXTINF:-1 tvg-name="「斗鱼」穿越火线 𝟚" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」穿越火线 𝟚 [1IPv4]
+https://live.iill.top/douyu/5388537
+#EXTINF:-1 tvg-name="「斗鱼」第五人格" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」第五人格 [1IPv4]
+https://live.iill.top/douyu/3226194
+#EXTINF:-1 tvg-name="「斗鱼」英雄联盟 𝟙" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」英雄联盟 𝟙 [1IPv4]
+https://live.iill.top/douyu/288016
+#EXTINF:-1 tvg-name="「斗鱼」跑跑卡丁车" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」跑跑卡丁车 [1IPv4]
+https://live.iill.top/douyu/7722576
+#EXTINF:-1 tvg-name="「斗鱼」金铲铲之战" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/斗鱼.png",「斗鱼」金铲铲之战 [1IPv4]
+https://live.iill.top/douyu/9715241
+#EXTINF:-1 tvg-name="「虎牙」CS 2" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」CS 2 [1IPv4]
+https://live.iill.top/huya/483917
+#EXTINF:-1 tvg-name="「虎牙」DOTA2" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」DOTA2 [1IPv4]
+https://live.iill.top/huya/660118
+#EXTINF:-1 tvg-name="「虎牙」和平精英" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」和平精英 [1IPv4]
+https://live.iill.top/huya/660006
+#EXTINF:-1 tvg-name="「虎牙」无畏契约" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」无畏契约 [1IPv4]
+https://live.iill.top/huya/660679
+#EXTINF:-1 tvg-name="「虎牙」永劫无间" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」永劫无间 [1IPv4]
+https://live.iill.top/huya/660115
+#EXTINF:-1 tvg-name="「虎牙」王者荣耀 𝟙" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」王者荣耀 𝟙 [1IPv4]
+https://live.iill.top/huya/660002
+#EXTINF:-1 tvg-name="「虎牙」王者荣耀 𝟚" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」王者荣耀 𝟚 [1IPv4]
+https://live.iill.top/huya/660164
+#EXTINF:-1 tvg-name="「虎牙」穿越火线" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」穿越火线 [1IPv4]
+https://live.iill.top/huya/660101
+#EXTINF:-1 tvg-name="「虎牙」穿越火线•手游" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」穿越火线•手游 [1IPv4]
+https://live.iill.top/huya/660102
+#EXTINF:-1 tvg-name="「虎牙」第五人格" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」第五人格 [1IPv4]
+https://live.iill.top/huya/idvesports
+#EXTINF:-1 tvg-name="「虎牙」绝地求生 𝟙" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」绝地求生 𝟙 [1IPv4]
+https://live.iill.top/huya/660004
+#EXTINF:-1 tvg-name="「虎牙」绝地求生 𝟚" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」绝地求生 𝟚 [1IPv4]
+https://live.iill.top/huya/660005
+#EXTINF:-1 tvg-name="「虎牙」英雄联盟 𝟙" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」英雄联盟 𝟙 [1IPv4]
+https://live.iill.top/huya/660000
+#EXTINF:-1 tvg-name="「虎牙」金铲铲之战" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",「虎牙」金铲铲之战 [1IPv4]
+https://live.iill.top/huya/660579
+#EXTINF:-1 tvg-name="七龙珠「动漫」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",七龙珠「动漫」 [1IPv4]
+https://live.iill.top/huya/11601966
+#EXTINF:-1 tvg-name="七龙珠「解说」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",七龙珠「解说」 [1IPv4]
+https://live.iill.top/huya/25650806
+#EXTINF:-1 tvg-name="东方影视" group-title="其他台" tvg-logo="东方影视.png" tvg-ipv6="true",东方影视 [1IPv6+3IPv4]
+https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-8.m3u8|https://www.freetv.top/migu/617290047.m3u8?migutoken=86c02ad0875d5cc49d77bcc8bdb628f2c9d508ffc323b964a03c8f92dde4afafa0345cf5a8fefbdf915c748e3d11c6c18e27ae1e21a609cec31a45e6c437db26a7a243625f9cf35c271171a22c|https://stream1.freetv.fun/dong-fang-ying-shi-12.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-6.ctv
 #EXTINF:-1 tvg-name="东方购物" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2022/05/14/large/20220514170333461314_55.jpg",东方购物 [1IPv4]
 https://epg.pw/stream/50d25ad30fe421e86133c128094a41aa4cf86bea632cf86021cfb2fe0987eb7f.m3u8
 #EXTINF:-1 tvg-name="之江纪录" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/之江纪录.png",之江纪录 [1IPv4]
 https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
+#EXTINF:-1 tvg-name="互扇巴掌大赛「其他」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",互扇巴掌大赛「其他」 [1IPv4]
+https://live.iill.top/huya/20072873
+#EXTINF:-1 tvg-name="免费订阅：请勿贩卖..." group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/温馨提示.png",免费订阅：请勿贩卖... [1IPv4]
+https://epg-1.iill.top/v/302.mp4
+#EXTINF:-1 tvg-name="公告说明： 暂无" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/温馨提示.png",公告说明： 暂无 [1IPv4]
+https://epg-1.iill.top/v/301.mp4
+#EXTINF:-1 tvg-name="动漫•1「解说」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",动漫•1「解说」 [1IPv4]
+https://live.iill.top/huya/19757963
+#EXTINF:-1 tvg-name="咪咕直播 𝟙「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟙「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000001000005308/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000005308&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟙𝟘「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟙𝟘「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000001000031494/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000031494&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟙𝟙「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟙𝟙「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000000097/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000000097&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟙𝟚「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟙𝟚「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000002019/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000002019&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟙𝟛「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟙𝟛「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000002809/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000002809&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟙𝟜「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟙𝟜「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000003915/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000003915&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟙𝟝「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟙𝟝「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000004193/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000004193&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟙𝟞「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟙𝟞「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000005837/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000005837&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟙𝟟「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟙𝟟「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000006077/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000006077&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟙𝟠「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟙𝟠「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000006658/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000006658&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟙𝟡「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟙𝟡「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000009788/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000009788&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟚「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟚「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000001000005969/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000005969&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟚𝟘「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟚𝟘「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000010833/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000010833&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟚𝟙「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟚𝟙「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000011297/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000011297&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟚𝟚「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟚𝟚「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000011518/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000011518&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟚𝟛「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟚𝟛「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000012558/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000012558&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟚𝟜「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟚𝟜「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000012616/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000012616&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟚𝟝「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟚𝟝「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000015470/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000015470&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟚𝟞「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟚𝟞「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000015560/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000015560&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟚𝟟「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟚𝟟「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000017678/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000017678&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟚𝟠「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟚𝟠「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000019839/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000019839&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟚𝟡「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟚𝟡「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000021904/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000021904&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟛「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟛「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000001000007218/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000007218&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟛𝟘「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟛𝟘「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000023434/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000023434&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟛𝟙「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟛𝟙「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000025380/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000025380&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟛𝟚「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟛𝟚「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000027691/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000027691&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟛𝟛「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟛𝟛「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000031669/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000031669&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟜「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟜「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000001000008001/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000008001&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟜𝕂 𝟙「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟜𝕂 𝟙「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000005180/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000005180&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟜𝕂 𝟚「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟜𝕂 𝟚「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000010000015686/index.m3u8?channel-id=FifastbLive&Contentid=3000000010000015686&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟝「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟝「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000001000008176/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000008176&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟞「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟞「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000001000008379/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000008379&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟟「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟟「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000001000010129/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000010129&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟠「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟠「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000001000010948/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000010948&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="咪咕直播 𝟡「移动」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",咪咕直播 𝟡「移动」 [1IPv4]
+http://gslbserv.itv.cmvideo.cn:80/3000000001000028638/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000028638&livemode=1&stbId=YanG-1989
+#EXTINF:-1 tvg-name="哆啦A梦「动漫」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",哆啦A梦「动漫」 [1IPv4]
+https://live.iill.top/huya/11601963
 #EXTINF:-1 tvg-name="央视台球" group-title="其他台" tvg-logo="央视台球.png",央视台球 [2IPv4]
 https://epg.pw/stream/25677ac2e8c1f7c3dd6359c43eb5f0f54efb3f5c11f9dda18d01b3e0308ed017.m3u8|https://epg.pw/stream/ca9c1cd4b97fb824cedd7fedfd0c7a950afdd7f00751cfbb7c2d89831d7746a5.m3u8
+#EXTINF:-1 tvg-name="恐怖电影「解说」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",恐怖电影「解说」 [1IPv4]
+https://live.iill.top/huya/23419131
+#EXTINF:-1 tvg-name="挨饿德•1「其他」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",挨饿德•1「其他」 [1IPv4]
+https://live.iill.top/huya/20985858
+#EXTINF:-1 tvg-name="挨饿德•2「其他」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",挨饿德•2「其他」 [1IPv4]
+https://live.iill.top/huya/17693860
+#EXTINF:-1 tvg-name="止戈电影「解说」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",止戈电影「解说」 [1IPv4]
+https://live.iill.top/huya/19863777
 #EXTINF:-1 tvg-name="深圳电视剧" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2022/05/19/large/20220519234321215989_39.jpg",深圳电视剧 [1IPv4]
 https://stream1.freetv.fun/d998541f0ea7980bd3269e70cb06bc71a468f5e6c34afe58cd0673a3dcfd7578.m3u8
 #EXTINF:-1 tvg-name="深圳都市" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2022/05/19/large/20220519234446820820_32.jpg",深圳都市 [1IPv4]
 https://stream1.freetv.fun/15ae672fb25be25731b968fc7f2c35f042760fecd2eaa5704f53e14ff99997fc.m3u8
+#EXTINF:-1 tvg-name="猫和老鼠「动漫」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",猫和老鼠「动漫」 [1IPv4]
+https://live.iill.top/huya/11352879
+#EXTINF:-1 tvg-name="电视剧•1「解说」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",电视剧•1「解说」 [1IPv4]
+https://live.iill.top/huya/21277391
+#EXTINF:-1 tvg-name="电视剧•2「解说」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",电视剧•2「解说」 [1IPv4]
+https://live.iill.top/huya/25018873
+#EXTINF:-1 tvg-name="维护内容：维护 Gather「删除 • 源」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/温馨提示.png",维护内容：维护 Gather「删除 • 源」 [1IPv4]
+https://epg-1.iill.top/v/302.mp4
+#EXTINF:-1 tvg-name="维护时间：2025 1 15#佛系维护..." group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/温馨提示.png",维护时间：2025 1 15#佛系维护... [1IPv4]
+https://epg-1.iill.top/v/301.mp4
+#EXTINF:-1 tvg-name="美剧「解说」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",美剧「解说」 [1IPv4]
+https://live.iill.top/huya/20488841
+#EXTINF:-1 tvg-name="茶啊二中「动画」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",茶啊二中「动画」 [1IPv4]
+https://live.iill.top/huya/11213191
+#EXTINF:-1 tvg-name="荒野求生「其他」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",荒野求生「其他」 [1IPv4]
+https://live.iill.top/huya/593667
+#EXTINF:-1 tvg-name="野行者「其他」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",野行者「其他」 [1IPv4]
+https://live.iill.top/huya/20072663
+#EXTINF:-1 tvg-name="阅读•学习「音乐」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",阅读•学习「音乐」 [1IPv4]
+https://live.iill.top/huya/21241813
+#EXTINF:-1 tvg-name="音乐石榴「音乐」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",音乐石榴「音乐」 [1IPv4]
+https://live.iill.top/huya/17091681

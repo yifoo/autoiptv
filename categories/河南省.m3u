@@ -1,6 +1,6 @@
 #EXTM3U
 # 河南省频道列表（IPv6优先多源合并版，带黑名单过滤）
-# 更新时间(北京时间): 2026-01-31 15:53:52
+# 更新时间(北京时间): 2026-01-31 16:32:17
 # 电视台数量: 9
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤黑名单慢速源（响应时间 > 10秒）
@@ -15,11 +15,11 @@ http://1.94.31.214/php/hntv.php?id=hngj
 http://1.94.31.214/php/hntv.php?id=hnxw
 #EXTINF:-1 tvg-name="河南梨园" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南梨园.png",河南梨园 [1IPv4]
 http://1.94.31.214/php/hntv.php?id=hnly
-#EXTINF:-1 tvg-name="河南民生" group-title="河南省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531142947302154_59.jpg" tvg-ipv6="true",河南民生 [1IPv6+3IPv4]
-http://www.lwfz.fun:8800/rtp/239.16.20.165:11650|https://stream1.freetv.fun/3dba1aa77b00ec70e21ad288b975e283cf64dbfa98374eae276ffad9be33b1cf.ctv|https://stream1.freetv.fun/he-nan-min-sheng-3.ctv|https://migu.188766.xyz/?migutoken=fc5939dcb32364c5c4004d2527d99d3b&id=%E6%B0%91%E7%94%9F%E9%A2%91%E9%81%93&type=yy
+#EXTINF:-1 tvg-name="河南民生" group-title="河南省" tvg-logo="河南民生.png" tvg-ipv6="true",河南民生 [1IPv6+1IPv4]
+http://www.lwfz.fun:8800/rtp/239.16.20.165:11650|https://migu.188766.xyz/?migutoken=fc5939dcb32364c5c4004d2527d99d3b&id=%E6%B0%91%E7%94%9F%E9%A2%91%E9%81%93&type=yy
 #EXTINF:-1 tvg-name="河南法治" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南法治.png",河南法治 [1IPv4]
 http://1.94.31.214/php/hntv.php?id=hmfz
 #EXTINF:-1 tvg-name="河南电视剧" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南电视剧.png",河南电视剧 [1IPv4]
 http://1.94.31.214/php/hntv.php?id=hndsj
-#EXTINF:-1 tvg-name="河南都市" group-title="河南省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531143451177556_90.jpg" tvg-ipv6="true",河南都市 [1IPv6+4IPv4]
-http://www.lwfz.fun:8800/rtp/239.16.20.164:11640|https://stream1.freetv.fun/159787fa1c85725d343a5097adb51da069502ad220ca826ada667b010aeabf5b.ctv|https://stream1.freetv.fun/he-nan-du-shi-1.ctv|https://migu.188766.xyz/?migutoken=d8baa9c6f8f07f20ac65a02d15b59731&id=%E9%83%BD%E5%B8%82%E9%A2%91%E9%81%93&type=yy|http://1.94.31.214/php/hntv.php?id=hnds
+#EXTINF:-1 tvg-name="河南都市" group-title="河南省" tvg-logo="河南都市.png" tvg-ipv6="true",河南都市 [1IPv6+1IPv4]
+http://www.lwfz.fun:8800/rtp/239.16.20.164:11640|http://1.94.31.214/php/hntv.php?id=hnds

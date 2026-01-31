@@ -1,6 +1,6 @@
 #EXTM3U
 # 四川省频道列表（IPv6优先多源合并版，带黑名单过滤）
-# 更新时间(北京时间): 2026-01-31 15:53:52
+# 更新时间(北京时间): 2026-01-31 16:32:17
 # 电视台数量: 7
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤黑名单慢速源（响应时间 > 10秒）
@@ -18,4 +18,4 @@ https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8
 #EXTINF:-1 tvg-name="四川峨眉山远眺贡嘎雪山" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川峨眉山远眺贡嘎雪山.png",四川峨眉山远眺贡嘎雪山 [1IPv4]
 https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8
 #EXTINF:-1 tvg-name="四川科教" group-title="四川省" tvg-logo="https://epg.pw/media/images/channel/2022/05/28/large/20220528221105613593_11.jpg",四川科教 [5IPv4]
-https://stream1.freetv.fun/dd26f57be074ce07e1fb0d357b9bff2846bd030575df792d54abb4299ba5ada0.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-1.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-3.ctv|https://stream1.freetv.fun/si-chuan-ke-jiao-4.ctv|http://182.150.115.21:8030/pcgacg/pcgacg_0.m3u8
+http://182.150.115.21:8030/pcgacg/pcgacg_0.m3u8|https://stream1.freetv.fun/dd26f57be074ce07e1fb0d357b9bff2846bd030575df792d54abb4299ba5ada0.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-1.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-3.ctv|https://stream1.freetv.fun/si-chuan-ke-jiao-4.ctv

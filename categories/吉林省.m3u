@@ -1,12 +1,12 @@
 #EXTM3U
 # 吉林省频道列表（IPv6优先多源合并版，带黑名单过滤）
-# 更新时间(北京时间): 2026-01-31 15:53:52
+# 更新时间(北京时间): 2026-01-31 16:32:17
 # 电视台数量: 4
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤黑名单慢速源（响应时间 > 10秒）
 
 #EXTINF:-1 tvg-name="吉林乡村" group-title="吉林省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530224659377626_27.jpg",吉林乡村 [2IPv4]
-https://epg.pw/stream/69c843e9479e054c8323b5a23b74f4f70e8fd3d87354bcbef12195bed8043aeb.m3u8|https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8
+https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8|https://epg.pw/stream/69c843e9479e054c8323b5a23b74f4f70e8fd3d87354bcbef12195bed8043aeb.m3u8
 #EXTINF:-1 tvg-name="吉林市新闻综合" group-title="吉林省",吉林市新闻综合 [1IPv4]
 https://stream2.jlntv.cn/jilin1/sd/live.m3u8
 #EXTINF:-1 tvg-name="吉林影视" group-title="吉林省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530224557427041_25.jpg",吉林影视 [1IPv4]

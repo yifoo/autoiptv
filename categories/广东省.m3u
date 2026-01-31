@@ -1,18 +1,22 @@
 #EXTM3U
 # 广东省频道列表（IPv6优先多源合并版，带黑名单过滤）
-# 更新时间(北京时间): 2026-01-31 15:53:52
-# 电视台数量: 6
+# 更新时间(北京时间): 2026-01-31 16:32:17
+# 电视台数量: 8
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤黑名单慢速源（响应时间 > 10秒）
 
+#EXTINF:-1 tvg-name="广东 Ⅰ 韶关公共台" group-title="广东省" tvg-quality="标清",广东 Ⅰ 韶关公共台 [1IPv4]
+https://www.sgmsw.cn/videos/tv/201805/1308/9P424TC5M000AFO13CXK6GN6BOA889D2/hls/live.m3u8
+#EXTINF:-1 tvg-name="广东 Ⅰ 韶关综合台" group-title="广东省" tvg-quality="标清",广东 Ⅰ 韶关综合台 [1IPv4]
+https://www.sgmsw.cn/videos/tv/201805/1308/SB05RIYZOU8JR418AUQOF62CAJQ08D0E/hls/live.m3u8
 #EXTINF:-1 tvg-name="广东影视" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2024/01/14/large/20240114130217262909_90.png",广东影视 [1IPv4]
 https://stream1.freetv.fun/befb766cccc3f4aea99c123080b37aaadd09e409aaad63a496f1e970d7ecfcfd.m3u8
-#EXTINF:-1 tvg-name="广东新闻" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2024/01/14/large/20240114131740840005_79.png" tvg-quality="高清",广东新闻 [11IPv4]
-https://stream1.freetv.fun/468ecbac0873f6bf73428cfcffcc5c254b0c9b6ce5dc755b94a0bf61bb0e73b0.m3u8|https://stream1.freetv.fun/yan-dong-xin-wen-20.m3u8|https://stream1.freetv.fun/yan-dong-xin-wen-25.m3u8|https://stream1.freetv.fun/yan-dong-xin-wen-10.m3u8|https://stream1.freetv.fun/yan-dong-xin-wen-2.m3u8|https://stream1.freetv.fun/yan-dong-xin-wen-25.ctv|https://stream1.freetv.fun/yan-dong-xin-wen-14.ctv|https://stream1.freetv.fun/yan-dong-xin-wen-12.ctv|https://stream1.freetv.fun/yan-dong-xin-wen-9.ctv|https://stream1.freetv.fun/yan-dong-xin-wen-27.ctv|https://stream1.freetv.fun/yan-dong-xin-wen-20.ctv
+#EXTINF:-1 tvg-name="广东新闻" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2024/01/14/large/20240114131740840005_79.png" tvg-quality="高清",广东新闻 [9IPv4]
+https://stream1.freetv.fun/468ecbac0873f6bf73428cfcffcc5c254b0c9b6ce5dc755b94a0bf61bb0e73b0.m3u8|https://stream1.freetv.fun/yan-dong-xin-wen-25.ctv|https://stream1.freetv.fun/yan-dong-xin-wen-20.m3u8|https://stream1.freetv.fun/yan-dong-xin-wen-25.m3u8|https://stream1.freetv.fun/yan-dong-xin-wen-2.m3u8|https://stream1.freetv.fun/yan-dong-xin-wen-14.ctv|https://stream1.freetv.fun/yan-dong-xin-wen-12.ctv|https://stream1.freetv.fun/yan-dong-xin-wen-9.ctv|https://stream1.freetv.fun/yan-dong-xin-wen-20.ctv
 #EXTINF:-1 tvg-name="广东民生" group-title="广东省" tvg-logo="广东民生.png",广东民生 [10IPv4]
-https://stream1.freetv.fun/yan-dong-min-sheng-9.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-21.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-24.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-3.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-35.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-30.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-34.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-36.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-16.ctv|http://183.11.239.36:808/hls/18/index.m3u8
-#EXTINF:-1 tvg-name="广东珠江" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2025/01/28/large/20250128060916282738_90.png",广东珠江 [12IPv4]
-http://cdn2.163189.xyz/live/gdzj/stream.m3u8|https://stream1.freetv.fun/e7045f18df8fa6b98756f4bc5cbd94d0099dd73e9ff3cf359d15d326ee1a733b.m3u8|https://stream1.freetv.fun/6115aadb0da4010b3ff3c49d52f5100c48686ce70329ddef796f995ac136111d.m3u8|https://epg.pw/stream/81111a99c82a329aea72b8166dfdad9e63ffdd13b49485a2f1858dd45afcad03.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-19.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-29.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-8.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-16.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-12.ctv|http://120.238.94.10:9901/tsfile/live/1009_1.m3u8|http://r.jdshipin.com/sE5vO|https://stream1.freetv.fun/yan-dong-zhu-jiang-4.ctv
+http://183.11.239.36:808/hls/18/index.m3u8|https://stream1.freetv.fun/yan-dong-min-sheng-21.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-35.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-9.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-18.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-24.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-3.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-30.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-34.ctv|https://stream1.freetv.fun/yan-dong-min-sheng-16.ctv
+#EXTINF:-1 tvg-name="广东珠江" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2025/01/28/large/20250128060916282738_90.png",广东珠江 [9IPv4]
+https://stream1.freetv.fun/e7045f18df8fa6b98756f4bc5cbd94d0099dd73e9ff3cf359d15d326ee1a733b.m3u8|http://120.238.94.10:9901/tsfile/live/1009_1.m3u8|http://cdn2.163189.xyz/live/gdzj/stream.m3u8|https://stream1.freetv.fun/6115aadb0da4010b3ff3c49d52f5100c48686ce70329ddef796f995ac136111d.m3u8|https://epg.pw/stream/81111a99c82a329aea72b8166dfdad9e63ffdd13b49485a2f1858dd45afcad03.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-18.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-4.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-8.ctv|https://stream1.freetv.fun/yan-dong-zhu-jiang-12.ctv
 #EXTINF:-1 tvg-name="广东经济" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2024/01/11/large/20240111224412616123_60.png",广东经济 [1IPv4]
 https://stream1.freetv.fun/b5c139a4b6350fe20d62a449d08dc02091e7bc80c0689e1fa16dfffcedcdcd5a.ctv
 #EXTINF:-1 tvg-name="广东经济科教" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2024/01/11/large/20240111224501741507_16.png",广东经济科教 [1IPv4]
