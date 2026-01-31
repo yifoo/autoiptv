@@ -16,7 +16,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.PAT_TOKEN }}  # 使用个人访问令牌
+        token: ${{ secrets.LIVEIPTV }}  # 使用个人访问令牌
         persist-credentials: true
 
     - name: Set up Python
