@@ -7,7 +7,7 @@
 import requests
 import re
 import time
-from datetime import datetime
+from datetime import datetime,timezone, timedelta
 from pathlib import Path
 import json
 import os
@@ -156,7 +156,11 @@ if len(all_channels) == 0:
     exit(1)
 
 # 生成文件
-timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+# timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+utc_now = datetime.now(timezone.utc)
+beijing_time = utc_now.astimezone(timezone(timedelta(hours=8)))
+timestamp= beijing_time.strftime('%Y-%m-%d %H:%M:%S')
 
 # 1. 按分类组织频道
 categories = {}
