@@ -2,15 +2,13 @@ name: Update Live TV Sources
 
 on:
   schedule:
-    # 每天UTC时间18:00运行（北京时间凌晨2点）
     - cron: '0 18 * * *'
-  workflow_dispatch:  # 支持手动触发
+  workflow_dispatch:
   push:
     branches: [ main ]
     paths: 
       - 'sources.txt'
       - '.github/workflows/update-live-sources.yml'
-      - 'scripts/collect_sources.py'
 
 jobs:
   collect-and-organize:
@@ -20,8 +18,8 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.PAT_TOKEN }}
-        fetch-depth: 0  # 获取所有历史记录
+        token: ${{ secrets.LIVEIPTV }}
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -34,9 +32,38 @@ jobs:
         pip install requests
 
     - name: Create scripts directory
-      run: |
-        mkdir -p scripts
+      run: mkdir -p scripts
 
-    - name: Create collection script
+    - name: Download collection script
       run: |
-        cat > scripts/collect_sources.py << 'PYTHON_SCRIPT'
+        curl -o scripts/collect_sources.py https://raw.githubusercontent.com/yifoo/autoiptv/main/scripts/collect_sources.py
+
+    - name: Run collection script
+      id: collect
+      run: |
+        cd scripts
+        python collect_sources.py
+        
+        if [ -f ../live_sources.m3u ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "CHANGED=true" >> $GITHUB_ENV
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "CHANGED=false" >> $GITHUB_ENV
+        fi
+
+    - name: Commit and push changes
+      if: env.CHANGED == 'true'
+      run: |
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        
+        git add -A
+        git commit -m "📺 Update live TV sources $(date '+%Y-%m-%d %H:%M:%S')"
+        git push https://x-access-token:${{ secrets.LIVEIPTV }}@github.com/${{ github.repository }}.git HEAD:main
+
+    - name: Show success message
+      if: env.CHANGED == 'true'
+      run: |
+        echo "✅ 成功更新直播源！"
+        echo "📁 查看文件: https://github.com/${{ github.repository }}"
