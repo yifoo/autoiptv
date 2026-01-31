@@ -1,4 +1,4 @@
-name: Update Live TV Sources
+name: Update Live TV Sources with Blacklist
 
 on:
   schedule:
@@ -8,6 +8,7 @@ on:
     branches: [ main ]
     paths:
       - 'sources.txt'
+      - 'blacklist.txt'
       - '.github/workflows/update-live-sources.yml'
       - 'scripts/collect_sources.py'
 
@@ -77,6 +78,20 @@ jobs:
           echo "✅ 创建了sources.txt文件，请编辑添加直播源"
         fi
 
+    - name: Create blacklist.txt if not exists
+      run: |
+        if [ ! -f blacklist.txt ]; then
+          echo "# 直播源黑名单" > blacklist.txt
+          echo "# 该文件包含响应时间超过6秒的慢速直播源" >> blacklist.txt
+          echo "# 每行一个URL，下次更新时会跳过这些源" >> blacklist.txt
+          echo "# 生成时间: $(date '+%Y-%m-%d %H:%M:%S')" >> blacklist.txt
+          echo "" >> blacklist.txt
+          echo "# 慢速HTTP源" >> blacklist.txt
+          echo "# http://example.com/slow-stream.m3u8" >> blacklist.txt
+          echo "" >> blacklist.txt
+          echo "✅ 创建了blacklist.txt文件"
+        fi
+
     - name: Check sources.txt content
       run: |
         echo "📄 检查sources.txt内容:"
@@ -93,6 +108,22 @@ jobs:
         else
           echo "❌ sources.txt文件不存在"
         fi
+
+    - name: Check blacklist.txt content
+      run: |
+        echo "📄 检查blacklist.txt内容:"
+        echo "========================================"
+        if [ -f blacklist.txt ]; then
+          blacklist_count=$(grep -c '^http' blacklist.txt)
+          echo "黑名单中有 $blacklist_count 个慢速源"
+          if [ $blacklist_count -gt 0 ]; then
+            echo "前5个黑名单条目:"
+            grep '^http' blacklist.txt | head -5
+          fi
+        else
+          echo "blacklist.txt文件不存在"
+        fi
+        echo "========================================"
 
     - name: Run collection script
       id: collect
@@ -114,7 +145,7 @@ jobs:
     - name: Show generated files
       run: |
         echo "📁 生成的文件列表:"
-        ls -la *.m3u *.json *.html *.md 2>/dev/null || echo "主文件未找到"
+        ls -la *.m3u *.json *.txt *.html *.md 2>/dev/null || echo "主文件未找到"
         echo ""
         echo "📁 categories目录:"
         ls -la categories/*.m3u 2>/dev/null | head -20 || echo "categories目录为空或不存在"
@@ -136,7 +167,15 @@ jobs:
           echo "多源电视台: $multi_source_count 个"
         fi
         
+        if [ -f blacklist.txt ]; then
+          echo ""
+          echo "blacklist.txt 统计:"
+          blacklist_count=$(grep -c '^http' blacklist.txt)
+          echo "黑名单条目: $blacklist_count 个"
+        fi
+        
         if [ -f channels.json ]; then
+          echo ""
           echo "channels.json 文件大小: $(wc -c channels.json | cut -d' ' -f1) bytes"
         fi
 
@@ -156,6 +195,8 @@ jobs:
         - 频道名称精简处理
         - 按省份分类地方台
         - 新增景区频道分类
+        - IPv6源优先排序
+        - 慢速源黑名单过滤
         "
         
         # 使用GITHUB_TOKEN推送
@@ -167,11 +208,12 @@ jobs:
         echo "🎉 直播源更新成功！"
         echo ""
         echo "📺 生成的文件:"
-        echo "- live_sources.m3u (多源合并版 - PotPlayer/VLC使用)"
+        echo "- live_sources.m3u (IPv6优先多源合并版 - PotPlayer/VLC使用)"
         echo "- merged/多源分离版.m3u (TiviMate/Kodi使用)"
         echo "- merged/精简版.m3u (单源精简版)"
         echo "- channels.json (详细数据)"
         echo "- categories/*.m3u (分类列表)"
+        echo "- blacklist.txt (慢速源黑名单)"
         echo ""
         echo "🔗 访问地址:"
         echo "https://github.com/${{ github.repository }}/blob/main/live_sources.m3u"
@@ -183,7 +225,12 @@ jobs:
         echo "🎮 播放器使用提示:"
         echo "1. PotPlayer/VLC: 使用live_sources.m3u，播放时按Alt+W切换源"
         echo "2. TiviMate/Kodi: 使用merged/多源分离版.m3u，自动合并相同名称频道"
-        echo "3. 其他播放器: 使用merged/精简版.m3u，每个电视台只有一个源"
+        echo "3. 其他播放器: 使用merged/精简版.m3u，每个电视台IPv6源优先"
+        echo ""
+        echo "⚡ 速度过滤:"
+        echo "- 响应时间超过6秒的源已加入黑名单"
+        echo "- 下次更新时会自动跳过黑名单中的源"
+        echo "- 黑名单文件: blacklist.txt"
 
     - name: Show failure message
       if: env.CHANGED == 'false'

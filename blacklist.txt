@@ -1,0 +1,17 @@
+# 直播源黑名单
+# 该文件包含响应时间超过6秒的慢速直播源
+# 每行一个URL，下次更新时会跳过这些源
+# 生成时间: 2024-01-15 14:30:00
+
+# 慢速HTTP源
+http://slow-server1.com/live/stream1.m3u8
+http://slow-server2.com/tv/stream2.m3u8
+
+# 慢速IPv6源
+http://[2001:db8::1]:8080/live/tv.m3u8
+
+# 无法访问的源
+http://unreachable-server.com/iptv.m3u8
+
+# 响应超时的源
+http://timeout-server.com/stream.m3u8

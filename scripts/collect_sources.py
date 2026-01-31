@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-电视直播源收集脚本 - 多源合并版
-功能：1. 频道名称精简 2. 同名电视台合并（多源集成）3. 支持源切换 4. 统一央视频道命名
-特点：所有电视源统一从sources.txt文件获取，每个电视台显示为一个条目但包含多个源
+电视直播源收集脚本 - 带黑名单的IPv6优先多源合并版
+功能：1. 频道名称精简 2. 同名电视台合并（IPv6优先）3. 支持源切换 4. 统一央视频道命名 5. 速度测试和黑名单过滤
+特点：所有电视源统一从sources.txt文件获取，IPv6地址优先排序，慢速源自动加入黑名单
 分类：央视、卫视、地方台（按省份）、少儿台、综艺台、港澳台、体育台、影视台、景区频道、其他台
 播放器支持：PotPlayer、VLC、TiviMate、Kodi等支持多源切换的播放器
 """
@@ -15,11 +15,14 @@ from pathlib import Path
 import json
 import os
 import sys
+import ipaddress
+import concurrent.futures
+import threading
 
 print("=" * 70)
-print("电视直播源收集脚本 v5.0 - 多源合并版")
-print("功能：频道名称深度精简、统一央视频道命名、按省份分类地方台、多源集成")
-print("特点：每个电视台显示为一个条目，内部包含多个可切换源")
+print("电视直播源收集脚本 v7.0 - 带黑名单的IPv6优先多源合并版")
+print("功能：频道名称深度精简、统一央视频道命名、按省份分类地方台、IPv6优先排序、慢速源黑名单过滤")
+print("特点：每个电视台显示为一个条目，IPv6源优先排列，慢速源自动过滤")
 print("播放器：支持PotPlayer、VLC、TiviMate、Kodi等多源切换功能")
 print("=" * 70)
 
@@ -69,6 +72,85 @@ sources = load_sources_from_file()
 if len(sources) == 0:
     print("❌ 没有可用的数据源，退出")
     sys.exit(1)
+
+# 黑名单管理
+BLACKLIST_FILE = "blacklist.txt"
+SPEED_TEST_TIMEOUT = 6  # 6秒超时
+MAX_WORKERS = 20  # 并发测试线程数
+
+# IPv6检测函数
+def is_ipv6_url(url):
+    """检测URL是否为IPv6地址"""
+    try:
+        # 从URL中提取主机名
+        if '://' in url:
+            hostname = url.split('://')[1].split('/')[0]
+        else:
+            hostname = url.split('/')[0]
+        
+        # 移除端口号
+        if ':' in hostname:
+            # 处理IPv6地址的端口号格式 [::1]:8080
+            if hostname.startswith('['):
+                # IPv6地址带端口
+                ip_part = hostname.split(']')[0][1:]
+            else:
+                ip_part = hostname.split(':')[0]
+        else:
+            ip_part = hostname
+        
+        # 尝试解析为IPv6地址
+        ipaddress.IPv6Address(ip_part)
+        return True
+    except:
+        # 也检查URL中是否包含IPv6关键字
+        url_lower = url.lower()
+        if 'ipv6' in url_lower or 'ip6' in url_lower or 'v6' in url_lower:
+            return True
+        # 检查是否包含IPv6地址格式（冒号数量多）
+        if url_lower.count(':') >= 3:
+            return True
+        return False
+
+def get_source_priority(source_info):
+    """获取源的优先级分数（用于排序）"""
+    priority = 0
+    
+    # IPv6源最高优先级（+100分）
+    if is_ipv6_url(source_info['url']):
+        priority += 100
+        # 标记为IPv6源
+        source_info['is_ipv6'] = True
+    else:
+        source_info['is_ipv6'] = False
+    
+    # 清晰度优先级
+    quality_scores = {
+        "4K": 40,
+        "高清": 30,
+        "标清": 20,
+        "流畅": 10,
+        "未知": 0
+    }
+    priority += quality_scores.get(source_info['quality'], 0)
+    
+    # 源质量标记优先级
+    url_lower = source_info['url'].lower()
+    if any(marker in url_lower for marker in ['cdn', 'akamai', 'cloudfront']):
+        priority += 5  # CDN源加分
+    if 'https://' in url_lower:
+        priority += 3  # HTTPS源加分
+    if 'm3u8' in url_lower:
+        priority += 2  # HLS源加分
+    
+    # 速度测试结果优先级（如果已经测试过）
+    if 'speed' in source_info:
+        if source_info['speed'] < 2.0:
+            priority += 20  # 超快源
+        elif source_info['speed'] < 4.0:
+            priority += 10  # 快速源
+    
+    return priority
 
 # 频道名称清理规则 - 深度精简
 CLEAN_RULES = [
@@ -288,13 +370,13 @@ PLAYER_SUPPORT = {
         "multi_source": True,
         "format": "stream-multi-url",
         "separator": "|",
-        "note": "在播放时按Alt+W可以切换源"
+        "note": "在播放时按Alt+W可以切换源，IPv6源优先排列"
     },
     "VLC": {
         "multi_source": True,
         "format": "stream-multi-url",
         "separator": "#",
-        "note": "在播放列表中点右键选择不同源"
+        "note": "在播放列表中点右键选择不同源，IPv6源在前"
     },
     "TiviMate": {
         "multi_source": True,
@@ -309,6 +391,147 @@ PLAYER_SUPPORT = {
         "note": "使用IPTV Simple Client插件"
     }
 }
+
+# 黑名单管理函数
+def load_blacklist():
+    """加载黑名单"""
+    blacklist = set()
+    if os.path.exists(BLACKLIST_FILE):
+        try:
+            with open(BLACKLIST_FILE, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith("#"):
+                        blacklist.add(line)
+            print(f"📋 从 {BLACKLIST_FILE} 加载了 {len(blacklist)} 个黑名单条目")
+        except Exception as e:
+            print(f"⚠️  读取黑名单失败: {e}")
+    else:
+        print(f"📝 {BLACKLIST_FILE} 文件不存在，将创建新文件")
+    return blacklist
+
+def save_to_blacklist(slow_urls):
+    """保存慢速URL到黑名单"""
+    if not slow_urls:
+        return
+    
+    # 加载现有黑名单
+    existing_blacklist = load_blacklist()
+    
+    # 添加新的慢速URL
+    existing_blacklist.update(slow_urls)
+    
+    try:
+        with open(BLACKLIST_FILE, "w", encoding="utf-8") as f:
+            f.write("# 直播源黑名单\n")
+            f.write("# 该文件包含响应时间超过6秒的慢速直播源\n")
+            f.write("# 每行一个URL，下次更新时会跳过这些源\n")
+            f.write("# 生成时间: " + get_beijing_time() + "\n\n")
+            
+            # 排序后写入
+            for url in sorted(existing_blacklist):
+                f.write(url + "\n")
+        
+        print(f"📝 已保存 {len(slow_urls)} 个慢速源到 {BLACKLIST_FILE}")
+    except Exception as e:
+        print(f"❌ 保存黑名单失败: {e}")
+
+def test_url_speed(url):
+    """测试URL速度，返回响应时间（秒），超时返回None"""
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "Accept": "*/*",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+            "Connection": "close",
+            "Cache-Control": "no-cache"
+        }
+        
+        start_time = time.time()
+        
+        # 使用stream=True，只获取头部信息，不下载整个文件
+        response = requests.get(url, headers=headers, timeout=SPEED_TEST_TIMEOUT, 
+                               stream=True, allow_redirects=True)
+        
+        # 只读取一小部分数据来确认连接正常
+        response.close()
+        
+        end_time = time.time()
+        response_time = end_time - start_time
+        
+        # 检查HTTP状态码
+        if response.status_code >= 400:
+            return None  # 请求失败
+            
+        return response_time
+        
+    except requests.exceptions.Timeout:
+        return None  # 超时
+    except requests.exceptions.ConnectionError:
+        return None  # 连接错误
+    except requests.exceptions.TooManyRedirects:
+        return None  # 重定向过多
+    except Exception as e:
+        return None  # 其他错误
+
+def test_urls_with_progress(urls, blacklist):
+    """并发测试URL速度，显示进度"""
+    results = {}
+    slow_urls = set()
+    
+    print(f"⚡ 开始速度测试，超时时间: {SPEED_TEST_TIMEOUT}秒，最大并发数: {MAX_WORKERS}")
+    print(f"📊 需要测试 {len(urls)} 个URL")
+    
+    # 过滤掉已经在黑名单中的URL
+    urls_to_test = [url for url in urls if url not in blacklist]
+    
+    if not urls_to_test:
+        print("✅ 所有URL都在黑名单中，跳过速度测试")
+        return results, slow_urls
+    
+    print(f"🔍 实际需要测试 {len(urls_to_test)} 个URL")
+    
+    # 使用线程池并发测试
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        # 提交所有测试任务
+        future_to_url = {executor.submit(test_url_speed, url): url for url in urls_to_test}
+        
+        # 进度统计
+        completed = 0
+        total = len(urls_to_test)
+        start_time = time.time()
+        
+        for future in concurrent.futures.as_completed(future_to_url):
+            completed += 1
+            url = future_to_url[future]
+            
+            try:
+                speed = future.result()
+                if speed is not None:
+                    if speed <= SPEED_TEST_TIMEOUT:
+                        results[url] = speed
+                        
+                        # 每测试10个URL显示一次进度
+                        if completed % 10 == 0 or completed == total:
+                            elapsed = time.time() - start_time
+                            print(f"  ⏳ 进度: {completed}/{total} ({completed/total*100:.1f}%) - "
+                                  f"已用时: {elapsed:.1f}秒 - 最新: {url[:50]}... - 速度: {speed:.2f}秒")
+                    else:
+                        slow_urls.add(url)
+                        print(f"  🐌 慢速源: {url[:60]}... - 响应时间: {speed:.2f}秒")
+                else:
+                    slow_urls.add(url)
+                    print(f"  ❌ 失败源: {url[:60]}... - 连接失败")
+                    
+            except Exception as e:
+                slow_urls.add(url)
+                print(f"  ⚠️  异常源: {url[:60]}... - 错误: {str(e)[:50]}")
+    
+    print(f"✅ 速度测试完成")
+    print(f"  快速源: {len(results)} 个")
+    print(f"  慢速源: {len(slow_urls)} 个")
+    
+    return results, slow_urls
 
 def get_beijing_time():
     """获取东八区北京时间"""
@@ -545,8 +768,8 @@ def parse_channels(content, source_url):
     
     return channels
 
-def merge_channels(all_channels):
-    """合并同名电视台，支持多源"""
+def merge_channels(all_channels, speed_test_results=None):
+    """合并同名电视台，支持多源，IPv6优先排序，过滤黑名单"""
     merged = {}
     
     for channel in all_channels:
@@ -561,7 +784,10 @@ def merge_channels(all_channels):
                     'url': channel['url'],
                     'quality': channel['quality'],
                     'source': channel['source'],
-                    'logo': channel['logo']
+                    'logo': channel['logo'],
+                    'priority': 0,  # 稍后计算
+                    'is_ipv6': False,  # 稍后计算
+                    'speed': speed_test_results.get(channel['url'], None) if speed_test_results else None
                 }],
                 'logos': [],
                 'categories': set(),
@@ -586,7 +812,10 @@ def merge_channels(all_channels):
                     'url': channel['url'],
                     'quality': channel['quality'],
                     'source': channel['source'],
-                    'logo': channel['logo']
+                    'logo': channel['logo'],
+                    'priority': 0,  # 稍后计算
+                    'is_ipv6': False,  # 稍后计算
+                    'speed': speed_test_results.get(channel['url'], None) if speed_test_results else None
                 })
             
             # 收集logo
@@ -597,8 +826,17 @@ def merge_channels(all_channels):
             category = categorize_channel(key)
             merged[key]['categories'].add(category)
     
-    # 为每个合并后的频道选择一个主分类
+    # 为每个频道的源计算优先级并排序
     for key in merged:
+        # 计算每个源的优先级和IPv6状态
+        for source in merged[key]['sources']:
+            source['is_ipv6'] = is_ipv6_url(source['url'])
+            source['priority'] = get_source_priority(source)
+        
+        # 按优先级降序排序（优先级高的在前，IPv6优先）
+        merged[key]['sources'].sort(key=lambda x: x['priority'], reverse=True)
+        
+        # 为每个合并后的频道选择一个主分类
         categories = list(merged[key]['categories'])
         if categories:
             # 优先选择非"其他台"的分类
@@ -624,22 +862,27 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
         with open(output_file, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             if mode == "multi":
-                f.write(f"# 电视直播源 - 多源合并版（PotPlayer/VLC/TiviMate支持）\n")
-                f.write(f"# 每个电视台只显示一个条目，内部包含多个源\n")
+                f.write(f"# 电视直播源 - IPv6优先多源合并版（带黑名单过滤）\n")
+                f.write(f"# 每个电视台只显示一个条目，IPv6源优先排列\n")
                 f.write(f"# 播放器切换源方法：PotPlayer按Alt+W，VLC右键选择源\n")
+                f.write(f"# 排序规则：IPv6源 > 4K > 高清 > 标清 > 流畅\n")
+                f.write(f"# 已过滤黑名单慢速源（响应时间 > {SPEED_TEST_TIMEOUT}秒）\n")
             elif mode == "separate":
-                f.write(f"# 电视直播源 - 多源分离版（TiviMate/Kodi支持）\n")
-                f.write(f"# 同名电视台显示为多个条目，播放器自动合并\n")
+                f.write(f"# 电视直播源 - IPv6优先多源分离版（带黑名单过滤）\n")
+                f.write(f"# 同名电视台显示为多个条目，IPv6源优先，播放器自动合并\n")
+                f.write(f"# 已过滤黑名单慢速源（响应时间 > {SPEED_TEST_TIMEOUT}秒）\n")
             else:
-                f.write(f"# 电视直播源 - 精简版\n")
-                f.write(f"# 每个电视台只保留最佳源\n")
+                f.write(f"# 电视直播源 - IPv6优先精简版（带黑名单过滤）\n")
+                f.write(f"# 每个电视台只保留最佳源（IPv6优先）\n")
+                f.write(f"# 已过滤黑名单慢速源（响应时间 > {SPEED_TEST_TIMEOUT}秒）\n")
             
             f.write(f"# 更新时间(北京时间): {timestamp}\n")
             f.write(f"# 电视台总数: {len(merged_channels)}\n")
             f.write(f"# 原始频道数: {len(all_channels)}\n")
             f.write(f"# 数据源: {len(sources)} 个 (成功: {success_sources}, 失败: {len(failed_sources)})\n")
-            f.write(f"# 特点: 移除技术参数，统一央视频道命名，按省份分类地方台\n")
-            f.write(f"# 源文件: sources.txt\n\n")
+            f.write(f"# 特点: 移除技术参数，统一央视频道命名，按省份分类地方台，IPv6优先，黑名单过滤\n")
+            f.write(f"# 源文件: sources.txt\n")
+            f.write(f"# 黑名单: {BLACKLIST_FILE}\n\n")
             
             # 按分类顺序写入
             for category in final_category_order:
@@ -658,14 +901,44 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                         main_logo = channel['logos'][0] if channel['logos'] else ""
                         source_count = len(channel['sources'])
                         
+                        # 统计IPv6源数量
+                        ipv6_count = sum(1 for s in channel['sources'] if s.get('is_ipv6', False))
+                        
+                        # 统计快速源数量（速度信息）
+                        fast_sources = [s for s in channel['sources'] if s.get('speed') and s['speed'] <= 2.0]
+                        fast_count = len(fast_sources)
+                        
                         if mode == "multi":
                             # PotPlayer/VLC多源格式：一个条目包含多个URL，用"|"分隔
-                            display_name = f"{channel['clean_name']} [{source_count}源]"
+                            source_desc = []
+                            if ipv6_count > 0:
+                                source_desc.append(f"{ipv6_count}IPv6")
+                            if fast_count > 0:
+                                source_desc.append(f"{fast_count}快速")
+                            if source_count > ipv6_count:
+                                source_desc.append(f"{source_count}源")
                             
-                            # 收集所有URL
+                            if source_desc:
+                                display_name = f"{channel['clean_name']} [{'+'.join(source_desc)}]"
+                            else:
+                                display_name = f"{channel['clean_name']} [{source_count}源]"
+                            
+                            # 收集所有URL（已按优先级排序）
                             urls = []
                             qualities = []
+                            ipv6_sources = []
+                            ipv4_sources = []
+                            
                             for source in channel['sources']:
+                                if source.get('is_ipv6', False):
+                                    ipv6_sources.append(source)
+                                else:
+                                    ipv4_sources.append(source)
+                            
+                            # 确保IPv6源在前面
+                            sorted_sources = ipv6_sources + ipv4_sources
+                            
+                            for source in sorted_sources:
                                 urls.append(source['url'])
                                 if source['quality'] != "未知":
                                     qualities.append(source['quality'])
@@ -680,17 +953,36 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                             if main_logo:
                                 line += f' tvg-logo="{main_logo}"'
                             if qualities:
-                                quality_desc = "/".join(set(qualities))
+                                quality_desc = "/".join(sorted(set(qualities), key=lambda x: ["4K","高清","标清","流畅","未知"].index(x) if x in ["4K","高清","标清","流畅","未知"] else 10))
                                 line += f' tvg-quality="{quality_desc}"'
+                            if ipv6_count > 0:
+                                line += f' tvg-ipv6="true"'
                             line += f',{display_name}\n'
                             line += f"{multi_url}\n"
                             f.write(line)
                             
                         elif mode == "separate":
-                            # TiviMate/Kodi格式：相同名称的多个条目，播放器会自动合并
+                            # TiviMate/Kodi格式：相同名称的多个条目，IPv6源优先
                             display_name = channel['clean_name']
                             
-                            for i, source in enumerate(channel['sources']):
+                            # 分离IPv6和IPv4源
+                            ipv6_sources = []
+                            ipv4_sources = []
+                            for source in channel['sources']:
+                                if source.get('is_ipv6', False):
+                                    ipv6_sources.append(source)
+                                else:
+                                    ipv4_sources.append(source)
+                            
+                            # 确保IPv6源在前面
+                            sorted_sources = ipv6_sources + ipv4_sources
+                            
+                            for i, source in enumerate(sorted_sources, 1):
+                                source_type = "IPv6" if source.get('is_ipv6', False) else "IPv4"
+                                speed_info = ""
+                                if source.get('speed'):
+                                    speed_info = f" ({source['speed']:.1f}s)"
+                                
                                 line = "#EXTINF:-1"
                                 line += f' tvg-name="{channel["clean_name"]}"'
                                 line += f' group-title="{category}"'
@@ -698,26 +990,50 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                                     line += f' tvg-logo="{main_logo}"'
                                 if source['quality'] != "未知":
                                     line += f' tvg-quality="{source["quality"]}"'
+                                if source.get('is_ipv6', False):
+                                    line += f' tvg-ipv6="true"'
                                 if source_count > 1:
-                                    line += f',{display_name} [源{i+1}]\n'
+                                    line += f',{display_name} [{source_type}源{i}{speed_info}]\n'
                                 else:
-                                    line += f',{display_name}\n'
+                                    line += f',{display_name}{speed_info}\n'
                                 line += f"{source['url']}\n"
                                 f.write(line)
                                 
                         else:  # mode == "single"
-                            # 精简版：只保留最佳源
+                            # 精简版：只保留最佳源（IPv6优先）
                             display_name = channel['clean_name']
                             
-                            # 选择最佳源（优先选择高清源）
+                            # 选择最佳源（优先选择IPv6快速源）
                             best_source = None
+                            
+                            # 首先找IPv6快速源
                             for source in channel['sources']:
-                                if source['quality'] == "4K":
+                                if source.get('is_ipv6', False) and source.get('speed') and source['speed'] <= 2.0:
                                     best_source = source
                                     break
-                                elif source['quality'] == "高清":
-                                    best_source = source
                             
+                            # 然后找IPv6高清源
+                            if not best_source:
+                                for source in channel['sources']:
+                                    if source.get('is_ipv6', False) and source['quality'] == "高清":
+                                        best_source = source
+                                        break
+                            
+                            # 然后找IPv4快速源
+                            if not best_source:
+                                for source in channel['sources']:
+                                    if not source.get('is_ipv6', False) and source.get('speed') and source['speed'] <= 2.0:
+                                        best_source = source
+                                        break
+                            
+                            # 然后找IPv4高清源
+                            if not best_source:
+                                for source in channel['sources']:
+                                    if not source.get('is_ipv6', False) and source['quality'] == "高清":
+                                        best_source = source
+                                        break
+                            
+                            # 最后选第一个源
                             if not best_source:
                                 best_source = channel['sources'][0]
                             
@@ -728,6 +1044,12 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                                 line += f' tvg-logo="{main_logo}"'
                             if best_source['quality'] != "未知":
                                 line += f' tvg-quality="{best_source["quality"]}"'
+                            if best_source.get('is_ipv6', False):
+                                line += f' tvg-ipv6="true"'
+                                display_name = f"{display_name} [IPv6]"
+                            if best_source.get('speed'):
+                                line += f' tvg-speed="{best_source["speed"]:.1f}s"'
+                                display_name = f"{display_name} ({best_source['speed']:.1f}s)"
                             line += f',{display_name}\n'
                             line += f"{best_source['url']}\n"
                             f.write(line)
@@ -740,6 +1062,11 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
 
 # 主收集过程
 print("🚀 开始采集电视直播源...")
+
+# 1. 加载黑名单
+print("📋 加载黑名单...")
+blacklist = load_blacklist()
+
 print(f"📋 数据源列表 (从sources.txt加载):")
 for i, source in enumerate(sources, 1):
     print(f"  {i:2d}. {source}")
@@ -748,6 +1075,8 @@ all_channels = []
 success_sources = 0
 failed_sources = []
 
+# 2. 收集所有频道的原始数据
+print("\n📡 开始收集频道数据...")
 for idx, source_url in enumerate(sources, 1):
     print(f"\n[{idx}/{len(sources)}] 处理: {source_url}")
     
@@ -794,27 +1123,73 @@ if len(all_channels) == 0:
     print("\n❌ 没有采集到任何频道，退出")
     sys.exit(1)
 
-# 合并同名电视台
+# 3. 提取所有唯一的URL进行速度测试
+print("\n📊 提取所有唯一URL...")
+all_urls = set()
+for channel in all_channels:
+    all_urls.add(channel['url'])
+
+print(f"   发现 {len(all_urls)} 个唯一URL")
+
+# 4. 进行速度测试
+print("\n⚡ 开始速度测试（过滤黑名单中的URL）...")
+speed_test_results, slow_urls = test_urls_with_progress(all_urls, blacklist)
+
+# 5. 保存新的慢速URL到黑名单
+if slow_urls:
+    print(f"\n📝 发现 {len(slow_urls)} 个慢速源，保存到黑名单...")
+    save_to_blacklist(slow_urls)
+else:
+    print("\n✅ 没有发现新的慢速源")
+
+# 6. 过滤掉黑名单中的频道（包括之前黑名单和本次发现的慢速源）
+print("\n🚫 过滤黑名单中的频道...")
+filtered_channels = []
+blacklisted_count = 0
+
+for channel in all_channels:
+    if channel['url'] in blacklist or channel['url'] in slow_urls:
+        blacklisted_count += 1
+    else:
+        filtered_channels.append(channel)
+
+print(f"   原始频道数: {len(all_channels)}")
+print(f"   过滤后频道数: {len(filtered_channels)}")
+print(f"   黑名单过滤数: {blacklisted_count}")
+
+if len(filtered_channels) == 0:
+    print("\n❌ 所有频道都被黑名单过滤，退出")
+    sys.exit(1)
+
+# 7. 合并同名电视台
 print("\n🔄 正在合并同名电视台...")
-merged_channels = merge_channels(all_channels)
+merged_channels = merge_channels(filtered_channels, speed_test_results)
 print(f"   合并后: {len(merged_channels)} 个唯一电视台")
 
-# 显示多源统计
+# 8. 显示多源统计和IPv6统计
 multi_source_count = sum(1 for c in merged_channels.values() if len(c['sources']) > 1)
 single_source_count = len(merged_channels) - multi_source_count
+ipv6_channel_count = sum(1 for c in merged_channels.values() if any(s.get('is_ipv6', False) for s in c['sources']))
+fast_channel_count = sum(1 for c in merged_channels.values() if any(s.get('speed') and s['speed'] <= 2.0 for s in c['sources']))
+
 print(f"   多源电视台: {multi_source_count} 个")
 print(f"   单源电视台: {single_source_count} 个")
+print(f"   含IPv6源电视台: {ipv6_channel_count} 个")
+print(f"   含快速源电视台: {fast_channel_count} 个")
 
 # 显示一些多源示例
-print("\n📝 多源电视台示例:")
-multi_source_examples = [(k, v) for k, v in merged_channels.items() if len(v['sources']) > 1][:5]
-for clean_name, data in multi_source_examples:
+print("\n📝 IPv6多源电视台示例:")
+ipv6_multi_examples = [(k, v) for k, v in merged_channels.items() 
+                      if any(s.get('is_ipv6', False) for s in v['sources'])][:5]
+for clean_name, data in ipv6_multi_examples:
     source_count = len(data['sources'])
+    ipv6_count = sum(1 for s in data['sources'] if s.get('is_ipv6', False))
+    fast_count = sum(1 for s in data['sources'] if s.get('speed') and s['speed'] <= 2.0)
     qualities = [s['quality'] for s in data['sources']]
     quality_desc = "/".join(set(qualities))
-    print(f"   {clean_name}: {source_count}个源 [{quality_desc}]")
+    print(f"   {clean_name}: {ipv6_count}IPv6+{source_count-ipv6_count}IPv4 [{quality_desc}] 快速源:{fast_count}")
 
-# 统计分类数量
+# 9. 统计分类数量
 category_stats = {}
 for channel in merged_channels.values():
     category = channel['category']
@@ -827,11 +1202,11 @@ print("\n📊 分类统计:")
 for category, count in sorted(category_stats.items()):
     print(f"   {category}: {count} 个电视台")
 
-# 生成文件 - 使用北京时间
+# 10. 生成文件 - 使用北京时间
 timestamp = get_beijing_time()
 print(f"\n📅 当前北京时间: {timestamp}")
 
-# 按分类组织频道
+# 11. 按分类组织频道
 categories = {}
 for channel in merged_channels.values():
     category = channel['category']
@@ -874,29 +1249,29 @@ for player, info in PLAYER_SUPPORT.items():
     if info['multi_source']:
         print(f"   ✅ {player}: {info['note']}")
 
-# 1. 生成多源合并版M3U（PotPlayer/VLC格式）
-print("\n📄 生成 live_sources.m3u（多源合并版 - PotPlayer/VLC格式）...")
+# 12. 生成多源合并版M3U（PotPlayer/VLC格式）
+print("\n📄 生成 live_sources.m3u（IPv6优先多源合并版 - PotPlayer/VLC格式）...")
 generate_multi_source_m3u(
     merged_channels, categories, final_category_order, 
     timestamp, "live_sources.m3u", mode="multi"
 )
 
-# 2. 生成多源分离版M3U（TiviMate/Kodi格式）
-print("\n📄 生成 merged/多源分离版.m3u（TiviMate/Kodi格式）...")
+# 13. 生成多源分离版M3U（TiviMate/Kodi格式）
+print("\n📄 生成 merged/多源分离版.m3u（IPv6优先多源分离版 - TiviMate/Kodi格式）...")
 generate_multi_source_m3u(
     merged_channels, categories, final_category_order,
     timestamp, "merged/多源分离版.m3u", mode="separate"
 )
 
-# 3. 生成精简版M3U（每个电视台只保留最佳源）
-print("\n📄 生成 merged/精简版.m3u（单源精简版）...")
+# 14. 生成精简版M3U（每个电视台只保留最佳源）
+print("\n📄 生成 merged/精简版.m3u（IPv6优先单源精简版）...")
 generate_multi_source_m3u(
     merged_channels, categories, final_category_order,
     timestamp, "merged/精简版.m3u", mode="single"
 )
 
-# 4. 生成分类M3U文件（多源合并格式）
-print("\n📄 生成分类文件（多源合并格式）...")
+# 15. 生成分类M3U文件（IPv6优先多源合并格式）
+print("\n📄 生成分类文件（IPv6优先多源合并格式）...")
 for category in final_category_order:
     cat_channels = categories[category]
     if cat_channels:
@@ -913,23 +1288,48 @@ for category in final_category_order:
             
             with open(filename, "w", encoding="utf-8") as f:
                 f.write("#EXTM3U\n")
-                f.write(f"# {category}频道列表（多源合并版）\n")
+                f.write(f"# {category}频道列表（IPv6优先多源合并版，带黑名单过滤）\n")
                 f.write(f"# 更新时间(北京时间): {timestamp}\n")
                 f.write(f"# 电视台数量: {len(cat_channels)}\n")
-                f.write(f"# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换\n\n")
+                f.write(f"# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换\n")
+                f.write(f"# 已过滤黑名单慢速源（响应时间 > {SPEED_TEST_TIMEOUT}秒）\n\n")
                 
                 for channel in sorted_channels:
                     # 选择主logo（第一个非空的logo）
                     main_logo = channel['logos'][0] if channel['logos'] else ""
                     source_count = len(channel['sources'])
                     
-                    # PotPlayer/VLC多源格式
-                    display_name = f"{channel['clean_name']} [{source_count}源]"
+                    # 统计IPv6源数量
+                    ipv6_count = sum(1 for s in channel['sources'] if s.get('is_ipv6', False))
                     
-                    # 收集所有URL
+                    # PotPlayer/VLC多源格式
+                    source_desc = []
+                    if ipv6_count > 0:
+                        source_desc.append(f"{ipv6_count}IPv6")
+                    if source_count > ipv6_count:
+                        source_desc.append(f"{source_count-ipv6_count}IPv4")
+                    
+                    if source_desc:
+                        display_name = f"{channel['clean_name']} [{'+'.join(source_desc)}]"
+                    else:
+                        display_name = f"{channel['clean_name']} [{source_count}源]"
+                    
+                    # 收集所有URL（IPv6优先）
                     urls = []
                     qualities = []
+                    ipv6_sources = []
+                    ipv4_sources = []
+                    
                     for source in channel['sources']:
+                        if source.get('is_ipv6', False):
+                            ipv6_sources.append(source)
+                        else:
+                            ipv4_sources.append(source)
+                    
+                    # 确保IPv6源在前面
+                    sorted_sources = ipv6_sources + ipv4_sources
+                    
+                    for source in sorted_sources:
                         urls.append(source['url'])
                         if source['quality'] != "未知":
                             qualities.append(source['quality'])
@@ -944,8 +1344,10 @@ for category in final_category_order:
                     if main_logo:
                         line += f' tvg-logo="{main_logo}"'
                     if qualities:
-                        quality_desc = "/".join(set(qualities))
+                        quality_desc = "/".join(sorted(set(qualities), key=lambda x: ["4K","高清","标清","流畅","未知"].index(x) if x in ["4K","高清","标清","流畅","未知"] else 10))
                         line += f' tvg-quality="{quality_desc}"'
+                    if ipv6_count > 0:
+                        line += f' tvg-ipv6="true"'
                     line += f',{display_name}\n'
                     line += f"{multi_url}\n"
                     f.write(line)
@@ -954,7 +1356,7 @@ for category in final_category_order:
         except Exception as e:
             print(f"  ❌ 生成 {filename} 失败: {e}")
 
-# 5. 生成合并的JSON文件（包含所有源信息）
+# 16. 生成合并的JSON文件（包含所有源信息）
 print("\n📄 生成 channels.json...")
 try:
     # 创建频道列表
@@ -968,8 +1370,17 @@ try:
                 'url': source['url'],
                 'quality': source['quality'],
                 'source': source['source'],
-                'logo': source['logo'] if source['logo'] else ""
+                'logo': source['logo'] if source['logo'] else "",
+                'is_ipv6': source.get('is_ipv6', False),
+                'priority': source.get('priority', 0),
+                'speed': source.get('speed')
             })
+        
+        # 统计IPv6源数量
+        ipv6_count = sum(1 for s in sources_info if s.get('is_ipv6', False))
+        
+        # 统计快速源数量
+        fast_count = sum(1 for s in sources_info if s.get('speed') and s['speed'] <= 2.0)
         
         # 频道信息
         channel_info = {
@@ -977,25 +1388,48 @@ try:
             'original_names': list(set(channel_data['original_names'])),  # 去重
             'category': channel_data['category'],
             'source_count': len(channel_data['sources']),
+            'ipv6_source_count': ipv6_count,
+            'fast_source_count': fast_count,
             'logos': channel_data['logos'],
             'sources': sources_info
         }
         channel_list.append(channel_info)
+    
+    # 黑名单统计
+    blacklist_stats = {
+        'total_blacklisted': len(blacklist) + len(slow_urls),
+        'previously_blacklisted': len(blacklist),
+        'newly_blacklisted': len(slow_urls)
+    }
     
     # 创建JSON数据
     json_data = {
         'last_updated': timestamp,
         'total_channels': len(merged_channels),
         'original_channel_count': len(all_channels),
+        'filtered_channel_count': len(filtered_channels),
+        'blacklisted_channel_count': blacklisted_count,
         'sources_count': len(sources),
         'success_sources': success_sources,
         'failed_sources': failed_sources,
         'multi_source_channels': multi_source_count,
         'single_source_channels': single_source_count,
+        'ipv6_channels': ipv6_channel_count,
+        'fast_channels': fast_channel_count,
+        'blacklist_stats': blacklist_stats,
+        'speed_test_timeout': SPEED_TEST_TIMEOUT,
         'category_stats': category_stats,
+        'sorting_rules': {
+            'ipv6_priority': 100,
+            '4k_priority': 40,
+            'hd_priority': 30,
+            'sd_priority': 20,
+            'fluent_priority': 10
+        },
         'channels': channel_list,
         'player_support': PLAYER_SUPPORT,
-        'source_file': 'sources.txt'
+        'source_file': 'sources.txt',
+        'blacklist_file': BLACKLIST_FILE
     }
     
     # 写入文件
@@ -1011,15 +1445,23 @@ print(f"📊 统计:")
 print(f"  - 电视台总数: {len(merged_channels)}")
 print(f"  - 多源电视台: {multi_source_count}")
 print(f"  - 单源电视台: {single_source_count}")
+print(f"  - 含IPv6源电视台: {ipv6_channel_count}")
+print(f"  - 含快速源电视台: {fast_channel_count}")
 print(f"  - 原始频道数: {len(all_channels)}")
+print(f"  - 过滤后频道数: {len(filtered_channels)}")
+print(f"  - 黑名单过滤数: {blacklisted_count}")
 print(f"  - 数据源: {len(sources)}")
+print(f"  - 黑名单条目: {len(blacklist) + len(slow_urls)}")
 print(f"📁 生成的文件:")
-print(f"  - live_sources.m3u (多源合并版 - PotPlayer/VLC格式)")
-print(f"  - merged/多源分离版.m3u (TiviMate/Kodi格式)")
-print(f"  - merged/精简版.m3u (单源精简版)")
+print(f"  - live_sources.m3u (IPv6优先多源合并版 - PotPlayer/VLC格式)")
+print(f"  - merged/多源分离版.m3u (IPv6优先多源分离版 - TiviMate/Kodi格式)")
+print(f"  - merged/精简版.m3u (IPv6优先单源精简版)")
 print(f"  - channels.json (详细数据)")
 print(f"  - categories/*.m3u (分类列表)")
+print(f"  - {BLACKLIST_FILE} (慢速源黑名单)")
 print(f"\n🎮 播放器使用说明:")
 print(f"  1. PotPlayer/VLC: 使用 live_sources.m3u，播放时按Alt+W切换源")
 print(f"  2. TiviMate/Kodi: 使用 merged/多源分离版.m3u，自动合并相同名称频道")
-print(f"  3. 其他播放器: 使用 merged/精简版.m3u，每个电视台只有一个源")
+print(f"  3. 其他播放器: 使用 merged/精简版.m3u，每个电视台IPv6源优先")
+print(f"\n🔢 排序优先级: IPv6源 > 4K源 > 高清源 > 标清源 > 流畅源")
+print(f"⚡ 速度要求: 响应时间 ≤ {SPEED_TEST_TIMEOUT}秒，慢速源已加入黑名单")
