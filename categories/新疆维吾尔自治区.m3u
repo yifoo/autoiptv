@@ -1,7 +1,8 @@
 #EXTM3U
-# 新疆维吾尔自治区频道列表
-# 更新时间(北京时间): 2026-01-31 13:04:56
+# 新疆维吾尔自治区频道列表（多源合并版）
+# 更新时间(北京时间): 2026-01-31 13:21:39
 # 电视台数量: 1
+# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换
 
-#EXTINF:-1 tvg-name="新疆天山" group-title="新疆维吾尔自治区" tvg-logo="https://tb.zbds.top/logo/新疆天山.png",新疆天山
+#EXTINF:-1 tvg-name="新疆天山" group-title="新疆维吾尔自治区" tvg-logo="https://tb.zbds.top/logo/新疆天山.png",新疆天山 [1源]
 http://gctxyc.liveplay.myqcloud.com/gc/xjtcdhsz_1/index.m3u8

@@ -1,11 +1,12 @@
 #EXTM3U
-# 港澳台频道列表
-# 更新时间(北京时间): 2026-01-31 13:04:56
+# 港澳台频道列表（多源合并版）
+# 更新时间(北京时间): 2026-01-31 13:21:39
 # 电视台数量: 3
+# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换
 
-#EXTINF:-1 tvg-name="凤凰卫视电影台" group-title="港澳台" tvg-logo="https://epg.pw/media/images/channel/2024/06/10/large/20240610235948618467_91.png" tvg-quality="高清",凤凰卫视电影台
+#EXTINF:-1 tvg-name="凤凰卫视电影台" group-title="港澳台" tvg-logo="https://epg.pw/media/images/channel/2024/06/10/large/20240610235948618467_91.png" tvg-quality="高清",凤凰卫视电影台 [1源]
 https://stream1.freetv.fun/53d70b135b64e3fd71a90fae76b08e41385683291f0c17f9826fe46c08d10f2c.ctv
-#EXTINF:-1 tvg-name="凤凰卫视美洲" group-title="港澳台" tvg-logo="https://epg.pw/media/img/logo/3_350.jpg",凤凰卫视美洲
+#EXTINF:-1 tvg-name="凤凰卫视美洲" group-title="港澳台" tvg-logo="https://epg.pw/media/img/logo/3_350.jpg",凤凰卫视美洲 [1源]
 https://stream1.freetv.fun/dd34e07aa60e1d62dbad13c96f5db340a61556c6de9dbad87ddb213498ca36a2.ctv
-#EXTINF:-1 tvg-name="福建漳州醉美沙滩翡翠湾" group-title="港澳台" tvg-logo="https://tb.zbds.top/logo/福建漳州醉美沙滩翡翠湾.png",福建漳州醉美沙滩翡翠湾
+#EXTINF:-1 tvg-name="福建漳州醉美沙滩翡翠湾" group-title="港澳台" tvg-logo="https://tb.zbds.top/logo/福建漳州醉美沙滩翡翠湾.png",福建漳州醉美沙滩翡翠湾 [1源]
 https://gcalic.v.myalicdn.com/gc/fcw03_1/index.m3u8

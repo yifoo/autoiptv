@@ -1,15 +1,16 @@
 #EXTM3U
-# 甘肃省频道列表
-# 更新时间(北京时间): 2026-01-31 13:04:56
+# 甘肃省频道列表（多源合并版）
+# 更新时间(北京时间): 2026-01-31 13:21:39
 # 电视台数量: 5
+# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换
 
 #EXTINF:-1 tvg-name="甘肃公共" group-title="甘肃省" tvg-logo="https://epg.pw/media/img/logo/3_399.jpg" tvg-quality="标清",甘肃公共 [2源]
-https://epg.pw/stream/8dc185b262a055ffd5eca3ab59977debe7b5dbeb96c0988a0dc1632b9fabf520.m3u8
-#EXTINF:-1 tvg-name="甘肃文化影视" group-title="甘肃省" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/gansu/Gansu3.png",甘肃文化影视
+https://epg.pw/stream/8dc185b262a055ffd5eca3ab59977debe7b5dbeb96c0988a0dc1632b9fabf520.m3u8|https://hls.gstv.com.cn/49048r/3t5xyc.m3u8
+#EXTINF:-1 tvg-name="甘肃文化影视" group-title="甘肃省" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/gansu/Gansu3.png",甘肃文化影视 [1源]
 https://hls.gstv.com.cn/49048r/w1l6d5.m3u8
-#EXTINF:-1 tvg-name="甘肃移动" group-title="甘肃省",甘肃移动
+#EXTINF:-1 tvg-name="甘肃移动" group-title="甘肃省",甘肃移动 [1源]
 https://hls.gstv.com.cn/49048r/y72q36.m3u8
 #EXTINF:-1 tvg-name="甘肃经济" group-title="甘肃省" tvg-logo="甘肃经济.png",甘肃经济 [2源]
-https://hls.gstv.com.cn/49048r/10iv1j.m3u8
+https://hls.gstv.com.cn/49048r/10iv1j.m3u8|https://satellitepull.cnr.cn/live/wxgshhzs/playlist.m3u8
 #EXTINF:-1 tvg-name="甘肃都市" group-title="甘肃省" tvg-logo="甘肃都市.png",甘肃都市 [2源]
-https://hls.gstv.com.cn/49048r/l54391.m3u8
+https://hls.gstv.com.cn/49048r/l54391.m3u8|https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8

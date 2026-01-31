@@ -1,17 +1,18 @@
 #EXTM3U
-# 吉林省频道列表
-# 更新时间(北京时间): 2026-01-31 13:04:56
+# 吉林省频道列表（多源合并版）
+# 更新时间(北京时间): 2026-01-31 13:21:39
 # 电视台数量: 6
+# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换
 
 #EXTINF:-1 tvg-name="吉林乡村" group-title="吉林省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530224659377626_27.jpg",吉林乡村 [3源]
-https://epg.pw/stream/69c843e9479e054c8323b5a23b74f4f70e8fd3d87354bcbef12195bed8043aeb.m3u8
-#EXTINF:-1 tvg-name="吉林市新闻综合" group-title="吉林省",吉林市新闻综合
+https://epg.pw/stream/69c843e9479e054c8323b5a23b74f4f70e8fd3d87354bcbef12195bed8043aeb.m3u8|https://live.lalifeier.eu.org/jlntv/jlxc.m3u8?t=1745796321&key=b26baf2d67026a93e41fcbbd3f132bc3|https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8
+#EXTINF:-1 tvg-name="吉林市新闻综合" group-title="吉林省",吉林市新闻综合 [1源]
 https://stream2.jlntv.cn/jilin1/sd/live.m3u8
-#EXTINF:-1 tvg-name="吉林影视" group-title="吉林省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530224557427041_25.jpg",吉林影视
+#EXTINF:-1 tvg-name="吉林影视" group-title="吉林省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530224557427041_25.jpg",吉林影视 [1源]
 https://epg.pw/stream/64c6da042a172abe0b223936e2b7d91d4109fa5c8e416b5bb7a265e36e0f43d7.m3u8
 #EXTINF:-1 tvg-name="吉林新闻综合" group-title="吉林省" tvg-logo="https://epg.pw/media/images/channel/2022/05/27/large/20220527162205528949_87.jpg" tvg-quality="标清",吉林新闻综合 [2源]
-https://stream1.freetv.fun/f229007f325ee603d39a4a6ef3046dd9140433eebfb43d2dfdbc410f22e6ad0a.m3u8
-#EXTINF:-1 tvg-name="吉林生活" group-title="吉林省" tvg-logo="吉林生活.png",吉林生活
+https://stream1.freetv.fun/f229007f325ee603d39a4a6ef3046dd9140433eebfb43d2dfdbc410f22e6ad0a.m3u8|https://epg.pw/stream/04ac8c4edbe52123a87086c280432bedc30a94e45ba312eca7fc80f16bfee3c7.m3u8
+#EXTINF:-1 tvg-name="吉林生活" group-title="吉林省" tvg-logo="吉林生活.png",吉林生活 [1源]
 https://live.lalifeier.eu.org/jlntv/jlsh.m3u8?t=1745796321&key=8386cb03e732cd707a483bb89f1216af
-#EXTINF:-1 tvg-name="吉林都市" group-title="吉林省" tvg-logo="吉林都市.png",吉林都市
+#EXTINF:-1 tvg-name="吉林都市" group-title="吉林省" tvg-logo="吉林都市.png",吉林都市 [1源]
 https://live.lalifeier.eu.org/jlntv/jlds.m3u8?t=1745796321&key=ba85da6410cdc8b830d46c3182ad7775

@@ -1,25 +1,26 @@
 #EXTM3U
-# 黑龙江省频道列表
-# 更新时间(北京时间): 2026-01-31 13:04:56
+# 黑龙江省频道列表（多源合并版）
+# 更新时间(北京时间): 2026-01-31 13:21:39
 # 电视台数量: 10
+# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换
 
-#EXTINF:-1 tvg-name="黑龙江" group-title="黑龙江省" tvg-logo="https://i.imgur.com/9fj1uba.png" tvg-quality="高清",黑龙江
+#EXTINF:-1 tvg-name="黑龙江" group-title="黑龙江省" tvg-logo="https://i.imgur.com/9fj1uba.png" tvg-quality="高清",黑龙江 [1源]
 http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221227492/index.m3u8
-#EXTINF:-1 tvg-name="黑龙江公共农村" group-title="黑龙江省" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Heilongjiang5.png",黑龙江公共农村
+#EXTINF:-1 tvg-name="黑龙江公共农村" group-title="黑龙江省" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Heilongjiang5.png",黑龙江公共农村 [1源]
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225994/index.m3u8
-#EXTINF:-1 tvg-name="黑龙江卫" group-title="黑龙江省" tvg-quality="高清",黑龙江卫
+#EXTINF:-1 tvg-name="黑龙江卫" group-title="黑龙江省" tvg-quality="高清",黑龙江卫 [1源]
 http://183.207.248.71/cntv/live1/HD-2500k-1080P-heilongjiangstv/HD-2500k-1080P-heilongjiangstv
-#EXTINF:-1 tvg-name="黑龙江哈尔滨都市资讯" group-title="黑龙江省" tvg-logo="https://epg.pw/media/images/channel/2022/10/24/large/20221024220307974062_61.jpg",黑龙江哈尔滨都市资讯
+#EXTINF:-1 tvg-name="黑龙江哈尔滨都市资讯" group-title="黑龙江省" tvg-logo="https://epg.pw/media/images/channel/2022/10/24/large/20221024220307974062_61.jpg",黑龙江哈尔滨都市资讯 [1源]
 https://stream1.freetv.fun/f552af1768510876ed519bfaecda59ca87940e5c9c4a4cfb6592f261faeb703d.m3u8
 #EXTINF:-1 tvg-name="黑龙江影视" group-title="黑龙江省" tvg-logo="黑龙江影视.png",黑龙江影视 [9源]
-http://php.jdshipin.com/TVOD/hljyd.php?id=3221226298
+http://php.jdshipin.com/TVOD/hljyd.php?id=3221226298|http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226298/index.m3u8|http://[2409:8087:1a01:df::4035]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226298/1.m3u8|http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/8/3221226298/index.m3u8|http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226298/index.m3u8|https://stream1.freetv.fun/hei-long-jiang-ying-shi-1.m3u8|https://stream1.freetv.fun/hei-long-jiang-ying-shi-7.m3u8|https://stream1.freetv.fun/hei-long-jiang-ying-shi-8.m3u8|http://[2409:8087:1a15:10d1::34]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226298/index.m3u8
 #EXTINF:-1 tvg-name="黑龙江文体" group-title="黑龙江省" tvg-logo="黑龙江文体.png",黑龙江文体 [10源]
-http://php.jdshipin.com/TVOD/hljyd.php?id=3221226239
+http://php.jdshipin.com/TVOD/hljyd.php?id=3221226239|http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226239/index.m3u8|http://[2409:8087:1a01:df::4025]:80/TVOD/88888888/224/3221225965/main.m3u8|http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/8/3221226239/index.m3u8|http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226239/index.m3u8|https://stream1.freetv.fun/hei-long-jiang-wen-ti-1.m3u8|https://stream1.freetv.fun/hei-long-jiang-wen-ti-7.m3u8|https://stream1.freetv.fun/hei-long-jiang-wen-ti-9.m3u8|https://idclive.hljtv.com:4430/live/hljwy_hd.m3u8|http://[2409:8087:1a15:10d1::38]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226239/index.m3u8
 #EXTINF:-1 tvg-name="黑龙江新闻" group-title="黑龙江省" tvg-logo="黑龙江新闻.png",黑龙江新闻 [2源]
-https://fenghuang.tv12.xyz/66.m3u8
+https://fenghuang.tv12.xyz/66.m3u8|https://stream1.freetv.fun/hei-long-jiang-xin-wen-9.m3u8
 #EXTINF:-1 tvg-name="黑龙江新闻法治" group-title="黑龙江省" tvg-logo="黑龙江新闻法治.png",黑龙江新闻法治 [9源]
-http://php.jdshipin.com/TVOD/hljyd.php?id=3221226330
-#EXTINF:-1 tvg-name="黑龙江视" group-title="黑龙江省" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/黑龙江视.png",黑龙江视
+http://php.jdshipin.com/TVOD/hljyd.php?id=3221226330|http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226330/index.m3u8|http://[2409:8087:1a01:df::4077]/PLTV/88888888/224/3221225967/index.m3u8|https://ls.qingting.fm/live/4974/64k.m3u8|https://stream1.freetv.fun/hei-long-jiang-xin-wen-fa-zhi-4.m3u8|https://stream1.freetv.fun/hei-long-jiang-xin-wen-fa-zhi-5.m3u8|https://stream1.freetv.fun/hei-long-jiang-xin-wen-fa-zhi-6.m3u8|https://stream1.freetv.fun/hei-long-jiang-xin-wen-fa-zhi-7.m3u8|http://[2409:8087:1a15:10d1::35]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226330/index.m3u8
+#EXTINF:-1 tvg-name="黑龙江视" group-title="黑龙江省" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/黑龙江视.png",黑龙江视 [1源]
 https://zby.130519.xyz/PLTV/11/224/3221225722/index.m3u8
 #EXTINF:-1 tvg-name="黑龙江都市" group-title="黑龙江省" tvg-logo="黑龙江都市.png",黑龙江都市 [10源]
-http://php.jdshipin.com/TVOD/hljyd.php?id=3221226301
+http://php.jdshipin.com/TVOD/hljyd.php?id=3221226301|http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226301/index.m3u8|http://[2409:8087:1a01:df::4025]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226301/1.m3u8|http://[2409:8087:1a01:df::4055]:80/TVOD/88888888/224/3221225969/main.m3u8|http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/8/3221226301/index.m3u8|http://[2409:8087:1a01:df::4077]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226301/1.m3u8|https://stream1.freetv.fun/hei-long-jiang-du-shi-1.m3u8|https://stream1.freetv.fun/hei-long-jiang-du-shi-7.m3u8|https://stream1.freetv.fun/hei-long-jiang-du-shi-8.m3u8|https://idclive.hljtv.com:4430/live/dushi_hd.m3u8

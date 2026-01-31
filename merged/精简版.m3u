@@ -1,13 +1,15 @@
 #EXTM3U
 # 电视直播源 - 精简版
-# 更新时间(北京时间): 2026-01-31 13:04:56
+# 每个电视台只保留最佳源
+# 更新时间(北京时间): 2026-01-31 13:21:39
 # 电视台总数: 543
-# 说明: 每个电视台只保留最佳源
+# 原始频道数: 2765
+# 数据源: 5 个 (成功: 3, 失败: 2)
 # 特点: 移除技术参数，统一央视频道命名，按省份分类地方台
 # 源文件: sources.txt
 
 
-# 央视 (43个电视台)
+# 分类: 央视 (43个电视台)
 #EXTINF:-1 tvg-name="CCTV-1 综合" group-title="央视" tvg-logo="https://live.fanmingming.com/tv/CCTV1.png" tvg-quality="4K",CCTV-1 综合
 http://123.175.209.52:9003/hls/1/index.m3u8
 #EXTINF:-1 tvg-name="CCTV-2 财经" group-title="央视" tvg-logo="https://live.fanmingming.com/tv/CCTV2.png" tvg-quality="4K",CCTV-2 财经
@@ -95,7 +97,7 @@ https://www.wmviv.com/iptv/bc2t.php?id=cctv4m
 #EXTINF:-1 tvg-name="CCTV8k超" group-title="央视" tvg-logo="https://epg.pw/media/images/channel/2021/06/24/large/20210624004559407468_16.png" tvg-quality="高清",CCTV8k超
 https://epg.pw/stream/12c4722b400606e9f17e446f03738627390aa03e60b7cea9a4fe15016cc6e079.m3u8
 
-# 卫视 (61个电视台)
+# 分类: 卫视 (61个电视台)
 #EXTINF:-1 tvg-name="北京卫视" group-title="卫视" tvg-logo="https://live.fanmingming.cn/tv/北京卫视.png" tvg-quality="4K",北京卫视
 http://139.ye23.vip/dl/btv2502.php?id=bjws4
 #EXTINF:-1 tvg-name="天津卫视" group-title="卫视" tvg-logo="https://live.fanmingming.cn/tv/天津卫视.png" tvg-quality="高清",天津卫视
@@ -219,7 +221,7 @@ http://cctvtxyh5c.liveplay.myqcloud.com/cstv/xianggangweishi_2/index.m3u8
 #EXTINF:-1 tvg-name="黑龙卫视" group-title="卫视" tvg-quality="高清",黑龙卫视
 http://223.110.243.169/PLTV/3/224/3221227252/index.m3u8
 
-# 景区频道 (3个电视台)
+# 分类: 景区频道 (3个电视台)
 #EXTINF:-1 tvg-name="四川文化旅游" group-title="景区频道" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan2.png",四川文化旅游
 http://wouu.net:9977/udp/239.93.1.102:5140
 #EXTINF:-1 tvg-name="广西桂林漓江景区" group-title="景区频道" tvg-logo="https://tb.zbds.top/logo/广西桂林漓江景区.png",广西桂林漓江景区
@@ -227,7 +229,7 @@ https://gcalic.v.myalicdn.com/gc/gllj01_1/index.m3u8
 #EXTINF:-1 tvg-name="福建旅游" group-title="景区频道" tvg-logo="福建旅游.png",福建旅游
 https://stream1.freetv.fun/fu-jian-lu-you-6.m3u8
 
-# 少儿台 (12个电视台)
+# 分类: 少儿台 (12个电视台)
 #EXTINF:-1 tvg-name="内蒙古少儿" group-title="少儿台" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Neimeng5.png",内蒙古少儿
 https://livestream-bt.nmtv.cn/nmtv/2318general.m3u8?txSecret=ff5a1fd70ea228ee35b0d29895f37c56&txTime=771E8800
 #EXTINF:-1 tvg-name="内蒙少儿" group-title="少儿台" tvg-logo="https://live.fanmingming.cn/tv/内蒙古少儿.png",内蒙少儿
@@ -253,7 +255,7 @@ https://stream1.freetv.fun/fu-jian-shao-er-1.m3u8
 #EXTINF:-1 tvg-name="黑龙江少儿" group-title="少儿台" tvg-logo="黑龙江少儿.png",黑龙江少儿
 http://php.jdshipin.com/TVOD/hljyd.php?id=3221226304
 
-# 综艺台 (14个电视台)
+# 分类: 综艺台 (14个电视台)
 #EXTINF:-1 tvg-name="CCTV 风云音乐" group-title="综艺台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/风云音乐.png",CCTV 风云音乐
 http://www.lizhinas.top:1009/rtp/239.252.219.87:5140
 #EXTINF:-1 tvg-name="CCTV风云音乐" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/12/large/20220512145757792204_59.jpg",CCTV风云音乐
@@ -283,7 +285,7 @@ https://livestream-bt.nmtv.cn/nmtv/2321general.m3u8?txSecret=d9d0fd7a252ef56b515
 #EXTINF:-1 tvg-name="西藏影视文化" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530222246719342_54.jpg",西藏影视文化
 https://stream1.freetv.fun/c81a555962f383888669f729afa0303c466520db6b41f649f3d7036a0a5a6065.ctv
 
-# 港澳台 (3个电视台)
+# 分类: 港澳台 (3个电视台)
 #EXTINF:-1 tvg-name="凤凰卫视电影台" group-title="港澳台" tvg-logo="https://epg.pw/media/images/channel/2024/06/10/large/20240610235948618467_91.png" tvg-quality="高清",凤凰卫视电影台
 https://stream1.freetv.fun/53d70b135b64e3fd71a90fae76b08e41385683291f0c17f9826fe46c08d10f2c.ctv
 #EXTINF:-1 tvg-name="凤凰卫视美洲" group-title="港澳台" tvg-logo="https://epg.pw/media/img/logo/3_350.jpg",凤凰卫视美洲
@@ -291,7 +293,7 @@ https://stream1.freetv.fun/dd34e07aa60e1d62dbad13c96f5db340a61556c6de9dbad87ddb2
 #EXTINF:-1 tvg-name="福建漳州醉美沙滩翡翠湾" group-title="港澳台" tvg-logo="https://tb.zbds.top/logo/福建漳州醉美沙滩翡翠湾.png",福建漳州醉美沙滩翡翠湾
 https://gcalic.v.myalicdn.com/gc/fcw03_1/index.m3u8
 
-# 体育台 (8个电视台)
+# 分类: 体育台 (8个电视台)
 #EXTINF:-1 tvg-name="CCTV 风云足球" group-title="体育台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/风云足球.png",CCTV 风云足球
 http://www.lizhinas.top:1009/rtp/239.252.219.96:5140
 #EXTINF:-1 tvg-name="CCTV风云足球" group-title="体育台" tvg-logo="https://tb.zbds.top/logo/CCTV风云足球.png",CCTV风云足球
@@ -309,13 +311,13 @@ https://stream1.freetv.fun/e9b0607a6ad54ba676d9bb046555ef959e983d1f66e584dd05e2c
 #EXTINF:-1 tvg-name="辽宁体育" group-title="体育台" tvg-logo="辽宁体育.png",辽宁体育
 https://stream1.freetv.fun/liao-zhu-ti-yu-5.m3u8
 
-# 影视台 (2个电视台)
+# 分类: 影视台 (2个电视台)
 #EXTINF:-1 tvg-name="湖南电影" group-title="影视台" tvg-logo="湖南电影.png",湖南电影
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=hndy
 #EXTINF:-1 tvg-name="陕西西部电影" group-title="影视台" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151605390141_16.jpg" tvg-quality="高清",陕西西部电影
 https://epg.pw/stream/318a64a14fc9f1b992a21c72c71cfd4a89394cc5c5223234aa15277077764e2b.m3u8
 
-# 其他台 (179个电视台)
+# 分类: 其他台 (179个电视台)
 #EXTINF:-1 tvg-name="CCTV" group-title="其他台" tvg-logo="https://live.zbds.top/logo/CCTV4K.png" tvg-quality="4K",CCTV
 http://3501776.xyz:35455/gaoma/cctv4k.m3u8
 #EXTINF:-1 tvg-name="CCTV 世界地理" group-title="其他台" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/世界地理.png",CCTV 世界地理
@@ -675,7 +677,7 @@ https://live.iill.top/huya/17091681
 #EXTINF:-1 tvg-name="音乐速递「音乐」" group-title="其他台" tvg-logo="https://epg-1.iill.top/logo/虎牙.png",音乐速递「音乐」
 https://live.iill.top/huya/19439762
 
-# 上海市 (9个电视台)
+# 分类: 上海市 (9个电视台)
 #EXTINF:-1 tvg-name="上海ICS外语" group-title="上海市" tvg-logo="https://live.fanmingming.com/tv/上海外语.png",上海ICS外语
 http://gslbserv.itv.cmvideo.cn/5000000010000030951/1.m3u8?channel-id=bestzb&Contentid=5000000010000030951&livemode=1&stbId=3
 #EXTINF:-1 tvg-name="上海外语" group-title="上海市" tvg-logo="上海外语.png",上海外语
@@ -695,7 +697,7 @@ http://php.jdshipin.com/TVOD/hnyd.php?id=200000001898/460000089800010067
 #EXTINF:-1 tvg-name="上海都市" group-title="上海市" tvg-logo="https://epg.pw/media/images/channel/2024/07/28/large/20240728225114975519_45.png",上海都市
 https://stream1.freetv.fun/739243957c92ecc3c5cc8e2d33bbc6ef1fd8529992bbf7ab1a9dcef5e17429d4.ctv
 
-# 云南省 (12个电视台)
+# 分类: 云南省 (12个电视台)
 #EXTINF:-1 tvg-name="云南 Ⅰ 文山公共台" group-title="云南省" tvg-quality="高清",云南 Ⅰ 文山公共台
 http://tvdrs.wsrtv.com.cn:8100/channellive/ch2.flv
 #EXTINF:-1 tvg-name="云南 Ⅰ 文山综合台" group-title="云南省" tvg-quality="高清",云南 Ⅰ 文山综合台
@@ -721,7 +723,7 @@ http://39.130.202.81:6610/gitv_live/G_YNTV-2-HD/G_YNTV-2-HD.m3u8
 #EXTINF:-1 tvg-name="鬼吹灯之云南虫谷" group-title="云南省" tvg-logo="https://ghproxy.net/raw.githubusercontent.com/suxuang/myIPTV/main/img/云南虫谷.png",鬼吹灯之云南虫谷
 http://www.douzhicloud.site:35455/huya/11352898
 
-# 内蒙古自治区 (3个电视台)
+# 分类: 内蒙古自治区 (3个电视台)
 #EXTINF:-1 tvg-name="内蒙古" group-title="内蒙古自治区",内蒙古
 http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221225836/index.m3u8
 #EXTINF:-1 tvg-name="内蒙古农牧" group-title="内蒙古自治区" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531161624183518_95.jpg",内蒙古农牧
@@ -729,7 +731,7 @@ https://stream1.freetv.fun/9de3712db8adc1163caba9b15f0ba365f944fcb44bcf406d2a69f
 #EXTINF:-1 tvg-name="内蒙古经济生活" group-title="内蒙古自治区" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531224556038609_37.jpg",内蒙古经济生活
 https://stream1.freetv.fun/812990976297843210fc44be0e0edee64a02f134c8f755a070807e6665a03e04.m3u8
 
-# 北京市 (14个电视台)
+# 分类: 北京市 (14个电视台)
 #EXTINF:-1 tvg-name="北京" group-title="北京市" tvg-logo="https://live.fanmingming.cn/tv/北京超清.png" tvg-quality="4K",北京
 http://[2409:8087:1:20:20::26]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226550/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~e2qS8h6u-xp3gd50vNr1sw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPPFD3HVWEytEVyliOxehfe%2CEND
 #EXTINF:-1 tvg-name="北京体育休闲" group-title="北京市" tvg-logo="https://live.fanmingming.cn/tv/北京体育休闲.png",北京体育休闲
@@ -759,7 +761,7 @@ rtp://239.3.1.116:8000
 #EXTINF:-1 tvg-name="北京青年" group-title="北京市" tvg-logo="北京青年.png",北京青年
 http://player.cntv.cn/standard/live_HLSDRM20180919.swf?v=180.171.5.8.9.6.3.9&ChannelID=btv8&videoTVChannel=btv8&P2PChannelID=pd://cctv_p2p_hdbtv8&tai=btv8&VideoName=btv8&channelID=btv8
 
-# 吉林省 (6个电视台)
+# 分类: 吉林省 (6个电视台)
 #EXTINF:-1 tvg-name="吉林乡村" group-title="吉林省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530224659377626_27.jpg",吉林乡村
 https://epg.pw/stream/69c843e9479e054c8323b5a23b74f4f70e8fd3d87354bcbef12195bed8043aeb.m3u8
 #EXTINF:-1 tvg-name="吉林市新闻综合" group-title="吉林省",吉林市新闻综合
@@ -773,7 +775,7 @@ https://live.lalifeier.eu.org/jlntv/jlsh.m3u8?t=1745796321&key=8386cb03e732cd707
 #EXTINF:-1 tvg-name="吉林都市" group-title="吉林省" tvg-logo="吉林都市.png",吉林都市
 https://live.lalifeier.eu.org/jlntv/jlds.m3u8?t=1745796321&key=ba85da6410cdc8b830d46c3182ad7775
 
-# 四川省 (17个电视台)
+# 分类: 四川省 (17个电视台)
 #EXTINF:-1 tvg-name="四川 Ⅰ 四川影视台" group-title="四川省" tvg-quality="标清",四川 Ⅰ 四川影视台
 http://scgctvshow.sctv.com/hdlive/sctv5/index.m3u8
 #EXTINF:-1 tvg-name="四川 Ⅰ 四川新闻台" group-title="四川省" tvg-quality="标清",四川 Ⅰ 四川新闻台
@@ -809,7 +811,7 @@ https://stream1.freetv.fun/dd26f57be074ce07e1fb0d357b9bff2846bd030575df792d54abb
 #EXTINF:-1 tvg-name="四川经济" group-title="四川省" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan1.png",四川经济
 http://wouu.net:9977/udp/239.93.1.101:5140
 
-# 宁夏回族自治区 (3个电视台)
+# 分类: 宁夏回族自治区 (3个电视台)
 #EXTINF:-1 tvg-name="宁夏公共" group-title="宁夏回族自治区" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/ningxia/Ningxia1.png",宁夏公共
 https://hls.ningxiahuangheyun.com/live/nxgg1M.m3u8
 #EXTINF:-1 tvg-name="宁夏文旅" group-title="宁夏回族自治区" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/ningxia/Ningxia4.png",宁夏文旅
@@ -817,7 +819,7 @@ https://hls.ningxiahuangheyun.com/live/nxwl1M.m3u8
 #EXTINF:-1 tvg-name="宁夏经济" group-title="宁夏回族自治区" tvg-logo="宁夏经济.png",宁夏经济
 https://ls.qingting.fm/live/1841/64k.m3u8
 
-# 山东省 (8个电视台)
+# 分类: 山东省 (8个电视台)
 #EXTINF:-1 tvg-name="山东农科" group-title="山东省" tvg-logo="https://i.imgur.com/EY2zH06.png",山东农科
 http://livealone302.iqilu.com/iqilu/nkpd.m3u8
 #EXTINF:-1 tvg-name="山东居家购物" group-title="山东省" tvg-quality="流畅",山东居家购物
@@ -835,7 +837,7 @@ http://livealone302.iqilu.com/iqilu/shpd.m3u8
 #EXTINF:-1 tvg-name="山东齐鲁" group-title="山东省" tvg-logo="https://i.imgur.com/U9wNMmm.png" tvg-quality="高清",山东齐鲁
 http://livealone302.iqilu.com/iqilu/qlpd.m3u8
 
-# 山西省 (8个电视台)
+# 分类: 山西省 (8个电视台)
 #EXTINF:-1 tvg-name="山西影视" group-title="山西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/27/large/20220527162835442061_74.jpg" tvg-quality="高清",山西影视
 https://epg.pw/stream/b493ddd1a113751d7924062be602f98313d60185dea9c5ffd516f727300f4a58.m3u8
 #EXTINF:-1 tvg-name="山西文体" group-title="山西省",山西文体
@@ -853,7 +855,7 @@ http://liveflash.sxrtv.com/live/sxfinance.m3u8?sub_m3u8=true&edge_slice=true
 #EXTINF:-1 tvg-name="湖南张家界天门山西线玻璃栈道" group-title="山西省" tvg-logo="https://tb.zbds.top/logo/湖南张家界天门山西线玻璃栈道.png",湖南张家界天门山西线玻璃栈道
 https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8
 
-# 广东省 (9个电视台)
+# 分类: 广东省 (9个电视台)
 #EXTINF:-1 tvg-name="广东 Ⅰ 韶关公共台" group-title="广东省" tvg-quality="标清",广东 Ⅰ 韶关公共台
 https://www.sgmsw.cn/videos/tv/201805/1308/9P424TC5M000AFO13CXK6GN6BOA889D2/hls/live.m3u8
 #EXTINF:-1 tvg-name="广东 Ⅰ 韶关综合台" group-title="广东省" tvg-quality="标清",广东 Ⅰ 韶关综合台
@@ -873,17 +875,17 @@ https://stream1.freetv.fun/b5c139a4b6350fe20d62a449d08dc02091e7bc80c0689e1fa16df
 #EXTINF:-1 tvg-name="广东经济科教" group-title="广东省" tvg-logo="https://epg.pw/media/images/channel/2024/01/11/large/20240111224501741507_16.png",广东经济科教
 https://stream1.freetv.fun/885e2bf20b8c19a26f67ee11e97e55e42fe965745049a3cad48c47b099bae8e3.ctv
 
-# 广西壮族自治区 (2个电视台)
+# 分类: 广西壮族自治区 (2个电视台)
 #EXTINF:-1 tvg-name="广西国际" group-title="广西壮族自治区" tvg-logo="https://epg.pw/media/images/channel/2022/05/27/large/20220527160856596479_90.jpg",广西国际
 https://stream1.freetv.fun/183f2221f66a05a31ae1c3da27be6554f43b414aba3e4215f15cf9f244e3f24d.m3u8
 #EXTINF:-1 tvg-name="广西玉林大容山莲花山顶" group-title="广西壮族自治区" tvg-logo="https://tb.zbds.top/logo/广西玉林大容山莲花山顶.png",广西玉林大容山莲花山顶
 https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8
 
-# 新疆维吾尔自治区 (1个电视台)
+# 分类: 新疆维吾尔自治区 (1个电视台)
 #EXTINF:-1 tvg-name="新疆天山" group-title="新疆维吾尔自治区" tvg-logo="https://tb.zbds.top/logo/新疆天山.png",新疆天山
 http://gctxyc.liveplay.myqcloud.com/gc/xjtcdhsz_1/index.m3u8
 
-# 江苏省 (10个电视台)
+# 分类: 江苏省 (10个电视台)
 #EXTINF:-1 tvg-name="江苏 Ⅰ 连云港公共" group-title="江苏省" tvg-quality="流畅",江苏 Ⅰ 连云港公共
 https://live.lyg1.com/ggpd/sd/live.m3u8
 #EXTINF:-1 tvg-name="江苏 Ⅰ 连云港综合" group-title="江苏省" tvg-quality="流畅",江苏 Ⅰ 连云港综合
@@ -905,7 +907,7 @@ http://z.b.bkpcp.top/m.php?id=jsjy
 #EXTINF:-1 tvg-name="江苏新闻" group-title="江苏省" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu1.png",江苏新闻
 http://20240504.shunyue1809.com:6321/udp/239.49.8.120:8000
 
-# 河北省 (10个电视台)
+# 分类: 河北省 (10个电视台)
 #EXTINF:-1 tvg-name="河北" group-title="河北省" tvg-logo="https://gitee.com/suxuang/logo/raw/master/mylogo/河北4K.png" tvg-quality="4K",河北
 https://event.pull.hebtv.com:443/live/live101.m3u8
 #EXTINF:-1 tvg-name="河北公共" group-title="河北省" tvg-logo="https://live.fanmingming.cn/tv/河北公共.png",河北公共
@@ -927,7 +929,7 @@ http://121.19.134.246:808/hls/20/index.m3u8
 #EXTINF:-1 tvg-name="河北都市" group-title="河北省" tvg-logo="河北都市.png",河北都市
 http://121.19.134.246:808/hls/21/index.m3u8
 
-# 河南省 (9个电视台)
+# 分类: 河南省 (9个电视台)
 #EXTINF:-1 tvg-name="河南乡村" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南乡村.png",河南乡村
 http://www.cdnstv.com:6398/hls/1116/index.m3u8
 #EXTINF:-1 tvg-name="河南公共" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南公共.png",河南公共
@@ -947,7 +949,7 @@ http://www.cdnstv.com:6398/hls/1113/index.m3u8
 #EXTINF:-1 tvg-name="河南都市" group-title="河南省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531143451177556_90.jpg",河南都市
 https://stream1.freetv.fun/159787fa1c85725d343a5097adb51da069502ad220ca826ada667b010aeabf5b.ctv
 
-# 浙江省 (22个电视台)
+# 分类: 浙江省 (22个电视台)
 #EXTINF:-1 tvg-name="浙江 Ⅰ 绍兴影视" group-title="浙江省" tvg-quality="标清",浙江 Ⅰ 绍兴影视
 http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8
 #EXTINF:-1 tvg-name="浙江 Ⅰ 绍兴综合" group-title="浙江省",浙江 Ⅰ 绍兴综合
@@ -993,7 +995,7 @@ https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江青田" group-title="浙江省" tvg-logo="浙江青田.png",浙江青田
 http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8
 
-# 海南省 (4个电视台)
+# 分类: 海南省 (4个电视台)
 #EXTINF:-1 tvg-name="海南公共" group-title="海南省" tvg-logo="海南公共.png",海南公共
 http://[2409:8087:5e00:24::1e]:6060/000000001000/460000100000000057/1.m3u8
 #EXTINF:-1 tvg-name="海南文旅" group-title="海南省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530225011839622_70.jpg",海南文旅
@@ -1003,7 +1005,7 @@ http://[2409:8087:5e00:24::1e]:6060/000000001000/4600001000000000111/1.m3u8
 #EXTINF:-1 tvg-name="海南自贸" group-title="海南省" tvg-logo="海南自贸.png",海南自贸
 http://[2409:8087:5e00:24::1e]:6060/000000001000/4600001000000000116/1.m3u8
 
-# 湖北省 (8个电视台)
+# 分类: 湖北省 (8个电视台)
 #EXTINF:-1 tvg-name="湖北公共" group-title="湖北省" tvg-logo="湖北公共.png",湖北公共
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380726d0ee3b/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUUAdKgLqNB5aOAUhcp5CeNKgjpyhD%2FJd6SZjkcHAKXbsjwotAY57dianC4%2ByY7artm7J7F4GFO6G99D0bYMJRxI
 #EXTINF:-1 tvg-name="湖北公共新闻" group-title="湖北省" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/hubei/Hubei5.png",湖北公共新闻
@@ -1021,7 +1023,7 @@ http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN63807203543e3/index.m
 #EXTINF:-1 tvg-name="湖北综合" group-title="湖北省" tvg-logo="湖北综合.png",湖北综合
 http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638072216f7da/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUUAdKgLqNB5aOAUhcp5CeNLx3R3LdIBdA5q61lut1LwZcw4SC2tJubc%2Bq5t%2F61jvWCtjrJL0x%2BHncPgdmcbBW9I
 
-# 湖南省 (12个电视台)
+# 分类: 湖南省 (12个电视台)
 #EXTINF:-1 tvg-name="湖南公共" group-title="湖南省" tvg-logo="湖南公共.png",湖南公共
 https://stream1.freetv.fun/hu-nan-gong-gong-5.ctv
 #EXTINF:-1 tvg-name="湖南国际" group-title="湖南省" tvg-logo="湖南国际.png",湖南国际
@@ -1047,7 +1049,7 @@ http://php.jdshipin.com:8880/TVOD/iptv.php?id=hnds
 #EXTINF:-1 tvg-name="湖南金鹰纪实" group-title="湖南省" tvg-logo="湖南金鹰纪实.png",湖南金鹰纪实
 http://yc.myds.me:35455/itv/5000000011000031203.m3u8?cdn=bestzb
 
-# 甘肃省 (5个电视台)
+# 分类: 甘肃省 (5个电视台)
 #EXTINF:-1 tvg-name="甘肃公共" group-title="甘肃省" tvg-logo="https://epg.pw/media/img/logo/3_399.jpg" tvg-quality="标清",甘肃公共
 https://epg.pw/stream/8dc185b262a055ffd5eca3ab59977debe7b5dbeb96c0988a0dc1632b9fabf520.m3u8
 #EXTINF:-1 tvg-name="甘肃文化影视" group-title="甘肃省" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/gansu/Gansu3.png",甘肃文化影视
@@ -1059,7 +1061,7 @@ https://hls.gstv.com.cn/49048r/10iv1j.m3u8
 #EXTINF:-1 tvg-name="甘肃都市" group-title="甘肃省" tvg-logo="甘肃都市.png",甘肃都市
 https://hls.gstv.com.cn/49048r/l54391.m3u8
 
-# 福建省 (9个电视台)
+# 分类: 福建省 (9个电视台)
 #EXTINF:-1 tvg-name="福建 漳浦综合" group-title="福建省" tvg-logo="https://epg.pw/media/uploads/tmp_logo/2018/02/07/20180207115253152468_36.jpg" tvg-quality="标清",福建 漳浦综合
 https://epg.pw/stream/56eb02707eb276bcf6a207859256e48ffb2e9e03fab764bcce746f4bf6b5a8bb.m3u8
 #EXTINF:-1 tvg-name="福建乡村振兴公共" group-title="福建省" tvg-logo="https://live.fanmingming.cn/tv/福建乡村振兴公共.png",福建乡村振兴公共
@@ -1079,11 +1081,11 @@ https://stream1.freetv.fun/fu-jian-jing-ji-1.m3u8
 #EXTINF:-1 tvg-name="福建综合" group-title="福建省" tvg-logo="福建综合.png",福建综合
 https://stream1.freetv.fun/fu-jian-zong-he-1.m3u8
 
-# 贵州省 (1个电视台)
+# 分类: 贵州省 (1个电视台)
 #EXTINF:-1 tvg-name="贵州省兴义市万峰林" group-title="贵州省" tvg-logo="https://tb.zbds.top/logo/贵州省兴义市万峰林.png",贵州省兴义市万峰林
 https://gcalic.v.myalicdn.com/gc/xywfl_1/index.m3u8
 
-# 辽宁省 (9个电视台)
+# 分类: 辽宁省 (9个电视台)
 #EXTINF:-1 tvg-name="辽宁公共" group-title="辽宁省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531155932261297_92.jpg" tvg-quality="高清",辽宁公共
 https://stream1.freetv.fun/c847cb98e9c1a6e222395ceea5b23181ad7d7ac74bc5523ddb979b34c0dbd8ab.m3u8
 #EXTINF:-1 tvg-name="辽宁北方" group-title="辽宁省" tvg-logo="辽宁北方.png",辽宁北方
@@ -1103,7 +1105,7 @@ https://ls.qingting.fm/live/1099/64k.m3u8
 #EXTINF:-1 tvg-name="辽宁青少" group-title="辽宁省" tvg-logo="https://live.fanmingming.cn/tv/辽宁青少.png",辽宁青少
 http://dassby.qqff.top:99/live/辽宁教育青少/index.m3u8
 
-# 重庆市 (3个电视台)
+# 分类: 重庆市 (3个电视台)
 #EXTINF:-1 tvg-name="重庆时尚购物" group-title="重庆市" tvg-logo="重庆时尚购物.png",重庆时尚购物
 http://183.220.107.138:4022/rtp/239.10.0.169:5140
 #EXTINF:-1 tvg-name="重庆汽摩" group-title="重庆市" tvg-logo="重庆汽摩.png",重庆汽摩
@@ -1111,7 +1113,7 @@ http://183.230.184.51:65500/tntv1.m3u8
 #EXTINF:-1 tvg-name="重庆科教" group-title="重庆市" tvg-logo="https://epg.pw/media/images/channel/2024/07/29/large/20240729020024729385_11.jpg" tvg-quality="高清",重庆科教
 https://stream1.freetv.fun/f95fc2c361a5c575b9fa9663f9fc8cbe352ff641a3456eeb9c423e5785bbd247.ctv
 
-# 陕西省 (12个电视台)
+# 分类: 陕西省 (12个电视台)
 #EXTINF:-1 tvg-name="陕西体育休闲" group-title="陕西省" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531151408095945_53.jpg" tvg-quality="高清",陕西体育休闲
 https://epg.pw/stream/222ab91506e0310c79e009d1ca30d69ec87ef48007371488bf3e2fad0f13af21.m3u8
 #EXTINF:-1 tvg-name="陕西公共" group-title="陕西省" tvg-logo="陕西公共.png",陕西公共
@@ -1137,13 +1139,13 @@ https://epg.pw/stream/4b5ab67e1e16244226143cde3847c6e7c8e1402906611e48a1f3562b3f
 #EXTINF:-1 tvg-name="陕西银龄" group-title="陕西省" tvg-logo="https://tb.zbds.top/logo/陕西银龄.png",陕西银龄
 http://112.46.105.20:8009/hls/20/index.m3u8
 
-# 青海省 (2个电视台)
+# 分类: 青海省 (2个电视台)
 #EXTINF:-1 tvg-name="青海综合" group-title="青海省" tvg-logo="青海综合.png",青海综合
 http://lmt.scqstv.com/live1/live1.m3u8
 #EXTINF:-1 tvg-name="青海都市" group-title="青海省" tvg-logo="青海都市.png",青海都市
 http://[2409:8087:1e01:20::3]/PLTV/11/224/3221225749/index.m3u8
 
-# 黑龙江省 (10个电视台)
+# 分类: 黑龙江省 (10个电视台)
 #EXTINF:-1 tvg-name="黑龙江" group-title="黑龙江省" tvg-logo="https://i.imgur.com/9fj1uba.png" tvg-quality="高清",黑龙江
 http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221227492/index.m3u8
 #EXTINF:-1 tvg-name="黑龙江公共农村" group-title="黑龙江省" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Heilongjiang5.png",黑龙江公共农村

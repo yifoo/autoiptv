@@ -1,25 +1,26 @@
 #EXTM3U
-# 江苏省频道列表
-# 更新时间(北京时间): 2026-01-31 13:04:56
+# 江苏省频道列表（多源合并版）
+# 更新时间(北京时间): 2026-01-31 13:21:39
 # 电视台数量: 10
+# 说明: 每个电视台包含多个源，PotPlayer按Alt+W切换
 
-#EXTINF:-1 tvg-name="江苏 Ⅰ 连云港公共" group-title="江苏省" tvg-quality="流畅",江苏 Ⅰ 连云港公共
+#EXTINF:-1 tvg-name="江苏 Ⅰ 连云港公共" group-title="江苏省" tvg-quality="流畅",江苏 Ⅰ 连云港公共 [1源]
 https://live.lyg1.com/ggpd/sd/live.m3u8
-#EXTINF:-1 tvg-name="江苏 Ⅰ 连云港综合" group-title="江苏省" tvg-quality="流畅",江苏 Ⅰ 连云港综合
+#EXTINF:-1 tvg-name="江苏 Ⅰ 连云港综合" group-title="江苏省" tvg-quality="流畅",江苏 Ⅰ 连云港综合 [1源]
 https://live.lyg1.com/zhpd/sd/live.m3u8
-#EXTINF:-1 tvg-name="江苏体育休闲" group-title="江苏省" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu5.png",江苏体育休闲
+#EXTINF:-1 tvg-name="江苏体育休闲" group-title="江苏省" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu5.png",江苏体育休闲 [1源]
 https://stream1.freetv.fun/af1087a1c24fff7af556ac8e6c5c623303d52966f67a998cefb52c17811b09a2.ctv
 #EXTINF:-1 tvg-name="江苏公共" group-title="江苏省" tvg-logo="江苏公共.png",江苏公共 [2源]
-http://iptv.666230.xyz/iptv/jsyd.php/G_JSGG
-#EXTINF:-1 tvg-name="江苏南京牛首山" group-title="江苏省" tvg-logo="https://tb.zbds.top/logo/江苏南京牛首山.png",江苏南京牛首山
+http://iptv.666230.xyz/iptv/jsyd.php/G_JSGG|http://183.207.248.71/gitv/live1/G_JSGG/G_JSGG
+#EXTINF:-1 tvg-name="江苏南京牛首山" group-title="江苏省" tvg-logo="https://tb.zbds.top/logo/江苏南京牛首山.png",江苏南京牛首山 [1源]
 https://gcalic.v.myalicdn.com/gc/nss01_1/index.m3u8
 #EXTINF:-1 tvg-name="江苏城市" group-title="江苏省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530230012040614_78.jpg",江苏城市 [8源]
-https://stream1.freetv.fun/bb951e9f6447bef33a3668993d23ba5db98cfc383688b1688bdbf5a956d9a50c.m3u8
+https://stream1.freetv.fun/bb951e9f6447bef33a3668993d23ba5db98cfc383688b1688bdbf5a956d9a50c.m3u8|http://z.b.bkpcp.top/m.php?id=jscs|https://stream1.freetv.fun/675206b8446ce719bfb293b5a5296db3aa26521c9810de7c996838247cc56964.ctv|https://mursor.ottiptv.cc/migu/626064714.m3u8?migutoken=b92ada516923349cef01531d5bff5992a22ba9122a3e7c2696e7edd09a971fa6e2a2e1a2209c9ab3c9a404643dce743a2de2a97c7793ae60e3b2614d285ec1c42bcb6619c30a8bb2923adbbb68|http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jschengshi/600/index.m3u8?msisdn=202509030900312c5ad926e30449e5b9405f27a3fde9a6&mdspid=&spid=699067&netType=0&sid=5500260508&pid=2028597139&timestamp=20250903090031&Channel_ID=0116_2600037000-99000-200300220100002&ProgramID=626064714&ParentNodeID=-99&assertID=5500260508&client_ip=106.13.250.83&SecurityKey=20250903090031&promotionId=&mvid=5100186409&mcid=500020&playurlVersion=WX-A1-8.8.1-RELEASE&userid=&jmhm=&videocodec=h264&bean=mgspad&tid=android&conFee=0&puData=3712225a575d903704881b6443f50a06&ddCalcu=6307va1a02x52af2354a4567b51d89804307&sv=10004&ct=android|https://mgtv.ottiptv.cc/migu/626064714.m3u8?migutoken=02cafbc9d94c9e5e26c383c50287313c55f7e68abea08e811428e9b13cd8e46f93919d1a0859b1c76d8e4e78e1f7b8a6f89d71daf38a8275ac7633b59bcdb7cbf189e3152afb4fa80fadf4b134|https://stream1.freetv.fun/jiang-su-cheng-shi-7.m3u8|http://183.207.248.71/gitv/live1/G_JSCS/G_JSCS
 #EXTINF:-1 tvg-name="江苏影视" group-title="江苏省" tvg-logo="https://epg.pw/media/images/channel/2022/05/30/large/20220530230645676753_16.jpg",江苏影视 [8源]
-https://stream1.freetv.fun/ff51b87d5cd5bd439c8c794400e57cef00030333c15716915efdb774a013b129.ctv
-#EXTINF:-1 tvg-name="江苏徐州云龙湖风景区云龙山观景台西" group-title="江苏省" tvg-logo="https://tb.zbds.top/logo/江苏徐州云龙湖风景区云龙山观景台西.png",江苏徐州云龙湖风景区云龙山观景台西
+https://stream1.freetv.fun/ff51b87d5cd5bd439c8c794400e57cef00030333c15716915efdb774a013b129.ctv|http://z.b.bkpcp.top/m.php?id=jsys|https://stream1.freetv.fun/a89dd489fa013bc4f36bcc4afe388f1783e2251c276e2566a9359d68a61c6d91.ctv|https://migu.188766.xyz/?migutoken=91756b74eb13850e4c87b15c25817e42&id=%E6%B1%9F%E8%8B%8F%E5%BD%B1%E8%A7%86%E9%A2%91%E9%81%93&type=yy|https://mursor.ottiptv.cc/migu/626064697.m3u8?migutoken=b73f8d78cfb5fb25d1b0e54e8b651db35d48ff071c6fe1f7826fcc4e6212a20ba7c8991185d03743da42bafdff874a4a03b5df60e7c2aa293ad3b34997faa082e300149433e3b1c2694909770b|http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jsyingshi/600/index.m3u8?msisdn=2025090309003105f41cc73cf04c92833c2265c0140111&mdspid=&spid=699067&netType=0&sid=5500260517&pid=2028597139&timestamp=20250903090031&Channel_ID=0116_2600037000-99000-200300220100002&ProgramID=626064697&ParentNodeID=-99&assertID=5500260517&client_ip=106.13.250.83&SecurityKey=20250903090031&promotionId=&mvid=5100186424&mcid=500020&playurlVersion=WX-A1-8.8.1-RELEASE&userid=&jmhm=&videocodec=h264&bean=mgspad&tid=android&conFee=0&puData=6814112e9248d0d7b2bc482bd82b9897&ddCalcu=7698v81a94wb1a2182deb9228448cdb02db7&sv=10004&ct=android|https://mgtv.ottiptv.cc/migu/626064697.m3u8?migutoken=6508bc5fae9f621ed6ec72d39eb7f60ab52c4b412a5ee7f5b612640ecccbde1f9584f0a97aebc090cb58f73e9e079ced87b059526a6614b5a9ad5a23ff4863d36adcc1ed699583e058fac3330e|http://183.207.248.71/gitv/live1/G_JSYS/G_JSYS
+#EXTINF:-1 tvg-name="江苏徐州云龙湖风景区云龙山观景台西" group-title="江苏省" tvg-logo="https://tb.zbds.top/logo/江苏徐州云龙湖风景区云龙山观景台西.png",江苏徐州云龙湖风景区云龙山观景台西 [1源]
 https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8
 #EXTINF:-1 tvg-name="江苏教育" group-title="江苏省" tvg-logo="江苏教育.png",江苏教育 [8源]
-http://z.b.bkpcp.top/m.php?id=jsjy
-#EXTINF:-1 tvg-name="江苏新闻" group-title="江苏省" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu1.png",江苏新闻
+http://z.b.bkpcp.top/m.php?id=jsjy|http://goo.bkpcp.top/mg/jsjy|https://stream1.freetv.fun/7174b4fd66ddb2a7456b7040105dc27a1e57c166593870bb773cb5f6b4546c54.ctv|https://migu.188766.xyz/?migutoken=bfd96895aa8e3e9aa47561510518c058&id=%E6%B1%9F%E8%8B%8F%E6%95%99%E8%82%B2&type=yy|https://mursor.ottiptv.cc/migu/628008321.m3u8?migutoken=f23d4bcff80819f435db9a666e24d1bb6cb7daed4d5f480936906885f3d62861b56b769a71332c450d31bc8d287919f595d3e6345a45469a801811eaae8da0bc75fecc6ad6284507ffd4495d3d|http://gslbmgsplive.miguvideo.com/wd_r2/jstv/jsjiaoyu/600/index.m3u8?msisdn=20250903090031d7e536b9e78c4a42b0841922e44a4a36&mdspid=&spid=699067&netType=0&sid=5500287493&pid=2028597139&timestamp=20250903090031&Channel_ID=0116_2600037000-99000-200300220100002&ProgramID=628008321&ParentNodeID=-99&assertID=5500287493&client_ip=106.13.250.83&SecurityKey=20250903090031&promotionId=&mvid=5101012819&mcid=500020&playurlVersion=WX-A1-8.8.1-RELEASE&userid=&jmhm=&videocodec=h264&bean=mgspad&tid=android&conFee=0&puData=d3e3bd992ebf554d360ba9b83b9b179d&ddCalcu=dd93v7ea13bbba9db93982be9bafb505643d&sv=10004&ct=android|https://mgtv.ottiptv.cc/migu/628008321.m3u8?migutoken=2a14b3aabc488208548ee93104e880b74d4a395bfa44d7066aecd401da116ee25176f823087e3b4982d4720bd660d81bfff58ed9193c1df26c94a3e4f7a6c10952e5d975a5e4f6244fd9dcc62d|http://183.207.248.71/gitv/live1/G_JSJY/G_JSJY
+#EXTINF:-1 tvg-name="江苏新闻" group-title="江苏省" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu1.png",江苏新闻 [1源]
 http://20240504.shunyue1809.com:6321/udp/239.49.8.120:8000
