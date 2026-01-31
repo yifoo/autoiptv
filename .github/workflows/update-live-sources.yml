@@ -2,11 +2,14 @@ name: Update Live TV Sources
 
 on:
   schedule:
-    - cron: '0 18 * * *'
+    - cron: '0 18 * * *'  # 每天UTC 18:00（北京时间凌晨2点）
   workflow_dispatch:
   push:
     branches: [ main ]
     paths: [ 'sources.txt' ]
+
+permissions:
+  contents: write
 
 jobs:
   collect-and-organize:
@@ -27,15 +30,26 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install requests tqdm
+        pip install requests
+
+    - name: Create scripts directory
+      run: mkdir -p scripts
+
+    - name: Create collection script
+      run: |
+        cat > scripts/collect_sources.py << 'EOF'
+        # 这里放置上面修复后的完整Python脚本内容
+        # 注意：由于长度限制，你需要将上面的Python脚本内容粘贴到这里
+        EOF
+      # 注意：由于这里不能粘贴完整脚本，你需要手动将上面的Python脚本保存到文件中
 
     - name: Run collection script
       id: collect
       run: |
         cd scripts
         python collect_sources.py
-        # 检查文件是否生成
-        if ls ../*.m3u 1> /dev/null 2>&1; then
+        # 检查是否有新文件生成
+        if [ -f ../live_sources.m3u ]; then
           echo "changed=true" >> $GITHUB_OUTPUT
           echo "CHANGED=true" >> $GITHUB_ENV
         else
@@ -50,6 +64,4 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git add -A
         git commit -m "📺 Update live TV sources $(date '+%Y-%m-%d %H:%M:%S')"
-        
-        # 使用PAT进行推送
-        git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git main
+        git push
