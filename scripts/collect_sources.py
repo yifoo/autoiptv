@@ -1,5 +1,3 @@
-# 这里放置上面修复后的完整Python脚本内容
-# 注意：由于长度限制，你需要将上面的Python脚本内容粘贴到这里
 #!/usr/bin/env python3
 """
 自动采集并归类电视直播源
@@ -288,53 +286,4 @@ class SourceCollector:
         for category, channels in categorized.items():
             channels = sorted(channels, key=lambda x: x.name)
             with open(f'categories/{category}.m3u', 'w', encoding='utf-8') as f:
-                f.write('#EXTM3U\n')
-                f.write(f'# 分类: {category} ({len(channels)}个频道)\n')
-                f.write(f'# 更新时间: {timestamp}\n\n')
-                for channel in channels:
-                    f.write(channel.to_m3u_line())
-    
-    def generate_json_file(self, categorized, timestamp):
-        """生成JSON文件"""
-        channel_list = []
-        for channel in sorted(self.all_channels, key=lambda x: x.name):
-            channel_list.append({
-                'name': channel.name,
-                'url': channel.url,
-                'category': channel.group,
-                'logo': channel.logo
-            })
-        
-        with open('channels.json', 'w', encoding='utf-8') as f:
-            json.dump({
-                'last_updated': timestamp,
-                'total_channels': self.processed_count,
-                'sources_count': len(SOURCES),
-                'channels': channel_list
-            }, f, ensure_ascii=False, indent=2)
-    
-    def generate_readme(self, categorized, timestamp):
-        """生成README文件"""
-        readme_content = f"""# 📺 电视直播源收集项目
-
-自动收集整理的电视直播源，每日自动更新。
-
-## 📊 统计数据
-- **最后更新**: {timestamp}
-- **频道总数**: {self.processed_count}
-- **数据源**: {len(SOURCES)} 个
-
-## 📁 文件说明
-
-| 文件名 | 描述 |
-|--------|------|
-| `live_sources.m3u` | 完整的直播源文件（所有频道） |
-| `channels.json` | 频道信息JSON格式 |
-| `categories/` | 按分类分开的M3U文件目录 |
-| `sources.txt` | 自定义源列表（一行一个URL） |
-| `index.html` | 网页播放界面 |
-
-## 📂 频道分类统计
-
-| 分类 | 频道数量 |
-|------|----------|
+                f

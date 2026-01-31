@@ -20,7 +20,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.LIVEIPTV }}
+        token: ${{ secrets.PAT_TOKEN }}
         fetch-depth: 0  # 获取所有历史记录
 
     - name: Set up Python
@@ -31,7 +31,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install requests tqdm
+        pip install requests
 
     - name: Create scripts directory
       run: |
@@ -39,4 +39,4 @@ jobs:
 
     - name: Create collection script
       run: |
-        cat > scripts/collect_sources.py << 'EOF'
+        cat > scripts/collect_sources.py << 'PYTHON_SCRIPT'
