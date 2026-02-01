@@ -1,6 +1,6 @@
 #EXTM3U
 # 景区频道频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-01 02:38:58
+# 更新时间(北京时间): 2026-02-02 02:41:26
 # 电视台数量: 27
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
@@ -22,7 +22,7 @@ https://gcalic.v.myalicdn.com/gc/gllj01_1/index.m3u8
 #EXTINF:-1 tvg-name="开封文化旅游" group-title="景区频道",开封文化旅游 [3IPv4]
 http://live.dxhmt.cn:9081/tv/10200-3.m3u8|http://tvpull.dxhmt.cn:9081/tv/10200-3.m3u8|http://tvpull.dxhmt.cn:9081/tv/10200-3.m3u8?zhend
 #EXTINF:-1 tvg-name="杭州导视" group-title="景区频道" tvg-ipv6="true",杭州导视 [2IPv6]
-http://www.jeremyoto.com:82/rtp/233.50.201.182:5140|http://www.flyskyman.cn:4022/rtp/233.50.201.182:5140
+http://www.flyskyman.cn:4022/rtp/233.50.201.182:5140|http://www.jeremyoto.com:82/rtp/233.50.201.182:5140
 #EXTINF:-1 tvg-name="民视旅游" group-title="景区频道" tvg-ipv6="true",民视旅游 [3IPv6+12IPv4]
 http://api.mytv666.top/api/hk.php?id=6661393234373339313163383837613836623134613563323132623331623164267469643d74762669643d313733|http://api.mytv666.top/api/hk.php?id=3663636134303964303063353333326433303230353763393836326330643437267469643d77696e74763132332669643d3632|http://api.mytv666.top/api/qwt.php?t=台湾频道&id=民视旅游台|https://hls-gateway.vpstv.net/streams/476240.m3u8|https://mao.ffmking888.dpdns.org/?id=5rCR6KaW5peF6YGK5Yaw&auth=30234cedf871581989d3c91a3daec1e9f50e024aafcfa2247e7d44d91bb8d02fbc3f571b2d67f9d82642cc1d0f133d89|https://tmxk.pp.ua/litv.php?token=tmxk&id=litv-ftv07|https://stream1.freetv.fun/min-shi-lu-you-1.ctv|https://stream1.freetv.fun/min-shi-lu-you-2.ctv|https://tv.iill.top/litv/litv-ftv07|http://nmk.ioapk.com:5050/li-litv-ftv07/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/litv-ftv07/index.m3u8?proxy=true|http://220.135.64.124:5050/li-litv-ftv07/index.m3u8?proxy=true|http://220.135.64.124:5050/litv-ftv07/index.m3u8?proxy=true|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=litv-ftv07|http://xtvantsc.xyz/litv_ts.php?id=litv-ftv07
 #EXTINF:-1 tvg-name="泰山主峰" group-title="景区频道",泰山主峰 [1IPv4]
