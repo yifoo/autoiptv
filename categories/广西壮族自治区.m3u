@@ -1,25 +1,12 @@
 #EXTM3U
 # 广西壮族自治区频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-03 22:10:47
-# 电视台数量: 8
+# 更新时间(北京时间): 2026-02-03 23:31:06
+# 电视台数量: 1
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
-# 黑名单功能: 禁用
+# 黑名单功能: 启用
+# 白名单功能: 启用
 # 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="广西交通广播" group-title="广西壮族自治区" tvg-logo="https://live.fanmingming.com/radio/广西交通广播.png",广西交通广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wx32gxjtgb/playlist.m3u8
-#EXTINF:-1 tvg-name="广西北部湾之声" group-title="广西壮族自治区" tvg-logo="https://live.fanmingming.com/radio/广西北部湾之声.png",广西北部湾之声 [1IPv4]
-https://satellitepull.cnr.cn/live/wx32gxdwgb/playlist.m3u8
-#EXTINF:-1 tvg-name="广西国际" group-title="广西壮族自治区" tvg-logo="https://epg.pw/media/images/channel/2022/05/27/large/20220527160856596479_90.jpg",广西国际 [3IPv4]
-https://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79.m3u8|http://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79.m3u8?fbl=|https://stream1.freetv.fun/183f2221f66a05a31ae1c3da27be6554f43b414aba3e4215f15cf9f244e3f24d.m3u8
-#EXTINF:-1 tvg-name="广西广播" group-title="广西壮族自治区" tvg-logo="https://live.fanmingming.com/radio/广西新闻广播.png",广西广播 [2IPv4]
-https://satellitepull.cnr.cn/live/wx32gxrmgb/playlist.m3u8|https://satellitepull.cnr.cn/live/wx32gxwygb/playlist.m3u8
-#EXTINF:-1 tvg-name="广西教育广播" group-title="广西壮族自治区" tvg-logo="https://live.fanmingming.com/radio/广西教育广播.png",广西教育广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wx32gbjyshgb/playlist.m3u8
-#EXTINF:-1 tvg-name="广西玉林大容山莲花山顶" group-title="广西壮族自治区" tvg-logo="https://tb.zbds.top/logo/广西玉林大容山莲花山顶.png",广西玉林大容山莲花山顶 [1IPv4]
+#EXTINF:-1 tvg-name="广西玉林大容山莲花山顶" group-title="广西壮族自治区" tvg-logo="https://tb.zbds.top/logo/广西玉林大容山莲花山顶.png",广西玉林大容山莲花山顶 [1普通]
 https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8
-#EXTINF:-1 tvg-name="广西经济广播•女主播电台" group-title="广西壮族自治区" tvg-logo="https://live.fanmingming.com/radio/广西女主播.png",广西经济广播•女主播电台 [1IPv4]
-https://satellitepull.cnr.cn/live/wx32gxjjgb/playlist.m3u8
-#EXTINF:-1 tvg-name="广西｜新闻" group-title="广西壮族自治区",广西｜新闻 [1IPv4]
-http://116.9.204.242:9901/tsfile/live/1001_1.m3u8

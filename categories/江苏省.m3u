@@ -1,18 +1,26 @@
 #EXTM3U
 # 江苏省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-03 23:09:04
-# 电视台数量: 4
+# 更新时间(北京时间): 2026-02-03 23:31:06
+# 电视台数量: 8
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
 # 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="江苏体育休闲" group-title="江苏省" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu5.png",江苏体育休闲 [1IPv4]
+#EXTINF:-1 tvg-name="江苏 徐州云龙湖观景台西" group-title="江苏省",江苏 徐州云龙湖观景台西 [1普通]
+https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-name="江苏 无锡鼋头渚赏樱阁" group-title="江苏省",江苏 无锡鼋头渚赏樱阁 [1普通]
+https://gcalic.v.myalicdn.com/gc/pshdxg01_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-name="江苏体育休闲" group-title="江苏省" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu5.png",江苏体育休闲 [1普通]
 https://stream1.freetv.fun/af1087a1c24fff7af556ac8e6c5c623303d52966f67a998cefb52c17811b09a2.ctv
-#EXTINF:-1 tvg-name="江苏城市" group-title="江苏省" tvg-logo="江苏城市.png",江苏城市 [2IPv4]
+#EXTINF:-1 tvg-name="江苏南京牛首山" group-title="江苏省" tvg-logo="https://tb.zbds.top/logo/江苏南京牛首山.png",江苏南京牛首山 [2普通]
+https://gcalic.v.myalicdn.com/gc/nss01_1/index.m3u8|https://gcalic.v.myalicdn.com/gc/nss01_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-name="江苏城市" group-title="江苏省" tvg-logo="江苏城市.png",江苏城市 [2普通]
 https://stream1.freetv.fun/jiang-su-cheng-shi-7.m3u8|https://stream1.freetv.fun/675206b8446ce719bfb293b5a5296db3aa26521c9810de7c996838247cc56964.ctv
-#EXTINF:-1 tvg-name="江苏影视" group-title="江苏省" tvg-logo="江苏影视.png",江苏影视 [1IPv4]
+#EXTINF:-1 tvg-name="江苏影视" group-title="江苏省" tvg-logo="江苏影视.png",江苏影视 [1普通]
 https://stream1.freetv.fun/a89dd489fa013bc4f36bcc4afe388f1783e2251c276e2566a9359d68a61c6d91.ctv
-#EXTINF:-1 tvg-name="江苏教育" group-title="江苏省" tvg-logo="江苏教育.png",江苏教育 [1IPv4]
+#EXTINF:-1 tvg-name="江苏徐州云龙湖风景区云龙山观景台西" group-title="江苏省" tvg-logo="https://tb.zbds.top/logo/江苏徐州云龙湖风景区云龙山观景台西.png",江苏徐州云龙湖风景区云龙山观景台西 [1普通]
+https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8
+#EXTINF:-1 tvg-name="江苏教育" group-title="江苏省" tvg-logo="江苏教育.png",江苏教育 [1普通]
 https://stream1.freetv.fun/7174b4fd66ddb2a7456b7040105dc27a1e57c166593870bb773cb5f6b4546c54.ctv

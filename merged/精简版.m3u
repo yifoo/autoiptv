@@ -1,8 +1,8 @@
 #EXTM3U
-# 电视直播源 - IPv6优先精简版
-# 每个电视台只保留最佳源（IPv6优先）
-# 更新时间(北京时间): 2026-02-03 23:09:04
-# 电视台总数: 1057
+# 电视直播源 - IPv6优先精简版（白名单自动加入）
+# 每个电视台只保留最佳源（IPv6优先，白名单优先）
+# 更新时间(北京时间): 2026-02-03 23:31:06
+# 电视台总数: 1390
 # 数据源: 11 个 (成功: 11, 失败: 0)
 # 特点: 移除技术参数，统一央视频道命名，按省份分类地方台，IPv6优先
 # 配置文件: config.txt
@@ -12,25 +12,26 @@
 # 白名单文件: whitelist.txt
 # 覆盖黑名单: 是
 # 忽略测速: 是
+# 自动加入: 是
 # 源文件: sources.txt
 # 黑名单: blacklist.txt
 
 
-# 分类: 央视 (36个电视台)
+# 分类: 央视 (37个电视台)
 #EXTINF:-1 tvg-name="CCTV-1 综合" group-title="央视" tvg-logo="CCTV1.png" tvg-ipv6="true",CCTV-1 综合 [IPv6]
 http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226895/1.m3u8?servicetype=1&accountinfo=%7E%7EV2.0%7EI0Rkc6neBYgfpoJ1yud8Fw%7EPepnxHHB2d6Hk2dZWM77MyFlBN5q1KnYLvimM9pqT7Epd7QgO4HFWH0z34SUb2Vs%7EExtInfo9bj61dxzlMXrsixrqcFYPg%3A20240420192714%2C%2C%2C20240420192714%2C%2C10001000275495%2C-1%2C0%2C1%2C-1%2C%2C2%2C2201300%2C%2C%2C2%2C%2C%2CEND&GuardEncType=2
 #EXTINF:-1 tvg-name="CCTV-2 财经" group-title="央视" tvg-logo="CCTV2.png" tvg-ipv6="true",CCTV-2 财经 [IPv6]
-http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226230/1.m3u8
+http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226230/1.m3u8?servicetype=1&accountinfo=%7E%7EV2.0%7EI0Rkc6neBYgfpoJ1yud8Fw%7EPepnxHHB2d6Hk2dZWM77MyFlBN5q1KnYLvimM9pqT7Epd7QgO4HFWH0z34SUb2Vs%7EExtInfo9bj61dxzlMXrsixrqcFYPg%3A20240420192714%2C%2C%2C20240420192714%2C%2C10001000275495%2C-1%2C0%2C1%2C-1%2C%2C2%2C2201300%2C%2C%2C2%2C%2C%2CEND&GuardEncType=2
 #EXTINF:-1 tvg-name="CCTV-3 综艺" group-title="央视" tvg-logo="CCTV3.png" tvg-ipv6="true",CCTV-3 综艺 [IPv6]
-http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226456/1.m3u8
+http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226456/1.m3u8?servicetype=1&accountinfo=%7E%7EV2.0%7EBFJ5gRpm8ntK8JEFPZOhLQ%7EPepnxHHB2d6Hk2dZWM77MyFlBN5q1KnYLvimM9pqT7EfCf-e5nKehMQzrOBwWduf%7EExtInfo9bj61dxzlMXrsixrqcFYPg%3A20240420192542%2C%2C%2C20240420192542%2C%2C10001000275495%2C-1%2C0%2C1%2C-1%2C%2C2%2C2201300%2C%2C%2C2%2C%2C%2CEND&GuardEncType=2
 #EXTINF:-1 tvg-name="CCTV-4 中文国际" group-title="央视" tvg-logo="CCTV4.png" tvg-ipv6="true",CCTV-4 中文国际 [IPv6]
 http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226335/1.m3u8?servicetype=1&accountinfo=%7E%7EV2.0%7EBFJ5gRpm8ntK8JEFPZOhLQ%7EPepnxHHB2d6Hk2dZWM77MyFlBN5q1KnYLvimM9pqT7EfCf-e5nKehMQzrOBwWduf%7EExtInfo9bj61dxzlMXrsixrqcFYPg%3A20240420192542%2C%2C%2C20240420192542%2C%2C10001000275495%2C-1%2C0%2C1%2C-1%2C%2C2%2C2201300%2C%2C%2C2%2C%2C%2CEND&GuardEncType=2
 #EXTINF:-1 tvg-name="CCTV-5 体育" group-title="央视" tvg-logo="CCTV5.png" tvg-ipv6="true",CCTV-5 体育 [IPv6]
 https://stream1.freetv.fun/ipv6-cctv-5-12.m3u8
 #EXTINF:-1 tvg-name="CCTV-5+ 体育赛事" group-title="央视" tvg-logo="CCTV5+.png" tvg-ipv6="true",CCTV-5+ 体育赛事 [IPv6]
 http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226349/1.m3u8
-#EXTINF:-1 tvg-name="CCTV-6 电影" group-title="央视" tvg-logo="https://tb.zbds.top/logo/CCTV6.png" tvg-ipv6="true",CCTV-6 电影 [IPv6]
-https://migu.188766.xyz/?migutoken=f401e0754f10d0bae3c7f76124171ad9&id=CCTV6&type=yy
+#EXTINF:-1 tvg-name="CCTV-6 电影" group-title="央视" tvg-logo="https://live.fanmingming.com/tv/CCTV6.png" tvg-ipv6="true",CCTV-6 电影 [IPv6]
+https://piccpndali.v.myalicdn.com/audio/cctv6_2.m3u8
 #EXTINF:-1 tvg-name="CCTV-7 国防军事" group-title="央视" tvg-logo="CCTV7.png" tvg-ipv6="true",CCTV-7 国防军事 [IPv6]
 http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226234/1.m3u8
 #EXTINF:-1 tvg-name="CCTV-8 电视剧" group-title="央视" tvg-logo="CCTV8.png" tvg-ipv6="true",CCTV-8 电视剧 [IPv6]
@@ -89,6 +90,8 @@ http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221
 http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226485/1.m3u8?
 #EXTINF:-1 tvg-name="CCTV 9纪录" group-title="央视" tvg-logo="https://live.fanmingming.cn/tv/CCTV9.png" tvg-ipv6="true",CCTV 9纪录 [IPv6]
 http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226944/1.m3u8?
+#EXTINF:-1 tvg-name="CCTV4中文国际" group-title="央视",CCTV4中文国际
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV20.m3u8
 
 # 分类: 卫视 (52个电视台)
 #EXTINF:-1 tvg-name="北京卫视" group-title="卫视" tvg-logo="https://live.fanmingming.cn/tv/北京卫视.png" tvg-ipv6="true",北京卫视 [IPv6]
@@ -194,13 +197,45 @@ http://hlsbkmgsplive.miguvideo.com/migu/kailu/haixiaws/57/20230724/01.m3u8?msisd
 #EXTINF:-1 tvg-name="莲花卫视" group-title="卫视" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Lotus.png",莲花卫视
 http://php.jdshipin.com:8880/amlh.php
 #EXTINF:-1 tvg-name="香港卫视" group-title="卫视" tvg-logo="香港卫视.png",香港卫视
-https://stream1.freetv.fun/xiang-gang-wei-shi-7.m3u8
+https://piccpndali.v.myalicdn.com/audio/xianggangweishi_2.m3u8
 
-# 分类: 景区频道 (2个电视台)
+# 分类: 景区频道 (18个电视台)
+#EXTINF:-1 tvg-name="六盘山红军长征景区" group-title="景区频道",六盘山红军长征景区
+https://gcalic.v.myalicdn.com/gc/lpsgmjng01_1/index.m3u8
+#EXTINF:-1 tvg-name="广西桂林漓江景区" group-title="景区频道" tvg-logo="https://tb.zbds.top/logo/广西桂林漓江景区.png",广西桂林漓江景区
+https://gcalic.v.myalicdn.com/gc/gllj01_1/index.m3u8
 #EXTINF:-1 tvg-name="民视旅游" group-title="景区频道",民视旅游
 https://tmxk.pp.ua/litv.php?token=tmxk&id=litv-ftv07
+#EXTINF:-1 tvg-name="泰山主峰" group-title="景区频道",泰山主峰
+https://gcalic.v.myalicdn.com/gc/taishan01_1/index.m3u8
+#EXTINF:-1 tvg-name="泰山十八盘" group-title="景区频道",泰山十八盘
+https://gcalic.v.myalicdn.com/gc/taishan05_1/index.m3u8
+#EXTINF:-1 tvg-name="泰山南天门" group-title="景区频道",泰山南天门
+https://gcalic.v.myalicdn.com/gc/hkts07_1/index.m3u8
+#EXTINF:-1 tvg-name="泰山大观峰" group-title="景区频道",泰山大观峰
+https://gcalic.v.myalicdn.com/gc/taishan03_1/index.m3u8
+#EXTINF:-1 tvg-name="泰山太平岭" group-title="景区频道",泰山太平岭
+https://gcalic.v.myalicdn.com/gc/hkts09_1/index.m3u8
+#EXTINF:-1 tvg-name="泰山望人松" group-title="景区频道",泰山望人松
+https://gcalic.v.myalicdn.com/gc/taishan02_1/index.m3u8
+#EXTINF:-1 tvg-name="泰山玉皇顶" group-title="景区频道",泰山玉皇顶
+https://gcalic.v.myalicdn.com/gc/taishan06_1/index.m3u8
+#EXTINF:-1 tvg-name="泰山白云亭悬崖" group-title="景区频道",泰山白云亭悬崖
+https://gcalic.v.myalicdn.com/gc/hkts02_1/index.m3u8
+#EXTINF:-1 tvg-name="泰山碧霞祠" group-title="景区频道",泰山碧霞祠
+https://gcalic.v.myalicdn.com/gc/hkts03_1/index.m3u8
 #EXTINF:-1 tvg-name="福建旅游" group-title="景区频道" tvg-logo="福建旅游.png",福建旅游
 https://stream1.freetv.fun/fu-jian-lu-you-6.m3u8
+#EXTINF:-1 tvg-name="黄山" group-title="景区频道",黄山
+https://gcalic.v.myalicdn.com/gc/ahhs01_1/index.m3u8
+#EXTINF:-1 tvg-name="黄山卧云峰" group-title="景区频道",黄山卧云峰
+https://gcalic.v.myalicdn.com/gc/hswlf_1/index.m3u8
+#EXTINF:-1 tvg-name="黄山始信新道" group-title="景区频道",黄山始信新道
+https://gcalic.v.myalicdn.com/gc/hsyg_1/index.m3u8
+#EXTINF:-1 tvg-name="黄山排云亭" group-title="景区频道",黄山排云亭
+https://gcalic.v.myalicdn.com/gc/hspyt_1/index.m3u8
+#EXTINF:-1 tvg-name="黄山飞来石" group-title="景区频道",黄山飞来石
+https://gcalic.v.myalicdn.com/gc/hsptgy_1/index.m3u8
 
 # 分类: 少儿台 (14个电视台)
 #EXTINF:-1 tvg-name="CN卡通" group-title="少儿台",CN卡通
@@ -219,8 +254,8 @@ https://stream1.freetv.fun/jia-jia-qia-tong-20.m3u8
 https://stream1.freetv.fun/shan-dong-shao-er-6.m3u8
 #EXTINF:-1 tvg-name="新动漫" group-title="少儿台",新动漫
 https://iptv.catvod.com/live.php?id=%E6%96%B0%E5%8A%A8%E6%BC%AB
-#EXTINF:-1 tvg-name="浙江少儿" group-title="少儿台" tvg-logo="浙江少儿.png",浙江少儿
-https://stream1.freetv.fun/zhe-jiang-shao-er-4.m3u8
+#EXTINF:-1 tvg-name="浙江少儿" group-title="少儿台" tvg-logo="https://live.fanmingming.cn/tv/浙江少儿.png" tvg-quality="高清",浙江少儿
+https://qiniup-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
 #EXTINF:-1 tvg-name="海南少儿" group-title="少儿台",海南少儿
 https://migu.188766.xyz/?migutoken=22566a759e42ae6cc1f8f618d85ecf98&id=hn_sepd&type=sz
 #EXTINF:-1 tvg-name="深圳少儿" group-title="少儿台" tvg-ipv6="true",深圳少儿 [IPv6]
@@ -232,7 +267,7 @@ https://stream1.freetv.fun/ipv6-jin-ying-qia-tong-6.m3u8
 #EXTINF:-1 tvg-name="黑龙江少儿" group-title="少儿台" tvg-logo="黑龙江少儿.png" tvg-ipv6="true",黑龙江少儿 [IPv6]
 https://stream1.freetv.fun/ipv6-hei-long-jiang-shao-er-1.m3u8
 
-# 分类: 综艺台 (12个电视台)
+# 分类: 综艺台 (13个电视台)
 #EXTINF:-1 tvg-name="2021年最火伤感音乐" group-title="综艺台",2021年最火伤感音乐
 https://vdse.bdstatic.com//6d39df48360bdb12f73800397c4a6c02.mp4
 #EXTINF:-1 tvg-name="上虞文化" group-title="综艺台",上虞文化
@@ -245,6 +280,8 @@ http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8zzhed
 https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv039
 #EXTINF:-1 tvg-name="北京文艺" group-title="综艺台" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513145810902661_38.jpg" tvg-ipv6="true",北京文艺 [IPv6]
 http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226440/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EWrJcgMpdGPvZavpf4dmmrQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNhmwDsUZnvQgU5E5wiGA2g%2CEND
+#EXTINF:-1 tvg-name="华视综合娱乐" group-title="综艺台",华视综合娱乐
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV12.m3u8
 #EXTINF:-1 tvg-name="山东综艺" group-title="综艺台",山东综艺
 http://58.57.40.22:9901/tsfile/live/1021_1.m3u8
 #EXTINF:-1 tvg-name="民视综艺" group-title="综艺台",民视综艺
@@ -258,7 +295,7 @@ https://stream1.freetv.fun/shi-jia-zhuang-yu-le-10.m3u8
 #EXTINF:-1 tvg-name="绍兴文化" group-title="综艺台",绍兴文化
 https://stream1.freetv.fun/shao-xing-wen-hua-1.m3u8
 
-# 分类: 港澳台 (60个电视台)
+# 分类: 港澳台 (72个电视台)
 #EXTINF:-1 tvg-name="NBL 香港金牛VS盐南苏科雄狮 现场原声 16:50" group-title="港澳台",NBL 香港金牛VS盐南苏科雄狮 现场原声 16:50
 https://iptv.catvod.com/live.php?id=NBL%20%E9%A6%99%E6%B8%AF%E9%87%91%E7%89%9BVS%E7%9B%90%E5%8D%97%E8%8B%8F%E7%A7%91%E9%9B%84%E7%8B%AE%20%E7%8E%B0%E5%9C%BA%E5%8E%9F%E5%A3%B0%2016%3A50
 #EXTINF:-1 tvg-name="NBL 香港金牛VS盐南苏科雄狮 解说 16:50" group-title="港澳台",NBL 香港金牛VS盐南苏科雄狮 解说 16:50
@@ -273,6 +310,8 @@ http://cdn.163189.xyz/live/tvbp/stream.m3u8
 https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv072
 #EXTINF:-1 tvg-name="TVBS欢乐" group-title="港澳台" tvg-logo="https://live.fanmingming.cn/tv/TVBS欢乐.png",TVBS欢乐
 https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv068
+#EXTINF:-1 tvg-name="TVBS网路新闻" group-title="港澳台",TVBS网路新闻
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV31.m3u8
 #EXTINF:-1 tvg-name="TVB千禧经典" group-title="港澳台",TVB千禧经典
 http://iptv.4666888.xyz/iptv2A.php?id=22
 #EXTINF:-1 tvg-name="TVB娱乐新闻" group-title="港澳台",TVB娱乐新闻
@@ -295,8 +334,12 @@ http://cdn.163189.xyz/live/fct4k/stream.m3u8
 http://r.jdshipin.com/n90gt
 #EXTINF:-1 tvg-name="「中」凤凰传奇 自由飞翔" group-title="港澳台",「中」凤凰传奇 自由飞翔
 http://antiserver.kuwo.cn/anti.s?rid=MUSIC_18747906&response=res&format=mp4&type=convert_url
+#EXTINF:-1 tvg-name="三立INEWS" group-title="港澳台",三立INEWS
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV01.m3u8
+#EXTINF:-1 tvg-name="三立NEWS+" group-title="港澳台",三立NEWS+
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV32.m3u8
 #EXTINF:-1 tvg-name="三立iNEWS" group-title="港澳台",三立iNEWS
-http://nmk.ioapk.com:5050/4gtv-live089/index.m3u8?proxy=true
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV01.m3u8
 #EXTINF:-1 tvg-name="三立台湾" group-title="港澳台",三立台湾
 https://cdn.iptv8k.top/dl/jrys.php?id=269&time=20240926215313&ip=111.229.253.40
 #EXTINF:-1 tvg-name="三立戏剧" group-title="港澳台",三立戏剧
@@ -309,6 +352,8 @@ https://smt.858.qzz.io/Smart.php?id=sanlizhonghe
 http://ali.hlspull.yximgs.com/live/53ac6b9001ec3b6b190794a55e9ef523.flv
 #EXTINF:-1 tvg-name="东亚超级联赛 香港东方VS宇都宫王道 清流播出3 20:05" group-title="港澳台",东亚超级联赛 香港东方VS宇都宫王道 清流播出3 20:05
 https://iptv.catvod.com/live.php?id=%E4%B8%9C%E4%BA%9A%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B%20%E9%A6%99%E6%B8%AF%E4%B8%9C%E6%96%B9VS%E5%AE%87%E9%83%BD%E5%AE%AB%E7%8E%8B%E9%81%93%20%E6%B8%85%E6%B5%81%E6%92%AD%E5%87%BA3%2020%3A05
+#EXTINF:-1 tvg-name="东森幼幼歌曲" group-title="港澳台" tvg-ipv6="true",东森幼幼歌曲 [IPv6]
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV63.m3u8
 #EXTINF:-1 tvg-name="东森戏剧" group-title="港澳台",东森戏剧
 https://smt.858.qzz.io/Smart.php?id=ettvdrama
 #EXTINF:-1 tvg-name="东森新闻" group-title="港澳台" tvg-logo="https://ghp.ci/https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/assets/logo/東森新聞.png",东森新闻
@@ -317,22 +362,34 @@ https://stream1.freetv.fun/dong-sen-xin-wen-1.m3u8
 https://cdn.iptv8k.top/dl/jrys.php?id=231&time=20240926215313&ip=111.229.253.40
 #EXTINF:-1 tvg-name="东森综合" group-title="港澳台" tvg-logo="https://ghp.ci/https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/assets/logo/東森綜合.png",东森综合
 https://cdn.iptv8k.top/dl/jrys.php?id=220&time=20240926215313&ip=111.229.253.40
+#EXTINF:-1 tvg-name="东森財经" group-title="港澳台" tvg-quality="高清",东森財经
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV03.m3u8
 #EXTINF:-1 tvg-name="东森财经新闻" group-title="港澳台",东森财经新闻
-https://www.youtube.com/watch?v=AEBeWMM1atA
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV03.m3u8
+#EXTINF:-1 tvg-name="东森购物2" group-title="港澳台",东森购物2
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV19.m3u8
+#EXTINF:-1 tvg-name="东森购物3" group-title="港澳台",东森购物3
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV18.m3u8
 #EXTINF:-1 tvg-name="东森超视" group-title="港澳台",东森超视
 https://cdn.iptv8k.top/dl/jrys.php?id=217&time=20240926215313&ip=111.229.253.40
 #EXTINF:-1 tvg-name="中天亚洲" group-title="港澳台",中天亚洲
-https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv109
+http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_ztyz.flv
 #EXTINF:-1 tvg-name="中天新闻" group-title="港澳台" tvg-ipv6="true",中天新闻 [IPv6]
 http://122.117.71.103:8540/http/220.130.87.218:8081/hls/78/80/ch063max.m3u8
+#EXTINF:-1 tvg-name="中天新闻「循环直播」" group-title="港澳台",中天新闻「循环直播」
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV49.m3u8
 #EXTINF:-1 tvg-name="中天综合" group-title="港澳台",中天综合
-https://smt.858.qzz.io/Smart.php?id=ctizhonghe
+http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_ztzh.flv
 #EXTINF:-1 tvg-name="凤凰中文" group-title="港澳台",凤凰中文
 https://cdn.163189.xyz/live/fhzw/stream.m3u8
 #EXTINF:-1 tvg-name="凤凰卫视电影台" group-title="港澳台" tvg-logo="https://epg.pw/media/images/channel/2024/06/10/large/20240610235948618467_91.png" tvg-quality="高清",凤凰卫视电影台
 https://stream1.freetv.fun/53d70b135b64e3fd71a90fae76b08e41385683291f0c17f9826fe46c08d10f2c.ctv
 #EXTINF:-1 tvg-name="凤凰卫视美洲" group-title="港澳台" tvg-logo="https://epg.pw/media/img/logo/3_350.jpg",凤凰卫视美洲
 https://stream1.freetv.fun/dd34e07aa60e1d62dbad13c96f5db340a61556c6de9dbad87ddb213498ca36a2.ctv
+#EXTINF:-1 tvg-name="凤凰古城东关门" group-title="港澳台",凤凰古城东关门
+https://gcalic.v.myalicdn.com/gc/fhgcdgm_1/index.m3u8
+#EXTINF:-1 tvg-name="凤凰古城南华山" group-title="港澳台",凤凰古城南华山
+https://gcalic.v.myalicdn.com/gc/fhgcdnhs_1/index.m3u8
 #EXTINF:-1 tvg-name="凤凰资讯" group-title="港澳台",凤凰资讯
 https://cdn3.163189.xyz/live/fhzx/stream.m3u8
 #EXTINF:-1 tvg-name="凤凰香港" group-title="港澳台",凤凰香港
@@ -356,13 +413,13 @@ https://stream1.freetv.fun/hang-zhou-ming-zhu-2.m3u8
 #EXTINF:-1 tvg-name="民视" group-title="港澳台",民视
 https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv155
 #EXTINF:-1 tvg-name="民视台湾" group-title="港澳台",民视台湾
-https://stream1.freetv.fun/min-shi-tai-wan-6.m3u8
+http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_mstw.flv
 #EXTINF:-1 tvg-name="民视影剧" group-title="港澳台",民视影剧
 https://tmxk.pp.ua/litv.php?token=tmxk&id=litv-ftv09
 #EXTINF:-1 tvg-name="民视新闻" group-title="港澳台",民视新闻
-https://stream1.freetv.fun/min-shi-xin-wen-14.m3u8
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV17.m3u8
 #EXTINF:-1 tvg-name="民视第一" group-title="港澳台",民视第一
-https://stream1.freetv.fun/min-shi-di-yi-1.m3u8
+http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_msdy.flv
 #EXTINF:-1 tvg-name="澳视卫星" group-title="港澳台",澳视卫星
 http://php.jdshipin.com/TVOD/iptv.php?id=as
 #EXTINF:-1 tvg-name="澳视澳门" group-title="港澳台",澳视澳门
@@ -375,14 +432,22 @@ http://grandprix2023.asuscomm.com:8891/bysid/96.m3u8
 http://cdn6.163189.xyz/163189/amlh
 #EXTINF:-1 tvg-name="澳门资讯" group-title="港澳台",澳门资讯
 http://grandprix2023.asuscomm.com:8891/bysid/94.m3u8
+#EXTINF:-1 tvg-name="福建漳州醉美沙滩翡翠湾" group-title="港澳台" tvg-logo="https://tb.zbds.top/logo/福建漳州醉美沙滩翡翠湾.png",福建漳州醉美沙滩翡翠湾
+https://gcalic.v.myalicdn.com/gc/fcw03_1/index.m3u8
 #EXTINF:-1 tvg-name="翡翠台" group-title="港澳台" tvg-logo="https://live.fanmingming.cn/tv/翡翠台.png" tvg-ipv6="true",翡翠台 [IPv6]
 http://tv.trexiptv.com:80/play/live.php?mac=00:1A:79:5A:3F:19&extension=ts&stream=153398
 #EXTINF:-1 tvg-name="香港佛陀" group-title="港澳台",香港佛陀
 https://sg1.amtb.de/liveedge/_definst_/smil:livetv.smil/chunklist_w1071093527_b828000.m3u8
+#EXTINF:-1 tvg-name="香港国际财经" group-title="港澳台",香港国际财经
+https://hoytv-live-stream.hoy.tv/ch76/index-fhd.m3u8
 
-# 分类: 体育台 (54个电视台)
+# 分类: 体育台 (56个电视台)
 #EXTINF:-1 tvg-name="CBA 天津先行者VS山东高速 八强齐聚 共逐荣耀！来 看CBA俱乐部杯决赛 19:35" group-title="体育台",CBA 天津先行者VS山东高速 八强齐聚 共逐荣耀！来 看CBA俱乐部杯决赛 19:35
 https://iptv.catvod.com/live.php?id=CBA%20%E5%A4%A9%E6%B4%A5%E5%85%88%E8%A1%8C%E8%80%85VS%E5%B1%B1%E4%B8%9C%E9%AB%98%E9%80%9F%20%E5%85%AB%E5%BC%BA%E9%BD%90%E8%81%9A%20%E5%85%B1%E9%80%90%E8%8D%A3%E8%80%80%EF%BC%81%E6%9D%A5%E5%92%AA%E5%92%95%20%E7%9C%8BCBA%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%E5%86%B3%E8%B5%9B%2019%3A35
+#EXTINF:-1 tvg-name="NBA" group-title="体育台",NBA
+http://170.yfvodcdn.com:19980/live/nbaTV2/hls.m3u8
+#EXTINF:-1 tvg-name="NBA TV" group-title="体育台",NBA TV
+http://170.yfvodcdn.com:19980/live/nbaTV2/hls.m3u8
 #EXTINF:-1 tvg-name="NBA 凯尔特人VS雄鹿 全场回放（英文原声） 04:25" group-title="体育台",NBA 凯尔特人VS雄鹿 全场回放（英文原声） 04:25
 https://iptv.catvod.com/live.php?id=NBA%20%E5%87%AF%E5%B0%94%E7%89%B9%E4%BA%BAVS%E9%9B%84%E9%B9%BF%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2004%3A25
 #EXTINF:-1 tvg-name="NBA 凯尔特人VS雄鹿 全场回放（陈鑫隆） 04:25" group-title="体育台",NBA 凯尔特人VS雄鹿 全场回放（陈鑫隆） 04:25
@@ -490,7 +555,7 @@ https://live.goodiptv.club/api/yqgd.php?id=fyzq
 #EXTINF:-1 tvg-name="魅力足球" group-title="体育台" tvg-ipv6="true",魅力足球 [IPv6]
 https://stream1.freetv.fun/ipv6-mei-li-zu-qiu-4.m3u8
 
-# 分类: 影视台 (16个电视台)
+# 分类: 影视台 (17个电视台)
 #EXTINF:-1 tvg-name="1905国内电影" group-title="影视台",1905国内电影
 http://php.jdshipin.com:8880/1905.php?id=1905dy2
 #EXTINF:-1 tvg-name="1905电影" group-title="影视台",1905电影
@@ -507,6 +572,8 @@ https://stream1.freetv.fun/ipv6-chcying-mi-dian-ying-10.m3u8
 https://stream1.freetv.fun/shang-yu-wen-hua-ying-yuan-1.m3u8
 #EXTINF:-1 tvg-name="家庭影院" group-title="影视台" tvg-ipv6="true",家庭影院 [IPv6]
 https://stream1.freetv.fun/ipv6-jia-ting-ying-yuan-3.m3u8
+#EXTINF:-1 tvg-name="浙江教科影院" group-title="影视台",浙江教科影院
+http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8?zzhed
 #EXTINF:-1 tvg-name="淘电影" group-title="影视台" tvg-ipv6="true",淘电影 [IPv6]
 https://stream1.freetv.fun/ipv6-tao-dian-ying-5.m3u8
 #EXTINF:-1 tvg-name="湖南电影" group-title="影视台" tvg-logo="湖南电影.png",湖南电影
@@ -524,9 +591,97 @@ http://pullpackage.alivecdn.com/live/0QiQJxpYsTrGCAUjnrGAgrcQwiVCocHA6iYBSHFQ6bP
 #EXTINF:-1 tvg-name="龙华电影" group-title="影视台",龙华电影
 https://cdn8.163189.xyz/live/lhdy/stream.m3u8
 
-# 分类: 其他台 (722个电视台)
+# 分类: 其他台 (976个电视台)
+#EXTINF:-1 tvg-name="0024" group-title="其他台" tvg-quality="标清" tvg-whitelist="true",0024 [白名单]
+1/202602/031500/1770132415-1-1747819299.hls.ts?zduration=10&ts_min=1&prog_time=20260203152655&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2384720260203152807734469&ispcode=67&ztecid=3221226895
+#EXTINF:-1 tvg-name="10005548" group-title="其他台" tvg-whitelist="true",10005548 [白名单]
+1/202602/031500/1770132572-1-1747819817.hls.ts?zduration=10&ts_min=1&prog_time=20260203152932&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2356720260203153053670891&ispcode=67&ztecid=3221226468
+#EXTINF:-1 tvg-name="10006864" group-title="其他台" tvg-whitelist="true",10006864 [白名单]
+1/202602/031500/1770132359-1-1747819799.hls.ts?zduration=10&ts_min=1&prog_time=20260203152559&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2376620260203152730699773&ispcode=67&ztecid=3221226471
+#EXTINF:-1 tvg-name="10008180" group-title="其他台" tvg-whitelist="true",10008180 [白名单]
+1/202602/031500/1770132379-1-1747819801.hls.ts?zduration=10&ts_min=1&prog_time=20260203152619&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2376620260203152730699773&ispcode=67&ztecid=3221226471
+#EXTINF:-1 tvg-name="10009496" group-title="其他台" tvg-whitelist="true",10009496 [白名单]
+1/202602/031500/1770132553-1-1747819815.hls.ts?zduration=10&ts_min=1&prog_time=20260203152913&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2356720260203153053670891&ispcode=67&ztecid=3221226468
+#EXTINF:-1 tvg-name="10012128" group-title="其他台" tvg-whitelist="true",10012128 [白名单]
+1/202602/031500/1770132582-1-1747819818.hls.ts?zduration=10&ts_min=1&prog_time=20260203152942&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2356720260203153053670891&ispcode=67&ztecid=3221226468
+#EXTINF:-1 tvg-name="10013444" group-title="其他台" tvg-whitelist="true",10013444 [白名单]
+1/202602/031500/1770132369-1-1747819800.hls.ts?zduration=10&ts_min=1&prog_time=20260203152609&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2376620260203152730699773&ispcode=67&ztecid=3221226471
+#EXTINF:-1 tvg-name="10014760" group-title="其他台" tvg-whitelist="true",10014760 [白名单]
+1/202602/031500/1770132339-1-1747819797.hls.ts?zduration=10&ts_min=1&prog_time=20260203152539&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2376620260203152730699773&ispcode=67&ztecid=3221226471
+#EXTINF:-1 tvg-name="10016076" group-title="其他台" tvg-whitelist="true",10016076 [白名单]
+1/202602/031500/1770132543-1-1747819815.hls.ts?zduration=10&ts_min=1&prog_time=20260203152903&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2357620260203153053671765&ispcode=67&ztecid=3221226485
+#EXTINF:-1 tvg-name="10017392" group-title="其他台" tvg-whitelist="true",10017392 [白名单]
+1/202602/031500/1770132389-1-1747819802.hls.ts?zduration=10&ts_min=1&prog_time=20260203152629&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2376620260203152730699773&ispcode=67&ztecid=3221226471
+#EXTINF:-1 tvg-name="10018708" group-title="其他台" tvg-whitelist="true",10018708 [白名单]
+1/202602/031500/1770132349-1-1747819798.hls.ts?zduration=10&ts_min=1&prog_time=20260203152549&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2376620260203152730699773&ispcode=67&ztecid=3221226471
+#EXTINF:-1 tvg-name="10291872" group-title="其他台" tvg-whitelist="true",10291872 [白名单]
+1/202602/031500/1770132353-1-1747819286.hls.ts?zduration=10&ts_min=1&prog_time=20260203152553&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2356720260203152742670886&ispcode=67&ztecid=3221226349
+#EXTINF:-1 tvg-name="10321200" group-title="其他台" tvg-whitelist="true",10321200 [白名单]
+1/202602/031500/1770132347-1-1747819285.hls.ts?zduration=10&ts_min=1&prog_time=20260203152547&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2384720260203152658734467&ispcode=67&ztecid=3221226371
+#EXTINF:-1 tvg-name="10323644" group-title="其他台" tvg-whitelist="true",10323644 [白名单]
+1/202602/031500/1770132445-1-1747819296.hls.ts?zduration=10&ts_min=1&prog_time=20260203152725&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2359120260203152840677193&ispcode=67&ztecid=3221226887
+#EXTINF:-1 tvg-name="10334172" group-title="其他台" tvg-whitelist="true",10334172 [白名单]
+1/202602/031500/1770132307-1-1747819281.hls.ts?zduration=10&ts_min=1&prog_time=20260203152507&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2384720260203152658734467&ispcode=67&ztecid=3221226371
+#EXTINF:-1 tvg-name="10362372" group-title="其他台" tvg-whitelist="true",10362372 [白名单]
+1/202602/031500/1770132425-1-1747819294.hls.ts?zduration=10&ts_min=1&prog_time=20260203152705&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2359120260203152840677193&ispcode=67&ztecid=3221226887
+#EXTINF:-1 tvg-name="10363124" group-title="其他台" tvg-whitelist="true",10363124 [白名单]
+1/202602/031500/1770132297-1-1747819280.hls.ts?zduration=10&ts_min=1&prog_time=20260203152457&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2384720260203152658734467&ispcode=67&ztecid=3221226371
+#EXTINF:-1 tvg-name="10385496" group-title="其他台" tvg-whitelist="true",10385496 [白名单]
+1/202602/031500/1770132455-1-1747819297.hls.ts?zduration=10&ts_min=1&prog_time=20260203152735&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2359120260203152840677193&ispcode=67&ztecid=3221226887
+#EXTINF:-1 tvg-name="10393956" group-title="其他台" tvg-whitelist="true",10393956 [白名单]
+1/202602/031500/1770132317-1-1747819282.hls.ts?zduration=10&ts_min=1&prog_time=20260203152517&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2384720260203152658734467&ispcode=67&ztecid=3221226371
+#EXTINF:-1 tvg-name="10399408" group-title="其他台" tvg-whitelist="true",10399408 [白名单]
+1/202602/031500/1770132327-1-1747819283.hls.ts?zduration=10&ts_min=1&prog_time=20260203152527&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2384720260203152658734467&ispcode=67&ztecid=3221226371
+#EXTINF:-1 tvg-name="10400348" group-title="其他台" tvg-whitelist="true",10400348 [白名单]
+1/202602/031500/1770132363-1-1747819287.hls.ts?zduration=10&ts_min=1&prog_time=20260203152603&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2356720260203152742670886&ispcode=67&ztecid=3221226349
+#EXTINF:-1 tvg-name="10400724" group-title="其他台" tvg-whitelist="true",10400724 [白名单]
+1/202602/031500/1770132383-1-1747819289.hls.ts?zduration=10&ts_min=1&prog_time=20260203152623&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2356720260203152742670886&ispcode=67&ztecid=3221226349
+#EXTINF:-1 tvg-name="10400912" group-title="其他台" tvg-whitelist="true",10400912 [白名单]
+1/202602/031500/1770132465-1-1747819298.hls.ts?zduration=10&ts_min=1&prog_time=20260203152745&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2359120260203152840677193&ispcode=67&ztecid=3221226887
+#EXTINF:-1 tvg-name="10401100" group-title="其他台" tvg-whitelist="true",10401100 [白名单]
+1/202602/031500/1770132393-1-1747819290.hls.ts?zduration=10&ts_min=1&prog_time=20260203152633&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2356720260203152742670886&ispcode=67&ztecid=3221226349
+#EXTINF:-1 tvg-name="10439076" group-title="其他台" tvg-whitelist="true",10439076 [白名单]
+1/202602/031500/1770132415-1-1747819293.hls.ts?zduration=10&ts_min=1&prog_time=20260203152655&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2359120260203152840677193&ispcode=67&ztecid=3221226887
+#EXTINF:-1 tvg-name="10479120" group-title="其他台" tvg-whitelist="true",10479120 [白名单]
+1/202602/031500/1770132337-1-1747819284.hls.ts?zduration=10&ts_min=1&prog_time=20260203152537&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2384720260203152658734467&ispcode=67&ztecid=3221226371
+#EXTINF:-1 tvg-name="10492844" group-title="其他台" tvg-whitelist="true",10492844 [白名单]
+1/202602/031500/1770132435-1-1747819295.hls.ts?zduration=10&ts_min=1&prog_time=20260203152715&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2359120260203152840677193&ispcode=67&ztecid=3221226887
+#EXTINF:-1 tvg-name="10508260" group-title="其他台" tvg-whitelist="true",10508260 [白名单]
+1/202602/031500/1770132343-1-1747819285.hls.ts?zduration=10&ts_min=1&prog_time=20260203152543&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2356720260203152742670886&ispcode=67&ztecid=3221226349
+#EXTINF:-1 tvg-name="10982020" group-title="其他台" tvg-whitelist="true",10982020 [白名单]
+1/202602/031500/1770132380-1-1747819791.hls.ts?zduration=10&ts_min=1&prog_time=20260203152620&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2355020260203152813680158&ispcode=67&ztecid=3221226472
+#EXTINF:-1 tvg-name="10984652" group-title="其他台" tvg-whitelist="true",10984652 [白名单]
+1/202602/031500/1770132400-1-1747819799.hls.ts?zduration=10&ts_min=1&prog_time=20260203152640&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2352420260203152807673226&ispcode=67&ztecid=3221226502
+#EXTINF:-1 tvg-name="10989916" group-title="其他台" tvg-whitelist="true",10989916 [白名单]
+1/202602/031500/1770132360-1-1747819795.hls.ts?zduration=10&ts_min=1&prog_time=20260203152600&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2352420260203152807673226&ispcode=67&ztecid=3221226502
+#EXTINF:-1 tvg-name="10991232" group-title="其他台" tvg-whitelist="true",10991232 [白名单]
+1/202602/031500/1770132370-1-1747819796.hls.ts?zduration=10&ts_min=1&prog_time=20260203152610&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2352420260203152807673226&ispcode=67&ztecid=3221226502
+#EXTINF:-1 tvg-name="10992548" group-title="其他台" tvg-whitelist="true",10992548 [白名单]
+1/202602/031500/1770132573-1-1747819815.hls.ts?zduration=10&ts_min=1&prog_time=20260203152933&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2358520260203153058705313&ispcode=67&ztecid=3221226509
+#EXTINF:-1 tvg-name="10993864" group-title="其他台" tvg-whitelist="true",10993864 [白名单]
+1/202602/031500/1770132411-1-1747819794.hls.ts?zduration=10&ts_min=1&prog_time=20260203152651&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2355020260203152813680158&ispcode=67&ztecid=3221226472
+#EXTINF:-1 tvg-name="10995180" group-title="其他台" tvg-whitelist="true",10995180 [白名单]
+1/202602/031500/1770132421-1-1747819795.hls.ts?zduration=10&ts_min=1&prog_time=20260203152701&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2355020260203152813680158&ispcode=67&ztecid=3221226472
+#EXTINF:-1 tvg-name="10999128" group-title="其他台" tvg-whitelist="true",10999128 [白名单]
+1/202602/031500/1770132553-1-1747819813.hls.ts?zduration=10&ts_min=1&prog_time=20260203152913&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2358520260203153058705313&ispcode=67&ztecid=3221226509
 #EXTINF:-1 tvg-name="10首车载" group-title="其他台",10首车载
 https://vd3.bdstatic.com/mda-nb6afsyti2t91p54/sc/cae_h264_delogo/1644221195521496576/mda-nb6afsyti2t91p54.mp4
+#EXTINF:-1 tvg-name="11000444" group-title="其他台" tvg-whitelist="true",11000444 [白名单]
+1/202602/031500/1770132410-1-1747819800.hls.ts?zduration=10&ts_min=1&prog_time=20260203152650&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2352420260203152807673226&ispcode=67&ztecid=3221226502
+#EXTINF:-1 tvg-name="11001760" group-title="其他台" tvg-whitelist="true",11001760 [白名单]
+1/202602/031500/1770132390-1-1747819792.hls.ts?zduration=10&ts_min=1&prog_time=20260203152630&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2355020260203152813680158&ispcode=67&ztecid=3221226472
+#EXTINF:-1 tvg-name="11003076" group-title="其他台" tvg-whitelist="true",11003076 [白名单]
+1/202602/031500/1770132401-1-1747819793.hls.ts?zduration=10&ts_min=1&prog_time=20260203152641&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2355020260203152813680158&ispcode=67&ztecid=3221226472
+#EXTINF:-1 tvg-name="11004392" group-title="其他台" tvg-whitelist="true",11004392 [白名单]
+1/202602/031500/1770132563-1-1747819814.hls.ts?zduration=10&ts_min=1&prog_time=20260203152923&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2358520260203153058705313&ispcode=67&ztecid=3221226509
+#EXTINF:-1 tvg-name="11007024" group-title="其他台" tvg-whitelist="true",11007024 [白名单]
+1/202602/031500/1770132390-1-1747819798.hls.ts?zduration=10&ts_min=1&prog_time=20260203152630&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2352420260203152807673226&ispcode=67&ztecid=3221226502
+#EXTINF:-1 tvg-name="11008340" group-title="其他台" tvg-whitelist="true",11008340 [白名单]
+1/202602/031500/1770132431-1-1747819796.hls.ts?zduration=10&ts_min=1&prog_time=20260203152711&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2355020260203152813680158&ispcode=67&ztecid=3221226472
+#EXTINF:-1 tvg-name="11009656" group-title="其他台" tvg-whitelist="true",11009656 [白名单]
+1/202602/031500/1770132380-1-1747819797.hls.ts?zduration=10&ts_min=1&prog_time=20260203152620&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2352420260203152807673226&ispcode=67&ztecid=3221226502
+#EXTINF:-1 tvg-name="123 GO LIVE" group-title="其他台",123 GO LIVE
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV58.m3u8
 #EXTINF:-1 tvg-name="2018精选十首《动感DJ舞曲》串烧大碟" group-title="其他台",2018精选十首《动感DJ舞曲》串烧大碟
 https://vd3.bdstatic.com/mda-ii00rzrptt9e56yf/sc/mda-ii00rzrptt9e56yf.mp4
 #EXTINF:-1 tvg-name="2019火爆DJ串烧第一期" group-title="其他台",2019火爆DJ串烧第一期
@@ -537,18 +692,200 @@ https://vd3.bdstatic.com/mda-kb2bqk7bw0ntjpfn/sc/mda-kb2bqk7bw0ntjpfn.mp4
 https://vdse.bdstatic.com//80e0473f97055cec1c9c76c1c7e5498a.mp4
 #EXTINF:-1 tvg-name="2021热门伤感DJ" group-title="其他台",2021热门伤感DJ
 https://vdse.bdstatic.com//06b4e9b185b843e694e4d20e9b0a0aac.mp4
+#EXTINF:-1 tvg-name="2045252" group-title="其他台" tvg-whitelist="true",2045252 [白名单]
+1/202602/031500/1770132437-1-1747819300.hls.ts?zduration=10&ts_min=1&prog_time=20260203152717&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2380320260203152815721870&ispcode=67&ztecid=3221226338
+#EXTINF:-1 tvg-name="2098456" group-title="其他台" tvg-whitelist="true",2098456 [白名单]
+1/202602/031500/1770132427-1-1747819299.hls.ts?zduration=10&ts_min=1&prog_time=20260203152707&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2380320260203152815721870&ispcode=67&ztecid=3221226338
+#EXTINF:-1 tvg-name="2101652" group-title="其他台" tvg-whitelist="true",2101652 [白名单]
+1/202602/031500/1770132416-1-1747819298.hls.ts?zduration=10&ts_min=1&prog_time=20260203152656&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2380320260203152815721870&ispcode=67&ztecid=3221226338
+#EXTINF:-1 tvg-name="2104284" group-title="其他台" tvg-whitelist="true",2104284 [白名单]
+1/202602/031500/1770132396-1-1747819296.hls.ts?zduration=10&ts_min=1&prog_time=20260203152636&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2380320260203152815721870&ispcode=67&ztecid=3221226338
+#EXTINF:-1 tvg-name="2110864" group-title="其他台" tvg-whitelist="true",2110864 [白名单]
+1/202602/031500/1770132548-1-1747819318.hls.ts?zduration=10&ts_min=1&prog_time=20260203152908&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2349920260203153058690314&ispcode=67&ztecid=3221226920
+#EXTINF:-1 tvg-name="2115188" group-title="其他台" tvg-whitelist="true",2115188 [白名单]
+1/202602/031500/1770132568-1-1747819320.hls.ts?zduration=10&ts_min=1&prog_time=20260203152928&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2349920260203153058690314&ispcode=67&ztecid=3221226920
+#EXTINF:-1 tvg-name="2121580" group-title="其他台" tvg-whitelist="true",2121580 [白名单]
+1/202602/031500/1770132407-1-1747819297.hls.ts?zduration=10&ts_min=1&prog_time=20260203152647&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2380320260203152815721870&ispcode=67&ztecid=3221226338
+#EXTINF:-1 tvg-name="2126092" group-title="其他台" tvg-whitelist="true",2126092 [白名单]
+1/202602/031500/1770132588-1-1747819322.hls.ts?zduration=10&ts_min=1&prog_time=20260203152948&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2349920260203153058690314&ispcode=67&ztecid=3221226920
+#EXTINF:-1 tvg-name="2134928" group-title="其他台" tvg-whitelist="true",2134928 [白名单]
+1/202602/031500/1770132578-1-1747819321.hls.ts?zduration=10&ts_min=1&prog_time=20260203152938&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2349920260203153058690314&ispcode=67&ztecid=3221226920
+#EXTINF:-1 tvg-name="2169520" group-title="其他台" tvg-whitelist="true",2169520 [白名单]
+1/202602/031500/1770132558-1-1747819319.hls.ts?zduration=10&ts_min=1&prog_time=20260203152918&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2349920260203153058690314&ispcode=67&ztecid=3221226920
+#EXTINF:-1 tvg-name="2173656" group-title="其他台" tvg-whitelist="true",2173656 [白名单]
+1/202602/031500/1770132598-1-1747819323.hls.ts?zduration=10&ts_min=1&prog_time=20260203152958&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2349920260203153058690314&ispcode=67&ztecid=3221226920
+#EXTINF:-1 tvg-name="2280" group-title="其他台" tvg-quality="标清" tvg-whitelist="true",2280 [白名单]
+1/202602/031500/1770132392-1-1747819295.hls.ts?zduration=10&ts_min=1&prog_time=20260203152632&accountinfo=~~V2.0~cYPi33WFyhvd6SjmqUKhJg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2353220260203152814675940&ispcode=67&ztecid=3221226900
 #EXTINF:-1 tvg-name="24小时城市联赛轮播" group-title="其他台",24小时城市联赛轮播
 https://migu.188766.xyz/?migutoken=b8db8192d667a74854573583870ece4f&id=24%E5%B0%8F%E6%97%B6%E5%9F%8E%E5%B8%82%E8%81%94%E8%B5%9B%E8%BD%AE%E6%92%AD%E5%8F%B0&type=yy
+#EXTINF:-1 tvg-name="3421600" group-title="其他台" tvg-quality="4K" tvg-whitelist="true",3421600 [白名单]
+1/202602/031500/1770132381-1-1747819710.hls.ts?zduration=10&ts_min=1&prog_time=20260203152621&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2349920260203152807690312&ispcode=67&ztecid=3221226529
+#EXTINF:-1 tvg-name="3422916" group-title="其他台" tvg-whitelist="true",3422916 [白名单]
+1/202602/031500/1770132462-1-1747819721.hls.ts?zduration=10&ts_min=1&prog_time=20260203152742&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2351220260203152845705826&ispcode=67&ztecid=3221226546
+#EXTINF:-1 tvg-name="3424232" group-title="其他台" tvg-whitelist="true",3424232 [白名单]
+1/202602/031500/1770132391-1-1747819711.hls.ts?zduration=10&ts_min=1&prog_time=20260203152631&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2349920260203152807690312&ispcode=67&ztecid=3221226529
+#EXTINF:-1 tvg-name="3425548" group-title="其他台" tvg-whitelist="true",3425548 [白名单]
+1/202602/031500/1770132411-1-1747819713.hls.ts?zduration=10&ts_min=1&prog_time=20260203152651&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2349920260203152807690312&ispcode=67&ztecid=3221226529
+#EXTINF:-1 tvg-name="5214556" group-title="其他台" tvg-whitelist="true",5214556 [白名单]
+1/202602/031500/1770132589-1-1747819310.hls.ts?zduration=10&ts_min=1&prog_time=20260203152949&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359620260203153102671010&ispcode=67&ztecid=3221226230
+#EXTINF:-1 tvg-name="5215308" group-title="其他台" tvg-whitelist="true",5215308 [白名单]
+1/202602/031500/1770132564-1-1747819295.hls.ts?zduration=10&ts_min=1&prog_time=20260203152924&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2384720260203153047734471&ispcode=67&ztecid=3221226242
+#EXTINF:-1 tvg-name="5217752" group-title="其他台" tvg-whitelist="true",5217752 [白名单]
+1/202602/031500/1770132380-1-1747819295.hls.ts?zduration=10&ts_min=1&prog_time=20260203152620&accountinfo=~~V2.0~jW26v5VaHGy1jQuIA-4EbA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2354820260203152753660948&ispcode=67&ztecid=3221226957
+#EXTINF:-1 tvg-name="5221324" group-title="其他台" tvg-whitelist="true",5221324 [白名单]
+1/202602/031500/1770132572-1-1747819313.hls.ts?zduration=10&ts_min=1&prog_time=20260203152932&accountinfo=~~V2.0~BQiz3wrGrpG0CUSRIJ-7Jg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2352020260203153051700210&ispcode=67&ztecid=3221226995
+#EXTINF:-1 tvg-name="5222076" group-title="其他台" tvg-whitelist="true",5222076 [白名单]
+1/202602/031500/1770132390-1-1747819293.hls.ts?zduration=10&ts_min=1&prog_time=20260203152630&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359320260203152753719312&ispcode=67&ztecid=3221226246
+#EXTINF:-1 tvg-name="5227528" group-title="其他台" tvg-whitelist="true",5227528 [白名单]
+1/202602/031500/1770132546-1-1747819295.hls.ts?zduration=10&ts_min=1&prog_time=20260203152906&accountinfo=~~V2.0~rN_hoRDwApMKnJqiNHvn9w~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2356720260203153051670890&ispcode=67&ztecid=3221227018
+#EXTINF:-1 tvg-name="5236740" group-title="其他台" tvg-whitelist="true",5236740 [白名单]
+1/202602/031500/1770132454-1-1747819299.hls.ts?zduration=10&ts_min=1&prog_time=20260203152734&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2352420260203152857673227&ispcode=67&ztecid=3221226234
+#EXTINF:-1 tvg-name="5238808" group-title="其他台" tvg-whitelist="true",5238808 [白名单]
+1/202602/031500/1770132533-1-1747819292.hls.ts?zduration=10&ts_min=1&prog_time=20260203152853&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2384720260203153047734471&ispcode=67&ztecid=3221226242
+#EXTINF:-1 tvg-name="5240312" group-title="其他台" tvg-whitelist="true",5240312 [白名单]
+1/202602/031500/1770132411-1-1747819295.hls.ts?zduration=10&ts_min=1&prog_time=20260203152651&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359320260203152753719312&ispcode=67&ztecid=3221226246
+#EXTINF:-1 tvg-name="5241064" group-title="其他台" tvg-whitelist="true",5241064 [白名单]
+1/202602/031500/1770132564-1-1747819317.hls.ts?zduration=10&ts_min=1&prog_time=20260203152924&accountinfo=~~V2.0~W5-3AVdwD5KlUpuA4mz7Cg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2352420260203153051673229&ispcode=67&ztecid=3221227015
+#EXTINF:-1 tvg-name="5247456" group-title="其他台" tvg-whitelist="true",5247456 [白名单]
+1/202602/031530/1770132619-1-1747819313.hls.ts?zduration=10&ts_min=1&prog_time=20260203153019&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359620260203153102671010&ispcode=67&ztecid=3221226230
+#EXTINF:-1 tvg-name="5260240" group-title="其他台" tvg-whitelist="true",5260240 [白名单]
+1/202602/031500/1770132410-1-1747819298.hls.ts?zduration=10&ts_min=1&prog_time=20260203152650&accountinfo=~~V2.0~jW26v5VaHGy1jQuIA-4EbA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2354820260203152753660948&ispcode=67&ztecid=3221226957
+#EXTINF:-1 tvg-name="5263060" group-title="其他台" tvg-whitelist="true",5263060 [白名单]
+1/202602/031500/1770132369-1-1747819291.hls.ts?zduration=10&ts_min=1&prog_time=20260203152609&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359320260203152753719312&ispcode=67&ztecid=3221226246
+#EXTINF:-1 tvg-name="5265880" group-title="其他台" tvg-whitelist="true",5265880 [白名单]
+1/202602/031500/1770132552-1-1747819311.hls.ts?zduration=10&ts_min=1&prog_time=20260203152912&accountinfo=~~V2.0~BQiz3wrGrpG0CUSRIJ-7Jg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2352020260203153051700210&ispcode=67&ztecid=3221226995
+#EXTINF:-1 tvg-name="5269452" group-title="其他台" tvg-whitelist="true",5269452 [白名单]
+1/202602/031500/1770132544-1-1747819315.hls.ts?zduration=10&ts_min=1&prog_time=20260203152904&accountinfo=~~V2.0~W5-3AVdwD5KlUpuA4mz7Cg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2352420260203153051673229&ispcode=67&ztecid=3221227015
+#EXTINF:-1 tvg-name="5283740" group-title="其他台" tvg-whitelist="true",5283740 [白名单]
+1/202602/031500/1770132457-1-1747819293.hls.ts?zduration=10&ts_min=1&prog_time=20260203152737&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359220260203152859712952&ispcode=67&ztecid=3221226316
+#EXTINF:-1 tvg-name="5287688" group-title="其他台" tvg-whitelist="true",5287688 [白名单]
+1/202602/031500/1770132327-1-1747819177.hls.ts?zduration=10&ts_min=1&prog_time=20260203152527&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2355920260203152659731889&ispcode=67&ztecid=3221226238
+#EXTINF:-1 tvg-name="5288064" group-title="其他台" tvg-whitelist="true",5288064 [白名单]
+1/202602/031500/1770132347-1-1747819179.hls.ts?zduration=10&ts_min=1&prog_time=20260203152547&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2355920260203152659731889&ispcode=67&ztecid=3221226238
+#EXTINF:-1 tvg-name="5288252" group-title="其他台" tvg-whitelist="true",5288252 [白名单]
+1/202602/031500/1770132437-1-1747819291.hls.ts?zduration=10&ts_min=1&prog_time=20260203152717&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359220260203152859712952&ispcode=67&ztecid=3221226316
+#EXTINF:-1 tvg-name="5288628" group-title="其他台" tvg-whitelist="true",5288628 [白名单]
+1/202602/031500/1770132477-1-1747819295.hls.ts?zduration=10&ts_min=1&prog_time=20260203152757&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359220260203152859712952&ispcode=67&ztecid=3221226316
+#EXTINF:-1 tvg-name="5289192" group-title="其他台" tvg-whitelist="true",5289192 [白名单]
+1/202602/031500/1770132467-1-1747819294.hls.ts?zduration=10&ts_min=1&prog_time=20260203152747&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359220260203152859712952&ispcode=67&ztecid=3221226316
+#EXTINF:-1 tvg-name="5289380" group-title="其他台" tvg-whitelist="true",5289380 [白名单]
+1/202602/031500/1770132566-1-1747819297.hls.ts?zduration=10&ts_min=1&prog_time=20260203152926&accountinfo=~~V2.0~rN_hoRDwApMKnJqiNHvn9w~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2356720260203153051670890&ispcode=67&ztecid=3221227018
+#EXTINF:-1 tvg-name="5289756" group-title="其他台" tvg-whitelist="true",5289756 [白名单]
+1/202602/031500/1770132317-1-1747819176.hls.ts?zduration=10&ts_min=1&prog_time=20260203152517&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2355920260203152659731889&ispcode=67&ztecid=3221226238
+#EXTINF:-1 tvg-name="5290132" group-title="其他台" tvg-whitelist="true",5290132 [白名单]
+1/202602/031500/1770132576-1-1747819298.hls.ts?zduration=10&ts_min=1&prog_time=20260203152936&accountinfo=~~V2.0~rN_hoRDwApMKnJqiNHvn9w~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2356720260203153051670890&ispcode=67&ztecid=3221227018
+#EXTINF:-1 tvg-name="5290320" group-title="其他台" tvg-whitelist="true",5290320 [白名单]
+1/202602/031500/1770132556-1-1747819296.hls.ts?zduration=10&ts_min=1&prog_time=20260203152916&accountinfo=~~V2.0~rN_hoRDwApMKnJqiNHvn9w~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2356720260203153051670890&ispcode=67&ztecid=3221227018
+#EXTINF:-1 tvg-name="5290508" group-title="其他台" tvg-whitelist="true",5290508 [白名单]
+1/202602/031500/1770132390-1-1747819296.hls.ts?zduration=10&ts_min=1&prog_time=20260203152630&accountinfo=~~V2.0~jW26v5VaHGy1jQuIA-4EbA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2354820260203152753660948&ispcode=67&ztecid=3221226957
+#EXTINF:-1 tvg-name="5290696" group-title="其他台" tvg-whitelist="true",5290696 [白名单]
+1/202602/031500/1770132357-1-1747819180.hls.ts?zduration=10&ts_min=1&prog_time=20260203152557&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2355920260203152659731889&ispcode=67&ztecid=3221226238
+#EXTINF:-1 tvg-name="5291072" group-title="其他台" tvg-whitelist="true",5291072 [白名单]
+1/202602/031500/1770132306-1-1747819175.hls.ts?zduration=10&ts_min=1&prog_time=20260203152506&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2355920260203152659731889&ispcode=67&ztecid=3221226238
+#EXTINF:-1 tvg-name="5291448" group-title="其他台" tvg-whitelist="true",5291448 [白名单]
+1/202602/031500/1770132447-1-1747819292.hls.ts?zduration=10&ts_min=1&prog_time=20260203152727&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359220260203152859712952&ispcode=67&ztecid=3221226316
+#EXTINF:-1 tvg-name="5294268" group-title="其他台" tvg-whitelist="true",5294268 [白名单]
+1/202602/031500/1770132586-1-1747819299.hls.ts?zduration=10&ts_min=1&prog_time=20260203152946&accountinfo=~~V2.0~rN_hoRDwApMKnJqiNHvn9w~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2356720260203153051670890&ispcode=67&ztecid=3221227018
+#EXTINF:-1 tvg-name="5299" group-title="其他台" tvg-quality="标清" tvg-whitelist="true",5299 [白名单]
+1/202602/031500/1770132444-1-1747819298.hls.ts?zduration=10&ts_min=1&prog_time=20260203152724&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2352420260203152857673227&ispcode=67&ztecid=3221226234
+#EXTINF:-1 tvg-name="5305172" group-title="其他台" tvg-whitelist="true",5305172 [白名单]
+1/202602/031500/1770132424-1-1747819296.hls.ts?zduration=10&ts_min=1&prog_time=20260203152704&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2352420260203152857673227&ispcode=67&ztecid=3221226234
+#EXTINF:-1 tvg-name="5305736" group-title="其他台" tvg-whitelist="true",5305736 [白名单]
+1/202602/031500/1770132594-1-1747819320.hls.ts?zduration=10&ts_min=1&prog_time=20260203152954&accountinfo=~~V2.0~W5-3AVdwD5KlUpuA4mz7Cg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2352420260203153051673229&ispcode=67&ztecid=3221227015
+#EXTINF:-1 tvg-name="5310060" group-title="其他台" tvg-whitelist="true",5310060 [白名单]
+1/202602/031500/1770132569-1-1747819308.hls.ts?zduration=10&ts_min=1&prog_time=20260203152929&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359620260203153102671010&ispcode=67&ztecid=3221226230
+#EXTINF:-1 tvg-name="5312128" group-title="其他台" tvg-whitelist="true",5312128 [白名单]
+1/202602/031500/1770132370-1-1747819294.hls.ts?zduration=10&ts_min=1&prog_time=20260203152610&accountinfo=~~V2.0~jW26v5VaHGy1jQuIA-4EbA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2354820260203152753660948&ispcode=67&ztecid=3221226957
+#EXTINF:-1 tvg-name="5312316" group-title="其他台" tvg-whitelist="true",5312316 [白名单]
+1/202602/031500/1770132582-1-1747819314.hls.ts?zduration=10&ts_min=1&prog_time=20260203152942&accountinfo=~~V2.0~BQiz3wrGrpG0CUSRIJ-7Jg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2352020260203153051700210&ispcode=67&ztecid=3221226995
+#EXTINF:-1 tvg-name="5313068" group-title="其他台" tvg-whitelist="true",5313068 [白名单]
+1/202602/031500/1770132542-1-1747819310.hls.ts?zduration=10&ts_min=1&prog_time=20260203152902&accountinfo=~~V2.0~BQiz3wrGrpG0CUSRIJ-7Jg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2352020260203153051700210&ispcode=67&ztecid=3221226995
+#EXTINF:-1 tvg-name="5316640" group-title="其他台" tvg-whitelist="true",5316640 [白名单]
+1/202602/031500/1770132400-1-1747819297.hls.ts?zduration=10&ts_min=1&prog_time=20260203152640&accountinfo=~~V2.0~jW26v5VaHGy1jQuIA-4EbA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2354820260203152753660948&ispcode=67&ztecid=3221226957
+#EXTINF:-1 tvg-name="5318332" group-title="其他台" tvg-whitelist="true",5318332 [白名单]
+1/202602/031500/1770132544-1-1747819293.hls.ts?zduration=10&ts_min=1&prog_time=20260203152904&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2384720260203153047734471&ispcode=67&ztecid=3221226242
+#EXTINF:-1 tvg-name="5330176" group-title="其他台" tvg-whitelist="true",5330176 [白名单]
+1/202602/031500/1770132359-1-1747819290.hls.ts?zduration=10&ts_min=1&prog_time=20260203152559&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359320260203152753719312&ispcode=67&ztecid=3221226246
+#EXTINF:-1 tvg-name="5334688" group-title="其他台" tvg-whitelist="true",5334688 [白名单]
+1/202602/031500/1770132584-1-1747819319.hls.ts?zduration=10&ts_min=1&prog_time=20260203152944&accountinfo=~~V2.0~W5-3AVdwD5KlUpuA4mz7Cg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2352420260203153051673229&ispcode=67&ztecid=3221227015
+#EXTINF:-1 tvg-name="5336944" group-title="其他台" tvg-whitelist="true",5336944 [白名单]
+1/202602/031500/1770132574-1-1747819296.hls.ts?zduration=10&ts_min=1&prog_time=20260203152934&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2384720260203153047734471&ispcode=67&ztecid=3221226242
+#EXTINF:-1 tvg-name="5337508" group-title="其他台" tvg-whitelist="true",5337508 [白名单]
+1/202602/031500/1770132554-1-1747819316.hls.ts?zduration=10&ts_min=1&prog_time=20260203152914&accountinfo=~~V2.0~W5-3AVdwD5KlUpuA4mz7Cg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2352420260203153051673229&ispcode=67&ztecid=3221227015
+#EXTINF:-1 tvg-name="5342396" group-title="其他台" tvg-whitelist="true",5342396 [白名单]
+1/202602/031500/1770132487-1-1747819296.hls.ts?zduration=10&ts_min=1&prog_time=20260203152807&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359220260203152859712952&ispcode=67&ztecid=3221226316
+#EXTINF:-1 tvg-name="5352736" group-title="其他台" tvg-whitelist="true",5352736 [白名单]
+1/202602/031500/1770132464-1-1747819300.hls.ts?zduration=10&ts_min=1&prog_time=20260203152744&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2352420260203152857673227&ispcode=67&ztecid=3221226234
+#EXTINF:-1 tvg-name="5355180" group-title="其他台" tvg-whitelist="true",5355180 [白名单]
+1/202602/031500/1770132562-1-1747819312.hls.ts?zduration=10&ts_min=1&prog_time=20260203152922&accountinfo=~~V2.0~BQiz3wrGrpG0CUSRIJ-7Jg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2352020260203153051700210&ispcode=67&ztecid=3221226995
+#EXTINF:-1 tvg-name="5361572" group-title="其他台" tvg-whitelist="true",5361572 [白名单]
+1/202602/031500/1770132597-1-1747819300.hls.ts?zduration=10&ts_min=1&prog_time=20260203152957&accountinfo=~~V2.0~rN_hoRDwApMKnJqiNHvn9w~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2356720260203153051670890&ispcode=67&ztecid=3221227018
+#EXTINF:-1 tvg-name="5368528" group-title="其他台" tvg-whitelist="true",5368528 [白名单]
+1/202602/031500/1770132414-1-1747819295.hls.ts?zduration=10&ts_min=1&prog_time=20260203152654&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2352420260203152857673227&ispcode=67&ztecid=3221226234
+#EXTINF:-1 tvg-name="5370972" group-title="其他台" tvg-whitelist="true",5370972 [白名单]
+1/202602/031500/1770132434-1-1747819297.hls.ts?zduration=10&ts_min=1&prog_time=20260203152714&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2352420260203152857673227&ispcode=67&ztecid=3221226234
+#EXTINF:-1 tvg-name="5372288" group-title="其他台" tvg-whitelist="true",5372288 [白名单]
+1/202602/031500/1770132599-1-1747819311.hls.ts?zduration=10&ts_min=1&prog_time=20260203152959&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359620260203153102671010&ispcode=67&ztecid=3221226230
+#EXTINF:-1 tvg-name="5388080" group-title="其他台" tvg-whitelist="true",5388080 [白名单]
+1/202602/031530/1770132609-1-1747819312.hls.ts?zduration=10&ts_min=1&prog_time=20260203153009&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359620260203153102671010&ispcode=67&ztecid=3221226230
+#EXTINF:-1 tvg-name="5419100" group-title="其他台" tvg-whitelist="true",5419100 [白名单]
+1/202602/031500/1770132401-1-1747819294.hls.ts?zduration=10&ts_min=1&prog_time=20260203152641&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359320260203152753719312&ispcode=67&ztecid=3221226246
+#EXTINF:-1 tvg-name="5423236" group-title="其他台" tvg-whitelist="true",5423236 [白名单]
+1/202602/031500/1770132379-1-1747819292.hls.ts?zduration=10&ts_min=1&prog_time=20260203152619&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359320260203152753719312&ispcode=67&ztecid=3221226246
+#EXTINF:-1 tvg-name="5443164" group-title="其他台" tvg-whitelist="true",5443164 [白名单]
+1/202602/031500/1770132554-1-1747819294.hls.ts?zduration=10&ts_min=1&prog_time=20260203152914&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2384720260203153047734471&ispcode=67&ztecid=3221226242
+#EXTINF:-1 tvg-name="5452000" group-title="其他台" tvg-whitelist="true",5452000 [白名单]
+1/202602/031500/1770132584-1-1747819297.hls.ts?zduration=10&ts_min=1&prog_time=20260203152944&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2384720260203153047734471&ispcode=67&ztecid=3221226242
+#EXTINF:-1 tvg-name="5456888" group-title="其他台" tvg-whitelist="true",5456888 [白名单]
+1/202602/031500/1770132579-1-1747819309.hls.ts?zduration=10&ts_min=1&prog_time=20260203152939&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D:20221022013542,915973,119.123.71.209,20221022013542,10000100000000050000000003873458,915973,-1,0,1,,,2,,,,2,,10000100000000060000000007253514_0,END&IASHttpSessionId=OTT2359620260203153102671010&ispcode=67&ztecid=3221226230
+#EXTINF:-1 tvg-name="5476" group-title="其他台" tvg-quality="标清" tvg-whitelist="true",5476 [白名单]
+1/202602/031500/1770132405-1-1747819298.hls.ts?zduration=10&ts_min=1&prog_time=20260203152645&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2384720260203152807734469&ispcode=67&ztecid=3221226895
 #EXTINF:-1 tvg-name="5首伤感DJ" group-title="其他台",5首伤感DJ
 https://vd2.bdstatic.com/mda-nd5cr584424xr57c/sc/cae_h264_delogo/1649238205192327499/mda-nd5cr584424xr57c.mp4
 #EXTINF:-1 tvg-name="5首劲爆dj" group-title="其他台",5首劲爆dj
 https://vd2.bdstatic.com/mda-mm69dxgtcqg28j9j/sc/cae_h264/1638860024910192032/mda-mm69dxgtcqg28j9j.mp4
 #EXTINF:-1 tvg-name="7 DJ舞曲" group-title="其他台",7 DJ舞曲
 https://vd2.bdstatic.com/mda-nch73gktvfmgdrbd/sc/cae_h264_delogo/1647644537085447432/mda-nch73gktvfmgdrbd.mp4?v_from_s=hkapp-haokan-nanjing&auth_key=1648813542-0-0-4a2d27d50015d19f3ed5cf5fbc261f79&bcevod_channel=searchbox_feed&pd=1&vt=1&cd=0&watermark=0&did=ced9e69a4f6154e91be590c1d5a488ab&logid=0942439256&vid=4192073541598205553&pt=0&appver=7.2.1.10&model=T7-5G10&osver=9&cr=2&abtest=peav_g52&sle=1&sl=1420&split=1235330&dt=1&nt=0&pe=0&prerender=0&kpdl=1&h265_m=-1&klogid=c770aa16cadb579d&kapid=1&psp=1&psk=1028&pif=0_0_0_0&qtfc=65535&qtut=0&stg=none
+#EXTINF:-1 tvg-name="7036088" group-title="其他台" tvg-quality="流畅" tvg-whitelist="true",7036088 [白名单]
+1/202602/031500/1770132541-1-1747819316.hls.ts?zduration=10&ts_min=1&prog_time=20260203152901&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2355120260203153058699459&ispcode=67&ztecid=3221226894
+#EXTINF:-1 tvg-name="7146820" group-title="其他台" tvg-whitelist="true",7146820 [白名单]
+1/202602/031500/1770132561-1-1747819318.hls.ts?zduration=10&ts_min=1&prog_time=20260203152921&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2355120260203153058699459&ispcode=67&ztecid=3221226894
+#EXTINF:-1 tvg-name="7161860" group-title="其他台" tvg-whitelist="true",7161860 [白名单]
+1/202602/031500/1770132375-1-1747819295.hls.ts?zduration=10&ts_min=1&prog_time=20260203152615&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2384720260203152807734469&ispcode=67&ztecid=3221226895
+#EXTINF:-1 tvg-name="7175208" group-title="其他台" tvg-whitelist="true",7175208 [白名单]
+1/202602/031500/1770132581-1-1747819320.hls.ts?zduration=10&ts_min=1&prog_time=20260203152941&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2355120260203153058699459&ispcode=67&ztecid=3221226894
+#EXTINF:-1 tvg-name="7187428" group-title="其他台" tvg-whitelist="true",7187428 [白名单]
+1/202602/031500/1770132422-1-1747819298.hls.ts?zduration=10&ts_min=1&prog_time=20260203152702&accountinfo=~~V2.0~cYPi33WFyhvd6SjmqUKhJg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2353220260203152814675940&ispcode=67&ztecid=3221226900
+#EXTINF:-1 tvg-name="7197016" group-title="其他台" tvg-whitelist="true",7197016 [白名单]
+1/202602/031500/1770132442-1-1747819300.hls.ts?zduration=10&ts_min=1&prog_time=20260203152722&accountinfo=~~V2.0~cYPi33WFyhvd6SjmqUKhJg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2353220260203152814675940&ispcode=67&ztecid=3221226900
+#EXTINF:-1 tvg-name="7217508" group-title="其他台" tvg-whitelist="true",7217508 [白名单]
+1/202602/031500/1770132425-1-1747819300.hls.ts?zduration=10&ts_min=1&prog_time=20260203152705&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2384720260203152807734469&ispcode=67&ztecid=3221226895
+#EXTINF:-1 tvg-name="7217884" group-title="其他台" tvg-whitelist="true",7217884 [白名单]
+1/202602/031500/1770132402-1-1747819296.hls.ts?zduration=10&ts_min=1&prog_time=20260203152642&accountinfo=~~V2.0~cYPi33WFyhvd6SjmqUKhJg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2353220260203152814675940&ispcode=67&ztecid=3221226900
+#EXTINF:-1 tvg-name="7221644" group-title="其他台" tvg-whitelist="true",7221644 [白名单]
+1/202602/031500/1770132432-1-1747819299.hls.ts?zduration=10&ts_min=1&prog_time=20260203152712&accountinfo=~~V2.0~cYPi33WFyhvd6SjmqUKhJg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2353220260203152814675940&ispcode=67&ztecid=3221226900
+#EXTINF:-1 tvg-name="7254356" group-title="其他台" tvg-whitelist="true",7254356 [白名单]
+1/202602/031500/1770132591-1-1747819321.hls.ts?zduration=10&ts_min=1&prog_time=20260203152951&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2355120260203153058699459&ispcode=67&ztecid=3221226894
+#EXTINF:-1 tvg-name="7275976" group-title="其他台" tvg-whitelist="true",7275976 [白名单]
+1/202602/031500/1770132395-1-1747819297.hls.ts?zduration=10&ts_min=1&prog_time=20260203152635&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2384720260203152807734469&ispcode=67&ztecid=3221226895
+#EXTINF:-1 tvg-name="7295340" group-title="其他台" tvg-whitelist="true",7295340 [白名单]
+1/202602/031500/1770132571-1-1747819319.hls.ts?zduration=10&ts_min=1&prog_time=20260203152931&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2355120260203153058699459&ispcode=67&ztecid=3221226894
+#EXTINF:-1 tvg-name="7295528" group-title="其他台" tvg-whitelist="true",7295528 [白名单]
+1/202602/031500/1770132385-1-1747819296.hls.ts?zduration=10&ts_min=1&prog_time=20260203152625&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2384720260203152807734469&ispcode=67&ztecid=3221226895
+#EXTINF:-1 tvg-name="7332752" group-title="其他台" tvg-whitelist="true",7332752 [白名单]
+1/202602/031500/1770132551-1-1747819317.hls.ts?zduration=10&ts_min=1&prog_time=20260203152911&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl,END&IASHttpSessionId=OTT2355120260203153058699459&ispcode=67&ztecid=3221226894
 #EXTINF:-1 tvg-name="7首「伤感情歌」" group-title="其他台",7首「伤感情歌」
 https://vd2.bdstatic.com/mda-nbdj7sp20st0jd9d/sc/cae_h264_delogo/1644847557994341172/mda-nbdj7sp20st0jd9d.mp4
+#EXTINF:-1 tvg-name="8296" group-title="其他台" tvg-quality="标清" tvg-whitelist="true",8296 [白名单]
+1/202602/031500/1770132412-1-1747819297.hls.ts?zduration=10&ts_min=1&prog_time=20260203152652&accountinfo=~~V2.0~cYPi33WFyhvd6SjmqUKhJg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2353220260203152814675940&ispcode=67&ztecid=3221226900
+#EXTINF:-1 tvg-name="ABC NEWS" group-title="其他台",ABC NEWS
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV24.m3u8
 #EXTINF:-1 tvg-name="ABC News Australia" group-title="其他台",ABC News Australia
 https://stream1.freetv.fun/abc-news-australia-1.m3u8
+#EXTINF:-1 tvg-name="ANN NEWS" group-title="其他台",ANN NEWS
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV48.m3u8
+#EXTINF:-1 tvg-name="ASTRO AWANI" group-title="其他台",ASTRO AWANI
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV27.m3u8
 #EXTINF:-1 tvg-name="Action Hollywood Movies" group-title="其他台",Action Hollywood Movies
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-actionhollywood-samsungnz/playlist.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-name="BAND NEWS" group-title="其他台",BAND NEWS
@@ -561,8 +898,12 @@ http://125.227.210.55:8165/VideoInput/play.ts
 https://www.bloomberg.com/media-manifest/streams/asia-event.m3u8
 #EXTINF:-1 tvg-name="CAPITAL 958" group-title="其他台" tvg-logo="https://live.fanmingming.com/radio/capital958.png",CAPITAL 958
 https://19183.live.streamtheworld.com/CAPITAL958FM_PREM.aac
-#EXTINF:-1 tvg-name="CCTV" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/CCTV4K.png" tvg-quality="4K",CCTV
+#EXTINF:-1 tvg-name="CBN NEWS" group-title="其他台",CBN NEWS
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV33.m3u8
+#EXTINF:-1 tvg-name="CCTV" group-title="其他台" tvg-logo="https://live.zbds.top/logo/CCTV4K.png" tvg-quality="4K",CCTV
 https://stream1.freetv.fun/cctv4k-2.ctv
+#EXTINF:-1 tvg-name="CCTV 超" group-title="其他台" tvg-logo="https://live.fanmingming.com/tv/CCTV4K.png" tvg-quality="4K",CCTV 超
+http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="CCTV★移动传媒" group-title="其他台",CCTV★移动传媒
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/649e19038fa74514ab3f00febbcd6de0/1200.m3u8
 #EXTINF:-1 tvg-name="CCTV俄语" group-title="其他台",CCTV俄语
@@ -574,11 +915,13 @@ http://iptv.4666888.xyz/iptv2A.php?id=13
 #EXTINF:-1 tvg-name="CCTV阿拉伯语" group-title="其他台",CCTV阿拉伯语
 https://www.freetv.top/migu/609154345.m3u8?migutoken=19442fbd82627603ecb9165e8da9b2a21010c3e9c0355af37bd2122d2816931ea5f0f003a2814c0cbc2a4a68bf0195d734366ca3a45827d70d362dd842439a98acab94da40b91642c9b40f9504
 #EXTINF:-1 tvg-name="CNA" group-title="其他台",CNA
-https://www.youtube.com/watch?v=XWq5kBlakcQ
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV52.m3u8
 #EXTINF:-1 tvg-name="CNA 938" group-title="其他台" tvg-logo="https://www.melisten.sg/api/blob/10711300/3600973250882fa11b0b01b71a9d6e5d/cna938-logoImage.png",CNA 938
 https://14033.live.streamtheworld.com/938NOW_PREM.aac
 #EXTINF:-1 tvg-name="CNN" group-title="其他台",CNN
 https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
+#EXTINF:-1 tvg-name="CNR 哈语广播" group-title="其他台",CNR 哈语广播
+http://live.xmcdn.com/live/1396/64.m3u8
 #EXTINF:-1 tvg-name="Camp Spoopy「少儿」" group-title="其他台",Camp Spoopy「少儿」
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=269&livestream=1&live=1&app_bundle=com.plexapp.desktop&did=df8e1a36-847d-5096-86a7-3803ed330ede&app_domain=app.plex.tv&app_name=plex&h=691&w=1224&content_title=MorUy57ijWhGe4ixZb_T&content_series=5f77a99416621400402b3dc1&custom4=plex&gdpr=1&device_make=Windows&device_model=Firefox&coppa=1&us_privacy=1---&checkedby:iptvcat.com
 #EXTINF:-1 tvg-name="CineView" group-title="其他台",CineView
@@ -665,30 +1008,52 @@ https://vd2.bdstatic.com/mda-nd1n5vscnn77rui2/sc/cae_h264_delogo/164891587836942
 https://vd2.bdstatic.com/mda-mhaargrart2qrkdz/1080p/cae_h264/1629630942996744682/mda-mhaargrart2qrkdz.mp4
 #EXTINF:-1 tvg-name="DJ舞曲《闯天涯》" group-title="其他台",DJ舞曲《闯天涯》
 https://vd2.bdstatic.com/mda-mjf3hahmam95yfkd/sc/cae_h264_nowatermark/1634352379471224566/mda-mjf3hahmam95yfkd.mp4
+#EXTINF:-1 tvg-name="DW NEWS" group-title="其他台",DW NEWS
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV08.m3u8
 #EXTINF:-1 tvg-name="DW News" group-title="其他台",DW News
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/stream05/streamPlaylist.m3u8
 #EXTINF:-1 tvg-name="Discovery" group-title="其他台",Discovery
 https://hls.iill.top/api/Discovery/index.m3u8
+#EXTINF:-1 tvg-name="EF运通" group-title="其他台",EF运通
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV06.m3u8
 #EXTINF:-1 tvg-name="ELEVEN体育1" group-title="其他台",ELEVEN体育1
 https://stream1.freetv.fun/eltaai-er-da-ti-yu--1--wj-1.ctv
 #EXTINF:-1 tvg-name="ELEVEN体育2" group-title="其他台",ELEVEN体育2
 https://stream1.freetv.fun/eltaai-er-da-ti-yu--2--wj-1.ctv
+#EXTINF:-1 tvg-name="FRANCE 24" group-title="其他台",FRANCE 24
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV38.m3u8
 #EXTINF:-1 tvg-name="FanpopTV" group-title="其他台",FanpopTV
 https://streaming-cl.sh1ny.space/memfs/e16d2f72-70b5-4bf5-b9c5-107b6390a10f.m3u8
+#EXTINF:-1 tvg-name="Fashion" group-title="其他台" tvg-quality="4K",Fashion
+https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="GB News" group-title="其他台",GB News
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-gbnewsnz-samsungnz/playlist.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-name="Gusto TV" group-title="其他台",Gusto TV
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01077-gustoworldwidem-gustotvnz-samsungnz/playlist.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-name="HOOPPARK篮球公园" group-title="其他台",HOOPPARK篮球公园
 http://lxajh.top/tv/douyu.php?id=10228726
+#EXTINF:-1 tvg-name="HOY Infotainment Channel" group-title="其他台" tvg-quality="高清",HOY Infotainment Channel
+https://hoytv-live-stream.hoy.tv/ch78/index-fhd.m3u8
+#EXTINF:-1 tvg-name="HOY TV" group-title="其他台",HOY TV
+https://hoytv-live-stream.hoy.tv/ch77/index-fhd.m3u8
+#EXTINF:-1 tvg-name="HOY 资讯台" group-title="其他台",HOY 资讯台
+https://hoytv-live-stream.hoy.tv/ch78/index-fhd.m3u8
 #EXTINF:-1 tvg-name="HOY77" group-title="其他台",HOY77
 http://php.jdshipin.com/TVOD/iptv.php?id=hoytv2
 #EXTINF:-1 tvg-name="HOY78" group-title="其他台",HOY78
 http://cdn.163189.xyz/live/hoy/stream.m3u8
+#EXTINF:-1 tvg-name="HTB NEWS" group-title="其他台",HTB NEWS
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV53.m3u8
+#EXTINF:-1 tvg-name="INDIA TODAY" group-title="其他台",INDIA TODAY
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV36.m3u8
 #EXTINF:-1 tvg-name="JSPORTS1" group-title="其他台",JSPORTS1
 https://stream1.freetv.fun/jsports-1-1.m3u8
 #EXTINF:-1 tvg-name="JSPORTS2" group-title="其他台",JSPORTS2
 https://stream1.freetv.fun/jsports-2-2.m3u8
+#EXTINF:-1 tvg-name="K POP" group-title="其他台",K POP
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV16.m3u8
+#EXTINF:-1 tvg-name="KANSAI NEWS" group-title="其他台" tvg-ipv6="true",KANSAI NEWS [IPv6]
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV62.m3u8
 #EXTINF:-1 tvg-name="KBS Drama" group-title="其他台",KBS Drama
 http://mytv.dothome.co.kr/ch/catv/2.php
 #EXTINF:-1 tvg-name="KBS Joy" group-title="其他台",KBS Joy
@@ -697,12 +1062,22 @@ http://mytv.dothome.co.kr/ch/catv/3.php
 http://mytv.dothome.co.kr/ch/catv/6.php
 #EXTINF:-1 tvg-name="KBS LIFE" group-title="其他台",KBS LIFE
 http://mytv.dothome.co.kr/ch/catv/5.php
+#EXTINF:-1 tvg-name="KBS LiveCam DokDo" group-title="其他台",KBS LiveCam DokDo
+http://kbs-dokdo.gscdn.com/dokdo_300/dokdo_300.stream/playlist.m3u8
+#EXTINF:-1 tvg-name="KBS NEWS" group-title="其他台" tvg-ipv6="true",KBS NEWS [IPv6]
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV61.m3u8
 #EXTINF:-1 tvg-name="KBS Story" group-title="其他台",KBS Story
 http://mytv.dothome.co.kr/ch/catv/4.php
 #EXTINF:-1 tvg-name="LOVE 972" group-title="其他台" tvg-logo="https://live.fanmingming.com/radio/love972.png",LOVE 972
 https://14033.live.streamtheworld.com/LOVE972FM_PREM.aac
+#EXTINF:-1 tvg-name="MOMO購物1台" group-title="其他台",MOMO購物1台
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV04.m3u8
+#EXTINF:-1 tvg-name="MOMO購物2台" group-title="其他台",MOMO購物2台
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV05.m3u8
 #EXTINF:-1 tvg-name="MovieMusic欣赏" group-title="其他台",MovieMusic欣赏
 https://lotus.stingray.com/manifest/cmusic-cme004-montreal/samsungtvplus/dee3e3af-2706-3e77-a952-91b99f6d1819/5711200/manifest.m3u8
+#EXTINF:-1 tvg-name="NBC NEWS" group-title="其他台",NBC NEWS
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV39.m3u8
 #EXTINF:-1 tvg-name="NHK総合" group-title="其他台",NHK総合
 p3p://108.181.32.169:14194/641a1ff10002ac95bf6680630445195d
 #EXTINF:-1 tvg-name="NOW新闻" group-title="其他台",NOW新闻
@@ -735,12 +1110,18 @@ https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00286-pocketwatch-ryanandfriends-
 https://txmov2.a.kwimgs.com/upic/2023/07/30/19/BMjAyMzA3MzAxOTEyNDhfODI4NTk1NTQ0XzEwOTI2ODgxNTQyOF8yXzM=_b_B1770e5ac950c20cda3df1678ded64cbc.mp4
 #EXTINF:-1 tvg-name="SWR 3 Visual Radio" group-title="其他台",SWR 3 Visual Radio
 https://swrswr3vr-hls.akamaized.net/hls/live/2018683/swr3vr/master.m3u8?checkedby:iptvcat.com
+#EXTINF:-1 tvg-name="TBS NEWS" group-title="其他台",TBS NEWS
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV45.m3u8
 #EXTINF:-1 tvg-name="TVN" group-title="其他台",TVN
 https://stream1.freetv.fun/tvn-3.m3u8
+#EXTINF:-1 tvg-name="Taiwan+" group-title="其他台",Taiwan+
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV78.m3u8
 #EXTINF:-1 tvg-name="The K POP" group-title="其他台",The K POP
 https://git.io/JgYAE
 #EXTINF:-1 tvg-name="Thrill" group-title="其他台",Thrill
 https://stream1.freetv.fun/thrill-2.m3u8
+#EXTINF:-1 tvg-name="Tokyo Shibuya「东京涩谷」" group-title="其他台",Tokyo Shibuya「东京涩谷」
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV29.m3u8
 #EXTINF:-1 tvg-name="UK: SKY SPORTS Action/NFL" group-title="其他台",UK: SKY SPORTS Action/NFL
 http://nocable.cc:8080//OURTV/OURTV@4806/53705
 #EXTINF:-1 tvg-name="UK: SKY SPORTS Arena" group-title="其他台",UK: SKY SPORTS Arena
@@ -773,6 +1154,10 @@ http://php.jdshipin.com/PLTV/iptv.php?id=viutv2
 https://cdn.163189.xyz/163189/viu
 #EXTINF:-1 tvg-name="VOA美国之音" group-title="其他台",VOA美国之音
 https://voa-ingest.akamaized.net/hls/live/2033878/tvmc08/playlist.m3u8
+#EXTINF:-1 tvg-name="Viva 美好購物1台" group-title="其他台",Viva 美好購物1台
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV54.m3u8
+#EXTINF:-1 tvg-name="Viva 美好購物2台" group-title="其他台",Viva 美好購物2台
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV55.m3u8
 #EXTINF:-1 tvg-name="WCCA TV" group-title="其他台",WCCA TV
 http://worcester.vod.castus.tv/live/ch1.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-name="WTA WTA俄拉发站Day4 清流 18:00" group-title="其他台",WTA WTA俄拉发站Day4 清流 18:00
@@ -1107,6 +1492,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/3ccdecc7d6e341c192
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/d8ad434c6b08421a927557a4d98da65c/1200.m3u8
 #EXTINF:-1 tvg-name="「电影」熊出没•变形记" group-title="其他台",「电影」熊出没•变形记
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1733da751de64e6e910abda889d87a26/1200.m3u8
+#EXTINF:-1 tvg-name="「电影」熊出没•过年" group-title="其他台",「电影」熊出没•过年
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/7ae265653fe149069c3b53e31caaf060/1200.m3u8
 #EXTINF:-1 tvg-name="「电影」猪猪侠•英雄猪少年" group-title="其他台",「电影」猪猪侠•英雄猪少年
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/0f03b08bc7b042358144617000fd2931/1200.m3u8
 #EXTINF:-1 tvg-name="「精选DJ洗脑神曲」节奏欢快，动感魔性" group-title="其他台",「精选DJ洗脑神曲」节奏欢快，动感魔性
@@ -1335,10 +1722,16 @@ https://vd3.bdstatic.com/mda-mev3hw0htz28h5wn/1080p/cae_h264/1622343504467773766
 https://vd4.bdstatic.com/mda-mbim69siwwsgwp7d/v1-cae/1080p/mda-mbim69siwwsgwp7d.mp4
 #EXTINF:-1 tvg-name="一首伤感歌曲" group-title="其他台",一首伤感歌曲
 https://vd3.bdstatic.com/mda-nbr5d212a9mkb4vp/cae_h264_delogo/1645848373794241498/mda-nbr5d212a9mkb4vp.mp4
+#EXTINF:-1 tvg-name="万州综合" group-title="其他台",万州综合
+http://live.xmcdn.com/live/1678/64.m3u8
+#EXTINF:-1 tvg-name="三明新闻综合" group-title="其他台",三明新闻综合
+https://ls.qingting.fm/live/5022100/64k.m3u8
 #EXTINF:-1 tvg-name="上虞新商都" group-title="其他台",上虞新商都
 https://stream1.freetv.fun/shang-yu-xin-shang-du-5.m3u8
 #EXTINF:-1 tvg-name="上虞综合" group-title="其他台",上虞综合
 https://stream1.freetv.fun/shang-yu-zong-he-1.m3u8
+#EXTINF:-1 tvg-name="不二神探" group-title="其他台",不二神探
+https://cdn2.yzzy-tv-cdn.com/20220330/4069_8714f6bb/index.m3u8
 #EXTINF:-1 tvg-name="世界地理" group-title="其他台",世界地理
 http://61.184.46.85:9901/tsfile/live/1025_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="东亚超级联赛 东京电击VS新北国王 清流播出1 18:05" group-title="其他台",东亚超级联赛 东京电击VS新北国王 清流播出1 18:05
@@ -1359,18 +1752,46 @@ http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221
 http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226577/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EhE2Z89HKgsQOlN9opVn1iw%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNN03yUnk4zBVk1bynPPL3hZ%2CEND
 #EXTINF:-1 tvg-name="中国教育4台" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/中国教育4台.png" tvg-ipv6="true",中国教育4台 [IPv6]
 http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226997/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EAw_OvjRgJVjtlaOa0dcgzg%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
+#EXTINF:-1 tvg-name="中国蓝新闻" group-title="其他台",中国蓝新闻
+https://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
+#EXTINF:-1 tvg-name="中央电视塔东" group-title="其他台",中央电视塔东
+https://gcalic.v.myalicdn.com/gc/ztd_1/index.m3u8
+#EXTINF:-1 tvg-name="中央电视塔南" group-title="其他台",中央电视塔南
+https://gcalic.v.myalicdn.com/gc/ztn_1/index.m3u8
 #EXTINF:-1 tvg-name="中广新闻网" group-title="其他台" tvg-logo="https://live.fanmingming.com/radio/中广新闻网.png",中广新闻网
 http://stream.rcs.revma.com/78fm9wyy2tzuv
 #EXTINF:-1 tvg-name="中广流行网" group-title="其他台" tvg-logo="https://live.fanmingming.com/radio/中广流行网.png",中广流行网
 http://stream.rcs.revma.com/aw9uqyxy2tzuv
 #EXTINF:-1 tvg-name="中广音乐网" group-title="其他台" tvg-logo="https://live.fanmingming.com/radio/中广音乐网.png",中广音乐网
 http://stream.rcs.revma.com/ks4vsmg3qtzuv
+#EXTINF:-1 tvg-name="中视" group-title="其他台" tvg-quality="高清",中视
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV42.m3u8
 #EXTINF:-1 tvg-name="中视新闻" group-title="其他台",中视新闻
-https://stream1.freetv.fun/zhong-shi-xin-wen-3.m3u8
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV09.m3u8
 #EXTINF:-1 tvg-name="中视经典" group-title="其他台",中视经典
 https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv080
 #EXTINF:-1 tvg-name="中视菁采" group-title="其他台",中视菁采
 https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv064
+#EXTINF:-1 tvg-name="丽江古城万古楼遥望玉龙雪山" group-title="其他台",丽江古城万古楼遥望玉龙雪山
+https://gcalic.v.myalicdn.com/gc/ljgcwglytylxs_1/index.m3u8
+#EXTINF:-1 tvg-name="丽江古城大水车" group-title="其他台",丽江古城大水车
+https://gcalic.v.myalicdn.com/gc/ljgcdsc_1/index.m3u8
+#EXTINF:-1 tvg-name="丽江古城大研花巷观景" group-title="其他台",丽江古城大研花巷观景
+https://gcalic.v.myalicdn.com/gc/ljgcdyhxgjt_1/index.m3u8
+#EXTINF:-1 tvg-name="之江纪录" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/之江纪录.png",之江纪录
+https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
+#EXTINF:-1 tvg-name="之江记录" group-title="其他台",之江记录
+http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8?
+#EXTINF:-1 tvg-name="乌镇全景" group-title="其他台",乌镇全景
+https://gcalic.v.myalicdn.com/gc/zjwzblt_1/index.m3u8
+#EXTINF:-1 tvg-name="乌镇蓝印花布" group-title="其他台",乌镇蓝印花布
+https://gcalic.v.myalicdn.com/gc/zjwzlyhb_1/index.m3u8
+#EXTINF:-1 tvg-name="乌镇西市河" group-title="其他台",乌镇西市河
+https://gcalic.v.myalicdn.com/gc/zjwzbblh_1/index.m3u8
+#EXTINF:-1 tvg-name="乌镇龙形田" group-title="其他台",乌镇龙形田
+https://gcalic.v.myalicdn.com/gc/zjwzlxt_1/index.m3u8
+#EXTINF:-1 tvg-name="乐山大佛全景" group-title="其他台",乐山大佛全景
+https://gcalic.v.myalicdn.com/gc/lsdfgfl_1/index.m3u8
 #EXTINF:-1 tvg-name="乐山新闻综合" group-title="其他台",乐山新闻综合
 https://stream1.freetv.fun/le-shan-xin-wen-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="乒乓球亚洲杯 刘国正、周冠达带您分析签位 刘国正 周冠达 周泽昊 18:00" group-title="其他台",乒乓球亚洲杯 刘国正、周冠达带您分析签位 刘国正 周冠达 周泽昊 18:00
@@ -1429,8 +1850,12 @@ https://iptv.catvod.com/live.php?id=%E4%BA%94%E4%BA%BA%E5%88%B6%E4%BA%9A%E6%B4%B
 https://iptv.catvod.com/live.php?id=%E4%BA%94%E4%BA%BA%E5%88%B6%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E6%97%A5%E6%9C%ACVS%E9%98%BF%E5%AF%8C%E6%B1%97%20%E6%B6%82%E8%BF%9C%2017%3A45
 #EXTINF:-1 tvg-name="五人制亚洲杯 泰国VS伊拉克 乔迁 15:45" group-title="其他台",五人制亚洲杯 泰国VS伊拉克 乔迁 15:45
 https://iptv.catvod.com/live.php?id=%E4%BA%94%E4%BA%BA%E5%88%B6%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E6%B3%B0%E5%9B%BDVS%E4%BC%8A%E6%8B%89%E5%85%8B%20%E4%B9%94%E8%BF%81%2015%3A45
+#EXTINF:-1 tvg-name="五彩池" group-title="其他台",五彩池
+https://gcalic.v.myalicdn.com/gc/hlwcc_1/index.m3u8
 #EXTINF:-1 tvg-name="五月天精选37首" group-title="其他台",五月天精选37首
 https://txmov2.a.kwimgs.com/upic/2021/12/07/23/BMjAyMTEyMDcyMzU2MzBfMjgwMTM4ODFfNjIzMTcwNTU3MTlfMl8z_b_Bd70a16353267a52b31d11f2cb77c6c5b.mp4
+#EXTINF:-1 tvg-name="亚洲经典音乐台" group-title="其他台",亚洲经典音乐台
+http://live.xmcdn.com:80/live/1005/64.m3u8
 #EXTINF:-1 tvg-name="人与自然" group-title="其他台",人与自然
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1425e1d505654cb48ba82b807b221193/1200.m3u8
 #EXTINF:-1 tvg-name="人在囧途" group-title="其他台",人在囧途
@@ -1443,58 +1868,88 @@ https://stream1.freetv.fun/fo-shan-gong-gong-26.ctv
 https://stream1.freetv.fun/fo-shan-ying-shi-13.ctv
 #EXTINF:-1 tvg-name="佛山综合" group-title="其他台",佛山综合
 https://stream1.freetv.fun/fo-shan-zong-he-9.ctv
+#EXTINF:-1 tvg-name="信大" group-title="其他台",信大
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV07.m3u8
 #EXTINF:-1 tvg-name="倩女幽魂人间道" group-title="其他台",倩女幽魂人间道
 http://jsmov2.a.yximgs.com/bs3/video-hls/5250634317044855747_hlsb.m3u8
 #EXTINF:-1 tvg-name="倩女幽魂妖魔道" group-title="其他台",倩女幽魂妖魔道
 http://jsmov2.a.yximgs.com/bs3/video-hls/5232901391302199073_hlsb.m3u8
 #EXTINF:-1 tvg-name="倩女幽魂道道道" group-title="其他台",倩女幽魂道道道
 http://jsmov2.a.yximgs.com/bs3/video-hls/5216294367991385255_hlsb.m3u8
+#EXTINF:-1 tvg-name="儿童歌曲1" group-title="其他台" tvg-ipv6="true",儿童歌曲1 [IPv6]
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV67.m3u8
+#EXTINF:-1 tvg-name="儿童歌曲2" group-title="其他台" tvg-ipv6="true",儿童歌曲2 [IPv6]
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV68.m3u8
 #EXTINF:-1 tvg-name="八大戏剧" group-title="其他台" tvg-logo="https://ghp.ci/https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/assets/logo/八大戲劇台.png",八大戏剧
 https://stream1.freetv.fun/ba-da-xi-ju-1.m3u8
 #EXTINF:-1 tvg-name="八大第一" group-title="其他台",八大第一
-http://ali.hlspull.yximgs.com/live/52e45cd99ab832097a2b1d852adb5bbb.flv
+http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_bddy.flv
 #EXTINF:-1 tvg-name="八大精彩" group-title="其他台",八大精彩
 https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv034
 #EXTINF:-1 tvg-name="八大综合" group-title="其他台",八大综合
-https://stream1.freetv.fun/ba-da-zong-he-1.m3u8
+http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_bdzh.flv
+#EXTINF:-1 tvg-name="八里沟风景区天界山玻璃栈道" group-title="其他台",八里沟风景区天界山玻璃栈道
+https://gcalic.v.myalicdn.com/gc/blg03_1/index.m3u8
+#EXTINF:-1 tvg-name="八里沟风景区桃花湾瀑布" group-title="其他台",八里沟风景区桃花湾瀑布
+https://gcalic.v.myalicdn.com/gc/blg05_1/index.m3u8
 #EXTINF:-1 tvg-name="公视戏剧" group-title="其他台",公视戏剧
 https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv042
 #EXTINF:-1 tvg-name="兰溪新闻综合" group-title="其他台",兰溪新闻综合
 https://stream1.freetv.fun/lan-xi-xin-wen-zong-he-3.m3u8
 #EXTINF:-1 tvg-name="关于本源" group-title="其他台",关于本源
 https://gitlab.com/p2v5/wangtv/-/raw/main/about1080p.mp4
+#EXTINF:-1 tvg-name="内蒙经济" group-title="其他台",内蒙经济
+https://ls.qingting.fm/live/1885/64k.m3u8
+#EXTINF:-1 tvg-name="冒险王" group-title="其他台",冒险王
+https://cdn4.yzzy-tv-cdn.com/20220608/17622_c083f16b/index.m3u8
+#EXTINF:-1 tvg-name="刁手怪招" group-title="其他台",刁手怪招
+https://cdn7.yzzy-tv-cdn.com/20220625/561_337bba55/index.m3u8
 #EXTINF:-1 tvg-name="刘德华" group-title="其他台",刘德华
 https://t.freetv.fun/live/liu-de-hua.php
 #EXTINF:-1 tvg-name="动漫秀场" group-title="其他台" tvg-ipv6="true",动漫秀场 [IPv6]
 https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-7.m3u8
 #EXTINF:-1 tvg-name="动物星球" group-title="其他台",动物星球
 https://stream1.freetv.fun/dong-wu-xing-qiu-1.m3u8
+#EXTINF:-1 tvg-name="动画1" group-title="其他台" tvg-ipv6="true",动画1 [IPv6]
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV65.m3u8
+#EXTINF:-1 tvg-name="动画2" group-title="其他台" tvg-ipv6="true",动画2 [IPv6]
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV66.m3u8
 #EXTINF:-1 tvg-name="十堰新闻" group-title="其他台",十堰新闻
 https://stream1.freetv.fun/shi-yan-xin-wen-2.m3u8
 #EXTINF:-1 tvg-name="千禧经典" group-title="其他台" tvg-logo="https://ghp.ci/https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/assets/logo/千禧经典.png",千禧经典
 https://o11.163189.xyz/stream/live/tvbc/
+#EXTINF:-1 tvg-name="半岛新闻「英语」" group-title="其他台",半岛新闻「英语」
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV59.m3u8
 #EXTINF:-1 tvg-name="南京十八" group-title="其他台",南京十八
 https://iptv.catvod.com/live.php?id=%E5%8D%97%E4%BA%AC%E5%8D%81%E5%85%AB%E9%A2%91%E9%81%93
 #EXTINF:-1 tvg-name="南京教科" group-title="其他台",南京教科
 https://iptv.catvod.com/live.php?id=%E5%8D%97%E4%BA%AC%E6%95%99%E7%A7%91%E9%A2%91%E9%81%93
 #EXTINF:-1 tvg-name="南京新闻综合" group-title="其他台",南京新闻综合
 https://iptv.catvod.com/live.php?id=%E5%8D%97%E4%BA%AC%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88%E9%A2%91%E9%81%93
+#EXTINF:-1 tvg-name="南京玄武湖公园" group-title="其他台",南京玄武湖公园
+https://gcalic.v.myalicdn.com/gc/xwh01_1/index.m3u8
+#EXTINF:-1 tvg-name="南北少林" group-title="其他台",南北少林
+https://cdn2.yzzy-tv-cdn.com/20220428/16621_c12279b7/index.m3u8
 #EXTINF:-1 tvg-name="南国都市" group-title="其他台",南国都市
 https://tencentplaygsm.gztv.com/live/nanguodushi.m3u8?txTime=65797d79&txSecret=c9b4bd020dcf8dde2d53c1240ba7ae7d
 #EXTINF:-1 tvg-name="南宁公共" group-title="其他台",南宁公共
 https://stream1.freetv.fun/nan-zhu-gong-gong-1.m3u8
 #EXTINF:-1 tvg-name="南宁新闻综合" group-title="其他台",南宁新闻综合
-https://stream1.freetv.fun/nan-zhu-xin-wen-zong-he-1.m3u8
+http://live.xmcdn.com/live/305/64.m3u8?aac
 #EXTINF:-1 tvg-name="南宁都市生活" group-title="其他台",南宁都市生活
 https://stream1.freetv.fun/nan-zhu-du-shi-sheng-huo-2.m3u8
 #EXTINF:-1 tvg-name="南通新闻综合" group-title="其他台",南通新闻综合
 https://iptv.catvod.com/live.php?id=%E5%8D%97%E9%80%9A%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88
+#EXTINF:-1 tvg-name="原住民族电视台" group-title="其他台",原住民族电视台
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV35.m3u8
+#EXTINF:-1 tvg-name="厦门鼓浪屿" group-title="其他台",厦门鼓浪屿
+https://gcalic.v.myalicdn.com/gc/gly01_1/index.m3u8
 #EXTINF:-1 tvg-name="叙州新闻综合" group-title="其他台",叙州新闻综合
 https://stream1.freetv.fun/xu-zhou-xin-wen-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="台中广播电台" group-title="其他台",台中广播电台
 http://211.20.119.101:8081
 #EXTINF:-1 tvg-name="台视新闻" group-title="其他台",台视新闻
-https://stream1.freetv.fun/tai-shi-xin-wen-10.m3u8
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV25.m3u8
 #EXTINF:-1 tvg-name="周口新闻综合" group-title="其他台",周口新闻综合
 https://stream1.freetv.fun/zhou-kou-xin-wen-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="周杰伦精选120首" group-title="其他台",周杰伦精选120首
@@ -1503,22 +1958,46 @@ https://txmov2.a.kwimgs.com/upic/2023/06/18/23/BMjAyMzA2MTgyMzE1MjBfMzQ4MzI0MjA1
 https://txmov2.a.kwimgs.com/upic/2023/08/07/21/BMjAyMzA4MDcyMTAzMzZfMzYxMjUyNDA3MV8xMDk5Mjc3MDcwMTFfMF8z_b_B707fdf2100370008b57219d4a1dab568.mp4
 #EXTINF:-1 tvg-name="哈尔滨新闻综合" group-title="其他台",哈尔滨新闻综合
 https://stream1.freetv.fun/ha-er-bin-xin-wen-zong-he-4.m3u8
+#EXTINF:-1 tvg-name="国会频道1" group-title="其他台",国会频道1
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV56.m3u8
+#EXTINF:-1 tvg-name="国会频道2" group-title="其他台",国会频道2
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV57.m3u8
 #EXTINF:-1 tvg-name="国家地理" group-title="其他台",国家地理
 http://ali.hlspull.yximgs.com/live/b91465a3b948168192183dcb7064abea.flv
 #EXTINF:-1 tvg-name="地理中国" group-title="其他台",地理中国
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/c6baf6f74bb944aeacee1065ea72c798/1200.m3u8
 #EXTINF:-1 tvg-name="大庆新闻综合" group-title="其他台",大庆新闻综合
 https://stream1.freetv.fun/da-qing-xin-wen-zong-he-1.m3u8
+#EXTINF:-1 tvg-name="大爱" group-title="其他台",大爱
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV30.m3u8
+#EXTINF:-1 tvg-name="大爱1台" group-title="其他台",大爱1台
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV30.m3u8
+#EXTINF:-1 tvg-name="大爱2" group-title="其他台",大爱2
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV47.m3u8
+#EXTINF:-1 tvg-name="大爱2台" group-title="其他台",大爱2台
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV47.m3u8
 #EXTINF:-1 tvg-name="大爱电视" group-title="其他台",大爱电视
 http://nmk.ioapk.com:5050/4gtv-live007/index.m3u8?proxy=true
+#EXTINF:-1 tvg-name="天才冲冲冲「综艺」" group-title="其他台",天才冲冲冲「综艺」
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV26.m3u8
+#EXTINF:-1 tvg-name="天涯石" group-title="其他台",天涯石
+https://gcalic.v.myalicdn.com/gc/tyhjtys_1/index.m3u8
 #EXTINF:-1 tvg-name="天龙八部" group-title="其他台",天龙八部
 https://txmov2.a.kwimgs.com/upic/2021/02/26/11/BMjAyMTAyMjYxMTAwNTBfNDAzMDAxOTlfNDUwNDcyNzM5MTRfMF8z_b_B75ed716649c36f65fc2354f75dba47a5.mp4
+#EXTINF:-1 tvg-name="太极张三丰" group-title="其他台",太极张三丰
+https://cdn8.yzzy-tv-cdn.com/20220713/4780_8d927b57/index.m3u8
 #EXTINF:-1 tvg-name="太阳电台" group-title="其他台" tvg-logo="http://www.loveradio889.com.tw/ecms102077/store/AdImage/sunnyradio.jpg",太阳电台
 http://211.20.119.102:8081
 #EXTINF:-1 tvg-name="孙燕姿精选30首" group-title="其他台",孙燕姿精选30首
 https://txmov2.a.kwimgs.com/upic/2020/07/15/19/BMjAyMDA3MTUxOTA1MzhfNTAyNzg4MTc0XzMyNDIzMzUwMjAyXzJfMw==_b_Bd09b171541ea966fd7a324624cfe6c16.mp4
+#EXTINF:-1 tvg-name="安顺新闻" group-title="其他台",安顺新闻
+https://ls.qingting.fm/live/5022203/64k.m3u8
 #EXTINF:-1 tvg-name="寰宇新闻" group-title="其他台",寰宇新闻
-https://pxuchylhjchl.us-east-1.clawcloudrun.com/index.m3u8?pid=litv-longturn14&sd=1080&proxy=false
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8
+#EXTINF:-1 tvg-name="小猪佩奇「动画」" group-title="其他台" tvg-ipv6="true",小猪佩奇「动画」 [IPv6]
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV64.m3u8
+#EXTINF:-1 tvg-name="少林寺" group-title="其他台",少林寺
+https://cdn4.yzzy-tv-cdn.com/20220606/17324_133ab69b/index.m3u8
 #EXTINF:-1 tvg-name="屏边综合" group-title="其他台",屏边综合
 http://live.ynurl.com/video/s10040-pbzh/index.m3u8?zyund
 #EXTINF:-1 tvg-name="峨山电视" group-title="其他台",峨山电视
@@ -1527,6 +2006,8 @@ http://live.ynurl.com/video/s10034-ESTV/index.m3u8?zyund
 https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-3.m3u8
 #EXTINF:-1 tvg-name="平湖新闻综合" group-title="其他台",平湖新闻综合
 https://stream1.freetv.fun/ping-hu-xin-wen-zong-he-3.m3u8
+#EXTINF:-1 tvg-name="幸福空间居家台" group-title="其他台",幸福空间居家台
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV41.m3u8
 #EXTINF:-1 tvg-name="广元综合" group-title="其他台",广元综合
 https://stream1.freetv.fun/yan-yuan-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="广州影视" group-title="其他台",广州影视
@@ -1547,6 +2028,8 @@ https://stream1.freetv.fun/kai-hua-xin-wen-zong-he-1.m3u8
 https://stream1.freetv.fun/kai-feng-xin-wen-zong-he-2.m3u8
 #EXTINF:-1 tvg-name="开远综合" group-title="其他台",开远综合
 http://live.ynurl.com/video/s10044-KYTV/index.m3u8
+#EXTINF:-1 tvg-name="张掖七彩丹霞" group-title="其他台",张掖七彩丹霞
+https://gcalic.v.myalicdn.com/gc/zyqcdx01_1/index.m3u8
 #EXTINF:-1 tvg-name="张韶涵精选96首" group-title="其他台",张韶涵精选96首
 https://txmov2.a.kwimgs.com/upic/2023/04/24/02/BMjAyMzA0MjQwMjA4MDlfMjE0OTExOTI2N18xMDEzNTM2NjA5OTFfMF8z_b_Baa658d527c452cd09e6dc0e9684c1bed.mp4
 #EXTINF:-1 tvg-name="徐良精选30首" group-title="其他台",徐良精选30首
@@ -1557,6 +2040,10 @@ https://iptv.catvod.com/live.php?id=%E5%BE%B7%E7%94%B2%20%E5%A4%9A%E7%89%B9%E8%9
 https://stream1.freetv.fun/de-yang-xin-wen-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="快乐垂钓" group-title="其他台" tvg-ipv6="true",快乐垂钓 [IPv6]
 http://1.196.152.175:2000/rtp/239.16.20.67:10670
+#EXTINF:-1 tvg-name="怀集音乐台" group-title="其他台",怀集音乐台
+http://live.xmcdn.com:80/live/966/64.m3u8
+#EXTINF:-1 tvg-name="恒山悬空寺全景" group-title="其他台",恒山悬空寺全景
+https://gcalic.v.myalicdn.com/gc/hsxksqj_1/index.m3u8
 #EXTINF:-1 tvg-name="意甲 乌迪内斯VS罗马 赛场原声 03:30" group-title="其他台",意甲 乌迪内斯VS罗马 赛场原声 03:30
 https://iptv.catvod.com/live.php?id=%E6%84%8F%E7%94%B2%20%E4%B9%8C%E8%BF%AA%E5%86%85%E6%96%AFVS%E7%BD%97%E9%A9%AC%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2003%3A30
 #EXTINF:-1 tvg-name="意甲 克雷莫内塞VS国际米兰 全场回放（刘腾、贺宇） 00:30" group-title="其他台",意甲 克雷莫内塞VS国际米兰 全场回放（刘腾、贺宇） 00:30
@@ -1567,6 +2054,10 @@ https://iptv.catvod.com/live.php?id=%E6%84%8F%E7%94%B2%20%E5%8D%9A%E6%B4%9B%E5%B
 https://iptv.catvod.com/live.php?id=%E6%84%8F%E7%94%B2%20%E5%B8%95%E5%B0%94%E9%A9%ACVS%E5%B0%A4%E6%96%87%E5%9B%BE%E6%96%AF%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%90%B4%E6%A1%90%E3%80%81%E5%88%98%E8%85%BE%EF%BC%89%2003%3A15
 #EXTINF:-1 tvg-name="成龙" group-title="其他台",成龙
 https://p6-dy.byteimg.com/origin/pgc-image/bebfddceee5c40f495882785675174cf
+#EXTINF:-1 tvg-name="投名状" group-title="其他台",投名状
+https://cdn13.yzzy-tv-cdn.com/20230128/9592_3d21d729/index.m3u8
+#EXTINF:-1 tvg-name="摔跤格斗" group-title="其他台",摔跤格斗
+https://d2p372oxiwmcn1.cloudfront.net:443/hls/1080p/playlist.m3u8
 #EXTINF:-1 tvg-name="文山州新闻综合" group-title="其他台",文山州新闻综合
 http://tvdrs.wsrtv.com.cn:8100/channellive/ch1.flv?zyund
 #EXTINF:-1 tvg-name="斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 1号桌 19:00" group-title="其他台",斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 1号桌 19:00
@@ -1617,6 +2108,8 @@ https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u
 https://stream1.freetv.fun/xin-chang-xin-wen-zong-he-3.m3u8
 #EXTINF:-1 tvg-name="新闻综合" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/上视新闻.png" tvg-ipv6="true",新闻综合 [IPv6]
 https://stream1.freetv.fun/ipv6-xin-wen-zong-he-7.m3u8
+#EXTINF:-1 tvg-name="方世玉" group-title="其他台",方世玉
+https://cdn4.yzzy-tv-cdn.com/20220606/17350_39c4425b/index.m3u8
 #EXTINF:-1 tvg-name="施甸综合" group-title="其他台",施甸综合
 http://live.ynurl.com/video/s10048-SDTV/index.m3u8
 #EXTINF:-1 tvg-name="无间道2" group-title="其他台",无间道2
@@ -1689,8 +2182,20 @@ https://alimov2.a.kwimgs.com/upic/2022/02/01/11/BMjAyMjAyMDExMTEwMjNfNDAzMDAxOTl
 https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
 #EXTINF:-1 tvg-name="春晚2025" group-title="其他台",春晚2025
 https://res.cctvnews.cctv.com/video/3005/record/cctv/merge1/133396667284143308839013005/8fbd6180bdef4da19f6155cf6b4652e1-4.m3u8
+#EXTINF:-1 tvg-name="時尚台FTV" group-title="其他台" tvg-quality="4K",時尚台FTV
+https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="普陀山" group-title="其他台",普陀山
+https://gcalic.v.myalicdn.com/gc/pts01_1/index.m3u8
+#EXTINF:-1 tvg-name="月牙泉" group-title="其他台",月牙泉
+https://gcalic.v.myalicdn.com/gc/dhyyqsm_1/index.m3u8
 #EXTINF:-1 tvg-name="有线新闻" group-title="其他台",有线新闻
 https://stream1.freetv.fun/you-xian-xin-wen-2.m3u8
+#EXTINF:-1 tvg-name="望乡台" group-title="其他台",望乡台
+https://gcalic.v.myalicdn.com/gc/hlwxt_1/index.m3u8
+#EXTINF:-1 tvg-name="未知频道" group-title="其他台" tvg-ipv6="true" tvg-whitelist="true",未知频道 [IPv6] [白名单]
+1770132391-1-1747819284.hls.ts?servicetype=1&GuardEncType=2&ts_min=1&zduration=10&srcurl=aHR0cDovLzM5LjEzNy42Ny4xNDo4MC9vdHR0di5iai5jaGluYW1vYmlsZS5jb20vUExUVi84ODg4ODg4OC8yMjQvMzIyMTIyNzAwMy8xNzcwMTMyMzkxLTEtMTc0NzgxOTI4NC5obHMudHM%2FYWNjb3VudGluZm89fn5WMi4wflNjbzF6aW52ZFVZemxlRWtYWWhJdkF%2BdFA0LWwwbG1TZmp3TFdFZktfZWwxdkhfbXYtczF6bzRBUUp3ZGVkYVZ3Rzl4a3VGVERnOEoyNmN3T3JOSnpuMjBCRXJySGRMaHVaOUV6TFVDRDNQTVctT014NE1HdGVIVjJ2TGVXNkJxb1ksRU5EJkd1YXJkRW5jVHlwZT0yJnNlcnZpY2V0eXBlPTE%3D&prog_time=20260203152631&accountinfo=~~V2.0~Sco1zinvdUYzleEkXYhIvA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY,END&IASHttpSessionId=OTT2349420260203152700689524&ispcode=67&ztecid=3221227003
+#EXTINF:-1 tvg-name="杀手之王" group-title="其他台",杀手之王
+https://cdn10.yzzy-tv-cdn.com/20221023/2307_200a0670/index.m3u8
 #EXTINF:-1 tvg-name="杨丞琳精选30首" group-title="其他台",杨丞琳精选30首
 https://txmov2.a.kwimgs.com/upic/2020/09/20/20/BMjAyMDA5MjAyMDAyMDdfODI4NTk1NTQ0XzM2MzcyMzIwMzYzXzJfMw==_b_B8aa481540d89fe5ec2b3507f8209c663.mp4?tag=1-1750931214-std-1-wz3snqjkat-8298da1fe959ffc7&clientCacheKey=3x8t5k75nb5mzyc_b.mp4&tt=b&di=739f67b1&bp=12681&ali_redirect_ex_hot=66666800&ali_redirect_ex_beacon=1
 #EXTINF:-1 tvg-name="杭州影视" group-title="其他台",杭州影视
@@ -1698,7 +2203,7 @@ https://stream1.freetv.fun/hang-zhou-ying-shi-2.ctv
 #EXTINF:-1 tvg-name="杭州生活" group-title="其他台",杭州生活
 https://stream1.freetv.fun/hang-zhou-sheng-huo-3.ctv
 #EXTINF:-1 tvg-name="杭州综合" group-title="其他台",杭州综合
-https://stream1.freetv.fun/hang-zhou-zong-he-2.ctv
+http://live.xmcdn.com/live/1845/64.m3u8
 #EXTINF:-1 tvg-name="林俊杰精选81首" group-title="其他台",林俊杰精选81首
 https://txmov2.a.kwimgs.com/upic/2024/01/09/12/BMjAyNDAxMDkxMjA2MDdfMzQ4MzI0MjA1OF8xMjE2Nzg4Mjk4NTZfMF8z_b_Bc9f7d3b0c4b69136e61d8328a8538bd2.mp4?clientCacheKey=3xajh8b4u5j6uva_b.mp4
 #EXTINF:-1 tvg-name="林俊杰经典合集" group-title="其他台",林俊杰经典合集
@@ -1771,6 +2276,8 @@ https://stream1.freetv.fun/ji-nan-zong-he-1.m3u8
 https://iptv.catvod.com/live.php?id=%E6%B7%AE%E5%AE%89%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88
 #EXTINF:-1 tvg-name="深圳财经生活" group-title="其他台",深圳财经生活
 https://stream1.freetv.fun/shen-zhen-cai-jing-sheng-huo-1.m3u8
+#EXTINF:-1 tvg-name="清晨音乐台" group-title="其他台",清晨音乐台
+http://live.xmcdn.com:80/live/1011/64.m3u8
 #EXTINF:-1 tvg-name="游戏风云" group-title="其他台",游戏风云
 https://www.freetv.top/migu/790188417.m3u8?migutoken=0276ef43726b0a3df46f95059cfba0dc88fb58e0682005aef78c7fcce5c7101a4d1199cd5aa05c58eaed75bf3a107385ce216cf787ceb58c1839c276b121b05b72a1ec8d7c6f23c240511643c0
 #EXTINF:-1 tvg-name="湖州公共" group-title="其他台",湖州公共
@@ -1789,6 +2296,10 @@ https://stream1.freetv.fun/zhang-zhou-xin-wen-zong-he-1.m3u8
 https://stream1.freetv.fun/ipv6-wei-fang-xin-wen-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="潘玮柏精选28首" group-title="其他台",潘玮柏精选28首
 https://txmov2.a.kwimgs.com/upic/2021/02/18/21/BMjAyMTAyMTgyMTI0MzNfODI4NTk1NTQ0XzQ0NTk2NzM2MDU3XzJfMw==_b_B92f3c6849966ee988590af29cfd9237b.mp4?tag=1-1750435163-std-1-6qxcke5wod-82a7afd374de76aa&clientCacheKey=3xabaxhvbd3me8s_b.mp4
+#EXTINF:-1 tvg-name="灌阳新闻综合" group-title="其他台",灌阳新闻综合
+https://ls.qingting.fm/live/5043/64k.m3u8
+#EXTINF:-1 tvg-name="狮子山鸟瞰丽江古城" group-title="其他台",狮子山鸟瞰丽江古城
+https://gcalic.v.myalicdn.com/gc/ljgcszsnkgc_1/index.m3u8
 #EXTINF:-1 tvg-name="王力宏精选30首" group-title="其他台",王力宏精选30首
 https://txmov2.a.kwimgs.com/upic/2020/09/30/21/BMjAyMDA5MzAyMTU2NTNfODI4NTk1NTQ0XzM2ODY1NDA2MDM3XzJfMw==_b_Bf61393cb3ef5f8ab4b687ae367ed1211.mp4
 #EXTINF:-1 tvg-name="王心凌精选69首" group-title="其他台",王心凌精选69首
@@ -1803,6 +2314,10 @@ https://stream1.freetv.fun/hun-chun-xin-wen-zong-he-3.m3u8
 http://live.ynurl.com/video/s10021-rltv/index.m3u8?zyund
 #EXTINF:-1 tvg-name="生活时尚" group-title="其他台" tvg-ipv6="true",生活时尚 [IPv6]
 https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-5.m3u8
+#EXTINF:-1 tvg-name="白名单" group-title="其他台" tvg-ipv6="true" tvg-whitelist="true",白名单 [IPv6] [白名单]
+http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226433/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EygquRbh9L0wUPRY53fsZWw%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNO62IynDcU1yYDL1b4Xte8T%2CEND
+#EXTINF:-1 tvg-name="白名单 :6610" group-title="其他台" tvg-ipv6="true" tvg-whitelist="true",白名单 :6610 [IPv6] [白名单]
+http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226230/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=%7E%7EV2.0%7EIGb_ib7rnBX9_sANRKq9sg%7EpK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0%7EExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2
 #EXTINF:-1 tvg-name="盈江综合" group-title="其他台",盈江综合
 http://live.ynurl.com/video/s10016-YJTV-2/index.m3u8?zyund
 #EXTINF:-1 tvg-name="石家庄新闻综合" group-title="其他台",石家庄新闻综合
@@ -1817,18 +2332,26 @@ http://live.ynurl.com/video/s10059-SPTV/index.m3u8
 http://lxajh.top/tv/douyu.php?id=3508304
 #EXTINF:-1 tvg-name="笑傲江湖" group-title="其他台",笑傲江湖
 https://alimov2.a.kwimgs.com/upic/2023/03/07/20/BMjAyMzAzMDcyMDMyNDdfNjE2NzgxMTQwXzk3NzEzNDY4NjgxXzBfMw==_b_B75baa98fedb7da382eb4a29e5f7df2bf.mp4
+#EXTINF:-1 tvg-name="笑傲江湖2:东方不败" group-title="其他台",笑傲江湖2:东方不败
+https://cdn2.yzzy-tv-cdn.com/20220331/4843_724c1ac5/index.m3u8
 #EXTINF:-1 tvg-name="第一财经" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/上海第一财经.png" tvg-ipv6="true",第一财经 [IPv6]
 https://stream1.freetv.fun/ipv6-di-yi-cai-jing-8.m3u8
+#EXTINF:-1 tvg-name="精武英雄" group-title="其他台",精武英雄
+https://cdn5.yzzy-tv-cdn.com/20220607/22255_9e00edb7/index.m3u8
 #EXTINF:-1 tvg-name="绍兴公共" group-title="其他台",绍兴公共
 https://stream1.freetv.fun/shao-xing-gong-gong-8.m3u8
 #EXTINF:-1 tvg-name="经典美剧解说" group-title="其他台",经典美剧解说
 http://lxajh.top/tv/douyu.php?id=9123570
+#EXTINF:-1 tvg-name="给爸爸的信" group-title="其他台",给爸爸的信
+https://cdn2.yzzy-tv-cdn.com/20220414/13070_86734093/index.m3u8
 #EXTINF:-1 tvg-name="绵阳科技" group-title="其他台",绵阳科技
 https://stream1.freetv.fun/mian-yang-ke-ji-2.m3u8
 #EXTINF:-1 tvg-name="美国CNN" group-title="其他台",美国CNN
 https://ds2c506obo7m8.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7zjq3tdqasbg8/index.m3u8
 #EXTINF:-1 tvg-name="美食星球" group-title="其他台",美食星球
 http://pullpackage.alivecdn.com/live/3S8xigHp0f96ji1GgfcK5muiuOFRAzddBzLxBEU2DqbBg5l1J7.flv
+#EXTINF:-1 tvg-name="老歌音乐台" group-title="其他台",老歌音乐台
+http://live.xmcdn.com:80/live/2628/64.m3u8
 #EXTINF:-1 tvg-name="腾冲综合" group-title="其他台",腾冲综合
 http://live.ynurl.com/video/s10012-TCTV/index.m3u8
 #EXTINF:-1 tvg-name="航拍中国第一季" group-title="其他台",航拍中国第一季
@@ -1837,8 +2360,12 @@ http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/8edf3fb6a69148ea9a7
 http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/2bdfdad540b342f592f9817cb7f3b79a/4000.m3u8
 #EXTINF:-1 tvg-name="芒市综合" group-title="其他台",芒市综合
 http://live.ynurl.com/video/s10001-mstv1/index.m3u8
+#EXTINF:-1 tvg-name="花木兰" group-title="其他台",花木兰
+https://cdn2.yzzy-tv-cdn.com/20220405/7667_13f7046c/index.m3u8
 #EXTINF:-1 tvg-name="苍南新闻综合" group-title="其他台",苍南新闻综合
 https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-3.m3u8
+#EXTINF:-1 tvg-name="苏州" group-title="其他台" tvg-quality="4K",苏州
+https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8
 #EXTINF:-1 tvg-name="苏州文化生活" group-title="其他台",苏州文化生活
 https://stream1.freetv.fun/su-zhou-wen-hua-sheng-huo-2.m3u8
 #EXTINF:-1 tvg-name="苏州新闻综合" group-title="其他台",苏州新闻综合
@@ -1872,7 +2399,7 @@ https://txmov2.a.kwimgs.com/upic/2023/07/28/13/BMjAyMzA3MjgxMzUwMzRfODM0NDUzMTQ2
 #EXTINF:-1 tvg-name="衢江新闻综合" group-title="其他台",衢江新闻综合
 https://stream1.freetv.fun/qu-jiang-xin-wen-zong-he-3.m3u8
 #EXTINF:-1 tvg-name="西宁新闻综合" group-title="其他台",西宁新闻综合
-https://stream1.freetv.fun/zhu-xia--xi-zhu-xin-wen-zong-he-1.m3u8
+@http://cm-wshls.homecdn.com/live/5a296.m3u8
 #EXTINF:-1 tvg-name="西宁生活服务" group-title="其他台",西宁生活服务
 https://stream1.freetv.fun/xi-zhu-sheng-huo-fu-wu-2.m3u8
 #EXTINF:-1 tvg-name="西游记" group-title="其他台",西游记
@@ -1893,12 +2420,18 @@ https://txmov2.a.kwimgs.com/bs3/video-hls/5246693673328160378_hlsb.m3u8
 http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-800189c57a5a44d3b823b60cf84f6756-0-a6f6828a62d5c167cff5e68735fa0d39
 #EXTINF:-1 tvg-name="贝爷求生影视" group-title="其他台",贝爷求生影视
 https://stream1.freetv.fun/f92ea9cae12af707c587af406ddb929ea9f58aae893845b713679aab4b1df9f8.ctv
+#EXTINF:-1 tvg-name="赌神2" group-title="其他台",赌神2
+https://vip.lz-cdn.com/20220622/20003_820596d4/index.m3u8
 #EXTINF:-1 tvg-name="运城科技教育" group-title="其他台",运城科技教育
 https://stream1.freetv.fun/yun-cheng-ke-ji-jiao-yu-1.m3u8
+#EXTINF:-1 tvg-name="运通财经" group-title="其他台",运通财经
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV06.m3u8
 #EXTINF:-1 tvg-name="邓紫棋精选30首" group-title="其他台",邓紫棋精选30首
 https://txmov2.a.kwimgs.com/upic/2023/05/08/12/BMjAyMzA1MDgxMjIwNTNfMzQ4MzI0MjA1OF8xMDI1NjYyMjM5MDZfMF8z_b_B0675fa55fe8ce0583fb05fa02330e9f1.mp4
 #EXTINF:-1 tvg-name="邢台综合" group-title="其他台",邢台综合
 https://stream1.freetv.fun/xing-tai-zong-he-12.m3u8
+#EXTINF:-1 tvg-name="都江堰鱼嘴" group-title="其他台",都江堰鱼嘴
+https://gcalic.v.myalicdn.com/gc/djyqyl1_1/index.m3u8
 #EXTINF:-1 tvg-name="重温经典" group-title="其他台",重温经典
 http://cdn3.132.us.kg/live/cwjd/stream.m3u8
 #EXTINF:-1 tvg-name="金川新闻综合" group-title="其他台",金川新闻综合
@@ -1910,7 +2443,17 @@ https://stream1.freetv.fun/ipv6-jin-ying-ji-shi-20.m3u8
 #EXTINF:-1 tvg-name="钟馗传说" group-title="其他台",钟馗传说
 https://mursor.ottiptv.cc/yy/1382736839
 #EXTINF:-1 tvg-name="钱江都市" group-title="其他台",钱江都市
-https://stream1.freetv.fun/qian-jiang-du-shi-2.m3u8
+https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?
+#EXTINF:-1 tvg-name="铜陵新闻综合" group-title="其他台",铜陵新闻综合
+https://ls.qingting.fm/live/21303/64k.m3u8
+#EXTINF:-1 tvg-name="镇江新闻综合" group-title="其他台",镇江新闻综合
+http://zjtv-wshls.homecdn.com/live/2aa50.m3u8
+#EXTINF:-1 tvg-name="镇江社会民生" group-title="其他台",镇江社会民生
+http://zjtv-wshls.homecdn.com/live/2aa16.m3u8
+#EXTINF:-1 tvg-name="镜新闻" group-title="其他台",镜新闻
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV70.m3u8
+#EXTINF:-1 tvg-name="镜新闻Mnews" group-title="其他台",镜新闻Mnews
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV70.m3u8
 #EXTINF:-1 tvg-name="镜电视新闻" group-title="其他台",镜电视新闻
 http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv075
 #EXTINF:-1 tvg-name="长子综合" group-title="其他台",长子综合
@@ -1925,6 +2468,14 @@ https://txmov2.a.kwimgs.com/upic/2025/02/09/20/BMjAyNTAyMDkyMDIzNTVfMTg1NzcxNTYx
 https://txmov2.a.kwimgs.com/upic/2023/08/06/13/BMjAyMzA4MDYxMzEzMzhfODM0NDUzMTQ2XzEwOTgxMDA2NzAyNF8wXzM=_b_B5e5a6bf1ef67081a9a226a2f6145ea2d.mp4
 #EXTINF:-1 tvg-name="陶喆经典合集" group-title="其他台",陶喆经典合集
 https://txmov2.a.kwimgs.com/bs3/video-hls/5239938277375381611_hlsb.m3u8
+#EXTINF:-1 tvg-name="雪乡大石碑" group-title="其他台",雪乡大石碑
+https://gcalic.v.myalicdn.com/gc/mdjxxdsb_1/index.m3u8
+#EXTINF:-1 tvg-name="雪乡梦幻家园" group-title="其他台",雪乡梦幻家园
+https://gcalic.v.myalicdn.com/gc/mdjxxmhjyxj_1/index.m3u8
+#EXTINF:-1 tvg-name="青岛崂山八水河" group-title="其他台",青岛崂山八水河
+https://gcalic.v.myalicdn.com/gc/qdls02_1/index.m3u8
+#EXTINF:-1 tvg-name="青岛崂山双福" group-title="其他台",青岛崂山双福
+https://gcalic.v.myalicdn.com/gc/qdls03_1/index.m3u8
 #EXTINF:-1 tvg-name="靖江新闻综合" group-title="其他台",靖江新闻综合
 https://stream1.freetv.fun/jing-jiang-xin-wen-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="静心系列《宁静的冬季旋律》" group-title="其他台",静心系列《宁静的冬季旋律》
@@ -1945,8 +2496,28 @@ https://vd3.bdstatic.com/mda-rmc4iygt5f2x1ymm/360p/h264/1765596390826681602/mda-
 http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv010
 #EXTINF:-1 tvg-name="韩国娱乐台" group-title="其他台",韩国娱乐台
 https://stream1.freetv.fun/glo-bet-1.ctv
+#EXTINF:-1 tvg-name="音乐之声" group-title="其他台",音乐之声
+http://live.xmcdn.com/live/1205/64.m3u8
 #EXTINF:-1 tvg-name="飞碟电台" group-title="其他台" tvg-logo="https://live.fanmingming.com/radio/飞碟电台.png",飞碟电台
 http://stream.rcs.revma.com/em90w4aeewzuv
+#EXTINF:-1 tvg-name="鸣沙山" group-title="其他台",鸣沙山
+https://gcalic.v.myalicdn.com/gc/dhyyqst_1/index.m3u8
+#EXTINF:-1 tvg-name="黄果树六角亭瀑布" group-title="其他台",黄果树六角亭瀑布
+https://gcalic.v.myalicdn.com/gc/hgsspzxdpb_1/index.m3u8
+#EXTINF:-1 tvg-name="黄花城水长城01" group-title="其他台",黄花城水长城01
+https://gcalic.v.myalicdn.com/gc/wgw01_1/index.m3u8
+#EXTINF:-1 tvg-name="黄花城水长城02" group-title="其他台",黄花城水长城02
+https://gcalic.v.myalicdn.com/gc/wgw02_1/index.m3u8
+#EXTINF:-1 tvg-name="黄花城水长城03" group-title="其他台",黄花城水长城03
+https://gcalic.v.myalicdn.com/gc/wgw03_1/index.m3u8
+#EXTINF:-1 tvg-name="黄飞鸿之一:壮志凌云" group-title="其他台",黄飞鸿之一:壮志凌云
+https://cdn4.yzzy-tv-cdn.com/20220617/21900_8ceba9f5/index.m3u8
+#EXTINF:-1 tvg-name="黄飞鸿之二:男儿当自强" group-title="其他台",黄飞鸿之二:男儿当自强
+https://cdn4.yzzy-tv-cdn.com/20220606/17341_21dfaf46/index.m3u8
+#EXTINF:-1 tvg-name="黄飞鸿之铁鸡斗蜈蚣" group-title="其他台",黄飞鸿之铁鸡斗蜈蚣
+https://cdn2.yzzy-tv-cdn.com/20220415/13227_56714be0/index.m3u8
+#EXTINF:-1 tvg-name="黄龙" group-title="其他台",黄龙
+https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8
 #EXTINF:-1 tvg-name="龙华偶像台" group-title="其他台",龙华偶像台
 http://cdn8.163189.xyz/163189/lhox
 #EXTINF:-1 tvg-name="龙华卡通台" group-title="其他台",龙华卡通台
@@ -1964,7 +2535,11 @@ http://cdn8.163189.xyz/163189/lhdy
 #EXTINF:-1 tvg-name="龙华经典台" group-title="其他台",龙华经典台
 http://cdn8.163189.xyz/163189/lhjd
 #EXTINF:-1 tvg-name="龙门飞甲" group-title="其他台",龙门飞甲
-http://jsmov2.a.yximgs.com/bs3/video-hls/5203346449046555193_hlsb.m3u8
+https://cdn2.yzzy-tv-cdn.com/20220331/4883_7f84c204/index.m3u8
+#EXTINF:-1 tvg-name="🐼直播熊猫" group-title="其他台",🐼直播熊猫
+https://gcwbndali.v.myalicdn.com/gcwbnd/ipanda1000_2/index.m3u8
+#EXTINF:-1 tvg-name="📹️直播中国" group-title="其他台",📹️直播中国
+https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="🔀九品芝麻官" group-title="其他台",🔀九品芝麻官
 https://alimov2.a.kwimgs.com/upic/2021/12/28/11/BMjAyMTEyMjgxMTIyMTJfNDAzMDAxOTlfNjM2NjgxODA5MTBfMF8z_b_B6a0bcfcdbdaac183fa7dcbcd3e11bcaf.mp4
 #EXTINF:-1 tvg-name="🔀逃学威龙2" group-title="其他台",🔀逃学威龙2
@@ -1980,15 +2555,33 @@ https://stream1.freetv.fun/ipv6-shang-hai-ji-shi-ren-wen-5.m3u8
 #EXTINF:-1 tvg-name="上海都市" group-title="上海市" tvg-logo="上海都市.png" tvg-ipv6="true",上海都市 [IPv6]
 https://stream1.freetv.fun/ipv6-shang-hai-du-shi-4.m3u8
 
-# 分类: 云南省 (1个电视台)
+# 分类: 云南省 (9个电视台)
 #EXTINF:-1 tvg-name="云南 Ⅰ 文山综合台" group-title="云南省" tvg-quality="高清",云南 Ⅰ 文山综合台
 http://tvdrs.wsrtv.com.cn:8100/channellive/ch1.flv
+#EXTINF:-1 tvg-name="云南丽江冰川" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南丽江冰川.png",云南丽江冰川
+https://gcalic.v.myalicdn.com/gc/hkylxs05_1/index.m3u8
+#EXTINF:-1 tvg-name="云南丽江印象实景" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南丽江印象实景.png",云南丽江印象实景
+https://gcalic.v.myalicdn.com/gc/hkylxs01_1/index.m3u8
+#EXTINF:-1 tvg-name="云南丽江玉龙雪山" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南丽江玉龙雪山.png",云南丽江玉龙雪山
+https://gcalic.v.myalicdn.com/gc/ylxs11_1/index.m3u8
+#EXTINF:-1 tvg-name="云南丽江玉龙雪山草甸" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南丽江玉龙雪山草甸.png",云南丽江玉龙雪山草甸
+https://gcalic.v.myalicdn.com/gc/hkylxs06_1/index.m3u8
+#EXTINF:-1 tvg-name="云南丽江蓝月谷" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南丽江蓝月谷.png",云南丽江蓝月谷
+https://gcalic.v.myalicdn.com/gc/ylxs12_1/index.m3u8
+#EXTINF:-1 tvg-name="云南大理崇圣寺三塔中景" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南大理崇圣寺三塔中景.png",云南大理崇圣寺三塔中景
+https://gcalic.v.myalicdn.com/gc/dlst03_1/index.m3u8
+#EXTINF:-1 tvg-name="云南大理崇圣寺三塔远景" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南大理崇圣寺三塔远景.png",云南大理崇圣寺三塔远景
+https://gcalic.v.myalicdn.com/gc/dlst01_1/index.m3u8
+#EXTINF:-1 tvg-name="云南白沙远眺玉龙雪山" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南白沙远眺玉龙雪山.png",云南白沙远眺玉龙雪山
+https://gcalic.v.myalicdn.com/gc/hkylxs03_1/index.m3u8
 
-# 分类: 北京市 (10个电视台)
+# 分类: 北京市 (11个电视台)
 #EXTINF:-1 tvg-name="北京" group-title="北京市" tvg-logo="https://live.fanmingming.cn/tv/北京超清.png" tvg-quality="4K" tvg-ipv6="true",北京 [IPv6]
 http://[2409:8087:1:20:20::26]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226550/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~e2qS8h6u-xp3gd50vNr1sw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPPFD3HVWEytEVyliOxehfe%2CEND
 #EXTINF:-1 tvg-name="北京体育休闲" group-title="北京市" tvg-logo="https://live.fanmingming.cn/tv/北京体育休闲.png" tvg-ipv6="true",北京体育休闲 [IPv6]
 http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226438/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EeVAybrHg955d_IRT9e_uHQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNMLCKqkSfuGOusJwBMwlCbz%2CEND
+#EXTINF:-1 tvg-name="北京广播" group-title="北京市",北京广播
+http://live.xmcdn.com/live/95/64.m3u8
 #EXTINF:-1 tvg-name="北京影视" group-title="北京市" tvg-logo="https://live.fanmingming.cn/tv/北京影视.png" tvg-ipv6="true",北京影视 [IPv6]
 http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226433/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EygquRbh9L0wUPRY53fsZWw%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNO62IynDcU1yYDL1b4Xte8T%2CEND
 #EXTINF:-1 tvg-name="北京新闻" group-title="北京市" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513145911554540_68.jpg" tvg-ipv6="true",北京新闻 [IPv6]
@@ -2006,19 +2599,41 @@ http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/322122
 #EXTINF:-1 tvg-name="北京青年" group-title="北京市" tvg-logo="北京青年.png",北京青年
 http://player.cntv.cn/standard/live_HLSDRM20180919.swf?v=180.171.5.8.9.6.3.9&ChannelID=btv8&videoTVChannel=btv8&P2PChannelID=pd://cctv_p2p_hdbtv8&tai=btv8&VideoName=btv8&channelID=btv8
 
-# 分类: 四川省 (1个电视台)
+# 分类: 四川省 (6个电视台)
+#EXTINF:-1 tvg-name="四川四姑娘山隆珠措" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川四姑娘山隆珠措.png",四川四姑娘山隆珠措
+https://gcalic.v.myalicdn.com/gc/sgns02_1/index.m3u8
+#EXTINF:-1 tvg-name="四川峨眉山云海日出" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川峨眉山云海日出.png",四川峨眉山云海日出
+https://gcalic.v.myalicdn.com/gc/emsarm_1/index.m3u8
+#EXTINF:-1 tvg-name="四川峨眉山普贤菩萨铜像" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川峨眉山普贤菩萨铜像.png",四川峨眉山普贤菩萨铜像
+https://gcalic.v.myalicdn.com/gc/emspxps_1/index.m3u8
+#EXTINF:-1 tvg-name="四川峨眉山远眺万佛顶" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川峨眉山远眺万佛顶.png",四川峨眉山远眺万佛顶
+https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8
+#EXTINF:-1 tvg-name="四川峨眉山远眺贡嘎雪山" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川峨眉山远眺贡嘎雪山.png",四川峨眉山远眺贡嘎雪山
+https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8
 #EXTINF:-1 tvg-name="四川科教" group-title="四川省" tvg-logo="四川科教.png",四川科教
 https://stream1.freetv.fun/si-chuan-ke-jiao-1.m3u8
+
+# 分类: 天津市 (1个电视台)
+#EXTINF:-1 tvg-name="天津" group-title="天津市",天津
+https://newcntv.qcloudcdn.com/asp/hls/main/0303000a/3/default/5f03d9f1684241f696b25a19ffc44145/main.m3u8
 
 # 分类: 宁夏回族自治区 (2个电视台)
 #EXTINF:-1 tvg-name="宁夏公共" group-title="宁夏回族自治区" tvg-ipv6="true",宁夏公共 [IPv6]
 http://111.113.89.235:2000/rtp/239.121.4.97:8556
-#EXTINF:-1 tvg-name="宁夏经济" group-title="宁夏回族自治区" tvg-ipv6="true",宁夏经济 [IPv6]
+#EXTINF:-1 tvg-name="宁夏经济" group-title="宁夏回族自治区" tvg-logo="宁夏经济.png" tvg-ipv6="true",宁夏经济 [IPv6]
 http://111.113.89.235:2000/rtp/239.121.4.91:8520
 
-# 分类: 安徽省 (1个电视台)
+# 分类: 安徽省 (5个电视台)
+#EXTINF:-1 tvg-name="安徽池州九华山风景区九华山" group-title="安徽省",安徽池州九华山风景区九华山
+https://gcalic.v.myalicdn.com/gc/jhs05_1/index.m3u8
 #EXTINF:-1 tvg-name="安徽经济生活" group-title="安徽省",安徽经济生活
 https://stream1.freetv.fun/an-hui-jing-ji-sheng-huo-1.m3u8
+#EXTINF:-1 tvg-name="安徽黟县芦村远眺" group-title="安徽省",安徽黟县芦村远眺
+https://gcalic.v.myalicdn.com/gc/yxlcyt_1/index.m3u8
+#EXTINF:-1 tvg-name="安徽黟县西递半山亭" group-title="安徽省",安徽黟县西递半山亭
+https://gcalic.v.myalicdn.com/gc/xywfl_1/index.m3u8
+#EXTINF:-1 tvg-name="安徽黟县西递牌坊" group-title="安徽省",安徽黟县西递牌坊
+https://gcalic.v.myalicdn.com/gc/yxxdpf_1/index.m3u8
 
 # 分类: 山东省 (5个电视台)
 #EXTINF:-1 tvg-name="山东农科" group-title="山东省",山东农科
@@ -2028,9 +2643,13 @@ https://iptv.catvod.com/live.php?id=%E5%B1%B1%E4%B8%9C%E6%95%99%E8%82%B2
 #EXTINF:-1 tvg-name="山东文旅" group-title="山东省" tvg-logo="山东文旅.png",山东文旅
 http://58.57.40.22:9901/tsfile/live/1023_1.m3u8
 #EXTINF:-1 tvg-name="山东新闻" group-title="山东省" tvg-logo="山东新闻.png",山东新闻
-https://stream1.freetv.fun/shan-dong-xin-wen-8.m3u8
+http://live.xmcdn.com/live/1440/64.m3u8
 #EXTINF:-1 tvg-name="山东生活" group-title="山东省",山东生活
-http://58.57.40.22:9901/tsfile/live/1018_1.m3u8
+http://live.xmcdn.com/live/802/64.m3u8
+
+# 分类: 山西省 (1个电视台)
+#EXTINF:-1 tvg-name="湖南张家界天门山西线玻璃栈道" group-title="山西省" tvg-logo="https://tb.zbds.top/logo/湖南张家界天门山西线玻璃栈道.png",湖南张家界天门山西线玻璃栈道
+https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8
 
 # 分类: 广东省 (3个电视台)
 #EXTINF:-1 tvg-name="广东新闻" group-title="广东省" tvg-logo="广东新闻.png" tvg-ipv6="true",广东新闻 [IPv6]
@@ -2040,13 +2659,29 @@ http://113.95.147.36:5050/rtp/239.77.0.225:5146
 #EXTINF:-1 tvg-name="广东珠江" group-title="广东省" tvg-logo="广东珠江.png" tvg-ipv6="true",广东珠江 [IPv6]
 https://stream1.freetv.fun/ipv6-yan-dong-zhu-jiang-8.m3u8
 
-# 分类: 江苏省 (4个电视台)
+# 分类: 广西壮族自治区 (1个电视台)
+#EXTINF:-1 tvg-name="广西玉林大容山莲花山顶" group-title="广西壮族自治区" tvg-logo="https://tb.zbds.top/logo/广西玉林大容山莲花山顶.png",广西玉林大容山莲花山顶
+https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8
+
+# 分类: 新疆维吾尔自治区 (1个电视台)
+#EXTINF:-1 tvg-name="新疆天山" group-title="新疆维吾尔自治区",新疆天山
+https://gcalic.v.myalicdn.com/gc/xjtcdhsz_1/index.m3u8
+
+# 分类: 江苏省 (8个电视台)
+#EXTINF:-1 tvg-name="江苏 徐州云龙湖观景台西" group-title="江苏省",江苏 徐州云龙湖观景台西
+https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-name="江苏 无锡鼋头渚赏樱阁" group-title="江苏省",江苏 无锡鼋头渚赏樱阁
+https://gcalic.v.myalicdn.com/gc/pshdxg01_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="江苏体育休闲" group-title="江苏省" tvg-logo="https://gitee.com/suxuang/TVlogo/raw/main/img/Jiangsu5.png",江苏体育休闲
 https://stream1.freetv.fun/af1087a1c24fff7af556ac8e6c5c623303d52966f67a998cefb52c17811b09a2.ctv
+#EXTINF:-1 tvg-name="江苏南京牛首山" group-title="江苏省" tvg-logo="https://tb.zbds.top/logo/江苏南京牛首山.png",江苏南京牛首山
+https://gcalic.v.myalicdn.com/gc/nss01_1/index.m3u8
 #EXTINF:-1 tvg-name="江苏城市" group-title="江苏省" tvg-logo="江苏城市.png",江苏城市
 https://stream1.freetv.fun/jiang-su-cheng-shi-7.m3u8
 #EXTINF:-1 tvg-name="江苏影视" group-title="江苏省" tvg-logo="江苏影视.png",江苏影视
 https://stream1.freetv.fun/a89dd489fa013bc4f36bcc4afe388f1783e2251c276e2566a9359d68a61c6d91.ctv
+#EXTINF:-1 tvg-name="江苏徐州云龙湖风景区云龙山观景台西" group-title="江苏省" tvg-logo="https://tb.zbds.top/logo/江苏徐州云龙湖风景区云龙山观景台西.png",江苏徐州云龙湖风景区云龙山观景台西
+https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8
 #EXTINF:-1 tvg-name="江苏教育" group-title="江苏省" tvg-logo="江苏教育.png",江苏教育
 https://stream1.freetv.fun/7174b4fd66ddb2a7456b7040105dc27a1e57c166593870bb773cb5f6b4546c54.ctv
 
@@ -2055,8 +2690,8 @@ https://stream1.freetv.fun/7174b4fd66ddb2a7456b7040105dc27a1e57c166593870bb773cb
 https://iptv.catvod.com/live.php?id=%E8%90%A8%E9%A9%AC%E5%85%B0%E5%A5%87%E6%9D%AF%20U14%E7%AC%AC16%E5%9C%BA%20%E6%B1%9F%E8%A5%BF%E4%BC%97%E5%A4%A9%E9%BA%92%E9%BA%9F%20VS%20%E9%95%BF%E6%B2%99%E5%B8%82%E7%AC%AC%E5%85%AD%E4%B8%AD%E5%AD%A6%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%8E%9F%E5%A3%B0%EF%BC%89%2020%3A30
 
 # 分类: 河北省 (3个电视台)
-#EXTINF:-1 tvg-name="河北农民" group-title="河北省",河北农民
-https://stream1.freetv.fun/he-bei-nong-min-12.m3u8
+#EXTINF:-1 tvg-name="河北农民" group-title="河北省" tvg-logo="河北农民.png",河北农民
+https://ls.qingting.fm/live/1650/64k.m3u8
 #EXTINF:-1 tvg-name="河北少儿科教" group-title="河北省" tvg-logo="河北少儿科教.png",河北少儿科教
 https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-2.m3u8
 #EXTINF:-1 tvg-name="河北都市" group-title="河北省" tvg-logo="河北都市.png",河北都市
@@ -2070,27 +2705,51 @@ https://stream1.freetv.fun/he-nan-min-sheng-4.m3u8
 #EXTINF:-1 tvg-name="河南都市" group-title="河南省",河南都市
 https://stream1.freetv.fun/he-nan-du-shi-10.m3u8
 
-# 分类: 浙江省 (10个电视台)
+# 分类: 浙江省 (22个电视台)
+#EXTINF:-1 tvg-name="浙江 乌镇全景" group-title="浙江省",浙江 乌镇全景
+https://gcalic.v.myalicdn.com/gc/zjwzblt_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-name="浙江 普陀山" group-title="浙江省",浙江 普陀山
+https://gcalic.v.myalicdn.com/gc/pts01_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-name="浙江公共" group-title="浙江省" tvg-quality="高清",浙江公共
+https://ct-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江公共新闻" group-title="浙江省" tvg-logo="浙江公共新闻.png",浙江公共新闻
 https://stream1.freetv.fun/zhe-jiang-gong-gong-xin-wen-2.ctv
-#EXTINF:-1 tvg-name="浙江国际" group-title="浙江省" tvg-logo="浙江国际.png",浙江国际
-https://stream1.freetv.fun/zhe-jiang-guo-ji-4.m3u8
+#EXTINF:-1 tvg-name="浙江国际" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江国际.png" tvg-quality="高清",浙江国际
+https://ct-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江影视" group-title="浙江省" tvg-quality="标清",浙江影视
+https://qiniup-m-l.cztv.com/channels/lantian/channel005/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江教科" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江教科影视.png",浙江教科
+https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江教科影视" group-title="浙江省" tvg-logo="浙江教科影视.png",浙江教科影视
+http://zhfivel02.cztv.com/channel04/1080p.m3u8?auth_key=2524708799-0-0-514823d0816d4af94a9f32bd7614ed67
+#EXTINF:-1 tvg-name="浙江教育" group-title="浙江省",浙江教育
+https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8?
 #EXTINF:-1 tvg-name="浙江数码时代" group-title="浙江省" tvg-logo="浙江数码时代.png",浙江数码时代
 https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8\r\n
-#EXTINF:-1 tvg-name="浙江新闻" group-title="浙江省" tvg-logo="浙江新闻.png",浙江新闻
-https://stream1.freetv.fun/zhe-jiang-xin-wen-6.m3u8
-#EXTINF:-1 tvg-name="浙江民生" group-title="浙江省" tvg-logo="浙江民生.png",浙江民生
-https://stream1.freetv.fun/zhe-jiang-min-sheng-9.m3u8
+#EXTINF:-1 tvg-name="浙江新闻" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江新闻.png",浙江新闻
+https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江民生" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江民生休闲.png",浙江民生
+https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江民生休闲" group-title="浙江省" tvg-logo="浙江民生休闲.png",浙江民生休闲
 https://stream1.freetv.fun/zhe-jiang-min-sheng-8.m3u8
 #EXTINF:-1 tvg-name="浙江生活" group-title="浙江省" tvg-logo="浙江生活.png",浙江生活
 https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-7.m3u8
+#EXTINF:-1 tvg-name="浙江留学" group-title="浙江省" tvg-logo="浙江留学.png",浙江留学
+https://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江省城市篮球联赛 杭州VS丽水 25/26赛季浙江省城市篮球联赛: 杭州VS丽水 19:30" group-title="浙江省",浙江省城市篮球联赛 杭州VS丽水 25/26赛季浙江省城市篮球联赛: 杭州VS丽水 19:30
 https://iptv.catvod.com/live.php?id=%E6%B5%99%E6%B1%9F%E7%9C%81%E5%9F%8E%E5%B8%82%E7%AF%AE%E7%90%83%E8%81%94%E8%B5%9B%20%E6%9D%AD%E5%B7%9EVS%E4%B8%BD%E6%B0%B4%2025%2F26%E8%B5%9B%E5%AD%A3%E6%B5%99%E6%B1%9F%E7%9C%81%E5%9F%8E%E5%B8%82%E7%AF%AE%E7%90%83%E8%81%94%E8%B5%9B%3A%20%E6%9D%AD%E5%B7%9EVS%E4%B8%BD%E6%B0%B4%2019%3A30
+#EXTINF:-1 tvg-name="浙江经济" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江经济生活.png",浙江经济
+https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江经济生活" group-title="浙江省" tvg-logo="浙江经济生活.png" tvg-ipv6="true",浙江经济生活 [IPv6]
+http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江舟山东极岛" group-title="浙江省" tvg-logo="https://tb.zbds.top/logo/浙江舟山东极岛.png",浙江舟山东极岛
+https://gcalic.v.myalicdn.com/gc/djd01_1/index.m3u8
 #EXTINF:-1 tvg-name="浙江遂昌" group-title="浙江省",浙江遂昌
 http://play-sh13.quklive.com/live/1708426592499070.m3u8?auth_key=2028414342-e92bda8423ad478c987a8b7ae82abe0e-0-c616f7fabb9675e1ed1d84d9edae7e07
-#EXTINF:-1 tvg-name="浙江钱江" group-title="浙江省" tvg-logo="浙江钱江.png",浙江钱江
-https://stream1.freetv.fun/zhe-jiang-qian-jiang-du-shi-5.ctv
+#EXTINF:-1 tvg-name="浙江钱江" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/钱江都市.png",浙江钱江
+https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江钱江频道" group-title="浙江省" tvg-logo="https://live.fanmingming.com/tv/钱江都市.png",浙江钱江频道
+http://hw-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 
 # 分类: 海南省 (4个电视台)
 #EXTINF:-1 tvg-name="海南公共" group-title="海南省" tvg-logo="海南公共.png" tvg-ipv6="true",海南公共 [IPv6]
@@ -2118,11 +2777,19 @@ https://stream1.freetv.fun/hu-bei-jing-shi-24.m3u8
 #EXTINF:-1 tvg-name="湖北综合" group-title="湖北省" tvg-logo="湖北综合.png",湖北综合
 https://stream1.freetv.fun/hu-bei-zong-he-2.m3u8
 
-# 分类: 湖南省 (7个电视台)
+# 分类: 湖南省 (11个电视台)
 #EXTINF:-1 tvg-name="湖南公共" group-title="湖南省" tvg-logo="湖南公共.png",湖南公共
 https://stream1.freetv.fun/hu-nan-gong-gong-7.m3u8
 #EXTINF:-1 tvg-name="湖南国际" group-title="湖南省" tvg-logo="湖南国际.png",湖南国际
 https://stream1.freetv.fun/hu-nan-guo-ji-3.m3u8
+#EXTINF:-1 tvg-name="湖南张家界宝峰湖" group-title="湖南省" tvg-logo="https://tb.zbds.top/logo/湖南张家界宝峰湖.png",湖南张家界宝峰湖
+https://gcalic.v.myalicdn.com/gc/zjjbfh_1/index.m3u8
+#EXTINF:-1 tvg-name="湖南张家界将军列队" group-title="湖南省",湖南张家界将军列队
+https://gcalic.v.myalicdn.com/gc/zjjjjdl_1/index.m3u8
+#EXTINF:-1 tvg-name="湖南张家界御笔峰" group-title="湖南省" tvg-logo="https://tb.zbds.top/logo/湖南张家界御笔峰.png",湖南张家界御笔峰
+https://gcalic.v.myalicdn.com/gc/zjjybf_1/index.m3u8
+#EXTINF:-1 tvg-name="湖南张家界水绕四门" group-title="湖南省" tvg-logo="https://tb.zbds.top/logo/湖南张家界水绕四门.png",湖南张家界水绕四门
+https://gcalic.v.myalicdn.com/gc/zjjsrsm_1/index.m3u8
 #EXTINF:-1 tvg-name="湖南教育" group-title="湖南省" tvg-logo="湖南教育.png",湖南教育
 https://stream1.freetv.fun/hu-nan-jiao-yu-5.m3u8
 #EXTINF:-1 tvg-name="湖南电视剧" group-title="湖南省" tvg-logo="湖南电视剧.png",湖南电视剧
@@ -2134,7 +2801,7 @@ https://stream1.freetv.fun/hu-nan-du-shi-4.m3u8
 #EXTINF:-1 tvg-name="湖南金鹰纪实" group-title="湖南省" tvg-logo="湖南金鹰纪实.png",湖南金鹰纪实
 https://stream1.freetv.fun/jin-ying-ji-shi-23.m3u8
 
-# 分类: 福建省 (7个电视台)
+# 分类: 福建省 (8个电视台)
 #EXTINF:-1 tvg-name="福建乡村振兴公共" group-title="福建省" tvg-logo="https://live.fanmingming.cn/tv/福建乡村振兴公共.png",福建乡村振兴公共
 http://8.138.7.223/tv/fjtv1.php?id=fjxc
 #EXTINF:-1 tvg-name="福建公共" group-title="福建省" tvg-logo="福建公共.png",福建公共
@@ -2142,13 +2809,19 @@ https://stream1.freetv.fun/fu-jian-gong-gong-4.ctv
 #EXTINF:-1 tvg-name="福建文体" group-title="福建省" tvg-logo="https://live.fanmingming.cn/tv/福建文体.png",福建文体
 http://8.138.7.223/tv/fjtv1.php?id=fjwt
 #EXTINF:-1 tvg-name="福建新闻" group-title="福建省" tvg-logo="福建新闻.png",福建新闻
-https://stream1.freetv.fun/fu-jian-xin-wen-1.m3u8
+http://live.xmcdn.com/live/792/64.m3u8
+#EXTINF:-1 tvg-name="福建武夷山玉女峰" group-title="福建省" tvg-logo="https://tb.zbds.top/logo/福建武夷山玉女峰.png",福建武夷山玉女峰
+https://gcalic.v.myalicdn.com/gc/wysynf_1/index.m3u8
 #EXTINF:-1 tvg-name="福建电视剧" group-title="福建省" tvg-logo="福建电视剧.png",福建电视剧
 https://stream1.freetv.fun/fu-jian-dian-shi-ju-1.m3u8
 #EXTINF:-1 tvg-name="福建经济" group-title="福建省" tvg-logo="福建经济.png",福建经济
-https://stream1.freetv.fun/fu-jian-jing-ji-1.m3u8
+http://live.xmcdn.com/live/789/64.m3u8
 #EXTINF:-1 tvg-name="福建综合" group-title="福建省" tvg-logo="福建综合.png",福建综合
 https://stream1.freetv.fun/fu-jian-zong-he-1.m3u8
+
+# 分类: 贵州省 (1个电视台)
+#EXTINF:-1 tvg-name="贵州省兴义市万峰林" group-title="贵州省" tvg-logo="https://tb.zbds.top/logo/贵州省兴义市万峰林.png",贵州省兴义市万峰林
+https://gcalic.v.myalicdn.com/gc/xywfl_1/index.m3u8
 
 # 分类: 辽宁省 (8个电视台)
 #EXTINF:-1 tvg-name="辽宁体育休闲" group-title="辽宁省",辽宁体育休闲
@@ -2166,13 +2839,17 @@ https://stream1.freetv.fun/liao-zhu-sheng-huo-1.m3u8
 #EXTINF:-1 tvg-name="辽宁经济" group-title="辽宁省" tvg-logo="辽宁经济.png",辽宁经济
 https://stream1.freetv.fun/liao-zhu-jing-ji-2.m3u8
 #EXTINF:-1 tvg-name="辽宁都市" group-title="辽宁省" tvg-logo="辽宁都市.png",辽宁都市
-https://stream1.freetv.fun/liao-zhu-du-shi-4.m3u8
+https://ls.qingting.fm/live/1099/64k.m3u8
 
-# 分类: 陕西省 (3个电视台)
+# 分类: 陕西省 (5个电视台)
 #EXTINF:-1 tvg-name="陕西体育休闲" group-title="陕西省",陕西体育休闲
 https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E4%BD%93%E8%82%B2%E4%BC%91%E9%97%B2%E9%A2%91%E9%81%93
 #EXTINF:-1 tvg-name="陕西新闻资讯" group-title="陕西省",陕西新闻资讯
 https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E6%96%B0%E9%97%BB%E8%B5%84%E8%AE%AF%E9%A2%91%E9%81%93
+#EXTINF:-1 tvg-name="陕西洋县国宝朱鹮02" group-title="陕西省" tvg-logo="https://tb.zbds.top/logo/陕西洋县国宝朱鹮02.png",陕西洋县国宝朱鹮02
+https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8
+#EXTINF:-1 tvg-name="陕西洋县国宝朱鹮03" group-title="陕西省",陕西洋县国宝朱鹮03
+https://gcalic.v.myalicdn.com/gc/zh03_1/index.m3u8
 #EXTINF:-1 tvg-name="陕西都市青春" group-title="陕西省",陕西都市青春
 https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E9%83%BD%E5%B8%82%E9%9D%92%E6%98%A5%E9%A2%91%E9%81%93
 

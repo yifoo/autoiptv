@@ -1,6 +1,6 @@
 #EXTM3U
 # 河南省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-03 23:09:04
+# 更新时间(北京时间): 2026-02-03 23:31:06
 # 电视台数量: 3
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
@@ -8,9 +8,9 @@
 # 白名单功能: 启用
 # 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="河南国际" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南国际.png",河南国际 [1IPv4]
+#EXTINF:-1 tvg-name="河南国际" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南国际.png",河南国际 [1普通]
 http://1.94.31.214/php/hntv.php?id=hngj
-#EXTINF:-1 tvg-name="河南民生" group-title="河南省",河南民生 [3IPv4]
+#EXTINF:-1 tvg-name="河南民生" group-title="河南省",河南民生 [3普通]
 https://stream1.freetv.fun/he-nan-min-sheng-4.m3u8|https://stream1.freetv.fun/he-nan-min-sheng-8.m3u8|https://migu.188766.xyz/?migutoken=508b3d9795fb339be127a1f07d259401&id=%E6%B0%91%E7%94%9F%E9%A2%91%E9%81%93&type=yy
-#EXTINF:-1 tvg-name="河南都市" group-title="河南省",河南都市 [5IPv4]
+#EXTINF:-1 tvg-name="河南都市" group-title="河南省",河南都市 [5普通]
 https://stream1.freetv.fun/he-nan-du-shi-10.m3u8|https://stream1.freetv.fun/he-nan-du-shi-11.m3u8|https://stream1.freetv.fun/he-nan-du-shi-2.m3u8|https://stream1.freetv.fun/he-nan-du-shi-9.m3u8|https://migu.188766.xyz/?migutoken=8c25c2d8138772601e84ba21e7a83c6e&id=%E9%83%BD%E5%B8%82%E9%A2%91%E9%81%93&type=yy

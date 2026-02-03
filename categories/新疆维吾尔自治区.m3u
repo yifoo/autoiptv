@@ -1,23 +1,12 @@
 #EXTM3U
 # 新疆维吾尔自治区频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-03 22:10:47
-# 电视台数量: 7
+# 更新时间(北京时间): 2026-02-03 23:31:06
+# 电视台数量: 1
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
-# 黑名单功能: 禁用
+# 黑名单功能: 启用
+# 白名单功能: 启用
 # 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="新疆天山" group-title="新疆维吾尔自治区" tvg-logo="https://tb.zbds.top/logo/新疆天山.png",新疆天山 [4IPv4]
-https://gcalic.v.myalicdn.com/gc/xjtcdhsz_1/index.m3u8|https://gcalic.v.myalicdn.com/gc/xjtcdgs_1/index.m3u8|https://gcalic.v.myalicdn.com/gc/xjtcmys_1/index.m3u8|http://gctxyc.liveplay.myqcloud.com/gc/xjtcdhsz_1/index.m3u8
-#EXTINF:-1 tvg-name="新疆私家车广播" group-title="新疆维吾尔自治区",新疆私家车广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wxxjsjcgb/playlist.m3u8
-#EXTINF:-1 tvg-name="新疆｜奎屯汉语综合" group-title="新疆维吾尔自治区",新疆｜奎屯汉语综合 [2IPv4]
-http://218.84.12.186:8001/hls/main/playlist.m3u8|http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd
-#EXTINF:-1 tvg-name="新疆｜巴音郭楞州" group-title="新疆维吾尔自治区",新疆｜巴音郭楞州 [4IPv4]
-http://file.loulannews.cn/nmip-media/channellive/channel101476/playlist.m3u8|http://file.loulannews.cn/nmip-media/channellive/channel102433/playlist.m3u8|http://file.loulannews.cn/nmip-media/channellive/channel103824/playlist.m3u8|http://file.loulannews.cn/nmip-media/channellive/channel104199/playlist.m3u8
-#EXTINF:-1 tvg-name="新疆｜石河子影视文体" group-title="新疆维吾尔自治区",新疆｜石河子影视文体 [1IPv4]
-http://124.88.144.73:1935/live/jjsh/playlist.m3u8
-#EXTINF:-1 tvg-name="新疆｜石河子新闻综合" group-title="新疆维吾尔自治区",新疆｜石河子新闻综合 [1IPv4]
-http://124.88.144.73:1935/live/xwzh/playlist.m3u8
-#EXTINF:-1 tvg-name="新疆｜石河子经济生活" group-title="新疆维吾尔自治区",新疆｜石河子经济生活 [1IPv4]
-http://124.88.144.73:1935/live/dywt/playlist.m3u8
+#EXTINF:-1 tvg-name="新疆天山" group-title="新疆维吾尔自治区",新疆天山 [3普通]
+https://gcalic.v.myalicdn.com/gc/xjtcdhsz_1/index.m3u8|https://gcalic.v.myalicdn.com/gc/xjtcdgs_1/index.m3u8|https://gcalic.v.myalicdn.com/gc/xjtcmys_1/index.m3u8

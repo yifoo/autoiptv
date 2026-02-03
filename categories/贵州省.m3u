@@ -1,23 +1,12 @@
 #EXTM3U
 # 贵州省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-03 22:10:47
-# 电视台数量: 7
+# 更新时间(北京时间): 2026-02-03 23:31:06
+# 电视台数量: 1
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
-# 黑名单功能: 禁用
+# 黑名单功能: 启用
+# 白名单功能: 启用
 # 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="村AB·贵州" group-title="贵州省",村AB·贵州 [1IPv4]
-https://yang-1989.eu.org/live/huya/17455052
-#EXTINF:-1 tvg-name="贵州广播" group-title="贵州省" tvg-logo="https://live.fanmingming.com/radio/贵州广播.png",贵州广播 [2IPv4]
-https://satellitepull.cnr.cn/live/wx32gzwxwzhgb/playlist.m3u8|https://satellitepull.cnr.cn/live/wx32gzyygb/playlist.m3u8
-#EXTINF:-1 tvg-name="贵州故事广播" group-title="贵州省" tvg-logo="https://live.fanmingming.com/radio/贵州故事广播.png",贵州故事广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wx32gzgsgb/playlist.m3u8
-#EXTINF:-1 tvg-name="贵州旅游广播" group-title="贵州省" tvg-logo="https://live.fanmingming.com/radio/贵州旅游广播.png",贵州旅游广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wx32gzlygb/playlist.m3u8
-#EXTINF:-1 tvg-name="贵州省兴义市万峰林" group-title="贵州省" tvg-logo="https://tb.zbds.top/logo/贵州省兴义市万峰林.png",贵州省兴义市万峰林 [1IPv4]
+#EXTINF:-1 tvg-name="贵州省兴义市万峰林" group-title="贵州省" tvg-logo="https://tb.zbds.top/logo/贵州省兴义市万峰林.png",贵州省兴义市万峰林 [1普通]
 https://gcalic.v.myalicdn.com/gc/xywfl_1/index.m3u8
-#EXTINF:-1 tvg-name="贵州经济广播" group-title="贵州省" tvg-logo="https://live.fanmingming.com/radio/贵州经济广播.png",贵州经济广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wx32gzjjgb/playlist.m3u8
-#EXTINF:-1 tvg-name="贵州都市广播" group-title="贵州省" tvg-logo="https://live.fanmingming.com/radio/贵州都市广播.png",贵州都市广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wx32gzqcgb/playlist.m3u8

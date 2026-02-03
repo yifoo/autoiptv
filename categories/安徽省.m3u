@@ -1,12 +1,20 @@
 #EXTM3U
 # 安徽省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-03 23:09:04
-# 电视台数量: 1
+# 更新时间(北京时间): 2026-02-03 23:31:06
+# 电视台数量: 5
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
 # 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="安徽经济生活" group-title="安徽省",安徽经济生活 [8IPv4]
+#EXTINF:-1 tvg-name="安徽池州九华山风景区九华山" group-title="安徽省",安徽池州九华山风景区九华山 [1普通]
+https://gcalic.v.myalicdn.com/gc/jhs05_1/index.m3u8
+#EXTINF:-1 tvg-name="安徽经济生活" group-title="安徽省",安徽经济生活 [8普通]
 https://stream1.freetv.fun/an-hui-jing-ji-sheng-huo-1.m3u8|https://stream1.freetv.fun/an-hui-jing-ji-sheng-huo-10.m3u8|https://stream1.freetv.fun/an-hui-jing-ji-sheng-huo-11.m3u8|https://stream1.freetv.fun/an-hui-jing-ji-sheng-huo-13.m3u8|https://stream1.freetv.fun/an-hui-jing-ji-sheng-huo-2.m3u8|https://stream1.freetv.fun/an-hui-jing-ji-sheng-huo-5.m3u8|https://stream1.freetv.fun/an-hui-jing-ji-sheng-huo-9.m3u8|https://stream1.freetv.fun/an-hui-jing-ji-sheng-huo-4.ctv
+#EXTINF:-1 tvg-name="安徽黟县芦村远眺" group-title="安徽省",安徽黟县芦村远眺 [2普通]
+https://gcalic.v.myalicdn.com/gc/yxlcyt_1/index.m3u8|https://gcalic.v.myalicdn.com/gc/yxlcyt_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-name="安徽黟县西递半山亭" group-title="安徽省",安徽黟县西递半山亭 [1普通]
+https://gcalic.v.myalicdn.com/gc/xywfl_1/index.m3u8
+#EXTINF:-1 tvg-name="安徽黟县西递牌坊" group-title="安徽省",安徽黟县西递牌坊 [1普通]
+https://gcalic.v.myalicdn.com/gc/yxxdpf_1/index.m3u8

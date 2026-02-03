@@ -1,6 +1,6 @@
 #EXTM3U
 # 河北省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-03 23:09:04
+# 更新时间(北京时间): 2026-02-03 23:31:06
 # 电视台数量: 3
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
@@ -8,9 +8,9 @@
 # 白名单功能: 启用
 # 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="河北农民" group-title="河北省",河北农民 [10IPv4]
-https://stream1.freetv.fun/he-bei-nong-min-12.m3u8|https://stream1.freetv.fun/he-bei-nong-min-14.m3u8|https://stream1.freetv.fun/he-bei-nong-min-15.m3u8|https://stream1.freetv.fun/he-bei-nong-min-17.m3u8|https://stream1.freetv.fun/he-bei-nong-min-18.m3u8|https://stream1.freetv.fun/he-bei-nong-min-8.m3u8|https://stream1.freetv.fun/he-bei-nong-min-9.m3u8|https://stream1.freetv.fun/he-bei-nong-min-18.ctv|https://stream1.freetv.fun/he-bei-nong-min-3.ctv|https://stream1.freetv.fun/he-bei-nong-min-7.ctv
-#EXTINF:-1 tvg-name="河北少儿科教" group-title="河北省" tvg-logo="河北少儿科教.png",河北少儿科教 [10IPv4]
+#EXTINF:-1 tvg-name="河北农民" group-title="河北省" tvg-logo="河北农民.png",河北农民 [11普通]
+https://ls.qingting.fm/live/1650/64k.m3u8|https://stream1.freetv.fun/he-bei-nong-min-12.m3u8|https://stream1.freetv.fun/he-bei-nong-min-14.m3u8|https://stream1.freetv.fun/he-bei-nong-min-15.m3u8|https://stream1.freetv.fun/he-bei-nong-min-17.m3u8|https://stream1.freetv.fun/he-bei-nong-min-18.m3u8|https://stream1.freetv.fun/he-bei-nong-min-8.m3u8|https://stream1.freetv.fun/he-bei-nong-min-9.m3u8|https://stream1.freetv.fun/he-bei-nong-min-18.ctv|https://stream1.freetv.fun/he-bei-nong-min-3.ctv|https://stream1.freetv.fun/he-bei-nong-min-7.ctv
+#EXTINF:-1 tvg-name="河北少儿科教" group-title="河北省" tvg-logo="河北少儿科教.png",河北少儿科教 [10普通]
 https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-2.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-12.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-3.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-10.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-15.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-6.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-7.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-9.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-8.ctv|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-17.ctv
-#EXTINF:-1 tvg-name="河北都市" group-title="河北省" tvg-logo="河北都市.png",河北都市 [13IPv4]
+#EXTINF:-1 tvg-name="河北都市" group-title="河北省" tvg-logo="河北都市.png",河北都市 [13普通]
 https://stream1.freetv.fun/he-bei-du-shi-11.m3u8|https://stream1.freetv.fun/he-bei-du-shi-12.m3u8|https://stream1.freetv.fun/he-bei-du-shi-14.m3u8|https://stream1.freetv.fun/he-bei-du-shi-18.m3u8|https://stream1.freetv.fun/he-bei-du-shi-2.m3u8|https://stream1.freetv.fun/he-bei-du-shi-24.m3u8|https://stream1.freetv.fun/he-bei-du-shi-5.m3u8|https://stream1.freetv.fun/he-bei-du-shi-7.m3u8|https://stream1.freetv.fun/he-bei-du-shi-13.ctv|https://stream1.freetv.fun/he-bei-du-shi-16.ctv|https://stream1.freetv.fun/he-bei-du-shi-20.ctv|https://stream1.freetv.fun/he-bei-du-shi-21.ctv|https://stream1.freetv.fun/he-bei-du-shi-22.ctv

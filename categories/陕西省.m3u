@@ -1,16 +1,20 @@
 #EXTM3U
 # 陕西省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-03 23:09:04
-# 电视台数量: 3
+# 更新时间(北京时间): 2026-02-03 23:31:06
+# 电视台数量: 5
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
 # 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="陕西体育休闲" group-title="陕西省",陕西体育休闲 [3IPv4]
+#EXTINF:-1 tvg-name="陕西体育休闲" group-title="陕西省",陕西体育休闲 [3普通]
 https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E4%BD%93%E8%82%B2%E4%BC%91%E9%97%B2%E9%A2%91%E9%81%93|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sxtyxx/51/20250804/index.m3u8?msisdn=202602020802098d96944d63964794ab5d86f210d756b1&mdspid=&spid=600572&netType=0&sid=5910022189&pid=2028597139&timestamp=20260202080209&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956909356&ParentNodeID=-99&assertID=5910022189&client_ip=218.28.233.106&SecurityKey=20260202080209&promotionId=&mvid=5900006712&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=607d682e2284b468f0ea41f3035588a8|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sxtyxx/51/20250804/index.m3u8?msisdn=20260203085055953272ff86174981bcf9750e98adf2d2&mdspid=&spid=600572&netType=0&sid=5910022189&pid=2028597139&timestamp=20260203085055&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956909356&ParentNodeID=-99&assertID=5910022189&client_ip=218.28.233.106&SecurityKey=20260203085055&promotionId=&mvid=5900006712&mcid=500020&playurlVersion=ZQ-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=959b1814d7080b8a31436d716fdf8e3e
-#EXTINF:-1 tvg-name="陕西新闻资讯" group-title="陕西省",陕西新闻资讯 [3IPv4]
+#EXTINF:-1 tvg-name="陕西新闻资讯" group-title="陕西省",陕西新闻资讯 [3普通]
 https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E6%96%B0%E9%97%BB%E8%B5%84%E8%AE%AF%E9%A2%91%E9%81%93|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sxxwzx/51/20250804/index.m3u8?msisdn=20260202080214ba9b19b4f5bb42498fbc066371385b64&mdspid=&spid=600572&netType=0&sid=5910022187&pid=2028597139&timestamp=20260202080214&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956909289&ParentNodeID=-99&assertID=5910022187&client_ip=218.28.233.106&SecurityKey=20260202080214&promotionId=&mvid=5900006710&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=943b049db494202ab8fdb1af116ad924|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sxxwzx/51/20250804/index.m3u8?msisdn=20260203085101d0a846e01aac4ec4a9b6e8fa0f7c952f&mdspid=&spid=600572&netType=0&sid=5910022187&pid=2028597139&timestamp=20260203085101&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956909289&ParentNodeID=-99&assertID=5910022187&client_ip=218.28.233.106&SecurityKey=20260203085101&promotionId=&mvid=5900006710&mcid=500020&playurlVersion=ZQ-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=3c78b0c1055cd36c9ef7a5e3b5bc4845
-#EXTINF:-1 tvg-name="陕西都市青春" group-title="陕西省",陕西都市青春 [3IPv4]
+#EXTINF:-1 tvg-name="陕西洋县国宝朱鹮02" group-title="陕西省" tvg-logo="https://tb.zbds.top/logo/陕西洋县国宝朱鹮02.png",陕西洋县国宝朱鹮02 [1普通]
+https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8
+#EXTINF:-1 tvg-name="陕西洋县国宝朱鹮03" group-title="陕西省",陕西洋县国宝朱鹮03 [1普通]
+https://gcalic.v.myalicdn.com/gc/zh03_1/index.m3u8
+#EXTINF:-1 tvg-name="陕西都市青春" group-title="陕西省",陕西都市青春 [3普通]
 https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E9%83%BD%E5%B8%82%E9%9D%92%E6%98%A5%E9%A2%91%E9%81%93|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sxdsqc/51/20250804/index.m3u8?msisdn=202602020802143ea019831212493688fd8bad64891b42&mdspid=&spid=600572&netType=0&sid=5910022190&pid=2028597139&timestamp=20260202080214&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956909358&ParentNodeID=-99&assertID=5910022190&client_ip=218.28.233.106&SecurityKey=20260202080214&promotionId=&mvid=5900006713&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=16dc6b0837cf65a3f2d15528ce7dbe5c|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sxdsqc/51/20250804/index.m3u8?msisdn=2026020308510140a8816905104d2f9e6bd7bb129b5233&mdspid=&spid=600572&netType=0&sid=5910022190&pid=2028597139&timestamp=20260203085101&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956909358&ParentNodeID=-99&assertID=5910022190&client_ip=218.28.233.106&SecurityKey=20260203085101&promotionId=&mvid=5900006713&mcid=500020&playurlVersion=ZQ-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=00e776adebcdc0349a0a48aab5bf73c7
