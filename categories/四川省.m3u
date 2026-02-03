@@ -1,6 +1,6 @@
 #EXTM3U
 # 四川省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-02 02:41:26
+# 更新时间(北京时间): 2026-02-03 22:10:47
 # 电视台数量: 25
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
@@ -51,8 +51,8 @@ http://wouu.net:9977/udp/239.93.0.47:5140
 https://satellitepull.cnr.cn/live/wxsclyshgb/playlist.m3u8
 #EXTINF:-1 tvg-name="四川私家车广播" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川私家车广播.png",四川私家车广播 [1IPv4]
 https://satellitepull.cnr.cn/live/wxsc925/playlist.m3u8
-#EXTINF:-1 tvg-name="四川科教" group-title="四川省" tvg-logo="https://epg.pw/media/images/channel/2022/05/28/large/20220528221105613593_11.jpg" tvg-ipv6="true",四川科教 [1IPv6+8IPv4]
-http://wouu.net:9977/udp/239.93.42.44:5140|https://stream1.freetv.fun/dd26f57be074ce07e1fb0d357b9bff2846bd030575df792d54abb4299ba5ada0.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-1.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-5.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-3.ctv|https://stream1.freetv.fun/si-chuan-ke-jiao-4.ctv|http://182.150.115.21:8030/pcgacg/pcgacg_0.m3u8|http://160.202.238.87:12395/live2.rxip.sc96655.com/live/SCTV-ggSCTV-8_4000.m3u8?E&U&A&K&P&S|http://8.138.7.223/【公众号：榴芒电视】/四川科教.m3u8
+#EXTINF:-1 tvg-name="四川科教" group-title="四川省" tvg-logo="https://epg.pw/media/images/channel/2022/05/28/large/20220528221105613593_11.jpg" tvg-ipv6="true",四川科教 [1IPv6+7IPv4]
+http://wouu.net:9977/udp/239.93.42.44:5140|https://stream1.freetv.fun/dd26f57be074ce07e1fb0d357b9bff2846bd030575df792d54abb4299ba5ada0.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-1.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-5.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-3.ctv|https://stream1.freetv.fun/si-chuan-ke-jiao-4.ctv|http://182.150.115.21:8030/pcgacg/pcgacg_0.m3u8|http://8.138.7.223/【公众号：榴芒电视】/四川科教.m3u8
 #EXTINF:-1 tvg-name="四川经济" group-title="四川省" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan1.png" tvg-ipv6="true",四川经济 [1IPv6]
 http://wouu.net:9977/udp/239.93.1.101:5140
 #EXTINF:-1 tvg-name="四川经济广播" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川经济广播.png",四川经济广播 [1IPv4]
