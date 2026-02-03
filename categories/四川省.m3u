@@ -1,59 +1,12 @@
 #EXTM3U
 # 四川省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-03 22:10:47
-# 电视台数量: 25
+# 更新时间(北京时间): 2026-02-03 23:09:04
+# 电视台数量: 1
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
-# 黑名单功能: 禁用
+# 黑名单功能: 启用
+# 白名单功能: 启用
 # 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="四川 Ⅰ 四川影视台" group-title="四川省" tvg-quality="标清",四川 Ⅰ 四川影视台 [1IPv4]
-http://scgctvshow.sctv.com/hdlive/sctv5/index.m3u8
-#EXTINF:-1 tvg-name="四川 Ⅰ 四川新闻台" group-title="四川省" tvg-quality="标清",四川 Ⅰ 四川新闻台 [1IPv4]
-http://scgctvshow.sctv.com/hdlive/sctv4/index.m3u8
-#EXTINF:-1 tvg-name="四川 Ⅰ 巴中综合台" group-title="四川省" tvg-quality="高清",四川 Ⅰ 巴中综合台 [1IPv4]
-http://30814.hlsplay.aodianyun.com/lms_30814/tv_channel_246.flv
-#EXTINF:-1 tvg-name="四川 Ⅰ 星空购物台" group-title="四川省" tvg-quality="标清" tvg-ipv6="true",四川 Ⅰ 星空购物台 [1IPv6]
-http://scgctvshow.sctv.com/hdlive/sctv6/index.m3u8
-#EXTINF:-1 tvg-name="四川 Ⅰ 达州公共台" group-title="四川省" tvg-quality="标清",四川 Ⅰ 达州公共台 [1IPv4]
-http://m3u8.channellive.dzxw.net/cms/videos/nmip-media/channellive/channel36/playlist.m3u8
-#EXTINF:-1 tvg-name="四川 Ⅰ 达州综合台" group-title="四川省" tvg-quality="标清",四川 Ⅰ 达州综合台 [1IPv4]
-http://m3u8.channellive.dzxw.net/cms/videos/nmip-media/channellive/channel35/playlist.m3u8
-#EXTINF:-1 tvg-name="四川交通广播" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川交通广播.png",四川交通广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wxscjtgb/playlist.m3u8
-#EXTINF:-1 tvg-name="四川公共" group-title="四川省" tvg-quality="标清",四川公共 [1IPv4]
-http://scgctvshow.sctv.com/hdlive/sctv9/index.m3u8
-#EXTINF:-1 tvg-name="四川公共乡村" group-title="四川省" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan6.png" tvg-ipv6="true",四川公共乡村 [1IPv6]
-http://wouu.net:9977/udp/239.93.0.52:5140
-#EXTINF:-1 tvg-name="四川四姑娘山隆珠措" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川四姑娘山隆珠措.png",四川四姑娘山隆珠措 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/sgns02_1/index.m3u8
-#EXTINF:-1 tvg-name="四川城市之音" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川城市之音.png",四川城市之音 [1IPv4]
-https://satellitepull.cnr.cn/live/wxsccszs/playlist.m3u8
-#EXTINF:-1 tvg-name="四川妇女儿童" group-title="四川省" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan5.png" tvg-quality="标清" tvg-ipv6="true",四川妇女儿童 [1IPv6+1IPv4]
-http://wouu.net:9977/udp/239.93.0.219:5140|http://scgctvshow.sctv.com/hdlive/sctv7/index.m3u8
-#EXTINF:-1 tvg-name="四川岷江广播" group-title="四川省",四川岷江广播 [1IPv4]
-http://ls.qingting.fm/live/1110.m3u8
-#EXTINF:-1 tvg-name="四川峨眉山云海日出" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川峨眉山云海日出.png",四川峨眉山云海日出 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/emsarm_1/index.m3u8
-#EXTINF:-1 tvg-name="四川峨眉山普贤菩萨铜像" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川峨眉山普贤菩萨铜像.png",四川峨眉山普贤菩萨铜像 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/emspxps_1/index.m3u8
-#EXTINF:-1 tvg-name="四川峨眉山远眺万佛顶" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川峨眉山远眺万佛顶.png",四川峨眉山远眺万佛顶 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8
-#EXTINF:-1 tvg-name="四川峨眉山远眺贡嘎雪山" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川峨眉山远眺贡嘎雪山.png",四川峨眉山远眺贡嘎雪山 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8
-#EXTINF:-1 tvg-name="四川广播四川之声" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川之声.png",四川广播四川之声 [1IPv4]
-https://satellitepull.cnr.cn/live/wxsczhgb/playlist.m3u8
-#EXTINF:-1 tvg-name="四川文艺广播" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川文艺广播.png",四川文艺广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wxscwygb/playlist.m3u8
-#EXTINF:-1 tvg-name="四川新闻" group-title="四川省" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan3.png" tvg-ipv6="true",四川新闻 [1IPv6]
-http://wouu.net:9977/udp/239.93.0.47:5140
-#EXTINF:-1 tvg-name="四川旅游生活广播" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川旅游生活广播.png",四川旅游生活广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wxsclyshgb/playlist.m3u8
-#EXTINF:-1 tvg-name="四川私家车广播" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川私家车广播.png",四川私家车广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wxsc925/playlist.m3u8
-#EXTINF:-1 tvg-name="四川科教" group-title="四川省" tvg-logo="https://epg.pw/media/images/channel/2022/05/28/large/20220528221105613593_11.jpg" tvg-ipv6="true",四川科教 [1IPv6+7IPv4]
-http://wouu.net:9977/udp/239.93.42.44:5140|https://stream1.freetv.fun/dd26f57be074ce07e1fb0d357b9bff2846bd030575df792d54abb4299ba5ada0.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-1.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-5.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-3.ctv|https://stream1.freetv.fun/si-chuan-ke-jiao-4.ctv|http://182.150.115.21:8030/pcgacg/pcgacg_0.m3u8|http://8.138.7.223/【公众号：榴芒电视】/四川科教.m3u8
-#EXTINF:-1 tvg-name="四川经济" group-title="四川省" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan1.png" tvg-ipv6="true",四川经济 [1IPv6]
-http://wouu.net:9977/udp/239.93.1.101:5140
-#EXTINF:-1 tvg-name="四川经济广播" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川经济广播.png",四川经济广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wxscjjgb/playlist.m3u8
+#EXTINF:-1 tvg-name="四川科教" group-title="四川省" tvg-logo="四川科教.png",四川科教 [4IPv4]
+https://stream1.freetv.fun/si-chuan-ke-jiao-1.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-5.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-3.ctv|https://stream1.freetv.fun/si-chuan-ke-jiao-4.ctv

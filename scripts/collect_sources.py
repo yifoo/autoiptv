@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-电视直播源收集脚本 - 带黑名单的IPv6优先多源合并版
-功能：1. 频道名称精简 2. 同名电视台合并（IPv6优先）3. 支持源切换 4. 统一央视频道命名 5. 智能速度测试和黑名单过滤
-特点：支持配置黑名单是否启用、电视线路是否测速，改进测速算法，更精准识别可用直播源
+电视直播源收集脚本 - 带黑白名单的IPv6优先多源合并版
+功能：1. 频道名称精简 2. 同名电视台合并（IPv6优先）3. 支持源切换 4. 统一央视频道命名 5. 智能速度测试和黑白名单过滤
+特点：支持配置黑名单/白名单/测速开关，白名单自动加入，改进测速算法，更精准识别可用直播源
 分类：央视、卫视、地方台（按省份）、少儿台、综艺台、港澳台、体育台、影视台、景区频道、其他台
 播放器支持：PotPlayer、VLC、TiviMate、Kodi等支持多源切换的播放器
 """
@@ -21,9 +21,9 @@ import threading
 from urllib.parse import urlparse
 
 print("=" * 70)
-print("电视直播源收集脚本 v8.0 - 配置化智能测速版")
-print("功能：支持配置黑名单/测速开关，IPv6优先，智能测速过滤")
-print("特点：可通过配置文件控制黑名单和测速功能，减少误判")
+print("电视直播源收集脚本 v9.5 - 白名单自动加入版")
+print("功能：支持配置黑名单/白名单/测速开关，白名单自动加入，IPv6优先，智能测速过滤")
+print("特点：白名单源自动加入直播源列表，即使不在原始数据源中")
 print("播放器：支持PotPlayer、VLC、TiviMate、Kodi等多源切换功能")
 print("=" * 70)
 
@@ -34,16 +34,22 @@ def load_config():
     """加载配置文件"""
     config = {
         'ENABLE_BLACKLIST': True,      # 是否启用黑名单
+        'ENABLE_WHITELIST': True,      # 是否启用白名单
         'ENABLE_SPEED_TEST': True,     # 是否启用测速
         'CONNECT_TIMEOUT': 3,          # 连接超时时间
         'STREAM_TIMEOUT': 10,          # 流媒体测试超时时间
         'MIN_SPEED_SCORE': 0.5,        # 最低速度评分
         'MAX_WORKERS': 20,             # 并发测试线程数
+        'WHITELIST_FILE': 'whitelist.txt',  # 白名单文件路径
+        'WHITELIST_OVERRIDE_BLACKLIST': True,  # 白名单覆盖黑名单
+        'WHITELIST_IGNORE_SPEED_TEST': True,   # 白名单忽略速度测试
+        'WHITELIST_AUTO_ADD': True,    # 白名单自动加入直播源
     }
     
     if not os.path.exists(CONFIG_FILE):
         print(f"📝 配置文件 {CONFIG_FILE} 不存在，使用默认配置")
         print(f"   黑名单功能: {'启用' if config['ENABLE_BLACKLIST'] else '禁用'}")
+        print(f"   白名单功能: {'启用' if config['ENABLE_WHITELIST'] else '禁用'}")
         print(f"   测速功能: {'启用' if config['ENABLE_SPEED_TEST'] else '禁用'}")
         return config
     
@@ -60,13 +66,19 @@ def load_config():
                     value = value.strip()
                     
                     # 布尔值处理
-                    if key in ['ENABLE_BLACKLIST', 'ENABLE_SPEED_TEST']:
+                    if key in ['ENABLE_BLACKLIST', 'ENABLE_WHITELIST', 'ENABLE_SPEED_TEST', 
+                               'WHITELIST_OVERRIDE_BLACKLIST', 'WHITELIST_IGNORE_SPEED_TEST',
+                               'WHITELIST_AUTO_ADD']:
                         if value.lower() in ['true', 'yes', '1', 'on']:
                             config[key] = True
                         elif value.lower() in ['false', 'no', '0', 'off']:
                             config[key] = False
                         else:
                             print(f"⚠️  配置第{line_num}行: {key} 值 '{value}' 无效，使用默认值 {config[key]}")
+                    
+                    # 字符串处理
+                    elif key in ['WHITELIST_FILE']:
+                        config[key] = value
                     
                     # 整数处理
                     elif key in ['CONNECT_TIMEOUT', 'STREAM_TIMEOUT', 'MAX_WORKERS']:
@@ -91,7 +103,13 @@ def load_config():
         
         print(f"✅ 从 {CONFIG_FILE} 加载配置:")
         print(f"   黑名单功能: {'启用' if config['ENABLE_BLACKLIST'] else '禁用'}")
+        print(f"   白名单功能: {'启用' if config['ENABLE_WHITELIST'] else '禁用'}")
         print(f"   测速功能: {'启用' if config['ENABLE_SPEED_TEST'] else '禁用'}")
+        if config['ENABLE_WHITELIST']:
+            print(f"   白名单文件: {config['WHITELIST_FILE']}")
+            print(f"   覆盖黑名单: {'是' if config['WHITELIST_OVERRIDE_BLACKLIST'] else '否'}")
+            print(f"   忽略测速: {'是' if config['WHITELIST_IGNORE_SPEED_TEST'] else '否'}")
+            print(f"   自动加入: {'是' if config['WHITELIST_AUTO_ADD'] else '否'}")
         print(f"   连接超时: {config['CONNECT_TIMEOUT']}秒")
         print(f"   流测试超时: {config['STREAM_TIMEOUT']}秒")
         print(f"   最低评分: {config['MIN_SPEED_SCORE']}")
@@ -147,13 +165,6 @@ def load_sources_from_file():
 
 # 从sources.txt文件加载所有源
 sources = load_sources_from_file()
-
-if len(sources) == 0:
-    print("❌ 没有可用的数据源，退出")
-    sys.exit(1)
-
-# 黑名单管理
-BLACKLIST_FILE = "blacklist.txt"
 
 # 智能测速配置
 class SpeedTestConfig:
@@ -460,6 +471,10 @@ def get_source_priority(source_info):
     if 'm3u8' in url_lower:
         priority += 2  # HLS源加分
     
+    # 白名单源额外加分
+    if source_info.get('is_whitelist', False):
+        priority += 80  # 白名单源优先级仅次于IPv6
+    
     return priority
 
 # 频道名称清理规则 - 深度精简
@@ -702,27 +717,208 @@ PLAYER_SUPPORT = {
     }
 }
 
-# 黑名单管理函数
-def load_blacklist():
-    """加载黑名单"""
-    if not config['ENABLE_BLACKLIST']:
-        print("📋 黑名单功能已禁用，跳过加载")
-        return set()
+# 黑名单管理
+BLACKLIST_FILE = "blacklist.txt"
+
+# 白名单管理函数
+def load_whitelist():
+    """加载白名单，支持多种格式：规则、完整URL、频道定义"""
+    if not config['ENABLE_WHITELIST']:
+        print("📋 白名单功能已禁用，跳过加载")
+        return {'patterns': set(), 'urls': set(), 'channels': []}
     
-    blacklist = set()
-    if os.path.exists(BLACKLIST_FILE):
+    whitelist_file = config['WHITELIST_FILE']
+    whitelist_data = {
+        'patterns': set(),  # 规则模式
+        'urls': set(),      # 完整URL
+        'channels': []      # 完整频道定义
+    }
+    
+    if not os.path.exists(whitelist_file):
+        print(f"📝 {whitelist_file} 文件不存在，将创建空白名单")
+        # 创建空白的白名单文件
         try:
-            with open(BLACKLIST_FILE, "r", encoding="utf-8") as f:
-                for line in f:
-                    line = line.strip()
-                    if line and not line.startswith("#"):
-                        blacklist.add(line)
-            print(f"📋 从 {BLACKLIST_FILE} 加载了 {len(blacklist)} 个黑名单条目")
+            with open(whitelist_file, "w", encoding="utf-8") as f:
+                f.write("# 直播源白名单\n")
+                f.write("# 该文件包含永不删除的直播源\n")
+                f.write("# 支持格式:\n")
+                f.write("# 1. 规则匹配: *example.com* (匹配所有包含example.com的URL)\n")
+                f.write("# 2. 完整URL: https://example.com/live.m3u8\n")
+                f.write("# 3. 频道定义: url=https://example.com/live.m3u8, name=频道名称, group=分组, logo=logo.png\n")
+                f.write("# 4. 正则表达式: /.*cctv.*\\.m3u8/\n")
+                f.write("# 生成时间: " + get_beijing_time() + "\n")
+                f.write("# 配置文件: " + CONFIG_FILE + "\n\n")
+                f.write("# 示例:\n")
+                f.write("# *cctv.com*\n")
+                f.write("# https://example.com/important-stream.m3u8\n")
+                f.write("# url=https://example.com/live.m3u8, name=测试频道, group=测试分组, logo=http://example.com/logo.png\n")
+                f.write("# /.*4k.*\\.m3u8/\n")
+                f.write("\n")
+            print(f"✅ 已创建空白白名单文件 {whitelist_file}")
         except Exception as e:
-            print(f"⚠️  读取黑名单失败: {e}")
-    else:
-        print(f"📝 {BLACKLIST_FILE} 文件不存在")
-    return blacklist
+            print(f"❌ 创建白名单文件失败: {e}")
+        return whitelist_data
+    
+    try:
+        with open(whitelist_file, "r", encoding="utf-8") as f:
+            for line_num, line in enumerate(f, 1):
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                
+                # 处理频道定义格式：url=..., name=..., group=..., logo=...
+                if line.startswith("url="):
+                    try:
+                        # 解析频道定义
+                        params = {}
+                        for part in line.split(','):
+                            part = part.strip()
+                            if '=' in part:
+                                key, value = part.split('=', 1)
+                                params[key.strip()] = value.strip()
+                        
+                        if 'url' in params:
+                            url = params['url']
+                            name = params.get('name', '白名单频道')
+                            group = params.get('group', '白名单')
+                            logo = params.get('logo', '')
+                            quality = params.get('quality', '未知')
+                            
+                            channel_info = {
+                                'url': url,
+                                'name': name,
+                                'group': group,
+                                'logo': logo,
+                                'quality': quality,
+                                'is_whitelist': True
+                            }
+                            whitelist_data['channels'].append(channel_info)
+                            whitelist_data['urls'].add(url)
+                            print(f"   ✅ 加载白名单频道: {name} - {url[:50]}...")
+                    except Exception as e:
+                        print(f"⚠️  白名单第{line_num}行解析失败: {line} - {e}")
+                
+                # 处理完整URL
+                elif line.startswith("http://") or line.startswith("https://"):
+                    whitelist_data['urls'].add(line)
+                    # 如果是直播源URL，也自动创建频道
+                    if any(ext in line.lower() for ext in ['.m3u8', '.m3u', '.ts', '.flv', '.rtmp', '.rtsp']):
+                        # 从URL中提取频道名称
+                        try:
+                            parsed = urlparse(line)
+                            hostname = parsed.netloc
+                            name = f"白名单-{hostname}"
+                            
+                            channel_info = {
+                                'url': line,
+                                'name': name,
+                                'group': '白名单',
+                                'logo': '',
+                                'quality': '未知',
+                                'is_whitelist': True
+                            }
+                            whitelist_data['channels'].append(channel_info)
+                        except:
+                            pass
+                
+                # 处理正则表达式
+                elif line.startswith('/') and line.endswith('/'):
+                    whitelist_data['patterns'].add(line)
+                
+                # 处理通配符规则
+                else:
+                    whitelist_data['patterns'].add(line)
+        
+        print(f"✅ 从 {whitelist_file} 加载白名单:")
+        print(f"   规则数量: {len(whitelist_data['patterns'])} 个")
+        print(f"   URL数量: {len(whitelist_data['urls'])} 个")
+        print(f"   频道数量: {len(whitelist_data['channels'])} 个")
+        
+        # 显示白名单内容（最多显示10条）
+        if whitelist_data['patterns'] and len(whitelist_data['patterns']) <= 10:
+            print(f"   规则内容:")
+            for item in sorted(whitelist_data['patterns']):
+                print(f"     - {item}")
+        
+    except Exception as e:
+        print(f"⚠️  读取白名单失败: {e}")
+    
+    return whitelist_data
+
+def is_in_whitelist(url, whitelist_data):
+    """检查URL是否在白名单中"""
+    if not config['ENABLE_WHITELIST'] or not whitelist_data:
+        return False
+    
+    url_lower = url.lower()
+    
+    # 检查完整URL匹配
+    if url in whitelist_data['urls']:
+        return True
+    
+    # 检查规则匹配
+    for pattern in whitelist_data['patterns']:
+        pattern_lower = pattern.lower()
+        
+        # 通配符匹配
+        if pattern.startswith('*') and pattern.endswith('*'):
+            pattern_clean = pattern[1:-1]
+            if pattern_clean in url_lower:
+                return True
+        
+        # 正则表达式匹配（以/开头和结尾）
+        elif pattern.startswith('/') and pattern.endswith('/'):
+            try:
+                regex_pattern = pattern[1:-1]
+                if re.search(regex_pattern, url_lower):
+                    return True
+            except re.error:
+                continue  # 正则表达式有误，跳过
+        
+        # 部分匹配（包含关系）
+        elif pattern_lower in url_lower:
+            return True
+    
+    return False
+
+def apply_whitelist_rules(urls, speed_results, slow_urls, whitelist_data):
+    """应用白名单规则"""
+    if not config['ENABLE_WHITELIST'] or not whitelist_data:
+        return urls, speed_results, slow_urls
+    
+    print(f"\n📋 应用白名单规则...")
+    
+    # 找出在白名单中的URL
+    whitelisted_urls = set()
+    for url in urls:
+        if is_in_whitelist(url, whitelist_data):
+            whitelisted_urls.add(url)
+    
+    if not whitelisted_urls:
+        print(f"   没有URL匹配白名单规则")
+        return urls, speed_results, slow_urls
+    
+    print(f"   发现 {len(whitelisted_urls)} 个URL在白名单中:")
+    
+    # 处理白名单中的URL
+    for url in sorted(whitelisted_urls)[:20]:  # 最多显示20条
+        print(f"     ✅ {url[:80]}...")
+    
+    if len(whitelisted_urls) > 20:
+        print(f"     ... 还有 {len(whitelisted_urls)-20} 个未显示")
+    
+    # 根据配置处理白名单
+    if config['WHITELIST_IGNORE_SPEED_TEST']:
+        print(f"\n⚡ 白名单忽略速度测试规则:")
+        # 确保白名单URL不在慢速列表中
+        slow_urls = slow_urls - whitelisted_urls
+        print(f"   从慢速列表中移除了 {len(whitelisted_urls.intersection(slow_urls))} 个白名单URL")
+    
+    if config['WHITELIST_OVERRIDE_BLACKLIST']:
+        print(f"\n🚫 白名单覆盖黑名单规则:")
+        print(f"   白名单URL将不受黑名单限制")
+    
+    return urls, speed_results, slow_urls
 
 def save_to_blacklist(slow_urls, reason="响应时间超过阈值"):
     """保存慢速URL到黑名单"""
@@ -773,8 +969,28 @@ def save_to_blacklist(slow_urls, reason="响应时间超过阈值"):
     except Exception as e:
         print(f"❌ 保存黑名单失败: {e}")
 
-def test_urls_with_progress(urls, blacklist):
-    """并发测试URL速度，显示进度"""
+def load_blacklist():
+    """加载黑名单"""
+    if not config['ENABLE_BLACKLIST']:
+        return set()
+    
+    blacklist = set()
+    if os.path.exists(BLACKLIST_FILE):
+        try:
+            with open(BLACKLIST_FILE, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith("#"):
+                        blacklist.add(line)
+            print(f"📋 从 {BLACKLIST_FILE} 加载了 {len(blacklist)} 个黑名单条目")
+        except Exception as e:
+            print(f"⚠️  读取黑名单失败: {e}")
+    else:
+        print(f"📝 {BLACKLIST_FILE} 文件不存在")
+    return blacklist
+
+def test_urls_with_progress(urls, blacklist, whitelist_data):
+    """并发测试URL速度，显示进度，考虑白名单"""
     if not config['ENABLE_SPEED_TEST']:
         print("⚡ 测速功能已禁用，跳过速度测试")
         return {}, set(), {}
@@ -787,33 +1003,65 @@ def test_urls_with_progress(urls, blacklist):
     print(f"📊 配置: 连接超时={config['CONNECT_TIMEOUT']}s, 流测试超时={config['STREAM_TIMEOUT']}s")
     print(f"📊 需要测试 {len(urls)} 个URL")
     
-    # 过滤掉已经在黑名单中的URL（如果黑名单启用）
-    if config['ENABLE_BLACKLIST']:
-        urls_to_test = [url for url in urls if url not in blacklist]
-    else:
-        urls_to_test = urls
+    # 过滤掉已经在黑名单中的URL（如果黑名单启用且白名单不覆盖）
+    urls_to_test = []
+    skipped_blacklisted = 0
+    whitelist_override_count = 0
+    
+    for url in urls:
+        # 检查是否在白名单中
+        is_whitelisted = config['ENABLE_WHITELIST'] and is_in_whitelist(url, whitelist_data)
+        
+        # 检查是否在黑名单中
+        is_blacklisted = config['ENABLE_BLACKLIST'] and (url in blacklist)
+        
+        if is_whitelisted and config['WHITELIST_OVERRIDE_BLACKLIST']:
+            # 白名单覆盖黑名单，即使URL在黑名单中也测试
+            urls_to_test.append(url)
+            if is_blacklisted:
+                whitelist_override_count += 1
+        elif not is_blacklisted:
+            # URL不在黑名单中，正常测试
+            urls_to_test.append(url)
+        else:
+            # URL在黑名单中且不在白名单中，跳过
+            skipped_blacklisted += 1
+    
+    print(f"🔍 实际需要测试 {len(urls_to_test)} 个URL")
+    if skipped_blacklisted > 0:
+        print(f"   跳过了 {skipped_blacklisted} 个黑名单中的URL")
+    if whitelist_override_count > 0:
+        print(f"   白名单覆盖了 {whitelist_override_count} 个黑名单URL")
     
     if not urls_to_test:
         print("✅ 所有URL都在黑名单中，跳过速度测试")
         return results, slow_urls, detailed_results
     
-    print(f"🔍 实际需要测试 {len(urls_to_test)} 个URL")
-    
     # 按URL类型分组（M3U8优先测试）
     m3u8_urls = []
     other_urls = []
+    whitelist_m3u8 = []
+    whitelist_other = []
     
     for url in urls_to_test:
+        is_whitelisted = config['ENABLE_WHITELIST'] and is_in_whitelist(url, whitelist_data)
+        
         if '.m3u8' in url.lower():
-            m3u8_urls.append(url)
+            if is_whitelisted:
+                whitelist_m3u8.append(url)
+            else:
+                m3u8_urls.append(url)
         else:
-            other_urls.append(url)
+            if is_whitelisted:
+                whitelist_other.append(url)
+            else:
+                other_urls.append(url)
     
-    print(f"  M3U8流媒体源: {len(m3u8_urls)} 个")
-    print(f"  其他类型源: {len(other_urls)} 个")
+    print(f"  M3U8流媒体源: {len(m3u8_urls)} 个普通, {len(whitelist_m3u8)} 个白名单")
+    print(f"  其他类型源: {len(other_urls)} 个普通, {len(whitelist_other)} 个白名单")
     
-    # 合并测试列表
-    test_order = m3u8_urls + other_urls
+    # 合并测试列表：白名单优先
+    test_order = whitelist_m3u8 + m3u8_urls + whitelist_other + other_urls
     
     # 使用线程池并发测试
     with concurrent.futures.ThreadPoolExecutor(max_workers=config['MAX_WORKERS']) as executor:
@@ -837,12 +1085,19 @@ def test_urls_with_progress(urls, blacklist):
                     score = result['score']
                     results[url] = score
                     
-                    # 判断是否为慢速源
-                    if score < config['MIN_SPEED_SCORE']:
+                    # 检查是否在白名单中
+                    is_whitelisted = config['ENABLE_WHITELIST'] and is_in_whitelist(url, whitelist_data)
+                    
+                    # 判断是否为慢速源（白名单可忽略）
+                    if score < config['MIN_SPEED_SCORE'] and not (is_whitelisted and config['WHITELIST_IGNORE_SPEED_TEST']):
                         slow_urls.add(url)
                         speed_desc = f"评分低({score:.2f})"
                     else:
                         speed_desc = f"评分{score:.2f}"
+                    
+                    # 标记白名单
+                    if is_whitelisted:
+                        speed_desc = f"✅白名单 {speed_desc}"
                     
                     # 每测试5个URL显示一次进度
                     if completed % 5 == 0 or completed == total:
@@ -854,18 +1109,38 @@ def test_urls_with_progress(urls, blacklist):
                               f"用时:{elapsed:.1f}s 剩余:{remaining:.0f}s "
                               f"最新:{speed_desc} {url[:50]}...")
                 else:
-                    slow_urls.add(url)
+                    # 失败情况：白名单可忽略失败
+                    is_whitelisted = config['ENABLE_WHITELIST'] and is_in_whitelist(url, whitelist_data)
+                    if not (is_whitelisted and config['WHITELIST_IGNORE_SPEED_TEST']):
+                        slow_urls.add(url)
+                    
                     error_msg = result.get('error', '未知错误')
-                    print(f"  ❌ 失败: {url[:60]}... - {error_msg}")
+                    if is_whitelisted:
+                        print(f"  ⚠️  白名单失败: {url[:60]}... - {error_msg}")
+                    else:
+                        print(f"  ❌ 失败: {url[:60]}... - {error_msg}")
                     
             except Exception as e:
-                slow_urls.add(url)
+                url = future_to_url[future]
+                # 白名单可忽略异常
+                is_whitelisted = config['ENABLE_WHITELIST'] and is_in_whitelist(url, whitelist_data)
+                if not (is_whitelisted and config['WHITELIST_IGNORE_SPEED_TEST']):
+                    slow_urls.add(url)
+                
                 detailed_results[url] = {
                     'success': False,
                     'error': f"测试异常: {str(e)}",
                     'score': 0.0
                 }
-                print(f"  ⚠️  异常: {url[:60]}... - {str(e)[:50]}")
+                
+                if is_whitelisted:
+                    print(f"  ⚠️  白名单测试异常: {url[:60]}... - {str(e)[:50]}")
+                else:
+                    print(f"  ⚠️  异常: {url[:60]}... - {str(e)[:50]}")
+    
+    # 应用白名单规则
+    if config['ENABLE_WHITELIST']:
+        _, _, slow_urls = apply_whitelist_rules(urls, results, slow_urls, whitelist_data)
     
     # 统计结果
     fast_urls = len(results)
@@ -1152,6 +1427,7 @@ def merge_channels(all_channels, speed_test_results=None):
                     'logo': channel['logo'],
                     'priority': 0,  # 稍后计算
                     'is_ipv6': is_ipv6_url(channel['url']),
+                    'is_whitelist': channel.get('is_whitelist', False),
                     'speed_score': speed_test_results.get(channel['url'], {}).get('score', 0.0) if speed_test_results else 0.0,
                     'test_details': speed_test_results.get(channel['url'], {}) if speed_test_results else {}
                 }],
@@ -1181,6 +1457,7 @@ def merge_channels(all_channels, speed_test_results=None):
                     'logo': channel['logo'],
                     'priority': 0,
                     'is_ipv6': is_ipv6_url(channel['url']),
+                    'is_whitelist': channel.get('is_whitelist', False),
                     'speed_score': speed_test_results.get(channel['url'], {}).get('score', 0.0) if speed_test_results else 0.0,
                     'test_details': speed_test_results.get(channel['url'], {}) if speed_test_results else {}
                 })
@@ -1226,16 +1503,16 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
         with open(output_file, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             if mode == "multi":
-                f.write(f"# 电视直播源 - IPv6优先多源合并版\n")
-                f.write(f"# 每个电视台只显示一个条目，IPv6源优先排列\n")
+                f.write(f"# 电视直播源 - IPv6优先多源合并版（白名单自动加入）\n")
+                f.write(f"# 每个电视台只显示一个条目，IPv6源优先排列，白名单源标记\n")
                 f.write(f"# 播放器切换源方法：PotPlayer按Alt+W，VLC右键选择源\n")
-                f.write(f"# 排序规则：IPv6源 > 4K > 高清 > 标清 > 流畅\n")
+                f.write(f"# 排序规则：IPv6源 > 白名单源 > 4K > 高清 > 标清 > 流畅\n")
             elif mode == "separate":
-                f.write(f"# 电视直播源 - IPv6优先多源分离版\n")
+                f.write(f"# 电视直播源 - IPv6优先多源分离版（白名单自动加入）\n")
                 f.write(f"# 同名电视台显示为多个条目，IPv6源优先，播放器自动合并\n")
             else:
-                f.write(f"# 电视直播源 - IPv6优先精简版\n")
-                f.write(f"# 每个电视台只保留最佳源（IPv6优先）\n")
+                f.write(f"# 电视直播源 - IPv6优先精简版（白名单自动加入）\n")
+                f.write(f"# 每个电视台只保留最佳源（IPv6优先，白名单优先）\n")
             
             f.write(f"# 更新时间(北京时间): {timestamp}\n")
             f.write(f"# 电视台总数: {len(merged_channels)}\n")
@@ -1243,7 +1520,14 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
             f.write(f"# 特点: 移除技术参数，统一央视频道命名，按省份分类地方台，IPv6优先\n")
             f.write(f"# 配置文件: {CONFIG_FILE}\n")
             f.write(f"# 黑名单功能: {'启用' if config['ENABLE_BLACKLIST'] else '禁用'}\n")
+            f.write(f"# 白名单功能: {'启用' if config['ENABLE_WHITELIST'] else '禁用'}\n")
             f.write(f"# 测速功能: {'启用' if config['ENABLE_SPEED_TEST'] else '禁用'}\n")
+            
+            if config['ENABLE_WHITELIST']:
+                f.write(f"# 白名单文件: {config['WHITELIST_FILE']}\n")
+                f.write(f"# 覆盖黑名单: {'是' if config['WHITELIST_OVERRIDE_BLACKLIST'] else '否'}\n")
+                f.write(f"# 忽略测速: {'是' if config['WHITELIST_IGNORE_SPEED_TEST'] else '否'}\n")
+                f.write(f"# 自动加入: {'是' if config['WHITELIST_AUTO_ADD'] else '否'}\n")
             
             if config['ENABLE_SPEED_TEST']:
                 f.write(f"# 已过滤低质量源（评分 < {config['MIN_SPEED_SCORE']}）\n")
@@ -1273,6 +1557,9 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                         # 统计IPv6源数量
                         ipv6_count = sum(1 for s in channel['sources'] if s.get('is_ipv6', False))
                         
+                        # 统计白名单源数量
+                        whitelist_count = sum(1 for s in channel['sources'] if s.get('is_whitelist', False))
+                        
                         # 统计高质量源数量（评分≥0.7）
                         high_quality_sources = [s for s in channel['sources'] if s.get('speed_score', 0) >= 0.7]
                         high_quality_count = len(high_quality_sources)
@@ -1282,9 +1569,11 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                             source_desc = []
                             if ipv6_count > 0:
                                 source_desc.append(f"{ipv6_count}IPv6")
+                            if whitelist_count > 0:
+                                source_desc.append(f"{whitelist_count}白名单")
                             if high_quality_count > 0 and config['ENABLE_SPEED_TEST']:
                                 source_desc.append(f"{high_quality_count}高速")
-                            if source_count > ipv6_count:
+                            if source_count > ipv6_count + whitelist_count:
                                 source_desc.append(f"{source_count}源")
                             
                             if source_desc:
@@ -1296,16 +1585,19 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                             urls = []
                             qualities = []
                             ipv6_sources = []
-                            ipv4_sources = []
+                            whitelist_sources = []
+                            other_sources = []
                             
                             for source in channel['sources']:
                                 if source.get('is_ipv6', False):
                                     ipv6_sources.append(source)
+                                elif source.get('is_whitelist', False):
+                                    whitelist_sources.append(source)
                                 else:
-                                    ipv4_sources.append(source)
+                                    other_sources.append(source)
                             
-                            # 确保IPv6源在前面
-                            sorted_sources = ipv6_sources + ipv4_sources
+                            # 确保IPv6源在前面，然后是白名单源
+                            sorted_sources = ipv6_sources + whitelist_sources + other_sources
                             
                             for source in sorted_sources:
                                 urls.append(source['url'])
@@ -1326,6 +1618,8 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                                 line += f' tvg-quality="{quality_desc}"'
                             if ipv6_count > 0:
                                 line += f' tvg-ipv6="true"'
+                            if whitelist_count > 0:
+                                line += f' tvg-whitelist="true"'
                             line += f',{display_name}\n'
                             line += f"{multi_url}\n"
                             f.write(line)
@@ -1334,20 +1628,32 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                             # TiviMate/Kodi格式：相同名称的多个条目，IPv6源优先
                             display_name = channel['clean_name']
                             
-                            # 分离IPv6和IPv4源
+                            # 分离不同类型的源
                             ipv6_sources = []
-                            ipv4_sources = []
+                            whitelist_sources = []
+                            other_sources = []
                             for source in channel['sources']:
                                 if source.get('is_ipv6', False):
                                     ipv6_sources.append(source)
+                                elif source.get('is_whitelist', False):
+                                    whitelist_sources.append(source)
                                 else:
-                                    ipv4_sources.append(source)
+                                    other_sources.append(source)
                             
-                            # 确保IPv6源在前面
-                            sorted_sources = ipv6_sources + ipv4_sources
+                            # 确保IPv6源在前面，然后是白名单源
+                            sorted_sources = ipv6_sources + whitelist_sources + other_sources
                             
                             for i, source in enumerate(sorted_sources, 1):
-                                source_type = "IPv6" if source.get('is_ipv6', False) else "IPv4"
+                                source_type = []
+                                if source.get('is_ipv6', False):
+                                    source_type.append("IPv6")
+                                if source.get('is_whitelist', False):
+                                    source_type.append("白名单")
+                                
+                                source_type_str = "".join(source_type)
+                                if not source_type_str:
+                                    source_type_str = "普通"
+                                
                                 speed_info = ""
                                 if source.get('speed_score') and config['ENABLE_SPEED_TEST']:
                                     speed_info = f" ({source['speed_score']:.2f})"
@@ -1361,27 +1667,43 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                                     line += f' tvg-quality="{source["quality"]}"'
                                 if source.get('is_ipv6', False):
                                     line += f' tvg-ipv6="true"'
+                                if source.get('is_whitelist', False):
+                                    line += f' tvg-whitelist="true"'
                                 if source_count > 1:
-                                    line += f',{display_name} [{source_type}源{i}{speed_info}]\n'
+                                    line += f',{display_name} [{source_type_str}源{i}{speed_info}]\n'
                                 else:
                                     line += f',{display_name}{speed_info}\n'
                                 line += f"{source['url']}\n"
                                 f.write(line)
                                 
                         else:  # mode == "single"
-                            # 精简版：只保留最佳源（IPv6优先）
+                            # 精简版：只保留最佳源（IPv6优先，白名单优先）
                             display_name = channel['clean_name']
                             
-                            # 选择最佳源（优先选择IPv6快速源）
+                            # 选择最佳源（优先选择IPv6白名单源）
                             best_source = None
                             
                             # 如果测速功能启用，优先选择高速源
                             if config['ENABLE_SPEED_TEST']:
-                                # 首先找IPv6高速源（评分≥0.7）
+                                # 首先找IPv6白名单高速源
                                 for source in channel['sources']:
-                                    if source.get('is_ipv6', False) and source.get('speed_score', 0) >= 0.7:
+                                    if source.get('is_ipv6', False) and source.get('is_whitelist', False) and source.get('speed_score', 0) >= 0.7:
                                         best_source = source
                                         break
+                                
+                                # 然后找IPv4白名单高速源
+                                if not best_source:
+                                    for source in channel['sources']:
+                                        if not source.get('is_ipv6', False) and source.get('is_whitelist', False) and source.get('speed_score', 0) >= 0.7:
+                                            best_source = source
+                                            break
+                                
+                                # 然后找IPv6高速源
+                                if not best_source:
+                                    for source in channel['sources']:
+                                        if source.get('is_ipv6', False) and source.get('speed_score', 0) >= 0.7:
+                                            best_source = source
+                                            break
                                 
                                 # 然后找IPv4高速源
                                 if not best_source:
@@ -1392,11 +1714,25 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                             
                             # 如果没找到高速源或测速禁用，按默认规则选择
                             if not best_source:
-                                # 首先找IPv6高清源
+                                # 首先找IPv6白名单高清源
                                 for source in channel['sources']:
-                                    if source.get('is_ipv6', False) and source['quality'] == "高清":
+                                    if source.get('is_ipv6', False) and source.get('is_whitelist', False) and source['quality'] == "高清":
                                         best_source = source
                                         break
+                                
+                                # 然后找IPv4白名单高清源
+                                if not best_source:
+                                    for source in channel['sources']:
+                                        if not source.get('is_ipv6', False) and source.get('is_whitelist', False) and source['quality'] == "高清":
+                                            best_source = source
+                                            break
+                                
+                                # 然后找IPv6高清源
+                                if not best_source:
+                                    for source in channel['sources']:
+                                        if source.get('is_ipv6', False) and source['quality'] == "高清":
+                                            best_source = source
+                                            break
                                 
                                 # 然后找IPv4高清源
                                 if not best_source:
@@ -1419,6 +1755,9 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
                             if best_source.get('is_ipv6', False):
                                 line += f' tvg-ipv6="true"'
                                 display_name = f"{display_name} [IPv6]"
+                            if best_source.get('is_whitelist', False):
+                                line += f' tvg-whitelist="true"'
+                                display_name = f"{display_name} [白名单]"
                             if best_source.get('speed_score') and config['ENABLE_SPEED_TEST']:
                                 line += f' tvg-score="{best_source["speed_score"]:.2f}"'
                                 display_name = f"{display_name} ({best_source['speed_score']:.2f})"
@@ -1432,12 +1771,87 @@ def generate_multi_source_m3u(merged_channels, categories, final_category_order,
         print(f"  ❌ 生成{output_file}失败: {e}")
         return False
 
+def add_whitelist_channels(whitelist_data):
+    """添加白名单频道到频道列表"""
+    if not config['ENABLE_WHITELIST'] or not config['WHITELIST_AUTO_ADD']:
+        return []
+    
+    whitelist_channels = []
+    
+    if 'channels' in whitelist_data and whitelist_data['channels']:
+        print(f"\n📋 自动添加白名单频道...")
+        for channel_info in whitelist_data['channels']:
+            url = channel_info['url']
+            name = channel_info['name']
+            group = channel_info['group']
+            logo = channel_info['logo']
+            quality = channel_info['quality']
+            is_whitelist = channel_info.get('is_whitelist', True)
+            
+            # 清理频道名称
+            clean_name = clean_channel_name(name)
+            
+            # 创建频道对象
+            channel = {
+                'original_name': name,
+                'clean_name': clean_name,
+                'url': url,
+                'group': group,
+                'logo': logo,
+                'quality': quality,
+                'source': 'whitelist',
+                'extinf_line': f'#EXTINF:-1 tvg-name="{clean_name}" group-title="{group}" tvg-logo="{logo}",{clean_name}',
+                'is_whitelist': is_whitelist
+            }
+            
+            whitelist_channels.append(channel)
+            print(f"  ✅ 添加白名单频道: {clean_name} - {url[:50]}...")
+    
+    return whitelist_channels
+
+def fetch_whitelist_streams(whitelist_data):
+    """获取白名单中的M3U文件流"""
+    if not config['ENABLE_WHITELIST']:
+        return []
+    
+    whitelist_channels = []
+    
+    # 检查白名单中的M3U文件URL
+    print(f"\n📡 检查白名单中的M3U文件...")
+    for url in whitelist_data.get('urls', []):
+        # 检查是否是M3U文件
+        if any(ext in url.lower() for ext in ['.m3u', '.m3u8']):
+            print(f"  处理白名单M3U文件: {url[:60]}...")
+            try:
+                content = fetch_m3u(url)
+                if content:
+                    channels = parse_channels(content, f"whitelist:{url}")
+                    # 标记这些频道为白名单频道
+                    for channel in channels:
+                        channel['is_whitelist'] = True
+                    whitelist_channels.extend(channels)
+                    print(f"    ✅ 解析到 {len(channels)} 个频道")
+                else:
+                    print(f"    ❌ 无法获取内容")
+            except Exception as e:
+                print(f"    ❌ 处理失败: {e}")
+    
+    return whitelist_channels
+
 # 主收集过程
 print("🚀 开始采集电视直播源...")
 
-# 1. 加载黑名单
-print("📋 加载黑名单...")
+# 1. 加载黑名单和白名单
+print("📋 加载黑名单和白名单...")
 blacklist = load_blacklist()
+whitelist_data = load_whitelist()
+
+# 显示优先级说明
+if config['ENABLE_WHITELIST'] and config['ENABLE_BLACKLIST']:
+    if config['WHITELIST_OVERRIDE_BLACKLIST']:
+        print("⚠️  优先级: 白名单 > 黑名单（白名单URL将不会被黑名单过滤）")
+    else:
+        print("⚠️  优先级: 黑名单 > 白名单（黑名单中的URL即使也在白名单中也会被过滤）")
 
 print(f"📋 数据源列表 (从sources.txt加载):")
 for i, source in enumerate(sources, 1):
@@ -1480,6 +1894,20 @@ for idx, source_url in enumerate(sources, 1):
     if idx < len(sources):
         time.sleep(1)
 
+# 3. 添加白名单频道（自动加入）
+if config['ENABLE_WHITELIST'] and config['WHITELIST_AUTO_ADD']:
+    # 添加白名单定义的频道
+    whitelist_defined_channels = add_whitelist_channels(whitelist_data)
+    if whitelist_defined_channels:
+        all_channels.extend(whitelist_defined_channels)
+        print(f"✅ 添加了 {len(whitelist_defined_channels)} 个白名单定义的频道")
+    
+    # 获取白名单中的M3U文件流
+    whitelist_stream_channels = fetch_whitelist_streams(whitelist_data)
+    if whitelist_stream_channels:
+        all_channels.extend(whitelist_stream_channels)
+        print(f"✅ 添加了 {len(whitelist_stream_channels)} 个白名单M3U文件中的频道")
+
 print(f"\n{'='*50}")
 print(f"✅ 采集完成统计:")
 print(f"   成功源数: {success_sources}/{len(sources)}")
@@ -1495,7 +1923,7 @@ if len(all_channels) == 0:
     print("\n❌ 没有采集到任何频道，退出")
     sys.exit(1)
 
-# 3. 提取所有唯一的URL进行速度测试
+# 4. 提取所有唯一的URL进行速度测试
 print("\n📊 提取所有唯一URL...")
 all_urls = set()
 for channel in all_channels:
@@ -1503,11 +1931,11 @@ for channel in all_channels:
 
 print(f"   发现 {len(all_urls)} 个唯一URL")
 
-# 4. 进行智能速度测试
+# 5. 进行智能速度测试
 print("\n⚡ 开始智能速度测试...")
-speed_test_results, slow_urls, detailed_results = test_urls_with_progress(all_urls, blacklist)
+speed_test_results, slow_urls, detailed_results = test_urls_with_progress(all_urls, blacklist, whitelist_data)
 
-# 5. 保存失败和低质量URL到黑名单
+# 6. 保存失败和低质量URL到黑名单
 if slow_urls and config['ENABLE_BLACKLIST'] and config['ENABLE_SPEED_TEST']:
     # 分析失败原因
     error_types = {}
@@ -1530,56 +1958,82 @@ if slow_urls and config['ENABLE_BLACKLIST'] and config['ENABLE_SPEED_TEST']:
 elif slow_urls:
     print(f"\n⚠️  发现 {len(slow_urls)} 个低质量源，但黑名单或测速功能已禁用，不保存")
 
-# 6. 过滤掉黑名单中的频道（如果黑名单启用）
+# 7. 过滤掉黑名单中的频道（如果黑名单启用），考虑白名单
 print("\n🚫 过滤黑名单中的频道...")
 filtered_channels = []
 blacklisted_count = 0
+whitelisted_count = 0
 
 for channel in all_channels:
-    if config['ENABLE_BLACKLIST'] and (channel['url'] in blacklist or channel['url'] in slow_urls):
-        blacklisted_count += 1
-    else:
+    url = channel['url']
+    is_whitelisted = config['ENABLE_WHITELIST'] and is_in_whitelist(url, whitelist_data)
+    is_blacklisted = config['ENABLE_BLACKLIST'] and (url in blacklist or url in slow_urls)
+    
+    # 应用白名单规则
+    if is_whitelisted and config['WHITELIST_OVERRIDE_BLACKLIST']:
+        # 白名单覆盖黑名单，即使URL在黑名单中也保留
         filtered_channels.append(channel)
+        whitelisted_count += 1
+        if is_blacklisted:
+            print(f"   ✅ 白名单覆盖: {channel['clean_name']} - 黑名单URL被保留")
+    elif not is_blacklisted:
+        # 不在黑名单中，正常保留
+        filtered_channels.append(channel)
+    else:
+        # 在黑名单中且不在白名单中，过滤掉
+        blacklisted_count += 1
 
 print(f"   原始频道数: {len(all_channels)}")
 print(f"   过滤后频道数: {len(filtered_channels)}")
 print(f"   黑名单过滤数: {blacklisted_count}")
+if whitelisted_count > 0:
+    print(f"   白名单保留数: {whitelisted_count}")
 
 if len(filtered_channels) == 0:
     print("\n❌ 所有频道都被黑名单过滤，退出")
     sys.exit(1)
 
-# 7. 合并同名电视台
+# 8. 合并同名电视台
 print("\n🔄 正在合并同名电视台...")
 merged_channels = merge_channels(filtered_channels, detailed_results)
 print(f"   合并后: {len(merged_channels)} 个唯一电视台")
 
-# 8. 显示多源统计和IPv6统计
+# 9. 显示多源统计和IPv6统计
 multi_source_count = sum(1 for c in merged_channels.values() if len(c['sources']) > 1)
 single_source_count = len(merged_channels) - multi_source_count
 ipv6_channel_count = sum(1 for c in merged_channels.values() if any(s.get('is_ipv6', False) for s in c['sources']))
+whitelist_channel_count = sum(1 for c in merged_channels.values() if any(s.get('is_whitelist', False) for s in c['sources']))
 high_quality_channel_count = sum(1 for c in merged_channels.values() if any(s.get('speed_score', 0) >= 0.7 for s in c['sources']))
 
 print(f"   多源电视台: {multi_source_count} 个")
 print(f"   单源电视台: {single_source_count} 个")
 print(f"   含IPv6源电视台: {ipv6_channel_count} 个")
+print(f"   含白名单源电视台: {whitelist_channel_count} 个")
 if config['ENABLE_SPEED_TEST']:
     print(f"   含高质量源电视台: {high_quality_channel_count} 个")
 
 # 显示一些多源示例
-print("\n📝 IPv6多源电视台示例:")
-ipv6_multi_examples = [(k, v) for k, v in merged_channels.items() 
-                      if any(s.get('is_ipv6', False) for s in v['sources'])][:5]
-for clean_name, data in ipv6_multi_examples:
+print("\n📝 IPv6/白名单多源电视台示例:")
+ipv6_whitelist_examples = [(k, v) for k, v in merged_channels.items() 
+                          if any(s.get('is_ipv6', False) for s in v['sources']) or 
+                          any(s.get('is_whitelist', False) for s in v['sources'])][:5]
+for clean_name, data in ipv6_whitelist_examples:
     source_count = len(data['sources'])
     ipv6_count = sum(1 for s in data['sources'] if s.get('is_ipv6', False))
+    whitelist_count = sum(1 for s in data['sources'] if s.get('is_whitelist', False))
     high_quality_count = sum(1 for s in data['sources'] if s.get('speed_score', 0) >= 0.7)
     qualities = [s['quality'] for s in data['sources']]
     quality_desc = "/".join(set(qualities))
     quality_info = f" 高质量源:{high_quality_count}" if config['ENABLE_SPEED_TEST'] else ""
-    print(f"   {clean_name}: {ipv6_count}IPv6+{source_count-ipv6_count}IPv4 [{quality_desc}]{quality_info}")
+    source_types = []
+    if ipv6_count > 0:
+        source_types.append(f"{ipv6_count}IPv6")
+    if whitelist_count > 0:
+        source_types.append(f"{whitelist_count}白名单")
+    source_types_str = "+".join(source_types) if source_types else ""
+    print(f"   {clean_name}: {source_types_str} {source_count}源 [{quality_desc}]{quality_info}")
 
-# 9. 统计分类数量
+# 10. 统计分类数量
 category_stats = {}
 for channel in merged_channels.values():
     category = channel['category']
@@ -1592,11 +2046,11 @@ print("\n📊 分类统计:")
 for category, count in sorted(category_stats.items()):
     print(f"   {category}: {count} 个电视台")
 
-# 10. 生成文件 - 使用北京时间
+# 11. 生成文件 - 使用北京时间
 timestamp = get_beijing_time()
 print(f"\n📅 当前北京时间: {timestamp}")
 
-# 11. 按分类组织频道
+# 12. 按分类组织频道
 categories = {}
 for channel in merged_channels.values():
     category = channel['category']
@@ -1639,28 +2093,28 @@ for player, info in PLAYER_SUPPORT.items():
     if info['multi_source']:
         print(f"   ✅ {player}: {info['note']}")
 
-# 12. 生成多源合并版M3U（PotPlayer/VLC格式）
+# 13. 生成多源合并版M3U（PotPlayer/VLC格式）
 print("\n📄 生成 live_sources.m3u（IPv6优先多源合并版 - PotPlayer/VLC格式）...")
 generate_multi_source_m3u(
     merged_channels, categories, final_category_order, 
     timestamp, "live_sources.m3u", mode="multi"
 )
 
-# 13. 生成多源分离版M3U（TiviMate/Kodi格式）
+# 14. 生成多源分离版M3U（TiviMate/Kodi格式）
 print("\n📄 生成 merged/多源分离版.m3u（IPv6优先多源分离版 - TiviMate/Kodi格式）...")
 generate_multi_source_m3u(
     merged_channels, categories, final_category_order,
     timestamp, "merged/多源分离版.m3u", mode="separate"
 )
 
-# 14. 生成精简版M3U（每个电视台只保留最佳源）
+# 15. 生成精简版M3U（每个电视台只保留最佳源）
 print("\n📄 生成 merged/精简版.m3u（IPv6优先单源精简版）...")
 generate_multi_source_m3u(
     merged_channels, categories, final_category_order,
     timestamp, "merged/精简版.m3u", mode="single"
 )
 
-# 15. 生成分类M3U文件（IPv6优先多源合并格式）
+# 16. 生成分类M3U文件（IPv6优先多源合并格式）
 print("\n📄 生成分类文件（IPv6优先多源合并格式）...")
 for category in final_category_order:
     cat_channels = categories[category]
@@ -1686,6 +2140,7 @@ for category in final_category_order:
                     f.write(f"# 已过滤低质量源（评分 < {config['MIN_SPEED_SCORE']}）\n")
                 f.write(f"# 配置文件: {CONFIG_FILE}\n")
                 f.write(f"# 黑名单功能: {'启用' if config['ENABLE_BLACKLIST'] else '禁用'}\n")
+                f.write(f"# 白名单功能: {'启用' if config['ENABLE_WHITELIST'] else '禁用'}\n")
                 f.write(f"# 测速功能: {'启用' if config['ENABLE_SPEED_TEST'] else '禁用'}\n\n")
                 
                 for channel in sorted_channels:
@@ -1696,32 +2151,40 @@ for category in final_category_order:
                     # 统计IPv6源数量
                     ipv6_count = sum(1 for s in channel['sources'] if s.get('is_ipv6', False))
                     
+                    # 统计白名单源数量
+                    whitelist_count = sum(1 for s in channel['sources'] if s.get('is_whitelist', False))
+                    
                     # PotPlayer/VLC多源格式
                     source_desc = []
                     if ipv6_count > 0:
                         source_desc.append(f"{ipv6_count}IPv6")
-                    if source_count > ipv6_count:
-                        source_desc.append(f"{source_count-ipv6_count}IPv4")
+                    if whitelist_count > 0:
+                        source_desc.append(f"{whitelist_count}白名单")
+                    if source_count > ipv6_count + whitelist_count:
+                        source_desc.append(f"{source_count-ipv6_count-whitelist_count}普通")
                     
                     if source_desc:
                         display_name = f"{channel['clean_name']} [{'+'.join(source_desc)}]"
                     else:
                         display_name = f"{channel['clean_name']} [{source_count}源]"
                     
-                    # 收集所有URL（IPv6优先）
+                    # 收集所有URL（IPv6优先，白名单优先）
                     urls = []
                     qualities = []
                     ipv6_sources = []
-                    ipv4_sources = []
+                    whitelist_sources = []
+                    other_sources = []
                     
                     for source in channel['sources']:
                         if source.get('is_ipv6', False):
                             ipv6_sources.append(source)
+                        elif source.get('is_whitelist', False):
+                            whitelist_sources.append(source)
                         else:
-                            ipv4_sources.append(source)
+                            other_sources.append(source)
                     
-                    # 确保IPv6源在前面
-                    sorted_sources = ipv6_sources + ipv4_sources
+                    # 确保IPv6源在前面，然后是白名单源
+                    sorted_sources = ipv6_sources + whitelist_sources + other_sources
                     
                     for source in sorted_sources:
                         urls.append(source['url'])
@@ -1742,6 +2205,8 @@ for category in final_category_order:
                         line += f' tvg-quality="{quality_desc}"'
                     if ipv6_count > 0:
                         line += f' tvg-ipv6="true"'
+                    if whitelist_count > 0:
+                        line += f' tvg-whitelist="true"'
                     line += f',{display_name}\n'
                     line += f"{multi_url}\n"
                     f.write(line)
@@ -1750,7 +2215,7 @@ for category in final_category_order:
         except Exception as e:
             print(f"  ❌ 生成 {filename} 失败: {e}")
 
-# 16. 生成合并的JSON文件（包含所有源信息）
+# 17. 生成合并的JSON文件（包含所有源信息）
 print("\n📄 生成 channels.json...")
 try:
     # 创建频道列表
@@ -1766,6 +2231,7 @@ try:
                 'source': source['source'],
                 'logo': source['logo'] if source['logo'] else "",
                 'is_ipv6': source.get('is_ipv6', False),
+                'is_whitelist': source.get('is_whitelist', False),
                 'priority': source.get('priority', 0),
                 'speed_score': source.get('speed_score', 0.0),
                 'test_details': source.get('test_details', {})
@@ -1773,6 +2239,9 @@ try:
         
         # 统计IPv6源数量
         ipv6_count = sum(1 for s in sources_info if s.get('is_ipv6', False))
+        
+        # 统计白名单源数量
+        whitelist_count = sum(1 for s in sources_info if s.get('is_whitelist', False))
         
         # 统计高质量源数量
         high_quality_count = sum(1 for s in sources_info if s.get('speed_score', 0) >= 0.7)
@@ -1784,17 +2253,28 @@ try:
             'category': channel_data['category'],
             'source_count': len(channel_data['sources']),
             'ipv6_source_count': ipv6_count,
+            'whitelist_source_count': whitelist_count,
             'high_quality_source_count': high_quality_count,
             'logos': channel_data['logos'],
             'sources': sources_info
         }
         channel_list.append(channel_info)
     
-    # 黑名单统计
+    # 黑白名单统计
     blacklist_stats = {
         'total_blacklisted': len(blacklist) + len(slow_urls),
         'previously_blacklisted': len(blacklist),
         'newly_blacklisted': len(slow_urls)
+    }
+    
+    whitelist_stats = {
+        'total_whitelisted': len(whitelist_data.get('patterns', set())) + len(whitelist_data.get('urls', set())),
+        'patterns_count': len(whitelist_data.get('patterns', set())),
+        'urls_count': len(whitelist_data.get('urls', set())),
+        'channels_count': len(whitelist_data.get('channels', [])),
+        'whitelist_override_blacklist': config['WHITELIST_OVERRIDE_BLACKLIST'],
+        'whitelist_ignore_speed_test': config['WHITELIST_IGNORE_SPEED_TEST'],
+        'whitelist_auto_add': config['WHITELIST_AUTO_ADD']
     }
     
     # 创建JSON数据
@@ -1802,27 +2282,36 @@ try:
         'last_updated': timestamp,
         'config': {
             'enable_blacklist': config['ENABLE_BLACKLIST'],
+            'enable_whitelist': config['ENABLE_WHITELIST'],
             'enable_speed_test': config['ENABLE_SPEED_TEST'],
             'connect_timeout': config['CONNECT_TIMEOUT'],
             'stream_timeout': config['STREAM_TIMEOUT'],
             'min_speed_score': config['MIN_SPEED_SCORE'],
-            'max_workers': config['MAX_WORKERS']
+            'max_workers': config['MAX_WORKERS'],
+            'whitelist_file': config['WHITELIST_FILE'],
+            'whitelist_override_blacklist': config['WHITELIST_OVERRIDE_BLACKLIST'],
+            'whitelist_ignore_speed_test': config['WHITELIST_IGNORE_SPEED_TEST'],
+            'whitelist_auto_add': config['WHITELIST_AUTO_ADD']
         },
         'total_channels': len(merged_channels),
         'original_channel_count': len(all_channels),
         'filtered_channel_count': len(filtered_channels),
         'blacklisted_channel_count': blacklisted_count,
+        'whitelisted_channel_count': whitelisted_count,
         'sources_count': len(sources),
         'success_sources': success_sources,
         'failed_sources': failed_sources,
         'multi_source_channels': multi_source_count,
         'single_source_channels': single_source_count,
         'ipv6_channels': ipv6_channel_count,
+        'whitelist_channels': whitelist_channel_count,
         'high_quality_channels': high_quality_channel_count,
         'blacklist_stats': blacklist_stats,
+        'whitelist_stats': whitelist_stats,
         'category_stats': category_stats,
         'sorting_rules': {
             'ipv6_priority': 100,
+            'whitelist_priority': 80,
             '4k_priority': 40,
             'hd_priority': 30,
             'sd_priority': 20,
@@ -1832,6 +2321,7 @@ try:
         'player_support': PLAYER_SUPPORT,
         'source_file': 'sources.txt',
         'blacklist_file': BLACKLIST_FILE,
+        'whitelist_file': config['WHITELIST_FILE'],
         'config_file': CONFIG_FILE
     }
     
@@ -1849,14 +2339,19 @@ print(f"  - 电视台总数: {len(merged_channels)}")
 print(f"  - 多源电视台: {multi_source_count}")
 print(f"  - 单源电视台: {single_source_count}")
 print(f"  - 含IPv6源电视台: {ipv6_channel_count}")
+print(f"  - 含白名单源电视台: {whitelist_channel_count}")
 if config['ENABLE_SPEED_TEST']:
     print(f"  - 含高质量源电视台: {high_quality_channel_count}")
 print(f"  - 原始频道数: {len(all_channels)}")
 print(f"  - 过滤后频道数: {len(filtered_channels)}")
 print(f"  - 黑名单过滤数: {blacklisted_count}")
+if whitelisted_count > 0:
+    print(f"  - 白名单保留数: {whitelisted_count}")
 print(f"  - 数据源: {len(sources)}")
 if config['ENABLE_BLACKLIST']:
     print(f"  - 黑名单条目: {len(blacklist) + len(slow_urls)}")
+if config['ENABLE_WHITELIST']:
+    print(f"  - 白名单条目: {len(whitelist_data.get('patterns', set())) + len(whitelist_data.get('urls', set()))}")
 print(f"📁 生成的文件:")
 print(f"  - live_sources.m3u (IPv6优先多源合并版 - PotPlayer/VLC格式)")
 print(f"  - merged/多源分离版.m3u (IPv6优先多源分离版 - TiviMate/Kodi格式)")
@@ -1865,22 +2360,34 @@ print(f"  - channels.json (详细数据)")
 print(f"  - categories/*.m3u (分类列表)")
 if config['ENABLE_BLACKLIST']:
     print(f"  - {BLACKLIST_FILE} (低质量源黑名单)")
+if config['ENABLE_WHITELIST']:
+    print(f"  - {config['WHITELIST_FILE']} (重要源白名单)")
 print(f"\n🎮 播放器使用说明:")
 print(f"  1. PotPlayer/VLC: 使用 live_sources.m3u，播放时按Alt+W切换源")
 print(f"  2. TiviMate/Kodi: 使用 merged/多源分离版.m3u，自动合并相同名称频道")
 print(f"  3. 其他播放器: 使用 merged/精简版.m3u，每个电视台IPv6源优先")
 print(f"\n⚙️  当前配置:")
 print(f"  - 黑名单功能: {'✅启用' if config['ENABLE_BLACKLIST'] else '❌禁用'}")
+print(f"  - 白名单功能: {'✅启用' if config['ENABLE_WHITELIST'] else '❌禁用'}")
 print(f"  - 测速功能: {'✅启用' if config['ENABLE_SPEED_TEST'] else '❌禁用'}")
+if config['ENABLE_WHITELIST']:
+    print(f"  - 白名单覆盖黑名单: {'✅是' if config['WHITELIST_OVERRIDE_BLACKLIST'] else '❌否'}")
+    print(f"  - 白名单忽略测速: {'✅是' if config['WHITELIST_IGNORE_SPEED_TEST'] else '❌否'}")
+    print(f"  - 白名单自动加入: {'✅是' if config['WHITELIST_AUTO_ADD'] else '❌否'}")
 if config['ENABLE_SPEED_TEST']:
     print(f"  - 最低评分要求: {config['MIN_SPEED_SCORE']}")
     print(f"  - 超时设置: {config['CONNECT_TIMEOUT']}s连接, {config['STREAM_TIMEOUT']}s流测试")
 print(f"\n📝 配置文件说明:")
 print(f"  修改 {CONFIG_FILE} 文件可以调整配置，如果文件不存在会使用默认值")
-print(f"  示例配置:")
-print(f"    ENABLE_BLACKLIST=true")
-print(f"    ENABLE_SPEED_TEST=true")
-print(f"    CONNECT_TIMEOUT=3")
-print(f"    STREAM_TIMEOUT=10")
-print(f"    MIN_SPEED_SCORE=0.5")
-print(f"    MAX_WORKERS=20")
+print(f"  重要配置项:")
+print(f"    ENABLE_BLACKLIST=true/false")
+print(f"    ENABLE_WHITELIST=true/false")
+print(f"    ENABLE_SPEED_TEST=true/false")
+print(f"    WHITELIST_OVERRIDE_BLACKLIST=true/false")
+print(f"    WHITELIST_IGNORE_SPEED_TEST=true/false")
+print(f"    WHITELIST_AUTO_ADD=true/false")
+print(f"\n📋 白名单文件格式说明:")
+print(f"  - 规则匹配: *example.com* (匹配所有包含example.com的URL)")
+print(f"  - 完整URL: https://example.com/live.m3u8")
+print(f"  - 频道定义: url=https://example.com/live.m3u8, name=频道名称, group=分组, logo=logo.png")
+print(f"  - 正则表达式: /.*cctv.*\\.m3u8/")

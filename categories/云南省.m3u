@@ -1,49 +1,12 @@
 #EXTM3U
 # 云南省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-03 22:10:47
-# 电视台数量: 20
+# 更新时间(北京时间): 2026-02-03 23:09:04
+# 电视台数量: 1
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
-# 黑名单功能: 禁用
+# 黑名单功能: 启用
+# 白名单功能: 启用
 # 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="云南 Ⅰ 文山公共台" group-title="云南省" tvg-quality="高清",云南 Ⅰ 文山公共台 [1IPv4]
-http://tvdrs.wsrtv.com.cn:8100/channellive/ch2.flv
 #EXTINF:-1 tvg-name="云南 Ⅰ 文山综合台" group-title="云南省" tvg-quality="高清",云南 Ⅰ 文山综合台 [1IPv4]
 http://tvdrs.wsrtv.com.cn:8100/channellive/ch1.flv
-#EXTINF:-1 tvg-name="云南丽江冰川" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南丽江冰川.png",云南丽江冰川 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/hkylxs05_1/index.m3u8
-#EXTINF:-1 tvg-name="云南丽江印象实景" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南丽江印象实景.png",云南丽江印象实景 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/hkylxs01_1/index.m3u8
-#EXTINF:-1 tvg-name="云南丽江玉龙雪山" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南丽江玉龙雪山.png",云南丽江玉龙雪山 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/ylxs11_1/index.m3u8
-#EXTINF:-1 tvg-name="云南丽江玉龙雪山草甸" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南丽江玉龙雪山草甸.png",云南丽江玉龙雪山草甸 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/hkylxs06_1/index.m3u8
-#EXTINF:-1 tvg-name="云南丽江蓝月谷" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南丽江蓝月谷.png",云南丽江蓝月谷 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/ylxs12_1/index.m3u8
-#EXTINF:-1 tvg-name="云南交通之声" group-title="云南省" tvg-logo="https://live.fanmingming.com/radio/云南交通之声.png",云南交通之声 [1IPv4]
-https://satellitepull.cnr.cn/live/wxynjtgb/playlist.m3u8
-#EXTINF:-1 tvg-name="云南国际广播" group-title="云南省" tvg-logo="https://live.fanmingming.com/radio/云南国际广播.png",云南国际广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wxynsegb/playlist.m3u8
-#EXTINF:-1 tvg-name="云南大理崇圣寺三塔中景" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南大理崇圣寺三塔中景.png",云南大理崇圣寺三塔中景 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/dlst03_1/index.m3u8
-#EXTINF:-1 tvg-name="云南大理崇圣寺三塔远景" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南大理崇圣寺三塔远景.png",云南大理崇圣寺三塔远景 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/dlst01_1/index.m3u8
-#EXTINF:-1 tvg-name="云南广播" group-title="云南省" tvg-logo="https://live.fanmingming.com/radio/云南广播.png",云南广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wxynyygb/playlist.m3u8
-#EXTINF:-1 tvg-name="云南教育广播•知道分子频道" group-title="云南省" tvg-logo="https://live.fanmingming.com/radio/云南教育广播.png",云南教育广播•知道分子频道 [1IPv4]
-https://satellitepull.cnr.cn/live/wxynjygb/playlist.m3u8
-#EXTINF:-1 tvg-name="云南新闻广播" group-title="云南省" tvg-logo="https://live.fanmingming.com/radio/云南新闻广播.png",云南新闻广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wxynxwgb/playlist.m3u8
-#EXTINF:-1 tvg-name="云南旅游广播•香格里拉之声" group-title="云南省" tvg-logo="https://live.fanmingming.com/radio/云南旅游广播.png",云南旅游广播•香格里拉之声 [1IPv4]
-https://satellitepull.cnr.cn/live/wxxgllzs/playlist.m3u8
-#EXTINF:-1 tvg-name="云南民族广播" group-title="云南省" tvg-logo="https://live.fanmingming.com/radio/云南民族广播.png",云南民族广播 [1IPv4]
-https://satellitepull.cnr.cn/live/wxynmzgb/playlist.m3u8
-#EXTINF:-1 tvg-name="云南白沙远眺玉龙雪山" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南白沙远眺玉龙雪山.png",云南白沙远眺玉龙雪山 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/hkylxs03_1/index.m3u8
-#EXTINF:-1 tvg-name="云南经济广播•私家车电台" group-title="云南省" tvg-logo="https://live.fanmingming.com/radio/云南经济广播.png",云南经济广播•私家车电台 [1IPv4]
-https://satellitepull.cnr.cn/live/wxynjjgb/playlist.m3u8
-#EXTINF:-1 tvg-name="云南都市" group-title="云南省" tvg-logo="云南都市.png" tvg-quality="高清",云南都市 [2IPv4]
-http://39.130.202.81:6610/gitv_live/G_YNTV-2-HD/G_YNTV-2-HD.m3u8|http://yp.qqqtv.top/1/api.php?id=%E4%BA%91%E5%8D%97%E9%83%BD%E5%B8%82&auth=666858
-#EXTINF:-1 tvg-name="鬼吹灯之云南虫谷" group-title="云南省" tvg-logo="https://ghproxy.net/raw.githubusercontent.com/suxuang/myIPTV/main/img/云南虫谷.png",鬼吹灯之云南虫谷 [2IPv4]
-http://www.douzhicloud.site:35455/huya/11352898|http://1.94.31.214:35455/huya/11352898

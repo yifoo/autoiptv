@@ -9,6 +9,8 @@ on:
     paths:
       - 'sources.txt'
       - 'blacklist.txt'
+      - 'whitelist.txt'
+      - 'config.txt'
       - '.github/workflows/update-live-sources.yml'
       - 'scripts/collect_sources.py'
 
@@ -49,14 +51,42 @@ jobs:
           echo "✅ 复制collect_sources.py到scripts目录"
         fi
 
-    - name: Check Python script
+    - name: Create config.txt if not exists
       run: |
-        if [ -f scripts/collect_sources.py ]; then
-          echo "✅ Python脚本已存在"
-          echo "📄 脚本内容大小: $(wc -l scripts/collect_sources.py | cut -d' ' -f1) 行"
-        else
-          echo "❌ Python脚本不存在，将创建新脚本"
-          # 这里可以添加从其他地方复制脚本的逻辑
+        if [ ! -f config.txt ]; then
+          echo "# 电视直播源收集脚本配置文件" > config.txt
+          echo "# 配置说明：" >> config.txt
+          echo "# ENABLE_BLACKLIST: 是否启用黑名单功能 (true/false)" >> config.txt
+          echo "# ENABLE_WHITELIST: 是否启用白名单功能 (true/false)" >> config.txt
+          echo "# ENABLE_SPEED_TEST: 是否启用测速功能 (true/false)" >> config.txt
+          echo "# CONNECT_TIMEOUT: 连接超时时间(秒)" >> config.txt
+          echo "# STREAM_TIMEOUT: 流媒体测试超时时间(秒)" >> config.txt
+          echo "# MIN_SPEED_SCORE: 最低速度评分(0-1)" >> config.txt
+          echo "# MAX_WORKERS: 并发测试线程数" >> config.txt
+          echo "" >> config.txt
+          echo "# 功能开关" >> config.txt
+          echo "ENABLE_BLACKLIST=true" >> config.txt
+          echo "ENABLE_WHITELIST=true" >> config.txt
+          echo "ENABLE_SPEED_TEST=false" >> config.txt
+          echo "" >> config.txt
+          echo "# 超时设置" >> config.txt
+          echo "CONNECT_TIMEOUT=5" >> config.txt
+          echo "STREAM_TIMEOUT=10" >> config.txt
+          echo "" >> config.txt
+          echo "# 评分阈值" >> config.txt
+          echo "MIN_SPEED_SCORE=0.5" >> config.txt
+          echo "" >> config.txt
+          echo "# 并发设置" >> config.txt
+          echo "MAX_WORKERS=20" >> config.txt
+          echo "" >> config.txt
+          echo "# 白名单设置（优先级高于黑名单）" >> config.txt
+          echo "# WHITELIST_FILE: 白名单文件路径" >> config.txt
+          echo "# WHITELIST_OVERRIDE_BLACKLIST: 白名单是否覆盖黑名单 (true/false)" >> config.txt
+          echo "# WHITELIST_IGNORE_SPEED_TEST: 白名单是否忽略速度测试 (true/false)" >> config.txt
+          echo "WHITELIST_FILE=whitelist.txt" >> config.txt
+          echo "WHITELIST_OVERRIDE_BLACKLIST=true" >> config.txt
+          echo "WHITELIST_IGNORE_SPEED_TEST=true" >> config.txt
+          echo "✅ 创建了config.txt配置文件"
         fi
 
     - name: Create sources.txt if not exists
@@ -92,13 +122,43 @@ jobs:
           echo "✅ 创建了blacklist.txt文件"
         fi
 
+    - name: Create whitelist.txt if not exists
+      run: |
+        if [ ! -f whitelist.txt ]; then
+          echo "# 直播源白名单" > whitelist.txt
+          echo "# 该文件包含永不删除的直播源" >> whitelist.txt
+          echo "# 支持格式:" >> whitelist.txt
+          echo "# 1. 完整URL: https://example.com/live.m3u8" >> whitelist.txt
+          echo "# 2. 域名通配符: *example.com* (匹配所有包含example.com的URL)" >> whitelist.txt
+          echo "# 3. 关键字: cctv (匹配所有包含cctv的URL)" >> whitelist.txt
+          echo "# 4. 正则表达式: /.*cctv.*\\.m3u8/" >> whitelist.txt
+          echo "# 生成时间: $(date '+%Y-%m-%d %H:%M:%S')" >> whitelist.txt
+          echo "# 配置文件: config.txt" >> whitelist.txt
+          echo "" >> whitelist.txt
+          echo "# 示例白名单条目:" >> whitelist.txt
+          echo "# *cctv.com*" >> whitelist.txt
+          echo "# https://example.com/important-stream.m3u8" >> whitelist.txt
+          echo "# /.*4k.*\\.m3u8/" >> whitelist.txt
+          echo "" >> whitelist.txt
+          echo "✅ 创建了whitelist.txt白名单文件"
+        fi
+
+    - name: Check config.txt content
+      run: |
+        echo "📄 检查config.txt配置:"
+        echo "========================================"
+        if [ -f config.txt ]; then
+          cat config.txt
+          echo "========================================"
+        else
+          echo "❌ config.txt文件不存在"
+        fi
+
     - name: Check sources.txt content
       run: |
         echo "📄 检查sources.txt内容:"
         echo "========================================"
         if [ -f sources.txt ]; then
-          cat sources.txt
-          echo "========================================"
           source_count=$(grep -c '^https://' sources.txt)
           echo "找到 $source_count 个直播源URL"
           if [ $source_count -eq 0 ]; then
@@ -116,14 +176,24 @@ jobs:
         if [ -f blacklist.txt ]; then
           blacklist_count=$(grep -c '^http' blacklist.txt)
           echo "黑名单中有 $blacklist_count 个慢速源"
-          if [ $blacklist_count -gt 0 ]; then
-            echo "前5个黑名单条目:"
-            grep '^http' blacklist.txt | head -5
-          fi
         else
           echo "blacklist.txt文件不存在"
         fi
+
+    - name: Check whitelist.txt content
+      run: |
+        echo "📄 检查whitelist.txt内容:"
         echo "========================================"
+        if [ -f whitelist.txt ]; then
+          whitelist_count=$(grep -v '^#' whitelist.txt | grep -c '.')
+          echo "白名单中有 $whitelist_count 个条目"
+          if [ $whitelist_count -gt 0 ]; then
+            echo "白名单内容:"
+            grep -v '^#' whitelist.txt | head -20
+          fi
+        else
+          echo "whitelist.txt文件不存在"
+        fi
 
     - name: Run collection script
       id: collect
@@ -145,7 +215,7 @@ jobs:
     - name: Show generated files
       run: |
         echo "📁 生成的文件列表:"
-        ls -la *.m3u *.json *.txt *.html *.md 2>/dev/null || echo "主文件未找到"
+        ls -la *.m3u *.json *.txt 2>/dev/null || echo "主文件未找到"
         echo ""
         echo "📁 categories目录:"
         ls -la categories/*.m3u 2>/dev/null | head -20 || echo "categories目录为空或不存在"
@@ -157,14 +227,17 @@ jobs:
       run: |
         echo "📄 检查文件内容:"
         if [ -f live_sources.m3u ]; then
-          echo "live_sources.m3u 前10行:"
-          head -10 live_sources.m3u
-          echo ""
           echo "live_sources.m3u 频道数量: $(grep -c '^#EXTINF' live_sources.m3u || echo 0)"
           echo ""
           echo "多源统计:"
           multi_source_count=$(grep -c '\[[0-9]\+源\]' live_sources.m3u || echo 0)
           echo "多源电视台: $multi_source_count 个"
+          
+          # 检查白名单标记
+          whitelist_count=$(grep -c 'tvg-whitelist="true"' live_sources.m3u || echo 0)
+          if [ $whitelist_count -gt 0 ]; then
+            echo "白名单频道: $whitelist_count 个"
+          fi
         fi
         
         if [ -f blacklist.txt ]; then
@@ -174,9 +247,11 @@ jobs:
           echo "黑名单条目: $blacklist_count 个"
         fi
         
-        if [ -f channels.json ]; then
+        if [ -f whitelist.txt ]; then
           echo ""
-          echo "channels.json 文件大小: $(wc -c channels.json | cut -d' ' -f1) bytes"
+          echo "whitelist.txt 统计:"
+          whitelist_count=$(grep -v '^#' whitelist.txt | grep -c '.')
+          echo "白名单条目: $whitelist_count 个"
         fi
 
     - name: Commit and push if changed
@@ -196,7 +271,8 @@ jobs:
         - 按省份分类地方台
         - 新增景区频道分类
         - IPv6源优先排序
-        - 慢速源黑名单过滤
+        - 黑白名单过滤系统
+        - 新增白名单保护重要源
         "
         
         # 使用GITHUB_TOKEN推送
@@ -207,6 +283,11 @@ jobs:
       run: |
         echo "🎉 直播源更新成功！"
         echo ""
+        echo "⚙️  配置状态:"
+        echo "- 黑名单功能: $(grep 'ENABLE_BLACKLIST=' config.txt | cut -d= -f2 || echo 'true')"
+        echo "- 白名单功能: $(grep 'ENABLE_WHITELIST=' config.txt | cut -d= -f2 || echo 'true')"
+        echo "- 测速功能: $(grep 'ENABLE_SPEED_TEST=' config.txt | cut -d= -f2 || echo 'false')"
+        echo ""
         echo "📺 生成的文件:"
         echo "- live_sources.m3u (IPv6优先多源合并版 - PotPlayer/VLC使用)"
         echo "- merged/多源分离版.m3u (TiviMate/Kodi使用)"
@@ -214,10 +295,11 @@ jobs:
         echo "- channels.json (详细数据)"
         echo "- categories/*.m3u (分类列表)"
         echo "- blacklist.txt (慢速源黑名单)"
+        echo "- whitelist.txt (重要源白名单)"
+        echo "- config.txt (配置文件)"
         echo ""
         echo "🔗 访问地址:"
         echo "https://github.com/${{ github.repository }}/blob/main/live_sources.m3u"
-        echo "https://${{ github.repository_owner }}.github.io/$(echo ${{ github.repository }} | cut -d/ -f2)/"
         echo ""
         echo "📊 查看详细统计:"
         echo "https://github.com/${{ github.repository }}/blob/main/channels.json"
@@ -227,10 +309,12 @@ jobs:
         echo "2. TiviMate/Kodi: 使用merged/多源分离版.m3u，自动合并相同名称频道"
         echo "3. 其他播放器: 使用merged/精简版.m3u，每个电视台IPv6源优先"
         echo ""
-        echo "⚡ 速度过滤:"
-        echo "- 响应时间超过6秒的源已加入黑名单"
-        echo "- 下次更新时会自动跳过黑名单中的源"
-        echo "- 黑名单文件: blacklist.txt"
+        echo "⚡ 过滤规则:"
+        echo "- 白名单优先级高于黑名单（可配置）"
+        echo "- 白名单可忽略速度测试（可配置）"
+        echo "- 黑名单: blacklist.txt"
+        echo "- 白名单: whitelist.txt"
+        echo "- 配置: config.txt"
 
     - name: Show failure message
       if: env.CHANGED == 'false'
@@ -241,6 +325,7 @@ jobs:
         echo "2. 源地址是否可以访问"
         echo "3. sources.txt中是否有有效的直播源URL"
         echo "4. Python脚本是否有语法错误"
+        echo "5. 配置文件格式是否正确"
         echo ""
         echo "📋 调试信息:"
         echo "查看上方Run collection script步骤的输出"

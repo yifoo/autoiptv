@@ -1,6 +1,7 @@
 # 电视直播源收集脚本配置文件
 # 配置说明：
 # ENABLE_BLACKLIST: 是否启用黑名单功能 (true/false)
+# ENABLE_WHITELIST: 是否启用白名单功能 (true/false)
 # ENABLE_SPEED_TEST: 是否启用测速功能 (true/false)
 # CONNECT_TIMEOUT: 连接超时时间(秒)
 # STREAM_TIMEOUT: 流媒体测试超时时间(秒)
@@ -8,7 +9,8 @@
 # MAX_WORKERS: 并发测试线程数
 
 # 功能开关
-ENABLE_BLACKLIST=false
+ENABLE_BLACKLIST=true
+ENABLE_WHITELIST=true
 ENABLE_SPEED_TEST=false
 
 # 超时设置
@@ -20,3 +22,12 @@ MIN_SPEED_SCORE=0.5
 
 # 并发设置
 MAX_WORKERS=20
+
+# 白名单设置（优先级高于黑名单）
+# WHITELIST_FILE: 白名单文件路径
+# WHITELIST_OVERRIDE_BLACKLIST: 白名单是否覆盖黑名单 (true/false)
+# WHITELIST_IGNORE_SPEED_TEST: 白名单是否忽略速度测试 (true/false)
+WHITELIST_FILE=whitelist.txt
+WHITELIST_OVERRIDE_BLACKLIST=true
+WHITELIST_IGNORE_SPEED_TEST=true
+WHITELIST_AUTO_ADD=true

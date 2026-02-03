@@ -1,63 +1,14 @@
 #EXTM3U
 # 景区频道频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-03 22:10:47
-# 电视台数量: 27
+# 更新时间(北京时间): 2026-02-03 23:09:04
+# 电视台数量: 2
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
-# 黑名单功能: 禁用
+# 黑名单功能: 启用
+# 白名单功能: 启用
 # 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="EYE旅游" group-title="景区频道",EYE旅游 [1IPv4]
-p3p://167.114.175.6:55331/64c105a500023b4e2333fd1453e42393
-#EXTINF:-1 tvg-name="FTV旅游" group-title="景区频道",FTV旅游 [1IPv4]
-p3p://167.114.175.6:55331/63ebf4b70008a733e2edb2296e997eb6
-#EXTINF:-1 tvg-name="亚洲旅游" group-title="景区频道",亚洲旅游 [1IPv4]
-p3p://167.114.175.6:55331/61e4f963000c710c55474e4e1e2273d9
-#EXTINF:-1 tvg-name="六盘山红军长征景区" group-title="景区频道",六盘山红军长征景区 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/lpsgmjng01_1/index.m3u8
-#EXTINF:-1 tvg-name="四川文化旅游" group-title="景区频道" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/sichuan/Sichuan2.png" tvg-ipv6="true",四川文化旅游 [1IPv6]
-http://wouu.net:9977/udp/239.93.1.102:5140
-#EXTINF:-1 tvg-name="广西桂林漓江景区" group-title="景区频道" tvg-logo="https://tb.zbds.top/logo/广西桂林漓江景区.png",广西桂林漓江景区 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/gllj01_1/index.m3u8
-#EXTINF:-1 tvg-name="开封文化旅游" group-title="景区频道",开封文化旅游 [3IPv4]
-http://live.dxhmt.cn:9081/tv/10200-3.m3u8|http://tvpull.dxhmt.cn:9081/tv/10200-3.m3u8|http://tvpull.dxhmt.cn:9081/tv/10200-3.m3u8?zhend
-#EXTINF:-1 tvg-name="杭州导视" group-title="景区频道" tvg-ipv6="true",杭州导视 [2IPv6]
-http://www.jeremyoto.com:82/rtp/233.50.201.182:5140|http://www.flyskyman.cn:4022/rtp/233.50.201.182:5140
-#EXTINF:-1 tvg-name="民视旅游" group-title="景区频道" tvg-ipv6="true",民视旅游 [3IPv6+12IPv4]
-http://api.mytv666.top/api/hk.php?id=6661393234373339313163383837613836623134613563323132623331623164267469643d74762669643d313733|http://api.mytv666.top/api/hk.php?id=3663636134303964303063353333326433303230353763393836326330643437267469643d77696e74763132332669643d3632|http://api.mytv666.top/api/qwt.php?t=台湾频道&id=民视旅游台|https://hls-gateway.vpstv.net/streams/476240.m3u8|https://mao.ffmking888.dpdns.org/?id=5rCR6KaW5peF6YGK5Yaw&auth=30234cedf871581989d3c91a3daec1e9f50e024aafcfa2247e7d44d91bb8d02fbc3f571b2d67f9d82642cc1d0f133d89|https://tmxk.pp.ua/litv.php?token=tmxk&id=litv-ftv07|https://stream1.freetv.fun/min-shi-lu-you-1.ctv|https://stream1.freetv.fun/min-shi-lu-you-2.ctv|https://tv.iill.top/litv/litv-ftv07|http://nmk.ioapk.com:5050/li-litv-ftv07/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/litv-ftv07/index.m3u8?proxy=true|http://220.135.64.124:5050/li-litv-ftv07/index.m3u8?proxy=true|http://220.135.64.124:5050/litv-ftv07/index.m3u8?proxy=true|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=litv-ftv07|http://xtvantsc.xyz/litv_ts.php?id=litv-ftv07
-#EXTINF:-1 tvg-name="泰山主峰" group-title="景区频道",泰山主峰 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/taishan01_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山十八盘" group-title="景区频道",泰山十八盘 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/taishan05_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山南天门" group-title="景区频道",泰山南天门 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/hkts07_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山大观峰" group-title="景区频道",泰山大观峰 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/taishan03_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山太平岭" group-title="景区频道",泰山太平岭 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/hkts09_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山望人松" group-title="景区频道",泰山望人松 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/taishan02_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山玉皇顶" group-title="景区频道",泰山玉皇顶 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/taishan06_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山白云亭悬崖" group-title="景区频道",泰山白云亭悬崖 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/hkts02_1/index.m3u8
-#EXTINF:-1 tvg-name="泰山碧霞祠" group-title="景区频道",泰山碧霞祠 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/hkts03_1/index.m3u8
+#EXTINF:-1 tvg-name="民视旅游" group-title="景区频道",民视旅游 [9IPv4]
+https://tmxk.pp.ua/litv.php?token=tmxk&id=litv-ftv07|https://stream1.freetv.fun/min-shi-lu-you-1.ctv|https://stream1.freetv.fun/min-shi-lu-you-2.ctv|http://nmk.ioapk.com:5050/li-litv-ftv07/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/litv-ftv07/index.m3u8?proxy=true|http://220.135.64.124:5050/li-litv-ftv07/index.m3u8?proxy=true|http://220.135.64.124:5050/litv-ftv07/index.m3u8?proxy=true|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=litv-ftv07|http://xtvantsc.xyz/litv_ts.php?id=litv-ftv07
 #EXTINF:-1 tvg-name="福建旅游" group-title="景区频道" tvg-logo="福建旅游.png",福建旅游 [2IPv4]
 https://stream1.freetv.fun/fu-jian-lu-you-6.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjly
-#EXTINF:-1 tvg-name="纪录 亚洲旅游" group-title="景区频道",纪录 亚洲旅游 [1IPv4]
-http://free.cnlive.club/channel/2631a9ae/index.m3u8?q=1752629214236
-#EXTINF:-1 tvg-name="黄山" group-title="景区频道",黄山 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/ahhs01_1/index.m3u8
-#EXTINF:-1 tvg-name="黄山公共生活" group-title="景区频道",黄山公共生活 [1IPv4]
-http://hslive.hsnewsnet.com/lsdream/iY92ady/1000/live.m3u8?zanhd
-#EXTINF:-1 tvg-name="黄山卧云峰" group-title="景区频道",黄山卧云峰 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/hswlf_1/index.m3u8
-#EXTINF:-1 tvg-name="黄山始信新道" group-title="景区频道",黄山始信新道 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/hsyg_1/index.m3u8
-#EXTINF:-1 tvg-name="黄山排云亭" group-title="景区频道",黄山排云亭 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/hspyt_1/index.m3u8
-#EXTINF:-1 tvg-name="黄山新闻综合" group-title="景区频道",黄山新闻综合 [2IPv4]
-http://hslive.hsnewsnet.com/lsdream/hve9Wjs/1000/live.m3u8|http://hslive.hsnewsnet.com/lsdream/hve9Wjs/1000/live.m3u8?zanhd
-#EXTINF:-1 tvg-name="黄山飞来石" group-title="景区频道",黄山飞来石 [1IPv4]
-https://gcalic.v.myalicdn.com/gc/hsptgy_1/index.m3u8
