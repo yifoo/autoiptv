@@ -1,7 +1,7 @@
 #EXTM3U
 # 综艺台频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-04 03:14:03
-# 电视台数量: 13
+# 更新时间(北京时间): 2026-02-05 03:09:43
+# 电视台数量: 12
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -9,8 +9,6 @@
 # 白名单功能: 启用
 # 测速功能: 启用
 
-#EXTINF:-1 tvg-name="2021年最火伤感音乐" group-title="综艺台",2021年最火伤感音乐 [1普通]
-https://vdse.bdstatic.com//6d39df48360bdb12f73800397c4a6c02.mp4
 #EXTINF:-1 tvg-name="上虞文化" group-title="综艺台",上虞文化 [1普通]
 https://stream1.freetv.fun/shang-yu-wen-hua-1.m3u8
 #EXTINF:-1 tvg-name="中天娱乐" group-title="综艺台",中天娱乐 [2普通]
@@ -28,10 +26,10 @@ http://58.57.40.22:9901/tsfile/live/1021_1.m3u8
 #EXTINF:-1 tvg-name="民视综艺" group-title="综艺台",民视综艺 [11普通]
 http://nmk.ioapk.com:5050/4gtv-4gtv004/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/li-4gtv-4gtv004/index.m3u8?proxy=true|http://220.135.64.124:5050/4gtv-4gtv004/index.m3u8?proxy=true|http://220.135.64.124:5050/li-4gtv-4gtv004/index.m3u8?proxy=true|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv004|https://stream1.freetv.fun/min-shi-zong-yi-1.ctv|https://stream1.freetv.fun/min-shi-zong-yi-2.ctv|http://lzo.xh.sd/gt/lgz4G.php?id=4gtv-4gtv004|http://lzo.xh.sd/gt/lgz4G.php?id=li-4gtv-4gtv004|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv004|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv004
 #EXTINF:-1 tvg-name="湖南娱乐" group-title="综艺台" tvg-logo="湖南娱乐.png",湖南娱乐 [17普通]
-https://stream1.freetv.fun/hu-nan-yu-le-3.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-11.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-gao-qing-1.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-7.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-13.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-16.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-6.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-10.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-9.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-8.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-14.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-4.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-5.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-12.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-15.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-gao-qing-3.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-9.ctv
+https://stream1.freetv.fun/hu-nan-yu-le-3.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-11.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-5.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-10.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-8.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-12.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-9.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-gao-qing-1.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-16.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-6.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-14.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-7.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-gao-qing-3.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-15.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-4.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-13.m3u8|https://stream1.freetv.fun/hu-nan-yu-le-9.ctv
 #EXTINF:-1 tvg-name="湖州文化娱乐" group-title="综艺台",湖州文化娱乐 [3普通]
 https://hzcm-live.media.hugd.com/613c47f0ab0d4eaa98b21378d0db6ded/0051d31c9dd543a7825eea4e49675b2a.m3u8?auth_key=2277598059-0a5ebfa1c0dc4671b42a60810fc37039-0-fa625b7d1feab612062453c12e3c8887|http://hzcm-live.media.hugd.com/613c47f0ab0d4eaa98b21378d0db6ded/0051d31c9dd543a7825eea4e49675b2a.m3u8?auth_key=2277598059-0a5ebfa1c0dc4671b42a60810fc37039-0-fa625b7d1feab612062453c12e3c8887|http://hzcm-live.media.hugd.com/613c47f0ab0d4eaa98b21378d0db6ded/0051d31c9dd543a7825eea4e49675b2a.m3u8?auth_key=2277598059-0a5ebfa1c0dc4671b42a60810fc37039-0-fa625b7d1feab612062453c12e3c8887&fbl=
-#EXTINF:-1 tvg-name="石家庄娱乐" group-title="综艺台",石家庄娱乐 [10普通]
-https://stream1.freetv.fun/shi-jia-zhuang-yu-le-10.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-11.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-3.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-8.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-1.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-12.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-4.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-6.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-7.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-9.ctv
+#EXTINF:-1 tvg-name="石家庄娱乐" group-title="综艺台",石家庄娱乐 [9普通]
+https://stream1.freetv.fun/shi-jia-zhuang-yu-le-10.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-11.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-3.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-8.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-1.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-12.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-4.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-6.ctv|https://stream1.freetv.fun/shi-jia-zhuang-yu-le-7.ctv
 #EXTINF:-1 tvg-name="绍兴文化" group-title="综艺台",绍兴文化 [1普通]
 https://stream1.freetv.fun/shao-xing-wen-hua-1.m3u8

@@ -1,7 +1,7 @@
 #EXTM3U
 # 其他台频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-04 03:14:03
-# 电视台数量: 704
+# 更新时间(北京时间): 2026-02-05 03:09:43
+# 电视台数量: 654
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -29,8 +29,6 @@ https://vd2.bdstatic.com/mda-nd5cr584424xr57c/sc/cae_h264_delogo/164923820519232
 https://vd2.bdstatic.com/mda-mm69dxgtcqg28j9j/sc/cae_h264/1638860024910192032/mda-mm69dxgtcqg28j9j.mp4
 #EXTINF:-1 tvg-name="7 DJ舞曲" group-title="其他台",7 DJ舞曲 [1普通]
 https://vd2.bdstatic.com/mda-nch73gktvfmgdrbd/sc/cae_h264_delogo/1647644537085447432/mda-nch73gktvfmgdrbd.mp4?v_from_s=hkapp-haokan-nanjing&auth_key=1648813542-0-0-4a2d27d50015d19f3ed5cf5fbc261f79&bcevod_channel=searchbox_feed&pd=1&vt=1&cd=0&watermark=0&did=ced9e69a4f6154e91be590c1d5a488ab&logid=0942439256&vid=4192073541598205553&pt=0&appver=7.2.1.10&model=T7-5G10&osver=9&cr=2&abtest=peav_g52&sle=1&sl=1420&split=1235330&dt=1&nt=0&pe=0&prerender=0&kpdl=1&h265_m=-1&klogid=c770aa16cadb579d&kapid=1&psp=1&psk=1028&pif=0_0_0_0&qtfc=65535&qtut=0&stg=none
-#EXTINF:-1 tvg-name="7首「伤感情歌」" group-title="其他台",7首「伤感情歌」 [1普通]
-https://vd2.bdstatic.com/mda-nbdj7sp20st0jd9d/sc/cae_h264_delogo/1644847557994341172/mda-nbdj7sp20st0jd9d.mp4
 #EXTINF:-1 tvg-name="ABC NEWS" group-title="其他台",ABC NEWS [1普通]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV24.m3u8
 #EXTINF:-1 tvg-name="ABC News Australia" group-title="其他台",ABC News Australia [2普通]
@@ -59,8 +57,6 @@ https://stream1.freetv.fun/cctv4k-2.ctv|http://3501776.xyz:35455/gaoma/cctv4k.m3
 http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="CCTV★移动传媒" group-title="其他台",CCTV★移动传媒 [1普通]
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/649e19038fa74514ab3f00febbcd6de0/1200.m3u8
-#EXTINF:-1 tvg-name="CCTV法语" group-title="其他台",CCTV法语 [1普通]
-https://www.freetv.top/migu/609006476.m3u8?migutoken=5dd99cb161eb571abd27783de873e5e0ebd12066986ad26e19b26a455fcc5d03351605a1fa6c3abf1274770b07fd85c894f5dfcb9d2409b9c402878c0d89ecdca605504434138872090dfdd670
 #EXTINF:-1 tvg-name="CCTV第一剧场" group-title="其他台",CCTV第一剧场 [1普通]
 http://iptv.4666888.xyz/iptv2A.php?id=13
 #EXTINF:-1 tvg-name="CCTV阿拉伯语" group-title="其他台",CCTV阿拉伯语 [1普通]
@@ -79,8 +75,6 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=269&livestream=1&live=1&ap
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-rialto-samsungnz/playlist.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-name="Cloudflare TV" group-title="其他台",Cloudflare TV [1普通]
 https://cloudflare.tv/hls/live.m3u8?checkedby:iptvcat.com
-#EXTINF:-1 tvg-name="DJ 无情书" group-title="其他台",DJ 无情书 [1普通]
-https://vd3.bdstatic.com/mda-kkikg9rzshuhcxwy/v1-cae/sc/mda-kkikg9rzshuhcxwy.mp4
 #EXTINF:-1 tvg-name="DJ 流浪兄弟" group-title="其他台",DJ 流浪兄弟 [1普通]
 https://vd2.bdstatic.com/mda-mhrdtax1km0idkc5/1080p/cae_h264/1629972852606533219/mda-mhrdtax1km0idkc5.mp4
 #EXTINF:-1 tvg-name="DJ13首《经典老歌》" group-title="其他台",DJ13首《经典老歌》 [1普通]
@@ -127,12 +121,8 @@ https://vd3.bdstatic.com/mda-mksyipb0103ck0pm/sc/cae_h264_nowatermark/1638055298
 https://vd3.bdstatic.com/mda-mdaprhx095djift2/hd/mda-mdaprhx095djift2.mp4
 #EXTINF:-1 tvg-name="DJ爆红老歌10首车载" group-title="其他台",DJ爆红老歌10首车载 [1普通]
 https://vd3.bdstatic.com/mda-nbhgwre9iykh09ya/sc/cae_h264_delogo/1645187028367793873/mda-nbhgwre9iykh09ya.mp4
-#EXTINF:-1 tvg-name="DJ爱难求" group-title="其他台",DJ爱难求 [1普通]
-https://vd4.bdstatic.com/mda-mk99haw9m5kp6p5s/default/h264/1636526565199080954/mda-mk99haw9m5kp6p5s.mp4
 #EXTINF:-1 tvg-name="DJ版《一个人挺好》" group-title="其他台",DJ版《一个人挺好》 [1普通]
 https://vd3.bdstatic.com/mda-mh6gqq4b59z26cjx/1080p/cae_h264/1628504623473300938/mda-mh6gqq4b59z26cjx.mp4
-#EXTINF:-1 tvg-name="DJ版《三月里的小雨》" group-title="其他台",DJ版《三月里的小雨》 [1普通]
-https://vd2.bdstatic.com/mda-mgwegh0bzv4cy6cb/1080p/cae_h264/1627727251470197083/mda-mgwegh0bzv4cy6cb.mp4
 #EXTINF:-1 tvg-name="DJ版《原谅你的谎》" group-title="其他台",DJ版《原谅你的谎》 [1普通]
 https://vd4.bdstatic.com/mda-mhacxx5vhr2we882/1080p/cae_h264/1628673933350116053/mda-mhacxx5vhr2we882.mp4
 #EXTINF:-1 tvg-name="DJ版《时间会知道你好不好》" group-title="其他台",DJ版《时间会知道你好不好》 [1普通]
@@ -158,7 +148,7 @@ https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV08.m3u8
 #EXTINF:-1 tvg-name="DW News" group-title="其他台",DW News [1普通]
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/stream05/streamPlaylist.m3u8
 #EXTINF:-1 tvg-name="Discovery" group-title="其他台",Discovery [2普通]
-http://ott.watch/stream/E9LDH2ZCN7/177.m3u8|http://ott.watch/stream/E9LDH2ZCN7/146.m3u8
+http://ott.watch/stream/E9LDH2ZCN7/146.m3u8|http://ott.watch/stream/E9LDH2ZCN7/177.m3u8
 #EXTINF:-1 tvg-name="EF运通" group-title="其他台",EF运通 [1普通]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV06.m3u8
 #EXTINF:-1 tvg-name="ELEVEN体育1" group-title="其他台",ELEVEN体育1 [1普通]
@@ -197,8 +187,6 @@ https://stream1.freetv.fun/jsports-2-2.m3u8
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV16.m3u8
 #EXTINF:-1 tvg-name="KANSAI NEWS" group-title="其他台" tvg-ipv6="true",KANSAI NEWS [1IPv6]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV62.m3u8
-#EXTINF:-1 tvg-name="KBS Kids" group-title="其他台",KBS Kids [1普通]
-http://mytv.dothome.co.kr/ch/catv/6.php
 #EXTINF:-1 tvg-name="KBS LiveCam DokDo" group-title="其他台",KBS LiveCam DokDo [1普通]
 http://kbs-dokdo.gscdn.com/dokdo_300/dokdo_300.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="KBS NEWS" group-title="其他台" tvg-ipv6="true",KBS NEWS [1IPv6]
@@ -287,40 +275,16 @@ http://worcester.vod.castus.tv/live/ch1.m3u8?checkedby:iptvcat.com
 https://iptv.catvod.com/live.php?id=WTA%20WTA%E4%BF%84%E6%96%AF%E7%89%B9%E6%8B%89%E5%8F%91%E7%AB%99Day4%20%E6%B8%85%E6%B5%81%2018%3A00
 #EXTINF:-1 tvg-name="WTA WTA俄拉发站Day4 英文原声 18:00" group-title="其他台",WTA WTA俄拉发站Day4 英文原声 18:00 [1普通]
 https://iptv.catvod.com/live.php?id=WTA%20WTA%E4%BF%84%E6%96%AF%E7%89%B9%E6%8B%89%E5%8F%91%E7%AB%99Day4%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2018%3A00
-#EXTINF:-1 tvg-name="WTA WTA克卢日 纳波卡站Day4 清流 17:00" group-title="其他台",WTA WTA克卢日 纳波卡站Day4 清流 17:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20WTA%E5%85%8B%E5%8D%A2%E6%97%A5-%E7%BA%B3%E6%B3%A2%E5%8D%A1%E7%AB%99Day4%20%E6%B8%85%E6%B5%81%2017%3A00
-#EXTINF:-1 tvg-name="WTA WTA克卢日 纳波卡站Day4 英文原声 17:00" group-title="其他台",WTA WTA克卢日 纳波卡站Day4 英文原声 17:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20WTA%E5%85%8B%E5%8D%A2%E6%97%A5-%E7%BA%B3%E6%B3%A2%E5%8D%A1%E7%AB%99Day4%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2017%3A00
-#EXTINF:-1 tvg-name="WTA WTA阿布扎比站Day4 智能字幕 17:00" group-title="其他台",WTA WTA阿布扎比站Day4 智能字幕 17:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20WTA%E9%98%BF%E5%B8%83%E6%89%8E%E6%AF%94%E7%AB%99Day4%20%E6%99%BA%E8%83%BD%E5%AD%97%E5%B9%95%2017%3A00
-#EXTINF:-1 tvg-name="WTA WTA阿布扎比站Day4 清流 17:00" group-title="其他台",WTA WTA阿布扎比站Day4 清流 17:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20WTA%E9%98%BF%E5%B8%83%E6%89%8E%E6%AF%94%E7%AB%99Day4%20%E6%B8%85%E6%B5%81%2017%3A00
-#EXTINF:-1 tvg-name="WTA WTA阿布扎比站Day4 英文原声 17:00" group-title="其他台",WTA WTA阿布扎比站Day4 英文原声 17:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20WTA%E9%98%BF%E5%B8%83%E6%89%8E%E6%AF%94%E7%AB%99Day4%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2017%3A00
-#EXTINF:-1 tvg-name="WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 2026WTA阿布扎比站女单第1轮回放：伊埃拉2 0森梅兹 15:00" group-title="其他台",WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 2026WTA阿布扎比站女单第1轮回放：伊埃拉2 0森梅兹 15:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20%E4%BC%8A%E5%9F%83%E6%8B%89%E6%A8%AA%E6%89%AB%20%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%E9%80%86%E8%BD%AC%E6%99%8B%E7%BA%A7%202026WTA%E9%98%BF%E5%B8%83%E6%89%8E%E6%AF%94%E7%AB%99%E5%A5%B3%E5%8D%95%E7%AC%AC1%E8%BD%AE%E5%9B%9E%E6%94%BE%EF%BC%9A%E4%BC%8A%E5%9F%83%E6%8B%892-0%E6%A3%AE%E6%A2%85%E5%85%B9%2015%3A00
-#EXTINF:-1 tvg-name="WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 2026WTA阿布扎比站女单第1轮回放：伊埃拉2 0森梅兹（英文原声） 15:00" group-title="其他台",WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 2026WTA阿布扎比站女单第1轮回放：伊埃拉2 0森梅兹（英文原声） 15:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20%E4%BC%8A%E5%9F%83%E6%8B%89%E6%A8%AA%E6%89%AB%20%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%E9%80%86%E8%BD%AC%E6%99%8B%E7%BA%A7%202026WTA%E9%98%BF%E5%B8%83%E6%89%8E%E6%AF%94%E7%AB%99%E5%A5%B3%E5%8D%95%E7%AC%AC1%E8%BD%AE%E5%9B%9E%E6%94%BE%EF%BC%9A%E4%BC%8A%E5%9F%83%E6%8B%892-0%E6%A3%AE%E6%A2%85%E5%85%B9%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2015%3A00
-#EXTINF:-1 tvg-name="WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 塞莱赫梅蒂娃1 2奥斯塔彭科 15:00" group-title="其他台",WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 塞莱赫梅蒂娃1 2奥斯塔彭科 15:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20%E4%BC%8A%E5%9F%83%E6%8B%89%E6%A8%AA%E6%89%AB%20%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%E9%80%86%E8%BD%AC%E6%99%8B%E7%BA%A7%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E5%A1%9E%E8%8E%B1%E8%B5%AB%E6%A2%85%E8%92%82%E5%A8%831-2%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%2015%3A00
-#EXTINF:-1 tvg-name="WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 塞莱赫梅蒂娃1 2奥斯塔彭科（英文原声） 15:00" group-title="其他台",WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 塞莱赫梅蒂娃1 2奥斯塔彭科（英文原声） 15:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20%E4%BC%8A%E5%9F%83%E6%8B%89%E6%A8%AA%E6%89%AB%20%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%E9%80%86%E8%BD%AC%E6%99%8B%E7%BA%A7%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E5%A1%9E%E8%8E%B1%E8%B5%AB%E6%A2%85%E8%92%82%E5%A8%831-2%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2015%3A00
-#EXTINF:-1 tvg-name="WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 巴多萨1 2萨斯诺维奇 15:00" group-title="其他台",WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 巴多萨1 2萨斯诺维奇 15:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20%E4%BC%8A%E5%9F%83%E6%8B%89%E6%A8%AA%E6%89%AB%20%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%E9%80%86%E8%BD%AC%E6%99%8B%E7%BA%A7%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E5%B7%B4%E5%A4%9A%E8%90%A81-2%E8%90%A8%E6%96%AF%E8%AF%BA%E7%BB%B4%E5%A5%87%2015%3A00
-#EXTINF:-1 tvg-name="WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 巴多萨1 2萨斯诺维奇（英文原声） 15:00" group-title="其他台",WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 巴多萨1 2萨斯诺维奇（英文原声） 15:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20%E4%BC%8A%E5%9F%83%E6%8B%89%E6%A8%AA%E6%89%AB%20%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%E9%80%86%E8%BD%AC%E6%99%8B%E7%BA%A7%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E5%B7%B4%E5%A4%9A%E8%90%A81-2%E8%90%A8%E6%96%AF%E8%AF%BA%E7%BB%B4%E5%A5%87%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2015%3A00
-#EXTINF:-1 tvg-name="WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 曾丽美2 1乔恩特 15:00" group-title="其他台",WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 曾丽美2 1乔恩特 15:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20%E4%BC%8A%E5%9F%83%E6%8B%89%E6%A8%AA%E6%89%AB%20%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%E9%80%86%E8%BD%AC%E6%99%8B%E7%BA%A7%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E6%9B%BE%E4%B8%BD%E7%BE%8E2-1%E4%B9%94%E6%81%A9%E7%89%B9%2015%3A00
-#EXTINF:-1 tvg-name="WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 曾丽美2 1乔恩特（英文原声） 15:00" group-title="其他台",WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 曾丽美2 1乔恩特（英文原声） 15:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20%E4%BC%8A%E5%9F%83%E6%8B%89%E6%A8%AA%E6%89%AB%20%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%E9%80%86%E8%BD%AC%E6%99%8B%E7%BA%A7%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E6%9B%BE%E4%B8%BD%E7%BE%8E2-1%E4%B9%94%E6%81%A9%E7%89%B9%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2015%3A00
-#EXTINF:-1 tvg-name="WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 雅雷姆斯卡2 0玛雅 15:00" group-title="其他台",WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 雅雷姆斯卡2 0玛雅 15:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20%E4%BC%8A%E5%9F%83%E6%8B%89%E6%A8%AA%E6%89%AB%20%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%E9%80%86%E8%BD%AC%E6%99%8B%E7%BA%A7%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E9%9B%85%E6%96%AF%E7%89%B9%E9%9B%B7%E5%A7%86%E6%96%AF%E5%8D%A12-0%E7%8E%9B%E9%9B%85%2015%3A00
-#EXTINF:-1 tvg-name="WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 雅雷姆斯卡2 0玛雅（英文原声） 15:00" group-title="其他台",WTA 伊埃拉横扫 奥斯塔彭科逆转晋级 雅雷姆斯卡2 0玛雅（英文原声） 15:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20%E4%BC%8A%E5%9F%83%E6%8B%89%E6%A8%AA%E6%89%AB%20%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%E9%80%86%E8%BD%AC%E6%99%8B%E7%BA%A7%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E9%9B%85%E6%96%AF%E7%89%B9%E9%9B%B7%E5%A7%86%E6%96%AF%E5%8D%A12-0%E7%8E%9B%E9%9B%85%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2015%3A00
-#EXTINF:-1 tvg-name="WTA 萨姆索诺娃出战！陶森压场 清流 17:00" group-title="其他台",WTA 萨姆索诺娃出战！陶森压场 清流 17:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20%E8%90%A8%E5%A7%86%E7%B4%A2%E8%AF%BA%E5%A8%83%E5%87%BA%E6%88%98%EF%BC%81%E9%99%B6%E6%A3%AE%E5%8E%8B%E5%9C%BA%20%E6%B8%85%E6%B5%81%2017%3A00
-#EXTINF:-1 tvg-name="WTA 萨姆索诺娃出战！陶森压场 英文原声 17:00" group-title="其他台",WTA 萨姆索诺娃出战！陶森压场 英文原声 17:00 [1普通]
-https://iptv.catvod.com/live.php?id=WTA%20%E8%90%A8%E5%A7%86%E7%B4%A2%E8%AF%BA%E5%A8%83%E5%87%BA%E6%88%98%EF%BC%81%E9%99%B6%E6%A3%AE%E5%8E%8B%E5%9C%BA%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2017%3A00
+#EXTINF:-1 tvg-name="WTA 奥斯塔彭科出战！本西奇接场 智能字幕 17:00" group-title="其他台",WTA 奥斯塔彭科出战！本西奇接场 智能字幕 17:00 [1普通]
+https://iptv.catvod.com/live.php?id=WTA%20%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%E5%87%BA%E6%88%98%EF%BC%81%E6%9C%AC%E8%A5%BF%E5%A5%87%E6%8E%A5%E5%9C%BA%20%E6%99%BA%E8%83%BD%E5%AD%97%E5%B9%95%2017%3A00
+#EXTINF:-1 tvg-name="WTA 奥斯塔彭科出战！本西奇接场 清流 17:00" group-title="其他台",WTA 奥斯塔彭科出战！本西奇接场 清流 17:00 [1普通]
+https://iptv.catvod.com/live.php?id=WTA%20%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%E5%87%BA%E6%88%98%EF%BC%81%E6%9C%AC%E8%A5%BF%E5%A5%87%E6%8E%A5%E5%9C%BA%20%E6%B8%85%E6%B5%81%2017%3A00
+#EXTINF:-1 tvg-name="WTA 奥斯塔彭科出战！本西奇接场 英文原声 17:00" group-title="其他台",WTA 奥斯塔彭科出战！本西奇接场 英文原声 17:00 [1普通]
+https://iptv.catvod.com/live.php?id=WTA%20%E5%A5%A5%E6%96%AF%E5%A1%94%E5%BD%AD%E7%A7%91%E5%87%BA%E6%88%98%EF%BC%81%E6%9C%AC%E8%A5%BF%E5%A5%87%E6%8E%A5%E5%9C%BA%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2017%3A00
+#EXTINF:-1 tvg-name="WTA 王欣瑜率先登场对阵马萨洛娃 清流 17:00" group-title="其他台",WTA 王欣瑜率先登场对阵马萨洛娃 清流 17:00 [1普通]
+https://iptv.catvod.com/live.php?id=WTA%20%E7%8E%8B%E6%AC%A3%E7%91%9C%E7%8E%87%E5%85%88%E7%99%BB%E5%9C%BA%E5%AF%B9%E9%98%B5%E9%A9%AC%E8%90%A8%E6%B4%9B%E5%A8%83%20%E6%B8%85%E6%B5%81%2017%3A00
+#EXTINF:-1 tvg-name="WTA 王欣瑜率先登场对阵马萨洛娃 英文原声 17:00" group-title="其他台",WTA 王欣瑜率先登场对阵马萨洛娃 英文原声 17:00 [1普通]
+https://iptv.catvod.com/live.php?id=WTA%20%E7%8E%8B%E6%AC%A3%E7%91%9C%E7%8E%87%E5%85%88%E7%99%BB%E5%9C%BA%E5%AF%B9%E9%98%B5%E9%A9%AC%E8%90%A8%E6%B4%9B%E5%A8%83%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2017%3A00
 #EXTINF:-1 tvg-name="Wanasah" group-title="其他台",Wanasah [1普通]
 https://shls-wanasah-prod-dub.shahid.net/out/v1/c84ef3128e564b74a6a796e8b6287de6/index.m3u8
 #EXTINF:-1 tvg-name="Wicked Tuna" group-title="其他台",Wicked Tuna [1普通]
@@ -331,16 +295,14 @@ https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00426-littledotstudio-wondernz-sa
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00111-hearstmediaprod-xploreintlnl-samsungnl/playlist.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 tvg-name="YES 933" group-title="其他台" tvg-logo="https://live.fanmingming.com/radio/yes933.png",YES 933 [1普通]
 https://22393.live.streamtheworld.com/YES933_PREM.aac
-#EXTINF:-1 tvg-name="Zuffa拳击 Zuffa拳击第2期：瓦伦苏埃拉判定击败托雷斯 Zuffa拳击第2期全场回放 07:00" group-title="其他台",Zuffa拳击 Zuffa拳击第2期：瓦伦苏埃拉判定击败托雷斯 Zuffa拳击第2期全场回放 07:00 [1普通]
-https://iptv.catvod.com/live.php?id=Zuffa%E6%8B%B3%E5%87%BB%20Zuffa%E6%8B%B3%E5%87%BB%E7%AC%AC2%E6%9C%9F%EF%BC%9A%E7%93%A6%E4%BC%A6%E8%8B%8F%E5%9F%83%E6%8B%89%E5%88%A4%E5%AE%9A%E5%87%BB%E8%B4%A5%E6%89%98%E9%9B%B7%E6%96%AF%20Zuffa%E6%8B%B3%E5%87%BB%E7%AC%AC2%E6%9C%9F%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%2007%3A00
 #EXTINF:-1 tvg-name="astroAod" group-title="其他台",astroAod [1普通]
 http://php.jdshipin.com/PLTV/iptv.php?id=aod
 #EXTINF:-1 tvg-name="dj舞曲女人版" group-title="其他台" tvg-ipv6="true",dj舞曲女人版 [1IPv6]
 https://vd3.bdstatic.com/mda-mkp88kxv6r8y73k9/sc/cae_h264/1637733263867775329/mda-mkp88kxv6r8y73k9.mp4
 #EXTINF:-1 tvg-name="nowsports" group-title="其他台",nowsports [1普通]
 https://stream1.freetv.fun/nowsports-1.ctv
-#EXTINF:-1 tvg-name="skysports" group-title="其他台",skysports [4普通]
-https://stream1.freetv.fun/skysports-14.ctv|https://stream1.freetv.fun/skysports-16.ctv|https://stream1.freetv.fun/skysports-17.ctv|https://stream1.freetv.fun/skysports-7.ctv
+#EXTINF:-1 tvg-name="skysports" group-title="其他台",skysports [2普通]
+https://stream1.freetv.fun/skysports-14.ctv|https://stream1.freetv.fun/skysports-16.ctv
 #EXTINF:-1 tvg-name="▶️魔戒首部曲：魔戒現身" group-title="其他台",▶️魔戒首部曲：魔戒現身 [1普通]
 https://vip.kuaikan-cdn4.com/20240220/k2bjbEoB/898kb/hls/index.m3u8
 #EXTINF:-1 tvg-name="《2首车载DJ歌曲联唱》" group-title="其他台",《2首车载DJ歌曲联唱》 [1普通]
@@ -469,8 +431,6 @@ https://vdse.bdstatic.com/1c2dc5580507bc1b0ef507c63b3fc461.mp4?authorization=bce
 http://vd2.bdstatic.com/mda-jjmnjgiabtvmy13u/sc/mda-jjmnjgiabtvmy13u.mp4
 #EXTINF:-1 tvg-name="「中」我愿意平凡的陪在你身旁" group-title="其他台",「中」我愿意平凡的陪在你身旁 [1普通]
 https://vdse.bdstatic.com/570e05ef514db00b14c9c10d1aef7f1f.mp4?authorization=bce-auth-v1%2Ffb297a5cc0fb434c971b8fa103e8dd7b%2F2017-05-11T09%3A02%3A31Z
-#EXTINF:-1 tvg-name="「中」我曾" group-title="其他台",「中」我曾 [1普通]
-https://vd3.bdstatic.com/mda-jjm8i93paakzz8yj/hd/mda-jjm8i93paakzz8yj.mp4?pd=20&vt=1
 #EXTINF:-1 tvg-name="「中」损茜茹/马良 往后余生" group-title="其他台",「中」损茜茹/马良 往后余生 [1普通]
 https://vd3.bdstatic.com/mda-jatub6sb1pzwxfnb/hd/mda-jatub6sb1pzwxfnb.mp4?pd=19&vt=1
 #EXTINF:-1 tvg-name="「中」摩登兄弟 探清水河" group-title="其他台",「中」摩登兄弟 探清水河 [1普通]
@@ -491,8 +451,6 @@ http://vd4.bdstatic.com/mda-jm4h7v1isxwc660u/sc/mda-jm4h7v1isxwc660u.mp4
 http://vd1.bdstatic.com/mda-hc2rwgemn6yrnvw2/mda-hc2rwgemn6yrnvw2.mp4
 #EXTINF:-1 tvg-name="「中」罗时丰 心事" group-title="其他台",「中」罗时丰 心事 [1普通]
 http://vd2.bdstatic.com/mda-jaadiz1rwrtrj7kw/sc/mda-jaadiz1rwrtrj7kw.mp4
-#EXTINF:-1 tvg-name="「中」罗时丰 擦掉彼句我爱你" group-title="其他台",「中」罗时丰 擦掉彼句我爱你 [1普通]
-http://vd1.bdstatic.com/mda-hj3j9zhu12h99a79/vs-f5f50550f0b93f5020da43ab88266eda-watermark/hd/mda-hj3j9zhu12h99a79.mp4
 #EXTINF:-1 tvg-name="「中」罗时丰 无情之梦" group-title="其他台",「中」罗时丰 无情之梦 [1普通]
 http://vd2.bdstatic.com/mda-je1jq1hvgmab08gd/sc/mda-je1jq1hvgmab08gd.mp4
 #EXTINF:-1 tvg-name="「中」罗时丰 爱情的路" group-title="其他台",「中」罗时丰 爱情的路 [1普通]
@@ -555,16 +513,12 @@ http://vd4.bdstatic.com/mda-ijge8r0m6vgx46ms/sc/mda-ijge8r0m6vgx46ms.mp4
 http://vd1.bdstatic.com/mda-hid0euc4xc7xmum0/sc/mda-hid0euc4xc7xmum0.mp4
 #EXTINF:-1 tvg-name="「中」翁立友 送你送到这" group-title="其他台",「中」翁立友 送你送到这 [1普通]
 http://vd2.bdstatic.com/mda-jm33ts9txcjuaq27/hd/mda-jm33ts9txcjuaq27.mp4
-#EXTINF:-1 tvg-name="「中」翁立友 阿公的茶" group-title="其他台",「中」翁立友 阿公的茶 [1普通]
-http://vd2.bdstatic.com/mda-ijgqgd9jwz54ray7/sc/mda-ijgqgd9jwz54ray7.mp4
 #EXTINF:-1 tvg-name="「中」翁立友 限时批" group-title="其他台",「中」翁立友 限时批 [1普通]
 http://vd3.bdstatic.com/mda-iighnnxyc3nfj9zu/sc/mda-iighnnxyc3nfj9zu.mp4
 #EXTINF:-1 tvg-name="「中」蔡丽津月圆情" group-title="其他台",「中」蔡丽津月圆情 [1普通]
 http://vd3.bdstatic.com/mda-jm53zq7k0b0kbxch/sc/mda-jm53zq7k0b0kbxch.mp4
 #EXTINF:-1 tvg-name="「中」赵方婧 芒种" group-title="其他台",「中」赵方婧 芒种 [1普通]
 https://vd3.bdstatic.com/mda-kat1tr4ka5st965k/hd/mda-kat1tr4ka5st965k.mp4?pd=20
-#EXTINF:-1 tvg-name="「中」醉千年李袁杰" group-title="其他台",「中」醉千年李袁杰 [1普通]
-http://vd3.bdstatic.com/mda-ihai9qt3yny3sx53/hd/mda-ihai9qt3yny3sx53.mp4?pd=19&vt=1
 #EXTINF:-1 tvg-name="「中」陈柯宇 生僻字" group-title="其他台",「中」陈柯宇 生僻字 [1普通]
 http://vd2.bdstatic.com/mda-jb28qp6tauzkzpy9/hd/mda-jb28qp6tauzkzpy9.mp4
 #EXTINF:-1 tvg-name="「中」陈淑苹 离家" group-title="其他台",「中」陈淑苹 离家 [1普通]
@@ -591,12 +545,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/7ae265653fe149069c
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/0f03b08bc7b042358144617000fd2931/1200.m3u8
 #EXTINF:-1 tvg-name="「精选DJ洗脑神曲」节奏欢快，动感魔性" group-title="其他台",「精选DJ洗脑神曲」节奏欢快，动感魔性 [1普通]
 https://vd2.bdstatic.com/mda-ncsh78jh0xna7ngs/sc/cae_h264_delogo/1648389408244925817/mda-ncsh78jh0xna7ngs.mp4
-#EXTINF:-1 tvg-name="「韩」114" group-title="其他台",「韩」114 [1普通]
-https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/239998000351.mp4
 #EXTINF:-1 tvg-name="「韩」132" group-title="其他台",「韩」132 [1普通]
 https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240350771160.mp4
-#EXTINF:-1 tvg-name="「韩」133" group-title="其他台",「韩」133 [1普通]
-https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240113261859.mp4
 #EXTINF:-1 tvg-name="「韩」136" group-title="其他台",「韩」136 [1普通]
 https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240008036293.mp4
 #EXTINF:-1 tvg-name="「韩」141" group-title="其他台",「韩」141 [1普通]
@@ -611,16 +561,8 @@ https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240270774376.mp4
 https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240151273206.mp4
 #EXTINF:-1 tvg-name="「韩」16" group-title="其他台",「韩」16 [1普通]
 https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/239805200933.mp4
-#EXTINF:-1 tvg-name="「韩」162" group-title="其他台",「韩」162 [1普通]
-https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240411259014.mp4
 #EXTINF:-1 tvg-name="「韩」175" group-title="其他台",「韩」175 [1普通]
 https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240418087243.mp4
-#EXTINF:-1 tvg-name="「韩」178" group-title="其他台",「韩」178 [1普通]
-https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240182993056.mp4
-#EXTINF:-1 tvg-name="「韩」184" group-title="其他台",「韩」184 [1普通]
-https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240355262537.mp4
-#EXTINF:-1 tvg-name="「韩」191" group-title="其他台",「韩」191 [1普通]
-https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240248465975.mp4
 #EXTINF:-1 tvg-name="「韩」25" group-title="其他台",「韩」25 [1普通]
 https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240151167718.mp4
 #EXTINF:-1 tvg-name="「韩」26" group-title="其他台",「韩」26 [1普通]
@@ -629,10 +571,6 @@ https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240033362815.mp4
 https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240151167938.mp4
 #EXTINF:-1 tvg-name="「韩」35" group-title="其他台",「韩」35 [1普通]
 https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240056530470.mp4
-#EXTINF:-1 tvg-name="「韩」36" group-title="其他台",「韩」36 [1普通]
-https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/239832040344.mp4
-#EXTINF:-1 tvg-name="「韩」38" group-title="其他台",「韩」38 [1普通]
-https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240057078179.mp4
 #EXTINF:-1 tvg-name="「韩」43" group-title="其他台",「韩」43 [1普通]
 https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/239837532125.mp4
 #EXTINF:-1 tvg-name="「韩」49" group-title="其他台",「韩」49 [1普通]
@@ -641,8 +579,6 @@ https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240065122134.mp4
 https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240070818783.mp4
 #EXTINF:-1 tvg-name="「韩」96" group-title="其他台",「韩」96 [1普通]
 https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/239899840062.mp4
-#EXTINF:-1 tvg-name="「韩」97" group-title="其他台",「韩」97 [1普通]
-https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240243499351.mp4
 #EXTINF:-1 tvg-name="「韩」DJ Soda Remix 2021" group-title="其他台",「韩」DJ Soda Remix 2021 [1普通]
 https://vd3.bdstatic.com/mda-mev3hw0htz28h5wn/1080p/cae_h264/1622343504467773766/mda-mev3hw0htz28h5wn.mp4
 #EXTINF:-1 tvg-name="一首《爱一回错一回》DJ版" group-title="其他台",一首《爱一回错一回》DJ版 [1普通]
@@ -654,17 +590,17 @@ http://live.xmcdn.com/live/1678/64.m3u8
 #EXTINF:-1 tvg-name="三明新闻综合" group-title="其他台",三明新闻综合 [1普通]
 https://ls.qingting.fm/live/5022100/64k.m3u8
 #EXTINF:-1 tvg-name="上虞新商都" group-title="其他台",上虞新商都 [2普通]
-https://stream1.freetv.fun/shang-yu-xin-shang-du-5.m3u8|https://stream1.freetv.fun/shang-yu-xin-shang-du-4.m3u8
+https://stream1.freetv.fun/shang-yu-xin-shang-du-4.m3u8|https://stream1.freetv.fun/shang-yu-xin-shang-du-5.m3u8
 #EXTINF:-1 tvg-name="上虞综合" group-title="其他台",上虞综合 [1普通]
 https://stream1.freetv.fun/shang-yu-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="不二神探" group-title="其他台",不二神探 [1普通]
 https://cdn2.yzzy-tv-cdn.com/20220330/4069_8714f6bb/index.m3u8
 #EXTINF:-1 tvg-name="东亚超级联赛 东京电击VS新北国王 清流播出1 18:05" group-title="其他台",东亚超级联赛 东京电击VS新北国王 清流播出1 18:05 [1普通]
 https://iptv.catvod.com/live.php?id=%E4%B8%9C%E4%BA%9A%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B%20%E4%B8%9C%E4%BA%AC%E7%94%B5%E5%87%BBVS%E6%96%B0%E5%8C%97%E5%9B%BD%E7%8E%8B%20%E6%B8%85%E6%B5%81%E6%92%AD%E5%87%BA1%2018%3A05
-#EXTINF:-1 tvg-name="东亚超级联赛 琉球黄金帝王VS桃园璞园领航猿 王冠证 18:35" group-title="其他台",东亚超级联赛 琉球黄金帝王VS桃园璞园领航猿 王冠证 18:35 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B8%9C%E4%BA%9A%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B%20%E7%90%89%E7%90%83%E9%BB%84%E9%87%91%E5%B8%9D%E7%8E%8BVS%E6%A1%83%E5%9B%AD%E7%92%9E%E5%9B%AD%E9%A2%86%E8%88%AA%E7%8C%BF%20%E7%8E%8B%E5%86%A0%E8%AF%81%2018%3A35
+#EXTINF:-1 tvg-name="东亚超级联赛 琉球黄金帝王VS桃园璞园领航猿 季孟年 18:35" group-title="其他台",东亚超级联赛 琉球黄金帝王VS桃园璞园领航猿 季孟年 18:35 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B8%9C%E4%BA%9A%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B%20%E7%90%89%E7%90%83%E9%BB%84%E9%87%91%E5%B8%9D%E7%8E%8BVS%E6%A1%83%E5%9B%AD%E7%92%9E%E5%9B%AD%E9%A2%86%E8%88%AA%E7%8C%BF%20%E5%AD%A3%E5%AD%9F%E5%B9%B4%2018%3A35
 #EXTINF:-1 tvg-name="东方影视" group-title="其他台" tvg-logo="东方影视.png" tvg-ipv6="true",东方影视 [9IPv6+11普通]
-https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-8.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-9.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-3.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-13.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-4.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-7.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-6.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-2.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-5.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-12.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-10.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-8.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-7.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-2.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-6.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-1.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-13.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-6.ctv|https://stream1.freetv.fun/dong-fang-ying-shi-4.ctv|http://hlsztemgsplive.miguvideo.com:8080/wd_r4/dfl/dianshijuhd/1200/index.m3u8?msisdn=2026020206020781cd983905f54bfbbdfcd7690214cf59&mdspid=&spid=699212&netType=0&sid=5500002274&pid=2028597139&timestamp=20260202060207&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=617290047&ParentNodeID=-99&assertID=5500002274&client_ip=218.28.233.106&SecurityKey=20260202060207&promotionId=&mvid=5100001715&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=e8c0c0d3217e5c380d96598432a91673
+https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-8.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-9.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-3.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-13.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-4.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-7.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-6.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-2.m3u8|https://stream1.freetv.fun/ipv6-dong-fang-ying-shi-5.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-12.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-10.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-8.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-7.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-2.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-6.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-1.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-13.m3u8|https://stream1.freetv.fun/dong-fang-ying-shi-6.ctv|https://stream1.freetv.fun/dong-fang-ying-shi-4.ctv|http://hlsztemgsplive.miguvideo.com:8080/wd_r4/dfl/dianshijuhd/1200/index.m3u8?msisdn=20260204040219480c14c640564762929777d040e33e8e&mdspid=&spid=699212&netType=0&sid=5500002274&pid=2028597139&timestamp=20260204040219&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=617290047&ParentNodeID=-99&assertID=5500002274&client_ip=218.28.233.106&SecurityKey=20260204040219&promotionId=&mvid=5100001715&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=5246307f26e69b13c96d15d600da6db3
 #EXTINF:-1 tvg-name="东方财经" group-title="其他台" tvg-logo="https://epg.pw/media/images/channel/2023/06/05/large/20230605005855118868_86.jpg" tvg-quality="标清",东方财经 [1普通]
 https://epg.pw/stream/76079aa6a26f481e2218b469cd5c6f2236223a0b4244bdad4a6d36cf985e637e.ctv
 #EXTINF:-1 tvg-name="中国教育2台" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/中国教育2台.png" tvg-ipv6="true",中国教育2台 [1IPv6]
@@ -674,7 +610,7 @@ http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221
 #EXTINF:-1 tvg-name="中国教育4台" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/中国教育4台.png" tvg-ipv6="true",中国教育4台 [1IPv6]
 http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226997/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EAw_OvjRgJVjtlaOa0dcgzg%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
 #EXTINF:-1 tvg-name="中国蓝新闻" group-title="其他台",中国蓝新闻 [3普通]
-https://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8?|http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
+https://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8?|https://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
 #EXTINF:-1 tvg-name="中央电视塔东" group-title="其他台",中央电视塔东 [1普通]
 https://gcalic.v.myalicdn.com/gc/ztd_1/index.m3u8
 #EXTINF:-1 tvg-name="中央电视塔南" group-title="其他台",中央电视塔南 [1普通]
@@ -700,7 +636,7 @@ https://gcalic.v.myalicdn.com/gc/ljgcdsc_1/index.m3u8
 #EXTINF:-1 tvg-name="丽江古城大研花巷观景" group-title="其他台",丽江古城大研花巷观景 [1普通]
 https://gcalic.v.myalicdn.com/gc/ljgcdyhxgjt_1/index.m3u8
 #EXTINF:-1 tvg-name="之江纪录" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/之江纪录.png",之江纪录 [4普通]
-https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel12/1080p.m3u8|http://zwebl02.cztv.com/live/channel121080P.m3u8?auth_key=2524708799-0-0-c33efdd495bcdd2ddc42e7c408405037
+https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel12/1080p.m3u8|http://zwebl02.cztv.com/live/channel121080P.m3u8?auth_key=2524708799-0-0-c33efdd495bcdd2ddc42e7c408405037|http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
 #EXTINF:-1 tvg-name="之江记录" group-title="其他台",之江记录 [1普通]
 http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8?
 #EXTINF:-1 tvg-name="乌镇全景" group-title="其他台",乌镇全景 [1普通]
@@ -715,62 +651,86 @@ https://gcalic.v.myalicdn.com/gc/zjwzlxt_1/index.m3u8
 https://gcalic.v.myalicdn.com/gc/lsdfgfl_1/index.m3u8
 #EXTINF:-1 tvg-name="乐山新闻综合" group-title="其他台",乐山新闻综合 [2普通]
 https://stream1.freetv.fun/le-shan-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/le-shan-xin-wen-zong-he-2.m3u8
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 刘国正、周冠达带您分析签位 刘国正 周冠达 周泽昊 18:00" group-title="其他台",乒乓球亚洲杯 刘国正、周冠达带您分析签位 刘国正 周冠达 周泽昊 18:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%88%98%E5%9B%BD%E6%AD%A3%E3%80%81%E5%91%A8%E5%86%A0%E8%BE%BE%E5%B8%A6%E6%82%A8%E5%88%86%E6%9E%90%E7%AD%BE%E4%BD%8D%20%E5%88%98%E5%9B%BD%E6%AD%A3%20%E5%91%A8%E5%86%A0%E8%BE%BE%20%E5%91%A8%E6%B3%BD%E6%98%8A%2018%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 1号桌 11:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 1号桌 11:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%201%E5%8F%B7%E6%A1%8C%2011%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 1号桌 18:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 1号桌 18:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%201%E5%8F%B7%E6%A1%8C%2018%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 2号桌 11:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 2号桌 11:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%202%E5%8F%B7%E6%A1%8C%2011%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 2号桌 18:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 2号桌 18:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%202%E5%8F%B7%E6%A1%8C%2018%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 3号桌 11:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 3号桌 11:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%203%E5%8F%B7%E6%A1%8C%2011%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 3号桌 18:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 3号桌 18:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%203%E5%8F%B7%E6%A1%8C%2018%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 候场区 10:30" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 候场区 10:30 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%20%E5%80%99%E5%9C%BA%E5%8C%BA%2010%3A30
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 候场区 17:30" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 候场区 17:30 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%20%E5%80%99%E5%9C%BA%E5%8C%BA%2017%3A30
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 凌维康 18:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 凌维康 18:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%20%E5%87%8C%E7%BB%B4%E5%BA%B7%2018%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 刘国正 周冠达 17:30" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 刘国正 周冠达 17:30 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%20%E5%88%98%E5%9B%BD%E6%AD%A3%20%E5%91%A8%E5%86%A0%E8%BE%BE%2017%3A30
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 刘馨蕊 18:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 刘馨蕊 18:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%20%E5%88%98%E9%A6%A8%E8%95%8A%2018%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 周冠达 11:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 周冠达 11:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%20%E5%91%A8%E5%86%A0%E8%BE%BE%2011%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 周泽昊 11:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 周泽昊 11:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%20%E5%91%A8%E6%B3%BD%E6%98%8A%2011%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 朱子恒 18:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 朱子恒 18:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%20%E6%9C%B1%E5%AD%90%E6%81%92%2018%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 混采区 11:20" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 混采区 11:20 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%20%E6%B7%B7%E9%87%87%E5%8C%BA%2011%3A20
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 混采区 18:20" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 混采区 18:20 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%20%E6%B7%B7%E9%87%87%E5%8C%BA%2018%3A20
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 热身区 10:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 热身区 10:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%20%E7%83%AD%E8%BA%AB%E5%8C%BA%2010%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第一轮 环廊视角 17:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第一轮 环廊视角 17:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%B8%80%E8%BD%AE%20%E5%92%AA%E5%92%95%E7%8E%AF%E5%BB%8A%E8%A7%86%E8%A7%92%2017%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 抽签仪式 现场原声 16:00" group-title="其他台",乒乓球亚洲杯 抽签仪式 现场原声 16:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E6%8A%BD%E7%AD%BE%E4%BB%AA%E5%BC%8F%20%E7%8E%B0%E5%9C%BA%E5%8E%9F%E5%A3%B0%2016%3A00
-#EXTINF:-1 tvg-name="乒乓球亚洲杯 抽签仪式 肖扬 16:00" group-title="其他台",乒乓球亚洲杯 抽签仪式 肖扬 16:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E6%8A%BD%E7%AD%BE%E4%BB%AA%E5%BC%8F%20%E8%82%96%E6%89%AC%2016%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 1号桌 11:00" group-title="其他台",乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 1号桌 11:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%AD%99%E9%A2%96%E8%8E%8E%E6%89%93%E5%93%8D%E6%8F%AD%E5%B9%95%E6%88%98%20%E6%9E%97%E8%AF%97%E6%A0%8B%E4%BA%9A%E6%B4%B2%E6%9D%AF%E9%A6%96%E7%A7%80%201%E5%8F%B7%E6%A1%8C%2011%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 2号桌 11:00" group-title="其他台",乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 2号桌 11:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%AD%99%E9%A2%96%E8%8E%8E%E6%89%93%E5%93%8D%E6%8F%AD%E5%B9%95%E6%88%98%20%E6%9E%97%E8%AF%97%E6%A0%8B%E4%BA%9A%E6%B4%B2%E6%9D%AF%E9%A6%96%E7%A7%80%202%E5%8F%B7%E6%A1%8C%2011%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 3号桌 11:00" group-title="其他台",乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 3号桌 11:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%AD%99%E9%A2%96%E8%8E%8E%E6%89%93%E5%93%8D%E6%8F%AD%E5%B9%95%E6%88%98%20%E6%9E%97%E8%AF%97%E6%A0%8B%E4%BA%9A%E6%B4%B2%E6%9D%AF%E9%A6%96%E7%A7%80%203%E5%8F%B7%E6%A1%8C%2011%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 候场区 10:30" group-title="其他台",乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 候场区 10:30 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%AD%99%E9%A2%96%E8%8E%8E%E6%89%93%E5%93%8D%E6%8F%AD%E5%B9%95%E6%88%98%20%E6%9E%97%E8%AF%97%E6%A0%8B%E4%BA%9A%E6%B4%B2%E6%9D%AF%E9%A6%96%E7%A7%80%20%E5%80%99%E5%9C%BA%E5%8C%BA%2010%3A30
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 周冠达 11:00" group-title="其他台",乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 周冠达 11:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%AD%99%E9%A2%96%E8%8E%8E%E6%89%93%E5%93%8D%E6%8F%AD%E5%B9%95%E6%88%98%20%E6%9E%97%E8%AF%97%E6%A0%8B%E4%BA%9A%E6%B4%B2%E6%9D%AF%E9%A6%96%E7%A7%80%20%E5%91%A8%E5%86%A0%E8%BE%BE%2011%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 周泽昊 11:00" group-title="其他台",乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 周泽昊 11:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%AD%99%E9%A2%96%E8%8E%8E%E6%89%93%E5%93%8D%E6%8F%AD%E5%B9%95%E6%88%98%20%E6%9E%97%E8%AF%97%E6%A0%8B%E4%BA%9A%E6%B4%B2%E6%9D%AF%E9%A6%96%E7%A7%80%20%E5%91%A8%E6%B3%BD%E6%98%8A%2011%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 混采区 11:20" group-title="其他台",乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 混采区 11:20 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%AD%99%E9%A2%96%E8%8E%8E%E6%89%93%E5%93%8D%E6%8F%AD%E5%B9%95%E6%88%98%20%E6%9E%97%E8%AF%97%E6%A0%8B%E4%BA%9A%E6%B4%B2%E6%9D%AF%E9%A6%96%E7%A7%80%20%E6%B7%B7%E9%87%87%E5%8C%BA%2011%3A20
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 热身区 10:00" group-title="其他台",乒乓球亚洲杯 孙颖莎打响揭幕战 林诗栋亚洲杯首秀 热身区 10:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%AD%99%E9%A2%96%E8%8E%8E%E6%89%93%E5%93%8D%E6%8F%AD%E5%B9%95%E6%88%98%20%E6%9E%97%E8%AF%97%E6%A0%8B%E4%BA%9A%E6%B4%B2%E6%9D%AF%E9%A6%96%E7%A7%80%20%E7%83%AD%E8%BA%AB%E5%8C%BA%2010%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 1号桌 11:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 1号桌 11:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%201%E5%8F%B7%E6%A1%8C%2011%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 1号桌 18:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 1号桌 18:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%201%E5%8F%B7%E6%A1%8C%2018%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 2号桌 11:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 2号桌 11:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%202%E5%8F%B7%E6%A1%8C%2011%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 2号桌 18:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 2号桌 18:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%202%E5%8F%B7%E6%A1%8C%2018%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 3号桌 11:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 3号桌 11:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%203%E5%8F%B7%E6%A1%8C%2011%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 3号桌 18:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 3号桌 18:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%203%E5%8F%B7%E6%A1%8C%2018%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 候场区 10:30" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 候场区 10:30 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%20%E5%80%99%E5%9C%BA%E5%8C%BA%2010%3A30
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 候场区 17:30" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 候场区 17:30 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%20%E5%80%99%E5%9C%BA%E5%8C%BA%2017%3A30
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 凌维康 11:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 凌维康 11:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%20%E5%87%8C%E7%BB%B4%E5%BA%B7%2011%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 凌维康 18:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 凌维康 18:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%20%E5%87%8C%E7%BB%B4%E5%BA%B7%2018%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 周冠达 11:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 周冠达 11:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%20%E5%91%A8%E5%86%A0%E8%BE%BE%2011%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 周冠达 18:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 周冠达 18:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%20%E5%91%A8%E5%86%A0%E8%BE%BE%2018%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 周泽昊 11:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 周泽昊 11:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%20%E5%91%A8%E6%B3%BD%E6%98%8A%2011%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 朱子恒 18:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 朱子恒 18:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%20%E6%9C%B1%E5%AD%90%E6%81%92%2018%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 混采区 11:20" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 混采区 11:20 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%20%E6%B7%B7%E9%87%87%E5%8C%BA%2011%3A20
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 混采区 18:20" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 混采区 18:20 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%20%E6%B7%B7%E9%87%87%E5%8C%BA%2018%3A20
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 热身区 10:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 热身区 10:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%20%E7%83%AD%E8%BA%AB%E5%8C%BA%2010%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 小组循环赛第二轮 环廊视角 17:00" group-title="其他台",乒乓球亚洲杯 小组循环赛第二轮 环廊视角 17:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%B0%8F%E7%BB%84%E5%BE%AA%E7%8E%AF%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%20%E5%92%AA%E5%92%95%E7%8E%AF%E5%BB%8A%E8%A7%86%E8%A7%92%2017%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 1号桌 18:00" group-title="其他台",乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 1号桌 18:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E7%8E%8B%E6%9B%BC%E6%98%B1%E7%99%BB%E5%9C%BA%20%E7%8E%8B%E6%A5%9A%E9%92%A6%E6%8E%A5%E5%8F%B0%E9%A6%96%E7%A7%80%201%E5%8F%B7%E6%A1%8C%2018%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 2号桌 18:00" group-title="其他台",乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 2号桌 18:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E7%8E%8B%E6%9B%BC%E6%98%B1%E7%99%BB%E5%9C%BA%20%E7%8E%8B%E6%A5%9A%E9%92%A6%E6%8E%A5%E5%8F%B0%E9%A6%96%E7%A7%80%202%E5%8F%B7%E6%A1%8C%2018%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 3号桌 18:00" group-title="其他台",乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 3号桌 18:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E7%8E%8B%E6%9B%BC%E6%98%B1%E7%99%BB%E5%9C%BA%20%E7%8E%8B%E6%A5%9A%E9%92%A6%E6%8E%A5%E5%8F%B0%E9%A6%96%E7%A7%80%203%E5%8F%B7%E6%A1%8C%2018%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 候场区 17:30" group-title="其他台",乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 候场区 17:30 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E7%8E%8B%E6%9B%BC%E6%98%B1%E7%99%BB%E5%9C%BA%20%E7%8E%8B%E6%A5%9A%E9%92%A6%E6%8E%A5%E5%8F%B0%E9%A6%96%E7%A7%80%20%E5%80%99%E5%9C%BA%E5%8C%BA%2017%3A30
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 凌维康 18:00" group-title="其他台",乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 凌维康 18:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E7%8E%8B%E6%9B%BC%E6%98%B1%E7%99%BB%E5%9C%BA%20%E7%8E%8B%E6%A5%9A%E9%92%A6%E6%8E%A5%E5%8F%B0%E9%A6%96%E7%A7%80%20%E5%87%8C%E7%BB%B4%E5%BA%B7%2018%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 刘国正 周冠达 17:30" group-title="其他台",乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 刘国正 周冠达 17:30 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E7%8E%8B%E6%9B%BC%E6%98%B1%E7%99%BB%E5%9C%BA%20%E7%8E%8B%E6%A5%9A%E9%92%A6%E6%8E%A5%E5%8F%B0%E9%A6%96%E7%A7%80%20%E5%88%98%E5%9B%BD%E6%AD%A3%20%E5%91%A8%E5%86%A0%E8%BE%BE%2017%3A30
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 刘馨蕊 18:00" group-title="其他台",乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 刘馨蕊 18:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E7%8E%8B%E6%9B%BC%E6%98%B1%E7%99%BB%E5%9C%BA%20%E7%8E%8B%E6%A5%9A%E9%92%A6%E6%8E%A5%E5%8F%B0%E9%A6%96%E7%A7%80%20%E5%88%98%E9%A6%A8%E8%95%8A%2018%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 朱子恒 18:00" group-title="其他台",乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 朱子恒 18:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E7%8E%8B%E6%9B%BC%E6%98%B1%E7%99%BB%E5%9C%BA%20%E7%8E%8B%E6%A5%9A%E9%92%A6%E6%8E%A5%E5%8F%B0%E9%A6%96%E7%A7%80%20%E6%9C%B1%E5%AD%90%E6%81%92%2018%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 混采区 18:20" group-title="其他台",乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 混采区 18:20 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E7%8E%8B%E6%9B%BC%E6%98%B1%E7%99%BB%E5%9C%BA%20%E7%8E%8B%E6%A5%9A%E9%92%A6%E6%8E%A5%E5%8F%B0%E9%A6%96%E7%A7%80%20%E6%B7%B7%E9%87%87%E5%8C%BA%2018%3A20
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 热身区 10:00" group-title="其他台",乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 热身区 10:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E7%8E%8B%E6%9B%BC%E6%98%B1%E7%99%BB%E5%9C%BA%20%E7%8E%8B%E6%A5%9A%E9%92%A6%E6%8E%A5%E5%8F%B0%E9%A6%96%E7%A7%80%20%E7%83%AD%E8%BA%AB%E5%8C%BA%2010%3A00
+#EXTINF:-1 tvg-name="乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 环廊视角 17:00" group-title="其他台",乒乓球亚洲杯 王曼昱登场 王楚钦接台首秀 环廊视角 17:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E7%8E%8B%E6%9B%BC%E6%98%B1%E7%99%BB%E5%9C%BA%20%E7%8E%8B%E6%A5%9A%E9%92%A6%E6%8E%A5%E5%8F%B0%E9%A6%96%E7%A7%80%20%E5%92%AA%E5%92%95%E7%8E%AF%E5%BB%8A%E8%A7%86%E8%A7%92%2017%3A00
 #EXTINF:-1 tvg-name="乒乓球亚洲杯 第一比赛日热身区 热身区 10:00" group-title="其他台",乒乓球亚洲杯 第一比赛日热身区 热身区 10:00 [1普通]
 https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E7%AC%AC%E4%B8%80%E6%AF%94%E8%B5%9B%E6%97%A5%E7%83%AD%E8%BA%AB%E5%8C%BA%20%E7%83%AD%E8%BA%AB%E5%8C%BA%2010%3A00
 #EXTINF:-1 tvg-name="乔洋精选20首" group-title="其他台",乔洋精选20首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2024/01/05/17/BMjAyNDAxMDUxNzEwMTJfNDQzMTI2Mjg0XzEyMTM5OTg3NTU2MV8yXzM=_b_Bf81e0b3d32a3fe727949531d0929868e.mp4
-#EXTINF:-1 tvg-name="九品芝麻官" group-title="其他台",九品芝麻官 [2普通]
-https://txmov2.a.kwimgs.com/upic/2021/12/28/11/BMjAyMTEyMjgxMTIyMTJfNDAzMDAxOTlfNjM2NjgxODA5MTBfMF8z_bF_Bcc38a845b4b4994898062a76d3958bdc.mp4|https://alimov2.a.kwimgs.com/upic/2021/12/28/11/BMjAyMTEyMjgxMTIyMTJfNDAzMDAxOTlfNjM2NjgxODA5MTBfMF8z_b_B6a0bcfcdbdaac183fa7dcbcd3e11bcaf.mp4
-#EXTINF:-1 tvg-name="五人制亚洲杯 伊朗VS乌兹别克斯坦 涂远 13:45" group-title="其他台",五人制亚洲杯 伊朗VS乌兹别克斯坦 涂远 13:45 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%BA%94%E4%BA%BA%E5%88%B6%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E4%BC%8A%E6%9C%97VS%E4%B9%8C%E5%85%B9%E5%88%AB%E5%85%8B%E6%96%AF%E5%9D%A6%20%E6%B6%82%E8%BF%9C%2013%3A45
-#EXTINF:-1 tvg-name="五人制亚洲杯 印度尼西亚VS越南 王子睿 19:45" group-title="其他台",五人制亚洲杯 印度尼西亚VS越南 王子睿 19:45 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%BA%94%E4%BA%BA%E5%88%B6%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9AVS%E8%B6%8A%E5%8D%97%20%E7%8E%8B%E5%AD%90%E7%9D%BF%2019%3A45
-#EXTINF:-1 tvg-name="五人制亚洲杯 日本VS阿富汗 涂远 17:45" group-title="其他台",五人制亚洲杯 日本VS阿富汗 涂远 17:45 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%BA%94%E4%BA%BA%E5%88%B6%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E6%97%A5%E6%9C%ACVS%E9%98%BF%E5%AF%8C%E6%B1%97%20%E6%B6%82%E8%BF%9C%2017%3A45
-#EXTINF:-1 tvg-name="五人制亚洲杯 泰国VS伊拉克 乔迁 15:45" group-title="其他台",五人制亚洲杯 泰国VS伊拉克 乔迁 15:45 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%BA%94%E4%BA%BA%E5%88%B6%E4%BA%9A%E6%B4%B2%E6%9D%AF%20%E6%B3%B0%E5%9B%BDVS%E4%BC%8A%E6%8B%89%E5%85%8B%20%E4%B9%94%E8%BF%81%2015%3A45
+#EXTINF:-1 tvg-name="九品芝麻官" group-title="其他台",九品芝麻官 [1普通]
+https://txmov2.a.kwimgs.com/upic/2021/12/28/11/BMjAyMTEyMjgxMTIyMTJfNDAzMDAxOTlfNjM2NjgxODA5MTBfMF8z_bF_Bcc38a845b4b4994898062a76d3958bdc.mp4
 #EXTINF:-1 tvg-name="五彩池" group-title="其他台",五彩池 [1普通]
 https://gcalic.v.myalicdn.com/gc/hlwcc_1/index.m3u8
 #EXTINF:-1 tvg-name="五月天精选37首" group-title="其他台",五月天精选37首 [1普通]
@@ -783,12 +743,12 @@ http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1425e1d505654cb48ba
 http://jsmov2.a.yximgs.com/bs3/video-hls/5239093847755471351_hlsb.m3u8
 #EXTINF:-1 tvg-name="任然精选20首" group-title="其他台",任然精选20首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2020/09/23/14/BMjAyMDA5MjMxNDA1MjFfMTc4NDYxNDcyNl8zNjQ5NDI4NzI1Nl8yXzM=_b_B0f6d5151ab2c346816996328a0b66b78.mp4
-#EXTINF:-1 tvg-name="佛山公共" group-title="其他台",佛山公共 [13普通]
-https://stream1.freetv.fun/fo-shan-gong-gong-26.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-13.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-15.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-5.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-11.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-17.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-19.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-22.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-8.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-9.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-18.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-16.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-27.ctv
-#EXTINF:-1 tvg-name="佛山影视" group-title="其他台",佛山影视 [6普通]
-https://stream1.freetv.fun/fo-shan-ying-shi-4.ctv|https://stream1.freetv.fun/fo-shan-ying-shi-17.ctv|https://stream1.freetv.fun/fo-shan-ying-shi-6.ctv|https://stream1.freetv.fun/fo-shan-ying-shi-16.ctv|https://stream1.freetv.fun/fo-shan-ying-shi-8.ctv|https://stream1.freetv.fun/fo-shan-ying-shi-20.ctv
-#EXTINF:-1 tvg-name="佛山综合" group-title="其他台",佛山综合 [13普通]
-https://stream1.freetv.fun/fo-shan-zong-he-9.ctv|https://stream1.freetv.fun/fo-shan-zong-he-15.ctv|https://stream1.freetv.fun/fo-shan-zong-he-8.ctv|https://stream1.freetv.fun/fo-shan-zong-he-24.ctv|https://stream1.freetv.fun/fo-shan-zong-he-14.ctv|https://stream1.freetv.fun/fo-shan-zong-he-7.ctv|https://stream1.freetv.fun/fo-shan-zong-he-11.ctv|https://stream1.freetv.fun/fo-shan-zong-he-17.ctv|https://stream1.freetv.fun/fo-shan-zong-he-6.ctv|https://stream1.freetv.fun/fo-shan-zong-he-1.ctv|https://stream1.freetv.fun/fo-shan-zong-he-18.ctv|https://stream1.freetv.fun/fo-shan-zong-he-16.ctv|https://stream1.freetv.fun/fo-shan-zong-he-22.ctv
+#EXTINF:-1 tvg-name="佛山公共" group-title="其他台",佛山公共 [10普通]
+https://stream1.freetv.fun/fo-shan-gong-gong-19.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-15.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-17.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-22.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-13.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-8.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-9.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-18.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-5.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-16.ctv
+#EXTINF:-1 tvg-name="佛山影视" group-title="其他台",佛山影视 [3普通]
+https://stream1.freetv.fun/fo-shan-ying-shi-20.ctv|https://stream1.freetv.fun/fo-shan-ying-shi-4.ctv|https://stream1.freetv.fun/fo-shan-ying-shi-17.ctv
+#EXTINF:-1 tvg-name="佛山综合" group-title="其他台",佛山综合 [12普通]
+https://stream1.freetv.fun/fo-shan-zong-he-9.ctv|https://stream1.freetv.fun/fo-shan-zong-he-6.ctv|https://stream1.freetv.fun/fo-shan-zong-he-16.ctv|https://stream1.freetv.fun/fo-shan-zong-he-15.ctv|https://stream1.freetv.fun/fo-shan-zong-he-7.ctv|https://stream1.freetv.fun/fo-shan-zong-he-11.ctv|https://stream1.freetv.fun/fo-shan-zong-he-18.ctv|https://stream1.freetv.fun/fo-shan-zong-he-8.ctv|https://stream1.freetv.fun/fo-shan-zong-he-22.ctv|https://stream1.freetv.fun/fo-shan-zong-he-17.ctv|https://stream1.freetv.fun/fo-shan-zong-he-1.ctv|https://stream1.freetv.fun/fo-shan-zong-he-14.ctv
 #EXTINF:-1 tvg-name="信大" group-title="其他台",信大 [1普通]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV07.m3u8
 #EXTINF:-1 tvg-name="倩女幽魂人间道" group-title="其他台",倩女幽魂人间道 [1普通]
@@ -814,7 +774,7 @@ https://gcalic.v.myalicdn.com/gc/blg03_1/index.m3u8
 #EXTINF:-1 tvg-name="八里沟风景区桃花湾瀑布" group-title="其他台",八里沟风景区桃花湾瀑布 [1普通]
 https://gcalic.v.myalicdn.com/gc/blg05_1/index.m3u8
 #EXTINF:-1 tvg-name="公视戏剧" group-title="其他台",公视戏剧 [9普通]
-http://nmk.ioapk.com:5050/4gtv-4gtv042/index.m3u8?proxy=true|http://220.135.64.124:5050/4gtv-4gtv042/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/li-4gtv-4gtv042/index.m3u8?proxy=true|http://220.135.64.124:5050/li-4gtv-4gtv042/index.m3u8?proxy=true|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv042|http://lzo.xh.sd/gt/lgz4G.php?id=4gtv-4gtv042|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv042|http://lzo.xh.sd/gt/lgz4G.php?id=li-4gtv-4gtv042|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv042
+http://220.135.64.124:5050/li-4gtv-4gtv042/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/li-4gtv-4gtv042/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/4gtv-4gtv042/index.m3u8?proxy=true|http://220.135.64.124:5050/4gtv-4gtv042/index.m3u8?proxy=true|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv042|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv042|http://lzo.xh.sd/gt/lgz4G.php?id=4gtv-4gtv042|http://lzo.xh.sd/gt/lgz4G.php?id=li-4gtv-4gtv042|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv042
 #EXTINF:-1 tvg-name="兰溪新闻综合" group-title="其他台",兰溪新闻综合 [1普通]
 https://stream1.freetv.fun/lan-xi-xin-wen-zong-he-3.m3u8
 #EXTINF:-1 tvg-name="关于本源" group-title="其他台",关于本源 [1普通]
@@ -825,10 +785,8 @@ https://ls.qingting.fm/live/1885/64k.m3u8
 https://cdn4.yzzy-tv-cdn.com/20220608/17622_c083f16b/index.m3u8
 #EXTINF:-1 tvg-name="刁手怪招" group-title="其他台",刁手怪招 [1普通]
 https://cdn7.yzzy-tv-cdn.com/20220625/561_337bba55/index.m3u8
-#EXTINF:-1 tvg-name="刘德华" group-title="其他台",刘德华 [2普通]
-https://t.freetv.fun/live/liu-de-hua.php|https://stream1.freetv.fun/liu-de-hua-2.ctv
 #EXTINF:-1 tvg-name="动漫秀场" group-title="其他台" tvg-ipv6="true",动漫秀场 [8IPv6+20普通]
-https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-7.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-1.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-3.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-9.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-10.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-11.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-4.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-2.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-18.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-20.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-5.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-23.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-21.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-6.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-16.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-4.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-19.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-12.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-7.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-11.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-2.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-9.ctv|https://stream1.freetv.fun/dong-man-xiu-chang-19.ctv|https://stream1.freetv.fun/dong-man-xiu-chang-1.ctv|https://stream1.freetv.fun/dong-man-xiu-chang-25.ctv|https://stream1.freetv.fun/dong-man-xiu-chang-12.ctv|https://stream1.freetv.fun/dong-man-xiu-chang-14.ctv|https://stream1.freetv.fun/dong-man-xiu-chang-17.ctv
+https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-1.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-11.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-2.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-3.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-4.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-9.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-10.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-7.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-6.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-5.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-23.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-19.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-21.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-7.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-16.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-4.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-20.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-12.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-2.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-11.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-18.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-9.ctv|https://stream1.freetv.fun/dong-man-xiu-chang-25.ctv|https://stream1.freetv.fun/dong-man-xiu-chang-1.ctv|https://stream1.freetv.fun/dong-man-xiu-chang-19.ctv|https://stream1.freetv.fun/dong-man-xiu-chang-12.ctv|https://stream1.freetv.fun/dong-man-xiu-chang-14.ctv|https://stream1.freetv.fun/dong-man-xiu-chang-17.ctv
 #EXTINF:-1 tvg-name="动物星球" group-title="其他台",动物星球 [2普通]
 https://stream1.freetv.fun/dong-wu-xing-qiu-1.m3u8|http://pullpackage.alivecdn.com/live/g46UG6stseWUHmKG9Abi152mY9avzddBzZYp79cmVD2E4glTg3.flv
 #EXTINF:-1 tvg-name="动画1" group-title="其他台" tvg-ipv6="true",动画1 [1IPv6]
@@ -841,12 +799,6 @@ https://stream1.freetv.fun/shi-yan-xin-wen-2.m3u8|https://stream1.freetv.fun/shi
 https://o11.163189.xyz/stream/live/tvbc/
 #EXTINF:-1 tvg-name="半岛新闻「英语」" group-title="其他台",半岛新闻「英语」 [1普通]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV59.m3u8
-#EXTINF:-1 tvg-name="南京十八" group-title="其他台",南京十八 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%8D%97%E4%BA%AC%E5%8D%81%E5%85%AB%E9%A2%91%E9%81%93
-#EXTINF:-1 tvg-name="南京教科" group-title="其他台",南京教科 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%8D%97%E4%BA%AC%E6%95%99%E7%A7%91%E9%A2%91%E9%81%93
-#EXTINF:-1 tvg-name="南京新闻综合" group-title="其他台",南京新闻综合 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%8D%97%E4%BA%AC%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88%E9%A2%91%E9%81%93
 #EXTINF:-1 tvg-name="南京玄武湖公园" group-title="其他台",南京玄武湖公园 [1普通]
 https://gcalic.v.myalicdn.com/gc/xwh01_1/index.m3u8
 #EXTINF:-1 tvg-name="南北少林" group-title="其他台",南北少林 [1普通]
@@ -857,8 +809,6 @@ https://stream1.freetv.fun/nan-zhu-gong-gong-1.m3u8|https://stream1.freetv.fun/n
 https://stream1.freetv.fun/nan-zhu-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/nan-zhu-xin-wen-zong-he-4.m3u8|http://live.xmcdn.com/live/305/64.m3u8?aac
 #EXTINF:-1 tvg-name="南宁都市生活" group-title="其他台",南宁都市生活 [1普通]
 https://stream1.freetv.fun/nan-zhu-du-shi-sheng-huo-3.m3u8
-#EXTINF:-1 tvg-name="南通新闻综合" group-title="其他台",南通新闻综合 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%8D%97%E9%80%9A%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88
 #EXTINF:-1 tvg-name="原住民族电视台" group-title="其他台",原住民族电视台 [1普通]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV35.m3u8
 #EXTINF:-1 tvg-name="厦门鼓浪屿" group-title="其他台",厦门鼓浪屿 [1普通]
@@ -909,8 +859,8 @@ http://211.20.119.102:8081
 https://txmov2.a.kwimgs.com/upic/2020/07/15/19/BMjAyMDA3MTUxOTA1MzhfNTAyNzg4MTc0XzMyNDIzMzUwMjAyXzJfMw==_b_Bd09b171541ea966fd7a324624cfe6c16.mp4
 #EXTINF:-1 tvg-name="安顺新闻" group-title="其他台",安顺新闻 [1普通]
 https://ls.qingting.fm/live/5022203/64k.m3u8
-#EXTINF:-1 tvg-name="寰宇新闻" group-title="其他台",寰宇新闻 [19普通]
-https://stream1.freetv.fun/huan-yu-xin-wen-6.m3u8|https://stream1.freetv.fun/huan-yu-xin-wen-7.m3u8|https://stream1.freetv.fun/huan-yu-xin-wen-4.m3u8|https://stream1.freetv.fun/huan-yu-xin-wen-2.m3u8|https://stream1.freetv.fun/huan-yu-xin-wen-5.m3u8|http://nmk.ioapk.com:5050/li-litv-longturn14/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/litv-longturn14/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/of-litv-longturn14/index.m3u8?proxy=true|http://220.135.64.124:5050/li-litv-longturn14/index.m3u8?proxy=true|http://220.135.64.124:5050/litv-longturn14/index.m3u8?proxy=true|http://220.135.64.124:5050/of-litv-longturn14/index.m3u8?proxy=true|https://pxuchylhjchl.us-east-1.clawcloudrun.com/index.m3u8?pid=litv-longturn14&sd=1080&proxy=false|https://tmxk.pp.ua/litv.php?token=tmxk&id=litv-longturn14|https://www.youtube.com/watch?v=6IquAgfvYmc|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=litv-longturn14|http://xtvantsc.xyz/litv_ts.php?id=litv-longturn14|https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8|http://push-rtmp-hs-spe-f5.douyincdn.com/live/XNkGn6bw9KKiK2y0RcgHRVke7yQhC5PkQ4hkeRMVJUGHhzCm45.flv|https://ghp.ci/https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8
+#EXTINF:-1 tvg-name="寰宇新闻" group-title="其他台",寰宇新闻 [18普通]
+https://stream1.freetv.fun/huan-yu-xin-wen-6.m3u8|https://stream1.freetv.fun/huan-yu-xin-wen-7.m3u8|https://stream1.freetv.fun/huan-yu-xin-wen-4.m3u8|https://stream1.freetv.fun/huan-yu-xin-wen-2.m3u8|https://stream1.freetv.fun/huan-yu-xin-wen-5.m3u8|http://nmk.ioapk.com:5050/li-litv-longturn14/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/litv-longturn14/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/of-litv-longturn14/index.m3u8?proxy=true|http://220.135.64.124:5050/li-litv-longturn14/index.m3u8?proxy=true|http://220.135.64.124:5050/litv-longturn14/index.m3u8?proxy=true|http://220.135.64.124:5050/of-litv-longturn14/index.m3u8?proxy=true|https://pxuchylhjchl.us-east-1.clawcloudrun.com/index.m3u8?pid=litv-longturn14&sd=1080&proxy=false|https://tmxk.pp.ua/litv.php?token=tmxk&id=litv-longturn14|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=litv-longturn14|http://xtvantsc.xyz/litv_ts.php?id=litv-longturn14|https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8|http://push-rtmp-hs-spe-f5.douyincdn.com/live/XNkGn6bw9KKiK2y0RcgHRVke7yQhC5PkQ4hkeRMVJUGHhzCm45.flv|https://ghp.ci/https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8
 #EXTINF:-1 tvg-name="小猪佩奇「动画」" group-title="其他台" tvg-ipv6="true",小猪佩奇「动画」 [1IPv6]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV64.m3u8
 #EXTINF:-1 tvg-name="少林寺" group-title="其他台",少林寺 [1普通]
@@ -918,21 +868,21 @@ https://cdn4.yzzy-tv-cdn.com/20220606/17324_133ab69b/index.m3u8
 #EXTINF:-1 tvg-name="屏边综合" group-title="其他台",屏边综合 [1普通]
 http://live.ynurl.com/video/s10040-pbzh/index.m3u8?zyund
 #EXTINF:-1 tvg-name="嵊泗综合" group-title="其他台",嵊泗综合 [4普通]
-https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-2.ctv
+https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-2.ctv
 #EXTINF:-1 tvg-name="平湖新闻综合" group-title="其他台",平湖新闻综合 [3普通]
-https://stream1.freetv.fun/ping-hu-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/ping-hu-xin-wen-zong-he-5.m3u8|http://play-sh13.quklive.com/live/1690167908295069.m3u8?auth_key=2027466211-f190eec410c24473825cbe1d8541e545-0-f21db57ae1b534802c1cf7be86cc3aef
+https://stream1.freetv.fun/ping-hu-xin-wen-zong-he-5.m3u8|http://play-sh13.quklive.com/live/1690167908295069.m3u8?auth_key=2027466211-f190eec410c24473825cbe1d8541e545-0-f21db57ae1b534802c1cf7be86cc3aef|https://stream1.freetv.fun/ping-hu-xin-wen-zong-he-3.m3u8
 #EXTINF:-1 tvg-name="幸福空间居家台" group-title="其他台",幸福空间居家台 [1普通]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV41.m3u8
 #EXTINF:-1 tvg-name="广元综合" group-title="其他台",广元综合 [2普通]
 https://stream1.freetv.fun/yan-yuan-zong-he-1.m3u8|https://stream1.freetv.fun/yan-yuan-zong-he-2.ctv
-#EXTINF:-1 tvg-name="广州影视" group-title="其他台",广州影视 [19普通]
-https://stream1.freetv.fun/yan-zhou-ying-shi-1.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-8.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-16.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-3.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-25.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-9.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-6.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-4.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-5.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-17.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-19.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-2.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-14.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-28.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-15.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-23.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-21.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-7.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-20.ctv
-#EXTINF:-1 tvg-name="广州新闻" group-title="其他台",广州新闻 [10普通]
-https://stream1.freetv.fun/yan-zhou-xin-wen-11.m3u8|https://stream1.freetv.fun/yan-zhou-xin-wen-8.m3u8|https://stream1.freetv.fun/yan-zhou-xin-wen-16.ctv|https://stream1.freetv.fun/yan-zhou-xin-wen-26.ctv|https://stream1.freetv.fun/yan-zhou-xin-wen-17.ctv|https://stream1.freetv.fun/yan-zhou-xin-wen-13.ctv|https://stream1.freetv.fun/yan-zhou-xin-wen-18.ctv|https://stream1.freetv.fun/yan-zhou-xin-wen-20.ctv|https://stream1.freetv.fun/yan-zhou-xin-wen-7.ctv|https://stream1.freetv.fun/yan-zhou-xin-wen-25.ctv
-#EXTINF:-1 tvg-name="广州竞赛" group-title="其他台",广州竞赛 [31普通]
-https://stream1.freetv.fun/yan-zhou-jing-sai-8.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-3.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-1.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-4.m3u8|https://t.freetv.fun/live/yan-zhou-jing-sai.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-12.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-6.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-7.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-2.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-22.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-10.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-11.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-13.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-37.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-21.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-31.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-38.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-35.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-9.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-2.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-24.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-20.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-7.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-3.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-19.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-32.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-34.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-4.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-29.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-28.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-15.ctv
-#EXTINF:-1 tvg-name="广州综合" group-title="其他台",广州综合 [9普通]
-https://stream1.freetv.fun/yan-zhou-zong-he-10.m3u8|https://stream1.freetv.fun/yan-zhou-zong-he-6.m3u8|https://stream1.freetv.fun/yan-zhou-zong-he-30.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-22.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-23.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-13.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-25.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-11.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-19.ctv
+#EXTINF:-1 tvg-name="广州影视" group-title="其他台",广州影视 [17普通]
+https://stream1.freetv.fun/yan-zhou-ying-shi-8.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-25.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-1.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-3.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-16.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-20.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-15.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-28.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-5.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-4.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-21.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-14.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-2.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-19.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-6.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-9.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-7.ctv
+#EXTINF:-1 tvg-name="广州新闻" group-title="其他台",广州新闻 [6普通]
+https://stream1.freetv.fun/yan-zhou-xin-wen-8.m3u8|https://stream1.freetv.fun/yan-zhou-xin-wen-11.m3u8|https://stream1.freetv.fun/yan-zhou-xin-wen-17.ctv|https://stream1.freetv.fun/yan-zhou-xin-wen-13.ctv|https://stream1.freetv.fun/yan-zhou-xin-wen-25.ctv|https://stream1.freetv.fun/yan-zhou-xin-wen-7.ctv
+#EXTINF:-1 tvg-name="广州竞赛" group-title="其他台",广州竞赛 [27普通]
+https://stream1.freetv.fun/yan-zhou-jing-sai-6.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-13.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-7.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-12.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-3.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-37.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-8.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-4.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-2.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-10.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-11.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-22.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-19.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-4.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-34.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-9.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-38.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-31.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-7.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-2.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-29.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-20.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-28.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-3.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-32.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-15.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-21.ctv
+#EXTINF:-1 tvg-name="广州综合" group-title="其他台",广州综合 [7普通]
+https://stream1.freetv.fun/yan-zhou-zong-he-10.m3u8|https://stream1.freetv.fun/yan-zhou-zong-he-6.m3u8|https://stream1.freetv.fun/yan-zhou-zong-he-13.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-19.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-25.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-22.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-11.ctv
 #EXTINF:-1 tvg-name="庄心妍精选44首" group-title="其他台",庄心妍精选44首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2023/09/29/09/BMjAyMzA5MjkwOTEzMDVfMjE0OTExOTI2N18xMTM3OTU3ODM3NzFfMF8z_b_B1909889bf55e6af6f994b05596fb589f.mp4
 #EXTINF:-1 tvg-name="开化国家公园" group-title="其他台",开化国家公园 [1普通]
@@ -941,70 +891,48 @@ http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed
 https://stream1.freetv.fun/kai-hua-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/kai-hua-xin-wen-zong-he-2.ctv
 #EXTINF:-1 tvg-name="开封新闻综合" group-title="其他台",开封新闻综合 [1普通]
 https://stream1.freetv.fun/kai-feng-xin-wen-zong-he-2.m3u8
-#EXTINF:-1 tvg-name="开远综合" group-title="其他台",开远综合 [1普通]
-http://live.ynurl.com/video/s10044-KYTV/index.m3u8?zyund
 #EXTINF:-1 tvg-name="张掖七彩丹霞" group-title="其他台",张掖七彩丹霞 [1普通]
 https://gcalic.v.myalicdn.com/gc/zyqcdx01_1/index.m3u8
 #EXTINF:-1 tvg-name="张韶涵精选96首" group-title="其他台",张韶涵精选96首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2023/04/24/02/BMjAyMzA0MjQwMjA4MDlfMjE0OTExOTI2N18xMDEzNTM2NjA5OTFfMF8z_b_Baa658d527c452cd09e6dc0e9684c1bed.mp4
 #EXTINF:-1 tvg-name="徐良精选30首" group-title="其他台",徐良精选30首 [1普通]
 https://alimov2.a.kwimgs.com/upic/2024/05/08/20/BMjAyNDA1MDgyMDAyMjFfMTg1NzcxNTYxOF8xMzE5MDIyNTY0NzNfMl8z_b_B62cb1e50d6a0dea4efc3e6da93662aa4.mp4
-#EXTINF:-1 tvg-name="德甲 多特蒙德VS海登海姆 全场回放（沈云怡、秦游夏） 00:15" group-title="其他台",德甲 多特蒙德VS海登海姆 全场回放（沈云怡、秦游夏） 00:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%BE%B7%E7%94%B2%20%E5%A4%9A%E7%89%B9%E8%92%99%E5%BE%B7VS%E6%B5%B7%E7%99%BB%E6%B5%B7%E5%A7%86%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E6%B2%88%E4%BA%91%E6%80%A1%E3%80%81%E7%A7%A6%E6%B8%B8%E5%A4%8F%EF%BC%89%2000%3A15
 #EXTINF:-1 tvg-name="德阳新闻综合" group-title="其他台",德阳新闻综合 [3普通]
 https://stream1.freetv.fun/de-yang-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/de-yang-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/de-yang-xin-wen-zong-he-3.m3u8
-#EXTINF:-1 tvg-name="快乐垂钓" group-title="其他台",快乐垂钓 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%BF%AB%E4%B9%90%E5%9E%82%E9%92%93
 #EXTINF:-1 tvg-name="怀集音乐台" group-title="其他台",怀集音乐台 [1普通]
 http://live.xmcdn.com:80/live/966/64.m3u8
 #EXTINF:-1 tvg-name="恒山悬空寺全景" group-title="其他台",恒山悬空寺全景 [1普通]
 https://gcalic.v.myalicdn.com/gc/hsxksqj_1/index.m3u8
-#EXTINF:-1 tvg-name="意甲 乌迪内斯VS罗马 赛场原声 03:30" group-title="其他台",意甲 乌迪内斯VS罗马 赛场原声 03:30 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%84%8F%E7%94%B2%20%E4%B9%8C%E8%BF%AA%E5%86%85%E6%96%AFVS%E7%BD%97%E9%A9%AC%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2003%3A30
-#EXTINF:-1 tvg-name="意甲 克雷莫内塞VS国际米兰 全场回放（刘腾、贺宇） 00:30" group-title="其他台",意甲 克雷莫内塞VS国际米兰 全场回放（刘腾、贺宇） 00:30 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%84%8F%E7%94%B2%20%E5%85%8B%E9%9B%B7%E8%8E%AB%E5%86%85%E5%A1%9EVS%E5%9B%BD%E9%99%85%E7%B1%B3%E5%85%B0%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%88%98%E8%85%BE%E3%80%81%E8%B4%BA%E5%AE%87%EF%BC%89%2000%3A30
 #EXTINF:-1 tvg-name="意甲 博洛尼亚VSAC米兰 赛场原声 03:30" group-title="其他台",意甲 博洛尼亚VSAC米兰 赛场原声 03:30 [1普通]
 https://iptv.catvod.com/live.php?id=%E6%84%8F%E7%94%B2%20%E5%8D%9A%E6%B4%9B%E5%B0%BC%E4%BA%9AVSAC%E7%B1%B3%E5%85%B0%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2003%3A30
-#EXTINF:-1 tvg-name="意甲 帕尔马VS尤文图斯 全场回放（吴桐、刘腾） 03:15" group-title="其他台",意甲 帕尔马VS尤文图斯 全场回放（吴桐、刘腾） 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%84%8F%E7%94%B2%20%E5%B8%95%E5%B0%94%E9%A9%ACVS%E5%B0%A4%E6%96%87%E5%9B%BE%E6%96%AF%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%90%B4%E6%A1%90%E3%80%81%E5%88%98%E8%85%BE%EF%BC%89%2003%3A15
 #EXTINF:-1 tvg-name="投名状" group-title="其他台",投名状 [1普通]
 https://cdn13.yzzy-tv-cdn.com/20230128/9592_3d21d729/index.m3u8
 #EXTINF:-1 tvg-name="摔跤格斗" group-title="其他台",摔跤格斗 [2普通]
 https://d2p372oxiwmcn1.cloudfront.net:443/hls/1080p/playlist.m3u8|https://d2p372oxiwmcn1.cloudfront.net/hls/1080p/playlist.m3u8
-#EXTINF:-1 tvg-name="斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 1号桌 19:00" group-title="其他台",斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 1号桌 19:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E4%B8%81%E4%BF%8A%E6%99%96VS%E9%9C%8D%E9%87%91%E6%96%AF%20%E5%90%B4%E5%AE%9C%E6%B3%BD%E5%BC%A0%E5%AE%89%E8%BE%BE%E5%87%BA%E6%88%98%201%E5%8F%B7%E6%A1%8C%2019%3A00
-#EXTINF:-1 tvg-name="斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 2号桌 19:00" group-title="其他台",斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 2号桌 19:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E4%B8%81%E4%BF%8A%E6%99%96VS%E9%9C%8D%E9%87%91%E6%96%AF%20%E5%90%B4%E5%AE%9C%E6%B3%BD%E5%BC%A0%E5%AE%89%E8%BE%BE%E5%87%BA%E6%88%98%202%E5%8F%B7%E6%A1%8C%2019%3A00
-#EXTINF:-1 tvg-name="斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 3号桌 19:00" group-title="其他台",斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 3号桌 19:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E4%B8%81%E4%BF%8A%E6%99%96VS%E9%9C%8D%E9%87%91%E6%96%AF%20%E5%90%B4%E5%AE%9C%E6%B3%BD%E5%BC%A0%E5%AE%89%E8%BE%BE%E5%87%BA%E6%88%98%203%E5%8F%B7%E6%A1%8C%2019%3A00
-#EXTINF:-1 tvg-name="斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 4号桌 19:00" group-title="其他台",斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 4号桌 19:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E4%B8%81%E4%BF%8A%E6%99%96VS%E9%9C%8D%E9%87%91%E6%96%AF%20%E5%90%B4%E5%AE%9C%E6%B3%BD%E5%BC%A0%E5%AE%89%E8%BE%BE%E5%87%BA%E6%88%98%204%E5%8F%B7%E6%A1%8C%2019%3A00
-#EXTINF:-1 tvg-name="斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 朱蒙 19:00" group-title="其他台",斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 朱蒙 19:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E4%B8%81%E4%BF%8A%E6%99%96VS%E9%9C%8D%E9%87%91%E6%96%AF%20%E5%90%B4%E5%AE%9C%E6%B3%BD%E5%BC%A0%E5%AE%89%E8%BE%BE%E5%87%BA%E6%88%98%20%E6%9C%B1%E8%92%99%2019%3A00
-#EXTINF:-1 tvg-name="斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 秦正 19:00" group-title="其他台",斯诺克 丁俊晖VS霍金斯 吴宜泽张安达出战 秦正 19:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E4%B8%81%E4%BF%8A%E6%99%96VS%E9%9C%8D%E9%87%91%E6%96%AF%20%E5%90%B4%E5%AE%9C%E6%B3%BD%E5%BC%A0%E5%AE%89%E8%BE%BE%E5%87%BA%E6%88%98%20%E7%A7%A6%E6%AD%A3%2019%3A00
-#EXTINF:-1 tvg-name="斯诺克 奥沙利文、罗伯逊、斯佳辉出战 1号桌 13:00" group-title="其他台",斯诺克 奥沙利文、罗伯逊、斯佳辉出战 1号桌 13:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E5%A5%A5%E6%B2%99%E5%88%A9%E6%96%87%E3%80%81%E7%BD%97%E4%BC%AF%E9%80%8A%E3%80%81%E6%96%AF%E4%BD%B3%E8%BE%89%E5%87%BA%E6%88%98%201%E5%8F%B7%E6%A1%8C%2013%3A00
-#EXTINF:-1 tvg-name="斯诺克 奥沙利文、罗伯逊、斯佳辉出战 2号桌 13:00" group-title="其他台",斯诺克 奥沙利文、罗伯逊、斯佳辉出战 2号桌 13:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E5%A5%A5%E6%B2%99%E5%88%A9%E6%96%87%E3%80%81%E7%BD%97%E4%BC%AF%E9%80%8A%E3%80%81%E6%96%AF%E4%BD%B3%E8%BE%89%E5%87%BA%E6%88%98%202%E5%8F%B7%E6%A1%8C%2013%3A00
-#EXTINF:-1 tvg-name="斯诺克 奥沙利文、罗伯逊、斯佳辉出战 3号桌 13:00" group-title="其他台",斯诺克 奥沙利文、罗伯逊、斯佳辉出战 3号桌 13:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E5%A5%A5%E6%B2%99%E5%88%A9%E6%96%87%E3%80%81%E7%BD%97%E4%BC%AF%E9%80%8A%E3%80%81%E6%96%AF%E4%BD%B3%E8%BE%89%E5%87%BA%E6%88%98%203%E5%8F%B7%E6%A1%8C%2013%3A00
-#EXTINF:-1 tvg-name="斯诺克 奥沙利文、罗伯逊、斯佳辉出战 4号桌 13:00" group-title="其他台",斯诺克 奥沙利文、罗伯逊、斯佳辉出战 4号桌 13:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E5%A5%A5%E6%B2%99%E5%88%A9%E6%96%87%E3%80%81%E7%BD%97%E4%BC%AF%E9%80%8A%E3%80%81%E6%96%AF%E4%BD%B3%E8%BE%89%E5%87%BA%E6%88%98%204%E5%8F%B7%E6%A1%8C%2013%3A00
-#EXTINF:-1 tvg-name="斯诺克 肖国栋PK囧哥 周跃龙塞尔比出战 1号桌 13:00" group-title="其他台",斯诺克 肖国栋PK囧哥 周跃龙塞尔比出战 1号桌 13:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E8%82%96%E5%9B%BD%E6%A0%8BPK%E5%9B%A7%E5%93%A5%20%E5%91%A8%E8%B7%83%E9%BE%99%E5%A1%9E%E5%B0%94%E6%AF%94%E5%87%BA%E6%88%98%201%E5%8F%B7%E6%A1%8C%2013%3A00
-#EXTINF:-1 tvg-name="斯诺克 肖国栋PK囧哥 周跃龙塞尔比出战 2号桌 13:00" group-title="其他台",斯诺克 肖国栋PK囧哥 周跃龙塞尔比出战 2号桌 13:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E8%82%96%E5%9B%BD%E6%A0%8BPK%E5%9B%A7%E5%93%A5%20%E5%91%A8%E8%B7%83%E9%BE%99%E5%A1%9E%E5%B0%94%E6%AF%94%E5%87%BA%E6%88%98%202%E5%8F%B7%E6%A1%8C%2013%3A00
-#EXTINF:-1 tvg-name="斯诺克 肖国栋PK囧哥 周跃龙塞尔比出战 3号桌 13:00" group-title="其他台",斯诺克 肖国栋PK囧哥 周跃龙塞尔比出战 3号桌 13:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E8%82%96%E5%9B%BD%E6%A0%8BPK%E5%9B%A7%E5%93%A5%20%E5%91%A8%E8%B7%83%E9%BE%99%E5%A1%9E%E5%B0%94%E6%AF%94%E5%87%BA%E6%88%98%203%E5%8F%B7%E6%A1%8C%2013%3A00
-#EXTINF:-1 tvg-name="斯诺克 肖国栋PK囧哥 周跃龙塞尔比出战 4号桌 13:00" group-title="其他台",斯诺克 肖国栋PK囧哥 周跃龙塞尔比出战 4号桌 13:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E8%82%96%E5%9B%BD%E6%A0%8BPK%E5%9B%A7%E5%93%A5%20%E5%91%A8%E8%B7%83%E9%BE%99%E5%A1%9E%E5%B0%94%E6%AF%94%E5%87%BA%E6%88%98%204%E5%8F%B7%E6%A1%8C%2013%3A00
-#EXTINF:-1 tvg-name="斯诺克 肖国栋PK囧哥 周跃龙塞尔比出战 朱峰立 13:00" group-title="其他台",斯诺克 肖国栋PK囧哥 周跃龙塞尔比出战 朱峰立 13:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E8%82%96%E5%9B%BD%E6%A0%8BPK%E5%9B%A7%E5%93%A5%20%E5%91%A8%E8%B7%83%E9%BE%99%E5%A1%9E%E5%B0%94%E6%AF%94%E5%87%BA%E6%88%98%20%E6%9C%B1%E5%B3%B0%E7%AB%8B%2013%3A00
-#EXTINF:-1 tvg-name="斯诺克 贾德·特鲁姆普10 4肖恩·墨菲 肖恩·墨菲4 10贾德·特鲁姆普 03:00" group-title="其他台",斯诺克 贾德·特鲁姆普10 4肖恩·墨菲 肖恩·墨菲4 10贾德·特鲁姆普 03:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E8%B4%BE%E5%BE%B7%C2%B7%E7%89%B9%E9%B2%81%E5%A7%86%E6%99%AE10-4%E8%82%96%E6%81%A9%C2%B7%E5%A2%A8%E8%8F%B2%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E8%82%96%E6%81%A9%C2%B7%E5%A2%A8%E8%8F%B24-10%E8%B4%BE%E5%BE%B7%C2%B7%E7%89%B9%E9%B2%81%E5%A7%86%E6%99%AE%2003%3A00
-#EXTINF:-1 tvg-name="斯诺克 贾德·特鲁姆普10 4肖恩·墨菲 肖恩·墨菲4 10贾德·特鲁姆普（柏林） 03:00" group-title="其他台",斯诺克 贾德·特鲁姆普10 4肖恩·墨菲 肖恩·墨菲4 10贾德·特鲁姆普（柏林） 03:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E8%B4%BE%E5%BE%B7%C2%B7%E7%89%B9%E9%B2%81%E5%A7%86%E6%99%AE10-4%E8%82%96%E6%81%A9%C2%B7%E5%A2%A8%E8%8F%B2%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E8%82%96%E6%81%A9%C2%B7%E5%A2%A8%E8%8F%B24-10%E8%B4%BE%E5%BE%B7%C2%B7%E7%89%B9%E9%B2%81%E5%A7%86%E6%99%AE%EF%BC%88%E6%9F%8F%E6%9E%97%EF%BC%89%2003%3A00
+#EXTINF:-1 tvg-name="斯诺克 斯佳辉PK加里·威尔逊 奥沙利文出战 1号桌 13:00" group-title="其他台",斯诺克 斯佳辉PK加里·威尔逊 奥沙利文出战 1号桌 13:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E6%96%AF%E4%BD%B3%E8%BE%89PK%E5%8A%A0%E9%87%8C%C2%B7%E5%A8%81%E5%B0%94%E9%80%8A%20%E5%A5%A5%E6%B2%99%E5%88%A9%E6%96%87%E5%87%BA%E6%88%98%201%E5%8F%B7%E6%A1%8C%2013%3A00
+#EXTINF:-1 tvg-name="斯诺克 斯佳辉PK加里·威尔逊 奥沙利文出战 2号桌 13:00" group-title="其他台",斯诺克 斯佳辉PK加里·威尔逊 奥沙利文出战 2号桌 13:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E6%96%AF%E4%BD%B3%E8%BE%89PK%E5%8A%A0%E9%87%8C%C2%B7%E5%A8%81%E5%B0%94%E9%80%8A%20%E5%A5%A5%E6%B2%99%E5%88%A9%E6%96%87%E5%87%BA%E6%88%98%202%E5%8F%B7%E6%A1%8C%2013%3A00
+#EXTINF:-1 tvg-name="斯诺克 斯佳辉PK加里·威尔逊 奥沙利文出战 3号桌 13:00" group-title="其他台",斯诺克 斯佳辉PK加里·威尔逊 奥沙利文出战 3号桌 13:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E6%96%AF%E4%BD%B3%E8%BE%89PK%E5%8A%A0%E9%87%8C%C2%B7%E5%A8%81%E5%B0%94%E9%80%8A%20%E5%A5%A5%E6%B2%99%E5%88%A9%E6%96%87%E5%87%BA%E6%88%98%203%E5%8F%B7%E6%A1%8C%2013%3A00
+#EXTINF:-1 tvg-name="斯诺克 斯佳辉PK加里·威尔逊 奥沙利文出战 4号桌 13:00" group-title="其他台",斯诺克 斯佳辉PK加里·威尔逊 奥沙利文出战 4号桌 13:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E6%96%AF%E4%BD%B3%E8%BE%89PK%E5%8A%A0%E9%87%8C%C2%B7%E5%A8%81%E5%B0%94%E9%80%8A%20%E5%A5%A5%E6%B2%99%E5%88%A9%E6%96%87%E5%87%BA%E6%88%98%204%E5%8F%B7%E6%A1%8C%2013%3A00
+#EXTINF:-1 tvg-name="斯诺克 第二轮 1号桌 13:00" group-title="其他台",斯诺克 第二轮 1号桌 13:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E7%AC%AC%E4%BA%8C%E8%BD%AE%201%E5%8F%B7%E6%A1%8C%2013%3A00
+#EXTINF:-1 tvg-name="斯诺克 第二轮 1号桌 19:00" group-title="其他台",斯诺克 第二轮 1号桌 19:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E7%AC%AC%E4%BA%8C%E8%BD%AE%201%E5%8F%B7%E6%A1%8C%2019%3A00
+#EXTINF:-1 tvg-name="斯诺克 第二轮 2号桌 13:00" group-title="其他台",斯诺克 第二轮 2号桌 13:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E7%AC%AC%E4%BA%8C%E8%BD%AE%202%E5%8F%B7%E6%A1%8C%2013%3A00
+#EXTINF:-1 tvg-name="斯诺克 第二轮 2号桌 19:00" group-title="其他台",斯诺克 第二轮 2号桌 19:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E7%AC%AC%E4%BA%8C%E8%BD%AE%202%E5%8F%B7%E6%A1%8C%2019%3A00
+#EXTINF:-1 tvg-name="斯诺克 第二轮 3号桌 13:00" group-title="其他台",斯诺克 第二轮 3号桌 13:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E7%AC%AC%E4%BA%8C%E8%BD%AE%203%E5%8F%B7%E6%A1%8C%2013%3A00
+#EXTINF:-1 tvg-name="斯诺克 第二轮 3号桌 19:00" group-title="其他台",斯诺克 第二轮 3号桌 19:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E7%AC%AC%E4%BA%8C%E8%BD%AE%203%E5%8F%B7%E6%A1%8C%2019%3A00
+#EXTINF:-1 tvg-name="斯诺克 第二轮 4号桌 13:00" group-title="其他台",斯诺克 第二轮 4号桌 13:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E7%AC%AC%E4%BA%8C%E8%BD%AE%204%E5%8F%B7%E6%A1%8C%2013%3A00
+#EXTINF:-1 tvg-name="斯诺克 第二轮 4号桌 19:00" group-title="其他台",斯诺克 第二轮 4号桌 19:00 [1普通]
+https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E7%AC%AC%E4%BA%8C%E8%BD%AE%204%E5%8F%B7%E6%A1%8C%2019%3A00
 #EXTINF:-1 tvg-name="斯诺克 赵心童再战希金斯 袁思俊VS特鲁姆普 1号桌 19:00" group-title="其他台",斯诺克 赵心童再战希金斯 袁思俊VS特鲁姆普 1号桌 19:00 [1普通]
 https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E8%B5%B5%E5%BF%83%E7%AB%A5%E5%86%8D%E6%88%98%E5%B8%8C%E9%87%91%E6%96%AF%20%E8%A2%81%E6%80%9D%E4%BF%8AVS%E7%89%B9%E9%B2%81%E5%A7%86%E6%99%AE%201%E5%8F%B7%E6%A1%8C%2019%3A00
 #EXTINF:-1 tvg-name="斯诺克 赵心童再战希金斯 袁思俊VS特鲁姆普 2号桌 19:00" group-title="其他台",斯诺克 赵心童再战希金斯 袁思俊VS特鲁姆普 2号桌 19:00 [1普通]
@@ -1014,9 +942,9 @@ https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E8%B5%B5%E5%B
 #EXTINF:-1 tvg-name="斯诺克 赵心童再战希金斯 袁思俊VS特鲁姆普 4号桌 19:00" group-title="其他台",斯诺克 赵心童再战希金斯 袁思俊VS特鲁姆普 4号桌 19:00 [1普通]
 https://iptv.catvod.com/live.php?id=%E6%96%AF%E8%AF%BA%E5%85%8B%20%E8%B5%B5%E5%BF%83%E7%AB%A5%E5%86%8D%E6%88%98%E5%B8%8C%E9%87%91%E6%96%AF%20%E8%A2%81%E6%80%9D%E4%BF%8AVS%E7%89%B9%E9%B2%81%E5%A7%86%E6%99%AE%204%E5%8F%B7%E6%A1%8C%2019%3A00
 #EXTINF:-1 tvg-name="新昌新闻综合" group-title="其他台",新昌新闻综合 [4普通]
-https://stream1.freetv.fun/xin-chang-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xin-chang-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/xin-chang-xin-wen-zong-he-4.m3u8|https://stream1.freetv.fun/xin-chang-xin-wen-zong-he-5.ctv
-#EXTINF:-1 tvg-name="新闻综合" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/上视新闻.png" tvg-ipv6="true",新闻综合 [7IPv6+14普通]
-https://stream1.freetv.fun/ipv6-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-6.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/ipv6-xin-wen-zong-he-14.m3u8|https://stream1.freetv.fun/ipv6-xin-wen-zong-he-10.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-5.m3u8|https://www.freetv.top/migu/651632657.m3u8?migutoken=b4a3e55048f55ec1c8fc5b509fbdf32f2dc5d255f5f218e79e84ca9a87fb9f2239927cb11b448f18285b50b81b4cd50a1354e9be5a3283375e85372798c3f3eb3ad60adf45eb5615f68eb4825f|https://stream1.freetv.fun/xin-wen-zong-he-9.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-13.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-10.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-12.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-14.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-15.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-8.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-11.ctv|https://iptv.catvod.com/live.php?id=%E4%B8%8A%E6%B5%B7%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88
+https://stream1.freetv.fun/xin-chang-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/xin-chang-xin-wen-zong-he-4.m3u8|https://stream1.freetv.fun/xin-chang-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xin-chang-xin-wen-zong-he-5.ctv
+#EXTINF:-1 tvg-name="新闻综合" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/上视新闻.png" tvg-ipv6="true",新闻综合 [7IPv6+13普通]
+https://stream1.freetv.fun/ipv6-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-6.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/ipv6-xin-wen-zong-he-14.m3u8|https://stream1.freetv.fun/ipv6-xin-wen-zong-he-10.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-5.m3u8|https://www.freetv.top/migu/651632657.m3u8?migutoken=b4a3e55048f55ec1c8fc5b509fbdf32f2dc5d255f5f218e79e84ca9a87fb9f2239927cb11b448f18285b50b81b4cd50a1354e9be5a3283375e85372798c3f3eb3ad60adf45eb5615f68eb4825f|https://stream1.freetv.fun/xin-wen-zong-he-9.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-13.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-10.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-12.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-14.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-15.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-8.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-11.ctv
 #EXTINF:-1 tvg-name="方世玉" group-title="其他台",方世玉 [1普通]
 https://cdn4.yzzy-tv-cdn.com/20220606/17350_39c4425b/index.m3u8
 #EXTINF:-1 tvg-name="施甸综合" group-title="其他台",施甸综合 [1普通]
@@ -1091,8 +1019,8 @@ https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_
 https://gcalic.v.myalicdn.com/gc/pts01_1/index.m3u8
 #EXTINF:-1 tvg-name="月牙泉" group-title="其他台",月牙泉 [1普通]
 https://gcalic.v.myalicdn.com/gc/dhyyqsm_1/index.m3u8
-#EXTINF:-1 tvg-name="有线新闻" group-title="其他台",有线新闻 [21普通]
-https://stream1.freetv.fun/you-xian-xin-wen-2.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-1.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-15.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-10.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-11.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-19.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-13.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-7.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-3.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-5.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-8.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-6.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-16.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-9.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-18.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-4.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-17.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-12.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-20.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-14.ctv|http://rihou.cc:555/tv/[Mt]有线新闻
+#EXTINF:-1 tvg-name="有线新闻" group-title="其他台",有线新闻 [20普通]
+https://stream1.freetv.fun/you-xian-xin-wen-2.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-1.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-15.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-10.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-11.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-19.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-13.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-7.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-3.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-5.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-8.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-6.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-16.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-9.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-18.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-4.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-12.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-20.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-17.m3u8|https://stream1.freetv.fun/you-xian-xin-wen-14.ctv
 #EXTINF:-1 tvg-name="望乡台" group-title="其他台",望乡台 [1普通]
 https://gcalic.v.myalicdn.com/gc/hlwxt_1/index.m3u8
 #EXTINF:-1 tvg-name="杀手之王" group-title="其他台",杀手之王 [1普通]
@@ -1104,7 +1032,7 @@ https://stream1.freetv.fun/hang-zhou-ying-shi-2.ctv
 #EXTINF:-1 tvg-name="杭州生活" group-title="其他台",杭州生活 [2普通]
 https://stream1.freetv.fun/hang-zhou-sheng-huo-2.ctv|https://stream1.freetv.fun/hang-zhou-sheng-huo-1.ctv
 #EXTINF:-1 tvg-name="杭州综合" group-title="其他台",杭州综合 [3普通]
-https://stream1.freetv.fun/hang-zhou-zong-he-2.ctv|https://stream1.freetv.fun/hang-zhou-zong-he-3.ctv|http://live.xmcdn.com/live/1845/64.m3u8
+https://stream1.freetv.fun/hang-zhou-zong-he-3.ctv|https://stream1.freetv.fun/hang-zhou-zong-he-2.ctv|http://live.xmcdn.com/live/1845/64.m3u8
 #EXTINF:-1 tvg-name="林俊杰精选81首" group-title="其他台",林俊杰精选81首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2024/01/09/12/BMjAyNDAxMDkxMjA2MDdfMzQ4MzI0MjA1OF8xMjE2Nzg4Mjk4NTZfMF8z_b_Bc9f7d3b0c4b69136e61d8328a8538bd2.mp4?clientCacheKey=3xajh8b4u5j6uva_b.mp4
 #EXTINF:-1 tvg-name="林俊杰经典合集" group-title="其他台",林俊杰经典合集 [1普通]
@@ -1124,49 +1052,39 @@ https://stream1.freetv.fun/wu-xiang-xin-wen-zong-he-2.m3u8|https://stream1.freet
 #EXTINF:-1 tvg-name="武宁新闻综合" group-title="其他台",武宁新闻综合 [1普通]
 https://stream1.freetv.fun/wu-zhu-xin-wen-zong-he-2.m3u8
 #EXTINF:-1 tvg-name="武汉一台新闻综合" group-title="其他台",武汉一台新闻综合 [5普通]
-https://stream1.freetv.fun/wu-yi-yi-tai-xin-wen-zong-he-4.m3u8|https://stream1.freetv.fun/wu-yi-1xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/wu-yi-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/wu-yi-1xin-wen-zong-he-2.m3u8|https://ls.qingting.fm/live/20198/64k.m3u8
+https://stream1.freetv.fun/wu-yi-1xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/wu-yi-1xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/wu-yi-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/wu-yi-yi-tai-xin-wen-zong-he-4.m3u8|https://ls.qingting.fm/live/20198/64k.m3u8
 #EXTINF:-1 tvg-name="武汉二台电视剧" group-title="其他台",武汉二台电视剧 [3普通]
 https://stream1.freetv.fun/wu-yi-2dian-shi-ju-1.m3u8|https://stream1.freetv.fun/wu-yi-er-tai-dian-shi-ju-1.m3u8|https://stream1.freetv.fun/wu-yi-er-tai-dian-shi-ju-3.ctv
 #EXTINF:-1 tvg-name="武汉四台经济" group-title="其他台",武汉四台经济 [1普通]
 https://stream1.freetv.fun/wu-yi-jing-ji-1.m3u8
 #EXTINF:-1 tvg-name="武汉教育" group-title="其他台",武汉教育 [11普通]
-https://stream1.freetv.fun/wu-yi-jiao-yu-18.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-1.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-7.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-8.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-5.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-6.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-15.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-4.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-12.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-17.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-13.ctv
+https://stream1.freetv.fun/wu-yi-jiao-yu-7.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-18.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-12.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-15.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-4.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-5.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-6.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-17.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-8.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-1.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-13.ctv
 #EXTINF:-1 tvg-name="永嘉新闻综合" group-title="其他台",永嘉新闻综合 [3普通]
 https://stream1.freetv.fun/yong-jia-xin-wen-zong-he-4.m3u8|https://stream1.freetv.fun/yong-jia-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/yong-jia-xin-wen-zong-he-3.ctv
 #EXTINF:-1 tvg-name="求索纪录" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/求索纪录.png" tvg-ipv6="true",求索纪录 [2IPv6+19普通]
-https://stream1.freetv.fun/ipv6-qiu-suo-ji-lu-6.m3u8|https://stream1.freetv.fun/ipv6-qiu-suo-ji-lu-5.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-8.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-1.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-17.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-4.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-2.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-7.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-3.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-10.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-18.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-12.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-19.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-9.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-14.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-6.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-11.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-13.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-15.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-5.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-2.ctv
+https://stream1.freetv.fun/ipv6-qiu-suo-ji-lu-5.m3u8|https://stream1.freetv.fun/ipv6-qiu-suo-ji-lu-6.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-15.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-5.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-6.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-18.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-9.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-19.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-7.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-13.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-12.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-10.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-3.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-14.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-8.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-11.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-17.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-4.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-2.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-1.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-2.ctv
 #EXTINF:-1 tvg-name="汕头经济" group-title="其他台",汕头经济 [4普通]
-https://stream1.freetv.fun/shan-tou-jing-ji-6.ctv|https://stream1.freetv.fun/shan-tou-jing-ji-3.ctv|https://stream1.freetv.fun/shan-tou-jing-ji-5.ctv|https://stream1.freetv.fun/shan-tou-jing-ji-2.ctv
-#EXTINF:-1 tvg-name="汕头综合" group-title="其他台",汕头综合 [8普通]
-https://stream1.freetv.fun/shan-tou-zong-he-10.ctv|https://stream1.freetv.fun/shan-tou-zong-he-7.ctv|https://stream1.freetv.fun/shan-tou-zong-he-18.ctv|https://stream1.freetv.fun/shan-tou-zong-he-2.ctv|https://stream1.freetv.fun/shan-tou-zong-he-1.ctv|https://stream1.freetv.fun/shan-tou-zong-he-12.ctv|https://stream1.freetv.fun/shan-tou-zong-he-5.ctv|https://stream1.freetv.fun/shan-tou-zong-he-3.ctv
+https://stream1.freetv.fun/shan-tou-jing-ji-3.ctv|https://stream1.freetv.fun/shan-tou-jing-ji-5.ctv|https://stream1.freetv.fun/shan-tou-jing-ji-6.ctv|https://stream1.freetv.fun/shan-tou-jing-ji-2.ctv
+#EXTINF:-1 tvg-name="汕头综合" group-title="其他台",汕头综合 [7普通]
+https://stream1.freetv.fun/shan-tou-zong-he-18.ctv|https://stream1.freetv.fun/shan-tou-zong-he-1.ctv|https://stream1.freetv.fun/shan-tou-zong-he-3.ctv|https://stream1.freetv.fun/shan-tou-zong-he-5.ctv|https://stream1.freetv.fun/shan-tou-zong-he-10.ctv|https://stream1.freetv.fun/shan-tou-zong-he-7.ctv|https://stream1.freetv.fun/shan-tou-zong-he-2.ctv
 #EXTINF:-1 tvg-name="汕尾新闻综合" group-title="其他台",汕尾新闻综合 [2普通]
 https://stream1.freetv.fun/shan-wei-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/shan-wei-xin-wen-zong-he-3.ctv
-#EXTINF:-1 tvg-name="江门综合" group-title="其他台",江门综合 [9普通]
-https://stream1.freetv.fun/jiang-men-zong-he-5.ctv|https://stream1.freetv.fun/jiang-men-zong-he-7.ctv|https://stream1.freetv.fun/jiang-men-zong-he-6.ctv|https://stream1.freetv.fun/jiang-men-zong-he-8.ctv|https://stream1.freetv.fun/jiang-men-zong-he-9.ctv|https://stream1.freetv.fun/jiang-men-zong-he-10.ctv|https://stream1.freetv.fun/jiang-men-zong-he-4.ctv|https://stream1.freetv.fun/jiang-men-zong-he-12.ctv|https://stream1.freetv.fun/jiang-men-zong-he-1.ctv
+#EXTINF:-1 tvg-name="江门综合" group-title="其他台",江门综合 [7普通]
+https://stream1.freetv.fun/jiang-men-zong-he-7.ctv|https://stream1.freetv.fun/jiang-men-zong-he-8.ctv|https://stream1.freetv.fun/jiang-men-zong-he-6.ctv|https://stream1.freetv.fun/jiang-men-zong-he-1.ctv|https://stream1.freetv.fun/jiang-men-zong-he-4.ctv|https://stream1.freetv.fun/jiang-men-zong-he-9.ctv|https://stream1.freetv.fun/jiang-men-zong-he-5.ctv
 #EXTINF:-1 tvg-name="汪苏泷精选20首" group-title="其他台",汪苏泷精选20首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2020/09/30/22/BMjAyMDA5MzAyMjA3NDNfODI4NTk1NTQ0XzM2ODY2MzQxNzg4XzJfMw==_b_Bb726df27e24fda5e4d31b724d84ab8d4.mp4
 #EXTINF:-1 tvg-name="沁阳新闻综合" group-title="其他台",沁阳新闻综合 [1普通]
 https://stream1.freetv.fun/qin-yang-xin-wen-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="法国国际广播电台" group-title="其他台",法国国际广播电台 [1普通]
 http://rfichinois96k.ice.infomaniak.ch/rfichinois-96k.mp3
-#EXTINF:-1 tvg-name="法甲 图卢兹VS欧塞尔 全场回放（盛斌） 00:00" group-title="其他台",法甲 图卢兹VS欧塞尔 全场回放（盛斌） 00:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%B3%95%E7%94%B2%20%E5%9B%BE%E5%8D%A2%E5%85%B9VS%E6%AC%A7%E5%A1%9E%E5%B0%94%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E7%9B%9B%E6%96%8C%EF%BC%89%2000%3A00
-#EXTINF:-1 tvg-name="法甲 尼斯VS布雷 全场回放（李永熙） 00:00" group-title="其他台",法甲 尼斯VS布雷 全场回放（李永熙） 00:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%B3%95%E7%94%B2%20%E5%B0%BC%E6%96%AFVS%E5%B8%83%E9%9B%B7%E6%96%AF%E7%89%B9%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E6%9D%8E%E6%B0%B8%E7%86%99%EF%BC%89%2000%3A00
-#EXTINF:-1 tvg-name="法甲 拉斯堡VS巴黎圣日耳曼 全场回放（鹿中原、王宇） 03:30" group-title="其他台",法甲 拉斯堡VS巴黎圣日耳曼 全场回放（鹿中原、王宇） 03:30 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%B3%95%E7%94%B2%20%E6%96%AF%E7%89%B9%E6%8B%89%E6%96%AF%E5%A0%A1VS%E5%B7%B4%E9%BB%8E%E5%9C%A3%E6%97%A5%E8%80%B3%E6%9B%BC%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E9%B9%BF%E4%B8%AD%E5%8E%9F%E3%80%81%E7%8E%8B%E5%AE%87%EF%BC%89%2003%3A30
-#EXTINF:-1 tvg-name="法甲 昂热VS梅斯 全场回放（乔迁） 00:00" group-title="其他台",法甲 昂热VS梅斯 全场回放（乔迁） 00:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%B3%95%E7%94%B2%20%E6%98%82%E7%83%ADVS%E6%A2%85%E6%96%AF%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E4%B9%94%E8%BF%81%EF%BC%89%2000%3A00
-#EXTINF:-1 tvg-name="洪金宝" group-title="其他台",洪金宝 [4普通]
-https://t.freetv.fun/live/hong-jin-bao.php|https://stream1.freetv.fun/hong-jin-bao-4.ctv|https://stream1.freetv.fun/hong-jin-bao-5.ctv|https://stream1.freetv.fun/hong-jin-bao-2.ctv
+#EXTINF:-1 tvg-name="洪金宝" group-title="其他台",洪金宝 [3普通]
+https://stream1.freetv.fun/hong-jin-bao-4.ctv|https://stream1.freetv.fun/hong-jin-bao-5.ctv|https://stream1.freetv.fun/hong-jin-bao-2.ctv
 #EXTINF:-1 tvg-name="济南教育" group-title="其他台",济南教育 [1普通]
 https://stream1.freetv.fun/ji-nan-jiao-yu-1.m3u8
 #EXTINF:-1 tvg-name="济南新闻综合" group-title="其他台" tvg-ipv6="true",济南新闻综合 [1IPv6+1普通]
 https://stream1.freetv.fun/ipv6-ji-nan-xin-wen-zong-he-8.m3u8|https://stream1.freetv.fun/ji-nan-xin-wen-zong-he-7.m3u8
 #EXTINF:-1 tvg-name="济南综合" group-title="其他台",济南综合 [2普通]
-https://stream1.freetv.fun/ji-nan-zong-he-1.m3u8|https://stream1.freetv.fun/ji-nan-zong-he-2.m3u8
-#EXTINF:-1 tvg-name="淮安新闻综合" group-title="其他台",淮安新闻综合 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%B7%AE%E5%AE%89%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88
+https://stream1.freetv.fun/ji-nan-zong-he-2.m3u8|https://stream1.freetv.fun/ji-nan-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="深圳财经生活" group-title="其他台",深圳财经生活 [1普通]
 https://stream1.freetv.fun/shen-zhen-cai-jing-sheng-huo-1.m3u8
 #EXTINF:-1 tvg-name="清晨音乐台" group-title="其他台",清晨音乐台 [1普通]
@@ -1178,9 +1096,7 @@ https://stream1.freetv.fun/hu-zhou-gong-gong-9.m3u8|https://hzcm-live.media.hugd
 #EXTINF:-1 tvg-name="湖州公共民生" group-title="其他台",湖州公共民生 [1普通]
 http://hzcm-live.media.hugd.com/1e6b554b9ab74513958c0e1ffe664d22/9acaa7634309494cb29a85eb12136607.m3u8?auth_key=2272900830-9a2389b8bf4e49d580d4ad807423d326-0-ea78a5c7a678c436263582d368f5009e
 #EXTINF:-1 tvg-name="湖州新闻综合" group-title="其他台",湖州新闻综合 [4普通]
-https://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865|http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865&amp;fbl=|http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865|http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865&fbl=
-#EXTINF:-1 tvg-name="溧水新闻综合" group-title="其他台",溧水新闻综合 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%BA%A7%E6%B0%B4%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88
+https://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865|http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865&fbl=|http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865&amp;fbl=|http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865
 #EXTINF:-1 tvg-name="漳州新闻综合" group-title="其他台",漳州新闻综合 [4普通]
 https://stream1.freetv.fun/zhang-zhou-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/zhang-zhou-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/zhang-zhou-xin-wen-zong-he-3.m3u8|http://8.138.7.223/tv/fjtv1.php?id=zz1
 #EXTINF:-1 tvg-name="潍坊新闻综合" group-title="其他台" tvg-ipv6="true",潍坊新闻综合 [2IPv6]
@@ -1201,8 +1117,8 @@ https://txmov2.a.kwimgs.com/bs3/video-hls/5210946351305777158_hlsb.m3u8
 https://txmov2.a.kwimgs.com/upic/2020/09/06/17/BMjAyMDA5MDYxNzU1MjJfMTc4NDYxNDcyNl8zNTYyMjQ2ODIxNl8yXzM=_b_Bc35f6a28c8cf25ea947bc122c176b034.mp4
 #EXTINF:-1 tvg-name="珲春新闻综合" group-title="其他台",珲春新闻综合 [1普通]
 https://stream1.freetv.fun/hun-chun-xin-wen-zong-he-3.m3u8
-#EXTINF:-1 tvg-name="生活时尚" group-title="其他台" tvg-ipv6="true",生活时尚 [4IPv6+23普通]
-https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-5.m3u8|https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-2.m3u8|https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-7.m3u8|https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-14.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-13.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-29.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-24.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-28.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-18.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-12.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-27.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-25.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-11.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-9.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-26.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-6.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-22.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-17.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-9.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-5.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-4.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-1.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-19.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-20.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-25.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-10.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-23.ctv
+#EXTINF:-1 tvg-name="生活时尚" group-title="其他台" tvg-ipv6="true",生活时尚 [4IPv6+21普通]
+https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-5.m3u8|https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-2.m3u8|https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-7.m3u8|https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-14.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-13.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-29.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-24.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-28.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-18.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-12.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-27.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-25.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-11.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-9.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-26.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-6.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-22.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-17.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-9.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-5.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-4.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-1.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-25.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-10.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-23.ctv
 #EXTINF:-1 tvg-name="白名单" group-title="其他台" tvg-ipv6="true" tvg-whitelist="true",白名单 [12IPv6+12白名单]
 http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226433/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EygquRbh9L0wUPRY53fsZWw%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNO62IynDcU1yYDL1b4Xte8T%2CEND|http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226437/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EncK5uEAdYwWMsf8WJWI1mQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNO_LSIQh_h2P54Cz-MqgJqC%2CEND|http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226514/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Es-PVNcPJsjr_oBdcXGT40g%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNMWvZ0r6eMXcXJOGrCpJiq1%2CEND|http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226516/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Eh9_SEkmWeMdS1TMnIILZgg%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPIiicEW7OIvk1s-X-PXHqO%2CEND|http://[2409:8087:1:20:20::26]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226550/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~e2qS8h6u-xp3gd50vNr1sw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPPFD3HVWEytEVyliOxehfe%2CEND|http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226228/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7E2knJCFLHz_HqfBZXNGeA1A%7E_eNUb|http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226335/1.m3u8?servicetype=1&accountinfo=%7E%7EV2.0%7EBFJ5gRpm8ntK8JEFPZOhLQ%7EPepnxHHB2d6Hk2dZWM77MyFlBN5q1KnYLvimM9pqT7EfCf-e5nKehMQzrOBwWduf%7EExtInfo9bj61dxzlMXrsixrqcFYPg%3A20240420192542%2C%2C%2C20240420192542%2C%2C10001000275495%2C-1%2C0%2C1%2C-1%2C%2C2%2C2201300%2C%2C%2C2%2C%2C%2CEND&GuardEncType=2|http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226434/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Ejj3PtVjzl6ZzFdM-Vi1dmQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPJa61jREJv4ZfZigyrxX0U%2CEND|http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226438/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EeVAybrHg955d_IRT9e_uHQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNMLCKqkSfuGOusJwBMwlCbz%2CEND|http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226440/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EWrJcgMpdGPvZavpf4dmmrQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNhmwDsUZnvQgU5E5wiGA2g%2CEND|http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226895/1.m3u8?servicetype=1&accountinfo=%7E%7EV2.0%7EI0Rkc6neBYgfpoJ1yud8Fw%7EPepnxHHB2d6Hk2dZWM77MyFlBN5q1KnYLvimM9pqT7Epd7QgO4HFWH0z34SUb2Vs%7EExtInfo9bj61dxzlMXrsixrqcFYPg%3A20240420192714%2C%2C%2C20240420192714%2C%2C10001000275495%2C-1%2C0%2C1%2C-1%2C%2C2%2C2201300%2C%2C%2C2%2C%2C%2CEND&GuardEncType=2|http://[2409:8087:1:20:20::2c]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226436/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7ElMQ3ov45VmhzipweN5VstQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPg_yZ8DZHTaSU92MIl_o3b%2CEND
 #EXTINF:-1 tvg-name="白名单 :6610" group-title="其他台" tvg-ipv6="true" tvg-whitelist="true",白名单 :6610 [122IPv6+122白名单]
@@ -1211,20 +1127,20 @@ http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221
 http://live.ynurl.com/video/s10016-YJTV-2/index.m3u8?zyund
 #EXTINF:-1 tvg-name="石家庄新闻综合" group-title="其他台",石家庄新闻综合 [11普通]
 https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-10.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-4.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-8.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-9.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-11.ctv|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-2.ctv|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-5.ctv|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-6.ctv|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-7.ctv|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-8.ctv
-#EXTINF:-1 tvg-name="石家庄生活" group-title="其他台",石家庄生活 [5普通]
-https://stream1.freetv.fun/shi-jia-zhuang-sheng-huo-1.ctv|https://stream1.freetv.fun/shi-jia-zhuang-sheng-huo-10.ctv|https://stream1.freetv.fun/shi-jia-zhuang-sheng-huo-2.ctv|https://stream1.freetv.fun/shi-jia-zhuang-sheng-huo-5.ctv|https://stream1.freetv.fun/shi-jia-zhuang-sheng-huo-7.ctv
+#EXTINF:-1 tvg-name="石家庄生活" group-title="其他台",石家庄生活 [4普通]
+https://stream1.freetv.fun/shi-jia-zhuang-sheng-huo-10.ctv|https://stream1.freetv.fun/shi-jia-zhuang-sheng-huo-2.ctv|https://stream1.freetv.fun/shi-jia-zhuang-sheng-huo-5.ctv|https://stream1.freetv.fun/shi-jia-zhuang-sheng-huo-7.ctv
 #EXTINF:-1 tvg-name="石家庄都市" group-title="其他台",石家庄都市 [8普通]
 https://stream1.freetv.fun/shi-jia-zhuang-du-shi-12.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-du-shi-17.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-du-shi-8.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-du-shi-9.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-du-shi-1.ctv|https://stream1.freetv.fun/shi-jia-zhuang-du-shi-4.ctv|https://stream1.freetv.fun/shi-jia-zhuang-du-shi-5.ctv|https://stream1.freetv.fun/shi-jia-zhuang-du-shi-6.ctv
 #EXTINF:-1 tvg-name="笑傲江湖" group-title="其他台",笑傲江湖 [1普通]
 https://alimov2.a.kwimgs.com/upic/2023/03/07/20/BMjAyMzAzMDcyMDMyNDdfNjE2NzgxMTQwXzk3NzEzNDY4NjgxXzBfMw==_b_B75baa98fedb7da382eb4a29e5f7df2bf.mp4
 #EXTINF:-1 tvg-name="笑傲江湖2:东方不败" group-title="其他台",笑傲江湖2:东方不败 [1普通]
 https://cdn2.yzzy-tv-cdn.com/20220331/4843_724c1ac5/index.m3u8
-#EXTINF:-1 tvg-name="第一财经" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/上海第一财经.png" tvg-ipv6="true",第一财经 [8IPv6+13普通]
-https://stream1.freetv.fun/ipv6-di-yi-cai-jing-8.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-11.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-6.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-5.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-7.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-4.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-3.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-1.ctv|https://stream1.freetv.fun/di-yi-cai-jing-13.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-12.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-2.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-9.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-7.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-10.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-3.m3u8|https://www.freetv.top/migu/608780988.m3u8?migutoken=94882e783c75b9369ca6a018f97fe3a3c0018f9da123958e316bb810ef22e907f0672a7d63496e5cb5041eb125b1f1ee6996ac856b0c0c9828348878b8a4101384b9a851fb1dea60a7fafeea35|https://stream1.freetv.fun/di-yi-cai-jing-5.m3u8|https://www.freetv.top/migu/608780988.m3u8?migutoken=62e21890acbd9928d0be0b4eae9f5e32e1879604b785ee7ce8751d5001a9ff431d7714025aa03d48a2b190ff214e5115dcb6ba455c3d26b1db0f5b3cb49c5967429ff3b1fe8e96e87cc6146543|https://stream1.freetv.fun/di-yi-cai-jing-6.ctv|https://iptv.catvod.com/live.php?id=%E4%B8%8A%E6%B5%B7%E7%AC%AC%E4%B8%80%E8%B4%A2%E7%BB%8F|http://live.xmcdn.com/live/56/64.m3u8
+#EXTINF:-1 tvg-name="第一财经" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/上海第一财经.png" tvg-ipv6="true",第一财经 [8IPv6+12普通]
+https://stream1.freetv.fun/ipv6-di-yi-cai-jing-8.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-11.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-6.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-5.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-7.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-4.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-3.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-1.ctv|https://stream1.freetv.fun/di-yi-cai-jing-13.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-12.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-5.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-2.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-9.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-7.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-10.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-3.m3u8|https://www.freetv.top/migu/608780988.m3u8?migutoken=62e21890acbd9928d0be0b4eae9f5e32e1879604b785ee7ce8751d5001a9ff431d7714025aa03d48a2b190ff214e5115dcb6ba455c3d26b1db0f5b3cb49c5967429ff3b1fe8e96e87cc6146543|https://www.freetv.top/migu/608780988.m3u8?migutoken=94882e783c75b9369ca6a018f97fe3a3c0018f9da123958e316bb810ef22e907f0672a7d63496e5cb5041eb125b1f1ee6996ac856b0c0c9828348878b8a4101384b9a851fb1dea60a7fafeea35|https://stream1.freetv.fun/di-yi-cai-jing-6.ctv|http://live.xmcdn.com/live/56/64.m3u8
 #EXTINF:-1 tvg-name="精武英雄" group-title="其他台",精武英雄 [1普通]
 https://cdn5.yzzy-tv-cdn.com/20220607/22255_9e00edb7/index.m3u8
 #EXTINF:-1 tvg-name="绍兴公共" group-title="其他台",绍兴公共 [4普通]
-https://stream1.freetv.fun/shao-xing-gong-gong-8.m3u8|https://stream1.freetv.fun/shao-xing-gong-gong-7.m3u8|https://stream1.freetv.fun/shao-xing-gong-gong-3.m3u8|https://stream1.freetv.fun/shao-xing-gong-gong-1.m3u8
+https://stream1.freetv.fun/shao-xing-gong-gong-1.m3u8|https://stream1.freetv.fun/shao-xing-gong-gong-7.m3u8|https://stream1.freetv.fun/shao-xing-gong-gong-3.m3u8|https://stream1.freetv.fun/shao-xing-gong-gong-8.m3u8
 #EXTINF:-1 tvg-name="给爸爸的信" group-title="其他台",给爸爸的信 [1普通]
 https://cdn2.yzzy-tv-cdn.com/20220414/13070_86734093/index.m3u8
 #EXTINF:-1 tvg-name="绵阳科技" group-title="其他台",绵阳科技 [1普通]
@@ -1240,11 +1156,11 @@ http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/8edf3fb6a69148ea9a7
 #EXTINF:-1 tvg-name="航拍中国第二季" group-title="其他台",航拍中国第二季 [1普通]
 http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/2bdfdad540b342f592f9817cb7f3b79a/4000.m3u8
 #EXTINF:-1 tvg-name="芒市综合" group-title="其他台",芒市综合 [2普通]
-http://live.ynurl.com/video/s10001-mstv1/index.m3u8?zyund|http://live.ynurl.com/video/s10001-mstv1/index.m3u8
+http://live.ynurl.com/video/s10001-mstv1/index.m3u8|http://live.ynurl.com/video/s10001-mstv1/index.m3u8?zyund
 #EXTINF:-1 tvg-name="花木兰" group-title="其他台",花木兰 [1普通]
 https://cdn2.yzzy-tv-cdn.com/20220405/7667_13f7046c/index.m3u8
 #EXTINF:-1 tvg-name="苍南新闻综合" group-title="其他台",苍南新闻综合 [4普通]
-https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-5.m3u8|https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-4.ctv
+https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-5.m3u8|https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-4.ctv
 #EXTINF:-1 tvg-name="苏州" group-title="其他台" tvg-quality="4K",苏州 [3普通]
 https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8|https://live-auth.51kandianshi.com/szgd/csztv4k_hd.m3u8|http://liveshowbak2.kan0512.com/norecord/csztv4k_4k.m3u8
 #EXTINF:-1 tvg-name="苏州文化生活" group-title="其他台",苏州文化生活 [1普通]
@@ -1258,13 +1174,11 @@ https://stream1.freetv.fun/su-zhou-she-hui-jing-ji-2.m3u8
 #EXTINF:-1 tvg-name="英雄泪" group-title="其他台",英雄泪 [1普通]
 https://vd3.bdstatic.com/mda-ncnp6tm56ngrxbis/360p/h264_delogo/1648055585617071282/mda-ncnp6tm56ngrxbis.mp4
 #EXTINF:-1 tvg-name="荆门新闻综合" group-title="其他台",荆门新闻综合 [2普通]
-https://stream1.freetv.fun/jing-men-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/jing-men-xin-wen-zong-he-6.m3u8
+https://stream1.freetv.fun/jing-men-xin-wen-zong-he-6.m3u8|https://stream1.freetv.fun/jing-men-xin-wen-zong-he-2.m3u8
 #EXTINF:-1 tvg-name="莫文蔚精选72首" group-title="其他台",莫文蔚精选72首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2023/07/27/21/BMjAyMzA3MjcyMTQ2MjdfMzYxMjUyNDA3MV8xMDkwMzM1MjA2NTJfMF8z_b_B144de29e473911c6e9187c9d591b8943.mp4
 #EXTINF:-1 tvg-name="萧山新闻综合" group-title="其他台",萧山新闻综合 [7普通]
-https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-4.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-8.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-9.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-6.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-7.m3u8
-#EXTINF:-1 tvg-name="萨马兰奇杯 U14第12场 航海基金宁波队 VS UI4 VIET NAM1 全场回放（原声） 19:30" group-title="其他台",萨马兰奇杯 U14第12场 航海基金宁波队 VS UI4 VIET NAM1 全场回放（原声） 19:30 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%90%A8%E9%A9%AC%E5%85%B0%E5%A5%87%E6%9D%AF%20U14%E7%AC%AC12%E5%9C%BA%20%E8%88%AA%E6%B5%B7%E5%9F%BA%E9%87%91%E5%AE%81%E6%B3%A2%E9%98%9F%20VS%20UI4%20VIET%20NAM1%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%8E%9F%E5%A3%B0%EF%BC%89%2019%3A30
+https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-9.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-4.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-8.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-6.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-7.m3u8
 #EXTINF:-1 tvg-name="萨马兰奇杯 成人小组赛第二轮 新北FOOTER VS 3X3 VIETNAM 清流播出 19:10" group-title="其他台",萨马兰奇杯 成人小组赛第二轮 新北FOOTER VS 3X3 VIETNAM 清流播出 19:10 [1普通]
 https://iptv.catvod.com/live.php?id=%E8%90%A8%E9%A9%AC%E5%85%B0%E5%A5%87%E6%9D%AF%20%E6%88%90%E4%BA%BA%E5%B0%8F%E7%BB%84%E8%B5%9B%E7%AC%AC%E4%BA%8C%E8%BD%AE%20%E6%96%B0%E5%8C%97FOOTER%20VS%203X3%20VIETNAM%20%E6%B8%85%E6%B5%81%E6%92%AD%E5%87%BA%2019%3A10
 #EXTINF:-1 tvg-name="蒙自综合" group-title="其他台",蒙自综合 [1普通]
@@ -1278,29 +1192,19 @@ https://txmov2.a.kwimgs.com/upic/2023/08/18/21/BMjAyMzA4MTgyMTA4MzZfODM0NDUzMTQ2
 #EXTINF:-1 tvg-name="薛之谦精选30首" group-title="其他台",薛之谦精选30首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2023/07/28/13/BMjAyMzA3MjgxMzUwMzRfODM0NDUzMTQ2XzEwOTA3NjA4NDU2Nl8wXzM=_b_B480250201ec7378867d92e4d29f7a644.mp4
 #EXTINF:-1 tvg-name="衢江新闻综合" group-title="其他台",衢江新闻综合 [3普通]
-https://stream1.freetv.fun/qu-jiang-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/qu-jiang-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/qu-jiang-xin-wen-zong-he-1.m3u8
+https://stream1.freetv.fun/qu-jiang-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/qu-jiang-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/qu-jiang-xin-wen-zong-he-2.m3u8
 #EXTINF:-1 tvg-name="西宁新闻综合" group-title="其他台",西宁新闻综合 [3普通]
 https://stream1.freetv.fun/zhu-xia--xi-zhu-xin-wen-zong-he-1.m3u8|@http://cm-wshls.homecdn.com/live/5a296.m3u8|@http://cm-wshls.homecdn.com/live/5a296.dlv
 #EXTINF:-1 tvg-name="西宁生活服务" group-title="其他台",西宁生活服务 [2普通]
 https://stream1.freetv.fun/xi-zhu-sheng-huo-fu-wu-2.m3u8|https://stream1.freetv.fun/xi-zhu-sheng-huo-fu-wu-3.m3u8
 #EXTINF:-1 tvg-name="西游记" group-title="其他台",西游记 [1普通]
 https://txmov2.a.kwimgs.com/bs3/video-hls/5239093806671579134_hlsb.m3u8
-#EXTINF:-1 tvg-name="西甲 毕尔巴鄂竞技VS皇家社会 全场回放（孙雨轩） 03:45" group-title="其他台",西甲 毕尔巴鄂竞技VS皇家社会 全场回放（孙雨轩） 03:45 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E6%AF%95%E5%B0%94%E5%B7%B4%E9%84%82%E7%AB%9E%E6%8A%80VS%E7%9A%87%E5%AE%B6%E7%A4%BE%E4%BC%9A%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%AD%99%E9%9B%A8%E8%BD%A9%EF%BC%89%2003%3A45
-#EXTINF:-1 tvg-name="西甲 赫塔菲VS塞尔塔 全场回放（周楚雄） 01:15" group-title="其他台",西甲 赫塔菲VS塞尔塔 全场回放（周楚雄） 01:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E8%B5%AB%E5%A1%94%E8%8F%B2VS%E5%A1%9E%E5%B0%94%E5%A1%94%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%91%A8%E6%A5%9A%E9%9B%84%EF%BC%89%2001%3A15
-#EXTINF:-1 tvg-name="西甲 马略卡VS塞维利亚 李霄 03:45" group-title="其他台",西甲 马略卡VS塞维利亚 李霄 03:45 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E9%A9%AC%E7%95%A5%E5%8D%A1VS%E5%A1%9E%E7%BB%B4%E5%88%A9%E4%BA%9A%20%E6%9D%8E%E9%9C%84%2003%3A45
-#EXTINF:-1 tvg-name="西甲 马略卡VS塞维利亚 赛场原声 03:45" group-title="其他台",西甲 马略卡VS塞维利亚 赛场原声 03:45 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E9%A9%AC%E7%95%A5%E5%8D%A1VS%E5%A1%9E%E7%BB%B4%E5%88%A9%E4%BA%9A%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2003%3A45
 #EXTINF:-1 tvg-name="许嵩精选30首" group-title="其他台",许嵩精选30首 [1普通]
 https://alimov2.a.kwimgs.com/upic/2020/09/14/21/BMjAyMDA5MTQyMTMzMDdfODI4NTk1NTQ0XzM2MDUzMTE1NjM5XzJfMw==_b_B789c6ea6a87d1b67019f19f16c9f71f7.mp4
 #EXTINF:-1 tvg-name="许嵩经典合集" group-title="其他台",许嵩经典合集 [1普通]
 https://txmov2.a.kwimgs.com/bs3/video-hls/5246693673328160378_hlsb.m3u8
 #EXTINF:-1 tvg-name="象山综合" group-title="其他台",象山综合 [1普通]
 http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-800189c57a5a44d3b823b60cf84f6756-0-a6f6828a62d5c167cff5e68735fa0d39
-#EXTINF:-1 tvg-name="贝爷求生影视" group-title="其他台",贝爷求生影视 [1普通]
-https://stream1.freetv.fun/f92ea9cae12af707c587af406ddb929ea9f58aae893845b713679aab4b1df9f8.ctv
 #EXTINF:-1 tvg-name="赌神2" group-title="其他台",赌神2 [1普通]
 https://vip.lz-cdn.com/20220622/20003_820596d4/index.m3u8
 #EXTINF:-1 tvg-name="运城科技教育" group-title="其他台",运城科技教育 [2普通]
@@ -1309,8 +1213,8 @@ https://stream1.freetv.fun/yun-cheng-ke-ji-jiao-yu-1.m3u8|https://stream1.freetv
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV06.m3u8
 #EXTINF:-1 tvg-name="邓紫棋精选30首" group-title="其他台",邓紫棋精选30首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2023/05/08/12/BMjAyMzA1MDgxMjIwNTNfMzQ4MzI0MjA1OF8xMDI1NjYyMjM5MDZfMF8z_b_B0675fa55fe8ce0583fb05fa02330e9f1.mp4
-#EXTINF:-1 tvg-name="邢台综合" group-title="其他台",邢台综合 [6普通]
-https://stream1.freetv.fun/xing-tai-zong-he-12.m3u8|https://stream1.freetv.fun/xing-tai-zong-he-2.m3u8|https://stream1.freetv.fun/xing-tai-zong-he-4.m3u8|https://stream1.freetv.fun/xing-tai-zong-he-6.m3u8|https://stream1.freetv.fun/xing-tai-zong-he-11.ctv|https://stream1.freetv.fun/xing-tai-zong-he-7.ctv
+#EXTINF:-1 tvg-name="邢台综合" group-title="其他台",邢台综合 [5普通]
+https://stream1.freetv.fun/xing-tai-zong-he-12.m3u8|https://stream1.freetv.fun/xing-tai-zong-he-2.m3u8|https://stream1.freetv.fun/xing-tai-zong-he-4.m3u8|https://stream1.freetv.fun/xing-tai-zong-he-6.m3u8|https://stream1.freetv.fun/xing-tai-zong-he-11.ctv
 #EXTINF:-1 tvg-name="都江堰鱼嘴" group-title="其他台",都江堰鱼嘴 [1普通]
 https://gcalic.v.myalicdn.com/gc/djyqyl1_1/index.m3u8
 #EXTINF:-1 tvg-name="重温经典" group-title="其他台",重温经典 [1普通]
@@ -1319,10 +1223,10 @@ http://php.jdshipin.com/TVOD/iptv.php?id=cwjd
 https://stream1.freetv.fun/jin-chuan-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/jin-chuan-xin-wen-zong-he-3.m3u8
 #EXTINF:-1 tvg-name="金平综合" group-title="其他台",金平综合 [1普通]
 http://live.ynurl.com/video/s10041-JPTV/index.m3u8?zyund
-#EXTINF:-1 tvg-name="金鹰纪实" group-title="其他台" tvg-ipv6="true",金鹰纪实 [3IPv6+35普通]
-https://stream1.freetv.fun/ipv6-jin-ying-ji-shi-20.m3u8|https://stream1.freetv.fun/ipv6-jin-ying-ji-shi-15.m3u8|https://stream1.freetv.fun/ipv6-jin-ying-ji-shi-22.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-41.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-35.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-23.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-34.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-6.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-9.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-gao-qing-3.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-29.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-31.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-2.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-11.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-12.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-gao-qing-2.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-30.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-14.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-44.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-8.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-26.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-33.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-13.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-3.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-16.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-38.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-37.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-4.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-24.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-10.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-22.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-20.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-2.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-32.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-37.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-21.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-7.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-36.ctv
+#EXTINF:-1 tvg-name="金鹰纪实" group-title="其他台" tvg-ipv6="true",金鹰纪实 [3IPv6+34普通]
+https://stream1.freetv.fun/ipv6-jin-ying-ji-shi-22.m3u8|https://stream1.freetv.fun/ipv6-jin-ying-ji-shi-20.m3u8|https://stream1.freetv.fun/ipv6-jin-ying-ji-shi-15.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-26.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-8.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-23.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-3.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-14.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-13.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-30.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-2.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-35.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-31.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-38.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-24.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-4.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-6.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-gao-qing-2.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-16.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-gao-qing-3.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-37.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-41.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-11.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-44.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-29.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-34.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-12.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-33.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-9.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-2.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-32.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-37.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-10.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-20.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-22.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-21.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-36.ctv
 #EXTINF:-1 tvg-name="钱江都市" group-title="其他台",钱江都市 [3普通]
-https://stream1.freetv.fun/qian-jiang-du-shi-2.m3u8|https://stream1.freetv.fun/qian-jiang-du-shi-1.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?
+https://stream1.freetv.fun/qian-jiang-du-shi-1.m3u8|https://stream1.freetv.fun/qian-jiang-du-shi-2.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?
 #EXTINF:-1 tvg-name="铜陵新闻综合" group-title="其他台",铜陵新闻综合 [1普通]
 https://ls.qingting.fm/live/21303/64k.m3u8
 #EXTINF:-1 tvg-name="镇江新闻综合" group-title="其他台",镇江新闻综合 [1普通]
@@ -1365,8 +1269,6 @@ https://vd3.bdstatic.com/mda-rmc4iydm1hcz0pae/360p/h264/1765596390753990565/mda-
 https://vd3.bdstatic.com/mda-rmc4iydw2bzdy3xj/360p/h264/1765596380252732035/mda-rmc4iydw2bzdy3xj.mp4
 #EXTINF:-1 tvg-name="静心系列《热带泻湖大桥上 II》" group-title="其他台",静心系列《热带泻湖大桥上 II》 [1普通]
 https://vd3.bdstatic.com/mda-rmd2xi05rbcxzkdc/360p/h264/1765678346984587087/mda-rmd2xi05rbcxzkdc.mp4
-#EXTINF:-1 tvg-name="静心系列《热带泻湖大桥上 I》" group-title="其他台",静心系列《热带泻湖大桥上 I》 [1普通]
-https://vd3.bdstatic.com/mda-rmd27rnn3sp593bm/360p/h264/1765676274352870381/mda-rmd27rnn3sp593bm.mp4
 #EXTINF:-1 tvg-name="静心系列《舒适的冬季氛围》" group-title="其他台",静心系列《舒适的冬季氛围》 [1普通]
 https://vd3.bdstatic.com/mda-rmc4iygt5f2x1ymm/360p/h264/1765596390826681602/mda-rmc4iygt5f2x1ymm.mp4
 #EXTINF:-1 tvg-name="非凡新闻" group-title="其他台",非凡新闻 [2普通]
@@ -1398,7 +1300,7 @@ https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8
 #EXTINF:-1 tvg-name="龙华偶像台" group-title="其他台",龙华偶像台 [1普通]
 http://cdn8.163189.xyz/163189/lhox
 #EXTINF:-1 tvg-name="龙华戏剧" group-title="其他台",龙华戏剧 [12普通]
-http://nmk.ioapk.com:5050/li-litv-longturn18/index.m3u8?proxy=true|http://220.135.64.124:5050/li-litv-longturn18/index.m3u8?proxy=true|http://cdn8.veryfast.filegear-sg.me/live/lhxj/stream.m3u8|https://cdn8.163189.xyz/live/lhxj/stream.m3u8|https://cdn8.163189.xyz/163189/lhxj|http://cdn8.163189.xyz/163189/lhxj|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=litv-longturn18|http://xtvantsc.xyz/litv_ts.php?id=litv-longturn18|http://php.666230.xyz/smt.php?id=lunghuaxiju_twn|http://lzo.xh.sd/gt/lgz4G.php?id=litv-longturn18|http://rihou.cc:555/tv/[Pd]龙华戏剧|http://lzo.xh.sd/gt/lgz4G.php?id=li-litv-longturn18
+http://nmk.ioapk.com:5050/li-litv-longturn18/index.m3u8?proxy=true|http://220.135.64.124:5050/li-litv-longturn18/index.m3u8?proxy=true|http://cdn8.veryfast.filegear-sg.me/live/lhxj/stream.m3u8|https://cdn8.163189.xyz/live/lhxj/stream.m3u8|https://cdn8.163189.xyz/163189/lhxj|http://cdn8.163189.xyz/163189/lhxj|http://rihou.cc:555/tv/[Pd]龙华戏剧|http://lzo.xh.sd/gt/lgz4G.php?id=litv-longturn18|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=litv-longturn18|http://php.666230.xyz/smt.php?id=lunghuaxiju_twn|http://lzo.xh.sd/gt/lgz4G.php?id=li-litv-longturn18|http://xtvantsc.xyz/litv_ts.php?id=litv-longturn18
 #EXTINF:-1 tvg-name="龙华戏剧台" group-title="其他台",龙华戏剧台 [1普通]
 http://cdn8.163189.xyz/163189/lhxj
 #EXTINF:-1 tvg-name="龙华日韩台" group-title="其他台",龙华日韩台 [1普通]
@@ -1413,7 +1315,5 @@ http://jsmov2.a.yximgs.com/bs3/video-hls/5203346449046555193_hlsb.m3u8|https://c
 https://gcwbndali.v.myalicdn.com/gcwbnd/ipanda1000_2/index.m3u8
 #EXTINF:-1 tvg-name="📹️直播中国" group-title="其他台",📹️直播中国 [1普通]
 https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
-#EXTINF:-1 tvg-name="🔀九品芝麻官" group-title="其他台",🔀九品芝麻官 [1普通]
-https://alimov2.a.kwimgs.com/upic/2021/12/28/11/BMjAyMTEyMjgxMTIyMTJfNDAzMDAxOTlfNjM2NjgxODA5MTBfMF8z_b_B6a0bcfcdbdaac183fa7dcbcd3e11bcaf.mp4
 #EXTINF:-1 tvg-name="🔀逃学威龙2" group-title="其他台",🔀逃学威龙2 [1普通]
 https://alimov2.a.kwimgs.com/upic/2021/12/28/16/BMjAyMTEyMjgxNjUxMzhfNDAzMDAxOTlfNjM2ODQ1ODYxNzhfMF8z_b_Ba5bdfedb34d432e906dbc401975d5387.mp4
