@@ -1,7 +1,7 @@
 #EXTM3U
 # 新疆维吾尔自治区频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-05 03:09:43
-# 电视台数量: 1
+# 更新时间(北京时间): 2026-02-06 03:08:19
+# 电视台数量: 2
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -9,5 +9,7 @@
 # 白名单功能: 启用
 # 测速功能: 启用
 
+#EXTINF:-1 tvg-name="女篮俱乐部杯 东莞新彤盛VS新疆天山 赛场原声 19:25" group-title="新疆维吾尔自治区",女篮俱乐部杯 东莞新彤盛VS新疆天山 赛场原声 19:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E4%B8%9C%E8%8E%9E%E6%96%B0%E5%BD%A4%E7%9B%9BVS%E6%96%B0%E7%96%86%E5%A4%A9%E5%B1%B1%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2019%3A25
 #EXTINF:-1 tvg-name="新疆天山" group-title="新疆维吾尔自治区",新疆天山 [3普通]
 https://gcalic.v.myalicdn.com/gc/xjtcdhsz_1/index.m3u8|https://gcalic.v.myalicdn.com/gc/xjtcdgs_1/index.m3u8|https://gcalic.v.myalicdn.com/gc/xjtcmys_1/index.m3u8

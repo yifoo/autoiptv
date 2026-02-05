@@ -1,6 +1,6 @@
 #EXTM3U
 # 景区频道频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-05 03:09:43
+# 更新时间(北京时间): 2026-02-06 03:08:19
 # 电视台数量: 18
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
@@ -33,8 +33,8 @@ https://gcalic.v.myalicdn.com/gc/taishan06_1/index.m3u8
 https://gcalic.v.myalicdn.com/gc/hkts02_1/index.m3u8
 #EXTINF:-1 tvg-name="泰山碧霞祠" group-title="景区频道",泰山碧霞祠 [1普通]
 https://gcalic.v.myalicdn.com/gc/hkts03_1/index.m3u8
-#EXTINF:-1 tvg-name="福建旅游" group-title="景区频道" tvg-logo="福建旅游.png",福建旅游 [2普通]
-https://stream1.freetv.fun/fu-jian-lu-you-6.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjly
+#EXTINF:-1 tvg-name="福建旅游" group-title="景区频道" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建旅游.png",福建旅游 [1普通]
+https://stream1.freetv.fun/fu-jian-lu-you-6.m3u8
 #EXTINF:-1 tvg-name="黄山" group-title="景区频道",黄山 [1普通]
 https://gcalic.v.myalicdn.com/gc/ahhs01_1/index.m3u8
 #EXTINF:-1 tvg-name="黄山卧云峰" group-title="景区频道",黄山卧云峰 [1普通]
