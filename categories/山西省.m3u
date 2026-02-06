@@ -1,7 +1,7 @@
 #EXTM3U
 # 山西省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-06 03:08:19
-# 电视台数量: 2
+# 更新时间(北京时间): 2026-02-07 03:12:28
+# 电视台数量: 3
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -9,6 +9,8 @@
 # 白名单功能: 启用
 # 测速功能: 启用
 
+#EXTINF:-1 tvg-name="女篮俱乐部杯 石家庄英励VS山西竹叶青酒 赛场原声 19:25" group-title="山西省",女篮俱乐部杯 石家庄英励VS山西竹叶青酒 赛场原声 19:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E7%9F%B3%E5%AE%B6%E5%BA%84%E8%8B%B1%E5%8A%B1VS%E5%B1%B1%E8%A5%BF%E7%AB%B9%E5%8F%B6%E9%9D%92%E9%85%92%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2019%3A25
 #EXTINF:-1 tvg-name="女篮俱乐部杯 辽宁大连体产VS山西竹叶青酒 赛场原声 16:55" group-title="山西省",女篮俱乐部杯 辽宁大连体产VS山西竹叶青酒 赛场原声 16:55 [1普通]
 https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E8%BE%BD%E5%AE%81%E5%A4%A7%E8%BF%9E%E4%BD%93%E4%BA%A7VS%E5%B1%B1%E8%A5%BF%E7%AB%B9%E5%8F%B6%E9%9D%92%E9%85%92%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2016%3A55
 #EXTINF:-1 tvg-name="湖南张家界天门山西线玻璃栈道" group-title="山西省" tvg-logo="https://tb.zbds.top/logo/湖南张家界天门山西线玻璃栈道.png",湖南张家界天门山西线玻璃栈道 [1普通]
