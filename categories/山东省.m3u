@@ -1,7 +1,7 @@
 #EXTM3U
 # 山东省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-07 03:12:28
-# 电视台数量: 5
+# 更新时间(北京时间): 2026-02-08 02:53:26
+# 电视台数量: 6
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -11,11 +11,13 @@
 
 #EXTINF:-1 tvg-name="女篮俱乐部杯 厦门环东文旅VS山东赤水河酒 赛场原声 14:25" group-title="山东省",女篮俱乐部杯 厦门环东文旅VS山东赤水河酒 赛场原声 14:25 [1普通]
 https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%8E%A6%E9%97%A8%E7%8E%AF%E4%B8%9C%E6%96%87%E6%97%85VS%E5%B1%B1%E4%B8%9C%E8%B5%A4%E6%B0%B4%E6%B2%B3%E9%85%92%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2014%3A25
+#EXTINF:-1 tvg-name="女篮俱乐部杯 陕西榆林天泽VS山东赤水河酒 赛场原声 16:55" group-title="山东省",女篮俱乐部杯 陕西榆林天泽VS山东赤水河酒 赛场原声 16:55 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E9%99%95%E8%A5%BF%E6%A6%86%E6%9E%97%E5%A4%A9%E6%B3%BDVS%E5%B1%B1%E4%B8%9C%E8%B5%A4%E6%B0%B4%E6%B2%B3%E9%85%92%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2016%3A55
 #EXTINF:-1 tvg-name="山东农科" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东农科.png",山东农科 [1普通]
 http://58.57.40.22:9901/tsfile/live/1022_1.m3u8
 #EXTINF:-1 tvg-name="山东文旅" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东文旅.png",山东文旅 [1普通]
 http://58.57.40.22:9901/tsfile/live/1023_1.m3u8
 #EXTINF:-1 tvg-name="山东新闻" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东新闻.png",山东新闻 [5普通]
-https://stream1.freetv.fun/shan-dong-xin-wen-2.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-7.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-3.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-10.m3u8|http://live.xmcdn.com/live/1440/64.m3u8
+https://stream1.freetv.fun/shan-dong-xin-wen-2.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-3.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-7.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-10.m3u8|http://live.xmcdn.com/live/1440/64.m3u8
 #EXTINF:-1 tvg-name="山东生活" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东生活.png",山东生活 [2普通]
 http://58.57.40.22:9901/tsfile/live/1018_1.m3u8|http://live.xmcdn.com/live/802/64.m3u8
