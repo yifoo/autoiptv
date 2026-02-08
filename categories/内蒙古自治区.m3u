@@ -1,25 +1,22 @@
 #EXTM3U
 # 内蒙古自治区频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-03 22:10:47
-# 电视台数量: 8
+# 更新时间(北京时间): 2026-02-08 20:13:03
+# 电视台数量: 6
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
-# 黑名单功能: 禁用
+# 黑名单功能: 启用
+# 白名单功能: 启用
 # 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="内蒙古" group-title="内蒙古自治区",内蒙古 [1IPv4]
-http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221225836/index.m3u8
-#EXTINF:-1 tvg-name="内蒙古农牧" group-title="内蒙古自治区" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531161624183518_95.jpg",内蒙古农牧 [2IPv4]
-https://stream1.freetv.fun/9de3712db8adc1163caba9b15f0ba365f944fcb44bcf406d2a69fc0cf741c50b.m3u8|https://epg.pw/stream/f426a12024c3d2a6271d7b4e1514b8da71aeef77a9033c211e1e49a8386a8668.m3u8
-#EXTINF:-1 tvg-name="内蒙古新闻广播" group-title="内蒙古自治区" tvg-logo="http://pic.qingting.fm/2011/0926/20110926100610683.jpg",内蒙古新闻广播 [1IPv4]
+#EXTINF:-1 tvg-name="内蒙古新闻广播" group-title="内蒙古自治区" tvg-logo="http://pic.qingting.fm/2011/0926/20110926100610683.jpg",内蒙古新闻广播 [1普通]
 https://satellitepull.cnr.cn/live/wx32nmghyzhxwgb/playlist.m3u8
-#EXTINF:-1 tvg-name="内蒙古经济生活" group-title="内蒙古自治区" tvg-logo="https://epg.pw/media/images/channel/2022/05/31/large/20220531224556038609_37.jpg",内蒙古经济生活 [1IPv4]
-https://stream1.freetv.fun/812990976297843210fc44be0e0edee64a02f134c8f755a070807e6665a03e04.m3u8
-#EXTINF:-1 tvg-name="内蒙古经济生活广播" group-title="内蒙古自治区" tvg-logo="http://pic.qingting.fm/2015/0804/20150804105202673.jpg",内蒙古经济生活广播 [1IPv4]
+#EXTINF:-1 tvg-name="内蒙古经济生活" group-title="内蒙古自治区" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/内蒙古经济生活.png",内蒙古经济生活 [1普通]
+https://ls.qingting.fm/live/1885/64k.m3u8
+#EXTINF:-1 tvg-name="内蒙古经济生活广播" group-title="内蒙古自治区" tvg-logo="http://pic.qingting.fm/2015/0804/20150804105202673.jpg",内蒙古经济生活广播 [1普通]
 https://satellitepull.cnr.cn/live/wx32nmgjjgb/playlist.m3u8
-#EXTINF:-1 tvg-name="内蒙古蒙语对外广播草原之声" group-title="内蒙古自治区" tvg-logo="http://pic.qingting.fm/2015/0324/20150324134256614.jpg",内蒙古蒙语对外广播草原之声 [1IPv4]
+#EXTINF:-1 tvg-name="内蒙古蒙语对外广播草原之声" group-title="内蒙古自治区" tvg-logo="http://pic.qingting.fm/2015/0324/20150324134256614.jpg",内蒙古蒙语对外广播草原之声 [1普通]
 https://satellitepull.cnr.cn/live/wx32nmgdwgb/playlist.m3u8
-#EXTINF:-1 tvg-name="内蒙古蒙语新闻广播" group-title="内蒙古自治区" tvg-logo="http://pic.qingting.fm/2011/0926/20110926100552676.jpg",内蒙古蒙语新闻广播 [1IPv4]
+#EXTINF:-1 tvg-name="内蒙古蒙语新闻广播" group-title="内蒙古自治区" tvg-logo="http://pic.qingting.fm/2011/0926/20110926100552676.jpg",内蒙古蒙语新闻广播 [1普通]
 https://satellitepull.cnr.cn/live/wx32nmgmygb/playlist.m3u8
-#EXTINF:-1 tvg-name="内蒙古评书曲艺广播" group-title="内蒙古自治区" tvg-logo="http://pic.qingting.fm/2011/0926/20110926100411244.jpg",内蒙古评书曲艺广播 [1IPv4]
+#EXTINF:-1 tvg-name="内蒙古评书曲艺广播" group-title="内蒙古自治区" tvg-logo="http://pic.qingting.fm/2011/0926/20110926100411244.jpg",内蒙古评书曲艺广播 [1普通]
 https://satellitepull.cnr.cn/live/wx32nmgpsqy/playlist.m3u8

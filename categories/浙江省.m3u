@@ -1,59 +1,110 @@
 #EXTM3U
 # 浙江省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-08 02:53:26
-# 电视台数量: 24
+# 更新时间(北京时间): 2026-02-08 20:13:03
+# 电视台数量: 50
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
-# 测速功能: 启用
+# 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="女篮俱乐部杯 福建金篮VS浙江稠州银行 全场回放（现场解说） 16:55" group-title="浙江省",女篮俱乐部杯 福建金篮VS浙江稠州银行 全场回放（现场解说） 16:55 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E7%A6%8F%E5%BB%BA%E9%87%91%E7%AF%AEVS%E6%B5%99%E6%B1%9F%E7%A8%A0%E5%B7%9E%E9%93%B6%E8%A1%8C%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E7%8E%B0%E5%9C%BA%E8%A7%A3%E8%AF%B4%EF%BC%89%2016%3A55
+#EXTINF:-1 tvg-name="女篮俱乐部杯 浙江稠州银行VS东莞新彤盛 全场回放（现场解说） 14:25" group-title="浙江省",女篮俱乐部杯 浙江稠州银行VS东莞新彤盛 全场回放（现场解说） 14:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E6%B5%99%E6%B1%9F%E7%A8%A0%E5%B7%9E%E9%93%B6%E8%A1%8CVS%E4%B8%9C%E8%8E%9E%E6%96%B0%E5%BD%A4%E7%9B%9B%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E7%8E%B0%E5%9C%BA%E8%A7%A3%E8%AF%B4%EF%BC%89%2014%3A25&line=1
 #EXTINF:-1 tvg-name="浙江 乌镇全景" group-title="浙江省",浙江 乌镇全景 [1普通]
 https://gcalic.v.myalicdn.com/gc/zjwzblt_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="浙江 普陀山" group-title="浙江省",浙江 普陀山 [1普通]
 https://gcalic.v.myalicdn.com/gc/pts01_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-name="浙江6套" group-title="浙江省",浙江6套 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel06/1080p.m3u8?k=7902d458851930a3cab9763349e1425c&t=1577153702
+#EXTINF:-1 tvg-name="浙江之声" group-title="浙江省" tvg-logo="https://live.fanmingming.com/radio/浙江之声.png",浙江之声 [1普通]
+https://satellitepull.cnr.cn/live/wxzjzs/playlist.m3u8
+#EXTINF:-1 tvg-name="浙江交通之声" group-title="浙江省" tvg-logo="https://live.fanmingming.com/radio/浙江交通之声.png",浙江交通之声 [1普通]
+https://satellitepull.cnr.cn/live/wxzjjtgb/playlist.m3u8
+#EXTINF:-1 tvg-name="浙江休闲台" group-title="浙江省",浙江休闲台 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel06/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江公共" group-title="浙江省" tvg-quality="高清",浙江公共 [1普通]
 https://ct-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江公共F" group-title="浙江省" tvg-quality="高清",浙江公共F [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8?k=4812130c6c3788cf5c6a6ba64a47678c&t=1577153743
 #EXTINF:-1 tvg-name="浙江公共新闻" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江公共新闻.png",浙江公共新闻 [3普通]
 https://stream1.freetv.fun/zhe-jiang-gong-gong-xin-wen-2.ctv|http://ali-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江国际" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江国际.png" tvg-quality="高清",浙江国际 [14普通]
-https://stream1.freetv.fun/zhe-jiang-guo-ji-7.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-10.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-8.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-11.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-6.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-5.m3u8|https://ct-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8?|https://qiniup-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8|http://ali-xwl.cztv.com/live/channel101080Plxw.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8?zzhed
-#EXTINF:-1 tvg-name="浙江影视" group-title="浙江省" tvg-quality="标清",浙江影视 [2普通]
-https://qiniup-m-l.cztv.com/channels/lantian/channel005/1080p.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel005/1080p.m3u8?
+#EXTINF:-1 tvg-name="浙江国际" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江国际.png" tvg-quality="高清",浙江国际 [17普通]
+https://ct-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-7.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-10.m3u8|https://qiniup-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-5.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8?|https://stream1.freetv.fun/zhe-jiang-guo-ji-8.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-11.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-6.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8|http://ali-xwl.cztv.com/live/channel101080Plxw.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8?zzhed|http://hw-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8?k=1a7559a51eeb880b021619a07f463ac4&t=1577153787|http://hw-m-l.cztv.com/channels/lantian/channel10/360p.m3u8|http://yd-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江国际F" group-title="浙江省" tvg-quality="高清",浙江国际F [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8?k=48877e6c28c2a0215eb8712eb48b888d&t=1577153884
+#EXTINF:-1 tvg-name="浙江城市之声" group-title="浙江省" tvg-logo="https://live.fanmingming.com/radio/浙江城市之声.png",浙江城市之声 [1普通]
+https://satellitepull.cnr.cn/live/wxzjcszs/playlist.m3u8
+#EXTINF:-1 tvg-name="浙江好易购" group-title="浙江省",浙江好易购 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel011/1080p.m3u8?k=1a7559a51eeb880b021619a07f463ac4&t=1577153787
+#EXTINF:-1 tvg-name="浙江少儿台" group-title="浙江省",浙江少儿台 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel08/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江影视" group-title="浙江省" tvg-quality="标清",浙江影视 [5普通]
+https://qiniup-m-l.cztv.com/channels/lantian/channel005/1080p.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel005/1080p.m3u8?|http://hw-m-l.cztv.com/channels/lantian/channel05/720p.m3u8|http://yd-m-l.cztv.com/channels/lantian/channel05/1080p.m3u8|http://yd-m-l.cztv.com/channels/lantian/channel05/1080p.m3u8?k=1a7559a51eeb880b021619a07f463ac4&t=1577153787
+#EXTINF:-1 tvg-name="浙江影视台" group-title="浙江省",浙江影视台 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel05/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江影视娱乐F" group-title="浙江省" tvg-quality="高清",浙江影视娱乐F [1普通]
+http://yd-m-l.cztv.com/channels/lantian/channel05/1080p.m3u8?k=79b277c166767a9e072b9629b446d4e9&t=1577153637
 #EXTINF:-1 tvg-name="浙江教科" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江教科影视.png",浙江教科 [3普通]
 https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8|http://zwebl02.cztv.com/live/channel041080P.m3u8?auth_key=2524708799-0-0-f195b808217db133bfd648edc01e91fa
-#EXTINF:-1 tvg-name="浙江教科影视" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江教科影视.png",浙江教科影视 [3普通]
-http://ali-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8|http://ali-xwl.cztv.com/live/channel041080Plxw.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江教育" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江教育.png",浙江教育 [1普通]
-https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8?
+#EXTINF:-1 tvg-name="浙江教科影视" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江教科影视.png",浙江教科影视 [6普通]
+http://ali-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8|http://ali-xwl.cztv.com/live/channel041080Plxw.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel04/360p.m3u8|http://yd-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8|http://yd-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8?k=1a7559a51eeb880b021619a07f463ac4&t=1577153787
+#EXTINF:-1 tvg-name="浙江教育" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江教育.png",浙江教育 [2普通]
+https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8?|https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江教育台" group-title="浙江省",浙江教育台 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江教育科技" group-title="浙江省",浙江教育科技 [1普通]
+http://125.210.152.20:9090/live/hzgq-zjjygq-h264.m3u8
 #EXTINF:-1 tvg-name="浙江数码时代" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江数码时代.png",浙江数码时代 [2普通]
 https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8\r\n|http://hw-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江新闻" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江新闻.png",浙江新闻 [9普通]
-https://stream1.freetv.fun/zhe-jiang-xin-wen-10.m3u8|https://stream1.freetv.fun/zhe-jiang-xin-wen-9.m3u8|http://101.66.198.203:9901/tsfile/live/1005_1.m3u8?key=txiptv&playlive=0&authid=0|https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8?|http://ali-xwl.cztv.com/live/channel071080Plxw.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8?zzhed|http://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江民生" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江民生休闲.png",浙江民生 [3普通]
-https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel06/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江民生休闲" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江民生休闲.png",浙江民生休闲 [11普通]
-https://stream1.freetv.fun/zhe-jiang-min-sheng-9.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-8.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-7.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-xiu-xian-5.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-xiu-xian-3.ctv|https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8?|https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8|http://ali-xwl.cztv.com/live/channel061080Plxw.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel06/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江新闻" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江新闻.png",浙江新闻 [13普通]
+https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8|https://stream1.freetv.fun/zhe-jiang-xin-wen-9.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8?|https://stream1.freetv.fun/zhe-jiang-xin-wen-10.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8|http://101.66.198.203:9901/tsfile/live/1005_1.m3u8?key=txiptv&playlive=0&authid=0|http://ali-xwl.cztv.com/live/channel071080Plxw.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8?zzhed|http://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8|http://125.210.152.19:9090/live/hzgq-zjnewsgq-h264.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel07/360p.m3u8|http://yd-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江旅游之声" group-title="浙江省" tvg-logo="https://live.fanmingming.com/radio/浙江旅游之声.png",浙江旅游之声 [1普通]
+https://satellitepull.cnr.cn/live/wxzj1045/playlist.m3u8
+#EXTINF:-1 tvg-name="浙江民生" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江民生休闲.png",浙江民生 [5普通]
+https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8?|http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel06/1080p.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel06/1080p.m3u8?k=1a7559a51eeb880b021619a07f463ac4&t=1577153787
+#EXTINF:-1 tvg-name="浙江民生休闲" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江民生休闲.png",浙江民生休闲 [14普通]
+https://stream1.freetv.fun/zhe-jiang-min-sheng-9.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-8.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8?|https://stream1.freetv.fun/zhe-jiang-min-sheng-7.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-xiu-xian-5.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-xiu-xian-3.ctv|http://ali-xwl.cztv.com/live/channel061080Plxw.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel06/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8|http://125.210.152.19:9090/live/hzgq-msxxgq-h264.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel06/360p.m3u8|http://yd-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江民生资讯广播" group-title="浙江省" tvg-logo="https://live.fanmingming.com/radio/浙江民生广播.png",浙江民生资讯广播 [1普通]
+https://satellitepull.cnr.cn/live/wxzjmsgb/playlist.m3u8
+#EXTINF:-1 tvg-name="浙江浙江休闲" group-title="浙江省",浙江浙江休闲 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel06/720p.m3u8
+#EXTINF:-1 tvg-name="浙江浙江国际" group-title="浙江省",浙江浙江国际 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel10/720p.m3u8
+#EXTINF:-1 tvg-name="浙江浙江教育" group-title="浙江省",浙江浙江教育 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel04/720p.m3u8
+#EXTINF:-1 tvg-name="浙江浙江新闻" group-title="浙江省",浙江浙江新闻 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel07/720p.m3u8
+#EXTINF:-1 tvg-name="浙江浙江留学" group-title="浙江省",浙江浙江留学 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel09/720p.m3u8
+#EXTINF:-1 tvg-name="浙江浙江经济" group-title="浙江省",浙江浙江经济 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel03/720p.m3u8
 #EXTINF:-1 tvg-name="浙江生活" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江生活.png",浙江生活 [10普通]
-https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-6.m3u8|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-1.ctv|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-7.ctv|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-8.ctv|https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8?|https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8\r\n|http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8|http://ali-xwl.cztv.com/live/channel031080Plxw.m3u8
-#EXTINF:-1 tvg-name="浙江省城市篮球联赛 丽水71 93杭州 25/26赛季浙江省城市篮球联赛: 丽水VS杭州 19:30" group-title="浙江省",浙江省城市篮球联赛 丽水71 93杭州 25/26赛季浙江省城市篮球联赛: 丽水VS杭州 19:30 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%B5%99%E6%B1%9F%E7%9C%81%E5%9F%8E%E5%B8%82%E7%AF%AE%E7%90%83%E8%81%94%E8%B5%9B%20%E4%B8%BD%E6%B0%B471-93%E6%9D%AD%E5%B7%9E%2025%2F26%E8%B5%9B%E5%AD%A3%E6%B5%99%E6%B1%9F%E7%9C%81%E5%9F%8E%E5%B8%82%E7%AF%AE%E7%90%83%E8%81%94%E8%B5%9B%3A%20%E4%B8%BD%E6%B0%B4VS%E6%9D%AD%E5%B7%9E%2019%3A30
-#EXTINF:-1 tvg-name="浙江省城市篮球联赛 杭州VS丽水 25/26赛季浙江省城市篮球联赛: 杭州VS丽水 19:30" group-title="浙江省",浙江省城市篮球联赛 杭州VS丽水 25/26赛季浙江省城市篮球联赛: 杭州VS丽水 19:30 [1普通]
-https://iptv.catvod.com/live.php?id=%E6%B5%99%E6%B1%9F%E7%9C%81%E5%9F%8E%E5%B8%82%E7%AF%AE%E7%90%83%E8%81%94%E8%B5%9B%20%E6%9D%AD%E5%B7%9EVS%E4%B8%BD%E6%B0%B4%2025%2F26%E8%B5%9B%E5%AD%A3%E6%B5%99%E6%B1%9F%E7%9C%81%E5%9F%8E%E5%B8%82%E7%AF%AE%E7%90%83%E8%81%94%E8%B5%9B%3A%20%E6%9D%AD%E5%B7%9EVS%E4%B8%BD%E6%B0%B4%2019%3A30
-#EXTINF:-1 tvg-name="浙江经济" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江经济生活.png",浙江经济 [1普通]
-https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江经济生活" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江经济生活.png",浙江经济生活 [3普通]
-http://ali-xwl.cztv.com/live/channel031080Plxw.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8?|https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8\r\n|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-6.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-1.ctv|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-7.ctv|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-8.ctv|http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8|http://ali-xwl.cztv.com/live/channel031080Plxw.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江留学世界台" group-title="浙江省",浙江留学世界台 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel09/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江经济" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/浙江经济生活.png",浙江经济 [2普通]
+https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江经济台" group-title="浙江省",浙江经济台 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江经济广播" group-title="浙江省" tvg-logo="https://live.fanmingming.com/radio/浙江经济广播.png",浙江经济广播 [1普通]
+https://satellitepull.cnr.cn/live/wxzjjjgb/playlist.m3u8
+#EXTINF:-1 tvg-name="浙江经济生活" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江经济生活.png",浙江经济生活 [5普通]
+http://ali-xwl.cztv.com/live/channel031080Plxw.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel03/360p.m3u8|http://yd-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江经视" group-title="浙江省",浙江经视 [1普通]
+http://125.210.152.19:9090/live/hzgq-zjjsgq-h264.m3u8
+#EXTINF:-1 tvg-name="浙江经视F" group-title="浙江省" tvg-quality="高清",浙江经视F [1普通]
+http://yd-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8?k=3bc164885721feecc386b066a39b8567&t=1577153471
 #EXTINF:-1 tvg-name="浙江舟山东极岛" group-title="浙江省" tvg-logo="https://tb.zbds.top/logo/浙江舟山东极岛.png",浙江舟山东极岛 [2普通]
 https://gcalic.v.myalicdn.com/gc/djd01_1/index.m3u8|https://gcalic.v.myalicdn.com/gc/djd01_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="浙江遂昌" group-title="浙江省",浙江遂昌 [1普通]
 http://play-sh13.quklive.com/live/1708426592499070.m3u8?auth_key=2028414342-e92bda8423ad478c987a8b7ae82abe0e-0-c616f7fabb9675e1ed1d84d9edae7e07
 #EXTINF:-1 tvg-name="浙江钱江" group-title="浙江省" tvg-logo="https://live.fanmingming.cn/tv/钱江都市.png",浙江钱江 [9普通]
-https://stream1.freetv.fun/zhe-jiang-qian-jiang-du-shi-4.ctv|https://stream1.freetv.fun/zhe-jiang-qian-jiang-du-shi-5.ctv|https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8\r\n|http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?zzhed|http://ali-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?fbl=|http://ali-xwl.cztv.com/live/channel021080Plxw.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江钱江都市" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江钱江都市.png",浙江钱江都市 [1普通]
-http://ali-xwl.cztv.com/live/channel021080Plxw.m3u8
-#EXTINF:-1 tvg-name="浙江钱江频道" group-title="浙江省" tvg-logo="https://live.fanmingming.com/tv/钱江都市.png",浙江钱江频道 [1普通]
-http://hw-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
+https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8|https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8\r\n|https://stream1.freetv.fun/zhe-jiang-qian-jiang-du-shi-4.ctv|https://stream1.freetv.fun/zhe-jiang-qian-jiang-du-shi-5.ctv|http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?zzhed|http://ali-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8|http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?fbl=|http://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8|http://ali-xwl.cztv.com/live/channel021080Plxw.m3u8
+#EXTINF:-1 tvg-name="浙江钱江台" group-title="浙江省",浙江钱江台 [1普通]
+http://hw-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江钱江都市" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江钱江都市.png",浙江钱江都市 [4普通]
+http://ali-xwl.cztv.com/live/channel021080Plxw.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel02/360p.m3u8|http://hw-m-l.cztv.com/channels/lantian/channel02/720p.m3u8|http://yd-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
+#EXTINF:-1 tvg-name="浙江钱江频道" group-title="浙江省" tvg-logo="https://live.fanmingming.com/tv/钱江都市.png",浙江钱江频道 [2普通]
+http://hw-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8|http://125.210.152.20:9090/live/hzgq-qjpdgq-h264.m3u8
+#EXTINF:-1 tvg-name="浙江音乐调频•动听968" group-title="浙江省" tvg-logo="https://live.fanmingming.com/radio/动听968.png",浙江音乐调频•动听968 [1普通]
+https://satellitepull.cnr.cn/live/wxzj968/playlist.m3u8

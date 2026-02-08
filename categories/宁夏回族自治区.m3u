@@ -1,13 +1,22 @@
 #EXTM3U
 # 宁夏回族自治区频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-08 02:53:26
-# 电视台数量: 1
+# 更新时间(北京时间): 2026-02-08 20:13:03
+# 电视台数量: 6
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
-# 测速功能: 启用
+# 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="宁夏经济" group-title="宁夏回族自治区" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/宁夏经济.png",宁夏经济 [1普通]
-https://ls.qingting.fm/live/1841/64k.m3u8
+#EXTINF:-1 tvg-name="宁夏公共" group-title="宁夏回族自治区",宁夏公共 [1普通]
+http://livepgc.cmc.ningxiahuangheyun.com/pgc/041867befe3dde090202f620ade5b87c.m3u8?txSecret=39373ebcf0d57da2477968efb258e2b7&txTime=6235C9B6
+#EXTINF:-1 tvg-name="宁夏广播" group-title="宁夏回族自治区" tvg-logo="https://live.fanmingming.com/radio/宁夏广播.png",宁夏广播 [1普通]
+https://satellitepull.cnr.cn/live/wxnxyygb/playlist.m3u8
+#EXTINF:-1 tvg-name="宁夏新闻广播" group-title="宁夏回族自治区" tvg-logo="https://live.fanmingming.com/radio/宁夏新闻广播.png",宁夏新闻广播 [1普通]
+https://satellitepull.cnr.cn/live/wxnxxwgb/playlist.m3u8
+#EXTINF:-1 tvg-name="宁夏旅游广播" group-title="宁夏回族自治区" tvg-logo="https://live.fanmingming.com/radio/宁夏旅游广播.png",宁夏旅游广播 [1普通]
+https://satellitepull.cnr.cn/live/wxnxdsgb/playlist.m3u8
+#EXTINF:-1 tvg-name="宁夏经济" group-title="宁夏回族自治区" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/宁夏经济.png",宁夏经济 [6普通]
+https://ls.qingting.fm/live/1841/64k.m3u8|https://satellitepull.cnr.cn/live/wxnxjjgb/playlist.m3u8|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/nxjj/51/20251225/index.m3u8?msisdn=202602080402263caae75ff4844be6821875e8cd0e172e&mdspid=&spid=600697&netType=0&sid=5910022327&pid=2028597139&timestamp=20260208040226&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=962067520&ParentNodeID=-99&assertID=5910022327&client_ip=218.28.233.106&SecurityKey=20260208040226&promotionId=&mvid=5900006787&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=5f54c5a42149e3e2b1de4fe1d930fded|http://satellitepull.cnr.cn/live/wxnxjjgb/playlist.m3u8|http://livepgc.cmc.ningxiahuangheyun.com/pgc/10717759047cafd37fd87caa5883e9c2.m3u8?txSecret=6a3918f766d0ff625282376ffee72687&txTime=6235C9C1|http://www.nxtv.com.cn/m2o/channel/play.php?channel_id=7
+#EXTINF:-1 tvg-name="宁夏经济广播" group-title="宁夏回族自治区" tvg-logo="https://live.fanmingming.com/radio/宁夏经济广播.png",宁夏经济广播 [1普通]
+https://satellitepull.cnr.cn/live/wxnxjjgb/playlist.m3u8

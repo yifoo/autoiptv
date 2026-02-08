@@ -1,23 +1,134 @@
 #EXTM3U
 # 山东省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-08 02:53:26
-# 电视台数量: 6
+# 更新时间(北京时间): 2026-02-08 20:13:03
+# 电视台数量: 62
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
-# 测速功能: 启用
+# 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="女篮俱乐部杯 厦门环东文旅VS山东赤水河酒 赛场原声 14:25" group-title="山东省",女篮俱乐部杯 厦门环东文旅VS山东赤水河酒 赛场原声 14:25 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%8E%A6%E9%97%A8%E7%8E%AF%E4%B8%9C%E6%96%87%E6%97%85VS%E5%B1%B1%E4%B8%9C%E8%B5%A4%E6%B0%B4%E6%B2%B3%E9%85%92%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2014%3A25
+#EXTINF:-1 tvg-name="女篮俱乐部杯 厦门环东文旅VS山东赤水河酒 全场回放（原声） 14:25" group-title="山东省",女篮俱乐部杯 厦门环东文旅VS山东赤水河酒 全场回放（原声） 14:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%8E%A6%E9%97%A8%E7%8E%AF%E4%B8%9C%E6%96%87%E6%97%85VS%E5%B1%B1%E4%B8%9C%E8%B5%A4%E6%B0%B4%E6%B2%B3%E9%85%92%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%8E%9F%E5%A3%B0%EF%BC%89%2014%3A25&line=1
+#EXTINF:-1 tvg-name="女篮俱乐部杯 厦门环东文旅VS山东赤水河酒 全场回放（现场解说） 14:25" group-title="山东省",女篮俱乐部杯 厦门环东文旅VS山东赤水河酒 全场回放（现场解说） 14:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%8E%A6%E9%97%A8%E7%8E%AF%E4%B8%9C%E6%96%87%E6%97%85VS%E5%B1%B1%E4%B8%9C%E8%B5%A4%E6%B0%B4%E6%B2%B3%E9%85%92%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E7%8E%B0%E5%9C%BA%E8%A7%A3%E8%AF%B4%EF%BC%89%2014%3A25&line=1
+#EXTINF:-1 tvg-name="女篮俱乐部杯 山东赤水河酒VS四川蜀道远达 赛场原声 19:25" group-title="山东省",女篮俱乐部杯 山东赤水河酒VS四川蜀道远达 赛场原声 19:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%B1%B1%E4%B8%9C%E8%B5%A4%E6%B0%B4%E6%B2%B3%E9%85%92VS%E5%9B%9B%E5%B7%9D%E8%9C%80%E9%81%93%E8%BF%9C%E8%BE%BE%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2019%3A25&line=1
 #EXTINF:-1 tvg-name="女篮俱乐部杯 陕西榆林天泽VS山东赤水河酒 赛场原声 16:55" group-title="山东省",女篮俱乐部杯 陕西榆林天泽VS山东赤水河酒 赛场原声 16:55 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E9%99%95%E8%A5%BF%E6%A6%86%E6%9E%97%E5%A4%A9%E6%B3%BDVS%E5%B1%B1%E4%B8%9C%E8%B5%A4%E6%B0%B4%E6%B2%B3%E9%85%92%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2016%3A55
-#EXTINF:-1 tvg-name="山东农科" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东农科.png",山东农科 [1普通]
-http://58.57.40.22:9901/tsfile/live/1022_1.m3u8
-#EXTINF:-1 tvg-name="山东文旅" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东文旅.png",山东文旅 [1普通]
-http://58.57.40.22:9901/tsfile/live/1023_1.m3u8
-#EXTINF:-1 tvg-name="山东新闻" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东新闻.png",山东新闻 [5普通]
-https://stream1.freetv.fun/shan-dong-xin-wen-2.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-3.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-7.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-10.m3u8|http://live.xmcdn.com/live/1440/64.m3u8
-#EXTINF:-1 tvg-name="山东生活" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东生活.png",山东生活 [2普通]
-http://58.57.40.22:9901/tsfile/live/1018_1.m3u8|http://live.xmcdn.com/live/802/64.m3u8
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E9%99%95%E8%A5%BF%E6%A6%86%E6%9E%97%E5%A4%A9%E6%B3%BDVS%E5%B1%B1%E4%B8%9C%E8%B5%A4%E6%B0%B4%E6%B2%B3%E9%85%92%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2016%3A55&line=1
+#EXTINF:-1 tvg-name="山东东阿新闻综合" group-title="山东省",山东东阿新闻综合 [1普通]
+https://jsylivealone302.iqilu.com/donge/donge_tv01.m3u8
+#EXTINF:-1 tvg-name="山东东阿综艺信息" group-title="山东省",山东东阿综艺信息 [1普通]
+https://jsylivealone302.iqilu.com/donge/donge_tv02.m3u8
+#EXTINF:-1 tvg-name="山东临清经济信息" group-title="山东省",山东临清经济信息 [1普通]
+https://jsylivealone302.iqilu.com/live/linqing_tv02.m3u8
+#EXTINF:-1 tvg-name="山东临邑二套" group-title="山东省",山东临邑二套 [1普通]
+https://jsylivealone302.iqilu.com/linyi/linyi_tv02.m3u8
+#EXTINF:-1 tvg-name="山东临邑新闻频道" group-title="山东省",山东临邑新闻频道 [1普通]
+https://jsylivealone302.iqilu.com:443/linyi/linyi_tv01.m3u8
+#EXTINF:-1 tvg-name="山东临邑综合" group-title="山东省",山东临邑综合 [1普通]
+https://jsylivealone302.iqilu.com/linyi/linyi_tv01.m3u8
+#EXTINF:-1 tvg-name="山东临邑综合频道" group-title="山东省",山东临邑综合频道 [1普通]
+https://jsylivealone302.iqilu.com:443/linyi/linyi_tv02.m3u8
+#EXTINF:-1 tvg-name="山东乳山新闻" group-title="山东省",山东乳山新闻 [1普通]
+https://jsylivealone302.iqilu.com/live/rushan_tv01.m3u8
+#EXTINF:-1 tvg-name="山东乳山生活" group-title="山东省",山东乳山生活 [1普通]
+https://jsylivealone302.iqilu.com/live/rushan_tv02.m3u8
+#EXTINF:-1 tvg-name="山东交通广播" group-title="山东省" tvg-logo="https://live.fanmingming.com/radio/山东交通广播.png",山东交通广播 [1普通]
+https://satellitepull.cnr.cn/live/wxsdjtgb/playlist.m3u8
+#EXTINF:-1 tvg-name="山东体育休闲广播" group-title="山东省" tvg-logo="https://live.fanmingming.com/radio/山东体育休闲广播.png",山东体育休闲广播 [1普通]
+https://satellitepull.cnr.cn/live/wxsdtyxxgb/playlist.m3u8
+#EXTINF:-1 tvg-name="山东兖州新闻" group-title="山东省",山东兖州新闻 [1普通]
+https://jsylivealone302.iqilu.com/live/yanzhou_tv01.m3u8
+#EXTINF:-1 tvg-name="山东兖州生活频道" group-title="山东省",山东兖州生活频道 [1普通]
+https://jsylivealone302.iqilu.com/live/yanzhou_tv02.m3u8
+#EXTINF:-1 tvg-name="山东兰山综合" group-title="山东省",山东兰山综合 [1普通]
+https://jsylivealone302.iqilu.com/lanshan/lanshan_tv01.m3u8
+#EXTINF:-1 tvg-name="山东兰陵综合" group-title="山东省",山东兰陵综合 [1普通]
+https://jsylivealone302.iqilu.com/live/lanling_tv01.m3u8
+#EXTINF:-1 tvg-name="山东农科" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东农科.png",山东农科 [2普通]
+http://58.57.40.22:9901/tsfile/live/1022_1.m3u8|http://39.136.48.21:8089/PLTV/88888888/224/3221226018/index.m3u8
+#EXTINF:-1 tvg-name="山东冠县综合" group-title="山东省",山东冠县综合 [1普通]
+https://jsylivealone302.iqilu.com/guanxian/guanxian_tv01.m3u8
+#EXTINF:-1 tvg-name="山东寒亭新闻" group-title="山东省",山东寒亭新闻 [1普通]
+https://jsylivealone302.iqilu.com/live/hanting_tv01.m3u8
+#EXTINF:-1 tvg-name="山东峄城综合" group-title="山东省",山东峄城综合 [1普通]
+https://jsylivealone302.iqilu.com/live/yicheng_tv01.m3u8
+#EXTINF:-1 tvg-name="山东平原新闻" group-title="山东省",山东平原新闻 [1普通]
+https://jsylivealone302.iqilu.com/pingyuan/pingyuan_tv01.m3u8
+#EXTINF:-1 tvg-name="山东广饶新闻综合" group-title="山东省",山东广饶新闻综合 [1普通]
+https://jsylivealone302.iqilu.com/guangrao/guangrao_tv01.m3u8
+#EXTINF:-1 tvg-name="山东庆云新闻" group-title="山东省",山东庆云新闻 [1普通]
+https://jsylivealone302.iqilu.com/qingyun/qingyun_tv01.m3u8
+#EXTINF:-1 tvg-name="山东张店图文" group-title="山东省",山东张店图文 [1普通]
+https://jsylivealone302.iqilu.com/zhangdian/zhangdian_tv02.m3u8
+#EXTINF:-1 tvg-name="山东张店综合" group-title="山东省",山东张店综合 [1普通]
+https://jsylivealone302.iqilu.com/zhangdian/zhangdian_tv01.m3u8
+#EXTINF:-1 tvg-name="山东惠民影视" group-title="山东省",山东惠民影视 [1普通]
+https://jsylivealone302.iqilu.com/live/huimin_tv02.m3u8
+#EXTINF:-1 tvg-name="山东惠民综合" group-title="山东省",山东惠民综合 [1普通]
+https://jsylivealone302.iqilu.com/live/huimin_tv01.m3u8
+#EXTINF:-1 tvg-name="山东教育" group-title="山东省",山东教育 [4普通]
+https://migu.188766.xyz/?migutoken=dd67f17c15d989c861503984d4752ca7&id=%E5%B1%B1%E4%B8%9C%E6%95%99%E8%82%B2&type=yy|https://iptv.catvod.com/live.php?id=%E5%B1%B1%E4%B8%9C%E6%95%99%E8%82%B2&line=1|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sdjyws/51/20250915/index.m3u8?msisdn=20260208040228579f0410c12047feb4dc289539aa1d59&mdspid=&spid=600697&netType=0&sid=5910022199&pid=2028597139&timestamp=20260208040228&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=609154353&ParentNodeID=-99&assertID=5910022199&client_ip=218.28.233.106&SecurityKey=20260208040228&promotionId=&mvid=2200208305&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=dc0b432943999c15432342d0fd1e3406|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sdjyws/51/20250915/index.m3u8?msisdn=2026020808023307008bb274894c33a977499d003cbfad&mdspid=&spid=600697&netType=0&sid=5910022199&pid=2028597139&timestamp=20260208080233&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=609154353&ParentNodeID=-99&assertID=5910022199&client_ip=218.28.233.106&SecurityKey=20260208080233&promotionId=&mvid=2200208305&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=0af09cb2263fc2c2150654d7860cb678
+#EXTINF:-1 tvg-name="山东文旅" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东文旅.png",山东文旅 [2普通]
+http://58.57.40.22:9901/tsfile/live/1023_1.m3u8|http://119.164.216.162:9901/tsfile/live/1004_1.m3u8
+#EXTINF:-1 tvg-name="山东新泰乡村" group-title="山东省",山东新泰乡村 [1普通]
+https://jsylivealone302.iqilu.com/xintai/xintai_tv02.m3u8
+#EXTINF:-1 tvg-name="山东新闻" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东新闻.png",山东新闻 [6普通]
+http://live.xmcdn.com/live/1440/64.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-2.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-3.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-7.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-10.m3u8|http://119.164.216.162:9901/tsfile/live/1005_1.m3u8
+#EXTINF:-1 tvg-name="山东昌乐新闻" group-title="山东省",山东昌乐新闻 [1普通]
+https://jsylivealone302.iqilu.com/changle/changle_tv01.m3u8
+#EXTINF:-1 tvg-name="山东曹县新闻" group-title="山东省",山东曹县新闻 [1普通]
+https://jsylivealone302.iqilu.com/live/caoxian_tv01.m3u8
+#EXTINF:-1 tvg-name="山东榆林电视一套" group-title="山东省",山东榆林电视一套 [1普通]
+http://dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226377/1.m3u8
+#EXTINF:-1 tvg-name="山东济宁公共频道" group-title="山东省",山东济宁公共频道 [1普通]
+http://lives.jnnews.tv/video/s10001-JTV3/index.m3u8
+#EXTINF:-1 tvg-name="山东济宁图文频道" group-title="山东省",山东济宁图文频道 [1普通]
+http://lives.jnnews.tv/video/s10001-JTV4/index.m3u8
+#EXTINF:-1 tvg-name="山东济宁教育频道" group-title="山东省",山东济宁教育频道 [1普通]
+http://lives.jnnews.tv/video/s10001-JTV2/index.m3u8
+#EXTINF:-1 tvg-name="山东济宁综合频道" group-title="山东省",山东济宁综合频道 [1普通]
+http://lives.jnnews.tv/video/s10001-JNTV-1/index.m3u8
+#EXTINF:-1 tvg-name="山东生活" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东生活.png",山东生活 [3普通]
+http://live.xmcdn.com/live/802/64.m3u8|http://58.57.40.22:9901/tsfile/live/1018_1.m3u8|http://119.164.216.162:9901/tsfile/live/1007_1.m3u8
+#EXTINF:-1 tvg-name="山东禹城新闻" group-title="山东省",山东禹城新闻 [1普通]
+https://jsylivealone302.iqilu.com/yucheng/yucheng_tv01.m3u8
+#EXTINF:-1 tvg-name="山东经典广播" group-title="山东省" tvg-logo="https://live.fanmingming.com/radio/山东经典广播.png",山东经典广播 [1普通]
+https://satellitepull.cnr.cn/live/wxsdshxxgb/playlist.m3u8
+#EXTINF:-1 tvg-name="山东经济广播" group-title="山东省" tvg-logo="https://live.fanmingming.com/radio/山东经济广播.png",山东经济广播 [1普通]
+https://satellitepull.cnr.cn/live/wxsdjjgb/playlist.m3u8
+#EXTINF:-1 tvg-name="山东罗庄综合" group-title="山东省",山东罗庄综合 [1普通]
+https://jsylivealone302.iqilu.com/live/luozhuang_tv01.m3u8
+#EXTINF:-1 tvg-name="山东茌平生活" group-title="山东省",山东茌平生活 [1普通]
+https://jsylivealone302.iqilu.com/live/chiping_tv02.m3u8
+#EXTINF:-1 tvg-name="山东茌平综合" group-title="山东省",山东茌平综合 [1普通]
+https://jsylivealone302.iqilu.com/live/chiping_tv01.m3u8
+#EXTINF:-1 tvg-name="山东菏泽影视" group-title="山东省",山东菏泽影视 [1普通]
+http://live.hznet.tv:1935/live/live3/500K/tzwj_video.m3u8
+#EXTINF:-1 tvg-name="山东菏泽经济生活" group-title="山东省",山东菏泽经济生活 [1普通]
+http://live.hznet.tv:1935/live/live2/500K/tzwj_video.m3u8
+#EXTINF:-1 tvg-name="山东邹平民生" group-title="山东省",山东邹平民生 [1普通]
+https://jsylivealone302.iqilu.com/zouping/zouping_tv02.m3u8
+#EXTINF:-1 tvg-name="山东郓城新闻综合" group-title="山东省",山东郓城新闻综合 [1普通]
+https://jsylivealone302.iqilu.com/live/yuncheng_tv01.m3u8
+#EXTINF:-1 tvg-name="山东鄄城综合" group-title="山东省",山东鄄城综合 [1普通]
+https://jsylivealone302.iqilu.com/live/juancheng_tv01.m3u8
+#EXTINF:-1 tvg-name="山东黄岛健康频道" group-title="山东省",山东黄岛健康频道 [1普通]
+http://xhalive.qwmedia.cn/hdratv-live/xha-jkpd.flv
+#EXTINF:-1 tvg-name="山东黄岛房车频道" group-title="山东省",山东黄岛房车频道 [1普通]
+http://xhalive.qwmedia.cn/hdratv-live/xha-fcpd.flv
+#EXTINF:-1 tvg-name="山东黄岛教育频道" group-title="山东省",山东黄岛教育频道 [1普通]
+http://xhalive.qwmedia.cn/hdratv-live/xha-jypd.flv
+#EXTINF:-1 tvg-name="山东黄岛新闻综合" group-title="山东省",山东黄岛新闻综合 [2普通]
+https://jsylivealone302.iqilu.com/huangdao/huangdao_tv01.m3u8|http://qdxmtlive.qwmedia.cn/hdratv-live/xha-xwpd.flv
+#EXTINF:-1 tvg-name="山东黄岛新闻频道" group-title="山东省",山东黄岛新闻频道 [1普通]
+http://xhalive.qwmedia.cn/hdratv-live/xha-xwpd.flv
+#EXTINF:-1 tvg-name="山东黄岛生活" group-title="山东省",山东黄岛生活 [1普通]
+https://jsylivealone302.iqilu.com/huangdao/huangdao_tv02.m3u8
+#EXTINF:-1 tvg-name="山东黄岛生活财经" group-title="山东省",山东黄岛生活财经 [1普通]
+http://qdxmtlive.qwmedia.cn/hdratv-live/xha-fcpd.flv
+#EXTINF:-1 tvg-name="山东黄岛生活频道" group-title="山东省",山东黄岛生活频道 [1普通]
+http://xhalive.qwmedia.cn/hdratv-live/xha-shpd.flv
+#EXTINF:-1 tvg-name="山东齐鲁" group-title="山东省",山东齐鲁 [1普通]
+http://119.164.216.162:9901/tsfile/live/1003_1.m3u8

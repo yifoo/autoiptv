@@ -1,39 +1,102 @@
 #EXTM3U
 # 影视台频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-08 02:53:26
-# 电视台数量: 14
+# 更新时间(北京时间): 2026-02-08 20:13:03
+# 电视台数量: 46
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
-# 测速功能: 启用
+# 测速功能: 禁用
 
 #EXTINF:-1 tvg-name="1905国外电影" group-title="影视台",1905国外电影 [1普通]
 http://php.jdshipin.com:8880/1905.php?id=1905dy2
-#EXTINF:-1 tvg-name="CHC动作电影" group-title="影视台" tvg-logo="https://live.fanmingming.cn/tv/CHC动作电影.png" tvg-ipv6="true",CHC动作电影 [4IPv6+24普通]
-https://stream1.freetv.fun/ipv6-chcdong-zuo-dian-ying-19.m3u8|https://stream1.freetv.fun/ipv6-chcdong-zuo-dian-ying-20.m3u8|https://stream1.freetv.fun/ipv6-chcdong-zuo-dian-ying-7.m3u8|https://stream1.freetv.fun/ipv6-chcdong-zuo-dian-ying-24.m3u8|https://www.freetv.top/migu/644368714.m3u8?migutoken=2e48d18419793654f347e8ca29e0028ce9f3eaaa7a108b006304178b8f790f34908f8a09bbb8f4b8b8abcf36e2341f1043dde8719cf4927fcd0dcde4667f8b91e68e820314791d9b70452862c9|https://stream1.freetv.fun/chcdong-zuo-dian-ying-21.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-16.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-8.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-29.m3u8|https://stream1.freetv.fun/chcdong-zuo-gao-qing-1.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-19.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-27.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-9.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-4.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-13.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-28.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-31.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-14.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-30.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-15.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-18.ctv|https://stream1.freetv.fun/chcdong-zuo-dian-ying-16.ctv|https://stream1.freetv.fun/chcdong-zuo-dian-ying-27.ctv|https://stream1.freetv.fun/chcdong-zuo-dian-ying-17.ctv|https://stream1.freetv.fun/chcdong-zuo-dian-ying-25.ctv|https://stream1.freetv.fun/chcdong-zuo-dian-ying-12.ctv|https://stream1.freetv.fun/chcdong-zuo-dian-ying-3.ctv|http://eastscreen.tv/ooooo.php?id=chcdz
-#EXTINF:-1 tvg-name="CHC家庭影院" group-title="影视台" tvg-logo="https://live.fanmingming.cn/tv/CHC家庭影院.png" tvg-ipv6="true",CHC家庭影院 [2IPv6+16普通]
-https://stream1.freetv.fun/ipv6-chcjia-ting-ying-yuan-2.m3u8|https://stream1.freetv.fun/ipv6-chcjia-ting-ying-yuan-18.m3u8|https://www.freetv.top/migu/644368373.m3u8?migutoken=b9d9d0ba0208e949cf0736455b86290b2d1d2ff4727f523b7117dde6eb883cb4582c5ce1519685e57d54bfb562057c10a00dde58bb674d8600fd2d918b8cb440294e083e7b8f19e0dbcc9250d8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-5.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-3.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-20.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-15.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-6.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-16.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-21.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-8.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-24.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-23.m3u8|https://www.freetv.top/migu/644368373.m3u8?migutoken=893aa32f9d861d92c0661b8125e5b12471106642e4d0f341956e45e2f60dbb2179c3b5b6f05c2e8242e24d254815578255456ce991c2d337b226ce49c025efe16f2d4715157e642b7447f0bf06|https://stream1.freetv.fun/chcjia-ting-ying-yuan-15.ctv|https://stream1.freetv.fun/chcjia-ting-ying-yuan-14.ctv|https://stream1.freetv.fun/chcjia-ting-ying-yuan-11.ctv|https://stream1.freetv.fun/chcjia-ting-ying-yuan-16.ctv
-#EXTINF:-1 tvg-name="CHC影迷电影" group-title="影视台" tvg-logo="https://live.fanmingming.cn/tv/CHC影迷电影.png" tvg-ipv6="true",CHC影迷电影 [2IPv6+15普通]
-https://stream1.freetv.fun/ipv6-chcying-mi-dian-ying-10.m3u8|https://stream1.freetv.fun/ipv6-chcying-mi-dian-ying-5.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-10.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-4.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-11.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-7.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-8.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-5.m3u8|https://stream1.freetv.fun/chcgao-qing-dian-ying-10.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-12.m3u8|https://stream1.freetv.fun/chcgao-qing-dian-ying-5.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-13.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-15.ctv|https://stream1.freetv.fun/chcying-mi-dian-ying-11.ctv|https://stream1.freetv.fun/chcying-mi-dian-ying-8.ctv|https://stream1.freetv.fun/chcying-mi-dian-ying-4.ctv|https://stream1.freetv.fun/chcying-mi-dian-ying-9.ctv
-#EXTINF:-1 tvg-name="上虞文化影院" group-title="影视台",上虞文化影院 [3普通]
-https://stream1.freetv.fun/shang-yu-wen-hua-ying-yuan-4.ctv|https://stream1.freetv.fun/shang-yu-wen-hua-ying-yuan-2.ctv|https://stream1.freetv.fun/shang-yu-wen-hua-ying-yuan-3.ctv
+#EXTINF:-1 tvg-name="CHC动作电影" group-title="影视台" tvg-logo="https://live.fanmingming.cn/tv/CHC动作电影.png" tvg-ipv6="true",CHC动作电影 [4IPv6+27普通]
+https://stream1.freetv.fun/ipv6-chcdong-zuo-dian-ying-19.m3u8|https://stream1.freetv.fun/ipv6-chcdong-zuo-dian-ying-20.m3u8|https://stream1.freetv.fun/ipv6-chcdong-zuo-dian-ying-7.m3u8|https://stream1.freetv.fun/ipv6-chcdong-zuo-dian-ying-24.m3u8|https://www.freetv.top/migu/644368714.m3u8?migutoken=2e48d18419793654f347e8ca29e0028ce9f3eaaa7a108b006304178b8f790f34908f8a09bbb8f4b8b8abcf36e2341f1043dde8719cf4927fcd0dcde4667f8b91e68e820314791d9b70452862c9|https://mgtv.ottiptv.cc/mg/644368714.m3u8?userid=5559462299&sign=24bfa416bfaebd5b3d04ad8765af607c5ffee52f344acf0b78f24dbe680407d8fc59c812cac9996f10722180d87075a2980d529110bf8278ab6a9190fcc0416ea941d7467d34f67eee5174d87a98ac926c&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-21.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-16.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-8.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-29.m3u8|https://stream1.freetv.fun/chcdong-zuo-gao-qing-1.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-19.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-27.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-9.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-4.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-13.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-28.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-31.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-14.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-30.m3u8|https://stream1.freetv.fun/chcdong-zuo-dian-ying-15.m3u8|https://iptv.catvod.com/live.php?id=CHC%E5%8A%A8%E4%BD%9C%E7%94%B5%E5%BD%B1&line=1|https://iptv.catvod.com/live.php?id=CHC%E5%8A%A8%E4%BD%9C%E7%94%B5%E5%BD%B1&line=2|https://stream1.freetv.fun/chcdong-zuo-dian-ying-18.ctv|https://stream1.freetv.fun/chcdong-zuo-dian-ying-16.ctv|https://stream1.freetv.fun/chcdong-zuo-dian-ying-27.ctv|https://stream1.freetv.fun/chcdong-zuo-dian-ying-17.ctv|https://stream1.freetv.fun/chcdong-zuo-dian-ying-25.ctv|https://stream1.freetv.fun/chcdong-zuo-dian-ying-12.ctv|https://stream1.freetv.fun/chcdong-zuo-dian-ying-3.ctv|http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226465/index.m3u8
+#EXTINF:-1 tvg-name="CHC家庭影院" group-title="影视台" tvg-logo="https://live.fanmingming.cn/tv/CHC家庭影院.png" tvg-ipv6="true",CHC家庭影院 [2IPv6+19普通]
+https://stream1.freetv.fun/ipv6-chcjia-ting-ying-yuan-2.m3u8|https://stream1.freetv.fun/ipv6-chcjia-ting-ying-yuan-18.m3u8|https://www.freetv.top/migu/644368373.m3u8?migutoken=b9d9d0ba0208e949cf0736455b86290b2d1d2ff4727f523b7117dde6eb883cb4582c5ce1519685e57d54bfb562057c10a00dde58bb674d8600fd2d918b8cb440294e083e7b8f19e0dbcc9250d8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-5.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-3.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-20.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-15.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-6.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-16.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-21.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-8.m3u8|https://www.freetv.top/migu/644368373.m3u8?migutoken=893aa32f9d861d92c0661b8125e5b12471106642e4d0f341956e45e2f60dbb2179c3b5b6f05c2e8242e24d254815578255456ce991c2d337b226ce49c025efe16f2d4715157e642b7447f0bf06|https://stream1.freetv.fun/chcjia-ting-ying-yuan-24.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-23.m3u8|https://stream1.freetv.fun/chcjia-ting-ying-yuan-15.ctv|https://iptv.catvod.com/live.php?id=CHC%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2&line=1|https://iptv.catvod.com/live.php?id=CHC%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2&line=2|https://stream1.freetv.fun/chcjia-ting-ying-yuan-14.ctv|https://stream1.freetv.fun/chcjia-ting-ying-yuan-11.ctv|https://stream1.freetv.fun/chcjia-ting-ying-yuan-16.ctv|http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226462/index.m3u8
+#EXTINF:-1 tvg-name="CHC影迷电影" group-title="影视台" tvg-logo="https://live.fanmingming.cn/tv/CHC影迷电影.png" tvg-ipv6="true",CHC影迷电影 [2IPv6+20普通]
+https://stream1.freetv.fun/ipv6-chcying-mi-dian-ying-10.m3u8|https://stream1.freetv.fun/ipv6-chcying-mi-dian-ying-5.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-10.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-4.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-11.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-7.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-8.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-5.m3u8|https://stream1.freetv.fun/chcgao-qing-dian-ying-10.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-12.m3u8|https://stream1.freetv.fun/chcgao-qing-dian-ying-5.m3u8|https://stream1.freetv.fun/chcying-mi-dian-ying-13.m3u8|https://migu.188766.xyz/?migutoken=8f0b93fe2e3e93ce25b5544aab17c94c&id=CHC%E5%BD%B1%E8%BF%B7%E7%94%B5%E5%BD%B1&type=yy|https://iptv.catvod.com/live.php?id=CHC%E5%BD%B1%E8%BF%B7%E7%94%B5%E5%BD%B1&line=1|https://iptv.catvod.com/live.php?id=CHC%E5%BD%B1%E8%BF%B7%E7%94%B5%E5%BD%B1&line=2|https://stream1.freetv.fun/chcying-mi-dian-ying-15.ctv|https://stream1.freetv.fun/chcying-mi-dian-ying-11.ctv|https://stream1.freetv.fun/chcying-mi-dian-ying-8.ctv|https://stream1.freetv.fun/chcying-mi-dian-ying-4.ctv|https://stream1.freetv.fun/chcying-mi-dian-ying-9.ctv|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/chcymdy/51/20250415/index.m3u8?msisdn=20260208080231f50e50382d5f45918e9aa4b2675625b7&mdspid=&spid=699004&netType=0&sid=5910022176&pid=2028597139&timestamp=20260208080231&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=952383261&ParentNodeID=-99&assertID=5910022176&client_ip=218.28.233.106&SecurityKey=20260208080231&promotionId=&mvid=5900006704&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=8209695c87b0591ce5cc83257513fa5b|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/chcymdy/51/20250415/index.m3u8?msisdn=2026020804022784dc2584341740ba882962706388dbc0&mdspid=&spid=699004&netType=0&sid=5910022176&pid=2028597139&timestamp=20260208040227&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=952383261&ParentNodeID=-99&assertID=5910022176&client_ip=218.28.233.106&SecurityKey=20260208040227&promotionId=&mvid=5900006704&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=4b2004dbadafcc065880590aaceec869
+#EXTINF:-1 tvg-name="CHC电影" group-title="影视台",CHC电影 [1普通]
+http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226463/index.m3u8
+#EXTINF:-1 tvg-name="IPTV经典电影" group-title="影视台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/IPTV经典电影.png",IPTV经典电影 [1普通]
+http://43.138.0.72:35455/yy/1382754187
+#EXTINF:-1 tvg-name="NewTV动作电影" group-title="影视台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/NewTV动作电影.png",NewTV动作电影 [3普通]
+https://iptv.catvod.com/live.php?id=NewTV%E5%8A%A8%E4%BD%9C%E7%94%B5%E5%BD%B1|http://ott.mobaibox.com/PLTV/3/224/3221227606/index.m3u8|http://php.jdshipin.com/TVOD/hnyd.php?id=200000001898/460000089800010003
+#EXTINF:-1 tvg-name="上虞文化影院" group-title="影视台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/上虞文化影院.png",上虞文化影院 [3普通]
+https://stream1.freetv.fun/shang-yu-wen-hua-ying-yuan-3.ctv|https://stream1.freetv.fun/shang-yu-wen-hua-ying-yuan-4.ctv|https://stream1.freetv.fun/shang-yu-wen-hua-ying-yuan-2.ctv
+#EXTINF:-1 tvg-name="东至影视频道" group-title="影视台",东至影视频道 [1普通]
+http://223.247.33.124:1935/live/yingshi/playlist.m3u8
+#EXTINF:-1 tvg-name="乌鲁木齐影视频道" group-title="影视台",乌鲁木齐影视频道 [6普通]
+http://202.107.188.139:5002/utv3_hdbq.m3u8?token=guoziyun|http://202.107.188.139:5002/utv3_hdcq.m3u8?token=guoziyun|http://202.107.188.139:5002/utv3_hdgq.m3u8?token=guoziyun|http://202.107.188.140:5002/utv3_hdbq.m3u8?token=guoziyun|http://202.107.188.140:5002/utv3_hdcq.m3u8?token=guoziyun|http://202.107.188.140:5002/utv3_hdgq.m3u8?token=guoziyun
+#EXTINF:-1 tvg-name="乐至影视频道" group-title="影视台",乐至影视频道 [1普通]
+https://pili-live-hls.lzxrmtzx.com/lzlive/fmzb1590134572871.m3u8
+#EXTINF:-1 tvg-name="亚洲影院" group-title="影视台",亚洲影院 [1普通]
+http://125.210.152.21:9120/live/YZYY.m3u8
+#EXTINF:-1 tvg-name="兴隆影视频道" group-title="影视台",兴隆影视频道 [1普通]
+https://jwcdnqx.hebyun.com.cn/live/xlys/1500k/tzwj_video.m3u8
+#EXTINF:-1 tvg-name="利辛影视频道" group-title="影视台",利辛影视频道 [1普通]
+http://linxinbf.fst1994.cn/live/yingshi.m3u8
+#EXTINF:-1 tvg-name="北京IPTV 淘电影" group-title="影视台" tvg-logo="https://live.404003.xyz/LOGO/淘电影.png",北京IPTV 淘电影 [1普通]
+http://otttv.bj.chinamobile.com/PLTV/88888888/224/3221226552/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EXOsrWMA-UCdUl1hQSR9EKw%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNg3bzRax0E9tLmO9xgXVx8%2CEND
+#EXTINF:-1 tvg-name="句容影视频道" group-title="影视台",句容影视频道 [1普通]
+http://jrlive.jrntv.com/live/_definst_/yingshis/playlist.m3u8
+#EXTINF:-1 tvg-name="句容影院" group-title="影视台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/句容影院.png",句容影院 [1普通]
+http://jrlive.jrntv.com/live/_definst_/yingshis/chunklist_w1994429382.m3u8?zjiangsd
+#EXTINF:-1 tvg-name="固镇影视频道" group-title="影视台",固镇影视频道 [1普通]
+http://www.guzhenm.com:7004/hls/hd-live.m3u8
 #EXTINF:-1 tvg-name="家庭影院" group-title="影视台",家庭影院 [5普通]
 https://stream1.freetv.fun/jia-ting-ying-yuan-10.m3u8|https://stream1.freetv.fun/jia-ting-ying-yuan-4.m3u8|https://stream1.freetv.fun/jia-ting-ying-yuan-12.m3u8|https://stream1.freetv.fun/jia-ting-ying-yuan-6.m3u8|https://stream1.freetv.fun/jia-ting-ying-yuan-5.ctv
-#EXTINF:-1 tvg-name="浙江教科影院" group-title="影视台",浙江教科影院 [1普通]
-http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8?zzhed
-#EXTINF:-1 tvg-name="淘电影" group-title="影视台" tvg-ipv6="true",淘电影 [1IPv6+9普通]
-https://stream1.freetv.fun/ipv6-tao-dian-ying-5.m3u8|https://stream1.freetv.fun/tao-dian-ying-7.m3u8|https://stream1.freetv.fun/tao-dian-ying-4.m3u8|https://stream1.freetv.fun/tao-dian-ying-3.ctv|https://stream1.freetv.fun/tao-dian-ying-6.ctv|https://stream1.freetv.fun/tao-dian-ying-9.ctv|https://stream1.freetv.fun/tao-dian-ying-1.ctv|https://stream1.freetv.fun/tao-dian-ying-15.ctv|https://stream1.freetv.fun/tao-dian-ying-11.ctv|https://stream1.freetv.fun/tao-dian-ying-17.ctv
-#EXTINF:-1 tvg-name="湖南电影" group-title="影视台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/湖南电影.png",湖南电影 [13普通]
-https://stream1.freetv.fun/hu-nan-dian-ying-9.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-3.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-11.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-5.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-2.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-13.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-6.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-8.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-12.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-10.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-14.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-2.ctv|http://php.jdshipin.com:8880/iptv.php
-#EXTINF:-1 tvg-name="绍兴文化影院" group-title="影视台",绍兴文化影院 [1普通]
+#EXTINF:-1 tvg-name="山东黄岛影视频道" group-title="影视台",山东黄岛影视频道 [1普通]
+http://xhalive.qwmedia.cn/hdratv-live/xha-yspd.flv
+#EXTINF:-1 tvg-name="平泉影视频道" group-title="影视台",平泉影视频道 [1普通]
+https://jwcdnqx.hebyun.com.cn/live/pqys/1500k/tzwj_video.m3u8
+#EXTINF:-1 tvg-name="新泰影视频道" group-title="影视台",新泰影视频道 [1普通]
+http://live.xtgdw.cn:1935/live/xtys/playlist.m3u8
+#EXTINF:-1 tvg-name="欧美影院" group-title="影视台",欧美影院 [1普通]
+http://39.136.48.23:8089/PLTV/88888888/224/3221226345/index.m3u8
+#EXTINF:-1 tvg-name="永清影视频道" group-title="影视台",永清影视频道 [1普通]
+http://60.10.203.69:8000/4.m3u8
+#EXTINF:-1 tvg-name="河北影视频道" group-title="影视台",河北影视频道 [1普通]
+https://live6.plus.hebtv.com/hbysx/playlist.m3u8?_upt=d3ab1b741648035290
+#EXTINF:-1 tvg-name="浙江教科影院" group-title="影视台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江教科影院.png",浙江教科影院 [2普通]
+http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8?zzhed|http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
+#EXTINF:-1 tvg-name="淘电影" group-title="影视台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/淘电影.png" tvg-ipv6="true",淘电影 [2IPv6+9普通]
+https://stream1.freetv.fun/ipv6-tao-dian-ying-5.m3u8|http://[2409:8087:1:20:20::26]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226552/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EXOsrWMA-UCdUl1hQSR9EKw%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNg3bzRax0E9tLmO9xgXVx8%2CEND|https://stream1.freetv.fun/tao-dian-ying-7.m3u8|https://stream1.freetv.fun/tao-dian-ying-4.m3u8|https://stream1.freetv.fun/tao-dian-ying-3.ctv|https://stream1.freetv.fun/tao-dian-ying-6.ctv|https://stream1.freetv.fun/tao-dian-ying-9.ctv|https://stream1.freetv.fun/tao-dian-ying-1.ctv|https://stream1.freetv.fun/tao-dian-ying-15.ctv|https://stream1.freetv.fun/tao-dian-ying-11.ctv|https://stream1.freetv.fun/tao-dian-ying-17.ctv
+#EXTINF:-1 tvg-name="淮阴影视频道" group-title="影视台",淮阴影视频道 [1普通]
+http://huaiyin-tv-hls.cm.jstv.com/huaiyin-tv/hyys.m3u8
+#EXTINF:-1 tvg-name="湖南电影" group-title="影视台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/湖南电影.png",湖南电影 [14普通]
+https://stream1.freetv.fun/hu-nan-dian-ying-14.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-13.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-2.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-8.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-6.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-3.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-10.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-11.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-5.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-12.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-9.m3u8|https://stream1.freetv.fun/hu-nan-dian-ying-2.ctv|http://124.232.233.15:6610/000000001001/201600020005/1400.m3u8?m3u8_level=2|http://php.jdshipin.com:8880/iptv.php
+#EXTINF:-1 tvg-name="烟台影视频道" group-title="影视台",烟台影视频道 [1普通]
+http://live.yantaitv.cn/live/e9f1d9045d474c31884d13fa4ffbbd16/a4a9b3704d854756907845107cc56129-1.m3u8
+#EXTINF:-1 tvg-name="私人影院" group-title="影视台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/私人影院.png",私人影院 [1普通]
+starvod.xyz:19806/74567d46c9a54cb8aab7bb35b7446cf2.ts
+#EXTINF:-1 tvg-name="精品电影" group-title="影视台",精品电影 [1普通]
+http://39.135.138.60:18890/PLTV/88888910/224/3221225718/index.m3u8
+#EXTINF:-1 tvg-name="精彩电影" group-title="影视台" tvg-quality="4K",精彩电影 [1普通]
+http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226011/index.m3u8
+#EXTINF:-1 tvg-name="纬来电影" group-title="影视台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/纬来电影.png",纬来电影 [10普通]
+https://stream1.freetv.fun/wei-lai-dian-ying-1.m3u8|https://hls-gateway.vpstv.net/streams/477063.m3u8|https://stream1.freetv.fun/wei-lai-dian-ying-3.m3u8|https://smart.pendy.dpdns.org/Smart.php?id=videolandmovie|https://smt.iktv.ddns-ip.net/Smart.php?id=videolandmovie|https://smt.858.qzz.io/Smart.php?id=videolandmovie|https://smt.go-iptv.ggff.net/smart.php?id=videolandmovie&token=Goiptv|https://tv.iill.top/x/wldy&token=886bce813f2cd4e37742d034db073fb39288ecfa7b0e43b20307dd9a2b2d0bdc|http://iptv.4666888.xyz/iptv2A.php?id=40|http://php.666230.xyz/smt.php?id=videolandmovie
+#EXTINF:-1 tvg-name="绍兴文化影院" group-title="影视台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/绍兴文化影院.png",绍兴文化影院 [1普通]
 https://stream1.freetv.fun/shao-xing-wen-hua-ying-yuan-4.m3u8
-#EXTINF:-1 tvg-name="经典电影" group-title="影视台",经典电影 [8普通]
+#EXTINF:-1 tvg-name="经典电影" group-title="影视台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/经典电影.png",经典电影 [8普通]
 https://stream1.freetv.fun/jing-dian-dian-ying-3.m3u8|https://stream1.freetv.fun/jing-dian-dian-ying-8.m3u8|https://stream1.freetv.fun/jing-dian-dian-ying-6.m3u8|https://stream1.freetv.fun/jing-dian-dian-ying-16.m3u8|https://stream1.freetv.fun/jing-dian-dian-ying-11.m3u8|https://stream1.freetv.fun/jing-dian-dian-ying-15.ctv|https://stream1.freetv.fun/jing-dian-dian-ying-19.ctv|https://stream1.freetv.fun/jing-dian-dian-ying-18.ctv
-#EXTINF:-1 tvg-name="美亚电影" group-title="影视台",美亚电影 [1普通]
-http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_mydy.flv
-#EXTINF:-1 tvg-name="靖天电影" group-title="影视台",靖天电影 [3普通]
-https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv061|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv061|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv061
+#EXTINF:-1 tvg-name="美亚电影" group-title="影视台",美亚电影 [2普通]
+http://pullpackage.alivecdn.com/live/IcmEedVfQlHHUXtdsqvDLaKLpE639j7xCDHMM7lssJgqOJ9OQm.flv|http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_mydy.flv
+#EXTINF:-1 tvg-name="超级电影" group-title="影视台" tvg-logo="https://live.404003.xyz/LOGO/超级电影.png",超级电影 [3普通]
+http://39.134.66.66/PLTV/88888888/224/3221225644/index.m3u8|http://39.135.138.59:18890/PLTV/88888910/224/3221225623/index.m3u8|http://otttv.bj.chinamobile.com/PLTV/88888888/224/3221226233/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EfPRR4mbRWhkCFuUCVm9THg%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNM4kysjLk_woYMRnu35KtBV%2CEND
+#EXTINF:-1 tvg-name="长沙影视频道" group-title="影视台",长沙影视频道 [1普通]
+http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_350.flv?auth_key=1936694127-0-0-f081dadf4de8780d84d51755eb65e516
+#EXTINF:-1 tvg-name="陕西影视频道" group-title="影视台",陕西影视频道 [1普通]
+http://dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226360/1.m3u8
+#EXTINF:-1 tvg-name="陕西西部电影" group-title="影视台",陕西西部电影 [2普通]
+http://111.20.33.93/PLTV/88888893/224/3221226364/index.m3u8|http://dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226364/1.m3u8
+#EXTINF:-1 tvg-name="隆化影视频道" group-title="影视台" tvg-ipv6="true",隆化影视频道 [1IPv6]
+http://hblh.chinashadt.com:2036/live/stream:lh2.stream/playlist.m3u8
+#EXTINF:-1 tvg-name="靖天电影" group-title="影视台",靖天电影 [4普通]
+http://pullpackage.alivecdn.com/live/0QiQJxpYsTrGCAUjnrGAgrcQwiVCocHA6iYBSHFQ6bP4n5MQQS.flv|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv061|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv061|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv061
+#EXTINF:-1 tvg-name="黑莓电影" group-title="影视台",黑莓电影 [2普通]
+http://183.207.249.169/ott.js.chinamobile.com/PLTV/3/224/3221225539/index.m3u8|http://39.135.138.59:18890/PLTV/88888910/224/3221225769/index.m3u8
 #EXTINF:-1 tvg-name="龙华电影" group-title="影视台",龙华电影 [4普通]
 https://cdn8.163189.xyz/163189/lhdy|http://rihou.cc:555/tv/[Pd]龙华电影|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=litv-longturn03|http://xtvantsc.xyz/litv_ts.php?id=litv-longturn03
+#EXTINF:-1 tvg-name="龙祥电影" group-title="影视台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/龙祥电影.png",龙祥电影 [2普通]
+https://smt.858.qzz.io/Smart.php?id=lungxiangtime_twn|https://smt.go-iptv.ggff.net/smart.php?id=lungxiangtime_twn&token=Goiptv

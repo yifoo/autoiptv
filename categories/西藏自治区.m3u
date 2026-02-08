@@ -1,0 +1,12 @@
+#EXTM3U
+# 西藏自治区频道列表（IPv6优先多源合并版）
+# 更新时间(北京时间): 2026-02-08 20:13:03
+# 电视台数量: 1
+# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 配置文件: config.txt
+# 黑名单功能: 启用
+# 白名单功能: 启用
+# 测速功能: 禁用
+
+#EXTINF:-1 tvg-name="西藏藏语" group-title="西藏自治区",西藏藏语 [2普通]
+http://111.40.196.9/PLTV/88888888/224/3221225676/index.m3u8|http://media.vtibet.com/masvod/HLSLive/7/zangyuTV_q1.m3u8

@@ -1,17 +1,18 @@
 #EXTM3U
 # 重庆市频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-03 22:10:47
+# 更新时间(北京时间): 2026-02-08 20:13:03
 # 电视台数量: 4
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 配置文件: config.txt
-# 黑名单功能: 禁用
+# 黑名单功能: 启用
+# 白名单功能: 启用
 # 测速功能: 禁用
 
-#EXTINF:-1 tvg-name="重庆广播" group-title="重庆市" tvg-logo="https://live.fanmingming.com/radio/重庆广播.png",重庆广播 [1IPv4]
+#EXTINF:-1 tvg-name="中国交通重庆" group-title="重庆市",中国交通重庆 [1普通]
+http://tv.lanjingfm.com/cctbn/chongqing.m3u8
+#EXTINF:-1 tvg-name="重庆万州影视台" group-title="重庆市",重庆万州影视台 [1普通]
+http://wanzhoulive.cbg.cn:8017/d4ceB1a/1000/live.m3u8
+#EXTINF:-1 tvg-name="重庆广播" group-title="重庆市" tvg-logo="https://live.fanmingming.com/radio/重庆广播.png",重庆广播 [1普通]
 https://satellitepull.cnr.cn/live/wxcqyygb/playlist.m3u8
-#EXTINF:-1 tvg-name="重庆时尚购物" group-title="重庆市" tvg-logo="重庆时尚购物.png" tvg-ipv6="true",重庆时尚购物 [1IPv6]
-http://183.220.107.138:4022/rtp/239.10.0.169:5140
-#EXTINF:-1 tvg-name="重庆汽摩" group-title="重庆市" tvg-logo="重庆汽摩.png",重庆汽摩 [9IPv4]
-http://183.230.184.51:65500/tntv1.m3u8|http://183.64.181.25:40023/rongchang01.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]|http://120.76.248.139/live/bfgd/4200000168.m3u8|http://123.146.162.24:8017/iTXwrGs/800/live.m3u8?zzhongqd|http://123.146.162.24:8017/c2F0hmi/1000/live.m3u8?zzhongqd|http://222.179.155.21:1935/ch1.m3u8?zzhongqd|http://183.230.184.51:65500/tntv1.m3u8?zzhongqd|http://222.179.155.21:1935/ch1.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]|http://38.75.136.137:98/gslb/dsdqpub/cqqm.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="重庆科教" group-title="重庆市" tvg-logo="https://epg.pw/media/images/channel/2024/07/29/large/20240729020024729385_11.jpg" tvg-quality="高清",重庆科教 [1IPv4]
-https://stream1.freetv.fun/f95fc2c361a5c575b9fa9663f9fc8cbe352ff641a3456eeb9c423e5785bbd247.ctv
+#EXTINF:-1 tvg-name="重庆新闻" group-title="重庆市",重庆新闻 [1普通]
+http://stream3.xiancity.cn/5/sd/live.m3u8

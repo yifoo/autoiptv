@@ -1,15 +1,48 @@
 #EXTM3U
 # 陕西省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-08 02:53:26
-# 电视台数量: 2
+# 更新时间(北京时间): 2026-02-08 20:13:03
+# 电视台数量: 19
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
-# 测速功能: 启用
+# 测速功能: 禁用
 
+#EXTINF:-1 tvg-name="女篮俱乐部杯 厦门环东文旅VS陕西榆林天泽 赛场原声 16:55" group-title="陕西省",女篮俱乐部杯 厦门环东文旅VS陕西榆林天泽 赛场原声 16:55 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%8E%A6%E9%97%A8%E7%8E%AF%E4%B8%9C%E6%96%87%E6%97%85VS%E9%99%95%E8%A5%BF%E6%A6%86%E6%9E%97%E5%A4%A9%E6%B3%BD%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2016%3A55&line=1
+#EXTINF:-1 tvg-name="陕西交通广播" group-title="陕西省" tvg-logo="https://live.fanmingming.com/radio/陕西交通广播.png",陕西交通广播 [1普通]
+https://satellitepull.cnr.cn/live/wxsxxjtgb/playlist.m3u8
+#EXTINF:-1 tvg-name="陕西体育休闲" group-title="陕西省",陕西体育休闲 [6普通]
+https://mgtv.ottiptv.cc/mg/956909356.m3u8?userid=5559462299&sign=7853497ae6b23c4e65274299ae96b5c5e4ed7f3d45d130db365c23aabf9f29308949e42611a42e71d375133978f945c9c1d8a28581910484decc3c13dec163c396cc177f8147f65735a8297ac16183c885&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8|https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E4%BD%93%E8%82%B2%E4%BC%91%E9%97%B2%E9%A2%91%E9%81%93&line=1|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sxtyxx/51/20250804/index.m3u8?msisdn=202602080402199b2c80fe598d4b328cea98cdda004d69&mdspid=&spid=600572&netType=0&sid=5910022189&pid=2028597139&timestamp=20260208040219&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956909356&ParentNodeID=-99&assertID=5910022189&client_ip=218.28.233.106&SecurityKey=20260208040219&promotionId=&mvid=5900006712&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=c62a60189fdb1dfbffd709ab94e2a631|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sxtyxx/51/20250804/index.m3u8?msisdn=2026020808022422bd5770b78d4f3d864028516599beb9&mdspid=&spid=600572&netType=0&sid=5910022189&pid=2028597139&timestamp=20260208080224&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956909356&ParentNodeID=-99&assertID=5910022189&client_ip=218.28.233.106&SecurityKey=20260208080224&promotionId=&mvid=5900006712&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=abb39140a843dd59788d91ee085b222c|http://111.20.33.93/PLTV/88888893/224/3221226363/index.m3u8|http://dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226363/1.m3u8
+#EXTINF:-1 tvg-name="陕西公共" group-title="陕西省",陕西公共 [1普通]
+http://111.20.33.93/PLTV/88888893/224/3221226361/index.m3u8
+#EXTINF:-1 tvg-name="陕西公共频道" group-title="陕西省",陕西公共频道 [1普通]
+http://dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226361/1.m3u8
+#EXTINF:-1 tvg-name="陕西农村广播" group-title="陕西省" tvg-logo="https://live.fanmingming.com/radio/陕西农村广播.png",陕西农村广播 [1普通]
+https://satellitepull.cnr.cn/live/wxsxxncgb/playlist.m3u8
+#EXTINF:-1 tvg-name="陕西广播" group-title="陕西省" tvg-logo="https://live.fanmingming.com/radio/陕西广播.png",陕西广播 [1普通]
+https://satellitepull.cnr.cn/live/wxsxxyygb/playlist.m3u8
+#EXTINF:-1 tvg-name="陕西影视" group-title="陕西省",陕西影视 [1普通]
+http://111.20.33.93/PLTV/88888893/224/3221226360/index.m3u8
+#EXTINF:-1 tvg-name="陕西戏曲广播" group-title="陕西省" tvg-logo="https://live.fanmingming.com/radio/陕西戏曲广播.png",陕西戏曲广播 [1普通]
+https://satellitepull.cnr.cn/live/wxsxxxqgb/playlist.m3u8
+#EXTINF:-1 tvg-name="陕西新闻广播" group-title="陕西省" tvg-logo="https://live.fanmingming.com/radio/陕西新闻广播.png",陕西新闻广播 [1普通]
+https://satellitepull.cnr.cn/live/wxsxxxwgb/playlist.m3u8
+#EXTINF:-1 tvg-name="陕西新闻资讯" group-title="陕西省",陕西新闻资讯 [6普通]
+https://mgtv.ottiptv.cc/mg/956909289.m3u8?userid=5559462299&sign=35f3d1fda21aef7012fd84a205466e0b86d247a1eaab5a5752fff738b8b729ae429d5f8afd3688c8b55515a0bc7e13db88b2619bd62da98d89010060793baa87132b957fd83290d6d3ff8b39986dc89c81&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8|https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E6%96%B0%E9%97%BB%E8%B5%84%E8%AE%AF%E9%A2%91%E9%81%93&line=1|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sxxwzx/51/20250804/index.m3u8?msisdn=2026020804022501dcb8364ea04808ba8431f6acaf9958&mdspid=&spid=600572&netType=0&sid=5910022187&pid=2028597139&timestamp=20260208040225&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956909289&ParentNodeID=-99&assertID=5910022187&client_ip=218.28.233.106&SecurityKey=20260208040225&promotionId=&mvid=5900006710&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=3f977a94fee0cf048d3b3df5b1bd03ed|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sxxwzx/51/20250804/index.m3u8?msisdn=20260208080230d00af07f6e4742908cf339cdefeedb66&mdspid=&spid=600572&netType=0&sid=5910022187&pid=2028597139&timestamp=20260208080230&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956909289&ParentNodeID=-99&assertID=5910022187&client_ip=218.28.233.106&SecurityKey=20260208080230&promotionId=&mvid=5900006710&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=3dd743426d565a78d94fb514f91f9c90|http://111.20.33.93/PLTV/88888893/224/3221226357/index.m3u8|http://dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226357/1.m3u8
 #EXTINF:-1 tvg-name="陕西洋县国宝朱鹮02" group-title="陕西省" tvg-logo="https://tb.zbds.top/logo/陕西洋县国宝朱鹮02.png",陕西洋县国宝朱鹮02 [1普通]
 https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8
 #EXTINF:-1 tvg-name="陕西洋县国宝朱鹮03" group-title="陕西省",陕西洋县国宝朱鹮03 [1普通]
 https://gcalic.v.myalicdn.com/gc/zh03_1/index.m3u8
+#EXTINF:-1 tvg-name="陕西生活" group-title="陕西省",陕西生活 [1普通]
+http://111.20.33.93/PLTV/88888893/224/3221226358/index.m3u8
+#EXTINF:-1 tvg-name="陕西生活频道" group-title="陕西省",陕西生活频道 [1普通]
+http://dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226359/1.m3u8
+#EXTINF:-1 tvg-name="陕西经济广播•896汽车调频" group-title="陕西省" tvg-logo="https://live.fanmingming.com/radio/陕西经济广播.png",陕西经济广播•896汽车调频 [1普通]
+https://satellitepull.cnr.cn/live/wxsxxjjgb/playlist.m3u8
+#EXTINF:-1 tvg-name="陕西都市广播•陕广新闻" group-title="陕西省" tvg-logo="https://live.fanmingming.com/radio/陕西都市广播.png",陕西都市广播•陕广新闻 [1普通]
+https://satellitepull.cnr.cn/live/wxsxxdsgb/playlist.m3u8
+#EXTINF:-1 tvg-name="陕西都市青春" group-title="陕西省",陕西都市青春 [5普通]
+https://mgtv.ottiptv.cc/mg/956909358.m3u8?userid=5559462299&sign=9a1bb41c3709ad1e521f408504f9dae4814a84f1b918db8b1f08b64266d44010c6276edd1b0fcf706737f3d0c5276bef9875fdbfa491800f44ba396d1d13b33d86a8da0b1e5966fb0e74e0ef8d4e014483&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8|https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E9%83%BD%E5%B8%82%E9%9D%92%E6%98%A5%E9%A2%91%E9%81%93&line=1|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sxdsqc/51/20250804/index.m3u8?msisdn=202602080402258f441d197ac54e219d25946b9e497a60&mdspid=&spid=600572&netType=0&sid=5910022190&pid=2028597139&timestamp=20260208040225&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956909358&ParentNodeID=-99&assertID=5910022190&client_ip=218.28.233.106&SecurityKey=20260208040225&promotionId=&mvid=5900006713&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=03ac9b8e61855990a3b22c40954b38cc|http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/sxdsqc/51/20250804/index.m3u8?msisdn=202602080802303dbed48a71f64802a0169caa799cedb9&mdspid=&spid=600572&netType=0&sid=5910022190&pid=2028597139&timestamp=20260208080230&Channel_ID=0116_2600000900-99000-201600010010027&ProgramID=956909358&ParentNodeID=-99&assertID=5910022190&client_ip=218.28.233.106&SecurityKey=20260208080230&promotionId=&mvid=5900006713&mcid=500020&playurlVersion=WX-A1-9.1.1.3-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=ab92eea5b2cb50f9d16e703601a707b0|http://dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226358/1.m3u8
+#EXTINF:-1 tvg-name="陕西青少广播•好听1055" group-title="陕西省" tvg-logo="https://live.fanmingming.com/radio/好听1055.png",陕西青少广播•好听1055 [1普通]
+https://satellitepull.cnr.cn/live/wxsxxqcgb/playlist.m3u8

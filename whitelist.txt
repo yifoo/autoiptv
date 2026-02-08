@@ -169,9 +169,9 @@ http://[2409:8087:1:20:20::2c]/otttv.bj.chinamobile.com/PLTV/88888888/224/322122
 
 # 实际使用示例:
 # CCTV重要频道保护
-*cctv.com*
-*cctv.cn*
-*cmg.cn*                    # 央视网
+# *cctv.com*
+# *cctv.cn*
+# *cmg.cn*                    # 央视网
 
 # 知名直播源提供商保护
 *iptv-org.github.io*
@@ -179,30 +179,32 @@ http://[2409:8087:1:20:20::2c]/otttv.bj.chinamobile.com/PLTV/88888888/224/322122
 *cdn.com*
 
 # 高质量源保护
-/.*4k.*\.m3u8/
-/.*uhd.*\.m3u8/
-/.*1080p.*\.m3u8/
-/.*fhd.*\.m3u8/
+# /.*4k.*\.m3u8/
+# /.*uhd.*\.m3u8/
+# /.*1080p.*\.m3u8/
+# /.*fhd.*\.m3u8/
 
 # 特定重要频道URL（完整URL）
 # https://example.com/important-news.m3u8
 http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226912/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7E0QmKQ_slRCwvVVUUfxPVbw%7EtP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND
 
 # 地方重要电视台
-*btv.org*                   # 北京电视台
-*dragon.tv*                 # 东方卫视
-*hunantv.com*               # 湖南卫视
+# *btv.org*                   # 北京电视台
+# *dragon.tv*                 # 东方卫视
+# *hunantv.com*               # 湖南卫视
 
 # 体育频道保护
-*pptv.com*                  # PPTV体育
-*sports.*\.m3u8             # 所有体育相关源
+# *pptv.com*                  # PPTV体育
+# *sports.*\.m3u8             # 所有体育相关源
 
 # 少儿频道保护
-*children.*\.m3u8
-*cartoon.*\.m3u8
-*animation.*\.m3u8
+# *children.*\.m3u8
+# *cartoon.*\.m3u8
+# *animation.*\.m3u8
 
 # 港澳台频道保护
-*phoenixtv.com*            # 凤凰卫视
-*tvb.com*                  # TVB
-*ftv.com.tw*               # 民视
+# *phoenixtv.com*            # 凤凰卫视
+# *tvb.com*                  # TVB
+# *ftv.com.tw*               # 民视
+
+http://113.44.65.227:1234/608807420

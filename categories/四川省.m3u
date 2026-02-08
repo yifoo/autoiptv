@@ -1,16 +1,23 @@
 #EXTM3U
 # 四川省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-08 02:53:26
-# 电视台数量: 7
+# 更新时间(北京时间): 2026-02-08 20:13:03
+# 电视台数量: 19
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
-# 测速功能: 启用
+# 测速功能: 禁用
 
+#EXTINF:-1 tvg-name="四川乡村频道" group-title="四川省",四川乡村频道 [1普通]
+http://182.151.211.171:808/hls/57/index.m3u8
+#EXTINF:-1 tvg-name="四川交通广播" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川交通广播.png",四川交通广播 [1普通]
+https://satellitepull.cnr.cn/live/wxscjtgb/playlist.m3u8
 #EXTINF:-1 tvg-name="四川四姑娘山隆珠措" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川四姑娘山隆珠措.png",四川四姑娘山隆珠措 [1普通]
 https://gcalic.v.myalicdn.com/gc/sgns02_1/index.m3u8
+#EXTINF:-1 tvg-name="四川城市之音" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川城市之音.png",四川城市之音 [1普通]
+https://satellitepull.cnr.cn/live/wxsccszs/playlist.m3u8
+#EXTINF:-1 tvg-name="四川妇女儿童" group-title="四川省",四川妇女儿童 [1普通]
+http://182.151.211.171:808/hls/55/index.m3u8
 #EXTINF:-1 tvg-name="四川峨眉山云海日出" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川峨眉山云海日出.png",四川峨眉山云海日出 [1普通]
 https://gcalic.v.myalicdn.com/gc/emsarm_1/index.m3u8
 #EXTINF:-1 tvg-name="四川峨眉山普贤菩萨铜像" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川峨眉山普贤菩萨铜像.png",四川峨眉山普贤菩萨铜像 [1普通]
@@ -19,7 +26,23 @@ https://gcalic.v.myalicdn.com/gc/emspxps_1/index.m3u8
 https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8
 #EXTINF:-1 tvg-name="四川峨眉山远眺贡嘎雪山" group-title="四川省" tvg-logo="https://tb.zbds.top/logo/四川峨眉山远眺贡嘎雪山.png",四川峨眉山远眺贡嘎雪山 [1普通]
 https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8
+#EXTINF:-1 tvg-name="四川广播四川之声" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川之声.png",四川广播四川之声 [1普通]
+https://satellitepull.cnr.cn/live/wxsczhgb/playlist.m3u8
+#EXTINF:-1 tvg-name="四川文化旅游" group-title="四川省",四川文化旅游 [1普通]
+http://182.151.211.171:808/hls/51/index.m3u8
+#EXTINF:-1 tvg-name="四川文艺广播" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川文艺广播.png",四川文艺广播 [1普通]
+https://satellitepull.cnr.cn/live/wxscwygb/playlist.m3u8
+#EXTINF:-1 tvg-name="四川新闻频道" group-title="四川省",四川新闻频道 [1普通]
+http://182.151.211.171:808/hls/52/index.m3u8
+#EXTINF:-1 tvg-name="四川旅游生活广播" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川旅游生活广播.png",四川旅游生活广播 [1普通]
+https://satellitepull.cnr.cn/live/wxsclyshgb/playlist.m3u8
+#EXTINF:-1 tvg-name="四川私家车广播" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川私家车广播.png",四川私家车广播 [1普通]
+https://satellitepull.cnr.cn/live/wxsc925/playlist.m3u8
 #EXTINF:-1 tvg-name="四川科教" group-title="四川省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/四川科教.png",四川科教 [4普通]
 https://stream1.freetv.fun/si-chuan-ke-jiao-1.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-5.m3u8|https://stream1.freetv.fun/si-chuan-ke-jiao-3.ctv|https://stream1.freetv.fun/si-chuan-ke-jiao-4.ctv
-#EXTINF:-1 tvg-name="女篮俱乐部杯 陕西榆林天泽VS四川蜀道远达 全场回放（原声） 14:25" group-title="四川省",女篮俱乐部杯 陕西榆林天泽VS四川蜀道远达 全场回放（原声） 14:25 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E9%99%95%E8%A5%BF%E6%A6%86%E6%9E%97%E5%A4%A9%E6%B3%BDVS%E5%9B%9B%E5%B7%9D%E8%9C%80%E9%81%93%E8%BF%9C%E8%BE%BE%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%8E%9F%E5%A3%B0%EF%BC%89%2014%3A25
+#EXTINF:-1 tvg-name="四川科教频道" group-title="四川省",四川科教频道 [2普通]
+http://182.151.211.171:808/hls/56/index.m3u8|http://3017ugjo.live2.danghongyun.com/live/hls/4dc0e927160647a2bd585cb5495810be/3c2126c925204cddb74a3534b97e2765-1.m3u8
+#EXTINF:-1 tvg-name="四川经济广播" group-title="四川省" tvg-logo="https://live.fanmingming.com/radio/四川经济广播.png",四川经济广播 [1普通]
+https://satellitepull.cnr.cn/live/wxscjjgb/playlist.m3u8
+#EXTINF:-1 tvg-name="四川经济频道" group-title="四川省",四川经济频道 [1普通]
+http://182.151.211.171:808/hls/50/index.m3u8

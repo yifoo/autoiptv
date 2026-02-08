@@ -1,0 +1,24 @@
+#EXTM3U
+# 歌曲MV频道列表（IPv6优先多源合并版）
+# 更新时间(北京时间): 2026-02-08 20:13:03
+# 电视台数量: 7
+# 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 配置文件: config.txt
+# 黑名单功能: 启用
+# 白名单功能: 启用
+# 测速功能: 禁用
+
+#EXTINF:-1 tvg-name="四川岷江音乐" group-title="歌曲MV" tvg-logo="https://live.fanmingming.com/radio/四川岷江音乐.png",四川岷江音乐 [1普通]
+https://satellitepull.cnr.cn/live/wxscmjyyt/playlist.m3u8
+#EXTINF:-1 tvg-name="林俊杰经典合集" group-title="歌曲MV",林俊杰经典合集 [1普通]
+https://txmov2.a.kwimgs.com/bs3/video-hls/5231212549905475206_hlsb.m3u8
+#EXTINF:-1 tvg-name="王心凌经典合集" group-title="歌曲MV",王心凌经典合集 [1普通]
+https://txmov2.a.kwimgs.com/bs3/video-hls/5210946351305777158_hlsb.m3u8
+#EXTINF:-1 tvg-name="许嵩经典合集" group-title="歌曲MV",许嵩经典合集 [1普通]
+https://txmov2.a.kwimgs.com/bs3/video-hls/5246693673328160378_hlsb.m3u8
+#EXTINF:-1 tvg-name="陶喆经典合集" group-title="歌曲MV",陶喆经典合集 [1普通]
+https://txmov2.a.kwimgs.com/bs3/video-hls/5239938277375381611_hlsb.m3u8
+#EXTINF:-1 tvg-name="风云音乐" group-title="歌曲MV" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/风云音乐.png" tvg-ipv6="true",风云音乐 [1IPv6+4普通]
+http://171.83.103.119:9999/rtp/239.69.1.90:10180|https://hls-gateway.vpstv.net/streams/708858.m3u8|http://120.238.94.10:9901/tsfile/live/1089_1.m3u8|http://hmfs.f3322.net:3388/hls/29/index.m3u8|http://iptv.666230.xyz/iptv/jsyd.php/G_FENGYUNYY-CQ
+#EXTINF:-1 tvg-name="风尚音乐" group-title="歌曲MV",风尚音乐 [1普通]
+http://125.210.152.21:9120/live/FSYY.m3u8

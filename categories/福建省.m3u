@@ -1,27 +1,40 @@
 #EXTM3U
 # 福建省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-08 02:53:26
-# 电视台数量: 8
+# 更新时间(北京时间): 2026-02-08 20:13:03
+# 电视台数量: 15
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
-# 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
-# 测速功能: 启用
+# 测速功能: 禁用
 
+#EXTINF:-1 tvg-name="女篮俱乐部杯 福建金篮VS江西赣星 全场回放（现场解说） 19:25" group-title="福建省",女篮俱乐部杯 福建金篮VS江西赣星 全场回放（现场解说） 19:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E7%A6%8F%E5%BB%BA%E9%87%91%E7%AF%AEVS%E6%B1%9F%E8%A5%BF%E8%B5%A3%E6%98%9F%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E7%8E%B0%E5%9C%BA%E8%A7%A3%E8%AF%B4%EF%BC%89%2019%3A25&line=1
+#EXTINF:-1 tvg-name="福建东南广播" group-title="福建省" tvg-logo="https://live.fanmingming.com/radio/福建东南广播.png",福建东南广播 [1普通]
+https://satellitepull.cnr.cn/live/wx32fjdngb/playlist.m3u8
 #EXTINF:-1 tvg-name="福建乡村振兴公共" group-title="福建省" tvg-logo="https://live.fanmingming.cn/tv/福建乡村振兴公共.png",福建乡村振兴公共 [1普通]
 http://8.138.7.223/tv/fjtv1.php?id=fjxc
 #EXTINF:-1 tvg-name="福建公共" group-title="福建省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建公共.png",福建公共 [1普通]
 https://stream1.freetv.fun/fu-jian-gong-gong-4.ctv
+#EXTINF:-1 tvg-name="福建厦门第一台" group-title="福建省",福建厦门第一台 [1普通]
+http://cctvtxyh5ca.liveplay.myqcloud.com/cstv/xiamen1_2/index.m3u8
 #EXTINF:-1 tvg-name="福建文体" group-title="福建省",福建文体 [1普通]
 http://8.138.7.223/tv/fjtv1.php?id=fjwt
-#EXTINF:-1 tvg-name="福建新闻" group-title="福建省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建新闻.png",福建新闻 [8普通]
-https://stream1.freetv.fun/fu-jian-xin-wen-1.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-2.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-6.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-3.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-4.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-5.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjxw|http://live.xmcdn.com/live/792/64.m3u8
+#EXTINF:-1 tvg-name="福建新闻" group-title="福建省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建新闻.png",福建新闻 [9普通]
+http://live.xmcdn.com/live/792/64.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-1.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-2.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-6.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-3.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-4.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-5.m3u8|http://satellitepull.cnr.cn/live/wx32fjxwgb/playlist.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjxw
+#EXTINF:-1 tvg-name="福建旅游" group-title="福建省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建旅游.png",福建旅游 [1普通]
+https://stream1.freetv.fun/fu-jian-lu-you-6.m3u8
 #EXTINF:-1 tvg-name="福建武夷山玉女峰" group-title="福建省" tvg-logo="https://tb.zbds.top/logo/福建武夷山玉女峰.png",福建武夷山玉女峰 [2普通]
 https://gcalic.v.myalicdn.com/gc/wysynf_1/index.m3u8|https://gcalic.v.myalicdn.com/gc/wysynf_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 tvg-name="福建汽车广播" group-title="福建省" tvg-logo="https://live.fanmingming.com/radio/福建汽车广播.png",福建汽车广播 [1普通]
+https://satellitepull.cnr.cn/live/wx32fjdnyygb/playlist.m3u8
 #EXTINF:-1 tvg-name="福建电视剧" group-title="福建省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建电视剧.png",福建电视剧 [4普通]
 https://stream1.freetv.fun/fu-jian-dian-shi-ju-5.m3u8|https://stream1.freetv.fun/fu-jian-dian-shi-ju-2.m3u8|https://stream1.freetv.fun/fu-jian-dian-shi-ju-3.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjdsj
-#EXTINF:-1 tvg-name="福建经济" group-title="福建省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建经济.png",福建经济 [5普通]
-https://stream1.freetv.fun/fu-jian-jing-ji-1.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-2.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-6.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjjj|http://live.xmcdn.com/live/789/64.m3u8
-#EXTINF:-1 tvg-name="福建综合" group-title="福建省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建综合.png",福建综合 [6普通]
-https://stream1.freetv.fun/fu-jian-zong-he-6.m3u8|https://stream1.freetv.fun/fu-jian-zong-he-4.m3u8|https://stream1.freetv.fun/fu-jian-zong-he-1.m3u8|https://stream1.freetv.fun/fu-jian-zong-he-3.m3u8|https://stream1.freetv.fun/fu-jian-zong-he-2.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjzh
+#EXTINF:-1 tvg-name="福建经济" group-title="福建省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建经济.png",福建经济 [6普通]
+http://live.xmcdn.com/live/789/64.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-1.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-2.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-6.m3u8|http://satellitepull.cnr.cn/live/wx32fjdnjjgb/playlist.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjjj
+#EXTINF:-1 tvg-name="福建经视" group-title="福建省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建经视.png",福建经视 [3普通]
+https://stream1.freetv.fun/fu-jian-jing-ji-1.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-2.m3u8|https://stream1.freetv.fun/fu-jian-jing-ji-6.m3u8
+#EXTINF:-1 tvg-name="福建综合" group-title="福建省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建综合.png",福建综合 [7普通]
+https://stream1.freetv.fun/fu-jian-zong-he-6.m3u8|https://stream1.freetv.fun/fu-jian-zong-he-4.m3u8|https://stream1.freetv.fun/fu-jian-zong-he-1.m3u8|https://stream1.freetv.fun/fu-jian-zong-he-3.m3u8|https://stream1.freetv.fun/fu-jian-zong-he-2.m3u8|http://p2.weizan.cn/11844069/132114573749498521/live.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjzh
+#EXTINF:-1 tvg-name="福建都市广播•私家车987" group-title="福建省" tvg-logo="https://live.fanmingming.com/radio/福建都市广播.png",福建都市广播•私家车987 [1普通]
+https://satellitepull.cnr.cn/live/wx32fjdndsgb/playlist.m3u8
