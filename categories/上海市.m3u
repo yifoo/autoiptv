@@ -1,41 +1,22 @@
 #EXTM3U
 # 上海市频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-08 20:13:03
-# 电视台数量: 17
+# 更新时间(北京时间): 2026-02-08 20:55:19
+# 电视台数量: 7
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
-# 测速功能: 禁用
+# 测速功能: 启用
 
-#EXTINF:-1 tvg-name="上海外语" group-title="上海市",上海外语 [1普通]
-http://183.207.255.188/live/program/live/wypdhd/4000000/mnf.m3u8
-#EXTINF:-1 tvg-name="上海影视" group-title="上海市",上海影视 [1普通]
-http://183.207.255.188/live/program/live/dsjpdhd/4000000/mnf.m3u8
-#EXTINF:-1 tvg-name="上海新闻" group-title="上海市" tvg-quality="高清",上海新闻 [1普通]
-http://140.207.241.3:8080/live/program/live/xwzhhd/4000000/d1.m3u8
 #EXTINF:-1 tvg-name="上海新闻综合" group-title="上海市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/上海新闻综合.png",上海新闻综合 [1普通]
 https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-3.m3u8
-#EXTINF:-1 tvg-name="上海法制" group-title="上海市",上海法制 [1普通]
-http://183.207.255.188/live/program/live/fztd/1300000/mnf.m3u8
-#EXTINF:-1 tvg-name="上海滩" group-title="上海市",上海滩 [3普通]
-https://vip1.lz-cdn1.com/20220516/5843_f2d3e2af/1200k/hls/mixed.m3u8|https://vip.ffzy-online.com/20221017/870_24fd00ae/2000k/hls/mixed.m3u8|https://txmov2.a.kwimgs.com/upic/2021/02/22/22/BMjAyMTAyMjIyMjU2NDFfMTI0MzE0NjMyOF80NDg1MDgzMTY5NF8yXzM=_b_B35aa4e9376173041991a9a379ff4ac56.mp4
-#EXTINF:-1 tvg-name="上海生活" group-title="上海市",上海生活 [1普通]
-http://183.207.255.188/live/program/live/shsshd/4000000/mnf.m3u8
-#EXTINF:-1 tvg-name="上海第一财经" group-title="上海市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/上海第一财经.png",上海第一财经 [1普通]
-https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8
-#EXTINF:-1 tvg-name="上海第一财经广播" group-title="上海市" tvg-logo="https://upload.ajmide.com/p/image/202101/14/142407-nN2AikHyrt1610609292338_1915x1915.jpg",上海第一财经广播 [1普通]
-https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8
-#EXTINF:-1 tvg-name="上海纪实" group-title="上海市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/上海纪实.png" tvg-ipv6="true",上海纪实 [3IPv6+2普通]
-https://stream1.freetv.fun/ipv6-shang-hai-ji-shi-ren-wen-2.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-ji-shi-ren-wen-3.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-ji-shi-ren-wen-5.m3u8|https://stream1.freetv.fun/shang-hai-ji-shi-ren-wen-1.m3u8|http://183.207.255.188/live/program/live/jspdhd/4000000/mnf.m3u8
-#EXTINF:-1 tvg-name="上海纪实人文" group-title="上海市" tvg-quality="高清",上海纪实人文 [2普通]
-http://39.135.138.58:18890/PLTV/88888888/224/3221225654/index.m3u8|http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225654/index.m3u8
-#EXTINF:-1 tvg-name="上海财经" group-title="上海市",上海财经 [1普通]
-http://183.207.255.188/live/program/live/dfcj/1300000/mnf.m3u8
-#EXTINF:-1 tvg-name="上海都市" group-title="上海市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/上海都市.png" tvg-ipv6="true",上海都市 [9IPv6+6普通]
-https://stream1.freetv.fun/ipv6-shang-hai-du-shi-3.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-8.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-4.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-5.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-11.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-2.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-10.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-1.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-7.m3u8|https://stream1.freetv.fun/shang-hai-du-shi-1.m3u8|https://stream1.freetv.fun/shang-hai-du-shi-7.m3u8|https://stream1.freetv.fun/shang-hai-du-shi-10.m3u8|https://stream1.freetv.fun/shang-hai-du-shi-8.m3u8|https://migu.188766.xyz/?migutoken=7f66d1b2e29df60b1c194d2e3e2e776e&id=shds&type=sz|http://183.207.255.188/live/program/live/ylpdhd/4000000/mnf.m3u8
-#EXTINF:-1 tvg-name="上海长三角之声" group-title="上海市" tvg-logo="https://live.fanmingming.com/radio/长三角之声.png",上海长三角之声 [1普通]
-https://satellitepull.cnr.cn/live/wx32dfgbdt/playlist.m3u8
+#EXTINF:-1 tvg-name="上海滩" group-title="上海市",上海滩 [2普通]
+https://vip1.lz-cdn1.com/20220516/5843_f2d3e2af/1200k/hls/mixed.m3u8|https://txmov2.a.kwimgs.com/upic/2021/02/22/22/BMjAyMTAyMjIyMjU2NDFfMTI0MzE0NjMyOF80NDg1MDgzMTY5NF8yXzM=_b_B35aa4e9376173041991a9a379ff4ac56.mp4
+#EXTINF:-1 tvg-name="上海纪实" group-title="上海市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/上海纪实.png" tvg-ipv6="true",上海纪实 [3IPv6+1普通]
+https://stream1.freetv.fun/ipv6-shang-hai-ji-shi-ren-wen-2.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-ji-shi-ren-wen-3.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-ji-shi-ren-wen-5.m3u8|https://stream1.freetv.fun/shang-hai-ji-shi-ren-wen-1.m3u8
+#EXTINF:-1 tvg-name="上海都市" group-title="上海市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/上海都市.png" tvg-ipv6="true",上海都市 [9IPv6+4普通]
+https://stream1.freetv.fun/ipv6-shang-hai-du-shi-3.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-8.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-4.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-5.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-11.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-2.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-10.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-1.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-du-shi-7.m3u8|https://stream1.freetv.fun/shang-hai-du-shi-1.m3u8|https://stream1.freetv.fun/shang-hai-du-shi-7.m3u8|https://stream1.freetv.fun/shang-hai-du-shi-10.m3u8|https://stream1.freetv.fun/shang-hai-du-shi-8.m3u8
 #EXTINF:-1 tvg-name="女篮俱乐部杯 合肥文旅VS上海浦发银行 全场回放（原声） 16:55" group-title="上海市",女篮俱乐部杯 合肥文旅VS上海浦发银行 全场回放（原声） 16:55 [1普通]
 https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%90%88%E8%82%A5%E6%96%87%E6%97%85VS%E4%B8%8A%E6%B5%B7%E6%B5%A6%E5%8F%91%E9%93%B6%E8%A1%8C%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%8E%9F%E5%A3%B0%EF%BC%89%2016%3A55&line=1
 #EXTINF:-1 tvg-name="女篮俱乐部杯 合肥文旅VS上海浦发银行 全场回放（现场解说） 16:55" group-title="上海市",女篮俱乐部杯 合肥文旅VS上海浦发银行 全场回放（现场解说） 16:55 [1普通]

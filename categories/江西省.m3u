@@ -1,34 +1,15 @@
 #EXTM3U
 # 江西省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-08 20:13:03
-# 电视台数量: 12
+# 更新时间(北京时间): 2026-02-08 20:55:19
+# 电视台数量: 2
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
-# 测速功能: 禁用
+# 测速功能: 启用
 
-#EXTINF:-1 tvg-name="江西公共农业" group-title="江西省",江西公共农业 [2普通]
-http://117.169.120.223:8080/hwrr.jx.chinamobile.com/PLTV/88888888/224/3221225578/index.m3u8?fmt=ts2hls|http://local.live.jxtvcn.com.cn/live-jxtv/tv_jxtv5.m3u8
-#EXTINF:-1 tvg-name="江西少儿家庭" group-title="江西省" tvg-ipv6="true",江西少儿家庭 [1IPv6]
-http://local.live.jxtvcn.com.cn/live-jxtv/tv_jxtv6.m3u8
-#EXTINF:-1 tvg-name="江西影视旅游" group-title="江西省",江西影视旅游 [1普通]
-http://local.live.jxtvcn.com.cn/live-jxtv/tv_jxtv4.m3u8
-#EXTINF:-1 tvg-name="江西新闻频道" group-title="江西省",江西新闻频道 [1普通]
-http://local.live.jxtvcn.com.cn/live-jxtv/tv_jxtv7.m3u8
 #EXTINF:-1 tvg-name="江西省城市篮球联赛 吉安VS九江庐山文旅 2026江西省城市篮球联赛: 吉安VS九江庐山文旅 19:00" group-title="江西省",江西省城市篮球联赛 吉安VS九江庐山文旅 2026江西省城市篮球联赛: 吉安VS九江庐山文旅 19:00 [1普通]
 https://iptv.catvod.com/live.php?id=%E6%B1%9F%E8%A5%BF%E7%9C%81%E5%9F%8E%E5%B8%82%E7%AF%AE%E7%90%83%E8%81%94%E8%B5%9B%20%E5%90%89%E5%AE%89VS%E4%B9%9D%E6%B1%9F%E5%BA%90%E5%B1%B1%E6%96%87%E6%97%85%202026%E6%B1%9F%E8%A5%BF%E7%9C%81%E5%9F%8E%E5%B8%82%E7%AF%AE%E7%90%83%E8%81%94%E8%B5%9B%3A%20%E5%90%89%E5%AE%89VS%E4%B9%9D%E6%B1%9F%E5%BA%90%E5%B1%B1%E6%96%87%E6%97%85%2019%3A00&line=1
 #EXTINF:-1 tvg-name="江西省城市篮球联赛 宜春88 68景德镇 2026江西省城市篮球联赛全场回放：宜春vs景德镇 19:00" group-title="江西省",江西省城市篮球联赛 宜春88 68景德镇 2026江西省城市篮球联赛全场回放：宜春vs景德镇 19:00 [1普通]
 https://iptv.catvod.com/live.php?id=%E6%B1%9F%E8%A5%BF%E7%9C%81%E5%9F%8E%E5%B8%82%E7%AF%AE%E7%90%83%E8%81%94%E8%B5%9B%20%E5%AE%9C%E6%98%A588-68%E6%99%AF%E5%BE%B7%E9%95%87%202026%E6%B1%9F%E8%A5%BF%E7%9C%81%E5%9F%8E%E5%B8%82%E7%AF%AE%E7%90%83%E8%81%94%E8%B5%9B%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%9A%E5%AE%9C%E6%98%A5vs%E6%99%AF%E5%BE%B7%E9%95%87%2019%3A00&line=1
-#EXTINF:-1 tvg-name="江西移动电视" group-title="江西省",江西移动电视 [1普通]
-http://local.live.jxtvcn.com.cn/live-jxtv/tv_jxtv8.m3u8
-#EXTINF:-1 tvg-name="江西经济生活" group-title="江西省",江西经济生活 [2普通]
-http://local.live.jxtvcn.com.cn/live-jxtv/tv_jxtv3.m3u8|http://local.live.jxtvcn.com.cn/live-jxtv/tv_jxtv3_hd.m3u8
-#EXTINF:-1 tvg-name="江西都市广播" group-title="江西省" tvg-logo="https://live.fanmingming.com/radio/江西都市广播.png",江西都市广播 [1普通]
-https://satellitepull.cnr.cn/live/wx32jiangxdsgb/playlist.m3u8
-#EXTINF:-1 tvg-name="江西都市频道" group-title="江西省",江西都市频道 [1普通]
-http://local.live.jxtvcn.com.cn/live-jxtv/tv_jxtv2.m3u8
-#EXTINF:-1 tvg-name="江西陶瓷频道" group-title="江西省",江西陶瓷频道 [1普通]
-http://local.live.jxtvcn.com.cn/live-jxtv/tv_taoci.m3u8
-#EXTINF:-1 tvg-name="江西风尚购物" group-title="江西省",江西风尚购物 [2普通]
-http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225970/index.m3u8|http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225679/index.m3u8

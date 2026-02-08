@@ -1,17 +1,14 @@
 #EXTM3U
 # 广西壮族自治区频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-08 20:13:03
-# 电视台数量: 12
+# 更新时间(北京时间): 2026-02-08 20:55:19
+# 电视台数量: 7
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
-# 测速功能: 禁用
+# 测速功能: 启用
 
-#EXTINF:-1 tvg-name="广西交通广播" group-title="广西壮族自治区" tvg-logo="https://live.fanmingming.com/radio/广西交通广播.png",广西交通广播 [1普通]
-https://satellitepull.cnr.cn/live/wx32gxjtgb/playlist.m3u8
-#EXTINF:-1 tvg-name="广西北部湾之声" group-title="广西壮族自治区" tvg-logo="https://live.fanmingming.com/radio/广西北部湾之声.png",广西北部湾之声 [1普通]
-https://satellitepull.cnr.cn/live/wx32gxdwgb/playlist.m3u8
 #EXTINF:-1 tvg-name="广西县级足球超级联赛 南宁市宾阳县vs北海市海城区队 25/26赛季广西县级足球超级联赛第三轮：南宁市宾阳县vs北海市海城区队 14:30" group-title="广西壮族自治区",广西县级足球超级联赛 南宁市宾阳县vs北海市海城区队 25/26赛季广西县级足球超级联赛第三轮：南宁市宾阳县vs北海市海城区队 14:30 [1普通]
 https://iptv.catvod.com/live.php?id=%E5%B9%BF%E8%A5%BF%E5%8E%BF%E7%BA%A7%E8%B6%B3%E7%90%83%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B%20%E5%8D%97%E5%AE%81%E5%B8%82%E5%AE%BE%E9%98%B3%E5%8E%BFvs%E5%8C%97%E6%B5%B7%E5%B8%82%E6%B5%B7%E5%9F%8E%E5%8C%BA%E9%98%9F%2025%2F26%E8%B5%9B%E5%AD%A3%E5%B9%BF%E8%A5%BF%E5%8E%BF%E7%BA%A7%E8%B6%B3%E7%90%83%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B%E7%AC%AC%E4%B8%89%E8%BD%AE%EF%BC%9A%E5%8D%97%E5%AE%81%E5%B8%82%E5%AE%BE%E9%98%B3%E5%8E%BFvs%E5%8C%97%E6%B5%B7%E5%B8%82%E6%B5%B7%E5%9F%8E%E5%8C%BA%E9%98%9F%2014%3A30&line=1
 #EXTINF:-1 tvg-name="广西县级足球超级联赛 来宾市武宣县队1 1来宾市兴宾区队 25/26赛季广西县级足球超级联赛第三轮全场回放：来宾市武宣县队1:1来宾市兴宾区队（点球2:4） 14:30" group-title="广西壮族自治区",广西县级足球超级联赛 来宾市武宣县队1 1来宾市兴宾区队 25/26赛季广西县级足球超级联赛第三轮全场回放：来宾市武宣县队1:1来宾市兴宾区队（点球2:4） 14:30 [1普通]
@@ -24,11 +21,5 @@ https://iptv.catvod.com/live.php?id=%E5%B9%BF%E8%A5%BF%E5%8E%BF%E7%BA%A7%E8%B6%B
 https://iptv.catvod.com/live.php?id=%E5%B9%BF%E8%A5%BF%E5%8E%BF%E7%BA%A7%E8%B6%B3%E7%90%83%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B%20%E7%8E%89%E6%9E%97%E5%B8%82%E7%8E%89%E5%B7%9E%E5%8C%BA%E9%98%9Fvs%E6%A1%82%E6%9E%97%E5%B8%82%E4%B8%83%E6%98%9F%E5%8C%BA%E9%98%9F%2025%2F26%E8%B5%9B%E5%AD%A3%E5%B9%BF%E8%A5%BF%E5%8E%BF%E7%BA%A7%E8%B6%B3%E7%90%83%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B%E7%AC%AC%E4%B8%89%E8%BD%AE%EF%BC%9A%E7%8E%89%E6%9E%97%E5%B8%82%E7%8E%89%E5%B7%9E%E5%8C%BA%E9%98%9Fvs%E6%A1%82%E6%9E%97%E5%B8%82%E4%B8%83%E6%98%9F%E5%8C%BA%E9%98%9F%2014%3A30&line=1
 #EXTINF:-1 tvg-name="广西县级足球超级联赛 百色市平果市队1 2南宁市江南区 25/26赛季广西县级足球超级联赛第三轮全场回放：百色市平果市队1:2南宁市江南区队 19:00" group-title="广西壮族自治区",广西县级足球超级联赛 百色市平果市队1 2南宁市江南区 25/26赛季广西县级足球超级联赛第三轮全场回放：百色市平果市队1:2南宁市江南区队 19:00 [1普通]
 https://iptv.catvod.com/live.php?id=%E5%B9%BF%E8%A5%BF%E5%8E%BF%E7%BA%A7%E8%B6%B3%E7%90%83%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B%20%E7%99%BE%E8%89%B2%E5%B8%82%E5%B9%B3%E6%9E%9C%E5%B8%82%E9%98%9F1-2%E5%8D%97%E5%AE%81%E5%B8%82%E6%B1%9F%E5%8D%97%E5%8C%BA%2025%2F26%E8%B5%9B%E5%AD%A3%E5%B9%BF%E8%A5%BF%E5%8E%BF%E7%BA%A7%E8%B6%B3%E7%90%83%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B%E7%AC%AC%E4%B8%89%E8%BD%AE%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%9A%E7%99%BE%E8%89%B2%E5%B8%82%E5%B9%B3%E6%9E%9C%E5%B8%82%E9%98%9F1%3A2%E5%8D%97%E5%AE%81%E5%B8%82%E6%B1%9F%E5%8D%97%E5%8C%BA%E9%98%9F%2019%3A00&line=1
-#EXTINF:-1 tvg-name="广西广播" group-title="广西壮族自治区" tvg-logo="https://live.fanmingming.com/radio/广西新闻广播.png",广西广播 [2普通]
-https://satellitepull.cnr.cn/live/wx32gxrmgb/playlist.m3u8|https://satellitepull.cnr.cn/live/wx32gxwygb/playlist.m3u8
-#EXTINF:-1 tvg-name="广西教育广播" group-title="广西壮族自治区" tvg-logo="https://live.fanmingming.com/radio/广西教育广播.png",广西教育广播 [1普通]
-https://satellitepull.cnr.cn/live/wx32gbjyshgb/playlist.m3u8
 #EXTINF:-1 tvg-name="广西玉林大容山莲花山顶" group-title="广西壮族自治区" tvg-logo="https://tb.zbds.top/logo/广西玉林大容山莲花山顶.png",广西玉林大容山莲花山顶 [1普通]
 https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8
-#EXTINF:-1 tvg-name="广西经济广播•女主播电台" group-title="广西壮族自治区" tvg-logo="https://live.fanmingming.com/radio/广西女主播.png",广西经济广播•女主播电台 [1普通]
-https://satellitepull.cnr.cn/live/wx32gxjjgb/playlist.m3u8

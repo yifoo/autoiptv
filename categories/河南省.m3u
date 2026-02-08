@@ -1,32 +1,21 @@
 #EXTM3U
 # 河南省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-08 20:13:03
-# 电视台数量: 11
+# 更新时间(北京时间): 2026-02-08 20:55:19
+# 电视台数量: 5
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
+# 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
 # 黑名单功能: 启用
 # 白名单功能: 启用
-# 测速功能: 禁用
+# 测速功能: 启用
 
 #EXTINF:-1 tvg-name="女篮俱乐部杯 四川蜀道远达VS河南豫光金铅 赛场原声 14:25" group-title="河南省",女篮俱乐部杯 四川蜀道远达VS河南豫光金铅 赛场原声 14:25 [1普通]
 https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%9B%9B%E5%B7%9D%E8%9C%80%E9%81%93%E8%BF%9C%E8%BE%BEVS%E6%B2%B3%E5%8D%97%E8%B1%AB%E5%85%89%E9%87%91%E9%93%85%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2014%3A25&line=1
 #EXTINF:-1 tvg-name="女篮俱乐部杯 河南豫光金铅VS陕西榆林天泽 全场回放 19:25" group-title="河南省",女篮俱乐部杯 河南豫光金铅VS陕西榆林天泽 全场回放 19:25 [1普通]
 https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E6%B2%B3%E5%8D%97%E8%B1%AB%E5%85%89%E9%87%91%E9%93%85VS%E9%99%95%E8%A5%BF%E6%A6%86%E6%9E%97%E5%A4%A9%E6%B3%BD%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%2019%3A25&line=1
-#EXTINF:-1 tvg-name="河南乡村" group-title="河南省",河南乡村 [1普通]
-http://123.6.9.146/live/jz-henanxinnong/live.m3u8
 #EXTINF:-1 tvg-name="河南国际" group-title="河南省" tvg-logo="https://live.fanmingming.cn/tv/河南国际.png",河南国际 [1普通]
 http://1.94.31.214/php/hntv.php?id=hngj
-#EXTINF:-1 tvg-name="河南巩义新闻综合" group-title="河南省",河南巩义新闻综合 [1普通]
-http://live.dxhmt.cn:9081/tv/10181-1.m3u8
-#EXTINF:-1 tvg-name="河南文物宝库" group-title="河南省",河南文物宝库 [1普通]
-http://39.136.48.2:8089/PLTV/88888888/224/3221226358/index.m3u8
-#EXTINF:-1 tvg-name="河南梨园" group-title="河南省",河南梨园 [1普通]
-http://39.136.48.2:8089/PLTV/88888888/224/3221226354/index.m3u8
-#EXTINF:-1 tvg-name="河南武术世界" group-title="河南省",河南武术世界 [1普通]
-http://39.136.48.53:8089/PLTV/88888888/224/3221226356/index.m3u8
-#EXTINF:-1 tvg-name="河南民生" group-title="河南省",河南民生 [5普通]
-http://tvcdn.stream3.hndt.com/tv/65bef28a017e10009c49d5f900000000_transios/playlist.m3u8?wsSecret=2e5adbabe8f8ccbfd12c39961e5279af&wsTime=1770508686|https://stream1.freetv.fun/he-nan-min-sheng-4.m3u8|https://stream1.freetv.fun/he-nan-min-sheng-8.m3u8|https://migu.188766.xyz/?migutoken=69e208abda49b9b6afa162536c610886&id=%E6%B0%91%E7%94%9F%E9%A2%91%E9%81%93&type=yy|http://media.hndyjyfw.gov.cn/live/jz-henanminsheng/live.m3u8
-#EXTINF:-1 tvg-name="河南温县" group-title="河南省",河南温县 [1普通]
-http://live.dxhmt.cn:9081/tv/10825-1.m3u8
-#EXTINF:-1 tvg-name="河南都市" group-title="河南省",河南都市 [6普通]
-http://tvcdn.stream3.hndt.com/tv/65c3fbc5017e1000fde13faa00000000_transios/playlist.m3u8?wsSecret=fc64b98e88b922e21aa9b8f70394e31c&wsTime=1770508686|https://stream1.freetv.fun/he-nan-du-shi-10.m3u8|https://stream1.freetv.fun/he-nan-du-shi-2.m3u8|https://stream1.freetv.fun/he-nan-du-shi-9.m3u8|https://migu.188766.xyz/?migutoken=2bd0b3bb68efd95cc5ab62d8d83860a6&id=%E9%83%BD%E5%B8%82%E9%A2%91%E9%81%93&type=yy|http://media.hndyjyfw.gov.cn/live/jz-henandushi/live.m3u8
+#EXTINF:-1 tvg-name="河南民生" group-title="河南省",河南民生 [2普通]
+https://stream1.freetv.fun/he-nan-min-sheng-4.m3u8|https://stream1.freetv.fun/he-nan-min-sheng-8.m3u8
+#EXTINF:-1 tvg-name="河南都市" group-title="河南省",河南都市 [3普通]
+https://stream1.freetv.fun/he-nan-du-shi-10.m3u8|https://stream1.freetv.fun/he-nan-du-shi-2.m3u8|https://stream1.freetv.fun/he-nan-du-shi-9.m3u8
