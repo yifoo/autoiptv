@@ -1,7 +1,7 @@
 #EXTM3U
 # 山东省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-08 20:55:19
-# 电视台数量: 13
+# 更新时间(北京时间): 2026-02-09 02:55:03
+# 电视台数量: 11
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -27,11 +27,7 @@ http://58.57.40.22:9901/tsfile/live/1023_1.m3u8
 https://stream1.freetv.fun/shan-dong-xin-wen-2.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-3.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-7.m3u8|https://stream1.freetv.fun/shan-dong-xin-wen-10.m3u8|http://live.xmcdn.com/live/1440/64.m3u8
 #EXTINF:-1 tvg-name="山东生活" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东生活.png",山东生活 [2普通]
 http://58.57.40.22:9901/tsfile/live/1018_1.m3u8|http://live.xmcdn.com/live/802/64.m3u8
-#EXTINF:-1 tvg-name="山东黄岛健康频道" group-title="山东省",山东黄岛健康频道 [1普通]
-http://xhalive.qwmedia.cn/hdratv-live/xha-jkpd.flv
 #EXTINF:-1 tvg-name="山东黄岛房车频道" group-title="山东省",山东黄岛房车频道 [1普通]
 http://xhalive.qwmedia.cn/hdratv-live/xha-fcpd.flv
-#EXTINF:-1 tvg-name="山东黄岛新闻综合" group-title="山东省",山东黄岛新闻综合 [1普通]
-http://qdxmtlive.qwmedia.cn/hdratv-live/xha-xwpd.flv
 #EXTINF:-1 tvg-name="山东黄岛生活频道" group-title="山东省",山东黄岛生活频道 [1普通]
 http://xhalive.qwmedia.cn/hdratv-live/xha-shpd.flv
