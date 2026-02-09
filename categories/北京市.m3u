@@ -1,6 +1,6 @@
 #EXTM3U
 # 北京市频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-09 02:55:03
+# 更新时间(北京时间): 2026-02-10 03:33:42
 # 电视台数量: 12
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
@@ -15,8 +15,8 @@ http://[2409:8087:1:20:20::26]/otttv.bj.chinamobile.com/PLTV/88888888/224/322122
 http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226438/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EeVAybrHg955d_IRT9e_uHQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNMLCKqkSfuGOusJwBMwlCbz%2CEND
 #EXTINF:-1 tvg-name="北京影视" group-title="北京市" tvg-logo="https://live.fanmingming.cn/tv/北京影视.png" tvg-ipv6="true",北京影视 [1IPv6]
 http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226433/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EygquRbh9L0wUPRY53fsZWw%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNO62IynDcU1yYDL1b4Xte8T%2CEND
-#EXTINF:-1 tvg-name="北京新闻" group-title="北京市" tvg-logo="https://epg.pw/media/images/channel/2022/05/13/large/20220513145911554540_68.jpg",北京新闻 [4普通]
-https://epg.pw/stream/df5f291b3e91d85d43f12c1253c789da96a06b0263fd5ccd662fd90514379fda.ctv|http://player.cntv.cn/standard/live_HLSDRM20180524.swf?ChannelID=btv9&videoTVChannel=btv9&P2PChannelID=pd://cctv_p2p_hdbtv9&tai=btv9&VideoName=btv9&channelID=btv9|https://wstvcpudali.v.myalicdn.com/wstvcpud/udrmbtv9_1/index.m3u8?adapt=0&BR=audio|http://live.xmcdn.com/live/91/64.m3u8
+#EXTINF:-1 tvg-name="北京新闻" group-title="北京市",北京新闻 [3普通]
+http://player.cntv.cn/standard/live_HLSDRM20180524.swf?ChannelID=btv9&videoTVChannel=btv9&P2PChannelID=pd://cctv_p2p_hdbtv9&tai=btv9&VideoName=btv9&channelID=btv9|https://wstvcpudali.v.myalicdn.com/wstvcpud/udrmbtv9_1/index.m3u8?adapt=0&BR=audio|http://live.xmcdn.com/live/91/64.m3u8
 #EXTINF:-1 tvg-name="北京生活" group-title="北京市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/北京生活.png",北京生活 [2普通]
 https://wstvcpudali.v.myalicdn.com/wstvcpud/udrmbtv7_1/index.m3u8?adapt=0&BR=audio|http://player.cntv.cn/standard/live_HLSDRM20180524.swf?ChannelID=btv7&videoTVChannel=btv7&P2PChannelID=pd://cctv_p2p_hdbtv7&tai=btv7&VideoName=btv7&channelID=btv7
 #EXTINF:-1 tvg-name="北京科教" group-title="北京市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/北京科教.png",北京科教 [1普通]
@@ -27,9 +27,9 @@ http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/322122
 http://player.cntv.cn/standard/live_HLSDRM20180524.swf?ChannelID=btv5&videoTVChannel=btv5&P2PChannelID=pd://cctv_p2p_hdbtv5&tai=btv5&VideoName=btv5&channelID=btv5|https://wstvcpudali.v.myalicdn.com/wstvcpud/udrmbtv5_1/index.m3u8?adapt=0&BR=audio
 #EXTINF:-1 tvg-name="北京青年" group-title="北京市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/北京青年.png",北京青年 [1普通]
 http://player.cntv.cn/standard/live_HLSDRM20180919.swf?v=180.171.5.8.9.6.3.9&ChannelID=btv8&videoTVChannel=btv8&P2PChannelID=pd://cctv_p2p_hdbtv8&tai=btv8&VideoName=btv8&channelID=btv8
-#EXTINF:-1 tvg-name="女篮俱乐部杯 北京首钢园VS厦门环东文旅 赛场原声 19:25" group-title="北京市",女篮俱乐部杯 北京首钢园VS厦门环东文旅 赛场原声 19:25 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%8C%97%E4%BA%AC%E9%A6%96%E9%92%A2%E5%9B%ADVS%E5%8E%A6%E9%97%A8%E7%8E%AF%E4%B8%9C%E6%96%87%E6%97%85%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2019%3A25&line=1
-#EXTINF:-1 tvg-name="女篮俱乐部杯 四川蜀道远达VS北京首钢园 全场回放（原声） 16:55" group-title="北京市",女篮俱乐部杯 四川蜀道远达VS北京首钢园 全场回放（原声） 16:55 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%9B%9B%E5%B7%9D%E8%9C%80%E9%81%93%E8%BF%9C%E8%BE%BEVS%E5%8C%97%E4%BA%AC%E9%A6%96%E9%92%A2%E5%9B%AD%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%8E%9F%E5%A3%B0%EF%BC%89%2016%3A55&line=1
+#EXTINF:-1 tvg-name="女篮俱乐部杯 北京首钢园VS厦门环东文旅 全场回放（原声） 19:25" group-title="北京市",女篮俱乐部杯 北京首钢园VS厦门环东文旅 全场回放（原声） 19:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%8C%97%E4%BA%AC%E9%A6%96%E9%92%A2%E5%9B%ADVS%E5%8E%A6%E9%97%A8%E7%8E%AF%E4%B8%9C%E6%96%87%E6%97%85%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%8E%9F%E5%A3%B0%EF%BC%89%2019%3A25&line=1
 #EXTINF:-1 tvg-name="女篮俱乐部杯 河南豫光金铅VS北京首钢园 赛场原声 14:25" group-title="北京市",女篮俱乐部杯 河南豫光金铅VS北京首钢园 赛场原声 14:25 [1普通]
 https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E6%B2%B3%E5%8D%97%E8%B1%AB%E5%85%89%E9%87%91%E9%93%85VS%E5%8C%97%E4%BA%AC%E9%A6%96%E9%92%A2%E5%9B%AD%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2014%3A25&line=1
+#EXTINF:-1 tvg-name="女篮俱乐部杯 陕西榆林天泽VS北京首钢园 赛场原声 14:25" group-title="北京市",女篮俱乐部杯 陕西榆林天泽VS北京首钢园 赛场原声 14:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E9%99%95%E8%A5%BF%E6%A6%86%E6%9E%97%E5%A4%A9%E6%B3%BDVS%E5%8C%97%E4%BA%AC%E9%A6%96%E9%92%A2%E5%9B%AD%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2014%3A25&line=1

@@ -1,6 +1,6 @@
 #EXTM3U
 # 海南省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-09 02:55:03
+# 更新时间(北京时间): 2026-02-10 03:33:42
 # 电视台数量: 3
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
@@ -11,7 +11,7 @@
 
 #EXTINF:-1 tvg-name="海南公共" group-title="海南省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/海南公共.png" tvg-ipv6="true",海南公共 [3IPv6]
 https://stream1.freetv.fun/ipv6-hai-nan-gong-gong-8.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-gong-gong-9.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-gong-gong-16.m3u8
-#EXTINF:-1 tvg-name="海南文旅" group-title="海南省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/海南文旅.png" tvg-ipv6="true",海南文旅 [2IPv6]
-https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-7.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-9.m3u8
+#EXTINF:-1 tvg-name="海南文旅" group-title="海南省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/海南文旅.png" tvg-ipv6="true",海南文旅 [1IPv6]
+https://stream1.freetv.fun/ipv6-hai-nan-wen-lu-7.m3u8
 #EXTINF:-1 tvg-name="海南新闻" group-title="海南省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/海南新闻.png" tvg-ipv6="true",海南新闻 [2IPv6]
 https://stream1.freetv.fun/ipv6-hai-nan-xin-wen-6.m3u8|https://stream1.freetv.fun/ipv6-hai-nan-xin-wen-10.m3u8

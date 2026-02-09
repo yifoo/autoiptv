@@ -1,7 +1,7 @@
 #EXTM3U
 # 云南省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-09 02:55:03
-# 电视台数量: 14
+# 更新时间(北京时间): 2026-02-10 03:33:42
+# 电视台数量: 8
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -25,15 +25,3 @@ https://gcalic.v.myalicdn.com/gc/dlst03_1/index.m3u8
 https://gcalic.v.myalicdn.com/gc/dlst01_1/index.m3u8
 #EXTINF:-1 tvg-name="云南白沙远眺玉龙雪山" group-title="云南省" tvg-logo="https://tb.zbds.top/logo/云南白沙远眺玉龙雪山.png",云南白沙远眺玉龙雪山 [1普通]
 https://gcalic.v.myalicdn.com/gc/hkylxs03_1/index.m3u8
-#EXTINF:-1 tvg-name="云南省城市足球联赛 临沧队VS怒江队 全场回放 5:00" group-title="云南省",云南省城市足球联赛 临沧队VS怒江队 全场回放 5:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%BA%91%E5%8D%97%E7%9C%81%E5%9F%8E%E5%B8%82%E8%B6%B3%E7%90%83%E8%81%94%E8%B5%9B%20%E4%B8%B4%E6%B2%A7%E9%98%9FVS%E6%80%92%E6%B1%9F%E9%98%9F%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%205%3A00&line=1
-#EXTINF:-1 tvg-name="云南省城市足球联赛 丽江队VS曲靖队 全场回放 5:00" group-title="云南省",云南省城市足球联赛 丽江队VS曲靖队 全场回放 5:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%BA%91%E5%8D%97%E7%9C%81%E5%9F%8E%E5%B8%82%E8%B6%B3%E7%90%83%E8%81%94%E8%B5%9B%20%E4%B8%BD%E6%B1%9F%E9%98%9FVS%E6%9B%B2%E9%9D%96%E9%98%9F%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%205%3A00&line=1
-#EXTINF:-1 tvg-name="云南省城市足球联赛 文山队VS昆明队 全场回放 5:00" group-title="云南省",云南省城市足球联赛 文山队VS昆明队 全场回放 5:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%BA%91%E5%8D%97%E7%9C%81%E5%9F%8E%E5%B8%82%E8%B6%B3%E7%90%83%E8%81%94%E8%B5%9B%20%E6%96%87%E5%B1%B1%E9%98%9FVS%E6%98%86%E6%98%8E%E9%98%9F%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%205%3A00&line=1
-#EXTINF:-1 tvg-name="云南省城市足球联赛 昭通队VS红河队 全场回放 5:00" group-title="云南省",云南省城市足球联赛 昭通队VS红河队 全场回放 5:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%BA%91%E5%8D%97%E7%9C%81%E5%9F%8E%E5%B8%82%E8%B6%B3%E7%90%83%E8%81%94%E8%B5%9B%20%E6%98%AD%E9%80%9A%E9%98%9FVS%E7%BA%A2%E6%B2%B3%E9%98%9F%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%205%3A00&line=1
-#EXTINF:-1 tvg-name="云南省城市足球联赛 玉溪队VS大理队 全场回放 5:00" group-title="云南省",云南省城市足球联赛 玉溪队VS大理队 全场回放 5:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%BA%91%E5%8D%97%E7%9C%81%E5%9F%8E%E5%B8%82%E8%B6%B3%E7%90%83%E8%81%94%E8%B5%9B%20%E7%8E%89%E6%BA%AA%E9%98%9FVS%E5%A4%A7%E7%90%86%E9%98%9F%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%205%3A00&line=1
-#EXTINF:-1 tvg-name="云南省城市足球联赛 迪庆队VS楚雄队 全场回放 5:00" group-title="云南省",云南省城市足球联赛 迪庆队VS楚雄队 全场回放 5:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%BA%91%E5%8D%97%E7%9C%81%E5%9F%8E%E5%B8%82%E8%B6%B3%E7%90%83%E8%81%94%E8%B5%9B%20%E8%BF%AA%E5%BA%86%E9%98%9FVS%E6%A5%9A%E9%9B%84%E9%98%9F%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%205%3A00&line=1

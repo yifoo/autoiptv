@@ -1,6 +1,6 @@
 #EXTM3U
 # 陕西省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-09 02:55:03
+# 更新时间(北京时间): 2026-02-10 03:33:42
 # 电视台数量: 6
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
@@ -11,13 +11,13 @@
 
 #EXTINF:-1 tvg-name="女篮俱乐部杯 厦门环东文旅VS陕西榆林天泽 赛场原声 16:55" group-title="陕西省",女篮俱乐部杯 厦门环东文旅VS陕西榆林天泽 赛场原声 16:55 [1普通]
 https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%8E%A6%E9%97%A8%E7%8E%AF%E4%B8%9C%E6%96%87%E6%97%85VS%E9%99%95%E8%A5%BF%E6%A6%86%E6%9E%97%E5%A4%A9%E6%B3%BD%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2016%3A55&line=1
-#EXTINF:-1 tvg-name="陕西体育休闲" group-title="陕西省",陕西体育休闲 [2普通]
-https://mgtv.ottiptv.cc/mg/956909356.m3u8?userid=5559462299&sign=7853497ae6b23c4e65274299ae96b5c5e4ed7f3d45d130db365c23aabf9f29308949e42611a42e71d375133978f945c9c1d8a28581910484decc3c13dec163c396cc177f8147f65735a8297ac16183c885&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8|https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E4%BD%93%E8%82%B2%E4%BC%91%E9%97%B2%E9%A2%91%E9%81%93&line=1
-#EXTINF:-1 tvg-name="陕西新闻资讯" group-title="陕西省",陕西新闻资讯 [2普通]
-https://mgtv.ottiptv.cc/mg/956909289.m3u8?userid=5559462299&sign=35f3d1fda21aef7012fd84a205466e0b86d247a1eaab5a5752fff738b8b729ae429d5f8afd3688c8b55515a0bc7e13db88b2619bd62da98d89010060793baa87132b957fd83290d6d3ff8b39986dc89c81&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8|https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E6%96%B0%E9%97%BB%E8%B5%84%E8%AE%AF%E9%A2%91%E9%81%93&line=1
+#EXTINF:-1 tvg-name="陕西体育休闲" group-title="陕西省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/陕西体育休闲.png",陕西体育休闲 [2普通]
+https://mgtv.ottiptv.cc/mg/956909356.m3u8?userid=5559462299&sign=689afa012025f4f7a8db3967472166027cccdd5449621c0903231d8f0f0dc75728e3e413cb50aa8df4b7feb7b04651a57a05a94b31eb9d9eae5bb99deb812a6858554b37878c48d7a3311f035078592aec&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8|https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E4%BD%93%E8%82%B2%E4%BC%91%E9%97%B2%E9%A2%91%E9%81%93&line=1
+#EXTINF:-1 tvg-name="陕西新闻资讯" group-title="陕西省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/陕西新闻资讯.png",陕西新闻资讯 [1普通]
+https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E6%96%B0%E9%97%BB%E8%B5%84%E8%AE%AF%E9%A2%91%E9%81%93&line=1
 #EXTINF:-1 tvg-name="陕西洋县国宝朱鹮02" group-title="陕西省" tvg-logo="https://tb.zbds.top/logo/陕西洋县国宝朱鹮02.png",陕西洋县国宝朱鹮02 [1普通]
 https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8
 #EXTINF:-1 tvg-name="陕西洋县国宝朱鹮03" group-title="陕西省",陕西洋县国宝朱鹮03 [1普通]
 https://gcalic.v.myalicdn.com/gc/zh03_1/index.m3u8
-#EXTINF:-1 tvg-name="陕西都市青春" group-title="陕西省",陕西都市青春 [1普通]
-https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E9%83%BD%E5%B8%82%E9%9D%92%E6%98%A5%E9%A2%91%E9%81%93&line=1
+#EXTINF:-1 tvg-name="陕西都市青春" group-title="陕西省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/陕西都市青春.png",陕西都市青春 [2普通]
+https://mgtv.ottiptv.cc/mg/956909358.m3u8?userid=5559462299&sign=32027b80b2b1a8844a7d9a562b898dc43767e70b64cc6c498629c9c158f5144f7030fa201b79a54c3a0c34d927e4e39b5e31df62e6adbff24feb67a58f8e5bd2e01049dce858b12b5461773b2367bca807&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8|https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E9%83%BD%E5%B8%82%E9%9D%92%E6%98%A5%E9%A2%91%E9%81%93&line=1
