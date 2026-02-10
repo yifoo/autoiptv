@@ -1,7 +1,7 @@
 #EXTM3U
 # 山东省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-10 03:33:42
-# 电视台数量: 9
+# 更新时间(北京时间): 2026-02-11 03:28:08
+# 电视台数量: 8
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -9,12 +9,10 @@
 # 白名单功能: 启用
 # 测速功能: 启用
 
-#EXTINF:-1 tvg-name="女篮俱乐部杯 山东赤水河酒VS四川蜀道远达 赛场原声 19:25" group-title="山东省",女篮俱乐部杯 山东赤水河酒VS四川蜀道远达 赛场原声 19:25 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%B1%B1%E4%B8%9C%E8%B5%A4%E6%B0%B4%E6%B2%B3%E9%85%92VS%E5%9B%9B%E5%B7%9D%E8%9C%80%E9%81%93%E8%BF%9C%E8%BE%BE%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2019%3A25&line=1
+#EXTINF:-1 tvg-name="女篮俱乐部杯 山东赤水河酒VS四川蜀道远达 全场回放（原声） 19:25" group-title="山东省",女篮俱乐部杯 山东赤水河酒VS四川蜀道远达 全场回放（原声） 19:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%B1%B1%E4%B8%9C%E8%B5%A4%E6%B0%B4%E6%B2%B3%E9%85%92VS%E5%9B%9B%E5%B7%9D%E8%9C%80%E9%81%93%E8%BF%9C%E8%BE%BE%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%8E%9F%E5%A3%B0%EF%BC%89%2019%3A25&line=1
 #EXTINF:-1 tvg-name="女篮俱乐部杯 山东赤水河酒VS河南豫光金铅 赛场原声 19:25" group-title="山东省",女篮俱乐部杯 山东赤水河酒VS河南豫光金铅 赛场原声 19:25 [1普通]
 https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%B1%B1%E4%B8%9C%E8%B5%A4%E6%B0%B4%E6%B2%B3%E9%85%92VS%E6%B2%B3%E5%8D%97%E8%B1%AB%E5%85%89%E9%87%91%E9%93%85%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2019%3A25&line=1
-#EXTINF:-1 tvg-name="女篮俱乐部杯 陕西榆林天泽VS山东赤水河酒 全场回放（原声） 16:55" group-title="山东省",女篮俱乐部杯 陕西榆林天泽VS山东赤水河酒 全场回放（原声） 16:55 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E9%99%95%E8%A5%BF%E6%A6%86%E6%9E%97%E5%A4%A9%E6%B3%BDVS%E5%B1%B1%E4%B8%9C%E8%B5%A4%E6%B0%B4%E6%B2%B3%E9%85%92%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%8E%9F%E5%A3%B0%EF%BC%89%2016%3A55&line=1
 #EXTINF:-1 tvg-name="山东农科" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东农科.png",山东农科 [1普通]
 http://58.57.40.22:9901/tsfile/live/1022_1.m3u8
 #EXTINF:-1 tvg-name="山东教育" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东教育.png",山东教育 [1普通]

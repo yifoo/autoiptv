@@ -1,7 +1,7 @@
 #EXTM3U
 # 山西省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-10 03:33:42
-# 电视台数量: 5
+# 更新时间(北京时间): 2026-02-11 03:28:08
+# 电视台数量: 4
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -11,11 +11,9 @@
 
 #EXTINF:-1 tvg-name="女篮俱乐部杯 上海浦发银行VS山西竹叶青酒 赛场原声 14:25" group-title="山西省",女篮俱乐部杯 上海浦发银行VS山西竹叶青酒 赛场原声 14:25 [1普通]
 https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E4%B8%8A%E6%B5%B7%E6%B5%A6%E5%8F%91%E9%93%B6%E8%A1%8CVS%E5%B1%B1%E8%A5%BF%E7%AB%B9%E5%8F%B6%E9%9D%92%E9%85%92%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2014%3A25&line=1
-#EXTINF:-1 tvg-name="女篮俱乐部杯 山西竹叶青酒VS合肥文旅 赛场原声 14:25" group-title="山西省",女篮俱乐部杯 山西竹叶青酒VS合肥文旅 赛场原声 14:25 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%B1%B1%E8%A5%BF%E7%AB%B9%E5%8F%B6%E9%9D%92%E9%85%92VS%E5%90%88%E8%82%A5%E6%96%87%E6%97%85%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2014%3A25&line=1
-#EXTINF:-1 tvg-name="女篮俱乐部杯 武汉盛帆黄鹤VS山西竹叶青酒 全场回放（原声） 16:55" group-title="山西省",女篮俱乐部杯 武汉盛帆黄鹤VS山西竹叶青酒 全场回放（原声） 16:55 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E6%AD%A6%E6%B1%89%E7%9B%9B%E5%B8%86%E9%BB%84%E9%B9%A4VS%E5%B1%B1%E8%A5%BF%E7%AB%B9%E5%8F%B6%E9%9D%92%E9%85%92%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%8E%9F%E5%A3%B0%EF%BC%89%2016%3A55&line=1
-#EXTINF:-1 tvg-name="女篮俱乐部杯 武汉盛帆黄鹤VS山西竹叶青酒 全场回放（现场解说） 16:55" group-title="山西省",女篮俱乐部杯 武汉盛帆黄鹤VS山西竹叶青酒 全场回放（现场解说） 16:55 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E6%AD%A6%E6%B1%89%E7%9B%9B%E5%B8%86%E9%BB%84%E9%B9%A4VS%E5%B1%B1%E8%A5%BF%E7%AB%B9%E5%8F%B6%E9%9D%92%E9%85%92%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E7%8E%B0%E5%9C%BA%E8%A7%A3%E8%AF%B4%EF%BC%89%2016%3A55&line=1
+#EXTINF:-1 tvg-name="女篮俱乐部杯 山西竹叶青酒VS合肥文旅 全场回放 14:25" group-title="山西省",女篮俱乐部杯 山西竹叶青酒VS合肥文旅 全场回放 14:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%B1%B1%E8%A5%BF%E7%AB%B9%E5%8F%B6%E9%9D%92%E9%85%92VS%E5%90%88%E8%82%A5%E6%96%87%E6%97%85%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%2014%3A25&line=1
+#EXTINF:-1 tvg-name="女篮俱乐部杯 山西竹叶青酒VS合肥文旅 全场回放（现场解说） 14:25" group-title="山西省",女篮俱乐部杯 山西竹叶青酒VS合肥文旅 全场回放（现场解说） 14:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%B1%B1%E8%A5%BF%E7%AB%B9%E5%8F%B6%E9%9D%92%E9%85%92VS%E5%90%88%E8%82%A5%E6%96%87%E6%97%85%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E7%8E%B0%E5%9C%BA%E8%A7%A3%E8%AF%B4%EF%BC%89%2014%3A25&line=1
 #EXTINF:-1 tvg-name="湖南张家界天门山西线玻璃栈道" group-title="山西省" tvg-logo="https://tb.zbds.top/logo/湖南张家界天门山西线玻璃栈道.png",湖南张家界天门山西线玻璃栈道 [1普通]
 https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8

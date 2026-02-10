@@ -1,6 +1,6 @@
 #EXTM3U
 # 江苏省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-10 03:33:42
+# 更新时间(北京时间): 2026-02-11 03:28:08
 # 电视台数量: 9
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
@@ -9,8 +9,8 @@
 # 白名单功能: 启用
 # 测速功能: 启用
 
-#EXTINF:-1 tvg-name="女篮俱乐部杯 江苏南钢VS福建金篮 全场回放 14:25" group-title="江苏省",女篮俱乐部杯 江苏南钢VS福建金篮 全场回放 14:25 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E6%B1%9F%E8%8B%8F%E5%8D%97%E9%92%A2VS%E7%A6%8F%E5%BB%BA%E9%87%91%E7%AF%AE%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%2014%3A25&line=1
+#EXTINF:-1 tvg-name="女篮俱乐部杯 东莞新彤盛VS江苏南钢 全场回放（现场解说） 19:25" group-title="江苏省",女篮俱乐部杯 东莞新彤盛VS江苏南钢 全场回放（现场解说） 19:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E4%B8%9C%E8%8E%9E%E6%96%B0%E5%BD%A4%E7%9B%9BVS%E6%B1%9F%E8%8B%8F%E5%8D%97%E9%92%A2%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E7%8E%B0%E5%9C%BA%E8%A7%A3%E8%AF%B4%EF%BC%89%2019%3A25&line=1
 #EXTINF:-1 tvg-name="江苏 徐州云龙湖观景台西" group-title="江苏省",江苏 徐州云龙湖观景台西 [1普通]
 https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="江苏 无锡鼋头渚赏樱阁" group-title="江苏省",江苏 无锡鼋头渚赏樱阁 [1普通]

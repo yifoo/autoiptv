@@ -1,7 +1,7 @@
 #EXTM3U
 # 上海市频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-10 03:33:42
-# 电视台数量: 8
+# 更新时间(北京时间): 2026-02-11 03:28:08
+# 电视台数量: 11
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -11,8 +11,8 @@
 
 #EXTINF:-1 tvg-name="上海新闻综合" group-title="上海市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/上海新闻综合.png",上海新闻综合 [2普通]
 https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-3.m3u8|https://iptv.catvod.com/live.php?id=%E4%B8%8A%E6%B5%B7%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88&line=1
-#EXTINF:-1 tvg-name="上海滩" group-title="上海市",上海滩 [2普通]
-https://vip1.lz-cdn1.com/20220516/5843_f2d3e2af/1200k/hls/mixed.m3u8|https://txmov2.a.kwimgs.com/upic/2021/02/22/22/BMjAyMTAyMjIyMjU2NDFfMTI0MzE0NjMyOF80NDg1MDgzMTY5NF8yXzM=_b_B35aa4e9376173041991a9a379ff4ac56.mp4
+#EXTINF:-1 tvg-name="上海滩" group-title="上海市",上海滩 [1普通]
+https://txmov2.a.kwimgs.com/upic/2021/02/22/22/BMjAyMTAyMjIyMjU2NDFfMTI0MzE0NjMyOF80NDg1MDgzMTY5NF8yXzM=_b_B35aa4e9376173041991a9a379ff4ac56.mp4
 #EXTINF:-1 tvg-name="上海第一财经" group-title="上海市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/上海第一财经.png",上海第一财经 [1普通]
 https://iptv.catvod.com/live.php?id=%E4%B8%8A%E6%B5%B7%E7%AC%AC%E4%B8%80%E8%B4%A2%E7%BB%8F&line=1
 #EXTINF:-1 tvg-name="上海纪实" group-title="上海市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/上海纪实.png" tvg-ipv6="true",上海纪实 [3IPv6+1普通]
@@ -23,5 +23,11 @@ https://stream1.freetv.fun/ipv6-shang-hai-du-shi-3.m3u8|https://stream1.freetv.f
 https://iptv.catvod.com/live.php?id=%E4%BA%9A%E5%86%A0%E7%B2%BE%E8%8B%B1%20%E4%B8%8A%E6%B5%B7%E7%94%B3%E8%8A%B1VS%E7%94%BA%E7%94%B0%E6%B3%BD%E7%BB%B4%E4%BA%9A%20%E5%A8%84%E4%B8%80%E6%99%A8%20%E5%88%98%E8%B6%8A%20%E5%A7%9A%E5%AE%89%E5%A6%AE%2020%3A00&line=1
 #EXTINF:-1 tvg-name="亚冠精英 上海申花VS町田泽维亚 赛场原声 20:00" group-title="上海市",亚冠精英 上海申花VS町田泽维亚 赛场原声 20:00 [2普通]
 https://iptv.catvod.com/live.php?id=%E4%BA%9A%E5%86%A0%E7%B2%BE%E8%8B%B1%20%E4%B8%8A%E6%B5%B7%E7%94%B3%E8%8A%B1VS%E7%94%BA%E7%94%B0%E6%B3%BD%E7%BB%B4%E4%BA%9A%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2020%3A00&line=1|https://iptv.catvod.com/live.php?id=%E4%BA%9A%E5%86%A0%E7%B2%BE%E8%8B%B1%20%E4%B8%8A%E6%B5%B7%E7%94%B3%E8%8A%B1VS%E7%94%BA%E7%94%B0%E6%B3%BD%E7%BB%B4%E4%BA%9A%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2020%3A00&line=2
-#EXTINF:-1 tvg-name="女篮俱乐部杯 武汉盛帆黄鹤VS上海浦发银行 赛场原声 19:25" group-title="上海市",女篮俱乐部杯 武汉盛帆黄鹤VS上海浦发银行 赛场原声 19:25 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E6%AD%A6%E6%B1%89%E7%9B%9B%E5%B8%86%E9%BB%84%E9%B9%A4VS%E4%B8%8A%E6%B5%B7%E6%B5%A6%E5%8F%91%E9%93%B6%E8%A1%8C%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2019%3A25&line=1
+#EXTINF:-1 tvg-name="亚冠精英 江原FCVS上海海港 石庆圣 李彦 魏欣怡 17:45" group-title="上海市",亚冠精英 江原FCVS上海海港 石庆圣 李彦 魏欣怡 17:45 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%BA%9A%E5%86%A0%E7%B2%BE%E8%8B%B1%20%E6%B1%9F%E5%8E%9FFCVS%E4%B8%8A%E6%B5%B7%E6%B5%B7%E6%B8%AF%20%E7%9F%B3%E5%BA%86%E5%9C%A3%20%E6%9D%8E%E5%BD%A6%20%E9%AD%8F%E6%AC%A3%E6%80%A1%2017%3A45&line=1
+#EXTINF:-1 tvg-name="亚冠精英 江原FCVS上海海港 赛场原声 17:45" group-title="上海市",亚冠精英 江原FCVS上海海港 赛场原声 17:45 [1普通]
+https://iptv.catvod.com/live.php?id=%E4%BA%9A%E5%86%A0%E7%B2%BE%E8%8B%B1%20%E6%B1%9F%E5%8E%9FFCVS%E4%B8%8A%E6%B5%B7%E6%B5%B7%E6%B8%AF%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2017%3A45&line=1
+#EXTINF:-1 tvg-name="女篮俱乐部杯 武汉盛帆黄鹤VS上海浦发银行 全场回放（原声） 19:25" group-title="上海市",女篮俱乐部杯 武汉盛帆黄鹤VS上海浦发银行 全场回放（原声） 19:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E6%AD%A6%E6%B1%89%E7%9B%9B%E5%B8%86%E9%BB%84%E9%B9%A4VS%E4%B8%8A%E6%B5%B7%E6%B5%A6%E5%8F%91%E9%93%B6%E8%A1%8C%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%8E%9F%E5%A3%B0%EF%BC%89%2019%3A25&line=1
+#EXTINF:-1 tvg-name="女篮俱乐部杯 武汉盛帆黄鹤VS上海浦发银行 全场回放（现场解说） 19:25" group-title="上海市",女篮俱乐部杯 武汉盛帆黄鹤VS上海浦发银行 全场回放（现场解说） 19:25 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E6%AD%A6%E6%B1%89%E7%9B%9B%E5%B8%86%E9%BB%84%E9%B9%A4VS%E4%B8%8A%E6%B5%B7%E6%B5%A6%E5%8F%91%E9%93%B6%E8%A1%8C%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E7%8E%B0%E5%9C%BA%E8%A7%A3%E8%AF%B4%EF%BC%89%2019%3A25&line=1
