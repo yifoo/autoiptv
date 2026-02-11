@@ -1,6 +1,6 @@
 #EXTM3U
 # 福建省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-11 03:28:08
+# 更新时间(北京时间): 2026-02-12 03:21:28
 # 电视台数量: 11
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
@@ -9,8 +9,8 @@
 # 白名单功能: 启用
 # 测速功能: 启用
 
-#EXTINF:-1 tvg-name="女篮俱乐部杯 福建金篮VS新疆天山 全场回放 14:25" group-title="福建省",女篮俱乐部杯 福建金篮VS新疆天山 全场回放 14:25 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E7%A6%8F%E5%BB%BA%E9%87%91%E7%AF%AEVS%E6%96%B0%E7%96%86%E5%A4%A9%E5%B1%B1%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%2014%3A25&line=1
+#EXTINF:-1 tvg-name="女篮俱乐部杯 东莞新彤盛VS福建金篮 全场回放（现场解说） 16:55" group-title="福建省",女篮俱乐部杯 东莞新彤盛VS福建金篮 全场回放（现场解说） 16:55 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E4%B8%9C%E8%8E%9E%E6%96%B0%E5%BD%A4%E7%9B%9BVS%E7%A6%8F%E5%BB%BA%E9%87%91%E7%AF%AE%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E7%8E%B0%E5%9C%BA%E8%A7%A3%E8%AF%B4%EF%BC%89%2016%3A55&line=1
 #EXTINF:-1 tvg-name="福建乡村振兴公共" group-title="福建省" tvg-logo="https://live.fanmingming.cn/tv/福建乡村振兴公共.png",福建乡村振兴公共 [1普通]
 http://8.138.7.223/tv/fjtv1.php?id=fjxc
 #EXTINF:-1 tvg-name="福建公共" group-title="福建省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建公共.png",福建公共 [1普通]

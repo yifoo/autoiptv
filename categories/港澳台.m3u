@@ -1,6 +1,6 @@
 #EXTM3U
 # 港澳台频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-11 03:28:08
+# 更新时间(北京时间): 2026-02-12 03:21:28
 # 电视台数量: 54
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
@@ -61,8 +61,8 @@ http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV19.m3u8
 #EXTINF:-1 tvg-name="东森购物3" group-title="港澳台",东森购物3 [1普通]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV18.m3u8
-#EXTINF:-1 tvg-name="东森超视" group-title="港澳台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png",东森超视 [9普通]
-https://stream1.freetv.fun/dong-sen-chao-shi-4.m3u8|https://stream1.freetv.fun/dong-sen-chao-shi-2.m3u8|https://stream1.freetv.fun/dong-sen-chao-shi-8.m3u8|https://stream1.freetv.fun/dong-sen-chao-shi-9.m3u8|https://stream1.freetv.fun/dong-sen-chao-shi-6.m3u8|https://stream1.freetv.fun/dong-sen-chao-shi-7.ctv|https://stream1.freetv.fun/dong-sen-chao-shi-2.ctv|https://stream1.freetv.fun/dong-sen-chao-shi-6.ctv|http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_dscs.flv
+#EXTINF:-1 tvg-name="东森超视" group-title="港澳台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/东森超视.png",东森超视 [8普通]
+https://stream1.freetv.fun/dong-sen-chao-shi-4.m3u8|https://stream1.freetv.fun/dong-sen-chao-shi-2.m3u8|https://stream1.freetv.fun/dong-sen-chao-shi-8.m3u8|https://stream1.freetv.fun/dong-sen-chao-shi-9.m3u8|https://stream1.freetv.fun/dong-sen-chao-shi-6.m3u8|https://stream1.freetv.fun/dong-sen-chao-shi-2.ctv|https://stream1.freetv.fun/dong-sen-chao-shi-6.ctv|http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_dscs.flv
 #EXTINF:-1 tvg-name="中天亚洲" group-title="港澳台",中天亚洲 [4普通]
 https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv109|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv109|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv109|http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_ztyz.flv
 #EXTINF:-1 tvg-name="中天新闻" group-title="港澳台",中天新闻 [13普通]
@@ -71,8 +71,8 @@ https://stream1.freetv.fun/zhong-tian-xin-wen-3.m3u8|https://stream1.freetv.fun/
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV49.m3u8
 #EXTINF:-1 tvg-name="中天综合" group-title="港澳台",中天综合 [1普通]
 http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_ztzh.flv
-#EXTINF:-1 tvg-name="凤凰中文" group-title="港澳台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/凤凰中文.png",凤凰中文 [19普通]
-https://stream1.freetv.fun/feng-huang-zhong-wen-10.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-12.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-4.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-18.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-19.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-9.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-2.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-17.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-6.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-15.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-8.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-3.m3u8|https://cdn.163189.xyz/live/fhzw/stream.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-12.ctv|http://php.jdshipin.com/TVOD/iptv.php?id=fhzw|http://php.jdshipin.com/PLTV/iptv.php?id=fhzw|http://php.jdshipin.com:8880/TVOD/iptv.php?id=fhzw|https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV43.m3u8|http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_fhzw.flv
+#EXTINF:-1 tvg-name="凤凰中文" group-title="港澳台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/凤凰中文.png",凤凰中文 [17普通]
+https://stream1.freetv.fun/feng-huang-zhong-wen-10.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-12.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-4.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-18.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-19.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-9.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-2.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-17.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-6.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-15.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-8.m3u8|https://stream1.freetv.fun/feng-huang-zhong-wen-3.m3u8|https://cdn.163189.xyz/live/fhzw/stream.m3u8|http://php.jdshipin.com/TVOD/iptv.php?id=fhzw|http://php.jdshipin.com:8880/TVOD/iptv.php?id=fhzw|https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV43.m3u8|http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_fhzw.flv
 #EXTINF:-1 tvg-name="凤凰古城东关门" group-title="港澳台",凤凰古城东关门 [1普通]
 https://gcalic.v.myalicdn.com/gc/fhgcdgm_1/index.m3u8
 #EXTINF:-1 tvg-name="凤凰古城南华山" group-title="港澳台",凤凰古城南华山 [1普通]
@@ -92,7 +92,7 @@ https://t.freetv.fun/live/ming-zhu-4.m3u8
 #EXTINF:-1 tvg-name="杭州明珠" group-title="港澳台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/杭州明珠.png",杭州明珠 [2普通]
 https://stream1.freetv.fun/hang-zhou-ming-zhu-2.m3u8|https://stream1.freetv.fun/hang-zhou-ming-zhu-1.ctv
 #EXTINF:-1 tvg-name="民视" group-title="港澳台",民视 [6普通]
-https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv155|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv002|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv155|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv002|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv155|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv002
+https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv002|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv155|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv002|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv155|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv002|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv155
 #EXTINF:-1 tvg-name="民视台湾" group-title="港澳台",民视台湾 [5普通]
 https://stream1.freetv.fun/min-shi-tai-wan-6.m3u8|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv001|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv001|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv001|http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_mstw.flv
 #EXTINF:-1 tvg-name="民视影剧" group-title="港澳台",民视影剧 [3普通]
