@@ -1,7 +1,7 @@
 #EXTM3U
 # 江苏省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-12 03:21:28
-# 电视台数量: 9
+# 更新时间(北京时间): 2026-02-13 03:20:37
+# 电视台数量: 8
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -9,8 +9,6 @@
 # 白名单功能: 启用
 # 测速功能: 启用
 
-#EXTINF:-1 tvg-name="女篮俱乐部杯 江苏南钢VS浙江稠州银行 全场回放 19:25" group-title="江苏省",女篮俱乐部杯 江苏南钢VS浙江稠州银行 全场回放 19:25 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%A5%B3%E7%AF%AE%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E6%B1%9F%E8%8B%8F%E5%8D%97%E9%92%A2VS%E6%B5%99%E6%B1%9F%E7%A8%A0%E5%B7%9E%E9%93%B6%E8%A1%8C%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%2019%3A25&line=1
 #EXTINF:-1 tvg-name="江苏 徐州云龙湖观景台西" group-title="江苏省",江苏 徐州云龙湖观景台西 [1普通]
 https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="江苏 无锡鼋头渚赏樱阁" group-title="江苏省",江苏 无锡鼋头渚赏樱阁 [1普通]

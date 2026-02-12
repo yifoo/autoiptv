@@ -1,7 +1,7 @@
 #EXTM3U
 # 体育台频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-12 03:21:28
-# 电视台数量: 70
+# 更新时间(北京时间): 2026-02-13 03:20:37
+# 电视台数量: 14
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -9,88 +9,10 @@
 # 白名单功能: 启用
 # 测速功能: 启用
 
-#EXTINF:-1 tvg-name="CBA俱乐部杯 上海久事VS山西汾酒 赛场原声 19:20" group-title="体育台",CBA俱乐部杯 上海久事VS山西汾酒 赛场原声 19:20 [1普通]
-https://iptv.catvod.com/live.php?id=CBA%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E4%B8%8A%E6%B5%B7%E4%B9%85%E4%BA%8BVS%E5%B1%B1%E8%A5%BF%E6%B1%BE%E9%85%92%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2019%3A20&line=1
-#EXTINF:-1 tvg-name="CBA俱乐部杯 山东高速VS浙江方兴渡 赛场原声 19:20" group-title="体育台",CBA俱乐部杯 山东高速VS浙江方兴渡 赛场原声 19:20 [1普通]
-https://iptv.catvod.com/live.php?id=CBA%E4%BF%B1%E4%B9%90%E9%83%A8%E6%9D%AF%20%E5%B1%B1%E4%B8%9C%E9%AB%98%E9%80%9FVS%E6%B5%99%E6%B1%9F%E6%96%B9%E5%85%B4%E6%B8%A1%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2019%3A20&line=1
 #EXTINF:-1 tvg-name="NBA" group-title="体育台",NBA [1普通]
 http://170.yfvodcdn.com:19980/live/nbaTV2/hls.m3u8
-#EXTINF:-1 tvg-name="NBA 76人VS尼克斯 英文原声 08:25" group-title="体育台",NBA 76人VS尼克斯 英文原声 08:25 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%2076%E4%BA%BAVS%E5%B0%BC%E5%85%8B%E6%96%AF%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2008%3A25&line=1
 #EXTINF:-1 tvg-name="NBA TV" group-title="体育台",NBA TV [1普通]
 http://170.yfvodcdn.com:19980/live/nbaTV2/hls.m3u8
-#EXTINF:-1 tvg-name="NBA 凯尔特人VS公牛 英文原声 08:25" group-title="体育台",NBA 凯尔特人VS公牛 英文原声 08:25 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E5%87%AF%E5%B0%94%E7%89%B9%E4%BA%BAVS%E5%85%AC%E7%89%9B%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2008%3A25&line=1
-#EXTINF:-1 tvg-name="NBA 勇士VS灰熊 全场回放（孙博、闫宇峰、裴优） 10:55" group-title="体育台",NBA 勇士VS灰熊 全场回放（孙博、闫宇峰、裴优） 10:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E5%8B%87%E5%A3%ABVS%E7%81%B0%E7%86%8A%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%AD%99%E5%8D%9A%E3%80%81%E9%97%AB%E5%AE%87%E5%B3%B0%E3%80%81%E8%A3%B4%E4%BC%98%EF%BC%89%2010%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 勇士VS灰熊 全场回放（英文原声） 10:55" group-title="体育台",NBA 勇士VS灰熊 全场回放（英文原声） 10:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E5%8B%87%E5%A3%ABVS%E7%81%B0%E7%86%8A%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2010%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 勇士VS灰熊 全场回放（董倡硕） 10:55" group-title="体育台",NBA 勇士VS灰熊 全场回放（董倡硕） 10:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E5%8B%87%E5%A3%ABVS%E7%81%B0%E7%86%8A%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E8%91%A3%E5%80%A1%E7%A1%95%EF%BC%89%2010%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 勇士VS马刺 英文原声 10:55" group-title="体育台",NBA 勇士VS马刺 英文原声 10:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E5%8B%87%E5%A3%ABVS%E9%A9%AC%E5%88%BA%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2010%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 太阳VS独行侠 英文原声 09:55" group-title="体育台",NBA 太阳VS独行侠 英文原声 09:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E5%A4%AA%E9%98%B3VS%E7%8B%AC%E8%A1%8C%E4%BE%A0%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2009%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 太阳VS雷霆 英文原声 09:55" group-title="体育台",NBA 太阳VS雷霆 英文原声 09:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E5%A4%AA%E9%98%B3VS%E9%9B%B7%E9%9C%86%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2009%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 尼克斯VS步行者 英文原声 08:25" group-title="体育台",NBA 尼克斯VS步行者 英文原声 08:25 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E5%B0%BC%E5%85%8B%E6%96%AFVS%E6%AD%A5%E8%A1%8C%E8%80%85%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2008%3A25&line=1
-#EXTINF:-1 tvg-name="NBA 开拓者VS76人 全场回放（姜帆、季孟年、秋童） 10:55" group-title="体育台",NBA 开拓者VS76人 全场回放（姜帆、季孟年、秋童） 10:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E5%BC%80%E6%8B%93%E8%80%85VS76%E4%BA%BA%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%A7%9C%E5%B8%86%E3%80%81%E5%AD%A3%E5%AD%9F%E5%B9%B4%E3%80%81%E7%A7%8B%E7%AB%A5%EF%BC%89%2010%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 开拓者VS76人 全场回放（邢晨） 10:55" group-title="体育台",NBA 开拓者VS76人 全场回放（邢晨） 10:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E5%BC%80%E6%8B%93%E8%80%85VS76%E4%BA%BA%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E9%82%A2%E6%99%A8%EF%BC%89%2010%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 掘金VS灰熊 英文原声 09:55" group-title="体育台",NBA 掘金VS灰熊 英文原声 09:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E6%8E%98%E9%87%91VS%E7%81%B0%E7%86%8A%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2009%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 掘金VS骑士 全场回放（英文原声） 09:55" group-title="体育台",NBA 掘金VS骑士 全场回放（英文原声） 09:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E6%8E%98%E9%87%91VS%E9%AA%91%E5%A3%AB%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2009%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 掘金VS骑士 全场回放（连睿、王润陶） 09:55" group-title="体育台",NBA 掘金VS骑士 全场回放（连睿、王润陶） 09:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E6%8E%98%E9%87%91VS%E9%AA%91%E5%A3%AB%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E8%BF%9E%E7%9D%BF%E3%80%81%E7%8E%8B%E6%B6%A6%E9%99%B6%EF%BC%89%2009%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 森林狼VS开拓者 英文原声 08:55" group-title="体育台",NBA 森林狼VS开拓者 英文原声 08:55 [2普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E6%A3%AE%E6%9E%97%E7%8B%BCVS%E5%BC%80%E6%8B%93%E8%80%85%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2008%3A55&line=1|https://iptv.catvod.com/live.php?id=NBA%20%E6%A3%AE%E6%9E%97%E7%8B%BCVS%E5%BC%80%E6%8B%93%E8%80%85%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2008%3A55&line=2
-#EXTINF:-1 tvg-name="NBA 森林狼VS老鹰 全场回放（盛哲） 08:55" group-title="体育台",NBA 森林狼VS老鹰 全场回放（盛哲） 08:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E6%A3%AE%E6%9E%97%E7%8B%BCVS%E8%80%81%E9%B9%B0%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E7%9B%9B%E5%93%B2%EF%BC%89%2008%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 森林狼VS老鹰 全场回放（英文原声） 08:55" group-title="体育台",NBA 森林狼VS老鹰 全场回放（英文原声） 08:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E6%A3%AE%E6%9E%97%E7%8B%BCVS%E8%80%81%E9%B9%B0%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2008%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 湖人VS雷霆 全场回放（李天宇、徐咏、魏欣怡） 10:55" group-title="体育台",NBA 湖人VS雷霆 全场回放（李天宇、徐咏、魏欣怡） 10:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E6%B9%96%E4%BA%BAVS%E9%9B%B7%E9%9C%86%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E6%9D%8E%E5%A4%A9%E5%AE%87%E3%80%81%E5%BE%90%E5%92%8F%E3%80%81%E9%AD%8F%E6%AC%A3%E6%80%A1%EF%BC%89%2010%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 湖人VS雷霆 全场回放（英文原声） 10:55" group-title="体育台",NBA 湖人VS雷霆 全场回放（英文原声） 10:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E6%B9%96%E4%BA%BAVS%E9%9B%B7%E9%9C%86%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2010%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 湖人VS马刺 英文原声 11:25" group-title="体育台",NBA 湖人VS马刺 英文原声 11:25 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E6%B9%96%E4%BA%BAVS%E9%A9%AC%E5%88%BA%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2011%3A25&line=1
-#EXTINF:-1 tvg-name="NBA 火箭VS快船 英文原声 08:55" group-title="体育台",NBA 火箭VS快船 英文原声 08:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E7%81%AB%E7%AE%ADVS%E5%BF%AB%E8%88%B9%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2008%3A55&line=2
-#EXTINF:-1 tvg-name="NBA 热火VS爵士 全场回放（英文原声） 08:25" group-title="体育台",NBA 热火VS爵士 全场回放（英文原声） 08:25 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E7%83%AD%E7%81%ABVS%E7%88%B5%E5%A3%AB%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2008%3A25&line=1
-#EXTINF:-1 tvg-name="NBA 热火VS爵士 全场回放（贾磊） 08:25" group-title="体育台",NBA 热火VS爵士 全场回放（贾磊） 08:25 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E7%83%AD%E7%81%ABVS%E7%88%B5%E5%A3%AB%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E8%B4%BE%E7%A3%8A%EF%BC%89%2008%3A25&line=1
-#EXTINF:-1 tvg-name="NBA 爵士VS国王 英文原声 09:55" group-title="体育台",NBA 爵士VS国王 英文原声 09:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E7%88%B5%E5%A3%ABVS%E5%9B%BD%E7%8E%8B%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2009%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 猛龙VS活塞 英文原声 08:25" group-title="体育台",NBA 猛龙VS活塞 英文原声 08:25 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E7%8C%9B%E9%BE%99VS%E6%B4%BB%E5%A1%9E%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2008%3A25&line=1
-#EXTINF:-1 tvg-name="NBA 篮网VS公牛 全场回放（吴博文） 08:25" group-title="体育台",NBA 篮网VS公牛 全场回放（吴博文） 08:25 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E7%AF%AE%E7%BD%91VS%E5%85%AC%E7%89%9B%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%90%B4%E5%8D%9A%E6%96%87%EF%BC%89%2008%3A25&line=1
-#EXTINF:-1 tvg-name="NBA 篮网VS公牛 全场回放（英文原声） 08:25" group-title="体育台",NBA 篮网VS公牛 全场回放（英文原声） 08:25 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E7%AF%AE%E7%BD%91VS%E5%85%AC%E7%89%9B%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2008%3A25&line=1
-#EXTINF:-1 tvg-name="NBA 篮网VS步行者 英文原声 08:25" group-title="体育台",NBA 篮网VS步行者 英文原声 08:25 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E7%AF%AE%E7%BD%91VS%E6%AD%A5%E8%A1%8C%E8%80%85%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2008%3A25&line=1
-#EXTINF:-1 tvg-name="NBA 骑士VS奇才 英文原声 07:55" group-title="体育台",NBA 骑士VS奇才 英文原声 07:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E9%AA%91%E5%A3%ABVS%E5%A5%87%E6%89%8D%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2007%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 魔术VS雄鹿 全场回放（张泽欣） 08:25" group-title="体育台",NBA 魔术VS雄鹿 全场回放（张泽欣） 08:25 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E9%AD%94%E6%9C%AFVS%E9%9B%84%E9%B9%BF%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E5%BC%A0%E6%B3%BD%E6%AC%A3%EF%BC%89%2008%3A25&line=1
-#EXTINF:-1 tvg-name="NBA 魔术VS雄鹿 英文原声 07:55" group-title="体育台",NBA 魔术VS雄鹿 英文原声 07:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E9%AD%94%E6%9C%AFVS%E9%9B%84%E9%B9%BF%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2007%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 鹈鹕VS国王 全场回放（王凯） 08:55" group-title="体育台",NBA 鹈鹕VS国王 全场回放（王凯） 08:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E9%B9%88%E9%B9%95VS%E5%9B%BD%E7%8E%8B%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E7%8E%8B%E5%87%AF%EF%BC%89%2008%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 鹈鹕VS国王 全场回放（英文原声） 08:55" group-title="体育台",NBA 鹈鹕VS国王 全场回放（英文原声） 08:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E9%B9%88%E9%B9%95VS%E5%9B%BD%E7%8E%8B%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2008%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 鹈鹕VS热火 英文原声 08:55" group-title="体育台",NBA 鹈鹕VS热火 英文原声 08:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E9%B9%88%E9%B9%95VS%E7%83%AD%E7%81%AB%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2008%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 黄蜂VS活塞 全场回放（王琰博） 07:55" group-title="体育台",NBA 黄蜂VS活塞 全场回放（王琰博） 07:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E9%BB%84%E8%9C%82VS%E6%B4%BB%E5%A1%9E%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E7%8E%8B%E7%90%B0%E5%8D%9A%EF%BC%89%2007%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 黄蜂VS活塞 全场回放（英文原声） 07:55" group-title="体育台",NBA 黄蜂VS活塞 全场回放（英文原声） 07:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E9%BB%84%E8%9C%82VS%E6%B4%BB%E5%A1%9E%20%E5%85%A8%E5%9C%BA%E5%9B%9E%E6%94%BE%EF%BC%88%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%EF%BC%89%2007%3A55&line=1
-#EXTINF:-1 tvg-name="NBA 黄蜂VS老鹰 英文原声 07:55" group-title="体育台",NBA 黄蜂VS老鹰 英文原声 07:55 [1普通]
-https://iptv.catvod.com/live.php?id=NBA%20%E9%BB%84%E8%9C%82VS%E8%80%81%E9%B9%B0%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2007%3A55&line=1
 #EXTINF:-1 tvg-name="UK: SKY SPORTS F1" group-title="体育台",UK: SKY SPORTS F1 [1普通]
 http://nocable.cc:8080//OURTV/OURTV@4806/35244
 #EXTINF:-1 tvg-name="nba tv" group-title="体育台",nba tv [2普通]
@@ -102,50 +24,16 @@ http://shbu.live.bestvcdn.com.cn:8080/live/program/live/jbtyhd/2300000/mnf.m3u8
 #EXTINF:-1 tvg-name="安徽综艺体育" group-title="体育台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/安徽综艺体育.png",安徽综艺体育 [5普通]
 https://stream1.freetv.fun/an-hui-zong-yi-ti-yu-18.m3u8|https://stream1.freetv.fun/an-hui-zong-yi-ti-yu-2.m3u8|https://stream1.freetv.fun/an-hui-zong-yi-ti-yu-5.m3u8|https://stream1.freetv.fun/an-hui-zong-yi-ti-yu-6.m3u8|https://stream1.freetv.fun/an-hui-zong-yi-ti-yu-8.m3u8
 #EXTINF:-1 tvg-name="山东体育" group-title="体育台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东体育.png",山东体育 [19普通]
-https://stream1.freetv.fun/shan-dong-ti-yu-8.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-19.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-4.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-7.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-6.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-9.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-5.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-2.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-23.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-24.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-12.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-22.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-11.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-18.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-25.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-13.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-10.m3u8|http://58.57.40.22:9901/tsfile/live/1020_1.m3u8|http://live.xmcdn.com/live/805/64.m3u8
+https://stream1.freetv.fun/shan-dong-ti-yu-8.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-19.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-4.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-6.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-9.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-5.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-2.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-24.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-10.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-13.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-11.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-25.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-12.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-18.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-23.m3u8|http://58.57.40.22:9901/tsfile/live/1020_1.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-7.m3u8|https://stream1.freetv.fun/shan-dong-ti-yu-22.m3u8|http://live.xmcdn.com/live/805/64.m3u8
 #EXTINF:-1 tvg-name="广东体育" group-title="体育台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/广东体育.png",广东体育 [17普通]
 https://stream1.freetv.fun/yan-dong-ti-yu-16.m3u8|https://stream1.freetv.fun/yan-dong-ti-yu-20.m3u8|https://stream1.freetv.fun/yan-dong-ti-yu-26.m3u8|https://stream1.freetv.fun/yan-dong-ti-yu-36.m3u8|https://stream1.freetv.fun/yan-dong-ti-yu-39.m3u8|https://stream1.freetv.fun/yan-dong-ti-yu-27.m3u8|https://stream1.freetv.fun/yan-dong-ti-yu-13.m3u8|https://stream1.freetv.fun/yan-dong-ti-yu-21.m3u8|https://stream1.freetv.fun/yan-dong-ti-yu-14.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-17.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-33.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-35.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-15.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-16.ctv|https://stream1.freetv.fun/yan-dong-ti-yu-30.ctv|http://php.jdshipin.com/PLTV/iptv.php?id=gdty|http://php.jdshipin.com/TVOD/iptv.php?id=gdty
 #EXTINF:-1 tvg-name="福建体育" group-title="体育台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建体育.png",福建体育 [1普通]
 http://8.138.7.223/tv/fjtv1.php?id=fjwt
 #EXTINF:-1 tvg-name="纬来体育" group-title="体育台",纬来体育 [1普通]
 https://stream1.freetv.fun/wei-lai-ti-yu-3.m3u8
-#EXTINF:-1 tvg-name="英超 切尔西VS利兹联 英文原声 03:15" group-title="体育台",英超 切尔西VS利兹联 英文原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E5%88%87%E5%B0%94%E8%A5%BFVS%E5%88%A9%E5%85%B9%E8%81%94%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
-#EXTINF:-1 tvg-name="英超 切尔西VS利兹联 赛场原声 03:15" group-title="体育台",英超 切尔西VS利兹联 赛场原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E5%88%87%E5%B0%94%E8%A5%BFVS%E5%88%A9%E5%85%B9%E8%81%94%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
-#EXTINF:-1 tvg-name="英超 埃弗顿VS伯恩茅斯 英文原声 03:15" group-title="体育台",英超 埃弗顿VS伯恩茅斯 英文原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E5%9F%83%E5%BC%97%E9%A1%BFVS%E4%BC%AF%E6%81%A9%E8%8C%85%E6%96%AF%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
-#EXTINF:-1 tvg-name="英超 埃弗顿VS伯恩茅斯 赛场原声 03:15" group-title="体育台",英超 埃弗顿VS伯恩茅斯 赛场原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E5%9F%83%E5%BC%97%E9%A1%BFVS%E4%BC%AF%E6%81%A9%E8%8C%85%E6%96%AF%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
-#EXTINF:-1 tvg-name="英超 托特纳姆热刺VS纽卡斯尔联 英文原声 03:15" group-title="体育台",英超 托特纳姆热刺VS纽卡斯尔联 英文原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E6%89%98%E7%89%B9%E7%BA%B3%E5%A7%86%E7%83%AD%E5%88%BAVS%E7%BA%BD%E5%8D%A1%E6%96%AF%E5%B0%94%E8%81%94%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
-#EXTINF:-1 tvg-name="英超 托特纳姆热刺VS纽卡斯尔联 赛场原声 03:15" group-title="体育台",英超 托特纳姆热刺VS纽卡斯尔联 赛场原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E6%89%98%E7%89%B9%E7%BA%B3%E5%A7%86%E7%83%AD%E5%88%BAVS%E7%BA%BD%E5%8D%A1%E6%96%AF%E5%B0%94%E8%81%94%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
-#EXTINF:-1 tvg-name="英超 曼城VS富勒姆 英文原声 03:15" group-title="体育台",英超 曼城VS富勒姆 英文原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E6%9B%BC%E5%9F%8EVS%E5%AF%8C%E5%8B%92%E5%A7%86%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
-#EXTINF:-1 tvg-name="英超 曼城VS富勒姆 赛场原声 03:15" group-title="体育台",英超 曼城VS富勒姆 赛场原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E6%9B%BC%E5%9F%8EVS%E5%AF%8C%E5%8B%92%E5%A7%86%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
-#EXTINF:-1 tvg-name="英超 桑德兰VS利物浦 英文原声 04:00" group-title="体育台",英超 桑德兰VS利物浦 英文原声 04:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E6%A1%91%E5%BE%B7%E5%85%B0VS%E5%88%A9%E7%89%A9%E6%B5%A6%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2004%3A00&line=1
-#EXTINF:-1 tvg-name="英超 桑德兰VS利物浦 赛场原声 04:00" group-title="体育台",英超 桑德兰VS利物浦 赛场原声 04:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E6%A1%91%E5%BE%B7%E5%85%B0VS%E5%88%A9%E7%89%A9%E6%B5%A6%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2004%3A00&line=1
-#EXTINF:-1 tvg-name="英超 水晶宫VS伯恩利 英文原声 03:15" group-title="体育台",英超 水晶宫VS伯恩利 英文原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E6%B0%B4%E6%99%B6%E5%AE%ABVS%E4%BC%AF%E6%81%A9%E5%88%A9%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
-#EXTINF:-1 tvg-name="英超 水晶宫VS伯恩利 赛场原声 03:15" group-title="体育台",英超 水晶宫VS伯恩利 赛场原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E6%B0%B4%E6%99%B6%E5%AE%ABVS%E4%BC%AF%E6%81%A9%E5%88%A9%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
-#EXTINF:-1 tvg-name="英超 西汉姆联VS曼联 英文原声 04:00" group-title="体育台",英超 西汉姆联VS曼联 英文原声 04:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E8%A5%BF%E6%B1%89%E5%A7%86%E8%81%94VS%E6%9B%BC%E8%81%94%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2004%3A00&line=1
-#EXTINF:-1 tvg-name="英超 西汉姆联VS曼联 赛场原声 04:00" group-title="体育台",英超 西汉姆联VS曼联 赛场原声 04:00 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E8%A5%BF%E6%B1%89%E5%A7%86%E8%81%94VS%E6%9B%BC%E8%81%94%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2004%3A00&line=1
-#EXTINF:-1 tvg-name="英超 诺丁汉森林VS狼队 英文原声 03:15" group-title="体育台",英超 诺丁汉森林VS狼队 英文原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E8%AF%BA%E4%B8%81%E6%B1%89%E6%A3%AE%E6%9E%97VS%E7%8B%BC%E9%98%9F%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
-#EXTINF:-1 tvg-name="英超 诺丁汉森林VS狼队 赛场原声 03:15" group-title="体育台",英超 诺丁汉森林VS狼队 赛场原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E8%AF%BA%E4%B8%81%E6%B1%89%E6%A3%AE%E6%9E%97VS%E7%8B%BC%E9%98%9F%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
-#EXTINF:-1 tvg-name="英超 阿斯顿维拉VS布莱顿 英文原声 03:15" group-title="体育台",英超 阿斯顿维拉VS布莱顿 英文原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E9%98%BF%E6%96%AF%E9%A1%BF%E7%BB%B4%E6%8B%89VS%E5%B8%83%E8%8E%B1%E9%A1%BF%20%E8%8B%B1%E6%96%87%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
-#EXTINF:-1 tvg-name="英超 阿斯顿维拉VS布莱顿 赛场原声 03:15" group-title="体育台",英超 阿斯顿维拉VS布莱顿 赛场原声 03:15 [1普通]
-https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E9%98%BF%E6%96%AF%E9%A1%BF%E7%BB%B4%E6%8B%89VS%E5%B8%83%E8%8E%B1%E9%A1%BF%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
 #EXTINF:-1 tvg-name="辽宁体育" group-title="体育台",辽宁体育 [1普通]
 https://stream1.freetv.fun/liao-zhu-ti-yu-3.m3u8
 #EXTINF:-1 tvg-name="魅力足球" group-title="体育台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/魅力足球.png" tvg-ipv6="true",魅力足球 [2IPv6+2普通]
 https://stream1.freetv.fun/ipv6-mei-li-zu-qiu-4.m3u8|https://stream1.freetv.fun/ipv6-mei-li-zu-qiu-5.m3u8|https://stream1.freetv.fun/mei-li-zu-qiu-1.m3u8|https://stream1.freetv.fun/mei-li-zu-qiu-2.m3u8
+#EXTINF:-1 tvg-name="🎁 英超 阿斯顿维拉VS布莱顿 赛场原声 03:15" group-title="体育台",🎁 英超 阿斯顿维拉VS布莱顿 赛场原声 03:15 [1普通]
+https://iptv.catvod.com/live.php?id=%E8%8B%B1%E8%B6%85%20%E9%98%BF%E6%96%AF%E9%A1%BF%E7%BB%B4%E6%8B%89VS%E5%B8%83%E8%8E%B1%E9%A1%BF%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2003%3A15&line=1
