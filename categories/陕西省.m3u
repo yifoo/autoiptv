@@ -1,6 +1,6 @@
 #EXTM3U
 # 陕西省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-14 03:09:04
+# 更新时间(北京时间): 2026-02-15 02:52:35
 # 电视台数量: 5
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
@@ -17,5 +17,5 @@ https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E6%96%B0%E9%97%BB%E8%B5%8
 https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8
 #EXTINF:-1 tvg-name="陕西洋县国宝朱鹮03" group-title="陕西省",陕西洋县国宝朱鹮03 [1普通]
 https://gcalic.v.myalicdn.com/gc/zh03_1/index.m3u8
-#EXTINF:-1 tvg-name="陕西都市青春" group-title="陕西省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/陕西都市青春.png",陕西都市青春 [2普通]
-https://mgtv.ottiptv.cc/mg/956909358.m3u8?userid=5559462299&sign=c88360145dc9fc7cf805e91722404d8120a8ee230ee4612d3dd8a7ff009464fc67c043437644dd272f780ea0e9b14500faf551c6c34a73f7aaf769d97cf1025807f7a8882be007c656b71fa7dd4b9697c8&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8|https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E9%83%BD%E5%B8%82%E9%9D%92%E6%98%A5%E9%A2%91%E9%81%93&line=1
+#EXTINF:-1 tvg-name="陕西都市青春" group-title="陕西省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/陕西都市青春.png",陕西都市青春 [1普通]
+https://iptv.catvod.com/live.php?id=%E9%99%95%E8%A5%BF%E9%83%BD%E5%B8%82%E9%9D%92%E6%98%A5%E9%A2%91%E9%81%93&line=1

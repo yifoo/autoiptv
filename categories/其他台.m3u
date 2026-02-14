@@ -1,7 +1,7 @@
 #EXTM3U
 # 其他台频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-14 03:09:04
-# 电视台数量: 534
+# 更新时间(北京时间): 2026-02-15 02:52:35
+# 电视台数量: 535
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -47,16 +47,8 @@ https://19183.live.streamtheworld.com/CAPITAL958FM_PREM.aac
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV33.m3u8
 #EXTINF:-1 tvg-name="CCTV" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/CCTV4K.png" tvg-quality="4K",CCTV [1普通]
 https://stream1.freetv.fun/cctv4k-2.ctv
-#EXTINF:-1 tvg-name="CCTV 中国天气" group-title="其他台",CCTV 中国天气 [1普通]
-http://113.44.65.227:1234/959986621
-#EXTINF:-1 tvg-name="CCTV 中学生" group-title="其他台",CCTV 中学生 [1普通]
-http://113.44.65.227:1234/708869532
 #EXTINF:-1 tvg-name="CCTV★移动传媒" group-title="其他台",CCTV★移动传媒 [1普通]
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/649e19038fa74514ab3f00febbcd6de0/1200.m3u8
-#EXTINF:-1 tvg-name="CCTV发现之旅" group-title="其他台",CCTV发现之旅 [1普通]
-http://113.44.65.227:1234/624878970
-#EXTINF:-1 tvg-name="CCTV老故事" group-title="其他台",CCTV老故事 [1普通]
-http://113.44.65.227:1234/884121956
 #EXTINF:-1 tvg-name="CCTV阿拉伯语" group-title="其他台",CCTV阿拉伯语 [1普通]
 https://www.freetv.top/migu/609154345.m3u8?migutoken=19442fbd82627603ecb9165e8da9b2a21010c3e9c0355af37bd2122d2816931ea5f0f003a2814c0cbc2a4a68bf0195d734366ca3a45827d70d362dd842439a98acab94da40b91642c9b40f9504
 #EXTINF:-1 tvg-name="CETV 1" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/CETV1.png",CETV 1 [2普通]
@@ -144,7 +136,7 @@ https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV08.m3u8
 #EXTINF:-1 tvg-name="DW News" group-title="其他台",DW News [1普通]
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/stream05/streamPlaylist.m3u8
 #EXTINF:-1 tvg-name="Discovery" group-title="其他台",Discovery [2普通]
-http://ott.watch/stream/E9LDH2ZCN7/177.m3u8|http://ott.watch/stream/E9LDH2ZCN7/146.m3u8
+http://ott.watch/stream/E9LDH2ZCN7/146.m3u8|http://ott.watch/stream/E9LDH2ZCN7/177.m3u8
 #EXTINF:-1 tvg-name="EF运通" group-title="其他台",EF运通 [1普通]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV06.m3u8
 #EXTINF:-1 tvg-name="FRANCE 24" group-title="其他台",FRANCE 24 [1普通]
@@ -183,6 +175,8 @@ https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV05.m3u8
 https://lotus.stingray.com/manifest/cmusic-cme004-montreal/samsungtvplus/dee3e3af-2706-3e77-a952-91b99f6d1819/5711200/manifest.m3u8
 #EXTINF:-1 tvg-name="NBC NEWS" group-title="其他台",NBC NEWS [1普通]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV39.m3u8
+#EXTINF:-1 tvg-name="NOW新闻" group-title="其他台",NOW新闻 [1普通]
+https://cdn.163189.xyz/163189/now
 #EXTINF:-1 tvg-name="NewTV惊悚悬疑" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/NewTV惊悚悬疑.png",NewTV惊悚悬疑 [1普通]
 https://iptv.catvod.com/live.php?id=NewTV%E6%83%8A%E6%82%9A%E6%82%AC%E7%96%91
 #EXTINF:-1 tvg-name="News98 新闻台" group-title="其他台" tvg-logo="https://live.fanmingming.com/radio/news98新闻台.png",News98 新闻台 [1普通]
@@ -491,10 +485,10 @@ http://stream.rcs.revma.com/ks4vsmg3qtzuv
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV42.m3u8
 #EXTINF:-1 tvg-name="中视新闻" group-title="其他台",中视新闻 [7普通]
 https://stream1.freetv.fun/zhong-shi-xin-wen-3.m3u8|https://stream1.freetv.fun/zhong-shi-xin-wen-4.m3u8|https://stream1.freetv.fun/zhong-shi-xin-wen-6.m3u8|http://220.135.64.124:5050/of-4gtv-4gtv074/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/4gtv-4gtv074/index.m3u8?proxy=true|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv074|https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV09.m3u8
-#EXTINF:-1 tvg-name="中视经典" group-title="其他台",中视经典 [3普通]
-https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv080|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv080|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv080
-#EXTINF:-1 tvg-name="中视菁采" group-title="其他台",中视菁采 [4普通]
-http://nmk.ioapk.com:5050/li-4gtv-4gtv064/index.m3u8?proxy=true|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv064|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv064|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv064
+#EXTINF:-1 tvg-name="中视经典" group-title="其他台",中视经典 [5普通]
+https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv080|http://lzo.xh.sd/gt/lgz4G.php?id=4gtv-4gtv080|http://lzo.xh.sd/gt/lgz4G.php?id=li-4gtv-4gtv080|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv080|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv080
+#EXTINF:-1 tvg-name="中视菁采" group-title="其他台",中视菁采 [6普通]
+http://nmk.ioapk.com:5050/li-4gtv-4gtv064/index.m3u8?proxy=true|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv064|http://lzo.xh.sd/gt/lgz4G.php?id=4gtv-4gtv064|http://lzo.xh.sd/gt/lgz4G.php?id=li-4gtv-4gtv064|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv064|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv064
 #EXTINF:-1 tvg-name="丽江古城万古楼遥望玉龙雪山" group-title="其他台",丽江古城万古楼遥望玉龙雪山 [1普通]
 https://gcalic.v.myalicdn.com/gc/ljgcwglytylxs_1/index.m3u8
 #EXTINF:-1 tvg-name="丽江古城大水车" group-title="其他台",丽江古城大水车 [1普通]
@@ -534,9 +528,9 @@ http://jsmov2.a.yximgs.com/bs3/video-hls/5239093847755471351_hlsb.m3u8
 #EXTINF:-1 tvg-name="任然精选20首" group-title="其他台",任然精选20首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2020/09/23/14/BMjAyMDA5MjMxNDA1MjFfMTc4NDYxNDcyNl8zNjQ5NDI4NzI1Nl8yXzM=_b_B0f6d5151ab2c346816996328a0b66b78.mp4
 #EXTINF:-1 tvg-name="佛山公共" group-title="其他台",佛山公共 [4普通]
-https://stream1.freetv.fun/fo-shan-gong-gong-5.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-15.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-16.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-19.ctv
+https://stream1.freetv.fun/fo-shan-gong-gong-15.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-16.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-5.ctv|https://stream1.freetv.fun/fo-shan-gong-gong-19.ctv
 #EXTINF:-1 tvg-name="佛山综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/佛山综合.png",佛山综合 [3普通]
-https://stream1.freetv.fun/fo-shan-zong-he-16.ctv|https://stream1.freetv.fun/fo-shan-zong-he-6.ctv|https://stream1.freetv.fun/fo-shan-zong-he-22.ctv
+https://stream1.freetv.fun/fo-shan-zong-he-6.ctv|https://stream1.freetv.fun/fo-shan-zong-he-22.ctv|https://stream1.freetv.fun/fo-shan-zong-he-16.ctv
 #EXTINF:-1 tvg-name="信大" group-title="其他台",信大 [1普通]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV07.m3u8
 #EXTINF:-1 tvg-name="倩女幽魂人间道" group-title="其他台",倩女幽魂人间道 [1普通]
@@ -557,16 +551,16 @@ https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
 https://stream1.freetv.fun/ba-da-xi-ju-1.m3u8
 #EXTINF:-1 tvg-name="八大第一" group-title="其他台",八大第一 [1普通]
 http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_bddy.flv
-#EXTINF:-1 tvg-name="八大精彩" group-title="其他台",八大精彩 [4普通]
-https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv034|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv034|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv034|http://udinlaw.sytes.net:8000/scripts/4gtv/index.php?id=4gtv-4gtv034
+#EXTINF:-1 tvg-name="八大精彩" group-title="其他台",八大精彩 [5普通]
+https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv034|http://lzo.xh.sd/gt/lgz4G.php?id=4gtv-4gtv034|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv034|http://udinlaw.sytes.net:8000/scripts/4gtv/index.php?id=4gtv-4gtv034|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv034
 #EXTINF:-1 tvg-name="八大综合" group-title="其他台",八大综合 [3普通]
 https://stream1.freetv.fun/ba-da-zong-he-1.m3u8|https://stream1.freetv.fun/ba-da-zong-he-2.m3u8|http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_bdzh.flv
 #EXTINF:-1 tvg-name="八里沟风景区天界山玻璃栈道" group-title="其他台",八里沟风景区天界山玻璃栈道 [1普通]
 https://gcalic.v.myalicdn.com/gc/blg03_1/index.m3u8
 #EXTINF:-1 tvg-name="八里沟风景区桃花湾瀑布" group-title="其他台",八里沟风景区桃花湾瀑布 [1普通]
 https://gcalic.v.myalicdn.com/gc/blg05_1/index.m3u8
-#EXTINF:-1 tvg-name="公视戏剧" group-title="其他台",公视戏剧 [5普通]
-http://nmk.ioapk.com:5050/li-4gtv-4gtv042/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/4gtv-4gtv042/index.m3u8?proxy=true|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv042|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv042|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv042
+#EXTINF:-1 tvg-name="公视戏剧" group-title="其他台",公视戏剧 [7普通]
+http://nmk.ioapk.com:5050/li-4gtv-4gtv042/index.m3u8?proxy=true|http://nmk.ioapk.com:5050/4gtv-4gtv042/index.m3u8?proxy=true|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv042|http://lzo.xh.sd/gt/lgz4G.php?id=4gtv-4gtv042|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv042|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv042|http://lzo.xh.sd/gt/lgz4G.php?id=li-4gtv-4gtv042
 #EXTINF:-1 tvg-name="兰溪新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/兰溪新闻综合.png",兰溪新闻综合 [1普通]
 https://stream1.freetv.fun/lan-xi-xin-wen-zong-he-3.m3u8
 #EXTINF:-1 tvg-name="关于本源" group-title="其他台",关于本源 [1普通]
@@ -575,8 +569,8 @@ https://gitlab.com/p2v5/wangtv/-/raw/main/about1080p.mp4
 https://cdn4.yzzy-tv-cdn.com/20220608/17622_c083f16b/index.m3u8
 #EXTINF:-1 tvg-name="刁手怪招" group-title="其他台",刁手怪招 [1普通]
 https://cdn7.yzzy-tv-cdn.com/20220625/561_337bba55/index.m3u8
-#EXTINF:-1 tvg-name="动漫秀场" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/动漫秀场.png" tvg-ipv6="true",动漫秀场 [7IPv6+15普通]
-https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-1.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-11.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-4.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-2.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-9.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-10.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-3.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-18.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-19.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-21.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-11.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-16.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-7.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-20.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-6.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-4.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-5.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-2.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-23.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-12.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-9.ctv|https://stream1.freetv.fun/dong-man-xiu-chang-14.ctv
+#EXTINF:-1 tvg-name="动漫秀场" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/动漫秀场.png" tvg-ipv6="true",动漫秀场 [7IPv6+14普通]
+https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-3.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-10.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-2.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-1.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-9.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-4.m3u8|https://stream1.freetv.fun/ipv6-dong-man-xiu-chang-11.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-18.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-11.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-19.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-12.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-6.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-2.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-4.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-23.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-21.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-7.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-5.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-16.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-20.m3u8|https://stream1.freetv.fun/dong-man-xiu-chang-14.ctv
 #EXTINF:-1 tvg-name="动物星球" group-title="其他台",动物星球 [2普通]
 https://stream1.freetv.fun/dong-wu-xing-qiu-1.m3u8|http://pullpackage.alivecdn.com/live/g46UG6stseWUHmKG9Abi152mY9avzddBzZYp79cmVD2E4glTg3.flv
 #EXTINF:-1 tvg-name="动画1" group-title="其他台" tvg-ipv6="true",动画1 [1IPv6]
@@ -584,7 +578,7 @@ https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV65.m3u8
 #EXTINF:-1 tvg-name="动画2" group-title="其他台" tvg-ipv6="true",动画2 [1IPv6]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV66.m3u8
 #EXTINF:-1 tvg-name="十堰新闻" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/十堰新闻.png",十堰新闻 [3普通]
-https://stream1.freetv.fun/shi-yan-xin-wen-2.m3u8|https://stream1.freetv.fun/shi-yan-xin-wen-1.m3u8|https://stream1.freetv.fun/shi-yan-xin-wen-3.m3u8
+https://stream1.freetv.fun/shi-yan-xin-wen-2.m3u8|https://stream1.freetv.fun/shi-yan-xin-wen-3.m3u8|https://stream1.freetv.fun/shi-yan-xin-wen-1.m3u8
 #EXTINF:-1 tvg-name="千佛山" group-title="其他台",千佛山 [1普通]
 https://gcalic.v.myalicdn.com/gc/taishan05_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="千禧经典" group-title="其他台" tvg-logo="https://ghp.ci/https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/assets/logo/千禧经典.png",千禧经典 [1普通]
@@ -593,8 +587,8 @@ https://o11.163189.xyz/stream/live/tvbc/
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV59.m3u8
 #EXTINF:-1 tvg-name="南京十八" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/南京十八.png",南京十八 [2普通]
 https://mgtv.ottiptv.cc/mg/838151753.m3u8?userid=5559462299&sign=af65d5dece678841f449e0967ccad2695372105b09bba54d51cc334cec390158442b412d1fdf98176d3c81ef6ff23e0a156ea63e3a040c2e2c71bb80407e8099e3b0dff25eca25c275c75f9005ed7207be&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8|https://iptv.catvod.com/live.php?id=%E5%8D%97%E4%BA%AC%E5%8D%81%E5%85%AB%E9%A2%91%E9%81%93&line=1
-#EXTINF:-1 tvg-name="南京教科" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/南京教科.png",南京教科 [2普通]
-https://mgtv.ottiptv.cc/mg/838153729.m3u8?userid=5559462299&sign=0d19e6332362bb3481270e06606238fc74675511f1f19d2f231c9de7d790384d078f7e40cffeb6d566c0ca09c86f2e419e30f9da8dbe27d57bf3e202b598405bff44123f96144578fa3ce3720a67a0d4eb&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8|https://iptv.catvod.com/live.php?id=%E5%8D%97%E4%BA%AC%E6%95%99%E7%A7%91%E9%A2%91%E9%81%93&line=1
+#EXTINF:-1 tvg-name="南京教科" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/南京教科.png",南京教科 [1普通]
+https://iptv.catvod.com/live.php?id=%E5%8D%97%E4%BA%AC%E6%95%99%E7%A7%91%E9%A2%91%E9%81%93&line=1
 #EXTINF:-1 tvg-name="南京新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/南京新闻综合.png",南京新闻综合 [1普通]
 https://iptv.catvod.com/live.php?id=%E5%8D%97%E4%BA%AC%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88%E9%A2%91%E9%81%93&line=1
 #EXTINF:-1 tvg-name="南京玄武湖公园" group-title="其他台",南京玄武湖公园 [1普通]
@@ -620,7 +614,7 @@ https://gcalic.v.myalicdn.com/gc/gly01_1/index.m3u8
 #EXTINF:-1 tvg-name="叙州新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/叙州新闻综合.png",叙州新闻综合 [4普通]
 https://stream1.freetv.fun/xu-zhou-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/xu-zhou-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/xu-zhou-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xu-zhou-xin-wen-zong-he-7.m3u8
 #EXTINF:-1 tvg-name="台视新闻" group-title="其他台",台视新闻 [22普通]
-https://stream1.freetv.fun/tai-shi-xin-wen-10.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-22.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-8.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-15.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-6.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-11.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-20.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-18.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-9.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-7.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-14.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-12.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-13.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-17.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-5.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-19.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-4.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-3.m3u8|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv051|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv051|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv051|https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV25.m3u8
+https://stream1.freetv.fun/tai-shi-xin-wen-10.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-22.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-8.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-15.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-6.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-11.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-20.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-18.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-9.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-7.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-3.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-14.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-12.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-13.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-17.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-5.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-19.m3u8|https://stream1.freetv.fun/tai-shi-xin-wen-4.m3u8|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv051|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv051|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv051|https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV25.m3u8
 #EXTINF:-1 tvg-name="周口新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/周口新闻综合.png",周口新闻综合 [1普通]
 https://stream1.freetv.fun/zhou-kou-xin-wen-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="周杰伦精选120首" group-title="其他台",周杰伦精选120首 [1普通]
@@ -643,10 +637,12 @@ https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV30.m3u8|https://raw.gi
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV47.m3u8
 #EXTINF:-1 tvg-name="大爱2台" group-title="其他台",大爱2台 [1普通]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV47.m3u8
+#EXTINF:-1 tvg-name="大爱电视" group-title="其他台",大爱电视 [1普通]
+http://lzo.xh.sd/gt/lgz4G.php?id=4gtv-live007
 #EXTINF:-1 tvg-name="天才冲冲冲「综艺」" group-title="其他台",天才冲冲冲「综艺」 [1普通]
 https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV26.m3u8
-#EXTINF:-1 tvg-name="天映经典" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/天映经典.png",天映经典 [2普通]
-https://stream1.freetv.fun/tian-ying-jing-dian-5.m3u8|http://php.jdshipin.com:8880/smt.php?id=Celestial2
+#EXTINF:-1 tvg-name="天映经典" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/天映经典.png",天映经典 [1普通]
+https://stream1.freetv.fun/tian-ying-jing-dian-5.m3u8
 #EXTINF:-1 tvg-name="天涯石" group-title="其他台",天涯石 [1普通]
 https://gcalic.v.myalicdn.com/gc/tyhjtys_1/index.m3u8
 #EXTINF:-1 tvg-name="天龙八部" group-title="其他台",天龙八部 [1普通]
@@ -674,7 +670,7 @@ https://cdn4.yzzy-tv-cdn.com/20220606/17324_133ab69b/index.m3u8
 #EXTINF:-1 tvg-name="嵊州新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/嵊州新闻综合.png",嵊州新闻综合 [1普通]
 https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="嵊泗综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/嵊泗综合.png",嵊泗综合 [3普通]
-https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-2.ctv
+https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/sheng-zhou-xin-wen-zong-he-2.ctv
 #EXTINF:-1 tvg-name="平湖新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/平湖新闻综合.png",平湖新闻综合 [3普通]
 https://stream1.freetv.fun/ping-hu-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/ping-hu-xin-wen-zong-he-5.m3u8|http://play-sh13.quklive.com/live/1690167908295069.m3u8?auth_key=2027466211-f190eec410c24473825cbe1d8541e545-0-f21db57ae1b534802c1cf7be86cc3aef
 #EXTINF:-1 tvg-name="幸福彩" group-title="其他台",幸福彩 [1普通]
@@ -686,13 +682,13 @@ https://stream1.freetv.fun/yan-yuan-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="广州塔" group-title="其他台",广州塔 [1普通]
 https://gcalic.v.myalicdn.com/gc/ztb_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="广州影视" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/广州影视.png",广州影视 [5普通]
-https://stream1.freetv.fun/yan-zhou-ying-shi-8.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-1.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-7.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-28.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-4.ctv
+https://stream1.freetv.fun/yan-zhou-ying-shi-1.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-8.m3u8|https://stream1.freetv.fun/yan-zhou-ying-shi-4.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-28.ctv|https://stream1.freetv.fun/yan-zhou-ying-shi-7.ctv
 #EXTINF:-1 tvg-name="广州新闻" group-title="其他台",广州新闻 [3普通]
 https://stream1.freetv.fun/yan-zhou-xin-wen-11.m3u8|https://stream1.freetv.fun/yan-zhou-xin-wen-8.m3u8|https://stream1.freetv.fun/yan-zhou-xin-wen-25.ctv
-#EXTINF:-1 tvg-name="广州竞赛" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/广州竞赛.png",广州竞赛 [14普通]
-https://stream1.freetv.fun/yan-zhou-jing-sai-3.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-22.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-8.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-12.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-10.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-37.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-13.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-7.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-11.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-4.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-38.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-31.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-34.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-20.ctv
+#EXTINF:-1 tvg-name="广州竞赛" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/广州竞赛.png",广州竞赛 [12普通]
+https://stream1.freetv.fun/yan-zhou-jing-sai-10.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-3.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-13.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-12.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-11.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-37.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-7.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-8.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-22.m3u8|https://stream1.freetv.fun/yan-zhou-jing-sai-20.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-38.ctv|https://stream1.freetv.fun/yan-zhou-jing-sai-34.ctv
 #EXTINF:-1 tvg-name="广州综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/广州综合.png",广州综合 [5普通]
-https://stream1.freetv.fun/yan-zhou-zong-he-10.m3u8|https://stream1.freetv.fun/yan-zhou-zong-he-6.m3u8|https://stream1.freetv.fun/yan-zhou-zong-he-11.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-19.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-13.ctv
+https://stream1.freetv.fun/yan-zhou-zong-he-10.m3u8|https://stream1.freetv.fun/yan-zhou-zong-he-6.m3u8|https://stream1.freetv.fun/yan-zhou-zong-he-13.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-19.ctv|https://stream1.freetv.fun/yan-zhou-zong-he-11.ctv
 #EXTINF:-1 tvg-name="庄心妍精选44首" group-title="其他台",庄心妍精选44首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2023/09/29/09/BMjAyMzA5MjkwOTEzMDVfMjE0OTExOTI2N18xMTM3OTU3ODM3NzFfMF8z_b_B1909889bf55e6af6f994b05596fb589f.mp4
 #EXTINF:-1 tvg-name="开化新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/开化新闻综合.png",开化新闻综合 [2普通]
@@ -718,11 +714,11 @@ https://gcalic.v.myalicdn.com/gc/hsxksqj_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="投名状" group-title="其他台",投名状 [1普通]
 https://cdn13.yzzy-tv-cdn.com/20230128/9592_3d21d729/index.m3u8
 #EXTINF:-1 tvg-name="新昌新闻综合" group-title="其他台",新昌新闻综合 [2普通]
-https://stream1.freetv.fun/xin-chang-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xin-chang-xin-wen-zong-he-1.m3u8
+https://stream1.freetv.fun/xin-chang-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/xin-chang-xin-wen-zong-he-3.m3u8
 #EXTINF:-1 tvg-name="新视觉" group-title="其他台",新视觉 [1普通]
 http://shbu.live.bestvcdn.com.cn:8080/live/program/live/xsjhd/2300000/mnf.m3u8
 #EXTINF:-1 tvg-name="新闻综合" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/上视新闻.png" tvg-ipv6="true",新闻综合 [7IPv6+10普通]
-https://stream1.freetv.fun/ipv6-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-6.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/ipv6-xin-wen-zong-he-14.m3u8|https://stream1.freetv.fun/ipv6-xin-wen-zong-he-10.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-9.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-13.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-12.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-14.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-15.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-8.m3u8|https://iptv.catvod.com/live.php?id=%E4%B8%8A%E6%B5%B7%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88&line=1
+https://stream1.freetv.fun/ipv6-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-6.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/ipv6-xin-wen-zong-he-14.m3u8|https://stream1.freetv.fun/ipv6-xin-wen-zong-he-10.m3u8|https://stream1.freetv.fun/ipv6-shang-hai-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-9.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-12.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-14.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-15.m3u8|https://stream1.freetv.fun/xin-wen-zong-he-13.m3u8|https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-8.m3u8|https://iptv.catvod.com/live.php?id=%E4%B8%8A%E6%B5%B7%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88&line=1
 #EXTINF:-1 tvg-name="方世玉" group-title="其他台",方世玉 [1普通]
 https://cdn4.yzzy-tv-cdn.com/20220606/17350_39c4425b/index.m3u8
 #EXTINF:-1 tvg-name="无间道2" group-title="其他台",无间道2 [1普通]
@@ -751,8 +747,6 @@ https://alimov2.a.kwimgs.com/upic/2023/01/14/23/BMjAyMzAxMTQyMzQxNDdfNDAzMDAxOTl
 https://txmov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQzNTNfMF8z_b_Bd7346962e61bd7b84e11a1fa6e4616f9.mp4
 #EXTINF:-1 tvg-name="春晚2011" group-title="其他台",春晚2011 [1普通]
 https://txmov2.a.kwimgs.com/upic/2023/01/16/11/BMjAyMzAxMTYxMTA3MjFfNDAzMDAxOTlfOTM3MjcyMjA3ODhfMF8z_b_B8214200efc869dc6fcf99dad619fa4c1.mp4
-#EXTINF:-1 tvg-name="春晚2013" group-title="其他台",春晚2013 [1普通]
-https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQ1NjNfMF8z_b_B4fea55408dca4471a68a963ae096be59.mp4
 #EXTINF:-1 tvg-name="春晚2017" group-title="其他台",春晚2017 [1普通]
 https://alimov2.a.kwimgs.com/upic/2023/01/13/20/BMjAyMzAxMTMyMDA5MjJfNDAzMDAxOTlfOTM0OTkwNDQ2NDhfMF8z_b_B6527b0c2ce3dda1d9b3f34edd4fdb9aa.mp4
 #EXTINF:-1 tvg-name="春晚2020" group-title="其他台",春晚2020 [2普通]
@@ -794,13 +788,13 @@ https://gcalic.v.myalicdn.com/gc/wysynf_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="武宁新闻综合" group-title="其他台",武宁新闻综合 [1普通]
 https://stream1.freetv.fun/wu-zhu-xin-wen-zong-he-2.m3u8
 #EXTINF:-1 tvg-name="武汉一台新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/武汉一台新闻综合.png",武汉一台新闻综合 [4普通]
-https://stream1.freetv.fun/wu-yi-1xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/wu-yi-yi-tai-xin-wen-zong-he-4.m3u8|https://stream1.freetv.fun/wu-yi-1xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/wu-yi-xin-wen-zong-he-7.m3u8
+https://stream1.freetv.fun/wu-yi-yi-tai-xin-wen-zong-he-4.m3u8|https://stream1.freetv.fun/wu-yi-1xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/wu-yi-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/wu-yi-1xin-wen-zong-he-2.m3u8
 #EXTINF:-1 tvg-name="武汉二台电视剧" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/武汉二台电视剧.png",武汉二台电视剧 [2普通]
-https://stream1.freetv.fun/wu-yi-er-tai-dian-shi-ju-1.m3u8|https://stream1.freetv.fun/wu-yi-2dian-shi-ju-1.m3u8
+https://stream1.freetv.fun/wu-yi-2dian-shi-ju-1.m3u8|https://stream1.freetv.fun/wu-yi-er-tai-dian-shi-ju-1.m3u8
 #EXTINF:-1 tvg-name="武汉四台经济" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/武汉四台经济.png",武汉四台经济 [1普通]
 https://stream1.freetv.fun/wu-yi-jing-ji-1.m3u8
 #EXTINF:-1 tvg-name="武汉教育" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/武汉教育.png",武汉教育 [7普通]
-https://stream1.freetv.fun/wu-yi-jiao-yu-12.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-4.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-1.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-15.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-18.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-7.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-6.m3u8
+https://stream1.freetv.fun/wu-yi-jiao-yu-1.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-18.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-7.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-6.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-15.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-4.m3u8|https://stream1.freetv.fun/wu-yi-jiao-yu-12.m3u8
 #EXTINF:-1 tvg-name="水长城镜头一" group-title="其他台",水长城镜头一 [1普通]
 https://gcalic.v.myalicdn.com/gc/wgw01_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="水长城镜头二" group-title="其他台",水长城镜头二 [1普通]
@@ -808,15 +802,15 @@ https://gcalic.v.myalicdn.com/gc/wgw02_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="永嘉新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/永嘉新闻综合.png",永嘉新闻综合 [1普通]
 https://stream1.freetv.fun/yong-jia-xin-wen-zong-he-4.m3u8
 #EXTINF:-1 tvg-name="求索纪录" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/求索纪录.png" tvg-ipv6="true",求索纪录 [1IPv6+17普通]
-https://stream1.freetv.fun/ipv6-qiu-suo-ji-lu-6.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-12.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-2.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-19.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-4.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-14.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-10.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-18.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-13.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-9.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-6.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-5.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-15.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-3.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-8.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-1.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-11.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-2.ctv
+https://stream1.freetv.fun/ipv6-qiu-suo-ji-lu-6.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-10.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-2.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-4.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-3.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-1.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-5.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-9.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-6.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-14.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-18.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-19.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-12.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-11.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-8.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-13.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-15.m3u8|https://stream1.freetv.fun/qiu-suo-ji-lu-2.ctv
 #EXTINF:-1 tvg-name="汕头经济" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/汕头经济.png",汕头经济 [2普通]
-https://stream1.freetv.fun/shan-tou-jing-ji-2.ctv|https://stream1.freetv.fun/shan-tou-jing-ji-5.ctv
+https://stream1.freetv.fun/shan-tou-jing-ji-5.ctv|https://stream1.freetv.fun/shan-tou-jing-ji-2.ctv
 #EXTINF:-1 tvg-name="汕头综合" group-title="其他台",汕头综合 [3普通]
-https://stream1.freetv.fun/shan-tou-zong-he-2.ctv|https://stream1.freetv.fun/shan-tou-zong-he-10.ctv|https://stream1.freetv.fun/shan-tou-zong-he-7.ctv
+https://stream1.freetv.fun/shan-tou-zong-he-7.ctv|https://stream1.freetv.fun/shan-tou-zong-he-10.ctv|https://stream1.freetv.fun/shan-tou-zong-he-2.ctv
 #EXTINF:-1 tvg-name="汕尾新闻综合" group-title="其他台",汕尾新闻综合 [2普通]
 https://stream1.freetv.fun/shan-wei-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/shan-wei-xin-wen-zong-he-3.ctv
 #EXTINF:-1 tvg-name="江门综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/江门综合.png",江门综合 [5普通]
-https://stream1.freetv.fun/jiang-men-zong-he-5.ctv|https://stream1.freetv.fun/jiang-men-zong-he-1.ctv|https://stream1.freetv.fun/jiang-men-zong-he-9.ctv|https://stream1.freetv.fun/jiang-men-zong-he-7.ctv|https://stream1.freetv.fun/jiang-men-zong-he-8.ctv
+https://stream1.freetv.fun/jiang-men-zong-he-8.ctv|https://stream1.freetv.fun/jiang-men-zong-he-9.ctv|https://stream1.freetv.fun/jiang-men-zong-he-1.ctv|https://stream1.freetv.fun/jiang-men-zong-he-5.ctv|https://stream1.freetv.fun/jiang-men-zong-he-7.ctv
 #EXTINF:-1 tvg-name="池州公共频道" group-title="其他台",池州公共频道 [4普通]
 http://cm.wshls.homecdn.com/live/4abdf.m3u8|http://cm.wshls.homecdn.com/live/829d.m3u8|http://cm.wshls.homecdn.com/live/4abdf.flv|http://cm.wshls.homecdn.com/live/829d.flv
 #EXTINF:-1 tvg-name="池州新闻综合" group-title="其他台",池州新闻综合 [4普通]
@@ -848,7 +842,7 @@ https://stream1.freetv.fun/hu-zhou-gong-gong-9.m3u8|http://hzcm-live.media.hugd.
 #EXTINF:-1 tvg-name="湖州公共民生" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/湖州公共民生.png",湖州公共民生 [1普通]
 http://hzcm-live.media.hugd.com/1e6b554b9ab74513958c0e1ffe664d22/9acaa7634309494cb29a85eb12136607.m3u8?auth_key=2272900830-9a2389b8bf4e49d580d4ad807423d326-0-ea78a5c7a678c436263582d368f5009e
 #EXTINF:-1 tvg-name="湖州新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/湖州新闻综合.png",湖州新闻综合 [4普通]
-http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865&fbl=|http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865&amp;fbl=|http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865|https://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865
+https://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865|http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865|http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865&fbl=|http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865&amp;fbl=
 #EXTINF:-1 tvg-name="溧水新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/溧水新闻综合.png",溧水新闻综合 [2普通]
 https://mgtv.ottiptv.cc/mg/639737327.m3u8?userid=5559462299&sign=acb20ca594d40f6c7532125efb36faedf33bf2f255bf39997b9f3fac7e196b75521fae8358a0309b481c3a45b85ea245d79966e3ae9c351619b2e51f6cdd0b9a3a90a18fecc3f42748e5434a7bb25b626b&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8|https://iptv.catvod.com/live.php?id=%E6%BA%A7%E6%B0%B4%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88&line=1
 #EXTINF:-1 tvg-name="滨海新区2" group-title="其他台",滨海新区2 [1普通]
@@ -856,7 +850,7 @@ https://gcalic.v.myalicdn.com/gc/ljgcwglytylxs_1/index.m3u8?contentid=2820180516
 #EXTINF:-1 tvg-name="漳州新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/漳州新闻综合.png",漳州新闻综合 [4普通]
 https://stream1.freetv.fun/zhang-zhou-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/zhang-zhou-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/zhang-zhou-xin-wen-zong-he-3.m3u8|http://8.138.7.223/tv/fjtv1.php?id=zz1
 #EXTINF:-1 tvg-name="潍坊新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/潍坊新闻综合.png" tvg-ipv6="true",潍坊新闻综合 [2IPv6]
-https://stream1.freetv.fun/ipv6-wei-fang-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/ipv6-wei-fang-xin-wen-zong-he-1.m3u8
+https://stream1.freetv.fun/ipv6-wei-fang-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/ipv6-wei-fang-xin-wen-zong-he-2.m3u8
 #EXTINF:-1 tvg-name="潘玮柏精选28首" group-title="其他台",潘玮柏精选28首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2021/02/18/21/BMjAyMTAyMTgyMTI0MzNfODI4NTk1NTQ0XzQ0NTk2NzM2MDU3XzJfMw==_b_B92f3c6849966ee988590af29cfd9237b.mp4?tag=1-1750435163-std-1-6qxcke5wod-82a7afd374de76aa&clientCacheKey=3xabaxhvbd3me8s_b.mp4
 #EXTINF:-1 tvg-name="火星基地" group-title="其他台",火星基地 [1普通]
@@ -872,7 +866,7 @@ https://txmov2.a.kwimgs.com/upic/2020/09/06/17/BMjAyMDA5MDYxNzU1MjJfMTc4NDYxNDcy
 #EXTINF:-1 tvg-name="瑞丽综合" group-title="其他台",瑞丽综合 [1普通]
 http://live.ynurl.com/video/s10021-rltv/index.m3u8
 #EXTINF:-1 tvg-name="生活时尚" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/生活时尚.png" tvg-ipv6="true",生活时尚 [4IPv6+13普通]
-https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-5.m3u8|https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-2.m3u8|https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-7.m3u8|https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-14.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-13.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-24.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-28.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-18.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-12.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-25.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-11.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-9.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-26.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-6.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-22.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-5.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-1.ctv
+https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-5.m3u8|https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-2.m3u8|https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-7.m3u8|https://stream1.freetv.fun/ipv6-sheng-huo-shi-shang-14.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-13.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-18.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-12.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-25.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-11.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-9.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-26.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-6.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-24.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-28.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-22.m3u8|https://stream1.freetv.fun/sheng-huo-shi-shang-5.ctv|https://stream1.freetv.fun/sheng-huo-shi-shang-1.ctv
 #EXTINF:-1 tvg-name="白名单" group-title="其他台" tvg-ipv6="true" tvg-whitelist="true",白名单 [12IPv6+12白名单]
 http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226433/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EygquRbh9L0wUPRY53fsZWw%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNO62IynDcU1yYDL1b4Xte8T%2CEND|http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226437/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EncK5uEAdYwWMsf8WJWI1mQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNO_LSIQh_h2P54Cz-MqgJqC%2CEND|http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226514/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Es-PVNcPJsjr_oBdcXGT40g%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNMWvZ0r6eMXcXJOGrCpJiq1%2CEND|http://[2409:8087:1:20:20::2a]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226516/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Eh9_SEkmWeMdS1TMnIILZgg%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPIiicEW7OIvk1s-X-PXHqO%2CEND|http://[2409:8087:1:20:20::26]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226550/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~e2qS8h6u-xp3gd50vNr1sw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPPFD3HVWEytEVyliOxehfe%2CEND|http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226228/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7E2knJCFLHz_HqfBZXNGeA1A%7E_eNUb|http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226335/1.m3u8?servicetype=1&accountinfo=%7E%7EV2.0%7EBFJ5gRpm8ntK8JEFPZOhLQ%7EPepnxHHB2d6Hk2dZWM77MyFlBN5q1KnYLvimM9pqT7EfCf-e5nKehMQzrOBwWduf%7EExtInfo9bj61dxzlMXrsixrqcFYPg%3A20240420192542%2C%2C%2C20240420192542%2C%2C10001000275495%2C-1%2C0%2C1%2C-1%2C%2C2%2C2201300%2C%2C%2C2%2C%2C%2CEND&GuardEncType=2|http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226434/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Ejj3PtVjzl6ZzFdM-Vi1dmQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPJa61jREJv4ZfZigyrxX0U%2CEND|http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226438/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EeVAybrHg955d_IRT9e_uHQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNMLCKqkSfuGOusJwBMwlCbz%2CEND|http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226440/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7EWrJcgMpdGPvZavpf4dmmrQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNhmwDsUZnvQgU5E5wiGA2g%2CEND|http://[2409:8087:1:20:20::29]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226895/1.m3u8?servicetype=1&accountinfo=%7E%7EV2.0%7EI0Rkc6neBYgfpoJ1yud8Fw%7EPepnxHHB2d6Hk2dZWM77MyFlBN5q1KnYLvimM9pqT7Epd7QgO4HFWH0z34SUb2Vs%7EExtInfo9bj61dxzlMXrsixrqcFYPg%3A20240420192714%2C%2C%2C20240420192714%2C%2C10001000275495%2C-1%2C0%2C1%2C-1%2C%2C2%2C2201300%2C%2C%2C2%2C%2C%2CEND&GuardEncType=2|http://[2409:8087:1:20:20::2c]/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226436/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7ElMQ3ov45VmhzipweN5VstQ%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPg_yZ8DZHTaSU92MIl_o3b%2CEND
 #EXTINF:-1 tvg-name="白名单 :6610" group-title="其他台" tvg-ipv6="true" tvg-whitelist="true",白名单 :6610 [122IPv6+122白名单]
@@ -894,7 +888,7 @@ http://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8
 #EXTINF:-1 tvg-name="睛彩广场舞" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/睛彩广场舞.png",睛彩广场舞 [1普通]
 https://iptv.catvod.com/live.php?id=%E7%9D%9B%E5%BD%A9%E5%B9%BF%E5%9C%BA%E8%88%9E
 #EXTINF:-1 tvg-name="石家庄新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/石家庄新闻综合.png",石家庄新闻综合 [5普通]
-https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-4.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-8.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-9.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-6.ctv
+https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-4.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-8.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-9.m3u8|https://stream1.freetv.fun/shi-jia-zhuang-xin-wen-zong-he-6.ctv
 #EXTINF:-1 tvg-name="石家庄生活" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/石家庄生活.png",石家庄生活 [1普通]
 https://stream1.freetv.fun/shi-jia-zhuang-sheng-huo-5.ctv
 #EXTINF:-1 tvg-name="石家庄都市" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/石家庄都市.png",石家庄都市 [6普通]
@@ -903,14 +897,14 @@ https://stream1.freetv.fun/shi-jia-zhuang-du-shi-12.m3u8|https://stream1.freetv.
 https://alimov2.a.kwimgs.com/upic/2023/03/07/20/BMjAyMzAzMDcyMDMyNDdfNjE2NzgxMTQwXzk3NzEzNDY4NjgxXzBfMw==_b_B75baa98fedb7da382eb4a29e5f7df2bf.mp4
 #EXTINF:-1 tvg-name="笑傲江湖2:东方不败" group-title="其他台",笑傲江湖2:东方不败 [1普通]
 https://cdn2.yzzy-tv-cdn.com/20220331/4843_724c1ac5/index.m3u8
-#EXTINF:-1 tvg-name="第一财经" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/上海第一财经.png" tvg-ipv6="true",第一财经 [5IPv6+10普通]
-https://stream1.freetv.fun/ipv6-di-yi-cai-jing-8.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-6.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-5.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-3.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-1.ctv|https://stream1.freetv.fun/di-yi-cai-jing-13.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-12.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-2.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-5.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-7.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-3.m3u8|https://www.freetv.top/migu/608780988.m3u8?migutoken=62e21890acbd9928d0be0b4eae9f5e32e1879604b785ee7ce8751d5001a9ff431d7714025aa03d48a2b190ff214e5115dcb6ba455c3d26b1db0f5b3cb49c5967429ff3b1fe8e96e87cc6146543|https://iptv.catvod.com/live.php?id=%E4%B8%8A%E6%B5%B7%E7%AC%AC%E4%B8%80%E8%B4%A2%E7%BB%8F&line=1|https://stream1.freetv.fun/di-yi-cai-jing-6.ctv|http://live.xmcdn.com/live/56/64.m3u8
+#EXTINF:-1 tvg-name="第一财经" group-title="其他台" tvg-logo="https://live.fanmingming.cn/tv/上海第一财经.png" tvg-ipv6="true",第一财经 [5IPv6+9普通]
+https://stream1.freetv.fun/ipv6-di-yi-cai-jing-8.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-5.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-6.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-3.m3u8|https://stream1.freetv.fun/ipv6-di-yi-cai-jing-1.ctv|https://stream1.freetv.fun/di-yi-cai-jing-13.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-12.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-2.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-5.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-7.m3u8|https://stream1.freetv.fun/di-yi-cai-jing-3.m3u8|https://iptv.catvod.com/live.php?id=%E4%B8%8A%E6%B5%B7%E7%AC%AC%E4%B8%80%E8%B4%A2%E7%BB%8F&line=1|https://stream1.freetv.fun/di-yi-cai-jing-6.ctv|http://live.xmcdn.com/live/56/64.m3u8
 #EXTINF:-1 tvg-name="精武英雄" group-title="其他台",精武英雄 [1普通]
 https://cdn5.yzzy-tv-cdn.com/20220607/22255_9e00edb7/index.m3u8
 #EXTINF:-1 tvg-name="纪实人文" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/纪实人文.png" tvg-ipv6="true",纪实人文 [1IPv6]
 https://stream1.freetv.fun/ipv6-ji-shi-ren-wen-12.m3u8
 #EXTINF:-1 tvg-name="绍兴公共" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/绍兴公共.png",绍兴公共 [4普通]
-https://stream1.freetv.fun/shao-xing-gong-gong-3.m3u8|https://stream1.freetv.fun/shao-xing-gong-gong-8.m3u8|https://stream1.freetv.fun/shao-xing-gong-gong-1.m3u8|https://stream1.freetv.fun/shao-xing-gong-gong-7.m3u8
+https://stream1.freetv.fun/shao-xing-gong-gong-8.m3u8|https://stream1.freetv.fun/shao-xing-gong-gong-7.m3u8|https://stream1.freetv.fun/shao-xing-gong-gong-1.m3u8|https://stream1.freetv.fun/shao-xing-gong-gong-3.m3u8
 #EXTINF:-1 tvg-name="给爸爸的信" group-title="其他台",给爸爸的信 [1普通]
 https://cdn2.yzzy-tv-cdn.com/20220414/13070_86734093/index.m3u8
 #EXTINF:-1 tvg-name="绵阳科技" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/绵阳科技.png",绵阳科技 [1普通]
@@ -926,7 +920,7 @@ http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/2bdfdad540b342f592f
 #EXTINF:-1 tvg-name="花木兰" group-title="其他台",花木兰 [1普通]
 https://cdn2.yzzy-tv-cdn.com/20220405/7667_13f7046c/index.m3u8
 #EXTINF:-1 tvg-name="苍南新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/苍南新闻综合.png",苍南新闻综合 [4普通]
-https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-5.m3u8|https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-4.ctv
+https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-5.m3u8|https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-7.m3u8|https://stream1.freetv.fun/cang-nan-xin-wen-zong-he-4.ctv
 #EXTINF:-1 tvg-name="苏州文化生活" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/苏州文化生活.png",苏州文化生活 [1普通]
 https://stream1.freetv.fun/su-zhou-wen-hua-sheng-huo-2.m3u8
 #EXTINF:-1 tvg-name="苏州新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/苏州新闻综合.png",苏州新闻综合 [1普通]
@@ -942,7 +936,7 @@ https://stream1.freetv.fun/jing-men-xin-wen-zong-he-6.m3u8|https://stream1.freet
 #EXTINF:-1 tvg-name="莫文蔚精选72首" group-title="其他台",莫文蔚精选72首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2023/07/27/21/BMjAyMzA3MjcyMTQ2MjdfMzYxMjUyNDA3MV8xMDkwMzM1MjA2NTJfMF8z_b_B144de29e473911c6e9187c9d591b8943.mp4
 #EXTINF:-1 tvg-name="萧山新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/萧山新闻综合.png",萧山新闻综合 [5普通]
-https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-4.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-8.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-6.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-3.m3u8
+https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-3.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-6.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-8.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-4.m3u8|https://stream1.freetv.fun/xiao-shan-xin-wen-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="蓬安新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/蓬安新闻综合.png",蓬安新闻综合 [2普通]
 https://stream1.freetv.fun/peng-an-xin-wen-zong-he-1.m3u8|https://stream1.freetv.fun/peng-an-xin-wen-zong-he-2.m3u8
 #EXTINF:-1 tvg-name="蔡依林精选102首" group-title="其他台",蔡依林精选102首 [1普通]
@@ -951,8 +945,8 @@ https://txmov2.a.kwimgs.com/upic/2025/06/12/20/BMjAyNTA2MTIyMDUzMjFfNDQzMTI2Mjg0
 https://txmov2.a.kwimgs.com/upic/2023/08/18/21/BMjAyMzA4MTgyMTA4MzZfODM0NDUzMTQ2XzExMDgyNTA1MjcwM18wXzM=_b_B0d509c2419313652932c68153a65e4ed.mp4
 #EXTINF:-1 tvg-name="衢江新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/衢江新闻综合.png",衢江新闻综合 [1普通]
 https://stream1.freetv.fun/qu-jiang-xin-wen-zong-he-1.m3u8
-#EXTINF:-1 tvg-name="西宁新闻综合" group-title="其他台",西宁新闻综合 [3普通]
-https://stream1.freetv.fun/zhu-xia--xi-zhu-xin-wen-zong-he-1.m3u8|@http://cm-wshls.homecdn.com/live/5a296.m3u8|@http://cm-wshls.homecdn.com/live/5a296.dlv
+#EXTINF:-1 tvg-name="西宁新闻综合" group-title="其他台",西宁新闻综合 [1普通]
+https://stream1.freetv.fun/zhu-xia--xi-zhu-xin-wen-zong-he-1.m3u8
 #EXTINF:-1 tvg-name="西宁生活服务" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/西宁生活服务.png",西宁生活服务 [2普通]
 https://stream1.freetv.fun/xi-zhu-sheng-huo-fu-wu-2.m3u8|https://stream1.freetv.fun/xi-zhu-sheng-huo-fu-wu-3.m3u8
 #EXTINF:-1 tvg-name="西游记" group-title="其他台",西游记 [1普通]
@@ -971,8 +965,8 @@ https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV06.m3u8
 https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="远眺山庄" group-title="其他台",远眺山庄 [1普通]
 https://gcalic.v.myalicdn.com/gc/bssztt_1/index.m3u8?contentid=2820180516001
-#EXTINF:-1 tvg-name="连云港新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/连云港新闻综合.png",连云港新闻综合 [3普通]
-https://iptv.catvod.com/live.php?id=%E8%BF%9E%E4%BA%91%E6%B8%AF%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88&line=1|https://iptv.catvod.com/live.php?id=%E8%BF%9E%E4%BA%91%E6%B8%AF%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88|https://stream1.freetv.fun/lian-yun-gang-xin-wen-zong-he-3.ctv
+#EXTINF:-1 tvg-name="连云港新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/连云港新闻综合.png",连云港新闻综合 [2普通]
+https://iptv.catvod.com/live.php?id=%E8%BF%9E%E4%BA%91%E6%B8%AF%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88&line=1|https://iptv.catvod.com/live.php?id=%E8%BF%9E%E4%BA%91%E6%B8%AF%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88
 #EXTINF:-1 tvg-name="邓紫棋精选30首" group-title="其他台",邓紫棋精选30首 [1普通]
 https://txmov2.a.kwimgs.com/upic/2023/05/08/12/BMjAyMzA1MDgxMjIwNTNfMzQ4MzI0MjA1OF8xMDI1NjYyMjM5MDZfMF8z_b_B0675fa55fe8ce0583fb05fa02330e9f1.mp4
 #EXTINF:-1 tvg-name="邢台综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/邢台综合.png",邢台综合 [4普通]
@@ -990,9 +984,9 @@ https://gcalic.v.myalicdn.com/gc/bsszjs_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="金川新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/金川新闻综合.png",金川新闻综合 [2普通]
 https://stream1.freetv.fun/jin-chuan-xin-wen-zong-he-2.m3u8|https://stream1.freetv.fun/jin-chuan-xin-wen-zong-he-3.m3u8
 #EXTINF:-1 tvg-name="金鹰纪实" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/金鹰纪实.png" tvg-ipv6="true",金鹰纪实 [2IPv6+25普通]
-https://stream1.freetv.fun/ipv6-jin-ying-ji-shi-22.m3u8|https://stream1.freetv.fun/ipv6-jin-ying-ji-shi-20.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-6.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-44.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-30.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-11.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-35.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-33.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-9.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-gao-qing-3.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-8.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-34.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-38.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-12.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-gao-qing-2.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-31.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-13.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-14.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-37.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-41.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-23.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-3.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-24.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-26.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-29.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-37.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-10.ctv
+https://stream1.freetv.fun/ipv6-jin-ying-ji-shi-20.m3u8|https://stream1.freetv.fun/ipv6-jin-ying-ji-shi-22.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-12.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-9.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-35.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-41.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-30.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-gao-qing-2.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-13.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-33.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-gao-qing-3.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-37.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-34.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-38.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-3.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-44.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-26.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-31.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-14.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-29.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-24.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-8.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-23.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-11.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-6.m3u8|https://stream1.freetv.fun/jin-ying-ji-shi-37.ctv|https://stream1.freetv.fun/jin-ying-ji-shi-10.ctv
 #EXTINF:-1 tvg-name="钱江都市" group-title="其他台",钱江都市 [2普通]
-https://stream1.freetv.fun/qian-jiang-du-shi-2.m3u8|https://stream1.freetv.fun/qian-jiang-du-shi-1.m3u8
+https://stream1.freetv.fun/qian-jiang-du-shi-1.m3u8|https://stream1.freetv.fun/qian-jiang-du-shi-2.m3u8
 #EXTINF:-1 tvg-name="镇江二套社会民生" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/镇江二套社会民生.png",镇江二套社会民生 [1普通]
 http://zjtv-wshls.homecdn.com/live/2aa16.m3u8
 #EXTINF:-1 tvg-name="镇江新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/镇江新闻综合.png",镇江新闻综合 [5普通]
@@ -1059,8 +1053,8 @@ https://cdn2.yzzy-tv-cdn.com/20220415/13227_56714be0/index.m3u8
 https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8
 #EXTINF:-1 tvg-name="齐齐哈尔新闻综合" group-title="其他台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/齐齐哈尔新闻综合.png" tvg-ipv6="true",齐齐哈尔新闻综合 [1IPv6]
 https://stream1.freetv.fun/ipv6-qi-qi-ha-er-xin-wen-zong-he-3.m3u8
-#EXTINF:-1 tvg-name="龙华戏剧" group-title="其他台",龙华戏剧 [4普通]
-https://cdn8.163189.xyz/163189/lhxj|http://rihou.cc:555/tv/[Pd]龙华戏剧|http://xtvantsc.xyz/litv_ts.php?id=litv-longturn18|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=litv-longturn18
+#EXTINF:-1 tvg-name="龙华戏剧" group-title="其他台",龙华戏剧 [6普通]
+https://cdn8.163189.xyz/163189/lhxj|http://cdn8.163189.xyz/163189/lhxj|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=litv-longturn18|http://xtvantsc.xyz/litv_ts.php?id=litv-longturn18|http://lzo.xh.sd/gt/lgz4G.php?id=litv-longturn18|http://lzo.xh.sd/gt/lgz4G.php?id=li-litv-longturn18
 #EXTINF:-1 tvg-name="龙华戏剧台" group-title="其他台",龙华戏剧台 [1普通]
 http://cdn8.163189.xyz/163189/lhxj
 #EXTINF:-1 tvg-name="龙华日韩台" group-title="其他台",龙华日韩台 [1普通]
@@ -1071,8 +1065,16 @@ http://cdn8.163189.xyz/163189/lhdy
 http://cdn8.163189.xyz/163189/lhjd
 #EXTINF:-1 tvg-name="龙门飞甲" group-title="其他台",龙门飞甲 [2普通]
 http://jsmov2.a.yximgs.com/bs3/video-hls/5203346449046555193_hlsb.m3u8|https://cdn2.yzzy-tv-cdn.com/20220331/4883_7f84c204/index.m3u8
-#EXTINF:-1 tvg-name="🎁 乒乓球欧冠 博戈里亚达通VS苏赫纽夫奥尔利奇银行 赛场原声 01:30" group-title="其他台",🎁 乒乓球欧冠 博戈里亚达通VS苏赫纽夫奥尔利奇银行 赛场原声 01:30 [1普通]
-https://iptv.catvod.com/live.php?id=%E4%B9%92%E4%B9%93%E7%90%83%E6%AC%A7%E5%86%A0%20%E5%8D%9A%E6%88%88%E9%87%8C%E4%BA%9A%E8%BE%BE%E9%80%9AVS%E8%8B%8F%E8%B5%AB%E7%BA%BD%E5%A4%AB%E5%A5%A5%E5%B0%94%E5%88%A9%E5%A5%87%E9%93%B6%E8%A1%8C%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2001%3A30&line=1
+#EXTINF:-1 tvg-name="🎁 WTA 萨卡里VS穆霍娃 萨卡里1 2穆霍娃 00:10" group-title="其他台",🎁 WTA 萨卡里VS穆霍娃 萨卡里1 2穆霍娃 00:10 [4普通]
+https://iptv.catvod.com/live.php?id=WTA%20%E8%90%A8%E5%8D%A1%E9%87%8CVS%E7%A9%86%E9%9C%8D%E5%A8%83%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E8%90%A8%E5%8D%A1%E9%87%8C1-2%E7%A9%86%E9%9C%8D%E5%A8%83%2000%3A10&line=2|https://iptv.catvod.com/live.php?id=WTA%20%E8%90%A8%E5%8D%A1%E9%87%8CVS%E7%A9%86%E9%9C%8D%E5%A8%83%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E8%90%A8%E5%8D%A1%E9%87%8C1-2%E7%A9%86%E9%9C%8D%E5%A8%83%2000%3A10&line=3|https://iptv.catvod.com/live.php?id=WTA%20%E8%90%A8%E5%8D%A1%E9%87%8CVS%E7%A9%86%E9%9C%8D%E5%A8%83%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E8%90%A8%E5%8D%A1%E9%87%8C1-2%E7%A9%86%E9%9C%8D%E5%A8%83%2000%3A10&line=6|https://iptv.catvod.com/live.php?id=WTA%20%E8%90%A8%E5%8D%A1%E9%87%8CVS%E7%A9%86%E9%9C%8D%E5%A8%83%20%E3%80%90%E5%9B%9E%E6%94%BE%E3%80%91%E8%90%A8%E5%8D%A1%E9%87%8C1-2%E7%A9%86%E9%9C%8D%E5%A8%83%2000%3A10&line=7
+#EXTINF:-1 tvg-name="🎁 WTT 男女单打1/4决赛、双打决赛 英文解说 19:30" group-title="其他台",🎁 WTT 男女单打1/4决赛、双打决赛 英文解说 19:30 [7普通]
+https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%931%2F4%E5%86%B3%E8%B5%9B%E3%80%81%E5%8F%8C%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=1|https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%931%2F4%E5%86%B3%E8%B5%9B%E3%80%81%E5%8F%8C%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=2|https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%931%2F4%E5%86%B3%E8%B5%9B%E3%80%81%E5%8F%8C%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=3|https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%931%2F4%E5%86%B3%E8%B5%9B%E3%80%81%E5%8F%8C%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=4|https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%931%2F4%E5%86%B3%E8%B5%9B%E3%80%81%E5%8F%8C%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=5|https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%931%2F4%E5%86%B3%E8%B5%9B%E3%80%81%E5%8F%8C%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=6|https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%931%2F4%E5%86%B3%E8%B5%9B%E3%80%81%E5%8F%8C%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=7
+#EXTINF:-1 tvg-name="🎁 WTT 男女单打决赛 英文解说 19:30" group-title="其他台",🎁 WTT 男女单打决赛 英文解说 19:30 [7普通]
+https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=1|https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=2|https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=3|https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=4|https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=5|https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=6|https://iptv.catvod.com/live.php?id=WTT%20%E7%94%B7%E5%A5%B3%E5%8D%95%E6%89%93%E5%86%B3%E8%B5%9B%20%E8%8B%B1%E6%96%87%E8%A7%A3%E8%AF%B4%2019%3A30&line=7
+#EXTINF:-1 tvg-name="🎁 西甲 埃尔切VS奥萨苏纳 洪宇青 03:45" group-title="其他台",🎁 西甲 埃尔切VS奥萨苏纳 洪宇青 03:45 [4普通]
+https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E5%9F%83%E5%B0%94%E5%88%87VS%E5%A5%A5%E8%90%A8%E8%8B%8F%E7%BA%B3%20%E6%B4%AA%E5%AE%87%E9%9D%92%2003%3A45&line=1|https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E5%9F%83%E5%B0%94%E5%88%87VS%E5%A5%A5%E8%90%A8%E8%8B%8F%E7%BA%B3%20%E6%B4%AA%E5%AE%87%E9%9D%92%2003%3A45&line=2|https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E5%9F%83%E5%B0%94%E5%88%87VS%E5%A5%A5%E8%90%A8%E8%8B%8F%E7%BA%B3%20%E6%B4%AA%E5%AE%87%E9%9D%92%2003%3A45&line=3|https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E5%9F%83%E5%B0%94%E5%88%87VS%E5%A5%A5%E8%90%A8%E8%8B%8F%E7%BA%B3%20%E6%B4%AA%E5%AE%87%E9%9D%92%2003%3A45&line=4
+#EXTINF:-1 tvg-name="🎁 西甲 西班牙人VS塞尔塔 赛场原声 20:45" group-title="其他台",🎁 西甲 西班牙人VS塞尔塔 赛场原声 20:45 [7普通]
+https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E8%A5%BF%E7%8F%AD%E7%89%99%E4%BA%BAVS%E5%A1%9E%E5%B0%94%E5%A1%94%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2020%3A45&line=1|https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E8%A5%BF%E7%8F%AD%E7%89%99%E4%BA%BAVS%E5%A1%9E%E5%B0%94%E5%A1%94%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2020%3A45&line=2|https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E8%A5%BF%E7%8F%AD%E7%89%99%E4%BA%BAVS%E5%A1%9E%E5%B0%94%E5%A1%94%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2020%3A45&line=3|https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E8%A5%BF%E7%8F%AD%E7%89%99%E4%BA%BAVS%E5%A1%9E%E5%B0%94%E5%A1%94%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2020%3A45&line=4|https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E8%A5%BF%E7%8F%AD%E7%89%99%E4%BA%BAVS%E5%A1%9E%E5%B0%94%E5%A1%94%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2020%3A45&line=5|https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E8%A5%BF%E7%8F%AD%E7%89%99%E4%BA%BAVS%E5%A1%9E%E5%B0%94%E5%A1%94%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2020%3A45&line=6|https://iptv.catvod.com/live.php?id=%E8%A5%BF%E7%94%B2%20%E8%A5%BF%E7%8F%AD%E7%89%99%E4%BA%BAVS%E5%A1%9E%E5%B0%94%E5%A1%94%20%E8%B5%9B%E5%9C%BA%E5%8E%9F%E5%A3%B0%2020%3A45&line=7
 #EXTINF:-1 tvg-name="🐼直播熊猫" group-title="其他台",🐼直播熊猫 [1普通]
 https://gcwbndali.v.myalicdn.com/gcwbnd/ipanda1000_2/index.m3u8
 #EXTINF:-1 tvg-name="📹️直播中国" group-title="其他台",📹️直播中国 [1普通]
