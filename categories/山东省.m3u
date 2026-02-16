@@ -1,7 +1,7 @@
 #EXTM3U
 # 山东省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-16 02:55:36
-# 电视台数量: 5
+# 更新时间(北京时间): 2026-02-17 03:03:11
+# 电视台数量: 4
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
 # 配置文件: config.txt
@@ -11,8 +11,6 @@
 
 #EXTINF:-1 tvg-name="山东农科" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东农科.png",山东农科 [1普通]
 http://58.57.40.22:9901/tsfile/live/1022_1.m3u8
-#EXTINF:-1 tvg-name="山东教育" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东教育.png",山东教育 [1普通]
-https://iptv.catvod.com/live.php?id=%E5%B1%B1%E4%B8%9C%E6%95%99%E8%82%B2&line=1
 #EXTINF:-1 tvg-name="山东文旅" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东文旅.png",山东文旅 [1普通]
 http://58.57.40.22:9901/tsfile/live/1023_1.m3u8
 #EXTINF:-1 tvg-name="山东新闻" group-title="山东省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/山东新闻.png",山东新闻 [5普通]

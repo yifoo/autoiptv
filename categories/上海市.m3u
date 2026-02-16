@@ -1,6 +1,6 @@
 #EXTM3U
 # 上海市频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-16 02:55:36
+# 更新时间(北京时间): 2026-02-17 03:03:11
 # 电视台数量: 4
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
@@ -9,8 +9,8 @@
 # 白名单功能: 启用
 # 测速功能: 启用
 
-#EXTINF:-1 tvg-name="上海新闻综合" group-title="上海市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/上海新闻综合.png",上海新闻综合 [2普通]
-https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-3.m3u8|https://iptv.catvod.com/live.php?id=%E4%B8%8A%E6%B5%B7%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88&line=1
+#EXTINF:-1 tvg-name="上海新闻综合" group-title="上海市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/上海新闻综合.png",上海新闻综合 [1普通]
+https://stream1.freetv.fun/shang-hai-xin-wen-zong-he-3.m3u8
 #EXTINF:-1 tvg-name="上海滩" group-title="上海市",上海滩 [1普通]
 https://txmov2.a.kwimgs.com/upic/2021/02/22/22/BMjAyMTAyMjIyMjU2NDFfMTI0MzE0NjMyOF80NDg1MDgzMTY5NF8yXzM=_b_B35aa4e9376173041991a9a379ff4ac56.mp4
 #EXTINF:-1 tvg-name="上海纪实" group-title="上海市" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/上海纪实.png" tvg-ipv6="true",上海纪实 [3IPv6+1普通]
