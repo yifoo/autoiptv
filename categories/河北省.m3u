@@ -1,6 +1,6 @@
 #EXTM3U
 # 河北省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-17 03:03:11
+# 更新时间(北京时间): 2026-02-18 03:14:29
 # 电视台数量: 3
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
@@ -10,7 +10,7 @@
 # 测速功能: 启用
 
 #EXTINF:-1 tvg-name="河北农民" group-title="河北省",河北农民 [5普通]
-https://stream1.freetv.fun/he-bei-nong-min-12.m3u8|https://stream1.freetv.fun/he-bei-nong-min-14.m3u8|https://stream1.freetv.fun/he-bei-nong-min-18.m3u8|https://stream1.freetv.fun/he-bei-nong-min-9.m3u8|https://stream1.freetv.fun/he-bei-nong-min-17.m3u8
+https://stream1.freetv.fun/he-bei-nong-min-14.m3u8|https://stream1.freetv.fun/he-bei-nong-min-17.m3u8|https://stream1.freetv.fun/he-bei-nong-min-18.m3u8|https://stream1.freetv.fun/he-bei-nong-min-9.m3u8|https://stream1.freetv.fun/he-bei-nong-min-12.m3u8
 #EXTINF:-1 tvg-name="河北少儿科教" group-title="河北省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/河北少儿科教.png",河北少儿科教 [3普通]
 https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-12.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-2.m3u8|https://stream1.freetv.fun/he-bei-shao-er-ke-jiao-3.m3u8
 #EXTINF:-1 tvg-name="河北都市" group-title="河北省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/河北都市.png",河北都市 [8普通]
