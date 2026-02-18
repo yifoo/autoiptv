@@ -1,6 +1,6 @@
 #EXTM3U
 # 浙江省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-18 03:14:29
+# 更新时间(北京时间): 2026-02-19 03:12:54
 # 电视台数量: 9
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
@@ -14,11 +14,11 @@ https://gcalic.v.myalicdn.com/gc/zjwzblt_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="浙江 普陀山" group-title="浙江省",浙江 普陀山 [1普通]
 https://gcalic.v.myalicdn.com/gc/pts01_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 tvg-name="浙江国际" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江国际.png",浙江国际 [6普通]
-https://stream1.freetv.fun/zhe-jiang-guo-ji-7.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-10.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-6.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-8.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-5.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-11.m3u8
+https://stream1.freetv.fun/zhe-jiang-guo-ji-7.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-10.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-11.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-8.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-5.m3u8|https://stream1.freetv.fun/zhe-jiang-guo-ji-6.m3u8
 #EXTINF:-1 tvg-name="浙江新闻" group-title="浙江省",浙江新闻 [1普通]
 https://stream1.freetv.fun/zhe-jiang-xin-wen-10.m3u8
 #EXTINF:-1 tvg-name="浙江民生休闲" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江民生休闲.png",浙江民生休闲 [4普通]
-https://stream1.freetv.fun/zhe-jiang-min-sheng-9.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-8.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-7.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-xiu-xian-5.m3u8
+https://stream1.freetv.fun/zhe-jiang-min-sheng-9.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-8.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-xiu-xian-5.m3u8|https://stream1.freetv.fun/zhe-jiang-min-sheng-7.m3u8
 #EXTINF:-1 tvg-name="浙江生活" group-title="浙江省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江生活.png",浙江生活 [3普通]
 https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-6.m3u8|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-7.ctv|https://stream1.freetv.fun/zhe-jiang-jing-ji-sheng-huo-8.ctv
 #EXTINF:-1 tvg-name="浙江舟山东极岛" group-title="浙江省" tvg-logo="https://tb.zbds.top/logo/浙江舟山东极岛.png",浙江舟山东极岛 [2普通]
