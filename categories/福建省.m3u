@@ -1,6 +1,6 @@
 #EXTM3U
 # 福建省频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-20 03:08:44
+# 更新时间(北京时间): 2026-02-21 03:06:21
 # 电视台数量: 10
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
@@ -16,7 +16,7 @@ https://stream1.freetv.fun/fu-jian-gong-gong-4.ctv
 #EXTINF:-1 tvg-name="福建文体" group-title="福建省",福建文体 [1普通]
 http://8.138.7.223/tv/fjtv1.php?id=fjwt
 #EXTINF:-1 tvg-name="福建新闻" group-title="福建省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建新闻.png",福建新闻 [8普通]
-https://stream1.freetv.fun/fu-jian-xin-wen-1.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-6.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-3.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-4.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-5.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-2.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjxw|http://live.xmcdn.com/live/792/64.m3u8
+https://stream1.freetv.fun/fu-jian-xin-wen-1.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-2.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-6.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-3.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-4.m3u8|https://stream1.freetv.fun/fu-jian-xin-wen-5.m3u8|http://8.138.7.223/tv/fjtv1.php?id=fjxw|http://live.xmcdn.com/live/792/64.m3u8
 #EXTINF:-1 tvg-name="福建旅游" group-title="福建省" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/福建旅游.png",福建旅游 [1普通]
 https://stream1.freetv.fun/fu-jian-lu-you-6.m3u8
 #EXTINF:-1 tvg-name="福建武夷山玉女峰" group-title="福建省" tvg-logo="https://tb.zbds.top/logo/福建武夷山玉女峰.png",福建武夷山玉女峰 [2普通]
