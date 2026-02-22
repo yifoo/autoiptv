@@ -1,6 +1,6 @@
 #EXTM3U
 # 港澳台频道列表（IPv6优先多源合并版）
-# 更新时间(北京时间): 2026-02-22 02:52:35
+# 更新时间(北京时间): 2026-02-23 02:53:04
 # 电视台数量: 45
 # 说明: 每个电视台包含多个源，IPv6源优先，PotPlayer按Alt+W切换
 # 已过滤低质量源（评分 < 0.5）
@@ -80,7 +80,7 @@ https://stream1.freetv.fun/hua-shi-xin-wen-4.m3u8|https://pxuchylhjchl.us-east-1
 #EXTINF:-1 tvg-name="杭州明珠" group-title="港澳台" tvg-logo="https://gh-proxy.com/https://raw.githubusercontent.com/fanmingming/live/main/tv/杭州明珠.png",杭州明珠 [2普通]
 https://stream1.freetv.fun/hang-zhou-ming-zhu-2.m3u8|https://stream1.freetv.fun/hang-zhou-ming-zhu-1.ctv
 #EXTINF:-1 tvg-name="民视" group-title="港澳台",民视 [6普通]
-https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv155|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv002|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv002|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv155|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv002|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv155
+https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv155|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv002|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv002|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv155|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv155|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv002
 #EXTINF:-1 tvg-name="民视台湾" group-title="港澳台",民视台湾 [5普通]
 https://stream1.freetv.fun/min-shi-tai-wan-6.m3u8|https://tmxk.pp.ua/litv.php?token=tmxk&id=4gtv-4gtv001|http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv001|http://xtvantsc.xyz/litv_ts.php?id=4gtv-4gtv001|http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_mstw.flv
 #EXTINF:-1 tvg-name="民视影剧" group-title="港澳台",民视影剧 [3普通]
@@ -98,4 +98,4 @@ http://grandprix2023.asuscomm.com:8891/bysid/96.m3u8|http://php.jdshipin.com/PLT
 #EXTINF:-1 tvg-name="福建漳州醉美沙滩翡翠湾" group-title="港澳台" tvg-logo="https://tb.zbds.top/logo/福建漳州醉美沙滩翡翠湾.png",福建漳州醉美沙滩翡翠湾 [1普通]
 https://gcalic.v.myalicdn.com/gc/fcw03_1/index.m3u8
 #EXTINF:-1 tvg-name="翡翠台" group-title="港澳台" tvg-logo="https://live.fanmingming.cn/tv/翡翠台.png" tvg-quality="4K",翡翠台 [6普通]
-http://cdn6.163189.xyz/163189/fct4k|http://aktv.top/AKTV/live/aktv3/4k/AKTV.m3u8|http://nz171l122.bb60246.ctm.net:8889/bysid/1.m3u8|https://cdn.163189.xyz/live/fct4k/stream.m3u8|http://r.jdshipin.com/GeWKr?id=fct720|http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_jade.flv
+http://aktv.top/AKTV/live/aktv3/4k/AKTV.m3u8|http://cdn6.163189.xyz/163189/fct4k|http://nz171l122.bb60246.ctm.net:8889/bysid/1.m3u8|https://cdn.163189.xyz/live/fct4k/stream.m3u8|http://r.jdshipin.com/GeWKr?id=fct720|http://push-rtmp-hs-spe-f5.douyincdn.com/live/awei_jade.flv
