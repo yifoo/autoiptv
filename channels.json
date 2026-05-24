@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24 03:26:18",
+  "last_updated": "2026-05-25 03:31:58",
   "config": {
     "enable_blacklist": true,
     "enable_whitelist": true,
@@ -108,7 +108,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.0347440242767334,
+            "test_time": 0.03909611701965332,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226991/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~Q6F5Mjgs0tJyEArWFL3vQA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -144,7 +144,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.02877187728881836,
+            "test_time": 0.06539559364318848,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226898/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0uh4lyjjBCCN7TCq21vSIQ~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -180,7 +180,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.013002395629882812,
+            "test_time": 0.016324520111083984,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226537/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -216,7 +216,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.01827526092529297,
+            "test_time": 0.02205944061279297,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226577/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~hE2Z89HKgsQOlN9opVn1iw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNN03yUnk4zBVk1bynPPL3hZ%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -252,7 +252,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.017690181732177734,
+            "test_time": 0.007182598114013672,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226997/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~Aw_OvjRgJVjtlaOa0dcgzg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -288,7 +288,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.06710338592529297,
+            "test_time": 0.030064105987548828,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227028/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~GfQPqRNVeBjTMsZ48qu0SA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -324,7 +324,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.007944345474243164,
+            "test_time": 0.036150217056274414,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227018/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~rN_hoRDwApMKnJqiNHvn9w~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -360,7 +360,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.01671910285949707,
+            "test_time": 0.04407906532287598,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226900/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~cYPi33WFyhvd6SjmqUKhJg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -396,7 +396,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.04642176628112793,
+            "test_time": 0.014617919921875,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227015/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~W5-3AVdwD5KlUpuA4mz7Cg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -432,7 +432,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.010959386825561523,
+            "test_time": 0.0757746696472168,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226995/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~BQiz3wrGrpG0CUSRIJ-7Jg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -468,7 +468,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.014832258224487305,
+            "test_time": 0.018632173538208008,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226954/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~af3wyULP1h575eM_4ByMDg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -504,7 +504,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.048116445541381836,
+            "test_time": 0.020555973052978516,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227003/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~Sco1zinvdUYzleEkXYhIvA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -540,7 +540,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.006114482879638672,
+            "test_time": 0.056276798248291016,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226943/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -576,7 +576,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.08292198181152344,
+            "test_time": 0.01774764060974121,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226957/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~jW26v5VaHGy1jQuIA-4EbA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -612,7 +612,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.026445627212524414,
+            "test_time": 0.01429605484008789,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227016/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~Sb5Qr3NTpE2ZugIroKoyTw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -648,7 +648,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.02204585075378418,
+            "test_time": 0.004740238189697266,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226961/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~2MGyx659D_aaDPP0qt3NgA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -684,7 +684,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.029392480850219727,
+            "test_time": 0.027028560638427734,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227010/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~kAhb-89sxdm9fz6-heXCuw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -720,7 +720,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.003605365753173828,
+            "test_time": 0.02333521842956543,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227027/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~kHMvBpWz4rccMxNvSRekpQ~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -756,7 +756,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.013207197189331055,
+            "test_time": 0.03474068641662598,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227045/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~q0D3NdTUN7FuRzr8eJsbQA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -792,7 +792,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.06314373016357422,
+            "test_time": 0.05436849594116211,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227011/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~xAUu61iVvo_xYbANWJhgXw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -828,7 +828,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.023439645767211914,
+            "test_time": 0.030827760696411133,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226897/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0BmO6uHF7WFoTed__Xr3NQ~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -864,7 +864,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.061960458755493164,
+            "test_time": 0.03627657890319824,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226956/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~i6ZIpVizXlewg-YfGvH8dA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -900,7 +900,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.016705036163330078,
+            "test_time": 0.029312849044799805,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227014/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~rSGjhI3DMaaAASPrbQJYTg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -936,7 +936,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.02410578727722168,
+            "test_time": 0.011689424514770508,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226899/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~TYfTgTra_pUx2cPrgZ_BDw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -972,7 +972,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.014324188232421875,
+            "test_time": 0.00839543342590332,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227029/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~EuBMjt2kLMD8fAO7QYER7Q~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1008,7 +1008,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.003834247589111328,
+            "test_time": 0.018123388290405273,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226959/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~GrVNEZREjuNVKiTJo2mtwg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1044,7 +1044,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.038280487060546875,
+            "test_time": 0.024243831634521484,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226952/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~REB40lnZnCEwjRy7LZuhIQ~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1080,7 +1080,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.023600339889526367,
+            "test_time": 0.03470182418823242,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226509/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1116,7 +1116,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.009424686431884766,
+            "test_time": 0.03484296798706055,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227020/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~rr-CLugPnTcUinEM8JeySg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1130,8 +1130,8 @@
       "original_names": [
         "白名单-[2409:8087:1:20:20::26]",
         "白名单-[2409:8087:1:20:20::2c]",
-        "白名单-[2409:8087:1:20:20::2a]",
-        "白名单-[2409:8087:1:20:20::29]"
+        "白名单-[2409:8087:1:20:20::29]",
+        "白名单-[2409:8087:1:20:20::2a]"
       ],
       "category": "其他台",
       "source_count": 12,
@@ -1153,7 +1153,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.05410337448120117,
+            "test_time": 0.019376754760742188,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:1:20:20::2a', port=80): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226433/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~ygquRbh9L0wUPRY53fsZWw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNO62IynDcU1yYDL1b4Xte8T%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:1:20:20::2a', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1173,7 +1173,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.011241674423217773,
+            "test_time": 0.009389162063598633,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:1:20:20::2a', port=80): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226437/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~ncK5uEAdYwWMsf8WJWI1mQ~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNO_LSIQh_h2P54Cz-MqgJqC%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:1:20:20::2a', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1193,7 +1193,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.026763200759887695,
+            "test_time": 0.013837814331054688,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:1:20:20::2a', port=80): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226514/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~s-PVNcPJsjr_oBdcXGT40g~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNMWvZ0r6eMXcXJOGrCpJiq1%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:1:20:20::2a', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1213,7 +1213,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.04918956756591797,
+            "test_time": 0.05544900894165039,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:1:20:20::2a', port=80): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226516/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~h9_SEkmWeMdS1TMnIILZgg~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPIiicEW7OIvk1s-X-PXHqO%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:1:20:20::2a', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1233,7 +1233,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.10967803001403809,
+            "test_time": 0.011726856231689453,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:1:20:20::26', port=80): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226550/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~e2qS8h6u-xp3gd50vNr1sw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPPFD3HVWEytEVyliOxehfe%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:1:20:20::26', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1253,7 +1253,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.014410018920898438,
+            "test_time": 0.018215417861938477,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:1:20:20::29', port=80): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226228/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~2knJCFLHz_HqfBZXNGeA1A~_eNUb (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:1:20:20::29', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1273,7 +1273,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.003962516784667969,
+            "test_time": 0.0111541748046875,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:1:20:20::29', port=80): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226335/1.m3u8?servicetype=1&accountinfo=~~V2.0~BFJ5gRpm8ntK8JEFPZOhLQ~PepnxHHB2d6Hk2dZWM77MyFlBN5q1KnYLvimM9pqT7EfCf-e5nKehMQzrOBwWduf~ExtInfo9bj61dxzlMXrsixrqcFYPg%3A20240420192542%2C%2C%2C20240420192542%2C%2C10001000275495%2C-1%2C0%2C1%2C-1%2C%2C2%2C2201300%2C%2C%2C2%2C%2C%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:1:20:20::29', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1293,7 +1293,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.009338140487670898,
+            "test_time": 0.023753643035888672,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:1:20:20::29', port=80): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226434/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~jj3PtVjzl6ZzFdM-Vi1dmQ~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPJa61jREJv4ZfZigyrxX0U%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:1:20:20::29', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1313,7 +1313,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.018009662628173828,
+            "test_time": 0.01766371726989746,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:1:20:20::29', port=80): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226438/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~eVAybrHg955d_IRT9e_uHQ~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNMLCKqkSfuGOusJwBMwlCbz%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:1:20:20::29', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1333,7 +1333,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.04574704170227051,
+            "test_time": 0.035076141357421875,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:1:20:20::29', port=80): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226440/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~WrJcgMpdGPvZavpf4dmmrQ~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNhmwDsUZnvQgU5E5wiGA2g%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:1:20:20::29', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1353,7 +1353,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.021725893020629883,
+            "test_time": 0.05532717704772949,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:1:20:20::29', port=80): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226895/1.m3u8?servicetype=1&accountinfo=~~V2.0~I0Rkc6neBYgfpoJ1yud8Fw~PepnxHHB2d6Hk2dZWM77MyFlBN5q1KnYLvimM9pqT7Epd7QgO4HFWH0z34SUb2Vs~ExtInfo9bj61dxzlMXrsixrqcFYPg%3A20240420192714%2C%2C%2C20240420192714%2C%2C10001000275495%2C-1%2C0%2C1%2C-1%2C%2C2%2C2201300%2C%2C%2C2%2C%2C%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:1:20:20::29', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1373,7 +1373,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.011251688003540039,
+            "test_time": 0.039707183837890625,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:1:20:20::2c', port=80): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226436/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~lMQ3ov45VmhzipweN5VstQ~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPg_yZ8DZHTaSU92MIl_o3b%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:1:20:20::2c', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1407,7 +1407,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.03217458724975586,
+            "test_time": 0.020439863204956055,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226230/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1427,7 +1427,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.08313488960266113,
+            "test_time": 0.07415175437927246,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226234/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1447,7 +1447,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.008367300033569336,
+            "test_time": 0.06411051750183105,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226238/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1467,7 +1467,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.010331153869628906,
+            "test_time": 0.054953813552856445,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226239/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1487,7 +1487,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.07703804969787598,
+            "test_time": 0.03144264221191406,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226242/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1507,7 +1507,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.07364177703857422,
+            "test_time": 0.0270388126373291,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226244/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1527,7 +1527,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.00717473030090332,
+            "test_time": 0.019487857818603516,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226245/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1547,7 +1547,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.07410621643066406,
+            "test_time": 0.05602550506591797,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226246/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1567,7 +1567,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.027358293533325195,
+            "test_time": 0.018440723419189453,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226316/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1587,7 +1587,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.02437734603881836,
+            "test_time": 0.009727716445922852,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226318/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1607,7 +1607,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.021589040756225586,
+            "test_time": 0.018890380859375,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226327/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1627,7 +1627,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.06279134750366211,
+            "test_time": 0.0317995548248291,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226333/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1647,7 +1647,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.06586074829101562,
+            "test_time": 0.04606771469116211,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226334/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1667,7 +1667,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.06822752952575684,
+            "test_time": 0.02083420753479004,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226335/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1687,7 +1687,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.0718374252319336,
+            "test_time": 0.060137033462524414,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226336/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1707,7 +1707,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.03762197494506836,
+            "test_time": 0.025999069213867188,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226337/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1727,7 +1727,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.015580892562866211,
+            "test_time": 0.027475833892822266,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226338/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1747,7 +1747,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.012111902236938477,
+            "test_time": 0.0294952392578125,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226349/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1767,7 +1767,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.015252351760864258,
+            "test_time": 0.015723228454589844,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226366/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1787,7 +1787,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.007066011428833008,
+            "test_time": 0.03185272216796875,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226371/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1807,7 +1807,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.017771244049072266,
+            "test_time": 0.021170854568481445,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226437/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1827,7 +1827,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.005712032318115234,
+            "test_time": 0.02073955535888672,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226442/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1847,7 +1847,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.04618668556213379,
+            "test_time": 0.04002070426940918,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226444/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1867,7 +1867,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.04132866859436035,
+            "test_time": 0.04917168617248535,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226449/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1887,7 +1887,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.038750410079956055,
+            "test_time": 0.03034806251525879,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226456/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1907,7 +1907,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.028783559799194336,
+            "test_time": 0.0360715389251709,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226457/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1927,7 +1927,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.03358101844787598,
+            "test_time": 0.014384269714355469,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226464/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1947,7 +1947,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.008557796478271484,
+            "test_time": 0.03146696090698242,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226468/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1967,7 +1967,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.01420283317565918,
+            "test_time": 0.032971858978271484,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226469/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -1987,7 +1987,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.01028895378112793,
+            "test_time": 0.029621124267578125,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226471/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2007,7 +2007,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.017827987670898438,
+            "test_time": 0.03701186180114746,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226472/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2027,7 +2027,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.03114795684814453,
+            "test_time": 0.030251502990722656,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226485/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2047,7 +2047,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.030672073364257812,
+            "test_time": 0.015017986297607422,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226487/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2067,7 +2067,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.05371427536010742,
+            "test_time": 0.023703813552856445,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226488/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2087,7 +2087,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.02290177345275879,
+            "test_time": 0.03435468673706055,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226489/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2107,7 +2107,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.014516353607177734,
+            "test_time": 0.0343012809753418,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226491/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2127,7 +2127,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.025463104248046875,
+            "test_time": 0.04725790023803711,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226493/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2147,7 +2147,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.0037484169006347656,
+            "test_time": 0.02588343620300293,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226494/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2167,7 +2167,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.00584101676940918,
+            "test_time": 0.0152587890625,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226495/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2187,7 +2187,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.025144100189208984,
+            "test_time": 0.03249549865722656,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226497/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2207,7 +2207,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.07004237174987793,
+            "test_time": 0.012304306030273438,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226501/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2227,7 +2227,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.008001089096069336,
+            "test_time": 0.030326128005981445,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226502/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2247,7 +2247,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.023600339889526367,
+            "test_time": 0.03470182418823242,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226509/1.m3u8?zoneoffset=480&servicetype=1&icpid=&limitflux=-1&limitdur=-1&tenantId=8601&accountinfo=~~V2.0~IGb_ib7rnBX9_sANRKq9sg~pK8OKM5JoJWWbLRyLfPcUMkwWZ90MzSI9S9PDltJsYzd0ZGcS3Tkh7syciNKJa-w60mDOdwtDyoNwCx9aRgzHNH9AUREV_qvNJtXHRPzYw0~ExtInfo9bj61dxzlMXrsixrqcFYPg%3D%3D%3A20221022013542%2C915973%2C119.123.71.209%2C20221022013542%2C10000100000000050000000003873458%2C915973%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2C%2C2%2C%2C10000100000000060000000007253514_0%2CEND&GuardEncType=2 (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2267,7 +2267,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.011013031005859375,
+            "test_time": 0.030596494674682617,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226512/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2287,7 +2287,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.04770779609680176,
+            "test_time": 0.029333829879760742,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226514/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2307,7 +2307,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.028965234756469727,
+            "test_time": 0.004607439041137695,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226516/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2327,7 +2327,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.003477811813354492,
+            "test_time": 0.03162956237792969,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226518/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2347,7 +2347,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.0034570693969726562,
+            "test_time": 0.07770586013793945,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226521/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2367,7 +2367,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.027611255645751953,
+            "test_time": 0.03160572052001953,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226523/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2387,7 +2387,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.01441645622253418,
+            "test_time": 0.04172468185424805,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226529/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2407,7 +2407,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.02187371253967285,
+            "test_time": 0.021776676177978516,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226530/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2427,7 +2427,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.01590895652770996,
+            "test_time": 0.030285358428955078,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226531/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2447,7 +2447,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.023563146591186523,
+            "test_time": 0.021945714950561523,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226532/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2467,7 +2467,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.07474899291992188,
+            "test_time": 0.05210232734680176,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226533/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2487,7 +2487,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.013002395629882812,
+            "test_time": 0.016324520111083984,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226537/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2507,7 +2507,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.016025304794311523,
+            "test_time": 0.0667116641998291,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226540/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2527,7 +2527,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.014830827713012695,
+            "test_time": 0.041612863540649414,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226542/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2547,7 +2547,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.04545331001281738,
+            "test_time": 0.07190108299255371,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226543/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2567,7 +2567,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.034037113189697266,
+            "test_time": 0.07044553756713867,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226544/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2587,7 +2587,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.010753393173217773,
+            "test_time": 0.04287362098693848,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226545/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2607,7 +2607,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.03692340850830078,
+            "test_time": 0.037180185317993164,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226546/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2627,7 +2627,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.03109431266784668,
+            "test_time": 0.06738638877868652,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226560/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2647,7 +2647,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.08223199844360352,
+            "test_time": 0.023365497589111328,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226561/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2667,7 +2667,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.016956090927124023,
+            "test_time": 0.08144426345825195,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226569/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2687,7 +2687,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.052706003189086914,
+            "test_time": 0.035310983657836914,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226573/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2707,7 +2707,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.018216848373413086,
+            "test_time": 0.040866851806640625,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226574/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2727,7 +2727,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.01827526092529297,
+            "test_time": 0.02205944061279297,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226577/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~hE2Z89HKgsQOlN9opVn1iw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNN03yUnk4zBVk1bynPPL3hZ%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2747,7 +2747,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.0342097282409668,
+            "test_time": 0.039528608322143555,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226886/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2767,7 +2767,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.020856857299804688,
+            "test_time": 0.02992105484008789,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226887/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2787,7 +2787,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.002115011215209961,
+            "test_time": 0.02572178840637207,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226888/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2807,7 +2807,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.029587984085083008,
+            "test_time": 0.02915024757385254,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226893/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2827,7 +2827,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.0034089088439941406,
+            "test_time": 0.04269218444824219,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226894/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2847,7 +2847,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.03398895263671875,
+            "test_time": 0.011907815933227539,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226895/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7AxXs4eTU2oiWrhopr9sHw~_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNNxsM0Bor098BJglrhfEQTl%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2867,7 +2867,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.023439645767211914,
+            "test_time": 0.030827760696411133,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226897/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0BmO6uHF7WFoTed__Xr3NQ~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2887,7 +2887,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.02877187728881836,
+            "test_time": 0.06539559364318848,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226898/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0uh4lyjjBCCN7TCq21vSIQ~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2907,7 +2907,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.02410578727722168,
+            "test_time": 0.011689424514770508,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226899/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~TYfTgTra_pUx2cPrgZ_BDw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2927,7 +2927,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.01671910285949707,
+            "test_time": 0.04407906532287598,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226900/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~cYPi33WFyhvd6SjmqUKhJg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2947,7 +2947,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.08716273307800293,
+            "test_time": 0.046608924865722656,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226912/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2967,7 +2967,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.019182682037353516,
+            "test_time": 0.03153848648071289,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226913/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -2987,7 +2987,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.022059917449951172,
+            "test_time": 0.0358579158782959,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226916/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3007,7 +3007,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.0160372257232666,
+            "test_time": 0.029474973678588867,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226920/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3027,7 +3027,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.02533102035522461,
+            "test_time": 0.023106098175048828,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226922/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3047,7 +3047,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.030025243759155273,
+            "test_time": 0.031558990478515625,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226923/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3067,7 +3067,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.03945732116699219,
+            "test_time": 0.01577305793762207,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226924/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3087,7 +3087,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.058990478515625,
+            "test_time": 0.022565603256225586,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226926/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3107,7 +3107,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.031023740768432617,
+            "test_time": 0.02669978141784668,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226928/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3127,7 +3127,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.07595419883728027,
+            "test_time": 0.027719497680664062,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226931/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3147,7 +3147,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.06493782997131348,
+            "test_time": 0.0021076202392578125,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226937/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3167,7 +3167,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.02689051628112793,
+            "test_time": 0.018177032470703125,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226942/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3187,7 +3187,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.006114482879638672,
+            "test_time": 0.056276798248291016,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226943/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3207,7 +3207,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.019404888153076172,
+            "test_time": 0.03439807891845703,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226944/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3227,7 +3227,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.05087900161743164,
+            "test_time": 0.026787281036376953,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226946/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3247,7 +3247,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.025209665298461914,
+            "test_time": 0.04849600791931152,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226947/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3267,7 +3267,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.038280487060546875,
+            "test_time": 0.024243831634521484,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226952/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~REB40lnZnCEwjRy7LZuhIQ~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3287,7 +3287,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.014832258224487305,
+            "test_time": 0.018632173538208008,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226954/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~af3wyULP1h575eM_4ByMDg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3307,7 +3307,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.061960458755493164,
+            "test_time": 0.03627657890319824,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226956/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~i6ZIpVizXlewg-YfGvH8dA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3327,7 +3327,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.08292198181152344,
+            "test_time": 0.01774764060974121,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226957/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~jW26v5VaHGy1jQuIA-4EbA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3347,7 +3347,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.003834247589111328,
+            "test_time": 0.018123388290405273,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226959/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~GrVNEZREjuNVKiTJo2mtwg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3367,7 +3367,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.02204585075378418,
+            "test_time": 0.004740238189697266,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226961/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~2MGyx659D_aaDPP0qt3NgA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3387,7 +3387,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.029870986938476562,
+            "test_time": 0.03578519821166992,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226963/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~jTXsJprEx2nE38tdvu5lhA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3407,7 +3407,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.07002902030944824,
+            "test_time": 0.0400848388671875,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226965/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7UiKL56-L86ihmTWaZ6csw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3427,7 +3427,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.029090404510498047,
+            "test_time": 0.018596410751342773,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226966/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~6qJH8Fd-zgCGx3P-Ce86cA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3447,7 +3447,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.0347440242767334,
+            "test_time": 0.03909611701965332,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226991/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~Q6F5Mjgs0tJyEArWFL3vQA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3467,7 +3467,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.010959386825561523,
+            "test_time": 0.0757746696472168,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226995/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~BQiz3wrGrpG0CUSRIJ-7Jg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3487,7 +3487,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.017690181732177734,
+            "test_time": 0.007182598114013672,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226997/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~Aw_OvjRgJVjtlaOa0dcgzg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3507,7 +3507,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.06253337860107422,
+            "test_time": 0.035112619400024414,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226999/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~sGLKaSqf0wDZMbAjeQtfyw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3527,7 +3527,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.03970003128051758,
+            "test_time": 0.01588296890258789,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227002/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~0QmKQ_slRCwvVVUUfxPVbw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3547,7 +3547,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.048116445541381836,
+            "test_time": 0.020555973052978516,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227003/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~Sco1zinvdUYzleEkXYhIvA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3567,7 +3567,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.029392480850219727,
+            "test_time": 0.027028560638427734,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227010/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~kAhb-89sxdm9fz6-heXCuw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3587,7 +3587,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.06314373016357422,
+            "test_time": 0.05436849594116211,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227011/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~xAUu61iVvo_xYbANWJhgXw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3607,7 +3607,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.03177332878112793,
+            "test_time": 0.019412755966186523,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227012/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~nqBF03rFwPucF8ODtWxLQQ~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3627,7 +3627,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.016705036163330078,
+            "test_time": 0.029312849044799805,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227014/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~rSGjhI3DMaaAASPrbQJYTg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3647,7 +3647,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.04642176628112793,
+            "test_time": 0.014617919921875,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227015/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~W5-3AVdwD5KlUpuA4mz7Cg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3667,7 +3667,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.026445627212524414,
+            "test_time": 0.01429605484008789,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227016/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~Sb5Qr3NTpE2ZugIroKoyTw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3687,7 +3687,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.05072760581970215,
+            "test_time": 0.024648427963256836,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227017/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~acviHy_ucMT27Ymf2iLtZA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3707,7 +3707,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.007944345474243164,
+            "test_time": 0.036150217056274414,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227018/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~rN_hoRDwApMKnJqiNHvn9w~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3727,7 +3727,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.009424686431884766,
+            "test_time": 0.03484296798706055,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227020/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~rr-CLugPnTcUinEM8JeySg~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3747,7 +3747,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.003605365753173828,
+            "test_time": 0.02333521842956543,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227027/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~kHMvBpWz4rccMxNvSRekpQ~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3767,7 +3767,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.06710338592529297,
+            "test_time": 0.030064105987548828,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227028/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~GfQPqRNVeBjTMsZ48qu0SA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3787,7 +3787,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.014324188232421875,
+            "test_time": 0.00839543342590332,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227029/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~EuBMjt2kLMD8fAO7QYER7Q~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3807,7 +3807,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.04310011863708496,
+            "test_time": 0.0973961353302002,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227033/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~deTB7OZ9G_VNJk5C3t96fQ~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3827,7 +3827,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.013207197189331055,
+            "test_time": 0.03474068641662598,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227045/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~q0D3NdTUN7FuRzr8eJsbQA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3863,7 +3863,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.04310011863708496,
+            "test_time": 0.0973961353302002,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227033/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~deTB7OZ9G_VNJk5C3t96fQ~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3899,7 +3899,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.03177332878112793,
+            "test_time": 0.019412755966186523,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227012/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~nqBF03rFwPucF8ODtWxLQQ~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3935,7 +3935,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.029090404510498047,
+            "test_time": 0.018596410751342773,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226966/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~6qJH8Fd-zgCGx3P-Ce86cA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -3971,7 +3971,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.029870986938476562,
+            "test_time": 0.03578519821166992,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226963/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~jTXsJprEx2nE38tdvu5lhA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -4007,7 +4007,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.06253337860107422,
+            "test_time": 0.035112619400024414,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226999/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~sGLKaSqf0wDZMbAjeQtfyw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -4043,7 +4043,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.05072760581970215,
+            "test_time": 0.024648427963256836,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221227017/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~acviHy_ucMT27Ymf2iLtZA~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
@@ -4079,7 +4079,7 @@
           "test_details": {
             "score": 0.0,
             "success": false,
-            "test_time": 0.07002902030944824,
+            "test_time": 0.0400848388671875,
             "connect_time": null,
             "response_time": null,
             "error": "连接错误: HTTPConnectionPool(host='2409:8087:8:21::18', port=6610): Max retries exceeded with url: /otttv.bj.chinamobile.com/PLTV/88888888/224/3221226965/1.m3u8?GuardEncType=2&accountinfo=~~V2.0~7UiKL56-L86ihmTWaZ6csw~tP4-l0lmSfjwLWEfK_el1vH_mv-s1zo4AQJwdedaVwG9xkuFTDg8J26cwOrNJzn20BErrHdLhuZ9EzLUCD3PMW-OMx4MGteHV2vLeW6BqoY%2CEND (Caused by NewConnectionError(\"HTTPConnection(host='2409:8087:8:21::18', port=6610): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
